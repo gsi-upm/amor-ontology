@@ -1,7 +1,5 @@
 # AMOR Ontology
 
-# TODO: improve the documentation and reorganize the repo
-
 ## Introduction
 
 ## Generating documentation
