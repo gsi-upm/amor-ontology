@@ -1,0 +1,1073 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.gsi.upm.es/ontologies/bhv/ns#"
+     xml:base="http://www.gsi.upm.es/ontologies/bhv/ns"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns">
+        <owl:versionIRI rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns/1.0.0"/>
+        <terms:comment xml:lang="en">This SKOS taxonomy mirrors the categories in Basic Human Values Theory and provides a semantic representation using the standard SKOS representation.</terms:comment>
+        <terms:creator xml:lang="en">Sergio Muñoz López</terms:creator>
+        <terms:creator xml:lang="en">Álvaro Carrera Barroso</terms:creator>
+        <terms:description xml:lang="en">This SKOS taxonomy mirrors the categories in Basic Human Values Theory and provides a semantic representation using the standard SKOS representation.</terms:description>
+        <terms:publisher rdf:resource="http://www.gsi.upm.es"/>
+        <terms:title xml:lang="en">Basic Human Values Taxonomy - SKOS version</terms:title>
+        <vann:preferredNamespacePrefix>bhv</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://www.gsi.upm.es/ontologies/bhv/ns#</vann:preferredNamespaceUri>
+        <rdfs:label xml:lang="en">Basic Human Values Taxonomy - SKOS version</rdfs:label>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/comment"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broaderTransitive -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broaderTransitive"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#Achievement -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#Achievement">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"/>
+        <skos:prefLabel>achievement</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Achievement"/>
+        <skos:prefLabel>be-ambitious</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules"/>
+        <skos:prefLabel>be-behaving-properly</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance"/>
+        <skos:prefLabel>be-broadminded</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Achievement"/>
+        <skos:prefLabel>be-capable</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction"/>
+        <skos:prefLabel>be-choosing-own-goals</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules"/>
+        <skos:prefLabel>be-compliant</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Achievement"/>
+        <skos:prefLabel>be-courageous</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought"/>
+        <skos:prefLabel>be-creative</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought"/>
+        <skos:prefLabel>be-curious</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation"/>
+        <skos:prefLabel>be-daring</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring"/>
+        <skos:prefLabel>be-forgiving</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring"/>
+        <skos:prefLabel>be-helpful</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Tradition"/>
+        <skos:prefLabel>be-holding-religious-faith</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring"/>
+        <skos:prefLabel>be-honest</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal"/>
+        <skos:prefLabel>be-honoring-elders</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Humility"/>
+        <skos:prefLabel>be-humble</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction"/>
+        <skos:prefLabel>be-independent</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Achievement"/>
+        <skos:prefLabel>be-intellectual</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeJust -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeJust">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern"/>
+        <skos:prefLabel>be-just</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeLogical -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeLogical">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity"/>
+        <skos:prefLabel>be-logical</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring"/>
+        <skos:prefLabel>be-loving</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal"/>
+        <skos:prefLabel>be-neat-and-tidy</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BePolite -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BePolite">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal"/>
+        <skos:prefLabel>be-polite</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature"/>
+        <skos:prefLabel>be-protecting-the-environment</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Tradition"/>
+        <skos:prefLabel>be-respecting-traditions</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability"/>
+        <skos:prefLabel>be-responsible</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules"/>
+        <skos:prefLabel>be-self-disciplined</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence"/>
+        <skos:prefLabel>benevolence-caring</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence"/>
+        <skos:prefLabel>benevolence-dependability</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#Bhv -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#Bhv">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <terms:title>bhv</terms:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"/>
+        <skos:prefLabel>conformity-interpersonal</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"/>
+        <skos:prefLabel>conformity-rules</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#Conservation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#Conservation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus"/>
+        <skos:prefLabel>conservation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#Face -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#Face">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"/>
+        <skos:prefLabel>face</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>growth-anxiety-free</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal"/>
+        <skos:prefLabel>have-a-comfortable-life</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Face"/>
+        <skos:prefLabel>have-a-good-reputation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal"/>
+        <skos:prefLabel>have-a-safe-country</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal"/>
+        <skos:prefLabel>have-a-sense-of-belonging</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal"/>
+        <skos:prefLabel>have-a-stable-society</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation"/>
+        <skos:prefLabel>have-a-varied-life</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern"/>
+        <skos:prefLabel>have-a-world-at-peace</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature"/>
+        <skos:prefLabel>have-a-world-of-beauty</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation"/>
+        <skos:prefLabel>have-an-exciting-life</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity"/>
+        <skos:prefLabel>have-an-objective-view</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern"/>
+        <skos:prefLabel>have-equality</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction"/>
+        <skos:prefLabel>have-freedom-of-action</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought"/>
+        <skos:prefLabel>have-freedom-of-thought</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal"/>
+        <skos:prefLabel>have-good-health</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature"/>
+        <skos:prefLabel>have-harmony-with-nature</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance"/>
+        <skos:prefLabel>have-influence</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Humility"/>
+        <skos:prefLabel>have-life-accepted-as-is</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability"/>
+        <skos:prefLabel>have-loyalty-towards-friends</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal"/>
+        <skos:prefLabel>have-no-debts</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism"/>
+        <skos:prefLabel>have-pleasure</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction"/>
+        <skos:prefLabel>have-privacy</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Face"/>
+        <skos:prefLabel>have-social-recognition</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Achievement"/>
+        <skos:prefLabel>have-success</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring"/>
+        <skos:prefLabel>have-the-own-family-secured</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance"/>
+        <skos:prefLabel>have-the-right-to-command</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance"/>
+        <skos:prefLabel>have-the-wisdom-to-accept-others</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources"/>
+        <skos:prefLabel>have-wealth</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"/>
+        <skos:prefLabel>hedonism</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#Humility -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#Humility">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence"/>
+        <skos:prefLabel>humility</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus"/>
+        <skos:prefLabel>openness-to-change</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>personal-focus</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"/>
+        <skos:prefLabel>power-dominance</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"/>
+        <skos:prefLabel>power-resources</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"/>
+        <skos:prefLabel>security-personal</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"/>
+        <skos:prefLabel>security-societal</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange"/>
+        <skos:prefLabel>self-direction-action</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange"/>
+        <skos:prefLabel>self-direction-thought</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance"/>
+        <skos:prefLabel>self-enhancement</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>self-protection-anxiety-avoidance</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus"/>
+        <skos:prefLabel>self-transcendence</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>social-focus</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange"/>
+        <skos:prefLabel>stimulation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#Tradition -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#Tradition">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"/>
+        <skos:prefLabel>tradition</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"/>
+        <skos:prefLabel>universalism-concern</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"/>
+        <skos:prefLabel>universalism-nature</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"/>
+        <skos:prefLabel>universalism-objectivity</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence"/>
+        <skos:prefLabel>universalism-tolerance</skos:prefLabel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

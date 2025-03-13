@@ -1,0 +1,183 @@
+@prefix : <http://www.gsi.upm.es/ontologies/mft/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+<http://www.gsi.upm.es/ontologies/mft/ns> rdf:type owl:Ontology ;
+                                        dc:description "This SKOS taxonomy mirrors the categories in Moral Foundations Theory and provides a semantic representation using the standard SKOS representation."@en ;
+                                        dc:comment "This SKOS taxonomy mirrors the categories in Moral Foundations Theory and provides a semantic representation using the standard SKOS representation."@en ;
+                                        dc:title "Moral Foundations Theory Taxonomy - SKOS version"@en ;
+                                        dc:label "Moral Foundations Theory Taxonomy - SKOS version"@en ;
+                                    owl:versionInfo "1.0.0"^^xsd:string ;
+                                    owl:versionIRI <http://www.gsi.upm.es/ontologies/mft/ns/1.0.0> ;
+                                    dc:creator "Sergio Muñoz López"@en ,
+                                          "Álvaro Carrera Barroso"@en ;
+                                    dc:publisher <http://www.gsi.upm.es> ;
+                                    vann:preferredNamespacePrefix "mft" ;
+                                    vann:preferredNamespaceUri "http://www.gsi.upm.es/ontologies/mft/ns#" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#broaderTransitive
+skos:broaderTransitive rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+skos:ConceptScheme rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#Authority
+:Authority rdf:type owl:NamedIndividual ,
+                    skos:Concept ;
+                     skos:prefLabel "authority" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion
+:AuthoritySubversion rdf:type owl:NamedIndividual ,
+                              skos:Concept ;
+                     skos:prefLabel "authority-subversion" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#Betrayal
+:Betrayal rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:broaderTransitive :LoyaltyBetrayal ;
+          skos:prefLabel "betrayal" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#Care
+:Care rdf:type owl:NamedIndividual ,
+               skos:Concept ;
+      skos:broaderTransitive :CareHarm ;
+      skos:prefLabel "care" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#CareHarm
+:CareHarm rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:prefLabel "care-harm" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#Cheating
+:Cheating rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:broaderTransitive :FairnessCheating ;
+          skos:prefLabel "cheating" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#Degradation
+:Degradation rdf:type owl:NamedIndividual ,
+                      skos:Concept ;
+             skos:broaderTransitive :PurityDegradation ;
+             skos:prefLabel "degradation" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#Fairness
+:Fairness rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:broaderTransitive :FairnessCheating ;
+          skos:prefLabel "fairness" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating
+:FairnessCheating rdf:type owl:NamedIndividual ,
+                           skos:Concept ;
+                  skos:prefLabel "fairness-cheating" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#Harm
+:Harm rdf:type owl:NamedIndividual ,
+               skos:Concept ;
+      skos:broaderTransitive :CareHarm ;
+      skos:prefLabel "harm" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#Liberty
+:Liberty rdf:type owl:NamedIndividual ,
+                  skos:Concept ;
+         skos:broaderTransitive :LibertyOpression ;
+         skos:prefLabel "liberty" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression
+:LibertyOpression rdf:type owl:NamedIndividual ,
+                           skos:Concept ;
+                  skos:prefLabel "liberty-opression" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#Loyalty
+:Loyalty rdf:type owl:NamedIndividual ,
+                  skos:Concept ;
+         skos:broaderTransitive :LoyaltyBetrayal ;
+         skos:prefLabel "loyalty" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal
+:LoyaltyBetrayal rdf:type owl:NamedIndividual ,
+                          skos:Concept ;
+                 skos:prefLabel "loyalty-betrayal" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#Mft
+:Mft rdf:type owl:NamedIndividual ,
+              skos:ConceptScheme ;
+     dc:title "mft" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#Opression
+:Opression rdf:type owl:NamedIndividual ,
+                    skos:Concept ;
+           skos:broaderTransitive :LibertyOpression ;
+           skos:prefLabel "opression" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#Purity
+:Purity rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:broaderTransitive :PurityDegradation ;
+        skos:prefLabel "purity" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation
+:PurityDegradation rdf:type owl:NamedIndividual ,
+                            skos:Concept ;
+                   skos:prefLabel "purity-degradation" .
+
+
+###  http://www.gsi.upm.es/ontologies/mft/ns#Subversion
+:Subversion rdf:type owl:NamedIndividual ,
+                     skos:Concept ;
+            skos:broaderTransitive :AuthoritySubversion ;
+            skos:prefLabel "subversion" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

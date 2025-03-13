@@ -1,0 +1,1023 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.gsi.upm.es/ontologies/amor/ns", "http://www.w3.org/ns/mls", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.gsi.upm.es/ontologies/onyx/ns", "http://www.w3.org/2001/XMLSchema", "http://www.gsi.upm.es/ontologies/marl/ns" ],
+    "title" : {
+      "en" : "AMOR Examples"
+    },
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+    "version" : "1.0.0",
+    "author" : [ "Álvaro Carrera Barroso" ],
+    "description" : {
+      "en" : "AMOR Examples contains a set of examples using all models required for semantic moral annotation in AMOR project."
+    },
+    "labels" : {
+      "en" : "AMOR Examples"
+    },
+    "comments" : {
+      "en" : "AMOR Examples contains a set of examples using all models required for semantic moral annotation in AMOR project."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Álvaro Carrera Barroso",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "amor-examples",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es",
+        "type" : "iri"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es/ontologies/amor/examples#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "AMOR Examples",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/ns/prov#Person",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#human1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "labels" : {
+        "IRI-based" : "human1"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#human2",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "labels" : {
+        "IRI-based" : "human2"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/marl/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SentimentAnalysis"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#sentimentAnalysis33",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "generated" : [ {
+          "identifier" : "generated",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#opinion45",
+          "type" : "iri"
+        } ],
+        "minPolarityValue" : [ {
+          "identifier" : "minPolarityValue",
+          "language" : "undefined",
+          "value" : "0.0",
+          "type" : "label"
+        } ],
+        "maxPolarityValue" : [ {
+          "identifier" : "maxPolarityValue",
+          "language" : "undefined",
+          "value" : "1.0",
+          "type" : "label"
+        } ],
+        "usedMLModel" : [ {
+          "identifier" : "usedMLModel",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#model2",
+          "type" : "iri"
+        } ],
+        "wasAssociatedWith" : [ {
+          "identifier" : "wasAssociatedWith",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#robot2",
+          "type" : "iri"
+        } ],
+        "used" : [ {
+          "identifier" : "used",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "sentimentAnalysis33"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/onyx/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EmotionSet"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#emotionAnnotation87",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "hasEmotion" : [ {
+          "identifier" : "hasEmotion",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#emotion2",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasEmotion",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#emotion1",
+          "type" : "iri"
+        } ],
+        "wasDerivedFrom" : [ {
+          "identifier" : "wasDerivedFrom",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "emotionAnnotation87"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://schema.org/Organization",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#bbc",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "BBC News",
+          "type" : "label"
+        } ],
+        "logo" : [ {
+          "identifier" : "logo",
+          "language" : "undefined",
+          "value" : "http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "bbc"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralValueAnalysis"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#analysis3",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "analysed" : [ {
+          "identifier" : "analysed",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ],
+        "generated" : [ {
+          "identifier" : "generated",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#annotation3",
+          "type" : "iri"
+        } ],
+        "usedMoralValueModel" : [ {
+          "identifier" : "usedMoralValueModel",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics",
+          "type" : "iri"
+        } ],
+        "usedMLModel" : [ {
+          "identifier" : "usedMLModel",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#model1",
+          "type" : "iri"
+        } ],
+        "wasAssociatedWith" : [ {
+          "identifier" : "wasAssociatedWith",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#robot1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "analysis3"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#moralAnalysis21",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "analysed" : [ {
+          "identifier" : "analysed",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ],
+        "generated" : [ {
+          "identifier" : "generated",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23",
+          "type" : "iri"
+        } ],
+        "usedMoralValueModel" : [ {
+          "identifier" : "usedMoralValueModel",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations",
+          "type" : "iri"
+        } ],
+        "usedMLModel" : [ {
+          "identifier" : "usedMLModel",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#model4",
+          "type" : "iri"
+        } ],
+        "wasAssociatedWith" : [ {
+          "identifier" : "wasAssociatedWith",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#robot2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "moralAnalysis21"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#analysis2",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "analysed" : [ {
+          "identifier" : "analysed",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ],
+        "generated" : [ {
+          "identifier" : "generated",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#annotation2",
+          "type" : "iri"
+        } ],
+        "usedMoralValueModel" : [ {
+          "identifier" : "usedMoralValueModel",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level3",
+          "type" : "iri"
+        } ],
+        "wasAssociatedWith" : [ {
+          "identifier" : "wasAssociatedWith",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#human2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "analysis2"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#analysis1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "analysed" : [ {
+          "identifier" : "analysed",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ],
+        "generated" : [ {
+          "identifier" : "generated",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#annotation1",
+          "type" : "iri"
+        } ],
+        "usedMoralValueModel" : [ {
+          "identifier" : "usedMoralValueModel",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics",
+          "type" : "iri"
+        } ],
+        "wasAssociatedWith" : [ {
+          "identifier" : "wasAssociatedWith",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#human1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "analysis1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralValueAnnotation"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#annotation1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "hasMoralValueCategory" : [ {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty",
+          "type" : "iri"
+        } ],
+        "confidence" : [ {
+          "identifier" : "confidence",
+          "language" : "undefined",
+          "value" : "1.0",
+          "type" : "label"
+        } ],
+        "annotated" : [ {
+          "identifier" : "annotated",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "annotation1"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#annotation2",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "hasMoralValueCategory" : [ {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/bhv#Conservation",
+          "type" : "iri"
+        } ],
+        "confidence" : [ {
+          "identifier" : "confidence",
+          "language" : "undefined",
+          "value" : "0.8",
+          "type" : "label"
+        } ],
+        "annotated" : [ {
+          "identifier" : "annotated",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "annotation2"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "hasMoralValueCategory" : [ {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion",
+          "type" : "iri"
+        } ],
+        "hasBias" : [ {
+          "identifier" : "hasBias",
+          "language" : "undefined",
+          "value" : "0.65",
+          "type" : "label"
+        } ],
+        "confidence" : [ {
+          "identifier" : "confidence",
+          "language" : "undefined",
+          "value" : "0.75",
+          "type" : "label"
+        } ],
+        "hasPolarityIntensity" : [ {
+          "identifier" : "hasPolarityIntensity",
+          "language" : "undefined",
+          "value" : "0.2",
+          "type" : "label"
+        } ],
+        "annotated" : [ {
+          "identifier" : "annotated",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "moralAnnotation23"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#annotation3",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "hasMoralValueCategory" : [ {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority",
+          "type" : "iri"
+        } ],
+        "confidence" : [ {
+          "identifier" : "confidence",
+          "language" : "undefined",
+          "value" : "0.75",
+          "type" : "label"
+        } ],
+        "hasPolarityIntensity" : [ {
+          "identifier" : "hasPolarityIntensity",
+          "language" : "undefined",
+          "value" : "0.2",
+          "type" : "label"
+        } ],
+        "annotated" : [ {
+          "identifier" : "annotated",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "annotation3"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/onyx/ns#Emotion",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/onyx/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Emotion"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#emotion1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "algorithmConfidence" : [ {
+          "identifier" : "algorithmConfidence",
+          "language" : "undefined",
+          "value" : "0.9",
+          "type" : "label"
+        } ],
+        "hasEmotionCategory" : [ {
+          "identifier" : "hasEmotionCategory",
+          "language" : "undefined",
+          "value" : "http://gsi.upm.es/ontologies/wnaffect/ns#Hate",
+          "type" : "iri"
+        } ],
+        "hasEmotionIntensity" : [ {
+          "identifier" : "hasEmotionIntensity",
+          "language" : "undefined",
+          "value" : "0.5",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "emotion1"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#emotion2",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "algorithmConfidence" : [ {
+          "identifier" : "algorithmConfidence",
+          "language" : "undefined",
+          "value" : "0.65",
+          "type" : "label"
+        } ],
+        "hasEmotionCategory" : [ {
+          "identifier" : "hasEmotionCategory",
+          "language" : "undefined",
+          "value" : "http://gsi.upm.es/ontologies/wnaffect/ns#Fury",
+          "type" : "iri"
+        } ],
+        "hasEmotionIntensity" : [ {
+          "identifier" : "hasEmotionIntensity",
+          "language" : "undefined",
+          "value" : "0.7",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "emotion2"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/marl/ns#Opinion",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/marl/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Opinion"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#opinion45",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "algorithmConfidence" : [ {
+          "identifier" : "algorithmConfidence",
+          "language" : "undefined",
+          "value" : "0.9",
+          "type" : "label"
+        } ],
+        "hasPolarity" : [ {
+          "identifier" : "hasPolarity",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/marl/ns#Neutral",
+          "type" : "iri"
+        } ],
+        "wasDerivedFrom" : [ {
+          "identifier" : "wasDerivedFrom",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ],
+        "hasPolarityValue" : [ {
+          "identifier" : "hasPolarityValue",
+          "language" : "undefined",
+          "value" : "0.5",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "opinion45"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#Model",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Model"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#model1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "labels" : {
+        "IRI-based" : "model1"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#model2",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "labels" : {
+        "IRI-based" : "model2"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#model3",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "labels" : {
+        "IRI-based" : "model3"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#model4",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "labels" : {
+        "IRI-based" : "model4"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://schema.org/NewsArticle",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NewsArticle"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "datePublished" : [ {
+          "identifier" : "datePublished",
+          "language" : "undefined",
+          "value" : "2017-03-20T20:30:54+00:00",
+          "type" : "label"
+        } ],
+        "image" : [ {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/17519/production/_95231559_committee.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/11318/production/_95242407_mediaitem95242406.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/CC81/production/_95235325_f704a6dc-c017-4971-aac3-04c03eb097fb.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/0F99/production/_95239930_trumptweet.png",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef-1.bbci.co.uk/news/560/cpsprodpb/11AA1/production/_95235327_c0b59f9e-316e-4641-aa7e-3fec6daea62b.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef-1.bbci.co.uk/news/560/cpsprodpb/10DFA/production/_95241196_mediaitem95241195.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/8AB9/production/_95231553_comey2.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef-1.bbci.co.uk/news/560/media/images/75306000/jpg/_75306515_line976.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef-1.bbci.co.uk/news/560/cpsprodpb/BCED/production/_92856384_line976.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef-1.bbci.co.uk/news/560/cpsprodpb/12B64/production/_95244667_mediaitem95244666.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/2CA0/production/_95242411_comey.jpg",
+          "type" : "iri"
+        } ],
+        "articleBody" : [ {
+          "identifier" : "articleBody",
+          "language" : "undefined",
+          "value" : "Director Comey says the probe into last year's US election would assess if crimes were committed.",
+          "type" : "label"
+        } ],
+        "publisher" : [ {
+          "identifier" : "publisher",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#bbc",
+          "type" : "iri"
+        } ],
+        "mainEntityOfPage" : [ {
+          "identifier" : "mainEntityOfPage",
+          "language" : "undefined",
+          "value" : "http://www.bbc.com/news/world-us-canada-39324587",
+          "type" : "iri"
+        } ],
+        "headline" : [ {
+          "identifier" : "headline",
+          "language" : "undefined",
+          "value" : "Trump Russia claims: FBI's Comey confirms investigation of election 'interference'",
+          "type" : "label"
+        } ],
+        "url" : [ {
+          "identifier" : "url",
+          "language" : "undefined",
+          "value" : "http://www.bbc.com/news/world-us-canada-39324587",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "news1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#Run",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Run"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#run4",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "realizes" : [ {
+          "identifier" : "realizes",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#linearRegression",
+          "type" : "iri"
+        } ],
+        "hasOutput" : [ {
+          "identifier" : "hasOutput",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#model4",
+          "type" : "iri"
+        } ],
+        "executes" : [ {
+          "identifier" : "executes",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#wekaLogistic",
+          "type" : "iri"
+        } ],
+        "hasInput" : [ {
+          "identifier" : "hasInput",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#moralfoundationdataset",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "run4"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#run2",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "realizes" : [ {
+          "identifier" : "realizes",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#knn",
+          "type" : "iri"
+        } ],
+        "hasOutput" : [ {
+          "identifier" : "hasOutput",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#model2",
+          "type" : "iri"
+        } ],
+        "executes" : [ {
+          "identifier" : "executes",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#wekaLogistic",
+          "type" : "iri"
+        } ],
+        "hasInput" : [ {
+          "identifier" : "hasInput",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#opinionDataset",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "run2"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#run3",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "realizes" : [ {
+          "identifier" : "realizes",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#kmeans",
+          "type" : "iri"
+        } ],
+        "hasOutput" : [ {
+          "identifier" : "hasOutput",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#model3",
+          "type" : "iri"
+        } ],
+        "executes" : [ {
+          "identifier" : "executes",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#wekaLogistic",
+          "type" : "iri"
+        } ],
+        "hasInput" : [ {
+          "identifier" : "hasInput",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#emotionDataset1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "run3"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#run1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "realizes" : [ {
+          "identifier" : "realizes",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#logisticRegression",
+          "type" : "iri"
+        } ],
+        "hasOutput" : [ {
+          "identifier" : "hasOutput",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#model1",
+          "type" : "iri"
+        } ],
+        "executes" : [ {
+          "identifier" : "executes",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#wekaLogistic",
+          "type" : "iri"
+        } ],
+        "hasInput" : [ {
+          "identifier" : "hasInput",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#credit-a",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "run1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/onyx/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EmotionAnalysis"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#emotionAnalysis45",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "usesEmotionModel" : [ {
+          "identifier" : "usesEmotionModel",
+          "language" : "undefined",
+          "value" : "http://gsi.upm.es/ontologies/wnaffect/ns#WNAModel",
+          "type" : "iri"
+        } ],
+        "generated" : [ {
+          "identifier" : "generated",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#emotionAnnotation87",
+          "type" : "iri"
+        } ],
+        "usedMLModel" : [ {
+          "identifier" : "usedMLModel",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#model3",
+          "type" : "iri"
+        } ],
+        "wasAssociatedWith" : [ {
+          "identifier" : "wasAssociatedWith",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#robot2",
+          "type" : "iri"
+        } ],
+        "used" : [ {
+          "identifier" : "used",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "emotionAnalysis45"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#SoftwareAgent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareAgent"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#robot1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "labels" : {
+        "IRI-based" : "robot1"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#robot2",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "labels" : {
+        "IRI-based" : "robot2"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#Algorithm",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Algorithm"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#knn",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "labels" : {
+        "IRI-based" : "knn",
+        "en" : "K-Nearest Neighbors"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#linearRegression",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "labels" : {
+        "IRI-based" : "linearRegression",
+        "en" : "Linear Regression"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#logisticRegression",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "labels" : {
+        "IRI-based" : "logisticRegression",
+        "en" : "Logistic Regression",
+        "es" : "Regresión Logística"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#kmeans",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "labels" : {
+        "IRI-based" : "kmeans",
+        "en" : "K-Means Clustering"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  } ]
+}

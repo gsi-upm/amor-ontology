@@ -1,0 +1,204 @@
+@prefix : <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#> .
+@prefix amor: <http://www.gsi.upm.es/ontologies/amor/ns#> .
+@prefix bhv: <http://www.gsi.upm.es/ontologies/bhv/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix mls: <http://www.w3.org/ns/mls#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns>
+  a owl:Ontology ;
+  rdfs:label "AMOR-BHV Ontology"@en ;
+  owl:versionInfo "1.0.0"^^xsd:string ;
+  owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns/1.0.0> ;
+  dc:title "AMOR-BHV Ontology"@en ;
+  dc:creator "Sergio Muñoz López"@en ,
+    "Álvaro Carrera Barroso"@en ;
+  dc:publisher <http://www.gsi.upm.es> ;
+  rdfs:comment "AMOR-BHV is an ontology that uses AMOR ontology and BHV SKOS Taxonomy to create required relations to use BHV to define moral annotations."@en ;
+  dc:description "AMOR-BHV is an ontology that uses AMOR ontology and BHV SKOS Taxonomy to create required relations to use BHV to define moral annotations."@en ;
+  vann:preferredNamespacePrefix "amor-bhv" ;
+  vann:preferredNamespaceUri "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#" .
+
+bhv:BeAmbitious a amor:MoralValueCategory .
+bhv:BeBehavingProperly a amor:MoralValueCategory .
+bhv:BeBroadminded a amor:MoralValueCategory .
+bhv:BeCapable a amor:MoralValueCategory .
+bhv:BeChoosingOwnGoals a amor:MoralValueCategory .
+bhv:BeCompliant a amor:MoralValueCategory .
+bhv:BeCourageous a amor:MoralValueCategory .
+bhv:BeCreative a amor:MoralValueCategory .
+bhv:BeCurious a amor:MoralValueCategory .
+bhv:BeDaring a amor:MoralValueCategory .
+bhv:BeForgiving a amor:MoralValueCategory .
+bhv:BeHelpful a amor:MoralValueCategory .
+bhv:BeHoldingReligiousFaith a amor:MoralValueCategory .
+bhv:BeHonest a amor:MoralValueCategory .
+bhv:BeHonoringElders a amor:MoralValueCategory .
+bhv:BeHumble a amor:MoralValueCategory .
+bhv:BeIndependent a amor:MoralValueCategory .
+bhv:BeIntellectual a amor:MoralValueCategory .
+bhv:BeLoving a amor:MoralValueCategory .
+bhv:BeNeatAndTidy a amor:MoralValueCategory .
+bhv:BePolite a amor:MoralValueCategory .
+bhv:BeProtectingTheEnvironment a amor:MoralValueCategory .
+bhv:BeRespectingTraditions a amor:MoralValueCategory .
+bhv:BeResponsible a amor:MoralValueCategory .
+bhv:BeSelfDisciplined a amor:MoralValueCategory .
+bhv:HaveAComfortableLife a amor:MoralValueCategory .
+bhv:HaveAGoodReputation a amor:MoralValueCategory .
+bhv:HaveASafeCountry a amor:MoralValueCategory .
+bhv:HaveASenseOfBelonging a amor:MoralValueCategory .
+bhv:HaveAStableSociety a amor:MoralValueCategory .
+bhv:HaveAVariedLife a amor:MoralValueCategory .
+bhv:HaveAWorldAtPeace a amor:MoralValueCategory .
+bhv:HaveAWorldOfBeauty a amor:MoralValueCategory .
+bhv:HaveAnExcitingLife a amor:MoralValueCategory .
+bhv:HaveAnObjectiveView a amor:MoralValueCategory .
+bhv:HaveEquality a amor:MoralValueCategory .
+bhv:HaveFreedomOfAction a amor:MoralValueCategory .
+bhv:HaveFreedomOfThought a amor:MoralValueCategory .
+bhv:HaveGoodHealth a amor:MoralValueCategory .
+bhv:HaveHarmonyWithNature a amor:MoralValueCategory .
+bhv:HaveInfluence a amor:MoralValueCategory .
+bhv:HaveLifeAcceptedAsIs a amor:MoralValueCategory .
+bhv:HaveLoyaltyTowardsFriends a amor:MoralValueCategory .
+bhv:HaveNoDebts a amor:MoralValueCategory .
+bhv:HavePleasure a amor:MoralValueCategory .
+bhv:HavePrivacy a amor:MoralValueCategory .
+bhv:HaveSocialRecognition a amor:MoralValueCategory .
+bhv:HaveSuccess a amor:MoralValueCategory .
+bhv:HaveTheOwnFamilySecured a amor:MoralValueCategory .
+bhv:HaveTheRightToCommand a amor:MoralValueCategory .
+bhv:HaveTheWisdomToAcceptOthers a amor:MoralValueCategory .
+bhv:HaveWealth a amor:MoralValueCategory .
+
+
+:BHVModel-level1 a owl:NamedIndividual,
+    amor:MoralValueModel ;
+    amor:hasMoralValueCategory bhv:BeAmbitious,
+        bhv:BeBehavingProperly,
+        bhv:BeBroadminded,
+        bhv:BeCapable,
+        bhv:BeChoosingOwnGoals,
+        bhv:BeCompliant,
+        bhv:BeCourageous,
+        bhv:BeCreative,
+        bhv:BeCurious,
+        bhv:BeDaring,
+        bhv:BeForgiving,
+        bhv:BeHelpful,
+        bhv:BeHoldingReligiousFaith,
+        bhv:BeHonest,
+        bhv:BeHonoringElders,
+        bhv:BeHumble,
+        bhv:BeIndependent,
+        bhv:BeIntellectual,
+        bhv:BeJust,
+        bhv:BeLogical,
+        bhv:BeLoving,
+        bhv:BeNeatAndTidy,
+        bhv:BePolite,
+        bhv:BeProtectingTheEnvironment,
+        bhv:BeRespectingTraditions,
+        bhv:BeResponsible,
+        bhv:BeSelfDisciplined,
+        bhv:HaveAComfortableLife,
+        bhv:HaveAGoodReputation,
+        bhv:HaveASafeCountry,
+        bhv:HaveASenseOfBelonging,
+        bhv:HaveAStableSociety,
+        bhv:HaveAVariedLife,
+        bhv:HaveAWorldAtPeace,
+        bhv:HaveAWorldOfBeauty,
+        bhv:HaveAnExcitingLife,
+        bhv:HaveAnObjectiveView,
+        bhv:HaveEquality,
+        bhv:HaveFreedomOfAction,
+        bhv:HaveFreedomOfThought,
+        bhv:HaveGoodHealth,
+        bhv:HaveHarmonyWithNature,
+        bhv:HaveInfluence,
+        bhv:HaveLifeAcceptedAsIs,
+        bhv:HaveLoyaltyTowardsFriends,
+        bhv:HaveNoDebts,
+        bhv:HavePleasure,
+        bhv:HavePrivacy,
+        bhv:HaveSocialRecognition,
+        bhv:HaveSuccess,
+        bhv:HaveTheOwnFamilySecured,
+        bhv:HaveTheRightToCommand,
+        bhv:HaveTheWisdomToAcceptOthers,
+        bhv:HaveWealth .
+
+bhv:Achievement a amor:MoralValueCategory .
+bhv:BenevolenceCaring a amor:MoralValueCategory .
+bhv:BenevolenceDependability a amor:MoralValueCategory .
+bhv:ConformityInterpersonal a amor:MoralValueCategory .
+bhv:ConformityRules a amor:MoralValueCategory .
+bhv:Face a amor:MoralValueCategory .
+bhv:Hedonism a amor:MoralValueCategory .
+bhv:Humility a amor:MoralValueCategory .
+bhv:PowerDominance a amor:MoralValueCategory .
+bhv:PowerResources a amor:MoralValueCategory .
+bhv:SecurityPersonal a amor:MoralValueCategory .
+bhv:SecuritySocietal a amor:MoralValueCategory .
+bhv:SelfDirectionAction a amor:MoralValueCategory .
+bhv:SelfDirectionThought a amor:MoralValueCategory .
+bhv:Stimulation a amor:MoralValueCategory .
+bhv:Tradition a amor:MoralValueCategory .
+bhv:UniversalismConcern a amor:MoralValueCategory .
+bhv:UniversalismNature a amor:MoralValueCategory .
+bhv:UniversalismObjectivity a amor:MoralValueCategory .
+bhv:UniversalismTolerance a amor:MoralValueCategory .
+
+:BHVModel-level2 a amor:MoralValueModel ;
+    amor:hasMoralValueCategory bhv:Achievement,
+        bhv:BenevolenceCaring,
+        bhv:BenevolenceDependability,
+        bhv:ConformityInterpersonal,
+        bhv:ConformityRules,
+        bhv:Face,
+        bhv:Hedonism,
+        bhv:Humility,
+        bhv:PowerDominance,
+        bhv:PowerResources,
+        bhv:SecurityPersonal,
+        bhv:SecuritySocietal,
+        bhv:SelfDirectionAction,
+        bhv:SelfDirectionThought,
+        bhv:Stimulation,
+        bhv:Tradition,
+        bhv:UniversalismConcern,
+        bhv:UniversalismNature,
+        bhv:UniversalismObjectivity,
+        bhv:UniversalismTolerance .
+
+bhv:Conservation a amor:MoralValueCategory .
+bhv:OpennessToChange a amor:MoralValueCategory .
+bhv:SelfEnhancement a amor:MoralValueCategory .
+bhv:SelfTranscendence a amor:MoralValueCategory .
+
+:BHVModel-level3 a amor:MoralValueModel ;
+    amor:hasMoralValueCategory bhv:Conservation,
+        bhv:OpennessToChange,
+        bhv:SelfEnhancement,
+        bhv:SelfTranscendence .
+
+bhv:SocialFocus a amor:MoralValueCategory .
+bhv:PersonalFocus a amor:MoralValueCategory .
+
+:BHVModel-level4a a amor:MoralValueModel ;
+    amor:hasMoralValueCategory bhv:SocialFocus,
+        bhv:PersonalFocus .
+
+bhv:GrowthAnxietyFree a amor:MoralValueCategory .
+bhv:SelfProtectionAnxietyAvoidance a amor:MoralValueCategory .
+
+:BHVModel-level4b a amor:MoralValueModel ;
+    amor:hasMoralValueCategory bhv:GrowthAnxietyFree,
+        bhv:SelfProtectionAnxietyAvoidance .

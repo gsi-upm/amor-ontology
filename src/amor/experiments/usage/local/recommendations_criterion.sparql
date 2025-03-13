@@ -1,0 +1,17 @@
+SELECT ?experiment ?news ?recommendation
+WHERE {      
+	?experiment amor-exp:hasContentAdaptationStrategy ?strategy ;
+		    amor-exp:usesDataset [
+			amor:hasNews ?news 
+	    ] .
+
+	SERVICE <https://amor-graph.gsi.upm.es/news/> {
+		?strategy amor-exp:usesRecommendationCriterion ?criterion .
+
+		?annotation a amor:Recommendation ;
+			    amor-exp:hasRecommendationCriterion ?criterion ;
+			    oa:hasTarget ?news ;
+			    oa:hasBody ?recommendation .
+	}
+}
+LIMIT 10

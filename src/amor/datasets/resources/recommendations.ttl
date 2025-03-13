@@ -1,0 +1,22 @@
+@prefix : <http://www.github.com/gsi-upm/amor-experiment-api#> .
+@prefix amor: <http://www.gsi.upm.es/ontologies/amor/ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+:MoralSimilarity a owl:Thing .
+:RecommendationSet rdfs:subclassOf schema:Guide .
+
+:recommendationsNews1Morality a :MoralSimilarityRecommendation, :RecommendationSet ;
+		 schema:about :news1 ;
+		 schema:hasPart :recommendation1 .
+      
+:recommendation1 a schema:Recommendation;
+		 schema:itemReviewed :AnotherArticleFromJSONLD  ;
+		 schema:reviewAspect :MoralSimilarity ; # We are bending schema.org slightly here. According to the docs it should be a Text, but all the examples in the schema.org page use an entity here
+		 schema:reviewRating [
+			schema:ratingValue 0.95
+		 ] .
+

@@ -1,0 +1,332 @@
+@prefix amor: <http://www.gsi.upm.es/ontologies/amor/ns#> .
+@prefix amor-exp: <http://www.gsi.upm.es/ontologies/amor/experiments/ns#> .
+@prefix amor-graph: <http://amor-graph.gsi.upm.es/ns#> .
+@prefix amor-mft: <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dc1: <http://purl.org/dc/terms/> .
+@prefix ex: <http://www.gsi.upm.es/ontologies/amor/datasets#> .
+@prefix ex-exp: <http://www.gsi.upm.es/ontologies/amor/experiments/examples#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix itsrdf: <http://www.w3.org/2005/11/its/rdf#> .
+@prefix marl: <http://www.gsi.upm.es/ontologies/marl/ns#> .
+@prefix mft: <http://www.gsi.upm.es/ontologies/mft/ns#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix onyx: <http://www.gsi.upm.es/ontologies/onyx/ns#> .
+@prefix oro: <http://kb.openrobots.org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix wnaffect: <http://gsi.upm.es/ontologies/wnaffect/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:dataset1 a amor-exp:NewsDataset ;
+    schema1:hasPart ex:news1,
+        ex:news2 ;
+    amor-exp:hasNews ex:news1 .
+
+ex:emotionSet1 a amor:EmotionAnnotation ;
+    onyx:hasEmotion [ onyx:hasEmotionCategory wnaffect:happiness ;
+            onyx:hasEmotionIntensity 0.38 ] ;
+    itsrdf:taConfidence 0.37 ;
+    oa:hasTarget ex:news1 .
+
+ex:mention1 a amor:EntityAnnotation ;
+    itsrdf:taConfidence 0.95 ;
+    itsrdf:taIdentClass dbo:Region ;
+    itsrdf:taIdentRef ex:Catalonia ;
+    oa:hasTarget ex:news1 .
+
+ex:mention2 a amor:EntityAnnotation ;
+    itsrdf:taConfidence 0.37 ;
+    itsrdf:taIdentClass dbo:Organization ;
+    itsrdf:taIdentRef ex:PoliciaNacional ;
+    oa:hasTarget ex:news1 .
+
+ex:moral1 a amor:MoralValueAnnotation ;
+    amor:hasMoralValueCategory mft:Liberty ;
+    itsrdf:taConfidence "1.0"^^xsd:float ;
+    oa:hasTarget ex:news1 .
+
+ex:opinion1 a amor:SentimentAnnotation ;
+    marl:describesObject ex:Catalonia ;
+    marl:hasPolarity marl:Negative ;
+    marl:polarityValue -0.38 ;
+    itsrdf:taConfidence 0.81 ;
+    oa:hasTarget ex:news1 .
+
+ex:recommendation1 a amor:Recommendation ;
+    amor-exp:hasRecommendationCriterion amor-exp:EntitySimilarity ;
+    amor-exp:hasRecommendationScore 0.95 ;
+    oa:hasBody ex:news1 ;
+    oa:hasTarget ex:news1 .
+
+ex:recommendation2 a amor:Recommendation ;
+    amor-exp:hasRecommendationCriterion amor-exp:MoralDissimilarity ;
+    amor-exp:hasRecommendationScore 0.12 ;
+    oa:hasBody ex:news2 ;
+    oa:hasTarget ex:news1 .
+
+ex:recommendation3 a amor:Recommendation ;
+    amor-exp:hasRecommendationCriterion amor-exp:EmotionSimilarity ;
+    amor-exp:hasRecommendationScore 0.91 ;
+    oa:hasBody ex:news2 ;
+    oa:hasTarget ex:news1 .
+
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples> a owl:Ontology ;
+    rdfs:label "AMOR Experiments Examples"@en ;
+    dc1:creator "Álvaro Carrera Barroso"@en ;
+    dc1:description "AMOR Experiments Examples contains a set of examples using the models required to register an experiment in the Semantic Ethical Black Box of AMOR project."@en ;
+    dc1:publisher <http://www.gsi.upm.es> ;
+    dc1:title "AMOR Experiments Examples"@en ;
+    vann:preferredNamespacePrefix "amor-exp-examples" ;
+    vann:preferredNamespaceUri "http://www.gsi.upm.es/ontologies/amor/experiments/examples#" ;
+    rdfs:comment "AMOR Experiments Examples contains a set of examples using the models required to register an experiment in the Semantic Ethical Black Box of AMOR project."@en ;
+    owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/experiments/examples/1.0.0> ;
+    owl:versionInfo "1.0.0"^^xsd:string .
+
+ex-exp:experiment1 a amor-exp:DigitalNewspaperExperiment,
+        amor-exp:Experiment,
+        owl:NamedIndividual ;
+    rdfs:label "Experiment 1"@en ;
+    amor-exp:hasBackgroundMusic "relaxingJapaneseMusic.mp3"^^xsd:string ;
+    amor-exp:hasBackgroundScenario "japaneseHouse.virtual"^^xsd:string ;
+    amor-exp:hasContentAdaptationStrategy amor-exp:AfectiveAdaptationStrategy,
+        amor-exp:MoralAdaptationStrategy ;
+    amor-exp:hasExperimentEvaluation [ a amor-exp:ExperimentEvalution ;
+            amor-exp:hasFinalQuestion ex-exp:question4 ;
+            amor-exp:hasInitialQuestion ex-exp:question1,
+                ex-exp:question2 ;
+            amor-exp:hasIntermediateQuestion ex-exp:question3 ] ;
+    amor-exp:hasExperimentExecutor ex-exp:ari41 ;
+    amor-exp:hasExperimentRequester ex-exp:researcher1 ;
+    amor-exp:hasExperimentSubject ex-exp:human1 ;
+    amor-exp:hasLLMConfiguration [ a amor-exp:LLMConfiguration ;
+            amor-exp:hasLLMModel "phi4:14b" ;
+            amor-exp:hasLLMToken "345adfwere23?$adsf" ;
+            amor-exp:usesLLMEndPoint "http://localhost:6505" ;
+            amor-exp:usesLLMService "ollama" ;
+            amor-exp:usesPrompt "You are a 70 years old lady. You are in a Japanese house. You are reading the news. You are grumpy. You are wearing a gray dress. You have white hair" ] ;
+    amor-exp:hasPhysicalMovement "poi1"^^xsd:string,
+        "poi2"^^xsd:string ;
+    amor-exp:hasVisualizationStrategy amor-exp:ClickBaitVisualizationStrategy,
+        amor-exp:MoralValueVisualizationStrategy ;
+    amor-exp:usesAggregatedData "total population"^^xsd:string ;
+    amor-exp:usesAvatar [ a amor-exp:Avatar ;
+            amor-exp:hasAppearance "gray dress"^^xsd:string,
+                "white hair"^^xsd:string ;
+            amor-exp:hasCategory "old lady"^^xsd:string ;
+            amor-exp:hasFacialExpresivity amor-exp:EmotiveExpresivity ;
+            amor-exp:hasGesturalExpresivity amor-exp:EmotiveExpresivity ;
+            amor-exp:hasLanguageComplexityLevel "adult"^^xsd:string ;
+            amor-exp:hasPersonality "grumpy"^^xsd:string ;
+            amor-exp:hasVocalExpresivity amor-exp:EmotiveExpresivity ;
+            foaf:age 70 ;
+            foaf:gender "female"^^xsd:string ] ;
+    amor-exp:usesDataset amor-graph:dataset1 ;
+    amor-exp:usesEmotionRecognitionCooperationStrategy amor-exp:LocalEmotionRecognition ;
+    amor-exp:usesLanguage "es_ES" ;
+    amor-exp:usesRobotCooperationStrategy amor-exp:NoCooperationRobot ;
+    amor-exp:usesSemanticCooperationStrategy [ a amor-exp:FullSemanticCooperation ;
+            amor-exp:usesCloudGraphQuery "http://amor-graph.gsi.upm.es/sparql" ;
+            amor-exp:usesSPARQLQuery """
+            PREFIX prov: <http://www.w3.org/ns/prov#>
+            PREFIX segb: <http://www.gsi.upm.es/ontologies/segb/ns#>
+            PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+            PREFIX mls: <http://www.w3.org/ns/mls#>
+            PREFIX oro: <http://kb.openrobots.org#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+            SELECT ?activity ?startTime ?endTime ?model ?human ?humanName
+            WHERE {
+            ?activity a segb:LoggedActivity ;
+                    segb:usedMLModel ?model ;
+                    prov:startedAtTime ?startTime ;
+                    prov:endedAtTime ?endTime ;
+                    prov:wasAssociatedWith ?agent .
+            ?agent a oro:Robot ;
+                    oro:hasName ?robotName .	
+            ?run mls:hasOutput ?model ;
+                    prov:wasAssociatedWith ?human .
+            ?human a prov:Person, foaf:Person ;
+                    foaf:firstName ?humanName .
+              FILTER (
+                ?startTime >= "2024-11-16T00:00:00"^^xsd:dateTime &&
+                ?endTime <= "2024-11-16T23:59:59"^^xsd:dateTime &&
+                ?robotName = "ARI"@es
+              )
+            }
+        """^^xsd:string ] .
+
+amor-graph:dataset1 a amor-exp:NewsDataset ;
+    schema1:url <http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json> .
+
+ex-exp:ari41 a oro:Robot,
+        amor-exp:ExperimentExecutor,
+        prov:SoftwareAgent ;
+    rdfs:label "ARI 41"@en .
+
+ex-exp:question1 a schema1:Question ;
+    schema1:suggestedAnswer ex-exp:numericAnswer1,
+        ex-exp:numericAnswer2,
+        ex-exp:numericAnswer3,
+        ex-exp:numericAnswer4,
+        ex-exp:numericAnswer5 ;
+    schema1:text "Do you feel happy now? (1-No, I am not happy at all, 5-I am very happy)"@en .
+
+ex-exp:question2 a schema1:Question ;
+    schema1:suggestedAnswer ex-exp:numericAnswer1,
+        ex-exp:numericAnswer2,
+        ex-exp:numericAnswer3,
+        ex-exp:numericAnswer4,
+        ex-exp:numericAnswer5 ;
+    schema1:text "Do you like news about sports? (1-No, I don't like them at all, 5-Yes, I really like them.)"@en .
+
+ex-exp:question3 a schema1:Question ;
+    schema1:suggestedAnswer ex-exp:numericAnswer1,
+        ex-exp:numericAnswer2,
+        ex-exp:numericAnswer3,
+        ex-exp:numericAnswer4,
+        ex-exp:numericAnswer5 ;
+    schema1:text "Do you feel sad now? (1-No, I am not sad at all, 5-I am very sad.)"@en .
+
+ex-exp:question4 a schema1:Question ;
+    schema1:suggestedAnswer ex-exp:numericAnswer1,
+        ex-exp:numericAnswer2,
+        ex-exp:numericAnswer3,
+        ex-exp:numericAnswer4,
+        ex-exp:numericAnswer5 ;
+    schema1:text "Do you think the news reading have modified your emotion? (1-Not at all, 5-Yes, of course.)"@en .
+
+ex-exp:human1 a amor-exp:ExperimentionSubject,
+        prov:Person,
+        foaf:Person ;
+    rdfs:label "Juan"@en ;
+    amor-exp:hasAccesibilityCategory "fragile"^^xsd:string ;
+    amor-exp:hasAgeBracket "18-25"^^xsd:string ;
+    amor-exp:hasAverageSocialNetworkActivityPerMonth 100 ;
+    amor-exp:hasEducationLevel "Master of Science"^^xsd:string ;
+    amor-exp:hasNumberOfFollowers 1000 ;
+    amor-exp:hasPoliticalOrientation "central"^^xsd:string ;
+    amor-exp:hasPreferredContent amor-graph:news1,
+        amor-graph:news2 ;
+    amor-exp:hasPreferredEntity amor-graph:elPais,
+        amor-graph:libertadDigital ;
+    amor-exp:hasPreferredTopic "Politics"^^xsd:string,
+        "Sports"^^xsd:string ;
+    amor-exp:hasStressLevel "0.5"^^xsd:float ;
+    amor:hasMoralProfile [ a amor:MoralProfile ;
+            rdfs:label "Juan's Moral Profile - Previous Experiment Execution"@en ;
+            amor:analysed ex-exp:human1 ;
+            amor:usedMoralValueModel amor-mft:MoralFoundationsTheory-Foundations ;
+            prov:endedAtTime "2024-04-15T14:30:00-04:00"^^xsd:dateTime ;
+            prov:generated [ a amor:MoralValueAnnotation ;
+                    rdfs:label "Juan's Moral Profile Annotation - Purity/Degradation"@en ;
+                    amor-mft:hasBias "0.15"^^xsd:float ;
+                    amor:hasMoralValueCategory mft:PurityDegradation ],
+                [ a amor:MoralValueAnnotation ;
+                    rdfs:label "Juan's Moral Profile Annotation - Liberty/Oppression"@en ;
+                    amor-mft:hasBias "0.05"^^xsd:float ;
+                    amor:hasMoralValueCategory mft:LibertyOppression ],
+                [ a amor:MoralValueAnnotation ;
+                    rdfs:label "Juan's Moral Profile Annotation - Care/Harm"@en ;
+                    amor-mft:hasBias "0.65"^^xsd:float ;
+                    amor:hasMoralValueCategory mft:CareHarm ],
+                [ a amor:MoralValueAnnotation ;
+                    rdfs:label "Juan's Moral Profile Annotation - Fairness/Cheating"@en ;
+                    amor-mft:hasBias "0.45"^^xsd:float ;
+                    amor:hasMoralValueCategory mft:FairnessCheating ],
+                [ a amor:MoralValueAnnotation ;
+                    rdfs:label "Juan's Moral Profile Annotation - Loyalty/Betrayal"@en ;
+                    amor-mft:hasBias "0.85"^^xsd:float ;
+                    amor:hasMoralValueCategory mft:LoyaltyBetrayal ],
+                [ a amor:MoralValueAnnotation ;
+                    rdfs:label "Juan's Moral Profile Annotation - Authority/Subversion"@en ;
+                    amor-mft:hasBias "0.75"^^xsd:float ;
+                    amor:hasMoralValueCategory mft:AuthoritySubversion ],
+                ex-exp:researcher1 ] ;
+    foaf:gender "male"^^xsd:string .
+
+ex-exp:researcher1 a amor-exp:ExperimentRequester,
+        prov:Person,
+        foaf:Person ;
+    rdfs:label "Alejo"@en .
+
+ex:news2 a schema1:NewsArticle ;
+    schema1:articleBody """El democristiano Friedrich Merz, favorito en las elecciones en Alemania del 23 de febrero, y el canciller socialdemócrata, Olaf Scholz han chocado este domingo por la política migratoria y las relaciones con la extrema derecha en un debate televisivo duro en el fondo, pero respetuoso en las formas. Ambos se han acusado mutuamente, en los primeros minutos de una confrontación de una hora y media, de incumplir promesas y carecer de credibilidad, y en ocasiones Merz ha logrado poner a Scholz a la defensiva. Al mismo tiempo, ambos se han cuidado mucho de medir sus ataques personales. Saben que las formaciones que lideran posiblemente están condenadas a gobernar en coalición después de las elecciones.
+Scholz ha acusado a Merz de haber “roto un tabú” y “faltado a su palabra” al aceptar hace 10 días el apoyo de la extrema derecha de Alternativa para Alemania (AfD) en varios votos parlamentarios sobre inmigración. “Desgraciadamente, no puedo estar seguro de que usted no vaya a repetirlo”, ha dicho el canciller, para sugerir que el democristiano ha roto el cordón sanitario y un día podría aliarse con los radicales. El líder democristiano se ha defendido prometiendo, como ha hecho otras veces, que nunca pactará con el partido Alianza para Alemania (AfD) ni aceptará sus votos para gobernar. Y, en uno de los momentos más tensos del debate, ha acusado al canciller de “no vivir en este mundo” al hablar de la inmigración en Alemania y “contar cuentos de hadas”.
+El debate abre la fase final de una campaña marcada, primero, por el apoyo del magnate trumpista Elon Musk a AfD. Y, sobre todo, por la decisión de Merz, de aceptar los votos de la extrema derecha en el Bundestag para varias iniciativas sobre inmigración. Socialdemócratas, ecologistas, las iglesias católica y protestante e incluso la excanciller democristiana Angela Merkel criticaron a Merz por votar junto a AfD y le acusaron de haber roto un tabú que debilita el cordón sanitario frente a la ultraderecha. Centenares de miles de alemanes han salido a las calles de las principales ciudades para protestar.
+Para Scholz, era una de las últimas oportunidades para intentar la remontada que denodadamente busca desde que precipitó las elecciones al destituir en noviembre a los ministros liberales y quedarse en minoría junto a Los Verdes. Para Merz, se trataba de no cometer ningún error de bulto y preservar su hasta ahora cómodo liderazgo en los sondeos. Para ambos, era un examen sobre la capacidad de recoser los puentes, rotos en campaña, entre las formaciones moderadas.
+No se han roto puentes en el debate, pero ambos han marcado sus diferencias respecto a los votos con AfD la política migratoria o la economía. Merz ha acusado a Scholz de inacción tras una serie de crímenes y atentados perpetrado por extranjeros, y el canciller ha reivindicado haber hecho más durante su mandato que los Gobiernos anteriores. Pero ha añadido que la propuesta de Merz para rechazar en las fronteras alemanas a los demandantes de asilo rebasa los límites del derecho europeo. “Lo que propone el señor Merz va en contra de los intereses alemanes”, ha dicho “¿Por qué seríamos tan estúpidos de hacer algo así?” El democristiano ha señalado que otros países —y entre ellos ha citado a Francia y España— ya practican las llamadas “devoluciones en caliente” que él propone.
+El formato, con solo dos participantes, provocó críticas e incomprensión. Participaban el mejor situado en los sondeos, Merz, y el tercero, Scholz. Pero quedaron fuera Alice Weidel, la candidata de AfD, en segunda posición en los sondeos, y el cuarto, Robert Habeck, de Los Verdes. Que los organizadores, las cadenas públicas ARD y ZDF, optasen por un duelo Scholz-Merz se explica por la tradición de enfrentar al canciller con el jefe de la oposición y principal aspirante a relevarlo, aunque Scholz ya ha dado a entender que si no gana —y vistos los sondeos es casi imposible que gane—no piensa ser ministro en un Gobierno con otro canciller.
+Ante la economía estancada desde 2019 y la profunda crisis industrial, el canciller ha alegado: “No fui yo quien invadió Ucrania”. Se refería a la crisis energética que supuso el fin del gas ruso barato para Alemania. Merz le ha respondido con una pregunta: “¿Por qué en medio de esta crisis profunda energética desconecta tres centrales nucleares que funcionan?” A la pregunta de una de las moderadoras sobre el plan del presidente de EE UU, Donald Trump, para Gaza, Scholz ha respondido: “Es un escándalo. El desplazamiento de población es inaceptable y va en contra del derecho internacional”. “Lo comparto”, ha dicho Merz.
+El debate, moderado por las periodistas Sandra Maischberger y Maybrit Illner, se ha emitido desde los estudios berlineses de Adlershof, que fueron los estudios centrales de la televisión del régimen comunista de la República Democrática Alemania. Los debates electorales en el formato de duelo son una tradición relativamente nueva en este país: los primeros se celebraron en 2002, entre el entonces canciller, el socialdemócrata Gerhard Schröder, y el aspirante conservador, Edmund Stoiber.
+ARD y ZDF había previsto al principio otro duelo entre Habeck y Weidel, pero el líder ecologista y actual ministro de Economía se negó a participar en este debate de segundo plato y además con la candidata de la extrema derecha. La cadena privada RTL ha convocado para el 16 de febrero otro debate en el que, esta vez sí, estarán presentes los cuatro candidatos mejor situados: Merz, Weidel, Scholz y Habeck.
+La discusión sobre la inmigración y, en paralelo, sobre la relación de los partidos moderados con la extrema derecha ha copado la campaña, pero el efecto en los sondeos, por ahora, ha sido nulo. Lo curioso es que llevan meses como si estuviesen congelados: la CDU/CSU, en torno al 30%; AfD, el 20%; SPD, el 15%, y Los Verdes, un poco por debajo y, en algún sondeo, por delante de los socialdemócratas. Como ningún partido tendrá mayoría, y puesto que Merz ha prometido que, pese a sus polémicos votos en el Bundestag, nunca pactará con AfD, el interrogante es si se verá abocado a formar gobierno con el SPD, con Los Verdes o con ambos a la vez.
+Hay campo para el entendimiento. Al abordar la economía, Scholz ha defendido una flexibilización del límite constitucional al endeudamiento, al que se achaca el déficit de inversiones en Alemania. Merz, sin renunciar del todo a mantenerlo, se ha mostrado abierto a la discusión. En política exterior, no han coincidido solo en condenar el plan de Trump para Gaza, sino al afirmar que la entrada de Ucrania en la OTAN, mientras dure la guerra, no está al orden del día. El centro, maltrecho tras una campaña que aleja al centroizquierda del centroderecha, puede recomponerse.
+Y la foto del debate, pese a las diferencias en inmigración o en la economía, no es la de dos líderes irremediablemente polarizados. Será difícil que el duelo altere la campaña. Un sondeo del instituto Forschungsgruppe Wahlen da un resultado igualado: un 37% de telespectadores cree que ganó Scholz; un 34%, Merz; un 29% los vio igualados. La última frase de cada uno resumió bien el tono general. “Tenemos un plan para este país”, ha dicho Merz. Y ha concluido Scholz: “Solo votando al Partido Socialdemócrata habrá con seguridad un Gobierno que se preocupe porque Alemania avance y siga siendo estable”.""" ;
+    schema1:author ex:MarcBassets ;
+    schema1:category "Elections"@en,
+        "News and Politics"@en,
+        "Politics"@en ;
+    schema1:datePublished "2025-02-09"^^xsd:string ;
+    schema1:headline "Scholz y Merz chocan por la inmigración y la ultraderecha sin romper puentes ante una futura coalición en Alemania" ;
+    schema1:image "https://imagenes.elpais.com/resizer/v2/F6TK37IJX2MKUCHZUT346LIX4M.jpg?auth=48c1239d4dcfe66cbc12b2e64774ce955a9cf428402ec48b1f60a0067155389b&width=1200" ;
+    schema1:mentions ex:EdmundStoiber,
+        ex:FriedrichMerz,
+        ex:SozialdemokratischeParteiDeutschlandsspd ;
+    schema1:publisher ex:elPais ;
+    schema1:url "https://elpais.com/internacional/2025-02-09/scholz-y-merz-chocan-por-la-inmigracion-y-la-ultraderecha-sin-romper-puentes-ante-una-futura-coalicion-en-alemania.html" .
+
+ex-exp:numericAnswer1 a schema1:Answer ;
+    schema1:text "1"^^xsd:string .
+
+ex-exp:numericAnswer2 a schema1:Answer ;
+    schema1:text "2"^^xsd:string .
+
+ex-exp:numericAnswer3 a schema1:Answer ;
+    schema1:text "3"^^xsd:string .
+
+ex-exp:numericAnswer4 a schema1:Answer ;
+    schema1:text "4"^^xsd:string .
+
+ex-exp:numericAnswer5 a schema1:Answer ;
+    schema1:text "5"^^xsd:string .
+
+ex:news1 a schema1:NewsArticle ;
+    schema1:articleBody """El Gobierno de Pedro Sánchez afronta durante estos días un sudoku de gran dificultad. Cautivo políticamente de los siete votos de Junts en el Congreso de los Diputados, que necesita para sacar adelante su agenda política y legislativa, busca como satisfacer la última demanda de los del fugado Carles Puigdemont: el traspaso de la competencia de inmigración a la Generalidad de Cataluña.
+Los independentistas quieren poder controlar las fronteras y expulsar inmigrantes sin contar con el Gobierno central cuando recuperen de nueve el Palau de la Generalidad. Dos cuestiones que les acercan más a la independencia de facto y que ampliarían aún más sus diferencias con el resto de regiones españolas. Por si fuera poco, por el camino, ganan también el seguir vaciando de competencias en Cataluña a la Policía Nacional y la Guardia Civil.
+El Ejecutivo se juega poder aprobar los Presupuestos Generales del Estado de 2025, algo que ni intentaron para 2024. El reto no es fácil. En primer lugar, porque el primer escollo que tienen enfrente es, nada más y nada menos, que la Constitución de 1978. De hecho, solo esta línea roja haría que cualquier otro gobierno se echara para atrás, pero no parece que el de Pedro Sánchez vaya a hacerlo.
+El artículo 149.1.2 deja claro que el Estado tiene las competencias exclusivas en materia de "nacionalidad, inmigración, emigración, extranjería y derecho de asilo". Aun así, el Gobierno busca escudarse en el artículo 150.2, que dice que "el Estado podrá transferir o delegar en las CCAA, mediante ley orgánica, facultades correspondientes a materia de titularidad estatal que por su propia naturaleza sean susceptibles de transferencia o delegación".
+Relacionado
+El Gobierno quiere delegar el control de las fronteras a los Mossos para alcanzar un pacto con Junts sobre inmigración
+Pablo Planas: La inmigración y los separatistas catalanes
+El gran problema de esta vía gubernamental es que el Tribunal Constitucional (TC) ha hecho una interpretación muy restrictiva del mismo siempre que ha tenido que dar su parecer ante un recurso de inconstitucionalidad, estableciendo que no pueden transferirse competencias estatales exclusivas cuando estas afectan a la soberanía y a la unidad del Estado, como es el caso de la inmigración.
+Un informe jurídico elaborado por el Sindicato Unificado de Policía (SUP), al que ha tenido acceso Libertad Digital, recuerda que esta visión restrictiva se ha planteado hasta ahora en cuatro sentencias emitidas por el TC en la última década y media. Lo ha hecho, por ejemplo, en dos sentencias contra la reforma del Estatuto de Autonomía de Cataluña, tanto la planteada por el PP (sentencia TC 31/2010) como por el Defensor del Pueblo (sentencia TC 137/2010).
+También en un recurso de la Generalidad de Cataluña contra una resolución de la Dirección General de Inmigración del Gobierno central por invasión de competencias autonómicas (sentencia TC 154/2013) y en un recurso del Defensor del Pueblo contra la Ley de Cataluña 10/2010 de acogida de inmigrantes, sobre derechos lingüísticos y competencias de inmigración (sentencia TC 87/2017).
+No sólo iría en contra de lo dicho por el tribunal español, sino también de lo que ya ha puesto de manifiesto el Tribunal de Justicia de la Unión Europea (TSJUE), exactamente, en la que se conoce como caso Celaj (sentencia C-290/14) en el que se afirma que la fragmentación de la aplicación de la normativa de inmigración dentro de un Estado miembro puede comprometer la coherencia del derecho comunitario y generar inseguridad jurídica.
+El informe jurídico del SUP recuerda que la Directiva 2008/115/CE (Directiva de Retorno) impone reglas comunes de expulsión que "deben aplicarse de manera uniforme, algo que se vería afectado si Cataluña tuviera un régimen diferenciado de inmigración" y, por tanto, el traspaso de esta competencia "podría derivar en procedimientos de infracción contra España por incumplimiento del derecho comunitario, al no garantizar la unidad de aplicación de las normas en todo su territorio".
+Temas
+Cuerpo Nacional de Policía
+Inmigración ilegal
+Junts per Catalunya
+Tribunal de Justicia de la UE""" ;
+    schema1:author ex:JavierAriasBorque ;
+    schema1:category "News and Politics"@en ;
+    schema1:datePublished "2025-02-10"^^xsd:string ;
+    schema1:headline "Los obstáculos del Gobierno para dar inmigración a Cataluña: la Constitución, cinco sentencias y una directiva de la UE" ;
+    schema1:image "https://s.libertaddigital.com/images/trans.png" ;
+    schema1:mentions ex:Catalonia,
+        ex:PoliciaNacional ;
+    schema1:publisher ex:libertadDigital ;
+    schema1:url "https://www.libertaddigital.com/espana/2025-02-10/los-obstaculos-del-gobierno-para-dar-inmigracion-a-cataluna-la-constitucion-cinco-sentencias-y-una-directiva-de-la-ue-7218051/" .
+
+
+# TODO: update these properties to match the actual graph in the robots/scenarios
+ex-exp:human1 onyx:hasEmotionSet [
+	onyx:hasEmotion [
+		onyx:hasEmotionCategory wnaffect:happiness 
+	]
+] .

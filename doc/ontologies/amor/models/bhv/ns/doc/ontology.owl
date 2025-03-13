@@ -1,0 +1,977 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#"
+     xml:base="http://www.gsi.upm.es/ontologies/amor/models/bhv/ns"
+     xmlns:ns="http://www.gsi.upm.es/ontologies/amor/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.gsi.upm.es/ontologies/amor/models/bhv/ns">
+        <owl:versionIRI rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/bhv/ns/1.0.0"/>
+        <terms:creator xml:lang="en">Sergio Muñoz López</terms:creator>
+        <terms:creator xml:lang="en">Álvaro Carrera Barroso</terms:creator>
+        <terms:description xml:lang="en">AMOR-BHV is an ontology that uses AMOR ontology and BHV SKOS Taxonomy to create required relations to use BHV to define moral annotations.</terms:description>
+        <terms:publisher rdf:resource="http://www.gsi.upm.es"/>
+        <terms:title xml:lang="en">AMOR-BHV Ontology</terms:title>
+        <vann:preferredNamespacePrefix>amor-bhv</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">AMOR-BHV is an ontology that uses AMOR ontology and BHV SKOS Taxonomy to create required relations to use BHV to define moral annotations.</rdfs:comment>
+        <rdfs:label xml:lang="en">AMOR-BHV Ontology</rdfs:label>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeJust"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeLogical"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BePolite"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Achievement"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Face"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Humility"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Tradition"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level3">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4a -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4a">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4b -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4b">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#Achievement -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#Achievement">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BePolite -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BePolite">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#Conservation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#Conservation">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#Face -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#Face">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#Humility -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#Humility">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#Tradition -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#Tradition">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,8 @@
+DESCRIBE *
+WHERE {
+    ?uri a schema:NewsArticle ;
+	 schema:category "Travel"@en .
+    OPTIONAL {
+	    ?annotation oa:hasTarget ?uri .
+    }
+}

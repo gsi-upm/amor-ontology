@@ -1,0 +1,187 @@
+@prefix : <http://www.gsi.upm.es/ontologies/amor/examples#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix amor: <http://www.gsi.upm.es/ontologies/amor/ns#> .
+@prefix amor-bhv: <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#> .
+@prefix amor-mft: <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#> .
+@prefix bhv: <http://www.gsi.upm.es/ontologies/bhv#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix marl: <http://www.gsi.upm.es/ontologies/marl/ns#> .
+@prefix mft: <http://www.gsi.upm.es/ontologies/mft/ns#> .
+@prefix mls: <http://www.w3.org/ns/mls#> .
+@prefix onyx: <http://www.gsi.upm.es/ontologies/onyx/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix wnaffect: <http://gsi.upm.es/ontologies/wnaffect/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix itsrdf: <http://www.w3.org/2005/11/its/rdf#> .
+
+<http://www.gsi.upm.es/ontologies/amor/examples>
+  a owl:Ontology ;
+  rdfs:label "AMOR Examples"@en ;
+  owl:versionInfo "1.0.0"^^xsd:string ;
+  owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/examples/1.0.0> ;
+  dc:title "AMOR Examples"@en ;
+  dc:creator "Álvaro Carrera Barroso"@en ;
+  dc:publisher <http://www.gsi.upm.es> ;
+  rdfs:comment "AMOR Examples contains a set of examples using all models required for semantic moral annotation in AMOR project."@en ;
+  dc:description "AMOR Examples contains a set of examples using all models required for semantic moral annotation in AMOR project."@en ;
+  vann:preferredNamespacePrefix "amor-examples" ;
+  vann:preferredNamespaceUri "http://www.gsi.upm.es/ontologies/amor/examples#" .
+
+:news1 a owl:NamedIndividual ,
+    schema:NewsArticle ;
+  schema:articleBody "Director Comey says the probe into last year's US election would assess if crimes were committed."^^xsd:string ;
+  schema:datePublished "2017-03-20T20:30:54+00:00"^^schema:Date ;
+  schema:headline "Trump Russia claims: FBI's Comey confirms investigation of election 'interference'"^^xsd:string ;
+  schema:image <http://ichef-1.bbci.co.uk/news/560/media/images/75306000/jpg/_75306515_line976.jpg>,
+    <http://ichef.bbci.co.uk/news/560/cpsprodpb/8AB9/production/_95231553_comey2.jpg>,
+    <http://ichef.bbci.co.uk/news/560/cpsprodpb/17519/production/_95231559_committee.jpg>,
+    <http://ichef.bbci.co.uk/news/560/cpsprodpb/CC81/production/_95235325_f704a6dc-c017-4971-aac3-04c03eb097fb.jpg>,
+    <http://ichef-1.bbci.co.uk/news/560/cpsprodpb/11AA1/production/_95235327_c0b59f9e-316e-4641-aa7e-3fec6daea62b.jpg>,
+    <http://ichef.bbci.co.uk/news/560/cpsprodpb/0F99/production/_95239930_trumptweet.png>,
+    <http://ichef-1.bbci.co.uk/news/560/cpsprodpb/10DFA/production/_95241196_mediaitem95241195.jpg>,
+    <http://ichef.bbci.co.uk/news/560/cpsprodpb/2CA0/production/_95242411_comey.jpg>, <http://ichef.bbci.co.uk/news/560/cpsprodpb/11318/production/_95242407_mediaitem95242406.jpg>,
+    <http://ichef-1.bbci.co.uk/news/560/cpsprodpb/BCED/production/_92856384_line976.jpg>, <http://ichef-1.bbci.co.uk/news/560/cpsprodpb/12B64/production/_95244667_mediaitem95244666.jpg> ;
+  schema:mainEntityOfPage <http://www.bbc.com/news/world-us-canada-39324587> ;
+  schema:publisher :bbc ;
+  schema:url <http://www.bbc.com/news/world-us-canada-39324587> .
+
+:bbc a schema:Organization ;
+    schema:logo <http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1> ;
+    schema:name "BBC News"^^xsd:string .
+
+:human1 a prov:Person .
+:analysis1 a amor:MoralValueAnalysis ;
+    prov:wasAssociatedWith :human1 ;
+    amor:usedMoralValueModel amor-mft:MoralFoundationsTheory-Basics ;
+    amor:analysed :news1 ;
+    prov:generated :annotation1 .
+
+:annotation1 a amor:MoralValueAnnotation ;
+    itsrdf:taConfidence "1.0"^^xsd:float ;
+    amor:hasMoralValueCategory mft:Liberty ;
+    oa:hasTarget :news1 .
+
+:human2 a prov:Person .
+:analysis2 a amor:MoralValueAnalysis ;
+    prov:wasAssociatedWith :human2 ;
+    amor:usedMoralValueModel amor-bhv:BHVModel-level3 ;
+    amor:analysed :news1 ;
+    prov:generated :annotation2 .
+
+:annotation2 a amor:MoralValueAnnotation ;
+    itsrdf:taConfidence "0.8"^^xsd:float ;
+    amor:hasMoralValueCategory bhv:Conservation ;
+    oa:hasTarget :news1 .
+  
+:robot1 a prov:SoftwareAgent .
+
+:model1 a mls:Model .
+
+:logisticRegression a mls:Algorithm ;
+  rdfs:label "Logistic Regression"@en ,
+    "Regresión Logística"@es .
+
+:run1 a mls:Run ;
+    mls:executes :wekaLogistic ;
+    mls:hasInput :credit-a ;
+    mls:hasOutput :model1 ;
+    mls:realizes :logisticRegression .
+
+:analysis3 a amor:MoralValueAnalysis ;
+    prov:wasAssociatedWith :robot1 ;
+    amor:usedMoralValueModel amor-mft:MoralFoundationsTheory-Basics ;
+    amor:analysed :news1 ;
+    amor:usedMLModel :model1 ;
+    prov:generated :annotation3 .
+
+:annotation3 a amor:MoralValueAnnotation ;
+    amor:hasMoralValueCategory mft:Authority ;
+    itsrdf:taConfidence "0.75"^^xsd:float ;
+    amor-mft:hasPolarityIntensity "0.2"^^xsd:float ;
+    oa:hasTarget :news1 .
+
+:robot2 a prov:SoftwareAgent .
+
+:model2 a mls:Model .
+:knn a mls:Algorithm ;
+  rdfs:label "K-Nearest Neighbors"@en .
+:run2 a mls:Run ;
+    mls:executes :wekaLogistic ;
+    mls:hasInput :opinionDataset ;
+    mls:hasOutput :model2 ;
+    mls:realizes :knn .
+:model3 a mls:Model .
+
+:kmeans a mls:Algorithm ;
+  rdfs:label "K-Means Clustering"@en .
+:run3 a mls:Run ;
+    mls:executes :wekaLogistic ;
+    mls:hasInput :emotionDataset1 ;
+    mls:hasOutput :model3 ;
+    mls:realizes :kmeans .
+
+:model4 a mls:Model .
+
+:linearRegression a mls:Algorithm ;
+    rdfs:label "Linear Regression"@en .
+
+:run4 a mls:Run ;
+    mls:executes :wekaLogistic ;
+    mls:hasInput :moralfoundationdataset ;
+    mls:hasOutput :model4 ;
+    mls:realizes :linearRegression .
+
+:moralAnalysis21 a amor:MoralValueAnalysis ;
+    prov:wasAssociatedWith :robot2 ;
+    amor:usedMoralValueModel amor-mft:MoralFoundationsTheory-Foundations ;
+    amor:analysed :news1 ;
+    amor:usedMLModel :model4 ;
+    prov:generated :moralAnnotation23 .
+
+:moralAnnotation23 a amor:MoralValueAnnotation ;
+    oa:hasTarget mft:AuthoritySubversion ;
+    itsrdf:taConfidence "0.75"^^xsd:float ;
+    amor-mft:hasBias "0.65"^^xsd:float ;
+    amor-mft:hasPolarityIntensity "0.2"^^xsd:float ;
+    oa:hasTarget :news1 .
+
+:sentimentAnalysis33 a marl:SentimentAnalysis ;
+    prov:wasAssociatedWith :robot2 ;
+    marl:minPolarityValue "0.0"^^xsd:float ;
+    marl:maxPolarityValue "1.0"^^xsd:float ;
+    amor:usedMLModel :model2 ;
+    prov:used :news1 ;
+    prov:generated :opinion45 .
+
+:opinion45 a marl:Opinion ;
+    prov:wasDerivedFrom :news1 ;
+    marl:hasPolarity marl:Neutral ;
+    marl:hasPolarityValue "0.5"^^xsd:float ;
+    itsrdf:taConfidence "0.9"^^xsd:float;
+    oa:hasTarget :news1 .
+
+:emotionAnalysis45 a onyx:EmotionAnalysis ;
+    prov:wasAssociatedWith :robot2 ;
+    amor:usedMLModel :model3 ;
+    onyx:usesEmotionModel wnaffect:WNAModel ;
+    prov:used :news1 ;
+    prov:generated :emotionAnnotation87 .
+
+:emotionAnnotation87 a onyx:EmotionSet ;
+    prov:wasDerivedFrom :news1 ;
+    onyx:hasEmotion :emotion1 ;
+    onyx:hasEmotion :emotion2 ;
+    oa:hasTarget :news1 .
+
+:emotion1 a onyx:Emotion ;
+    onyx:hasEmotionCategory wnaffect:Hate ;
+    onyx:hasEmotionIntensity "0.5"^^xsd:float ;
+    onyx:algorithmConfidence "0.9"^^xsd:float .
+:emotion2 a onyx:Emotion ;
+    onyx:hasEmotionCategory wnaffect:Fury ;
+    onyx:hasEmotionIntensity "0.7"^^xsd:float ;
+    onyx:algorithmConfidence "0.65"^^xsd:float .

@@ -1,0 +1,16 @@
+SELECT ?recommended ?confidence
+WHERE {
+	?recommendation oa:hasTarget ?target_news ;
+            amor-exp:hasRecommendationCriterion amor-exp:EntitySimilarity ;
+			oa:hasBody ?recommended ;
+		     itsrdf:taConfidence ?confidence .
+	FILTER (?confidence >= 0.5)
+
+	# This sub-query gets one news article from the graph. You can replace it with the IRI of the news
+	# article you are interested in.
+	{
+		SELECT ?target_news WHERE { ?target_news a schema:NewsArticle; } LIMIT 1
+	}
+}
+ORDER BY DESC(?confidence)
+LIMIT 2

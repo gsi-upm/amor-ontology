@@ -1,0 +1,4 @@
+DESCRIBE ?uri
+WHERE {
+	?uri a schema:NewsArticle.
+}

@@ -1,0 +1,224 @@
+<http://www.gsi.upm.es/ontologies/amor/ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.gsi.upm.es/ontologies/amor/ns> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.gsi.upm.es/ontologies/amor/ns/1.0.0> .
+<http://www.gsi.upm.es/ontologies/amor/ns> <http://purl.org/dc/terms/creator> "Sergio Muñoz López"@en .
+<http://www.gsi.upm.es/ontologies/amor/ns> <http://purl.org/dc/terms/creator> "Álvaro Carrera Barroso"@en .
+<http://www.gsi.upm.es/ontologies/amor/ns> <http://purl.org/dc/terms/description> "AMOR is an ontology designed for representing moral values and value annotations in textual sources."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns> <http://purl.org/dc/terms/publisher> <http://www.gsi.upm.es> .
+<http://www.gsi.upm.es/ontologies/amor/ns> <http://purl.org/dc/terms/title> "AMOR Moral Values Ontology"@en .
+<http://www.gsi.upm.es/ontologies/amor/ns> <http://purl.org/vocab/vann/preferredNamespacePrefix> "amor" .
+<http://www.gsi.upm.es/ontologies/amor/ns> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.gsi.upm.es/ontologies/amor/ns#" .
+<http://www.gsi.upm.es/ontologies/amor/ns> <http://www.w3.org/2000/01/rdf-schema#comment> "AMOR is an ontology designed for representing moral values analysis and annotations in textual sources."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns> <http://www.w3.org/2000/01/rdf-schema#label> "AMOR Moral Values Ontology"@en .
+<http://www.gsi.upm.es/ontologies/amor/ns> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#analysed
+<http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#used> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> .
+<http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> .
+<http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a ValueAnalysis with the resource that is analysed."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/2000/01/rdf-schema#label> "analysed"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#annotated
+<http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
+<http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> .
+<http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the ValueAnnotation activity with the resource that is annotated."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.w3.org/2000/01/rdf-schema#label> "annotated"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile
+<http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Agent> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile> .
+<http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an agent (human or not) with its moral profile."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile> <http://www.w3.org/2000/01/rdf-schema#label> "has moral profile"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory
+<http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#hadMember> .
+<http://www.w3.org/ns/prov#hadMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+<http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the category of the moral value."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.w3.org/2000/01/rdf-schema#label> "has moral value category"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel
+<http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#used> .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/mls#Model> .
+<http://www.w3.org/ns/mls#Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates an activity (such as a MoralAnalysis ) with the Machine Learning Model (mls:Model) used to carry out the activity."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.w3.org/2000/01/rdf-schema#label> "used machine learning model"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel
+<http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#used> .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the moral value model used in the analysis."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.w3.org/2000/01/rdf-schema#label> "used moral value model"@en .
+# 
+# http://www.w3.org/ns/prov#hadMember
+# 
+# http://www.w3.org/ns/prov#used
+# 
+# http://www.w3.org/ns/prov#wasDerivedFrom
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#confidence
+<http://www.gsi.upm.es/ontologies/amor/ns#confidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.gsi.upm.es/ontologies/amor/ns#confidence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
+<http://www.gsi.upm.es/ontologies/amor/ns#confidence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.gsi.upm.es/ontologies/amor/ns#confidence> <http://www.w3.org/2000/01/rdf-schema#comment> "The confidence score of the moral value annotation, ranging from 0 to 1."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#confidence> <http://www.w3.org/2000/01/rdf-schema#label> "confidence"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String
+<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/NewsArticle
+<http://schema.org/NewsArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity
+<http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Agent> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/NewsArticle> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents any analysed entity that is used as a source of the analysis. It be text, such as a string or a news article; but it can be an agent; i.e. a human or a robot analysed using the results of a questionnarie."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Analysed Entity"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#MLEntity
+<http://www.gsi.upm.es/ontologies/amor/ns#MLEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MLEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/mls#InformationEntity> .
+<http://www.w3.org/ns/mls#InformationEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MLEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MLEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents any entity related with a Machine Learning process. It is a subclass of mls:Entity and prov:Entity."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#MLEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Machine Learning Entity"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#MLProcess
+<http://www.gsi.upm.es/ontologies/amor/ns#MLProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MLProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/mls#Run> .
+<http://www.w3.org/ns/mls#Run> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MLProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MLProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a process related with Machine Learning that generates some output, such as a mls:Model or any other mls:InformationEntity."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#MLProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Machine Learning Process"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the moral profile analysis of an agent."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile> <http://www.w3.org/2000/01/rdf-schema#label> "Moral Profile"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the activity of analyzing text for moral values."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Moral Value Analysis"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a value annotation extracted from textual sources."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "Moral Value Annotation"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a category of moral values."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Moral Value Category"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a model for categorizing moral values."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> <http://www.w3.org/2000/01/rdf-schema#label> "Moral Value Model"@en .
+# 
+# http://www.w3.org/ns/mls#InformationEntity
+# 
+# http://www.w3.org/ns/mls#Model
+# 
+# http://www.w3.org/ns/mls#Run
+# 
+# http://www.w3.org/ns/prov#Activity
+# 
+# http://www.w3.org/ns/prov#Agent
+# 
+# http://www.w3.org/ns/prov#Entity
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

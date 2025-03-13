@@ -1,0 +1,489 @@
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns/1.0.0> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/dc/terms/creator> "Sergio Muñoz López"@en .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/dc/terms/creator> "Álvaro Carrera Barroso"@en .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/dc/terms/description> "AMOR-BHV is an ontology that uses AMOR ontology and BHV SKOS Taxonomy to create required relations to use BHV to define moral annotations."@en .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/dc/terms/publisher> <http://www.gsi.upm.es> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/dc/terms/title> "AMOR-BHV Ontology"@en .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/vocab/vann/preferredNamespacePrefix> "amor-bhv" .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#" .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://www.w3.org/2000/01/rdf-schema#comment> "AMOR-BHV is an ontology that uses AMOR ontology and BHV SKOS Taxonomy to create required relations to use BHV to define moral annotations."@en .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://www.w3.org/2000/01/rdf-schema#label> "AMOR-BHV Ontology"@en .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory
+<http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeJust> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeLogical> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BePolite> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#Achievement> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#Face> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#Humility> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#Tradition> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level3
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level3> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level3> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level3> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level3> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4a
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4a> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4a> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4b
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4b> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4b> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#Achievement
+<http://www.gsi.upm.es/ontologies/bhv/ns#Achievement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Achievement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BePolite
+<http://www.gsi.upm.es/ontologies/bhv/ns#BePolite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BePolite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring
+<http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability
+<http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal
+<http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules
+<http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#Conservation
+<http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#Face
+<http://www.gsi.upm.es/ontologies/bhv/ns#Face> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Face> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree
+<http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure
+<http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy
+<http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism
+<http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#Humility
+<http://www.gsi.upm.es/ontologies/bhv/ns#Humility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Humility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange
+<http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus
+<http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance
+<http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources
+<http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal
+<http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal
+<http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus
+<http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation
+<http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#Tradition
+<http://www.gsi.upm.es/ontologies/bhv/ns#Tradition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Tradition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

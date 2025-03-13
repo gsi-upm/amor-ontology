@@ -1,0 +1,472 @@
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.gsi.upm.es/ontologies/amor/experiments/examples/1.0.0> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples> <http://purl.org/dc/terms/creator> "Álvaro Carrera Barroso"@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples> <http://purl.org/dc/terms/description> "AMOR Experiments Examples contains a set of examples using the models required to register an experiment in the Semantic Ethical Black Box of AMOR project."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples> <http://purl.org/dc/terms/publisher> <http://www.gsi.upm.es> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples> <http://purl.org/dc/terms/title> "AMOR Experiments Examples"@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples> <http://purl.org/vocab/vann/preferredNamespacePrefix> "amor-exp-examples" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.gsi.upm.es/ontologies/amor/experiments/examples#" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples> <http://www.w3.org/2000/01/rdf-schema#comment> "AMOR Experiments Examples contains a set of examples using the models required to register an experiment in the Semantic Ethical Black Box of AMOR project."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples> <http://www.w3.org/2000/01/rdf-schema#label> "AMOR Experiments Examples"@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/suggestedAnswer
+<http://schema.org/suggestedAnswer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/text
+<http://schema.org/text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/url
+<http://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAccesibilityCategory
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAccesibilityCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAgeBracket
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAgeBracket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAppearance
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAppearance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAverageSocialNetworkActivityPerMonth
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAverageSocialNetworkActivityPerMonth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundMusic
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundMusic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasCategory
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasContentAdaptationStrategy
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasContentAdaptationStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasEducationLevel
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasEducationLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExecutor
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExecutor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentationSubject
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentationSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFacialExpresivity
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFacialExpresivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFinalQuestion
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFinalQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasGesturalExpresivity
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasGesturalExpresivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIntermediateQuestion
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIntermediateQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMConfiguration
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMModel
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMToken
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMToken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLanguageComplexityLevel
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLanguageComplexityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasNumberOfFollowers
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasNumberOfFollowers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPersonality
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPersonality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPoliticalOrientation
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPoliticalOrientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredContent
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredEntity
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredTopic
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasStressLevel
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasStressLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVocalExpresivity
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVocalExpresivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMEndPoint
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMEndPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMService
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesPrompt
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesPrompt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#analysed
+<http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile
+<http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory
+<http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel
+<http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#endedAtTime
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#generated
+<http://www.w3.org/ns/prov#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/age
+<http://xmlns.com/foaf/0.1/age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/gender
+<http://xmlns.com/foaf/0.1/gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://kb.openrobots.org#Robot
+<http://kb.openrobots.org#Robot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/Answer
+<http://schema.org/Answer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/Question
+<http://schema.org/Question> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentRequester
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentRequester> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentationSubject
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentationSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Person
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#SoftwareAgent
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://amor-graph.gsi.upm.es/ns#dataset1
+<http://amor-graph.gsi.upm.es/ns#dataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://amor-graph.gsi.upm.es/ns#dataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset> .
+<http://amor-graph.gsi.upm.es/ns#dataset1> <http://schema.org/url> <http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json> .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kb.openrobots.org#Robot> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#SoftwareAgent> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41> <http://www.w3.org/2000/01/rdf-schema#label> "ARI 41"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundMusic> "relaxingJapaneseMusic.mp3" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario> "japaneseHouse.virtual" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasContentAdaptationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#AfectiveAdaptationStrategy> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasContentAdaptationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralAdaptationStrategy> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExecutor> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation> _:genid1 .
+_:genid1 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIntermediateQuestion> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#question3> .
+_:genid1 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#question2> .
+_:genid1 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#question1> .
+_:genid1 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFinalQuestion> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#question4> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentationSubject> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMConfiguration> _:genid2 .
+_:genid2 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesPrompt> "You are a 70 years old lady. You are in a Japanese house. You are reading the news. You are grumpy. You are wearing a gray dress. You have white hair" .
+_:genid2 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMService> "ollama" .
+_:genid2 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMEndPoint> "http://localhost:6505" .
+_:genid2 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMToken> "345adfwere23?$adsf" .
+_:genid2 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMModel> "phi4:14b" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement> "poi1" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement> "poi2" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData> "total population" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar> _:genid3 .
+_:genid3 <http://xmlns.com/foaf/0.1/gender> "female" .
+_:genid3 <http://xmlns.com/foaf/0.1/age> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid3 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVocalExpresivity> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotiveExpresivity> .
+_:genid3 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPersonality> "grumpy" .
+_:genid3 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLanguageComplexityLevel> "adult" .
+_:genid3 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasGesturalExpresivity> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotiveExpresivity> .
+_:genid3 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFacialExpresivity> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotiveExpresivity> .
+_:genid3 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasCategory> "old lady" .
+_:genid3 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAppearance> "white hair" .
+_:genid3 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAppearance> "gray dress" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset> <http://amor-graph.gsi.upm.es/ns#dataset1> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage> "es_ES" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoCooperationRobot> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy> _:genid4 .
+_:genid4 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery> "\n            PREFIX prov: <http://www.w3.org/ns/prov#>\n            PREFIX segb: <http://www.gsi.upm.es/ontologies/segb/ns#>\n            PREFIX foaf: <http://xmlns.com/foaf/0.1/>\n            PREFIX mls: <http://www.w3.org/ns/mls#>\n            PREFIX oro: <http://kb.openrobots.org#>\n            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\n\n            SELECT ?activity ?startTime ?endTime ?model ?human ?humanName\n            WHERE {\n            ?activity a segb:LoggedActivity ;\n                    segb:usedMLModel ?model ;\n                    prov:startedAtTime ?startTime ;\n                    prov:endedAtTime ?endTime ;\n                    prov:wasAssociatedWith ?agent .\n            ?agent a oro:Robot ;\n                    oro:hasName ?robotName .\t\n            ?run mls:hasOutput ?model ;\n                    prov:wasAssociatedWith ?human .\n            ?human a prov:Person, foaf:Person ;\n                    foaf:firstName ?humanName .\n              FILTER (\n                ?startTime >= \"2024-11-16T00:00:00\"^^xsd:dateTime &&\n                ?endTime <= \"2024-11-16T23:59:59\"^^xsd:dateTime &&\n                ?robotName = \"ARI\"@es\n              )\n            }\n        " .
+_:genid4 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery> "http://amor-graph.gsi.upm.es/sparql" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.w3.org/2000/01/rdf-schema#label> "Experiment 1"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentationSubject> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAccesibilityCategory> "fragile" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAgeBracket> "18-25" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAverageSocialNetworkActivityPerMonth> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasEducationLevel> "Master of Science" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasNumberOfFollowers> "1000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPoliticalOrientation> "central" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredContent> <http://amor-graph.gsi.upm.es/ns#news1> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredContent> <http://amor-graph.gsi.upm.es/ns#news2> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredEntity> <http://amor-graph.gsi.upm.es/ns#elPais> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredEntity> <http://amor-graph.gsi.upm.es/ns#libertadDigital> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredTopic> "Politics" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredTopic> "Sports" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasStressLevel> "0.5"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile> _:genid5 .
+_:genid5 <http://www.w3.org/ns/prov#generated> _:genid11 .
+_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "Juan's Moral Profile Annotation - Liberty/Oppression"@en .
+_:genid11 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#LibertyOppression> .
+_:genid11 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.05"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
+_:genid5 <http://www.w3.org/ns/prov#generated> _:genid10 .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "Juan's Moral Profile Annotation - Purity/Degradation"@en .
+_:genid10 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation> .
+_:genid10 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.15"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
+_:genid5 <http://www.w3.org/ns/prov#generated> _:genid9 .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "Juan's Moral Profile Annotation - Authority/Subversion"@en .
+_:genid9 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion> .
+_:genid9 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.75"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
+_:genid5 <http://www.w3.org/ns/prov#generated> _:genid8 .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "Juan's Moral Profile Annotation - Loyalty/Betrayal"@en .
+_:genid8 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal> .
+_:genid8 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.85"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
+_:genid5 <http://www.w3.org/ns/prov#generated> _:genid7 .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Juan's Moral Profile Annotation - Fairness/Cheating"@en .
+_:genid7 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating> .
+_:genid7 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.45"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
+_:genid5 <http://www.w3.org/ns/prov#generated> _:genid6 .
+_:genid6 <http://www.w3.org/2000/01/rdf-schema#label> "Juan's Moral Profile Annotation - Care/Harm"@en .
+_:genid6 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#CareHarm> .
+_:genid6 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.65"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
+_:genid5 <http://www.w3.org/ns/prov#generated> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1> .
+_:genid5 <http://www.w3.org/ns/prov#endedAtTime> "2024-04-15T14:30:00-04:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid5 <http://www.w3.org/2000/01/rdf-schema#label> "Juan's Moral Profile - Previous Experiment Execution"@en .
+_:genid5 <http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations> .
+_:genid5 <http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.w3.org/2000/01/rdf-schema#label> "Juan"@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://xmlns.com/foaf/0.1/gender> "male" .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer1
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer1> <http://schema.org/text> "1" .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer2
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer2> <http://schema.org/text> "2" .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer3
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer3> <http://schema.org/text> "3" .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer4
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer4> <http://schema.org/text> "4" .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer5
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer5> <http://schema.org/text> "5" .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/examples#question1
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Question> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question1> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer1> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question1> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer2> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question1> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer3> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question1> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer4> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question1> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer5> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question1> <http://schema.org/text> "Do you feel happy now? (1-No, I am not happy at all, 5-I am very happy)"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/examples#question2
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Question> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question2> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer1> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question2> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer2> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question2> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer3> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question2> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer4> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question2> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer5> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question2> <http://schema.org/text> "Do you like news about sports? (1-No, I don't like them at all, 5-Yes, I really like them.)"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/examples#question3
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Question> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question3> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer1> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question3> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer2> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question3> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer3> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question3> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer4> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question3> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer5> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question3> <http://schema.org/text> "Do you feel sad now? (1-No, I am not sad at all, 5-I am very sad.)"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/examples#question4
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Question> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question4> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer1> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question4> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer2> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question4> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer3> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question4> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer4> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question4> <http://schema.org/suggestedAnswer> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer5> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#question4> <http://schema.org/text> "Do you think the news reading have modified your emotion? (1-Not at all, 5-Yes, of course.)"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentRequester> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1> <http://www.w3.org/2000/01/rdf-schema#label> "Alejo"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

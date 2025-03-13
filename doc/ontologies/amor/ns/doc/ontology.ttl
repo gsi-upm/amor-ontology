@@ -1,0 +1,235 @@
+@prefix : <http://www.gsi.upm.es/ontologies/amor/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.gsi.upm.es/ontologies/amor/ns#> .
+
+<http://www.gsi.upm.es/ontologies/amor/ns> rdf:type owl:Ontology ;
+                                            owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/ns/1.0.0> ;
+                                            <http://purl.org/dc/terms/creator> "Sergio Muñoz López"@en ,
+                                                                               "Álvaro Carrera Barroso"@en ;
+                                            <http://purl.org/dc/terms/description> "AMOR is an ontology designed for representing moral values and value annotations in textual sources."@en ;
+                                            <http://purl.org/dc/terms/publisher> <http://www.gsi.upm.es> ;
+                                            <http://purl.org/dc/terms/title> "AMOR Moral Values Ontology"@en ;
+                                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "amor" ;
+                                            <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.gsi.upm.es/ontologies/amor/ns#" ;
+                                            rdfs:comment "AMOR is an ontology designed for representing moral values analysis and annotations in textual sources."@en ;
+                                            rdfs:label "AMOR Moral Values Ontology"@en ;
+                                            owl:versionInfo "1.0.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#analysed
+:analysed rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
+          rdfs:domain :MoralValueAnalysis ;
+          rdfs:range :AnalysedEntity ;
+          rdfs:comment "This property relates a ValueAnalysis with the resource that is analysed."@en ;
+          rdfs:label "analysed"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#annotated
+:annotated rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasDerivedFrom> ;
+           rdfs:domain :MoralValueAnnotation ;
+           rdfs:range :AnalysedEntity ;
+           rdfs:comment "This property relates the ValueAnnotation activity with the resource that is annotated."@en ;
+           rdfs:label "annotated"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile
+:hasMoralProfile rdf:type owl:ObjectProperty ;
+                 rdfs:domain <http://www.w3.org/ns/prov#Agent> ;
+                 rdfs:range :MoralProfile ;
+                 rdfs:comment "Relates an agent (human or not) with its moral profile."@en ;
+                 rdfs:label "has moral profile"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory
+:hasMoralValueCategory rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf <http://www.w3.org/ns/prov#hadMember> ;
+                       rdfs:domain [ rdf:type owl:Class ;
+                                     owl:unionOf ( :MoralValueAnnotation
+                                                   :MoralValueModel
+                                                 )
+                                   ] ;
+                       rdfs:range :MoralValueCategory ;
+                       rdfs:comment "Specifies the category of the moral value."@en ;
+                       rdfs:label "has moral value category"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel
+:usedMLModel rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
+             rdfs:domain <http://www.w3.org/ns/prov#Activity> ;
+             rdfs:range <http://www.w3.org/ns/mls#Model> ;
+             rdfs:comment "This property relates an activity (such as a MoralAnalysis ) with the Machine Learning Model (mls:Model) used to carry out the activity."@en ;
+             rdfs:label "used machine learning model"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel
+:usedMoralValueModel rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
+                     rdfs:domain :MoralValueAnalysis ;
+                     rdfs:range :MoralValueModel ;
+                     rdfs:comment "Specifies the moral value model used in the analysis."@en ;
+                     rdfs:label "used moral value model"@en .
+
+
+###  http://www.w3.org/ns/prov#hadMember
+<http://www.w3.org/ns/prov#hadMember> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/prov#used
+<http://www.w3.org/ns/prov#used> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#confidence
+:confidence rdf:type owl:DatatypeProperty ;
+            rdfs:domain :MoralValueAnnotation ;
+            rdfs:range xsd:float ;
+            rdfs:comment "The confidence score of the moral value annotation, ranging from 0 to 1."@en ;
+            rdfs:label "confidence"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String
+<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String> rdf:type owl:Class .
+
+
+###  http://schema.org/NewsArticle
+<http://schema.org/NewsArticle> rdf:type owl:Class .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity
+:AnalysedEntity rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:unionOf ( <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String>
+                                                    <http://schema.org/NewsArticle>
+                                                    <http://www.w3.org/ns/prov#Agent>
+                                                  )
+                                    ] ;
+                rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                rdfs:comment "Represents any analysed entity that is used as a source of the analysis. It be text, such as a string or a news article; but it can be an agent; i.e. a human or a robot analysed using the results of a questionnarie."@en ;
+                rdfs:label "Analysed Entity"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#MLEntity
+:MLEntity rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.w3.org/ns/mls#InformationEntity> ,
+                          <http://www.w3.org/ns/prov#Entity> ;
+          rdfs:comment "Represents any entity related with a Machine Learning process. It is a subclass of mls:Entity and prov:Entity."@en ;
+          rdfs:label "Machine Learning Entity"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#MLProcess
+:MLProcess rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/ns/mls#Run> ,
+                           <http://www.w3.org/ns/prov#Activity> ;
+           rdfs:comment "Represents a process related with Machine Learning that generates some output, such as a mls:Model or any other mls:InformationEntity."@en ;
+           rdfs:label "Machine Learning Process"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile
+:MoralProfile rdf:type owl:Class ;
+              rdfs:subClassOf :MoralValueAnalysis ;
+              rdfs:comment "Represents the moral profile analysis of an agent."@en ;
+              rdfs:label "Moral Profile"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis
+:MoralValueAnalysis rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                    rdfs:comment "Represents the activity of analyzing text for moral values."@en ;
+                    rdfs:label "Moral Value Analysis"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation
+:MoralValueAnnotation rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                      rdfs:comment "Represents a value annotation extracted from textual sources."@en ;
+                      rdfs:label "Moral Value Annotation"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory
+:MoralValueCategory rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                    rdfs:comment "Represents a category of moral values."@en ;
+                    rdfs:label "Moral Value Category"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel
+:MoralValueModel rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                 rdfs:comment "Represents a model for categorizing moral values."@en ;
+                 rdfs:label "Moral Value Model"@en .
+
+
+###  http://www.w3.org/ns/mls#InformationEntity
+<http://www.w3.org/ns/mls#InformationEntity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/mls#Model
+<http://www.w3.org/ns/mls#Model> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/mls#Run
+<http://www.w3.org/ns/mls#Run> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

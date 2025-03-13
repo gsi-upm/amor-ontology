@@ -1,0 +1,14 @@
+CONSTRUCT {
+	?recommended ?prop ?value
+}
+WHERE {
+	?recommendation oa:hasTarget ?target_news ;
+			oa:hasBody ?recommended .
+	?recommended ?prop ?value .
+
+	# This sub-query gets one news article from the graph. You can replace it with the IRI of the news
+	# article you are interested in.
+	{
+		SELECT ?target_news WHERE { ?target_news a schema:NewsArticle; } LIMIT 1
+	}
+}

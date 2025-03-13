@@ -1,0 +1,567 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.gsi.upm.es/ontologies/amor/models/mft/ns", "http://www.w3.org/2002/07/owl", "http://www.gsi.upm.es/ontologies/amor/ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "AMOR-MFT Ontology"
+    },
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+    "version" : "1.0.0",
+    "author" : [ "Álvaro Carrera Barroso", "Sergio Muñoz López" ],
+    "description" : {
+      "en" : "AMOR-MFT is an ontology that uses AMOR ontology and MFT SKOS Taxonomy to create required relations to use MFT to define moral annotations."
+    },
+    "labels" : {
+      "en" : "AMOR-MFT Ontology"
+    },
+    "comments" : {
+      "en" : "AMOR-MFT is an ontology that uses AMOR ontology and MFT SKOS Taxonomy to create required relations to use MFT to define moral annotations."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Álvaro Carrera Barroso",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Sergio Muñoz López",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "amor-mft",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "AMOR-MFT Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MFTFoundation"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "FairnessCheating"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "LibertyOpression"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "LoyaltyBetrayal"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#CareHarm",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "CareHarm"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "AuthoritySubversion"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "PurityDegradation"
+      }
+    } ],
+    "id" : "2",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralValueCategory"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MFTValueCategory"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Betrayal",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "Betrayal"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Loyalty",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "Loyalty"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "Liberty"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Purity",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "Purity"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "Authority"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Subversion",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "Subversion"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Harm",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "Harm"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Cheating",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "Cheating"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Care",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "Care"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Degradation",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "Degradation"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Fairness",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "Fairness"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Opression",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "Opression"
+      }
+    } ],
+    "subClasses" : [ "2" ],
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralValueAnnotation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#ObjectPropert",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectPropert"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+      "labels" : {
+        "IRI-based" : "hasVice",
+        "en" : "has vice"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Polarity"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+      "labels" : {
+        "IRI-based" : "Vice",
+        "en" : "Virtue",
+        "es" : "Virtud"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+      "labels" : {
+        "IRI-based" : "Virtue",
+        "en" : "Vice",
+        "es" : "Vicio"
+      }
+    } ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralValueModel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+      "annotations" : {
+        "hasMoralValueCategory" : [ {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#CareHarm",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MoralFoundationsTheory-Foundations"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+      "annotations" : {
+        "hasMoralValueCategory" : [ {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Subversion",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Betrayal",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Purity",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Fairness",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Harm",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Care",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Degradation",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Loyalty",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Cheating",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Oppression",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MoralFoundationsTheory-Basics"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isViceOf",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isViceOf",
+      "en" : "is vice of"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "5"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasBias",
+      "en" : "has bias"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "The bias of a moral value annotation represent how close is the annotated content to the vice or the virtue. The range of this bias is a range bewteen -1.0 (Vice) to 1.0 (Virtue)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice",
+    "inverse" : "0",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasVice",
+      "en" : "has vice"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isVirtueOf",
+    "inverse" : "12",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isVirtueOf",
+      "en" : "is virtue of"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "oppositeOf"
+    },
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasPolarity",
+      "en" : "has polarity"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The polarity is represents the Vice or the Virtue of the MFT Moral Value category."
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasPolarityIntensity",
+      "en" : "has polarity intensity"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "The polarity of a moral value annotation represents the intesity of the moral value in the analysed textual source."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasVirtue",
+      "en" : "has virtue"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "12"
+  } ]
+}

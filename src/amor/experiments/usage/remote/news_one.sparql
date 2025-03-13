@@ -1,0 +1,7 @@
+DESCRIBE ?uri
+# This sub-query gets the first news article in the graph.
+# You can replace ?uri with uri of the news you are interested in
+WHERE {
+	?uri a schema:NewsArticle.
+}
+LIMIT 1

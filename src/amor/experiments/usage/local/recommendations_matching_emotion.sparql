@@ -1,0 +1,26 @@
+CONSTRUCT {
+	?subject amor-exp:hasPreferredContent ?recommendation .
+	?recommendation ?prop ?value .
+}
+# Alternatively
+#SELECT ?subject ?cat ?recommendation ?prop ?value
+WHERE {      
+	#This would be the experiment in process
+	ex-exp:experiment1 amor-exp:hasExperimentSubject ?subject .
+	?subject onyx:hasEmotionSet [
+			onyx:hasEmotion [
+				onyx:hasEmotionCategory ?cat 
+			]
+		]
+	.
+	SERVICE <https://amor-graph.gsi.upm.es/news/> {
+		?recommendation a schema:NewsArticle .
+		?annotation a amor:EmotionAnnotation ;
+			    onyx:hasEmotion [
+				onyx:hasEmotionCategory ?cat
+			    ] ;
+			    oa:hasTarget ?recommendation .
+		?recommendation ?prop ?value
+	}
+}
+LIMIT 10

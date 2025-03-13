@@ -1,0 +1,402 @@
+<h2 id="crossreference" class="list">Cross-reference for AMOR Moral Value Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by AMOR Moral Value Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#AnalysedEntity" title="http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity">Analysed Entity</a></li>
+  <li><a href="#MLEntity" title="http://www.gsi.upm.es/ontologies/amor/ns#MLEntity">Machine Learning Entity</a></li>
+  <li><a href="#MLProcess" title="http://www.gsi.upm.es/ontologies/amor/ns#MLProcess">Machine Learning Process</a></li>
+  <li><a href="#MoralProfile" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile">Moral Profile</a></li>
+  <li><a href="#MoralValueAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis">Moral Value Analysis</a></li>
+  <li><a href="#MoralValueAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation">Moral Value Annotation</a></li>
+  <li><a href="#MoralValueCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory">Moral Value Category</a></li>
+  <li><a href="#MoralValueModel" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel">Moral Value Model</a></li>
+ </ul>
+ <div class="entity" id="AnalysedEntity">
+  <h3>Analysed Entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity</p>
+  <div class="comment">
+   <span class="markdown">Represents any analysed entity that is used as a source of the analysis. It be text, such as a string or a news article; but it can be an agent; i.e. a human or a robot analysed using the results of a questionnarie.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String" target="_blank" title="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String">String</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="http://schema.org/NewsArticle" target="_blank" title="http://schema.org/NewsArticle">News Article</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#analysed" title="http://www.gsi.upm.es/ontologies/amor/ns#analysed">analysed</a> <sup class="type-op" title="object property">op</sup>, <a href="#annotated" title="http://www.gsi.upm.es/ontologies/amor/ns#annotated">annotated</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MLEntity">
+  <h3>Machine Learning Entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#MLEntity</p>
+  <div class="comment">
+   <span class="markdown">Represents any entity related with a Machine Learning process. It is a subclass of mls:Entity and prov:Entity.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/mls#InformationEntity" target="_blank" title="http://www.w3.org/ns/mls#InformationEntity">Information Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MLProcess">
+  <h3>Machine Learning Process<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#MLProcess</p>
+  <div class="comment">
+   <span class="markdown">Represents a process related with Machine Learning that generates some output, such as a mls:Model or any other mls:InformationEntity.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/mls#Run" target="_blank" title="http://www.w3.org/ns/mls#Run">Run</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MoralProfile">
+  <h3>Moral Profile<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile</p>
+  <div class="comment">
+   <span class="markdown">Represents the moral profile analysis of an agent.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#MoralValueAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis">Moral Value Analysis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasMoralProfile" title="http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile">has moral profile</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MoralValueAnalysis">
+  <h3>Moral Value Analysis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis</p>
+  <div class="comment">
+   <span class="markdown">Represents the activity of analyzing text for moral values.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#MoralProfile" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile">Moral Profile</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#analysed" title="http://www.gsi.upm.es/ontologies/amor/ns#analysed">analysed</a> <sup class="type-op" title="object property">op</sup>, <a href="#usedMoralValueModel" title="http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel">used moral value model</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MoralValueAnnotation">
+  <h3>Moral Value Annotation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation</p>
+  <div class="comment">
+   <span class="markdown">Represents a value annotation extracted from textual sources.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#annotated" title="http://www.gsi.upm.es/ontologies/amor/ns#annotated">annotated</a> <sup class="type-op" title="object property">op</sup>, <a href="#confidence" title="http://www.gsi.upm.es/ontologies/amor/ns#confidence">confidence</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMoralValueCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory">has moral value category</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MoralValueCategory">
+  <h3>Moral Value Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory</p>
+  <div class="comment">
+   <span class="markdown">Represents a category of moral values.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasMoralValueCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory">has moral value category</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MoralValueModel">
+  <h3>Moral Value Model<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel</p>
+  <div class="comment">
+   <span class="markdown">Represents a model for categorizing moral values.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasMoralValueCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory">has moral value category</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#usedMoralValueModel" title="http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel">used moral value model</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#analysed" title="http://www.gsi.upm.es/ontologies/amor/ns#analysed">analysed</a></li>
+  <li><a href="#annotated" title="http://www.gsi.upm.es/ontologies/amor/ns#annotated">annotated</a></li>
+  <li><a href="#hasMoralProfile" title="http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile">has moral profile</a></li>
+  <li><a href="#hasMoralValueCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory">has moral value category</a></li>
+  <li><a href="#usedMLModel" title="http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel">used machine learning model</a></li>
+  <li><a href="#usedMoralValueModel" title="http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel">used moral value model</a></li>
+ </ul>
+ <div class="entity" id="analysed">
+  <h3>analysed<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#analysed</p>
+  <div class="comment">
+   <span class="markdown">This property relates a ValueAnalysis with the resource that is analysed.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#used" target="_blank" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#MoralValueAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis">Moral Value Analysis</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AnalysedEntity" title="http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity">Analysed Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="annotated">
+  <h3>annotated<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#annotated</p>
+  <div class="comment">
+   <span class="markdown">This property relates the ValueAnnotation activity with the resource that is annotated.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#wasDerivedFrom" target="_blank" title="http://www.w3.org/ns/prov#wasDerivedFrom">was Derived From</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#MoralValueAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation">Moral Value Annotation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AnalysedEntity" title="http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity">Analysed Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasMoralProfile">
+  <h3>has moral profile<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile</p>
+  <div class="comment">
+   <span class="markdown">Relates an agent (human or not) with its moral profile.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#MoralProfile" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile">Moral Profile</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasMoralValueCategory">
+  <h3>has moral value category<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory</p>
+  <div class="comment">
+   <span class="markdown">Specifies the category of the moral value.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#hadMember" target="_blank" title="http://www.w3.org/ns/prov#hadMember">had Member</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#MoralValueAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation">Moral Value Annotation</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#MoralValueModel" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel">Moral Value Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#MoralValueCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory">Moral Value Category</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="usedMLModel">
+  <h3>used machine learning model<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel</p>
+  <div class="comment">
+   <span class="markdown">This property relates an activity (such as a MoralAnalysis ) with the Machine Learning Model (mls:Model) used to carry out the activity.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#used" target="_blank" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/mls#Model" target="_blank" title="http://www.w3.org/ns/mls#Model">Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="usedMoralValueModel">
+  <h3>used moral value model<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel</p>
+  <div class="comment">
+   <span class="markdown">Specifies the moral value model used in the analysis.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#used" target="_blank" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#MoralValueAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis">Moral Value Analysis</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#MoralValueModel" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel">Moral Value Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#confidence" title="http://www.gsi.upm.es/ontologies/amor/ns#confidence">confidence</a></li>
+ </ul>
+ <div class="entity" id="confidence">
+  <h3>confidence<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#confidence</p>
+  <div class="comment">
+   <span class="markdown">The confidence score of the moral value annotation, ranging from 0 to 1.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#MoralValueAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation">Moral Value Annotation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#float" target="_blank" title="http://www.w3.org/2001/XMLSchema#float">float</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

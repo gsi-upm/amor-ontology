@@ -1,0 +1,104 @@
+@prefix amor: <http://www.gsi.upm.es/ontologies/amor/ns#> .
+@prefix ex: <http://www.gsi.upm.es/ontologies/amor/datasets#> .
+@prefix itsrdf: <http://www.w3.org/2005/11/its/rdf#> .
+@prefix amor-exp: <http://www.gsi.upm.es/ontologies/amor/experiments/ns#> .
+@prefix amor-mft: <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#> .
+@prefix marl: <http://www.gsi.upm.es/ontologies/marl/ns#> .
+@prefix mft: <http://www.gsi.upm.es/ontologies/mft/ns#> .
+@prefix onyx: <http://www.gsi.upm.es/ontologies/onyx/ns#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <http://schema.org/> .
+@prefix wnaffect: <http://gsi.upm.es/ontologies/wnaffect/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+
+### [Dataset]
+ex:dataset1 a amor-exp:NewsDataset ;
+   amor-exp:hasNews ex:news1 ;
+   schema:hasPart ex:news1 ,
+		   ex:news2 .
+
+### [News Article]
+ex:news1 a schema:NewsArticle ;
+   schema:headline "Los obstáculos del Gobierno para dar inmigración a Cataluña: la Constitución, cinco sentencias y una directiva de la UE" ;
+   schema:articleBody "El Gobierno de Pedro Sánchez afronta durante estos días un sudoku de gran dificultad. Cautivo políticamente de los siete votos de Junts en el Congreso de los Diputados, que necesita para sacar adelante su agenda política y legislativa, busca como satisfacer la última demanda de los del fugado Carles Puigdemont: el traspaso de la competencia de inmigración a la Generalidad de Cataluña.\nLos independentistas quieren poder controlar las fronteras y expulsar inmigrantes sin contar con el Gobierno central cuando recuperen de nueve el Palau de la Generalidad. Dos cuestiones que les acercan más a la independencia de facto y que ampliarían aún más sus diferencias con el resto de regiones españolas. Por si fuera poco, por el camino, ganan también el seguir vaciando de competencias en Cataluña a la Policía Nacional y la Guardia Civil.\nEl Ejecutivo se juega poder aprobar los Presupuestos Generales del Estado de 2025, algo que ni intentaron para 2024. El reto no es fácil. En primer lugar, porque el primer escollo que tienen enfrente es, nada más y nada menos, que la Constitución de 1978. De hecho, solo esta línea roja haría que cualquier otro gobierno se echara para atrás, pero no parece que el de Pedro Sánchez vaya a hacerlo.\nEl artículo 149.1.2 deja claro que el Estado tiene las competencias exclusivas en materia de \"nacionalidad, inmigración, emigración, extranjería y derecho de asilo\". Aun así, el Gobierno busca escudarse en el artículo 150.2, que dice que \"el Estado podrá transferir o delegar en las CCAA, mediante ley orgánica, facultades correspondientes a materia de titularidad estatal que por su propia naturaleza sean susceptibles de transferencia o delegación\".\nRelacionado\nEl Gobierno quiere delegar el control de las fronteras a los Mossos para alcanzar un pacto con Junts sobre inmigración\nPablo Planas: La inmigración y los separatistas catalanes\nEl gran problema de esta vía gubernamental es que el Tribunal Constitucional (TC) ha hecho una interpretación muy restrictiva del mismo siempre que ha tenido que dar su parecer ante un recurso de inconstitucionalidad, estableciendo que no pueden transferirse competencias estatales exclusivas cuando estas afectan a la soberanía y a la unidad del Estado, como es el caso de la inmigración.\nUn informe jurídico elaborado por el Sindicato Unificado de Policía (SUP), al que ha tenido acceso Libertad Digital, recuerda que esta visión restrictiva se ha planteado hasta ahora en cuatro sentencias emitidas por el TC en la última década y media. Lo ha hecho, por ejemplo, en dos sentencias contra la reforma del Estatuto de Autonomía de Cataluña, tanto la planteada por el PP (sentencia TC 31/2010) como por el Defensor del Pueblo (sentencia TC 137/2010).\nTambién en un recurso de la Generalidad de Cataluña contra una resolución de la Dirección General de Inmigración del Gobierno central por invasión de competencias autonómicas (sentencia TC 154/2013) y en un recurso del Defensor del Pueblo contra la Ley de Cataluña 10/2010 de acogida de inmigrantes, sobre derechos lingüísticos y competencias de inmigración (sentencia TC 87/2017).\nNo sólo iría en contra de lo dicho por el tribunal español, sino también de lo que ya ha puesto de manifiesto el Tribunal de Justicia de la Unión Europea (TSJUE), exactamente, en la que se conoce como caso Celaj (sentencia C-290/14) en el que se afirma que la fragmentación de la aplicación de la normativa de inmigración dentro de un Estado miembro puede comprometer la coherencia del derecho comunitario y generar inseguridad jurídica.\nEl informe jurídico del SUP recuerda que la Directiva 2008/115/CE (Directiva de Retorno) impone reglas comunes de expulsión que \"deben aplicarse de manera uniforme, algo que se vería afectado si Cataluña tuviera un régimen diferenciado de inmigración\" y, por tanto, el traspaso de esta competencia \"podría derivar en procedimientos de infracción contra España por incumplimiento del derecho comunitario, al no garantizar la unidad de aplicación de las normas en todo su territorio\".\nTemas\nCuerpo Nacional de Policía\nInmigración ilegal\nJunts per Catalunya\nTribunal de Justicia de la UE" ;
+   schema:author ex:JavierAriasBorque ;
+   schema:publisher ex:libertadDigital ;
+   schema:url "https://www.libertaddigital.com/espana/2025-02-10/los-obstaculos-del-gobierno-para-dar-inmigracion-a-cataluna-la-constitucion-cinco-sentencias-y-una-directiva-de-la-ue-7218051/" ;
+   schema:image "https://s.libertaddigital.com/images/trans.png" ;
+   schema:datePublished "2025-02-10"^^xsd:string ;
+   schema:mentions ex:Catalonia, ex:PoliciaNacional ;
+   schema:category "News and Politics"@en .
+
+# Entity annotationsn are more detailed than schema:mentions. They can provide scoring and classification
+ex:mention1 a amor:EntityAnnotation ;
+   itsrdf:taIdentRef ex:Catalonia ;
+   itsrdf:taIdentClass dbo:Region ;
+   itsrdf:taConfidence 0.95 ;
+   oa:hasTarget ex:news1 .
+
+ex:mention2 a amor:EntityAnnotation ;
+   itsrdf:taIdentRef ex:PoliciaNacional ;
+   itsrdf:taIdentClass dbo:Organization ;
+   itsrdf:taConfidence 0.37 ;
+   oa:hasTarget ex:news1 .
+
+ex:emotionSet1 a amor:EmotionAnnotation ;
+   onyx:hasEmotion [
+   	onyx:hasEmotionCategory wnaffect:happiness ;
+	onyx:hasEmotionIntensity 0.38 
+   ] ;
+   itsrdf:taConfidence 0.37 ;
+   oa:hasTarget ex:news1 .
+
+ex:opinion1 a amor:SentimentAnnotation ;
+   marl:hasPolarity marl:Negative ;
+   marl:polarityValue -0.38 ;
+   itsrdf:taConfidence 0.81 ;
+   marl:describesObject ex:Catalonia ; # Use this if the sentiment is about a specific entity
+   oa:hasTarget ex:news1 .
+
+ex:moral1 a amor:MoralValueAnnotation ;
+    amor:hasMoralValueCategory mft:Liberty ;
+    itsrdf:taConfidence "1.0"^^xsd:float ;
+    oa:hasTarget ex:news1 .
+
+# Recommendations
+ex:recommendation1 a amor:Recommendation ;
+   amor-exp:hasRecommendationCriterion amor-exp:EntitySimilarity ;
+   amor-exp:hasRecommendationScore 0.95;
+   # Original news
+   oa:hasTarget ex:news1 ;
+   # Recommended news
+   oa:hasBody ex:news1 .
+
+ex:recommendation2 a amor:Recommendation ;
+   amor-exp:hasRecommendationCriterion amor-exp:MoralDissimilarity ;
+   amor-exp:hasRecommendationScore 0.12 ;
+   oa:hasTarget ex:news1 ;
+   oa:hasBody ex:news2 .
+
+ex:recommendation3 a amor:Recommendation ;
+   amor-exp:hasRecommendationCriterion amor-exp:EmotionSimilarity ;
+   amor-exp:hasRecommendationScore 0.91;
+   oa:hasTarget ex:news1 ;
+   oa:hasBody ex:news2 .
+
+
+ex:news2 a schema:NewsArticle ;
+   schema:headline "Scholz y Merz chocan por la inmigración y la ultraderecha sin romper puentes ante una futura coalición en Alemania" ;
+   schema:articleBody "El democristiano Friedrich Merz, favorito en las elecciones en Alemania del 23 de febrero, y el canciller socialdemócrata, Olaf Scholz han chocado este domingo por la política migratoria y las relaciones con la extrema derecha en un debate televisivo duro en el fondo, pero respetuoso en las formas. Ambos se han acusado mutuamente, en los primeros minutos de una confrontación de una hora y media, de incumplir promesas y carecer de credibilidad, y en ocasiones Merz ha logrado poner a Scholz a la defensiva. Al mismo tiempo, ambos se han cuidado mucho de medir sus ataques personales. Saben que las formaciones que lideran posiblemente están condenadas a gobernar en coalición después de las elecciones.\nScholz ha acusado a Merz de haber “roto un tabú” y “faltado a su palabra” al aceptar hace 10 días el apoyo de la extrema derecha de Alternativa para Alemania (AfD) en varios votos parlamentarios sobre inmigración. “Desgraciadamente, no puedo estar seguro de que usted no vaya a repetirlo”, ha dicho el canciller, para sugerir que el democristiano ha roto el cordón sanitario y un día podría aliarse con los radicales. El líder democristiano se ha defendido prometiendo, como ha hecho otras veces, que nunca pactará con el partido Alianza para Alemania (AfD) ni aceptará sus votos para gobernar. Y, en uno de los momentos más tensos del debate, ha acusado al canciller de “no vivir en este mundo” al hablar de la inmigración en Alemania y “contar cuentos de hadas”.\nEl debate abre la fase final de una campaña marcada, primero, por el apoyo del magnate trumpista Elon Musk a AfD. Y, sobre todo, por la decisión de Merz, de aceptar los votos de la extrema derecha en el Bundestag para varias iniciativas sobre inmigración. Socialdemócratas, ecologistas, las iglesias católica y protestante e incluso la excanciller democristiana Angela Merkel criticaron a Merz por votar junto a AfD y le acusaron de haber roto un tabú que debilita el cordón sanitario frente a la ultraderecha. Centenares de miles de alemanes han salido a las calles de las principales ciudades para protestar.\nPara Scholz, era una de las últimas oportunidades para intentar la remontada que denodadamente busca desde que precipitó las elecciones al destituir en noviembre a los ministros liberales y quedarse en minoría junto a Los Verdes. Para Merz, se trataba de no cometer ningún error de bulto y preservar su hasta ahora cómodo liderazgo en los sondeos. Para ambos, era un examen sobre la capacidad de recoser los puentes, rotos en campaña, entre las formaciones moderadas.\nNo se han roto puentes en el debate, pero ambos han marcado sus diferencias respecto a los votos con AfD la política migratoria o la economía. Merz ha acusado a Scholz de inacción tras una serie de crímenes y atentados perpetrado por extranjeros, y el canciller ha reivindicado haber hecho más durante su mandato que los Gobiernos anteriores. Pero ha añadido que la propuesta de Merz para rechazar en las fronteras alemanas a los demandantes de asilo rebasa los límites del derecho europeo. “Lo que propone el señor Merz va en contra de los intereses alemanes”, ha dicho “¿Por qué seríamos tan estúpidos de hacer algo así?” El democristiano ha señalado que otros países —y entre ellos ha citado a Francia y España— ya practican las llamadas “devoluciones en caliente” que él propone.\nEl formato, con solo dos participantes, provocó críticas e incomprensión. Participaban el mejor situado en los sondeos, Merz, y el tercero, Scholz. Pero quedaron fuera Alice Weidel, la candidata de AfD, en segunda posición en los sondeos, y el cuarto, Robert Habeck, de Los Verdes. Que los organizadores, las cadenas públicas ARD y ZDF, optasen por un duelo Scholz-Merz se explica por la tradición de enfrentar al canciller con el jefe de la oposición y principal aspirante a relevarlo, aunque Scholz ya ha dado a entender que si no gana —y vistos los sondeos es casi imposible que gane—no piensa ser ministro en un Gobierno con otro canciller.\nAnte la economía estancada desde 2019 y la profunda crisis industrial, el canciller ha alegado: “No fui yo quien invadió Ucrania”. Se refería a la crisis energética que supuso el fin del gas ruso barato para Alemania. Merz le ha respondido con una pregunta: “¿Por qué en medio de esta crisis profunda energética desconecta tres centrales nucleares que funcionan?” A la pregunta de una de las moderadoras sobre el plan del presidente de EE UU, Donald Trump, para Gaza, Scholz ha respondido: “Es un escándalo. El desplazamiento de población es inaceptable y va en contra del derecho internacional”. “Lo comparto”, ha dicho Merz.\nEl debate, moderado por las periodistas Sandra Maischberger y Maybrit Illner, se ha emitido desde los estudios berlineses de Adlershof, que fueron los estudios centrales de la televisión del régimen comunista de la República Democrática Alemania. Los debates electorales en el formato de duelo son una tradición relativamente nueva en este país: los primeros se celebraron en 2002, entre el entonces canciller, el socialdemócrata Gerhard Schröder, y el aspirante conservador, Edmund Stoiber.\nARD y ZDF había previsto al principio otro duelo entre Habeck y Weidel, pero el líder ecologista y actual ministro de Economía se negó a participar en este debate de segundo plato y además con la candidata de la extrema derecha. La cadena privada RTL ha convocado para el 16 de febrero otro debate en el que, esta vez sí, estarán presentes los cuatro candidatos mejor situados: Merz, Weidel, Scholz y Habeck.\nLa discusión sobre la inmigración y, en paralelo, sobre la relación de los partidos moderados con la extrema derecha ha copado la campaña, pero el efecto en los sondeos, por ahora, ha sido nulo. Lo curioso es que llevan meses como si estuviesen congelados: la CDU/CSU, en torno al 30%; AfD, el 20%; SPD, el 15%, y Los Verdes, un poco por debajo y, en algún sondeo, por delante de los socialdemócratas. Como ningún partido tendrá mayoría, y puesto que Merz ha prometido que, pese a sus polémicos votos en el Bundestag, nunca pactará con AfD, el interrogante es si se verá abocado a formar gobierno con el SPD, con Los Verdes o con ambos a la vez.\nHay campo para el entendimiento. Al abordar la economía, Scholz ha defendido una flexibilización del límite constitucional al endeudamiento, al que se achaca el déficit de inversiones en Alemania. Merz, sin renunciar del todo a mantenerlo, se ha mostrado abierto a la discusión. En política exterior, no han coincidido solo en condenar el plan de Trump para Gaza, sino al afirmar que la entrada de Ucrania en la OTAN, mientras dure la guerra, no está al orden del día. El centro, maltrecho tras una campaña que aleja al centroizquierda del centroderecha, puede recomponerse.\nY la foto del debate, pese a las diferencias en inmigración o en la economía, no es la de dos líderes irremediablemente polarizados. Será difícil que el duelo altere la campaña. Un sondeo del instituto Forschungsgruppe Wahlen da un resultado igualado: un 37% de telespectadores cree que ganó Scholz; un 34%, Merz; un 29% los vio igualados. La última frase de cada uno resumió bien el tono general. “Tenemos un plan para este país”, ha dicho Merz. Y ha concluido Scholz: “Solo votando al Partido Socialdemócrata habrá con seguridad un Gobierno que se preocupe porque Alemania avance y siga siendo estable”." ;
+   schema:author ex:MarcBassets ;
+   schema:publisher ex:elPais ;
+   schema:url "https://elpais.com/internacional/2025-02-09/scholz-y-merz-chocan-por-la-inmigracion-y-la-ultraderecha-sin-romper-puentes-ante-una-futura-coalicion-en-alemania.html" ;
+   schema:image "https://imagenes.elpais.com/resizer/v2/F6TK37IJX2MKUCHZUT346LIX4M.jpg?auth=48c1239d4dcfe66cbc12b2e64774ce955a9cf428402ec48b1f60a0067155389b&width=1200" ;   
+   schema:datePublished "2025-02-09"^^xsd:string ;
+   schema:category "Elections"@en ,
+                     "Politics"@en ,
+                  "News and Politics"@en ;
+   schema:mentions ex:EdmundStoiber , 
+      ex:FriedrichMerz , 
+      ex:SozialdemokratischeParteiDeutschlandsspd .
+

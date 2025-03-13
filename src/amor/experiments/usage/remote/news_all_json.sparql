@@ -1,0 +1,11 @@
+JSON {
+	"@id": ?uri,
+	"headline": ?headline,
+	"articleBody": ?body
+}
+WHERE {
+	?uri a schema:NewsArticle ;
+	     schema:headline ?headline ;
+	     schema:articleBody ?body .
+}
+LIMIT 5

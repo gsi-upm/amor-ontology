@@ -1,0 +1,575 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.gsi.upm.es/ontologies/amor/ns", "http://www.w3.org/ns/mls", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "AMOR Moral Values Ontology"
+    },
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "version" : "1.0.0",
+    "author" : [ "Álvaro Carrera Barroso", "Sergio Muñoz López" ],
+    "description" : {
+      "en" : "AMOR is an ontology designed for representing moral values and value annotations in textual sources."
+    },
+    "labels" : {
+      "en" : "AMOR Moral Values Ontology"
+    },
+    "comments" : {
+      "en" : "AMOR is an ontology designed for representing moral values analysis and annotations in textual sources."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Sergio Muñoz López",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Álvaro Carrera Barroso",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "amor",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es",
+        "type" : "iri"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es/ontologies/amor/ns#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "AMOR Moral Values Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/ns/prov#Activity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity"
+    },
+    "subClasses" : [ "1", "2" ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralValueAnalysis",
+      "en" : "Moral Value Analysis"
+    },
+    "subClasses" : [ "8" ],
+    "comment" : {
+      "en" : "Represents the activity of analyzing text for moral values."
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralValueCategory",
+      "en" : "Moral Value Category"
+    },
+    "comment" : {
+      "en" : "Represents a category of moral values."
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Entity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "subClasses" : [ "7", "12", "9", "6", "25" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://schema.org/NewsArticle",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NewsArticle"
+    },
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "instances" : 0,
+    "union" : [ "12", "6" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MLEntity",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MLEntity",
+      "en" : "Machine Learning Entity"
+    },
+    "comment" : {
+      "en" : "Represents any entity related with a Machine Learning process. It is a subclass of mls:Entity and prov:Entity."
+    },
+    "id" : "25",
+    "superClasses" : [ "10", "29" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#InformationEntity",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InformationEntity"
+    },
+    "subClasses" : [ "25" ],
+    "attributes" : [ "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MLProcess",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MLProcess",
+      "en" : "Machine Learning Process"
+    },
+    "comment" : {
+      "en" : "Represents a process related with Machine Learning that generates some output, such as a mls:Model or any other mls:InformationEntity."
+    },
+    "id" : "1",
+    "superClasses" : [ "0", "33" ]
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralValueAnnotation",
+      "en" : "Moral Value Annotation"
+    },
+    "comment" : {
+      "en" : "Represents a value annotation extracted from textual sources."
+    },
+    "id" : "6",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnalysedEntity",
+      "en" : "Analysed Entity"
+    },
+    "union" : [ "35", "26", "32" ],
+    "comment" : {
+      "en" : "Represents any analysed entity that is used as a source of the analysis. It be text, such as a string or a news article; but it can be an agent; i.e. a human or a robot analysed using the results of a questionnarie."
+    },
+    "attributes" : [ "union" ],
+    "id" : "7",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String",
+    "baseIri" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "String"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralValueModel",
+      "en" : "Moral Value Model"
+    },
+    "comment" : {
+      "en" : "Represents a model for categorizing moral values."
+    },
+    "id" : "12",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#Model",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Model"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralProfile",
+      "en" : "Moral Profile"
+    },
+    "comment" : {
+      "en" : "Represents the moral profile analysis of an agent."
+    },
+    "id" : "8",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#Run",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Run"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32"
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "wasDerivedFrom"
+    },
+    "domain" : "4",
+    "subproperty" : [ "5" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#annotated",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "annotated",
+      "en" : "annotated"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "This property relates the ValueAnnotation activity with the resource that is annotated."
+    },
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "usedMoralValueModel",
+      "en" : "used moral value model"
+    },
+    "superproperty" : [ "13" ],
+    "domain" : "2",
+    "comment" : {
+      "en" : "Specifies the moral value model used in the analysis."
+    },
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#used",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "used"
+    },
+    "domain" : "4",
+    "subproperty" : [ "14", "11", "15" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "2",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "10",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "10",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#hadMember",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hadMember"
+    },
+    "domain" : "4",
+    "subproperty" : [ "23" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "10",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#confidence",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "confidence",
+      "en" : "confidence"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "The confidence score of the moral value annotation, ranging from 0 to 1."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasMoralProfile",
+      "en" : "has moral profile"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Relates an agent (human or not) with its moral profile."
+    },
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasMoralValueCategory",
+      "en" : "has moral value category"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "27",
+    "comment" : {
+      "en" : "Specifies the category of the moral value."
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#analysed",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "analysed",
+      "en" : "analysed"
+    },
+    "superproperty" : [ "13" ],
+    "domain" : "2",
+    "comment" : {
+      "en" : "This property relates a ValueAnalysis with the resource that is analysed."
+    },
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "usedMLModel",
+      "en" : "used machine learning model"
+    },
+    "superproperty" : [ "13" ],
+    "domain" : "0",
+    "comment" : {
+      "en" : "This property relates an activity (such as a MoralAnalysis ) with the Machine Learning Model (mls:Model) used to carry out the activity."
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "range" : "10",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "33",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "29",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  } ]
+}

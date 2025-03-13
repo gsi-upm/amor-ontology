@@ -1,0 +1,210 @@
+<h2 id="desc" class="list">AMOR Examples: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">AMOR Examples contains a set of examples using all models required for semantic moral annotation in AMOR project.</span>
+
+<span class="markdown">Here you can find all the prefixes used in the following examples.</span>
+
+<pre>
+@prefix : &lt;http://www.gsi.upm.es/ontologies/amor/examples#> .
+@prefix amor: &lt;http://www.gsi.upm.es/ontologies/amor/ns#> .
+@prefix amor-bhv: &lt;http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#> .
+@prefix amor-mft: &lt;http://www.gsi.upm.es/ontologies/amor/models/mft/ns#> .
+@prefix bhv: &lt;http://www.gsi.upm.es/ontologies/bhv#> .
+@prefix mft: &lt;http://www.gsi.upm.es/ontologies/mft/ns#> .
+@prefix mls: &lt;http://www.w3.org/ns/mls#> .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#> .
+@prefix prov: &lt;http://www.w3.org/ns/prov#> .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: &lt;http://schema.org/> .
+</pre>
+
+<span class="markdown">The next example shows a NewsArticle using the schema.org model.</span>
+
+<pre>
+:news1 a owl:NamedIndividual, schema:NewsArticle ;
+  schema:articleBody "Director Comey says the probe into last year's US election would assess if crimes were committed."^^xsd:string ;
+  schema:datePublished "2017-03-20T20:30:54+00:00"^^schema:Date ;
+  schema:headline "Trump Russia claims: FBI's Comey confirms investigation of election 'interference'"^^xsd:string ;
+  schema:image &lt;http://ichef-1.bbci.co.uk/news/560/media/images/75306000/jpg/_75306515_line976.jpg>,
+    &lt;http://ichef.bbci.co.uk/news/560/cpsprodpb/8AB9/production/_95231553_comey2.jpg>,
+    &lt;http://ichef.bbci.co.uk/news/560/cpsprodpb/17519/production/_95231559_committee.jpg>,
+    &lt;http://ichef.bbci.co.uk/news/560/cpsprodpb/CC81/production/_95235325_f704a6dc-c017-4971-aac3-04c03eb097fb.jpg>,
+    &lt;http://ichef-1.bbci.co.uk/news/560/cpsprodpb/11AA1/production/_95235327_c0b59f9e-316e-4641-aa7e-3fec6daea62b.jpg>,
+    &lt;http://ichef.bbci.co.uk/news/560/cpsprodpb/0F99/production/_95239930_trumptweet.png>,
+    &lt;http://ichef-1.bbci.co.uk/news/560/cpsprodpb/10DFA/production/_95241196_mediaitem95241195.jpg>,
+    &lt;http://ichef.bbci.co.uk/news/560/cpsprodpb/2CA0/production/_95242411_comey.jpg>,
+    &lt;http://ichef.bbci.co.uk/news/560/cpsprodpb/11318/production/_95242407_mediaitem95242406.jpg>,
+    &lt;http://ichef-1.bbci.co.uk/news/560/cpsprodpb/BCED/production/_92856384_line976.jpg>,
+    &lt;http://ichef-1.bbci.co.uk/news/560/cpsprodpb/12B64/production/_95244667_mediaitem95244666.jpg> ;
+  schema:mainEntityOfPage &lt;http://www.bbc.com/news/world-us-canada-39324587> ;
+  schema:publisher :bbc ;
+  schema:url &lt;http://www.bbc.com/news/world-us-canada-39324587> .
+
+:bbc a schema:Organization ;
+  schema:logo &lt;http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1> ;
+  schema:name "BBC News"^^xsd:string .
+</pre>
+<span class="markdown">The next example shows a moral analysis performed by a person using the Moral Foundation Theory Moral Value Model.</span>
+
+<pre>
+
+:human1 a prov:Person .
+
+:analysis1 a amor:MoralValueAnalysis ;
+    prov:wasAssociatedWith :human1 ;
+    amor:usedMoralValueModel amor-mft:MoralFoundationsTheory ;
+    amor:analysed :news1 ;
+    prov:generated :annotation1 .
+
+:annotation1 a amor:MoralValueAnnotation ;
+    amor:hasMoralValueCategory mft:Liberty ;
+    amor:confidence "1.0"^^xsd:float ;
+    amor:annotated :news1 .
+</pre>
+
+<span class="markdown">The following example shows a moral analysis performed by a different person using the Basic Human Values (level 3) Moral Value Model.</span>
+
+<pre>
+:human2 a prov:Person .
+
+:analysis2 a amor:MoralValueAnalysis ;
+    prov:wasAssociatedWith :human2 ;
+    amor:usedMoralValueModel amor-bhv:BHVModel-level3 ;
+    amor:analysed :news1 ;
+    prov:generated :annotation2 .
+
+:annotation2 a amor:MoralValueAnnotation ;
+    amor:hasMoralValueCategory bhv:Conservation ;
+    amor:confidence "0.8"^^xsd:float ;
+    amor:annotated :news1 .
+</pre>
+
+<span class="markdown">Now, the next example shows a moral analysis performed by a software agent (i.e. a robot, a service hosted in a server, etc.) using a Machine Learning Model (using the logistic regression algorithm) that offers as output a Category of the Moral Foundations Theory Moral Value Model and a Polariy Intesity of that category.</span>
+
+<pre>
+:robot1 a prov:SoftwareAgent .
+
+:model1 a mls:Model .
+
+:logisticRegression a mls:Algorithm ;
+  rdfs:label "Logistic Regression"@en ,
+    "Regresión Logística"@es .
+
+:run1 a mls:Run ;
+    mls:executes :wekaLogistic ;
+    mls:hasInput :credit-a ;
+    mls:hasOutput :model1 ;
+    mls:realizes :logisticRegression .
+
+:analysis3 a amor:MoralValueAnalysis ;
+    prov:wasAssociatedWith :robot1 ;
+    amor:usedMoralValueModel amor-mft:MoralFoundationsTheory ;
+    amor:analysed :news1 ;
+    amor:usedMLModel :model1 ;
+    prov:generated :annotation3 .
+
+:annotation3 a amor:MoralValueAnnotation ;
+    amor:hasMoralValueCategory mft:Authority ;
+    amor:confidence "0.75"^^xsd:float ;
+    amor-mft:hasPolarityIntensity "0.2"^^xsd:float ;
+    amor:annotated :news1 .
+</pre>
+
+<span class="markdown">Now, the next example shows an emotion analysis performed by a software agent (i.e. a robot, a service hosted in a server, etc.) using a Machine Learning Model (using the Linear Regression algorithm) that offers as output a Moral Foundation with a bias (indicating a value between -1.0 (Vice) and 1.0 (Virtue).).</span>
+
+<pre>
+:robot2 a prov:SoftwareAgent .
+
+:model4 a mls:Model .
+
+:linearRegression a mls:Algorithm ;
+    rdfs:label "Linear Regression"@en .
+
+:run4 a msl:Run ;
+    mls:executes :wekaLogistic ;
+    mls:hasInput :moralfoundationdataset ;
+    mls:hasOutput :model4 ;
+    mls:realizes :linearRegression .
+
+:moralAnalysis21 a amor:MoralValueAnalysis ;
+    prov:wasAssociatedWith :robot2 ;
+    amor:usedMoralValueModel amor-mft:MoralFoundationsTheory-Foundations ;
+    amor:analysed :news1 ;
+    amor:usedMLModel :model4 ;
+    prov:generated :moralAnnotation23 .
+
+:moralAnnotation23 a amor:MoralValueAnnotation ;
+    amor:hasMoralValueCategory mft:AuthoritySubversion ;
+    amor:confidence "0.75"^^xsd:float ;
+    amor-mft:hasBias "0.65"^^xsd:float ;
+    amor-mft:hasPolarityIntensity "0.2"^^xsd:float ;
+    amor:annotated :news1 .
+</pre>
+
+<span class="markdown">Now, the next example shows an emotion analysis performed by a software agent (i.e. a robot, a service hosted in a server, etc.) using a Machine Learning Model (using the K-Means algorithm) that offers as output a set of emotions using the WordNetAffect Emotion Model (using ONYX ontology).</span>
+
+<pre>
+:model3 a mls:Model .
+
+:kmeans a mls:Algorithm ;
+    rdfs:label "K-Means Clustering"@en .
+
+:run3 a mls:Run ;
+      mls:executes :wekaLogistic ;
+      mls:hasInput :emotionDataset1 ;
+      mls:hasOutput :model3 ;
+      mls:realizes :kmeans .
+
+:emotionAnalysis45 a onyx:EmotionAnalysis ;
+  prov:wasAssociatedWith :robot2 ;
+  amor:usedMLModel :model3 ;
+  onyx:usesEmotionModel wnaffect:WNAModel ;
+  prov:used :news1 ;
+  prov:generated :emotionAnnotation87 .
+
+:emotionAnnotation87 a onyx:EmotionSet ;
+  prov:wasDerivedFrom :news1 ;
+  onyx:hasEmotion :emotion1 ;
+  onyx:hasEmotion :emotion2 .
+
+:emotion1 a onyx:Emotion ;
+  onyx:hasEmotionCategory wnaffect:Hate ;
+  onyx:hasEmotionIntensity "0.5"^^xsd:float ;
+  onyx:algorithmConfidence "0.9"^^xsd:float .
+
+:emotion2 a onyx:Emotion ;
+  onyx:hasEmotionCategory wnaffect:Fury ;
+  onyx:hasEmotionIntensity "0.7"^^xsd:float ;
+  onyx:algorithmConfidence "0.65"^^xsd:float .
+</pre>
+
+
+<span class="markdown">Finally, the next example shows a sentiment analysis performed by a software agent (i.e. a robot, a service hosted in a server, etc.) using a Machine Learning Model (using the KNN algorithm) that offers as output an opinion (using MARL ontology).</span>
+
+
+<pre>
+:model2 a mls:Model .
+
+:knn a mls:Algorithm ;
+    rdfs:label "K-Nearest Neighbors"@en .
+
+:run2 a mls:Run ;
+      mls:executes :wekaLogistic ;
+      mls:hasInput :opinionDataset ;
+      mls:hasOutput :model2 ;
+      mls:realizes :knn .
+
+:sentimentAnalysis33 a marl:SentimentAnalysis ;
+  prov:wasAssociatedWith :robot2 ;
+  marl:minPolarityValue "0.0"^^xsd:float ;
+  marl:maxPolarityValue "1.0"^^xsd:float ;
+  amor:usedMLModel :model2 ;
+  prov:used :news1 ;
+  prov:generated :opinion45 .
+
+:opinion45 a marl:Opinion ;
+  prov:wasDerivedFrom :news1 ;
+  marl:hasPolarity marl:Neutral ;
+  marl:hasPolarityValue "0.5"^^xsd:float ;
+  marl:algorithmConfidence "0.9"^^xsd:float.
+</pre>

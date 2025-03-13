@@ -1,0 +1,4 @@
+SELECT *
+WHERE {
+	?uri a schema:NewsArticle.
+}

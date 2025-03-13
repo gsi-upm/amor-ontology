@@ -1,0 +1,8 @@
+DESCRIBE *
+WHERE {
+    ?uri a schema:NewsArticle .
+    ?annotation a amor:EntityAnnotation ;
+	oa:hasTarget ?uri ;
+	itsrdf:taIdentRef amor-data:PoliciaNacional .
+}
+LIMIT 10

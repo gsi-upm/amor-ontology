@@ -1,0 +1,14 @@
+SELECT ?preference ?recommendation
+WHERE {      
+	ex-exp:experiment1 amor-exp:hasExperimentSubject [
+		amor-exp:hasPreferredContent ?preference
+	] .
+	OPTIONAL {
+		SERVICE <https://amor-graph.gsi.upm.es/news/> {
+			[] a amor:Recommendation ;
+					oa:hasTarget ?preference ;
+					oa:hasBody ?recommendation .
+		}
+	}
+}
+LIMIT 10

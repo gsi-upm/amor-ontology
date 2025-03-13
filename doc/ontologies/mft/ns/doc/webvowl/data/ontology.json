@@ -1,0 +1,426 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "en" : "Moral Foundations Theory Taxonomy - SKOS version"
+    },
+    "iri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+    "version" : "1.0.0",
+    "author" : [ "Álvaro Carrera Barroso", "Sergio Muñoz López" ],
+    "description" : {
+      "en" : "This SKOS taxonomy mirrors the categories in Moral Foundations Theory and provides a semantic representation using the standard SKOS representation."
+    },
+    "labels" : {
+      "en" : "Moral Foundations Theory Taxonomy - SKOS version"
+    },
+    "comments" : {
+      "en" : "This SKOS taxonomy mirrors the categories in Moral Foundations Theory and provides a semantic representation using the standard SKOS representation."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Álvaro Carrera Barroso",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Sergio Muñoz López",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "mft",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es/ontologies/mft/ns#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Moral Foundations Theory Taxonomy - SKOS version",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Mft",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "title" : [ {
+          "identifier" : "title",
+          "language" : "undefined",
+          "value" : "mft",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Mft"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Betrayal",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "broaderTransitive" : [ {
+          "identifier" : "broaderTransitive",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "betrayal",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Betrayal"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "liberty-opression",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "LibertyOpression"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "broaderTransitive" : [ {
+          "identifier" : "broaderTransitive",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "liberty",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Liberty"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Purity",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "broaderTransitive" : [ {
+          "identifier" : "broaderTransitive",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "purity",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Purity"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "loyalty-betrayal",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "LoyaltyBetrayal"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "authority",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Authority"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Subversion",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "broaderTransitive" : [ {
+          "identifier" : "broaderTransitive",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "subversion",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Subversion"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Harm",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "broaderTransitive" : [ {
+          "identifier" : "broaderTransitive",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#CareHarm",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "harm",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Harm"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Care",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "broaderTransitive" : [ {
+          "identifier" : "broaderTransitive",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#CareHarm",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "care",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Care"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Cheating",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "broaderTransitive" : [ {
+          "identifier" : "broaderTransitive",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "cheating",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Cheating"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#CareHarm",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "care-harm",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "CareHarm"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Fairness",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "broaderTransitive" : [ {
+          "identifier" : "broaderTransitive",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "fairness",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Fairness"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "fairness-cheating",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "FairnessCheating"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Loyalty",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "broaderTransitive" : [ {
+          "identifier" : "broaderTransitive",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "loyalty",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Loyalty"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Degradation",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "broaderTransitive" : [ {
+          "identifier" : "broaderTransitive",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "degradation",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Degradation"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "authority-subversion",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "AuthoritySubversion"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Opression",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "broaderTransitive" : [ {
+          "identifier" : "broaderTransitive",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "opression",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Opression"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "purity-degradation",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PurityDegradation"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  } ]
+}

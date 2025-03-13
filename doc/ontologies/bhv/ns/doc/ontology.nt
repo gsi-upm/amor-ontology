@@ -1,0 +1,584 @@
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.gsi.upm.es/ontologies/bhv/ns/1.0.0> .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/comment> "This SKOS taxonomy mirrors the categories in Basic Human Values Theory and provides a semantic representation using the standard SKOS representation."@en .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/creator> "Sergio Muñoz López"@en .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/creator> "Álvaro Carrera Barroso"@en .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/description> "This SKOS taxonomy mirrors the categories in Basic Human Values Theory and provides a semantic representation using the standard SKOS representation."@en .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/publisher> <http://www.gsi.upm.es> .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/title> "Basic Human Values Taxonomy - SKOS version"@en .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bhv" .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.gsi.upm.es/ontologies/bhv/ns#" .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://www.w3.org/2000/01/rdf-schema#label> "Basic Human Values Taxonomy - SKOS version"@en .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/comment
+<http://purl.org/dc/terms/comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#broaderTransitive
+<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#Achievement
+<http://www.gsi.upm.es/ontologies/bhv/ns#Achievement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Achievement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Achievement> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Achievement> <http://www.w3.org/2004/02/skos/core#prefLabel> "achievement" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Achievement> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-ambitious" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-behaving-properly" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-broadminded" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Achievement> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-capable" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-choosing-own-goals" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-compliant" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Achievement> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-courageous" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-creative" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-curious" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-daring" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-forgiving" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-helpful" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Tradition> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-holding-religious-faith" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-honest" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-honoring-elders" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Humility> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-humble" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-independent" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Achievement> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-intellectual" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeJust
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeJust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeJust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeJust> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeJust> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-just" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeLogical
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeLogical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeLogical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeLogical> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeLogical> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-logical" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-loving" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-neat-and-tidy" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BePolite
+<http://www.gsi.upm.es/ontologies/bhv/ns#BePolite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BePolite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BePolite> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BePolite> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-polite" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-protecting-the-environment" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Tradition> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-respecting-traditions" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-responsible" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined> <http://www.w3.org/2004/02/skos/core#prefLabel> "be-self-disciplined" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring
+<http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring> <http://www.w3.org/2004/02/skos/core#prefLabel> "benevolence-caring" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability
+<http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability> <http://www.w3.org/2004/02/skos/core#prefLabel> "benevolence-dependability" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#Bhv
+<http://www.gsi.upm.es/ontologies/bhv/ns#Bhv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Bhv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Bhv> <http://purl.org/dc/terms/title> "bhv" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal
+<http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal> <http://www.w3.org/2004/02/skos/core#prefLabel> "conformity-interpersonal" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules
+<http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules> <http://www.w3.org/2004/02/skos/core#prefLabel> "conformity-rules" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#Conservation
+<http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> <http://www.w3.org/2004/02/skos/core#prefLabel> "conservation" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#Face
+<http://www.gsi.upm.es/ontologies/bhv/ns#Face> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Face> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Face> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Face> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Face> <http://www.w3.org/2004/02/skos/core#prefLabel> "face" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree
+<http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree> <http://www.w3.org/2004/02/skos/core#prefLabel> "growth-anxiety-free" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-a-comfortable-life" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Face> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-a-good-reputation" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-a-safe-country" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-a-sense-of-belonging" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-a-stable-society" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-a-varied-life" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-a-world-at-peace" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-a-world-of-beauty" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-an-exciting-life" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-an-objective-view" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-equality" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-freedom-of-action" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-freedom-of-thought" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-good-health" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-harmony-with-nature" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-influence" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Humility> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-life-accepted-as-is" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-loyalty-towards-friends" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-no-debts" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure
+<http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-pleasure" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy
+<http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-privacy" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Face> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-social-recognition" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Achievement> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-success" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-the-own-family-secured" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-the-right-to-command" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-the-wisdom-to-accept-others" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth> <http://www.w3.org/2004/02/skos/core#prefLabel> "have-wealth" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism
+<http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism> <http://www.w3.org/2004/02/skos/core#prefLabel> "hedonism" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#Humility
+<http://www.gsi.upm.es/ontologies/bhv/ns#Humility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Humility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Humility> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Humility> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Humility> <http://www.w3.org/2004/02/skos/core#prefLabel> "humility" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange
+<http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange> <http://www.w3.org/2004/02/skos/core#prefLabel> "openness-to-change" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus
+<http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus> <http://www.w3.org/2004/02/skos/core#prefLabel> "personal-focus" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance
+<http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance> <http://www.w3.org/2004/02/skos/core#prefLabel> "power-dominance" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources
+<http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources> <http://www.w3.org/2004/02/skos/core#prefLabel> "power-resources" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal
+<http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal> <http://www.w3.org/2004/02/skos/core#prefLabel> "security-personal" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal
+<http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal> <http://www.w3.org/2004/02/skos/core#prefLabel> "security-societal" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction> <http://www.w3.org/2004/02/skos/core#prefLabel> "self-direction-action" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought> <http://www.w3.org/2004/02/skos/core#prefLabel> "self-direction-thought" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> <http://www.w3.org/2004/02/skos/core#prefLabel> "self-enhancement" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance> <http://www.w3.org/2004/02/skos/core#prefLabel> "self-protection-anxiety-avoidance" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence> <http://www.w3.org/2004/02/skos/core#prefLabel> "self-transcendence" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus
+<http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus> <http://www.w3.org/2004/02/skos/core#prefLabel> "social-focus" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation
+<http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation> <http://www.w3.org/2004/02/skos/core#prefLabel> "stimulation" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#Tradition
+<http://www.gsi.upm.es/ontologies/bhv/ns#Tradition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Tradition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Tradition> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#Tradition> <http://www.w3.org/2004/02/skos/core#prefLabel> "tradition" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern> <http://www.w3.org/2004/02/skos/core#prefLabel> "universalism-concern" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature> <http://www.w3.org/2004/02/skos/core#prefLabel> "universalism-nature" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity> <http://www.w3.org/2004/02/skos/core#prefLabel> "universalism-objectivity" .
+# 
+# http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence> .
+<http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance> <http://www.w3.org/2004/02/skos/core#prefLabel> "universalism-tolerance" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

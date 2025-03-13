@@ -1,0 +1,17 @@
+@prefix : <http://www.github.com/gsi-upm/amor-experiment-api#> .
+@prefix amor: <http://www.gsi.upm.es/ontologies/amor/ns#> .
+@prefix amor-bhv: <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#> .
+@prefix amor-mft: <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#> .
+@prefix bhv: <http://www.gsi.upm.es/ontologies/bhv#> .
+@prefix mft: <http://www.gsi.upm.es/ontologies/mft/ns#> .
+@prefix mls: <http://www.w3.org/ns/mls#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+
+
+:dataset1 a schema:Dataset ;
+	  schema:mainEntity :news1 ;
+          schema:hasPart :news1 ;
+	  schema:hasPart :AnotherArticleFromJSONLD .

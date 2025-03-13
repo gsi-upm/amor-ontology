@@ -1,0 +1,861 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.gsi.upm.es/ontologies/amor/examples#"
+     xml:base="http://www.gsi.upm.es/ontologies/amor/examples"
+     xmlns:ns="http://www.gsi.upm.es/ontologies/amor/ns#"
+     xmlns:mls="http://www.w3.org/ns/mls#"
+     xmlns:ns1="http://www.gsi.upm.es/ontologies/onyx/ns#"
+     xmlns:ns2="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#"
+     xmlns:ns3="http://www.gsi.upm.es/ontologies/marl/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://www.gsi.upm.es/ontologies/amor/examples">
+        <owl:versionIRI rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples/1.0.0"/>
+        <terms:creator xml:lang="en">Álvaro Carrera Barroso</terms:creator>
+        <terms:description xml:lang="en">AMOR Examples contains a set of examples using all models required for semantic moral annotation in AMOR project.</terms:description>
+        <terms:publisher rdf:resource="http://www.gsi.upm.es"/>
+        <terms:title xml:lang="en">AMOR Examples</terms:title>
+        <vann:preferredNamespacePrefix>amor-examples</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://www.gsi.upm.es/ontologies/amor/examples#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">AMOR Examples contains a set of examples using all models required for semantic moral annotation in AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">AMOR Examples</rdfs:label>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/articleBody -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/articleBody"/>
+    
+
+
+    <!-- http://schema.org/datePublished -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/datePublished"/>
+    
+
+
+    <!-- http://schema.org/headline -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/headline"/>
+    
+
+
+    <!-- http://schema.org/image -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/image"/>
+    
+
+
+    <!-- http://schema.org/logo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/logo"/>
+    
+
+
+    <!-- http://schema.org/mainEntityOfPage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/mainEntityOfPage"/>
+    
+
+
+    <!-- http://schema.org/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/name"/>
+    
+
+
+    <!-- http://schema.org/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/publisher"/>
+    
+
+
+    <!-- http://schema.org/url -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/url"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#analysed -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#analysed"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#annotated -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#annotated"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#confidence -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#confidence"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/marl/ns#algorithmConfidence -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/marl/ns#algorithmConfidence"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/marl/ns#hasPolarity -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/marl/ns#hasPolarity"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/marl/ns#hasPolarityValue -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/marl/ns#hasPolarityValue"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/marl/ns#maxPolarityValue -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/marl/ns#maxPolarityValue"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/marl/ns#minPolarityValue -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/marl/ns#minPolarityValue"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/onyx/ns#algorithmConfidence -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/onyx/ns#algorithmConfidence"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/onyx/ns#hasEmotion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/onyx/ns#hasEmotion"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/onyx/ns#hasEmotionCategory -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/onyx/ns#hasEmotionCategory"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/onyx/ns#hasEmotionIntensity -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/onyx/ns#hasEmotionIntensity"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/onyx/ns#usesEmotionModel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/onyx/ns#usesEmotionModel"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#executes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/mls#executes"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#hasInput -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/mls#hasInput"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#hasOutput -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/mls#hasOutput"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#realizes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/mls#realizes"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#generated -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#generated"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#used -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#used"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.org/Date -->
+
+
+    <rdfs:Datatype rdf:about="http://schema.org/Date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.org/NewsArticle -->
+
+
+    <owl:Class rdf:about="http://schema.org/NewsArticle"/>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+
+    <owl:Class rdf:about="http://schema.org/Organization"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/marl/ns#Opinion -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/marl/ns#Opinion"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/onyx/ns#Emotion -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/onyx/ns#Emotion"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#Algorithm -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/mls#Algorithm"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#Model -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/mls#Model"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#Run -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/mls#Run"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Person -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Person"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#SoftwareAgent -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#SoftwareAgent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#analysis1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#analysis1">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis"/>
+        <ns:analysed rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
+        <ns:usedMoralValueModel rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics"/>
+        <prov:generated rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#annotation1"/>
+        <prov:wasAssociatedWith rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#human1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#analysis2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#analysis2">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis"/>
+        <ns:analysed rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
+        <ns:usedMoralValueModel rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level3"/>
+        <prov:generated rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#annotation2"/>
+        <prov:wasAssociatedWith rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#human2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#analysis3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#analysis3">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis"/>
+        <ns:analysed rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
+        <ns:usedMLModel rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#model1"/>
+        <ns:usedMoralValueModel rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics"/>
+        <prov:generated rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#annotation3"/>
+        <prov:wasAssociatedWith rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#robot1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#annotation1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#annotation1">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
+        <ns:annotated rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
+        <ns:confidence rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ns:confidence>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Liberty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#annotation2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#annotation2">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
+        <ns:annotated rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
+        <ns:confidence rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</ns:confidence>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/bhv#Conservation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#annotation3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#annotation3">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
+        <ns2:hasPolarityIntensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</ns2:hasPolarityIntensity>
+        <ns:annotated rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
+        <ns:confidence rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</ns:confidence>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Authority"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#bbc -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#bbc">
+        <rdf:type rdf:resource="http://schema.org/Organization"/>
+        <schema:logo rdf:resource="http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1"/>
+        <schema:name>BBC News</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#emotion1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#emotion1">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/onyx/ns#Emotion"/>
+        <ns1:algorithmConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9</ns1:algorithmConfidence>
+        <ns1:hasEmotionCategory rdf:resource="http://gsi.upm.es/ontologies/wnaffect/ns#Hate"/>
+        <ns1:hasEmotionIntensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</ns1:hasEmotionIntensity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#emotion2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#emotion2">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/onyx/ns#Emotion"/>
+        <ns1:algorithmConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.65</ns1:algorithmConfidence>
+        <ns1:hasEmotionCategory rdf:resource="http://gsi.upm.es/ontologies/wnaffect/ns#Fury"/>
+        <ns1:hasEmotionIntensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7</ns1:hasEmotionIntensity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#emotionAnalysis45 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#emotionAnalysis45">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis"/>
+        <ns:usedMLModel rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#model3"/>
+        <ns1:usesEmotionModel rdf:resource="http://gsi.upm.es/ontologies/wnaffect/ns#WNAModel"/>
+        <prov:generated rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#emotionAnnotation87"/>
+        <prov:used rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
+        <prov:wasAssociatedWith rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#robot2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#emotionAnnotation87 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#emotionAnnotation87">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet"/>
+        <ns1:hasEmotion rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#emotion1"/>
+        <ns1:hasEmotion rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#emotion2"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#human1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#human1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#human2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#human2">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#kmeans -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#kmeans">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Algorithm"/>
+        <rdfs:label xml:lang="en">K-Means Clustering</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#knn -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#knn">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Algorithm"/>
+        <rdfs:label xml:lang="en">K-Nearest Neighbors</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#linearRegression -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#linearRegression">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Algorithm"/>
+        <rdfs:label xml:lang="en">Linear Regression</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#logisticRegression -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#logisticRegression">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Algorithm"/>
+        <rdfs:label xml:lang="en">Logistic Regression</rdfs:label>
+        <rdfs:label xml:lang="es">Regresión Logística</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#model1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#model1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#model2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#model2">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#model3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#model3">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#model4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#model4">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#moralAnalysis21 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#moralAnalysis21">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis"/>
+        <ns:analysed rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
+        <ns:usedMLModel rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#model4"/>
+        <ns:usedMoralValueModel rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations"/>
+        <prov:generated rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23"/>
+        <prov:wasAssociatedWith rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#robot2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
+        <ns2:hasBias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.65</ns2:hasBias>
+        <ns2:hasPolarityIntensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</ns2:hasPolarityIntensity>
+        <ns:annotated rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
+        <ns:confidence rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</ns:confidence>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#news1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#news1">
+        <rdf:type rdf:resource="http://schema.org/NewsArticle"/>
+        <schema:articleBody>Director Comey says the probe into last year&apos;s US election would assess if crimes were committed.</schema:articleBody>
+        <schema:datePublished rdf:datatype="http://schema.org/Date">2017-03-20T20:30:54+00:00</schema:datePublished>
+        <schema:headline>Trump Russia claims: FBI&apos;s Comey confirms investigation of election &apos;interference&apos;</schema:headline>
+        <schema:image rdf:resource="http://ichef-1.bbci.co.uk/news/560/cpsprodpb/10DFA/production/_95241196_mediaitem95241195.jpg"/>
+        <schema:image rdf:resource="http://ichef-1.bbci.co.uk/news/560/cpsprodpb/11AA1/production/_95235327_c0b59f9e-316e-4641-aa7e-3fec6daea62b.jpg"/>
+        <schema:image rdf:resource="http://ichef-1.bbci.co.uk/news/560/cpsprodpb/12B64/production/_95244667_mediaitem95244666.jpg"/>
+        <schema:image rdf:resource="http://ichef-1.bbci.co.uk/news/560/cpsprodpb/BCED/production/_92856384_line976.jpg"/>
+        <schema:image rdf:resource="http://ichef-1.bbci.co.uk/news/560/media/images/75306000/jpg/_75306515_line976.jpg"/>
+        <schema:image rdf:resource="http://ichef.bbci.co.uk/news/560/cpsprodpb/0F99/production/_95239930_trumptweet.png"/>
+        <schema:image rdf:resource="http://ichef.bbci.co.uk/news/560/cpsprodpb/11318/production/_95242407_mediaitem95242406.jpg"/>
+        <schema:image rdf:resource="http://ichef.bbci.co.uk/news/560/cpsprodpb/17519/production/_95231559_committee.jpg"/>
+        <schema:image rdf:resource="http://ichef.bbci.co.uk/news/560/cpsprodpb/2CA0/production/_95242411_comey.jpg"/>
+        <schema:image rdf:resource="http://ichef.bbci.co.uk/news/560/cpsprodpb/8AB9/production/_95231553_comey2.jpg"/>
+        <schema:image rdf:resource="http://ichef.bbci.co.uk/news/560/cpsprodpb/CC81/production/_95235325_f704a6dc-c017-4971-aac3-04c03eb097fb.jpg"/>
+        <schema:mainEntityOfPage rdf:resource="http://www.bbc.com/news/world-us-canada-39324587"/>
+        <schema:publisher rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#bbc"/>
+        <schema:url rdf:resource="http://www.bbc.com/news/world-us-canada-39324587"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#opinion45 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#opinion45">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/marl/ns#Opinion"/>
+        <ns3:algorithmConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9</ns3:algorithmConfidence>
+        <ns3:hasPolarity rdf:resource="http://www.gsi.upm.es/ontologies/marl/ns#Neutral"/>
+        <ns3:hasPolarityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</ns3:hasPolarityValue>
+        <prov:wasDerivedFrom rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#robot1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#robot1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#robot2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#robot2">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#run1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#run1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Run"/>
+        <mls:executes rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#wekaLogistic"/>
+        <mls:hasInput rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#credit-a"/>
+        <mls:hasOutput rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#model1"/>
+        <mls:realizes rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#logisticRegression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#run2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#run2">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Run"/>
+        <mls:executes rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#wekaLogistic"/>
+        <mls:hasInput rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#opinionDataset"/>
+        <mls:hasOutput rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#model2"/>
+        <mls:realizes rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#knn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#run3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#run3">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Run"/>
+        <mls:executes rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#wekaLogistic"/>
+        <mls:hasInput rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#emotionDataset1"/>
+        <mls:hasOutput rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#model3"/>
+        <mls:realizes rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#kmeans"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#run4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#run4">
+        <rdf:type rdf:resource="http://www.w3.org/ns/mls#Run"/>
+        <mls:executes rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#wekaLogistic"/>
+        <mls:hasInput rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#moralfoundationdataset"/>
+        <mls:hasOutput rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#model4"/>
+        <mls:realizes rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#linearRegression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/examples#sentimentAnalysis33 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#sentimentAnalysis33">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis"/>
+        <ns:usedMLModel rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#model2"/>
+        <ns3:maxPolarityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ns3:maxPolarityValue>
+        <ns3:minPolarityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</ns3:minPolarityValue>
+        <prov:generated rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#opinion45"/>
+        <prov:used rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
+        <prov:wasAssociatedWith rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#robot2"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

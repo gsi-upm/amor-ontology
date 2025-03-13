@@ -1,0 +1,8 @@
+[
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX amor-exp: <http://www.gsi.upm.es/ontologies/amor/experiments/ns#>\r\n\r\nSELECT ?experiment ?executor ?expSubject\r\nWHERE {\r\n  ?experiment a amor-exp:Experiment ;\r\n                amor-exp:hasExecutor ?executor ;\r\n                amor-exp:hasExperimentationSubject ?expSubject .\r\n} ORDER BY ?date",
+    "metadata": {}
+  }
+]

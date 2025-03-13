@@ -1,0 +1,517 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://kb.openrobots.org", "http://www.gsi.upm.es/ontologies/amor/ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.gsi.upm.es/ontologies/amor/experiments/ns", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "AMOR Experiments Examples"
+    },
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+    "version" : "1.0.0",
+    "author" : [ "Álvaro Carrera Barroso" ],
+    "description" : {
+      "en" : "AMOR Experiments Examples contains a set of examples using the models required to register an experiment in the Semantic Ethical Black Box of AMOR project."
+    },
+    "labels" : {
+      "en" : "AMOR Experiments Examples"
+    },
+    "comments" : {
+      "en" : "AMOR Experiments Examples contains a set of examples using the models required to register an experiment in the Semantic Ethical Black Box of AMOR project."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Álvaro Carrera Barroso",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "amor-exp-examples",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "AMOR Experiments Examples",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/ns/prov#Person",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "annotations" : {
+        "hasMoralProfile" : [ {
+          "identifier" : "hasMoralProfile",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#moralProfile1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "human1",
+        "en" : "Juan"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "labels" : {
+        "IRI-based" : "researcher1",
+        "en" : "Álvaro"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExperimentExecutor"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "labels" : {
+        "IRI-based" : "ari41",
+        "en" : "ARI 41"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Experiment"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#palExperiment1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "annotations" : {
+        "hasVisualizationStrategy" : [ {
+          "identifier" : "hasVisualizationStrategy",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasVisualizationStrategy",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy",
+          "type" : "iri"
+        } ],
+        "usesDataset" : [ {
+          "identifier" : "usesDataset",
+          "language" : "undefined",
+          "value" : "http://amor-graph.gsi.upm.es/ns#dataset1",
+          "type" : "iri"
+        } ],
+        "usesLanguage" : [ {
+          "identifier" : "usesLanguage",
+          "language" : "undefined",
+          "value" : "es_ES",
+          "type" : "label"
+        } ],
+        "hasExperimentSubject" : [ {
+          "identifier" : "hasExperimentSubject",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1",
+          "type" : "iri"
+        } ],
+        "hasExperimentRequester" : [ {
+          "identifier" : "hasExperimentRequester",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1",
+          "type" : "iri"
+        } ],
+        "hasParameter" : [ {
+          "identifier" : "hasParameter",
+          "language" : "undefined",
+          "value" : "_:genid2147483648",
+          "type" : "label"
+        }, {
+          "identifier" : "hasParameter",
+          "language" : "undefined",
+          "value" : "_:genid2147483649",
+          "type" : "label"
+        } ],
+        "hasExperimentExecutor" : [ {
+          "identifier" : "hasExperimentExecutor",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "palExperiment1",
+        "en" : "PAL Experiment 1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentSubject",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExperimentSubject"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "annotations" : {
+        "hasMoralProfile" : [ {
+          "identifier" : "hasMoralProfile",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#moralProfile1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "human1",
+        "en" : "Juan"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DigitalNewspaperExperiment"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#palExperiment1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "annotations" : {
+        "hasVisualizationStrategy" : [ {
+          "identifier" : "hasVisualizationStrategy",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasVisualizationStrategy",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy",
+          "type" : "iri"
+        } ],
+        "usesDataset" : [ {
+          "identifier" : "usesDataset",
+          "language" : "undefined",
+          "value" : "http://amor-graph.gsi.upm.es/ns#dataset1",
+          "type" : "iri"
+        } ],
+        "usesLanguage" : [ {
+          "identifier" : "usesLanguage",
+          "language" : "undefined",
+          "value" : "es_ES",
+          "type" : "label"
+        } ],
+        "hasExperimentSubject" : [ {
+          "identifier" : "hasExperimentSubject",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1",
+          "type" : "iri"
+        } ],
+        "hasExperimentRequester" : [ {
+          "identifier" : "hasExperimentRequester",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1",
+          "type" : "iri"
+        } ],
+        "hasParameter" : [ {
+          "identifier" : "hasParameter",
+          "language" : "undefined",
+          "value" : "_:genid2147483648",
+          "type" : "label"
+        }, {
+          "identifier" : "hasParameter",
+          "language" : "undefined",
+          "value" : "_:genid2147483649",
+          "type" : "label"
+        } ],
+        "hasExperimentExecutor" : [ {
+          "identifier" : "hasExperimentExecutor",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "palExperiment1",
+        "en" : "PAL Experiment 1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralValueAnnotation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentRequester",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExperimentRequester"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "labels" : {
+        "IRI-based" : "researcher1",
+        "en" : "Álvaro"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValuesExperiment",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralValuesExperiment"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#palExperiment1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "annotations" : {
+        "hasVisualizationStrategy" : [ {
+          "identifier" : "hasVisualizationStrategy",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasVisualizationStrategy",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy",
+          "type" : "iri"
+        } ],
+        "usesDataset" : [ {
+          "identifier" : "usesDataset",
+          "language" : "undefined",
+          "value" : "http://amor-graph.gsi.upm.es/ns#dataset1",
+          "type" : "iri"
+        } ],
+        "usesLanguage" : [ {
+          "identifier" : "usesLanguage",
+          "language" : "undefined",
+          "value" : "es_ES",
+          "type" : "label"
+        } ],
+        "hasExperimentSubject" : [ {
+          "identifier" : "hasExperimentSubject",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1",
+          "type" : "iri"
+        } ],
+        "hasExperimentRequester" : [ {
+          "identifier" : "hasExperimentRequester",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1",
+          "type" : "iri"
+        } ],
+        "hasParameter" : [ {
+          "identifier" : "hasParameter",
+          "language" : "undefined",
+          "value" : "_:genid2147483648",
+          "type" : "label"
+        }, {
+          "identifier" : "hasParameter",
+          "language" : "undefined",
+          "value" : "_:genid2147483649",
+          "type" : "label"
+        } ],
+        "hasExperimentExecutor" : [ {
+          "identifier" : "hasExperimentExecutor",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "palExperiment1",
+        "en" : "PAL Experiment 1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentParameter",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExperimentParameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralProfile"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#moralProfile1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "annotations" : {
+        "analysed" : [ {
+          "identifier" : "analysed",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1",
+          "type" : "iri"
+        } ],
+        "generated" : [ {
+          "identifier" : "generated",
+          "language" : "undefined",
+          "value" : "_:genid2147483652",
+          "type" : "label"
+        }, {
+          "identifier" : "generated",
+          "language" : "undefined",
+          "value" : "_:genid2147483655",
+          "type" : "label"
+        }, {
+          "identifier" : "generated",
+          "language" : "undefined",
+          "value" : "_:genid2147483654",
+          "type" : "label"
+        }, {
+          "identifier" : "generated",
+          "language" : "undefined",
+          "value" : "_:genid2147483653",
+          "type" : "label"
+        }, {
+          "identifier" : "generated",
+          "language" : "undefined",
+          "value" : "_:genid2147483651",
+          "type" : "label"
+        }, {
+          "identifier" : "generated",
+          "language" : "undefined",
+          "value" : "_:genid2147483650",
+          "type" : "label"
+        } ],
+        "usedMoralValueModel" : [ {
+          "identifier" : "usedMoralValueModel",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "moralProfile1",
+        "en" : "Juan's Moral Profile"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://kb.openrobots.org#Robot",
+    "baseIri" : "http://kb.openrobots.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Robot"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "labels" : {
+        "IRI-based" : "ari41",
+        "en" : "ARI 41"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#SoftwareAgent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareAgent"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "labels" : {
+        "IRI-based" : "ari41",
+        "en" : "ARI 41"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  } ]
+}

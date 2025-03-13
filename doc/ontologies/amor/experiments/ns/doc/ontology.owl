@@ -1,0 +1,1579 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.gsi.upm.es/ontologies/amor/experiments/ns#"
+     xml:base="http://www.gsi.upm.es/ontologies/amor/experiments/ns"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns">
+        <owl:versionIRI rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns/1.0.0"/>
+        <terms:creator xml:lang="en">Álvaro Carrera Barroso</terms:creator>
+        <terms:description xml:lang="en">AMOR Experiments is an ontology designed for representing experiments and evaluations in the AMOR project.</terms:description>
+        <terms:publisher rdf:resource="http://www.gsi.upm.es"/>
+        <terms:title xml:lang="en">AMOR Experiments Ontology</terms:title>
+        <vann:preferredNamespacePrefix>amor-exp</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://www.gsi.upm.es/ontologies/amor/experiments/ns#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">AMOR Experiments is an ontology designed for representing experiments and evaluations in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">AMOR Experiments Ontology</rdfs:label>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.org/category -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/category"/>
+    
+
+
+    <!-- http://schema.org/hasPart -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/hasPart"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario">
+        <rdfs:subPropertyOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasContentAdaptationStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasContentAdaptationStrategy">
+        <rdfs:subPropertyOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ContentAdaptationStrategy"/>
+        <rdfs:comment xml:lang="en">Relates an experiment with the content adaptation strategy used.</rdfs:comment>
+        <rdfs:label xml:lang="en">has content adaptation strategy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExecutor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExecutor">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor"/>
+        <rdfs:comment xml:lang="en">Relates an experiment with its executor.</rdfs:comment>
+        <rdfs:label xml:lang="en">has experiment executor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation">
+        <rdfs:subPropertyOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution"/>
+        <rdfs:comment xml:lang="en">Relates an experiment with its evaluation.</rdfs:comment>
+        <rdfs:label xml:lang="en">has experiment evaluation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentationSubject -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentationSubject">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentionSubject"/>
+        <rdfs:comment xml:lang="en">Relates an experiment with its subject.</rdfs:comment>
+        <rdfs:label xml:lang="en">has experimentation subject</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFacialExpresivity -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFacialExpresivity">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExpresivityCategory"/>
+        <rdfs:comment xml:lang="en">Relates a character with its facial expresivity.</rdfs:comment>
+        <rdfs:label xml:lang="en">has facial expresivity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFinalQuestion -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFinalQuestion">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution"/>
+        <rdfs:range rdf:resource="http://schema.org/Question"/>
+        <rdfs:comment xml:lang="en">Relates an experiment evaluation with the final questionnaire.</rdfs:comment>
+        <rdfs:label xml:lang="en">has final question</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasGesturalExpresivity -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasGesturalExpresivity">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExpresivityCategory"/>
+        <rdfs:comment xml:lang="en">Relates a character with its gestural expresivity.</rdfs:comment>
+        <rdfs:label xml:lang="en">has gestural expresivity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution"/>
+        <rdfs:range rdf:resource="http://schema.org/Question"/>
+        <rdfs:comment xml:lang="en">Relates an experiment evaluation with the initial questionnaire.</rdfs:comment>
+        <rdfs:label xml:lang="en">has initial question</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIntermediateQuestion -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIntermediateQuestion">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution"/>
+        <rdfs:range rdf:resource="http://schema.org/Question"/>
+        <rdfs:comment xml:lang="en">Relates an experiment evaluation with the intermediate questionnaire.</rdfs:comment>
+        <rdfs:label xml:lang="en">has intermediate question</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMConfiguration -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMConfiguration">
+        <rdfs:subPropertyOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration"/>
+        <rdfs:comment xml:lang="en">Relates an experiment with the LLM configuration used.</rdfs:comment>
+        <rdfs:label xml:lang="en">has LLM configuration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasNews -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasNews">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/hasPart"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset"/>
+        <rdfs:range rdf:resource="http://schema.org/NewsArticle"/>
+        <rdfs:comment xml:lang="en">Relates a news dataset with its main entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">has main entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Relates an experiment with its parameters.</rdfs:comment>
+        <rdfs:label xml:lang="en">has parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameterValue -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameterValue"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement">
+        <rdfs:subPropertyOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredContent -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredContent">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentionSubject"/>
+        <rdfs:range rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:comment xml:lang="en">Relates an experimentation subject with its preferred content.</rdfs:comment>
+        <rdfs:label xml:lang="en">has preferred content</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredEntity -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredEntity">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentionSubject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationCriterion -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationCriterion">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/category"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Recommendation"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationCriterion"/>
+        <rdfs:comment xml:lang="en">Relates a recommendation with its recommendation criterion.</rdfs:comment>
+        <rdfs:label xml:lang="en">has recommendation criterion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationStrategy">
+        <rdfs:subPropertyOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameterValue"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationStrategyParameter"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationCriterion"/>
+        <rdfs:comment xml:lang="en">Relates a recommendation strategy parameter with its recommentation strategy.</rdfs:comment>
+        <rdfs:label xml:lang="en">has recommendation strategy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentRequester"/>
+        <rdfs:comment xml:lang="en">Relates an experiment with its requester, i.e. the person who requests the execution of the experiment.</rdfs:comment>
+        <rdfs:label xml:lang="en">has experiment requester</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotRole"/>
+        <rdfs:range rdf:resource="http://kb.openrobots.org#Robot"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy">
+        <rdfs:subPropertyOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#VisualizationStrategy"/>
+        <rdfs:comment xml:lang="en">Relates a visualization strategy parameter with its visualization strategy.</rdfs:comment>
+        <rdfs:label xml:lang="en">has visualization strategy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVocalExpresivity -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVocalExpresivity">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExpresivityCategory"/>
+        <rdfs:comment xml:lang="en">Relates a character with its vocal expresivity.</rdfs:comment>
+        <rdfs:label xml:lang="en">has vocal expresivity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#isRelatedWithExperiment -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#isRelatedWithExperiment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/segb/ns#LoggedActivity"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:comment xml:lang="en">Relates an activity logged in the AMOR-SEGB with the experiment in progress.</rdfs:comment>
+        <rdfs:label xml:lang="en">is related with experiment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData">
+        <rdfs:subPropertyOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar">
+        <rdfs:subPropertyOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar"/>
+        <rdfs:comment xml:lang="en">Relates an experiment with the avatar used.</rdfs:comment>
+        <rdfs:label xml:lang="en">uses avatar</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset">
+        <rdfs:subPropertyOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset"/>
+        <rdfs:comment xml:lang="en">Relates a news content dataset parameter with its dataset.</rdfs:comment>
+        <rdfs:label xml:lang="en">has dataset</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy">
+        <rdfs:subPropertyOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionRecognitionCooperationStrategy"/>
+        <rdfs:comment xml:lang="en">Relates an experiment with the emotion recognition cooperation strategy used.</rdfs:comment>
+        <rdfs:label xml:lang="en">uses emotion recognition cooperation strategy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage">
+        <rdfs:subPropertyOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/XML/1998/namespace/lang"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy">
+        <rdfs:subPropertyOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy"/>
+        <rdfs:comment xml:lang="en">Relates an experiment with the robot cooperation strategy used.</rdfs:comment>
+        <rdfs:label xml:lang="en">uses robot cooperation strategy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy">
+        <rdfs:subPropertyOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy"/>
+        <rdfs:comment xml:lang="en">Relates an experiment with the semantic cooperation strategy used.</rdfs:comment>
+        <rdfs:label xml:lang="en">uses semantic cooperation strategy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAccesibilityCategory -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAccesibilityCategory">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentionSubject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates an experimentation subject with its accesibility category.</rdfs:comment>
+        <rdfs:label xml:lang="en">has accesibility category</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAgeBracket -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAgeBracket">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentionSubject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates an experimentation subject with its age bracket.</rdfs:comment>
+        <rdfs:label xml:lang="en">has age bracket</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAppearance -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAppearance">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates a character with its appearance.</rdfs:comment>
+        <rdfs:label xml:lang="en">has appearance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAverageSocialNetworkActivityPerMonth -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAverageSocialNetworkActivityPerMonth">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentionSubject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Relates an experimentation subject with the average social network activity per month.</rdfs:comment>
+        <rdfs:label xml:lang="en">has average social network activity per month</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundMusic -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundMusic">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates an experiment with the background music used.</rdfs:comment>
+        <rdfs:label xml:lang="en">has background music</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasCategory -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasCategory">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates a character with its category.</rdfs:comment>
+        <rdfs:label xml:lang="en">has category</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasEducationalLevel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasEducationalLevel">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentionSubject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates an experimentation subject with its educational level.</rdfs:comment>
+        <rdfs:label xml:lang="en">has educational level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMToken -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMToken">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates an LLM configuration with the LLM token used.</rdfs:comment>
+        <rdfs:label xml:lang="en">has LLM token</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLanguageComplexityLevel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLanguageComplexityLevel">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates a character with its language complexity level.</rdfs:comment>
+        <rdfs:label xml:lang="en">has language complexity level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasNumberOfFollowers -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasNumberOfFollowers">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentionSubject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Relates an experimentation subject with the number of followers.</rdfs:comment>
+        <rdfs:label xml:lang="en">has number of followers</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPersonality -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPersonality">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates a character with its personality.</rdfs:comment>
+        <rdfs:label xml:lang="en">has personality</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPoliticalOrientation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPoliticalOrientation">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentionSubject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates an experimentation subject with its political orientation.</rdfs:comment>
+        <rdfs:label xml:lang="en">has political orientation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredEntity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredEntity"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredTopic -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredTopic">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentionSubject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates an experimentation subject with its preferred topic.</rdfs:comment>
+        <rdfs:label xml:lang="en">has preferred topic</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationScore -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationScore">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Recommendation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Relates a recommendation with the score of the recommendation.</rdfs:comment>
+        <rdfs:label xml:lang="en">has recommendation score</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRoleType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRoleType">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotRole"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates a robot role with the robot role type.</rdfs:comment>
+        <rdfs:label xml:lang="en">has robot role type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasStressLevel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasStressLevel">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentionSubject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Relates an experimentation subject with its stress level (between 0.0 to 1.0).</rdfs:comment>
+        <rdfs:label xml:lang="en">has stress level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVoice -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVoice">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates a character with its voice.</rdfs:comment>
+        <rdfs:label xml:lang="en">has voice</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates a semantic cooperation strategy with the cloud graph query used.</rdfs:comment>
+        <rdfs:label xml:lang="en">uses cloud graph query</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMEndPoint -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMEndPoint">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates an LLM configuration with the LLM end point used.</rdfs:comment>
+        <rdfs:label xml:lang="en">uses LLM end point</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMModel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMModel">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates an LLM configuration with the LLM model used.</rdfs:comment>
+        <rdfs:label xml:lang="en">uses LLM model</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMService -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMService">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates an LLM configuration with the LLM service used.</rdfs:comment>
+        <rdfs:label xml:lang="en">uses LLM service</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesPrompt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesPrompt">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates an LLM configuration with the prompt used.</rdfs:comment>
+        <rdfs:label xml:lang="en">uses prompt</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates a semantic cooperation strategy with the SPARQL query used.</rdfs:comment>
+        <rdfs:label xml:lang="en">uses SPARQL query</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://kb.openrobots.org#Robot -->
+
+
+    <owl:Class rdf:about="http://kb.openrobots.org#Robot"/>
+    
+
+
+    <!-- http://schema.org/CreativeWork -->
+
+
+    <owl:Class rdf:about="http://schema.org/CreativeWork"/>
+    
+
+
+    <!-- http://schema.org/Dataset -->
+
+
+    <owl:Class rdf:about="http://schema.org/Dataset"/>
+    
+
+
+    <!-- http://schema.org/NewsArticle -->
+
+
+    <owl:Class rdf:about="http://schema.org/NewsArticle"/>
+    
+
+
+    <!-- http://schema.org/Question -->
+
+
+    <owl:Class rdf:about="http://schema.org/Question"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="en">Represents an avatar used in an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Avatar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitExperiment -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitExperiment">
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment"/>
+        <rdfs:comment xml:lang="en">Represents an experiment with click bait in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Click Bait Experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#ContentAdaptationStrategy -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ContentAdaptationStrategy">
+        <rdfs:comment xml:lang="en">Represents a strategy used to adapt the content in an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Content Adaptation Strategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment">
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:comment xml:lang="en">Represents an experiment with a digital newspaper in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Digital Newspaper Experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionRecognitionCooperationStrategy -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionRecognitionCooperationStrategy">
+        <rdfs:comment xml:lang="en">Represents the strategy used to cooperate with the emotion recognition in an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Emotion Recognition Cooperation Strategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment xml:lang="en">Represents an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment xml:lang="en">Represents an evaluation of an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Experiment Evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:comment xml:lang="en">Represents an executor of an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Experiment Executor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentParameter -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentParameter">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment xml:lang="en">Represents a parameter of an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Experiment Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentRequester -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentRequester">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:comment xml:lang="en">Represents a requester of an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Experiment Requester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentationSubject -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentationSubject">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:comment xml:lang="en">Represents a subject of an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Experimentation Subject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentionSubject -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentionSubject"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExpresivityCategory -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExpresivityCategory">
+        <rdfs:comment xml:lang="en">Represents the expresivity category of a character in an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Expresivity Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#FakeNewsAwarenessExperiment -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#FakeNewsAwarenessExperiment">
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment"/>
+        <rdfs:comment xml:lang="en">Represents an experiment with fake news awareness in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fake News Awareness Experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#GeographicalVisualizationExperiment -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#GeographicalVisualizationExperiment">
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:comment xml:lang="en">Represents an experiment with geographical visualization in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Geographical Visualization Experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration">
+        <rdfs:comment xml:lang="en">Represents the configuration of the LLM used in an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">LLM Configuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralFrameExperiment -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralFrameExperiment">
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment"/>
+        <rdfs:comment xml:lang="en">Represents an experiment with a moral frame in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Moral Frame Experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValuesExperiment -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValuesExperiment">
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment"/>
+        <rdfs:comment xml:lang="en">Represents an experiment with moral values in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Moral Values Experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Dataset"/>
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentParameter"/>
+        <rdfs:comment xml:lang="en">Represents a dataset of news content.</rdfs:comment>
+        <rdfs:label xml:lang="en">News Dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#Recommendation -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Recommendation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/oa#Recommendation"/>
+        <rdfs:comment xml:lang="en">Represents a recommendation for a piee of content.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recommendation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationCriterion -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationCriterion">
+        <rdfs:comment xml:lang="en">Represents a criterion used to filter recommendations in an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recommendation Criterion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationStrategyParameter -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationStrategyParameter">
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentParameter"/>
+        <rdfs:comment xml:lang="en">Represents the strategy used to filter recommendations for an item in an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recommendation Strategy Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy">
+        <rdfs:comment xml:lang="en">Represents the strategy used to cooperate with the robot in an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Robot Cooperation Strategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotRole -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotRole">
+        <rdfs:comment xml:lang="en">Represents the role of a robot in an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Robot Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#SearchEngineBiasExperiment -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SearchEngineBiasExperiment">
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment"/>
+        <rdfs:comment xml:lang="en">Represents an experiment with a search engine bias in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Search Engine Bias Experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy">
+        <rdfs:comment xml:lang="en">Represents the strategy used to cooperate with the semantic web in an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Semantic Cooperation Strategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#SocialNetworkExperiment -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SocialNetworkExperiment">
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:comment xml:lang="en">Represents an experiment with a social network in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Social Network Experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#VisualizationStrategy -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#VisualizationStrategy">
+        <rdfs:comment xml:lang="en">Represents a strategy used to visualize the results of an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Visualization Strategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/segb/ns#LoggedActivity -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/segb/ns#LoggedActivity"/>
+    
+
+
+    <!-- http://www.w3.org/XML/1998/namespace/lang -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/XML/1998/namespace/lang"/>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#Recommendation -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/oa#Recommendation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#AfectiveAdaptationStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#AfectiveAdaptationStrategy">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ContentAdaptationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the affective adaptation strategy.</rdfs:comment>
+        <rdfs:label xml:lang="en">Affective Adaptation Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#AffectiveValueVisualizationStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#AffectiveValueVisualizationStrategy">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#VisualizationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the strategy used to visualize the affective values of the results of an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Affective Value Visualization Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#VisualizationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the strategy used to visualize the click bait values of the results of an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Click Bait Visualization Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#CloudEmotionRecognition -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#CloudEmotionRecognition">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionRecognitionCooperationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the cloud cooperation in emotion recognition in an experiment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cloud Cooperation Emotion Recognition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#CloudSemanticCooperation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#CloudSemanticCooperation">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the cloud semantic cooperation in an experiment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cloud Semantic Cooperation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionDissimilarity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionDissimilarity">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationCriterion"/>
+        <rdfs:comment xml:lang="en">Recommends elements with an opposite emotion value</rdfs:comment>
+        <rdfs:label xml:lang="en">Opposite Emotion Recommendation Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionSimilarity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionSimilarity">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationCriterion"/>
+        <rdfs:comment xml:lang="en">Recommends elements with a similar emotion value</rdfs:comment>
+        <rdfs:label xml:lang="en">Similar Emotion Recommendation Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotiveExpresivity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotiveExpresivity">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExpresivityCategory"/>
+        <rdfs:comment xml:lang="en">Represents the emotive expresivity of a character.</rdfs:comment>
+        <rdfs:label xml:lang="en">Emotive Expresivity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmphaticExpresivity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmphaticExpresivity">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExpresivityCategory"/>
+        <rdfs:comment xml:lang="en">Represents the emphatic expresivity of a character.</rdfs:comment>
+        <rdfs:label xml:lang="en">Emphatic Expresivity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#EntitySimilarity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#EntitySimilarity">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationCriterion"/>
+        <rdfs:comment xml:lang="en">Recommends elements with a similar named entities</rdfs:comment>
+        <rdfs:label xml:lang="en">Similar Entities Recommendation Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExaggeratedExpresivity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExaggeratedExpresivity">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExpresivityCategory"/>
+        <rdfs:comment xml:lang="en">Represents the exaggerated expresivity of a character.</rdfs:comment>
+        <rdfs:label xml:lang="en">Exaggerated Expresivity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#FakeNewsVisualizationStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#FakeNewsVisualizationStrategy">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#VisualizationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the strategy used to visualize the fake news values of the results of an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fake News Visualization Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullCooperationEmotionRecognition -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullCooperationEmotionRecognition">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionRecognitionCooperationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the full cooperation in emotion recognition in an experiment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Full Cooperation Emotion Recognition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the full semantic cooperation in an experiment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Full Semantic Cooperation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionRecognitionCooperationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the local cooperation in emotion recognition in an experiment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Local Cooperation Emotion Recognition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalSemanticCooperation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalSemanticCooperation">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the local semantic cooperation in an experiment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Local Semantic Cooperation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralAdaptationStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralAdaptationStrategy">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ContentAdaptationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the moral adaptation strategy.</rdfs:comment>
+        <rdfs:label xml:lang="en">Moral Adaptation Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralDissimilarity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralDissimilarity">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationCriterion"/>
+        <rdfs:comment xml:lang="en">Recommends elements with an opposite moral value</rdfs:comment>
+        <rdfs:label xml:lang="en">Opposite Moral Recommendation Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralSimilarity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralSimilarity">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationCriterion"/>
+        <rdfs:comment xml:lang="en">Recommends elements with a similar moral value</rdfs:comment>
+        <rdfs:label xml:lang="en">Similar Moral Recommendation Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#VisualizationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the strategy used to visualize the moral values of the results of an experiment in the AMOR project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Moral Value Visualization Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoAdaptationStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoAdaptationStrategy">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ContentAdaptationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the absence of content adaptation strategy.</rdfs:comment>
+        <rdfs:label xml:lang="en">No Adaptation Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoCooperationEmotionRecognition -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoCooperationEmotionRecognition">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionRecognitionCooperationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the absence of cooperation in emotion recognition in an experiment.</rdfs:comment>
+        <rdfs:label xml:lang="en">No Cooperation Emotion Recognition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoCooperationRobot -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoCooperationRobot">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the absence of cooperation in robot in an experiment.</rdfs:comment>
+        <rdfs:label xml:lang="en">No Cooperation Robot</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoExpresivity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoExpresivity">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExpresivityCategory"/>
+        <rdfs:comment xml:lang="en">Represents the absence of expresivity in a character.</rdfs:comment>
+        <rdfs:label xml:lang="en">No Expresivity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoSemanticCooperation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoSemanticCooperation">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the absence of semantic cooperation in an experiment.</rdfs:comment>
+        <rdfs:label xml:lang="en">No Semantic Cooperation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#SentimentDisimilarity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SentimentDisimilarity">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationCriterion"/>
+        <rdfs:comment xml:lang="en">Recommends elements with an opposite sentiment value</rdfs:comment>
+        <rdfs:label xml:lang="en">Opposite Sentiment Recommendation Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#SentimentSimilarity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SentimentSimilarity">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationCriterion"/>
+        <rdfs:comment xml:lang="en">Recommends elements with a similar sentiment value</rdfs:comment>
+        <rdfs:label xml:lang="en">Similar Sentiment Recommendation Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario">
+        <rdfs:comment xml:lang="en">Relates an experiment with the background scenario used.</rdfs:comment>
+        <rdfs:label xml:lang="en">has background scenario</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement">
+        <rdfs:comment xml:lang="en">Relates an experiment with the physical movement used.</rdfs:comment>
+        <rdfs:label xml:lang="en">has physical movement</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredEntity">
+        <rdfs:comment xml:lang="en">Relates an experimentation subject with its preferred entities.</rdfs:comment>
+        <rdfs:label xml:lang="en">has preferred entities</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor">
+        <rdfs:comment xml:lang="en">Relates a robot role with the robot actor.</rdfs:comment>
+        <rdfs:label xml:lang="en">has robot actor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole">
+        <rdfs:comment xml:lang="en">Relates a robot cooperation strategy with the robot role.</rdfs:comment>
+        <rdfs:label xml:lang="en">has robot role</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData">
+        <rdfs:comment xml:lang="en">Relates an experiment with the aggregated data used.</rdfs:comment>
+        <rdfs:label xml:lang="en">uses aggregated data</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage">
+        <rdfs:comment xml:lang="en">Relates a digital newspaper experiment with the language used in the experiment.</rdfs:comment>
+        <rdfs:label xml:lang="en">uses language</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,163 @@
+@prefix amor: <http://www.gsi.upm.es/ontologies/amor/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix mls: <http://www.w3.org/ns/mls#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix onyx: <http://www.gsi.upm.es/ontologies/onyx/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.gsi.upm.es/ontologies/amor/ns>
+  a owl:Ontology ;
+  rdfs:label "AMOR Moral Values Ontology"@en ;
+  owl:versionInfo "1.0.0"^^xsd:string ;
+  owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/ns/1.0.0> ;
+  dc:title "AMOR Moral Values Ontology"@en ;
+  dc:creator "Sergio Muñoz López"@es ,
+    "Álvaro Carrera Barroso"@es ,
+    "Juan Fernando Sánchez Rada"@es;
+  dc:publisher <http://www.gsi.upm.es> ;
+  rdfs:comment "AMOR is an ontology designed for representing moral values analysis and annotations in textual sources."@en ;
+  dc:description "AMOR is an ontology designed for representing moral values and value annotations in textual sources."@en ;
+  vann:preferredNamespacePrefix "amor" ;
+  vann:preferredNamespaceUri "http://www.gsi.upm.es/ontologies/amor/ns#" .
+
+amor:AnalysedEntity
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity ;
+  owl:unionOf (
+     nif:String 
+     schema:NewsArticle
+     prov:Agent
+   ) ;
+  rdfs:label "Analysed Entity"@en ;
+  rdfs:comment "Represents any analysed entity that is used as a source of the analysis. It be text, such as a string or a news article; but it can be an agent; i.e. a human or a robot analysed using the results of a questionnarie."@en .
+
+amor:MoralValueAnnotation
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity, oa:Annotation ;
+  rdfs:label "Moral Value Annotation"@en ;
+  rdfs:comment "Represents a value annotation extracted from textual sources."@en .
+
+amor:EntityAnnotation
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity, oa:Annotation ;
+  rdfs:label "NER Annotation"@en ;
+  rdfs:comment "Represents an entity found in textual sources."@en .
+
+amor:SentimentAnnotation
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity, nif:Opinion, oa:Annotation ;
+  rdfs:label "sentiment annotation"@en ;
+  rdfs:comment "Represents an opinion detected in textual sources."@en .
+
+amor:EmotionAnnotation
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity, onyx:EmotionSet, oa:Annotation ;
+  rdfs:label "emotion annotation"@en ;
+  rdfs:comment "Represents an emotion detected in textual sources."@en .
+
+amor:MoralValueAnalysis
+  a owl:Class ;
+  rdfs:subClassOf prov:Activity ;
+  rdfs:label "Moral Value Analysis"@en ;
+  rdfs:comment "Represents the activity of analyzing text for moral values."@en .
+
+amor:MoralProfile
+    a owl:Class ;
+    rdfs:subClassOf amor:MoralValueAnalysis ;
+    rdfs:label "Moral Profile"@en ;
+    rdfs:comment "Represents the moral profile analysis of an agent."@en .
+
+amor:hasMoralProfile
+    a owl:ObjectProperty ;
+    rdfs:domain prov:Agent ;
+    rdfs:range amor:MoralProfile ;
+    rdfs:label "has moral profile"@en ;
+    rdfs:comment "Relates an agent (human or not) with its moral profile."@en .
+
+amor:MoralValueModel
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity ;
+  rdfs:label "Moral Value Model"@en ;
+  rdfs:comment "Represents a model for categorizing moral values."@en .
+
+amor:MoralValueCategory
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity ;
+  rdfs:label "Moral Value Category"@en ;
+  rdfs:comment "Represents a category of moral values."@en .
+
+amor:MLEntity
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity ;
+  rdfs:subClassOf mls:InformationEntity ;
+  rdfs:label "Machine Learning Entity"@en ;
+  rdfs:comment "Represents any entity related with a Machine Learning process. It is a subclass of mls:Entity and prov:Entity."@en .
+
+amor:MLProcess
+  a owl:Class ;
+  rdfs:subClassOf prov:Activity ;
+  rdfs:subClassOf mls:Run ;
+  rdfs:label "Machine Learning Process"@en ;
+  rdfs:comment "Represents a process related with Machine Learning that generates some output, such as a mls:Model or any other mls:InformationEntity."@en .
+
+# Replace with itsrdf:taConfidence
+#:confidence
+#  a owl:DatatypeProperty ;
+#  rdfs:label "confidence"@en ;
+#  rdfs:domain amor:MoralValueAnnotation ;
+#  rdfs:range xsd:float ;
+#  rdfs:comment "The confidence score of the moral value annotation, ranging from 0 to 1."@en .
+#
+
+amor:hasMoralValueCategory
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf prov:hadMember ;
+  rdfs:label "has moral value category"@en ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     amor:MoralValueAnnotation 
+     amor:MoralValueModel
+   )
+  ] ;
+  rdfs:range amor:MoralValueCategory ;
+  rdfs:comment "Specifies the category of the moral value."@en .
+
+amor:usedMoralValueModel
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf prov:used ;
+  rdfs:label "used moral value model"@en ;
+  rdfs:domain amor:MoralValueAnalysis ;
+  rdfs:range amor:MoralValueModel ;
+  rdfs:comment "Specifies the moral value model used in the analysis."@en .
+
+amor:analysed
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf prov:used ;
+  rdfs:label "analysed"@en ;
+  rdfs:domain amor:MoralValueAnalysis ;
+  rdfs:range amor:AnalysedEntity ;
+  rdfs:comment "This property relates a ValueAnalysis with the resource that is analysed."@en .
+
+# Removed in favor of oa:Annotation and oa:hasTarget
+#amor:annotated
+#  a owl:ObjectProperty ;
+#  rdfs:subPropertyOf prov:wasDerivedFrom ;
+#  rdfs:label "annotated"@en ;
+#  rdfs:domain amor:MoralValueAnnotation ;
+#  rdfs:range amor:AnalysedEntity ;
+#  rdfs:comment "This property relates the ValueAnnotation activity with the resource that is annotated."@en .
+
+amor:usedMLModel
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf prov:used ;
+  rdfs:label "used machine learning model"@en ;
+  rdfs:domain prov:Activity ;
+  rdfs:range mls:Model ;
+  rdfs:comment "This property relates an activity (such as a MoralAnalysis ) with the Machine Learning Model (mls:Model) used to carry out the activity."@en .

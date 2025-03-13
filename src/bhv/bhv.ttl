@@ -1,0 +1,648 @@
+@prefix : <http://www.gsi.upm.es/ontologies/bhv/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.gsi.upm.es/ontologies/bhv/ns> rdf:type owl:Ontology ;
+                                    dc:comment "This SKOS taxonomy mirrors the categories in Basic Human Values Theory and provides a semantic representation using the standard SKOS representation."@en ;
+                                    dc:description "This SKOS taxonomy mirrors the categories in Basic Human Values Theory and provides a semantic representation using the standard SKOS representation."@en ;
+                                    dc:title "Basic Human Values Taxonomy - SKOS version"@en ;
+                                    rdfs:label "Basic Human Values Taxonomy - SKOS version"@en ;
+                                    owl:versionInfo "1.0.0"^^xsd:string ;
+                                    owl:versionIRI <http://www.gsi.upm.es/ontologies/bhv/ns/1.0.0> ;
+                                    dc:creator "Sergio Muñoz López"@en ,
+                                          "Álvaro Carrera Barroso"@en ;
+                                    dc:publisher <http://www.gsi.upm.es> ;
+                                    vann:preferredNamespacePrefix "bhv" ;
+                                    vann:preferredNamespaceUri "http://www.gsi.upm.es/ontologies/bhv/ns#" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#broaderTransitive
+skos:broaderTransitive rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+skos:ConceptScheme rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.gsi.upm.es/ontologies/bhv#Achievement
+:Achievement rdf:type owl:NamedIndividual ,
+                      skos:Concept ;
+             skos:broaderTransitive :SelfEnhancement ;
+             skos:prefLabel "achievement" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeAmbitious
+:BeAmbitious rdf:type owl:NamedIndividual ,
+                      skos:Concept ;
+             skos:broaderTransitive :Achievement ;
+             skos:prefLabel "be-ambitious" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeBehavingProperly
+:BeBehavingProperly rdf:type owl:NamedIndividual ,
+                             skos:Concept ;
+                    skos:broaderTransitive :ConformityRules ;
+                    skos:prefLabel "be-behaving-properly" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeBroadminded
+:BeBroadminded rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:broaderTransitive :UniversalismTolerance ;
+               skos:prefLabel "be-broadminded" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeCapable
+:BeCapable rdf:type owl:NamedIndividual ,
+                    skos:Concept ;
+           skos:broaderTransitive :Achievement ;
+           skos:prefLabel "be-capable" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeChoosingOwnGoals
+:BeChoosingOwnGoals rdf:type owl:NamedIndividual ,
+                             skos:Concept ;
+                    skos:broaderTransitive :SelfDirectionAction ;
+                    skos:prefLabel "be-choosing-own-goals" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeCompliant
+:BeCompliant rdf:type owl:NamedIndividual ,
+                      skos:Concept ;
+             skos:broaderTransitive :ConformityRules ;
+             skos:prefLabel "be-compliant" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeCourageous
+:BeCourageous rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:broaderTransitive :Achievement ;
+              skos:prefLabel "be-courageous" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeCreative
+:BeCreative rdf:type owl:NamedIndividual ,
+                     skos:Concept ;
+            skos:broaderTransitive :SelfDirectionThought ;
+            skos:prefLabel "be-creative" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeCurious
+:BeCurious rdf:type owl:NamedIndividual ,
+                    skos:Concept ;
+           skos:broaderTransitive :SelfDirectionThought ;
+           skos:prefLabel "be-curious" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeDaring
+:BeDaring rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:broaderTransitive :Stimulation ;
+          skos:prefLabel "be-daring" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeForgiving
+:BeForgiving rdf:type owl:NamedIndividual ,
+                      skos:Concept ;
+             skos:broaderTransitive :BenevolenceCaring ;
+             skos:prefLabel "be-forgiving" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeHelpful
+:BeHelpful rdf:type owl:NamedIndividual ,
+                    skos:Concept ;
+           skos:broaderTransitive :BenevolenceCaring ;
+           skos:prefLabel "be-helpful" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeHoldingReligiousFaith
+:BeHoldingReligiousFaith rdf:type owl:NamedIndividual ,
+                                  skos:Concept ;
+                         skos:broaderTransitive :Tradition ;
+                         skos:prefLabel "be-holding-religious-faith" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeHonest
+:BeHonest rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:broaderTransitive :BenevolenceCaring ;
+          skos:prefLabel "be-honest" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeHonoringElders
+:BeHonoringElders rdf:type owl:NamedIndividual ,
+                           skos:Concept ;
+                  skos:broaderTransitive :ConformityInterpersonal ;
+                  skos:prefLabel "be-honoring-elders" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeHumble
+:BeHumble rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:broaderTransitive :Humility ;
+          skos:prefLabel "be-humble" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeIndependent
+:BeIndependent rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:broaderTransitive :SelfDirectionAction ;
+               skos:prefLabel "be-independent" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeIntellectual
+:BeIntellectual rdf:type owl:NamedIndividual ,
+                         skos:Concept ;
+                skos:broaderTransitive :Achievement ;
+                skos:prefLabel "be-intellectual" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeJust
+:BeJust rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:broaderTransitive :UniversalismConcern ;
+        skos:prefLabel "be-just" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeLogical
+:BeLogical rdf:type owl:NamedIndividual ,
+                    skos:Concept ;
+           skos:broaderTransitive :UniversalismObjectivity ;
+           skos:prefLabel "be-logical" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeLoving
+:BeLoving rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:broaderTransitive :BenevolenceCaring ;
+          skos:prefLabel "be-loving" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeNeatAndTidy
+:BeNeatAndTidy rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:broaderTransitive :SecurityPersonal ;
+               skos:prefLabel "be-neat-and-tidy" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BePolite
+:BePolite rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:broaderTransitive :ConformityInterpersonal ;
+          skos:prefLabel "be-polite" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeProtectingTheEnvironment
+:BeProtectingTheEnvironment rdf:type owl:NamedIndividual ,
+                                     skos:Concept ;
+                            skos:broaderTransitive :UniversalismNature ;
+                            skos:prefLabel "be-protecting-the-environment" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeRespectingTraditions
+:BeRespectingTraditions rdf:type owl:NamedIndividual ,
+                                 skos:Concept ;
+                        skos:broaderTransitive :Tradition ;
+                        skos:prefLabel "be-respecting-traditions" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeResponsible
+:BeResponsible rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:broaderTransitive :BenevolenceDependability ;
+               skos:prefLabel "be-responsible" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BeSelfDisciplined
+:BeSelfDisciplined rdf:type owl:NamedIndividual ,
+                            skos:Concept ;
+                   skos:broaderTransitive :ConformityRules ;
+                   skos:prefLabel "be-self-disciplined" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BenevolenceCaring
+:BenevolenceCaring rdf:type owl:NamedIndividual ,
+                            skos:Concept ;
+                   skos:broaderTransitive :SelfTranscendence ;
+                   skos:prefLabel "benevolence-caring" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#BenevolenceDependability
+:BenevolenceDependability rdf:type owl:NamedIndividual ,
+                                   skos:Concept ;
+                          skos:broaderTransitive :SelfTranscendence ;
+                          skos:prefLabel "benevolence-dependability" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#Bhv
+:Bhv rdf:type owl:NamedIndividual ,
+              skos:ConceptScheme ;
+     dc:title "bhv" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#ConformityInterpersonal
+:ConformityInterpersonal rdf:type owl:NamedIndividual ,
+                                  skos:Concept ;
+                         skos:broaderTransitive :Conservation ;
+                         skos:prefLabel "conformity-interpersonal" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#ConformityRules
+:ConformityRules rdf:type owl:NamedIndividual ,
+                          skos:Concept ;
+                 skos:broaderTransitive :Conservation ;
+                 skos:prefLabel "conformity-rules" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#Conservation
+:Conservation rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:broaderTransitive :PersonalFocus ,
+                                     :SelfProtectionAnxietyAvoidance ,
+                                     :SocialFocus ;
+              skos:prefLabel "conservation" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#Face
+:Face rdf:type owl:NamedIndividual ,
+               skos:Concept ;
+      skos:broaderTransitive :Conservation ,
+                             :SelfEnhancement ;
+      skos:prefLabel "face" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#GrowthAnxietyFree
+:GrowthAnxietyFree rdf:type owl:NamedIndividual ,
+                            skos:Concept ;
+                   skos:prefLabel "growth-anxiety-free" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveAComfortableLife
+:HaveAComfortableLife rdf:type owl:NamedIndividual ,
+                               skos:Concept ;
+                      skos:broaderTransitive :SecurityPersonal ;
+                      skos:prefLabel "have-a-comfortable-life" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveAGoodReputation
+:HaveAGoodReputation rdf:type owl:NamedIndividual ,
+                              skos:Concept ;
+                     skos:broaderTransitive :Face ;
+                     skos:prefLabel "have-a-good-reputation" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveASafeCountry
+:HaveASafeCountry rdf:type owl:NamedIndividual ,
+                           skos:Concept ;
+                  skos:broaderTransitive :SecuritySocietal ;
+                  skos:prefLabel "have-a-safe-country" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveASenseOfBelonging
+:HaveASenseOfBelonging rdf:type owl:NamedIndividual ,
+                                skos:Concept ;
+                       skos:broaderTransitive :SecurityPersonal ;
+                       skos:prefLabel "have-a-sense-of-belonging" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveAStableSociety
+:HaveAStableSociety rdf:type owl:NamedIndividual ,
+                             skos:Concept ;
+                    skos:broaderTransitive :SecuritySocietal ;
+                    skos:prefLabel "have-a-stable-society" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveAVariedLife
+:HaveAVariedLife rdf:type owl:NamedIndividual ,
+                          skos:Concept ;
+                 skos:broaderTransitive :Stimulation ;
+                 skos:prefLabel "have-a-varied-life" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveAWorldAtPeace
+:HaveAWorldAtPeace rdf:type owl:NamedIndividual ,
+                            skos:Concept ;
+                   skos:broaderTransitive :UniversalismConcern ;
+                   skos:prefLabel "have-a-world-at-peace" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveAWorldOfBeauty
+:HaveAWorldOfBeauty rdf:type owl:NamedIndividual ,
+                             skos:Concept ;
+                    skos:broaderTransitive :UniversalismNature ;
+                    skos:prefLabel "have-a-world-of-beauty" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveAnExcitingLife
+:HaveAnExcitingLife rdf:type owl:NamedIndividual ,
+                             skos:Concept ;
+                    skos:broaderTransitive :Stimulation ;
+                    skos:prefLabel "have-an-exciting-life" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveAnObjectiveView
+:HaveAnObjectiveView rdf:type owl:NamedIndividual ,
+                              skos:Concept ;
+                     skos:broaderTransitive :UniversalismObjectivity ;
+                     skos:prefLabel "have-an-objective-view" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveEquality
+:HaveEquality rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:broaderTransitive :UniversalismConcern ;
+              skos:prefLabel "have-equality" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveFreedomOfAction
+:HaveFreedomOfAction rdf:type owl:NamedIndividual ,
+                              skos:Concept ;
+                     skos:broaderTransitive :SelfDirectionAction ;
+                     skos:prefLabel "have-freedom-of-action" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveFreedomOfThought
+:HaveFreedomOfThought rdf:type owl:NamedIndividual ,
+                               skos:Concept ;
+                      skos:broaderTransitive :SelfDirectionThought ;
+                      skos:prefLabel "have-freedom-of-thought" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveGoodHealth
+:HaveGoodHealth rdf:type owl:NamedIndividual ,
+                         skos:Concept ;
+                skos:broaderTransitive :SecurityPersonal ;
+                skos:prefLabel "have-good-health" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveHarmonyWithNature
+:HaveHarmonyWithNature rdf:type owl:NamedIndividual ,
+                                skos:Concept ;
+                       skos:broaderTransitive :UniversalismNature ;
+                       skos:prefLabel "have-harmony-with-nature" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveInfluence
+:HaveInfluence rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:broaderTransitive :PowerDominance ;
+               skos:prefLabel "have-influence" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveLifeAcceptedAsIs
+:HaveLifeAcceptedAsIs rdf:type owl:NamedIndividual ,
+                               skos:Concept ;
+                      skos:broaderTransitive :Humility ;
+                      skos:prefLabel "have-life-accepted-as-is" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveLoyaltyTowardsFriends
+:HaveLoyaltyTowardsFriends rdf:type owl:NamedIndividual ,
+                                    skos:Concept ;
+                           skos:broaderTransitive :BenevolenceDependability ;
+                           skos:prefLabel "have-loyalty-towards-friends" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveNoDebts
+:HaveNoDebts rdf:type owl:NamedIndividual ,
+                      skos:Concept ;
+             skos:broaderTransitive :SecurityPersonal ;
+             skos:prefLabel "have-no-debts" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HavePleasure
+:HavePleasure rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:broaderTransitive :Hedonism ;
+              skos:prefLabel "have-pleasure" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HavePrivacy
+:HavePrivacy rdf:type owl:NamedIndividual ,
+                      skos:Concept ;
+             skos:broaderTransitive :SelfDirectionAction ;
+             skos:prefLabel "have-privacy" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveSocialRecognition
+:HaveSocialRecognition rdf:type owl:NamedIndividual ,
+                                skos:Concept ;
+                       skos:broaderTransitive :Face ;
+                       skos:prefLabel "have-social-recognition" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveSuccess
+:HaveSuccess rdf:type owl:NamedIndividual ,
+                      skos:Concept ;
+             skos:broaderTransitive :Achievement ;
+             skos:prefLabel "have-success" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveTheOwnFamilySecured
+:HaveTheOwnFamilySecured rdf:type owl:NamedIndividual ,
+                                  skos:Concept ;
+                         skos:broaderTransitive :BenevolenceCaring ;
+                         skos:prefLabel "have-the-own-family-secured" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveTheRightToCommand
+:HaveTheRightToCommand rdf:type owl:NamedIndividual ,
+                                skos:Concept ;
+                       skos:broaderTransitive :PowerDominance ;
+                       skos:prefLabel "have-the-right-to-command" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveTheWisdomToAcceptOthers
+:HaveTheWisdomToAcceptOthers rdf:type owl:NamedIndividual ,
+                                      skos:Concept ;
+                             skos:broaderTransitive :UniversalismTolerance ;
+                             skos:prefLabel "have-the-wisdom-to-accept-others" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#HaveWealth
+:HaveWealth rdf:type owl:NamedIndividual ,
+                     skos:Concept ;
+            skos:broaderTransitive :PowerResources ;
+            skos:prefLabel "have-wealth" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#Hedonism
+:Hedonism rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:broaderTransitive :OpennessToChange ,
+                                 :SelfEnhancement ;
+          skos:prefLabel "hedonism" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#Humility
+:Humility rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:broaderTransitive :Conservation ,
+                                 :SelfTranscendence ;
+          skos:prefLabel "humility" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#OpennessToChange
+:OpennessToChange rdf:type owl:NamedIndividual ,
+                           skos:Concept ;
+                  skos:broaderTransitive :GrowthAnxietyFree ,
+                                         :PersonalFocus ;
+                  skos:prefLabel "openness-to-change" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#PersonalFocus
+:PersonalFocus rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:prefLabel "personal-focus" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#PowerDominance
+:PowerDominance rdf:type owl:NamedIndividual ,
+                         skos:Concept ;
+                skos:broaderTransitive :SelfEnhancement ;
+                skos:prefLabel "power-dominance" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#PowerResources
+:PowerResources rdf:type owl:NamedIndividual ,
+                         skos:Concept ;
+                skos:broaderTransitive :SelfEnhancement ;
+                skos:prefLabel "power-resources" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#SecurityPersonal
+:SecurityPersonal rdf:type owl:NamedIndividual ,
+                           skos:Concept ;
+                  skos:broaderTransitive :Conservation ;
+                  skos:prefLabel "security-personal" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#SecuritySocietal
+:SecuritySocietal rdf:type owl:NamedIndividual ,
+                           skos:Concept ;
+                  skos:broaderTransitive :Conservation ;
+                  skos:prefLabel "security-societal" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#SelfDirectionAction
+:SelfDirectionAction rdf:type owl:NamedIndividual ,
+                              skos:Concept ;
+                     skos:broaderTransitive :OpennessToChange ;
+                     skos:prefLabel "self-direction-action" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#SelfDirectionThought
+:SelfDirectionThought rdf:type owl:NamedIndividual ,
+                               skos:Concept ;
+                      skos:broaderTransitive :OpennessToChange ;
+                      skos:prefLabel "self-direction-thought" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#SelfEnhancement
+:SelfEnhancement rdf:type owl:NamedIndividual ,
+                          skos:Concept ;
+                 skos:broaderTransitive :GrowthAnxietyFree ,
+                                        :PersonalFocus ,
+                                        :SelfProtectionAnxietyAvoidance ;
+                 skos:prefLabel "self-enhancement" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#SelfProtectionAnxietyAvoidance
+:SelfProtectionAnxietyAvoidance rdf:type owl:NamedIndividual ,
+                                         skos:Concept ;
+                                skos:prefLabel "self-protection-anxiety-avoidance" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#SelfTranscendence
+:SelfTranscendence rdf:type owl:NamedIndividual ,
+                            skos:Concept ;
+                   skos:broaderTransitive :GrowthAnxietyFree ,
+                                          :SocialFocus ;
+                   skos:prefLabel "self-transcendence" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#SocialFocus
+:SocialFocus rdf:type owl:NamedIndividual ,
+                      skos:Concept ;
+             skos:prefLabel "social-focus" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#Stimulation
+:Stimulation rdf:type owl:NamedIndividual ,
+                      skos:Concept ;
+             skos:broaderTransitive :OpennessToChange ;
+             skos:prefLabel "stimulation" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#Tradition
+:Tradition rdf:type owl:NamedIndividual ,
+                    skos:Concept ;
+           skos:broaderTransitive :Conservation ;
+           skos:prefLabel "tradition" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#UniversalismConcern
+:UniversalismConcern rdf:type owl:NamedIndividual ,
+                              skos:Concept ;
+                     skos:broaderTransitive :SelfEnhancement ;
+                     skos:prefLabel "universalism-concern" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#UniversalismNature
+:UniversalismNature rdf:type owl:NamedIndividual ,
+                             skos:Concept ;
+                    skos:broaderTransitive :SelfEnhancement ;
+                    skos:prefLabel "universalism-nature" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#UniversalismObjectivity
+:UniversalismObjectivity rdf:type owl:NamedIndividual ,
+                                  skos:Concept ;
+                         skos:broaderTransitive :SelfEnhancement ;
+                         skos:prefLabel "universalism-objectivity" .
+
+
+###  http://www.gsi.upm.es/ontologies/bhv#UniversalismTolerance
+:UniversalismTolerance rdf:type owl:NamedIndividual ,
+                                skos:Concept ;
+                       skos:broaderTransitive :SelfTranscendence ;
+                       skos:prefLabel "universalism-tolerance" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

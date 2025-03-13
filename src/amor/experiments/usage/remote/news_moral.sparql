@@ -1,0 +1,8 @@
+DESCRIBE *
+WHERE {
+    ?uri a schema:NewsArticle .
+    ?annotation a amor:MoralValueAnnotation ;
+	oa:hasTarget ?uri ;
+	amor:hasMoralValueCategory mft:PURITY .
+}
+LIMIT 10

@@ -1,0 +1,1074 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/comment" : [ {
+    "@language" : "en",
+    "@value" : "This SKOS taxonomy mirrors the categories in Basic Human Values Theory and provides a semantic representation using the standard SKOS representation."
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@language" : "en",
+    "@value" : "Sergio Muñoz López"
+  }, {
+    "@language" : "en",
+    "@value" : "Álvaro Carrera Barroso"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "This SKOS taxonomy mirrors the categories in Basic Human Values Theory and provides a semantic representation using the standard SKOS representation."
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://www.gsi.upm.es"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Basic Human Values Taxonomy - SKOS version"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "bhv"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://www.gsi.upm.es/ontologies/bhv/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Basic Human Values Taxonomy - SKOS version"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Achievement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "achievement"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Achievement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-ambitious"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-behaving-properly"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-broadminded"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Achievement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-capable"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-choosing-own-goals"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-compliant"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Achievement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-courageous"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-creative"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-curious"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-daring"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-forgiving"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-helpful"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Tradition"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-holding-religious-faith"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-honest"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-honoring-elders"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Humility"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-humble"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-independent"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Achievement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-intellectual"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeJust",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-just"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeLogical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-logical"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-loving"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-neat-and-tidy"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BePolite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-polite"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-protecting-the-environment"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Tradition"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-respecting-traditions"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-responsible"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "be-self-disciplined"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "benevolence-caring"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "benevolence-dependability"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Bhv",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "bhv"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "conformity-interpersonal"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "conformity-rules"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Conservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "conservation"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Face",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "face"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "growth-anxiety-free"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-a-comfortable-life"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Face"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-a-good-reputation"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-a-safe-country"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-a-sense-of-belonging"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-a-stable-society"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-a-varied-life"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-a-world-at-peace"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-a-world-of-beauty"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-an-exciting-life"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-an-objective-view"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-equality"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-freedom-of-action"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-freedom-of-thought"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-good-health"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-harmony-with-nature"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-influence"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Humility"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-life-accepted-as-is"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-loyalty-towards-friends"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-no-debts"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-pleasure"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-privacy"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Face"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-social-recognition"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Achievement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-success"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-the-own-family-secured"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-the-right-to-command"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-the-wisdom-to-accept-others"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "have-wealth"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "hedonism"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Humility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "humility"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "openness-to-change"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "personal-focus"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "power-dominance"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "power-resources"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "security-personal"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "security-societal"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "self-direction-action"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "self-direction-thought"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "self-enhancement"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "self-protection-anxiety-avoidance"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "self-transcendence"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "social-focus"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "stimulation"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Tradition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "tradition"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "universalism-concern"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "universalism-nature"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "universalism-objectivity"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "universalism-tolerance"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

@@ -1,0 +1,461 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@language" : "en",
+    "@value" : "Sergio Muñoz López"
+  }, {
+    "@language" : "en",
+    "@value" : "Álvaro Carrera Barroso"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "AMOR-MFT is an ontology that uses AMOR ontology and MFT SKOS Taxonomy to create required relations to use MFT to define moral annotations."
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://www.gsi.upm.es"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "AMOR-MFT Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "amor-mft"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AMOR-MFT is an ontology that uses AMOR ontology and MFT SKOS Taxonomy to create required relations to use MFT to define moral annotations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AMOR-MFT Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Betrayal"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Care"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Cheating"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Degradation"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Fairness"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Harm"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Loyalty"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Oppression"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Purity"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Subversion"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#CareHarm"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Virtud"
+  }, {
+    "@language" : "en",
+    "@value" : "Virtue"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vice"
+  }, {
+    "@language" : "es",
+    "@value" : "Vicio"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The bias of a moral value annotation represent how close is the annotated content to the vice or the virtue. The range of this bias is a range bewteen -1.0 (Vice) to 1.0 (Virtue)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has bias"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The polarity is represents the Vice or the Virtue of the MFT Moral Value category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has polarity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The polarity of a moral value annotation represents the intesity of the moral value in the analysed textual source."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has polarity intensity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectPropert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has vice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isViceOf"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has virtue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isViceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is vice of"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isVirtueOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is virtue of"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Subversion"
+  } ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Betrayal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Care",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#CareHarm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Harm"
+  } ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Care"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Cheating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Degradation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Fairness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Cheating"
+  } ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Fairness"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Harm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Opression"
+  } ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Loyalty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Betrayal"
+  } ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Loyalty"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Opression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Purity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Degradation"
+  } ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Purity"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Subversion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#ObjectPropert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]

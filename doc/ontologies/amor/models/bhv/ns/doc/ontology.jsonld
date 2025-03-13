@@ -1,0 +1,748 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@language" : "en",
+    "@value" : "Sergio Muñoz López"
+  }, {
+    "@language" : "en",
+    "@value" : "Álvaro Carrera Barroso"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "AMOR-BHV is an ontology that uses AMOR ontology and BHV SKOS Taxonomy to create required relations to use BHV to define moral annotations."
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://www.gsi.upm.es"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "AMOR-BHV Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "amor-bhv"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AMOR-BHV is an ontology that uses AMOR ontology and BHV SKOS Taxonomy to create required relations to use BHV to define moral annotations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AMOR-BHV Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeJust"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeLogical"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BePolite"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Achievement"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Face"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Humility"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Tradition"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Conservation"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level4b",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Achievement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeAmbitious",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeBehavingProperly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeChoosingOwnGoals",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCompliant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCourageous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCreative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCurious",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeForgiving",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHumble",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeIntellectual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeLoving",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BePolite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeProtectingTheEnvironment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeResponsible",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceCaring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#BenevolenceDependability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#ConformityInterpersonal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#ConformityRules",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Conservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Face",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#GrowthAnxietyFree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAGoodReputation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveASenseOfBelonging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAVariedLife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldAtPeace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAWorldOfBeauty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnExcitingLife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfThought",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveInfluence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveLoyaltyTowardsFriends",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HavePleasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HavePrivacy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveSocialRecognition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveSuccess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheRightToCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheWisdomToAcceptOthers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveWealth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Hedonism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Humility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#OpennessToChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#PersonalFocus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#PowerDominance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#PowerResources",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SecuritySocietal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfDirectionThought",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfProtectionAnxietyAvoidance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfTranscendence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#SocialFocus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#Tradition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismConcern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismObjectivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ]
+} ]

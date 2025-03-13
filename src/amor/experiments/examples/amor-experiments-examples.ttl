@@ -1,0 +1,223 @@
+@prefix ex: <http://www.gsi.upm.es/ontologies/amor/experiments/examples#> .
+@prefix amor: <http://www.gsi.upm.es/ontologies/amor/ns#> .
+@prefix amor-exp: <http://www.gsi.upm.es/ontologies/amor/experiments/ns#> .
+@prefix amor-graph: <http://amor-graph.gsi.upm.es/ns#> .
+@prefix amor-mft: <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mft: <http://www.gsi.upm.es/ontologies/mft/ns#> .
+@prefix oro: <http://kb.openrobots.org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples>
+  a owl:Ontology ;
+  rdfs:label "AMOR Experiments Examples"@en ;
+  owl:versionInfo "1.0.0"^^xsd:string ;
+  owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/experiments/examples/1.0.0> ;
+  dc:title "AMOR Experiments Examples"@en ;
+  dc:creator "Álvaro Carrera Barroso"@en ;
+  dc:publisher <http://www.gsi.upm.es> ;
+  rdfs:comment "AMOR Experiments Examples contains a set of examples using the models required to register an experiment in the Semantic Ethical Black Box of AMOR project."@en ;
+  dc:description "AMOR Experiments Examples contains a set of examples using the models required to register an experiment in the Semantic Ethical Black Box of AMOR project."@en ;
+  vann:preferredNamespacePrefix "amor-exp-examples" ;
+  vann:preferredNamespaceUri "http://www.gsi.upm.es/ontologies/amor/experiments/examples#" .
+ex:experiment1 a owl:NamedIndividual ,
+        amor-exp:Experiment ,
+        amor-exp:DigitalNewspaperExperiment ;
+    rdfs:label "Experiment 1"@en ;
+    amor-exp:hasExecutor ex:ari41 ;
+    amor-exp:hasRequester ex:researcher1 ;
+    amor-exp:hasExperimentationSubject ex:human1 ;
+    amor-exp:usesDataset amor-graph:dataset1 ;
+    amor-exp:hasVisualizationStrategy amor-exp:MoralValueVisualizationStrategy , 
+        amor-exp:ClickBaitVisualizationStrategy ;
+    amor-exp:usesLanguage "es_ES" ;
+    amor-exp:usesAvatar [
+            a amor-exp:Avatar ;
+            amor-exp:hasCategory "old lady"^^xsd:string ;
+            amor-exp:hasAppearance "white hair"^^xsd:string ;
+            amor-exp:hasAppearance "gray dress"^^xsd:string ;
+            amor-exp:hasPersonality "grumpy"^^xsd:string ;
+            foaf:gender "female"^^xsd:string ;
+            foaf:age "70"^^xsd:integer ;
+            amor-exp:hasLanguageComplexityLevel "adult"^^xsd:string ;
+            amor-exp:hasFacialExpresivity amor-exp:EmotiveExpresivity ;
+            amor-exp:hasGesturalExpresivity amor-exp:EmotiveExpresivity ;
+            amor-exp:hasVocalExpresivity amor-exp:EmotiveExpresivity ;
+    ] ;
+    amor-exp:hasContentAdaptationStrategy amor-exp:MoralAdaptationStrategy ,
+        amor-exp:AfectiveAdaptationStrategy ;
+    amor-exp:hasPhysicalMovement "poi1"^^xsd:string ;
+    amor-exp:hasPhysicalMovement "poi2"^^xsd:string ;
+    amor-exp:hasBackgroundScenario "japaneseHouse.virtual"^^xsd:string ;
+    amor-exp:hasBackgroundMusic "relaxingJapaneseMusic.mp3"^^xsd:string ;
+    amor-exp:usesAggregatedData "total population"^^xsd:string ;
+    amor-exp:hasLLMConfiguration [
+        a amor-exp:LLMConfiguration ;
+        amor-exp:usesLLMService "ollama" ;
+        amor-exp:usesLLMEndPoint "http://localhost:6505" ;
+        amor-exp:hasLLMToken "345adfwere23?$adsf" ;
+        amor-exp:hasLLMModel "phi4:14b" ;
+        amor-exp:usesPrompt "You are a 70 years old lady. You are in a Japanese house. You are reading the news. You are grumpy. You are wearing a gray dress. You have white hair"
+    ] ;
+    amor-exp:usesSemanticCooperationStrategy [
+        a amor-exp:FullSemanticCooperation ;
+        amor-exp:usesCloudGraphQuery "http://amor-graph.gsi.upm.es/sparql" ;
+        # SPARQL Query Example
+        amor-exp:usesSPARQLQuery """
+            PREFIX prov: <http://www.w3.org/ns/prov#>
+            PREFIX segb: <http://www.gsi.upm.es/ontologies/segb/ns#>
+            PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+            PREFIX mls: <http://www.w3.org/ns/mls#>
+            PREFIX oro: <http://kb.openrobots.org#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+            SELECT ?activity ?startTime ?endTime ?model ?human ?humanName
+            WHERE {
+            ?activity a segb:LoggedActivity ;
+                    segb:usedMLModel ?model ;
+                    prov:startedAtTime ?startTime ;
+                    prov:endedAtTime ?endTime ;
+                    prov:wasAssociatedWith ?agent .
+            ?agent a oro:Robot ;
+                    oro:hasName ?robotName .	
+            ?run mls:hasOutput ?model ;
+                    prov:wasAssociatedWith ?human .
+            ?human a prov:Person, foaf:Person ;
+                    foaf:firstName ?humanName .
+              FILTER (
+                ?startTime >= "2024-11-16T00:00:00"^^xsd:dateTime &&
+                ?endTime <= "2024-11-16T23:59:59"^^xsd:dateTime &&
+                ?robotName = "ARI"@es
+              )
+            }
+        """^^xsd:string ] ;
+        amor-exp:usesEmotionRecognitionCooperationStrategy amor-exp:LocalEmotionRecognition ;
+        amor-exp:usesRobotCooperationStrategy amor-exp:NoCooperationRobot ;
+        amor-exp:hasExperimentEvaluation [
+            a amor-exp:ExperimentEvalution ;
+            amor-exp:hasInitialQuestion ex:question1 ;
+            amor-exp:hasInitialQuestion ex:question2 ;
+            amor-exp:hasIntermediateQuestion ex:question3 ;
+            amor-exp:hasFinalQuestion ex:question4
+        ] .
+
+ex:researcher1 a amor-exp:ExperimentRequester ,
+        prov:Person ,
+        foaf:Person ;
+    rdfs:label "Alejo"@en .
+
+ex:ari41 a amor-exp:ExperimentExecutor ,
+        prov:SoftwareAgent ,
+        oro:Robot ;
+    rdfs:label "ARI 41"@en .
+
+ex:human1 a amor-exp:ExperimentationSubject ,
+        prov:Person ,
+        foaf:Person ;
+    rdfs:label "Juan"@en ;
+    amor-exp:hasAgeBracket "18-25"^^xsd:string ;
+    foaf:gender "male"^^xsd:string ;
+    amor-exp:hasPoliticalOrientation "central"^^xsd:string ;
+    amor-exp:hasStressLevel "0.5"^^xsd:float ;
+    amor-exp:hasAccesibilityCategory "fragile"^^xsd:string ;
+    amor-exp:hasEducationLevel "Master of Science"^^xsd:string ;
+    amor-exp:hasPreferredContent amor-graph:news1 ;
+    amor-exp:hasPreferredContent amor-graph:news2 ;
+    amor-exp:hasPreferredTopic "Politics"^^xsd:string ;
+    amor-exp:hasPreferredTopic "Sports"^^xsd:string ;
+    amor-exp:hasPreferredEntity amor-graph:elPais ;
+    amor-exp:hasPreferredEntity amor-graph:libertadDigital ;
+    amor-exp:hasNumberOfFollowers "1000"^^xsd:integer ;
+    amor-exp:hasAverageSocialNetworkActivityPerMonth "100"^^xsd:integer ;
+    amor:hasMoralProfile [
+            a amor:MoralProfile ;
+        rdfs:label "Juan's Moral Profile - Previous Experiment Execution"@en ;
+        prov:endedAtTime "2024-04-15T14:30:00-04:00"^^xsd:dateTime;
+        prov:generated ex:researcher1 ;
+        amor:usedMoralValueModel amor-mft:MoralFoundationsTheory-Foundations ;
+        amor:analysed ex:human1 ;
+        prov:generated 
+            [
+                a amor:MoralValueAnnotation ;
+                rdfs:label "Juan's Moral Profile Annotation - Care/Harm"@en ;
+                amor:hasMoralValueCategory mft:CareHarm ;
+                amor-mft:hasBias "0.65"^^xsd:float
+            ] , 
+            [
+                a amor:MoralValueAnnotation ;
+                rdfs:label "Juan's Moral Profile Annotation - Fairness/Cheating"@en ;
+                amor:hasMoralValueCategory mft:FairnessCheating ;
+                amor-mft:hasBias "0.45"^^xsd:float
+            ] ,
+            [
+                a amor:MoralValueAnnotation ;
+                rdfs:label "Juan's Moral Profile Annotation - Loyalty/Betrayal"@en ;
+                amor:hasMoralValueCategory mft:LoyaltyBetrayal ;
+                amor-mft:hasBias "0.85"^^xsd:float
+            ] ,
+            [
+                a amor:MoralValueAnnotation ;
+                rdfs:label "Juan's Moral Profile Annotation - Authority/Subversion"@en ;
+                amor:hasMoralValueCategory mft:AuthoritySubversion ;
+                amor-mft:hasBias "0.75"^^xsd:float
+            ] ,
+            [
+                a amor:MoralValueAnnotation ;
+                rdfs:label "Juan's Moral Profile Annotation - Purity/Degradation"@en ;
+                amor:hasMoralValueCategory mft:PurityDegradation ;
+                amor-mft:hasBias "0.15"^^xsd:float 
+            ] ,
+            [
+                a amor:MoralValueAnnotation ;
+                rdfs:label "Juan's Moral Profile Annotation - Liberty/Oppression"@en ;
+                amor:hasMoralValueCategory mft:LibertyOppression ;
+                amor-mft:hasBias "0.05"^^xsd:float
+            ]
+    ] .
+
+ex:question1 a schema:Question ;
+    schema:text "Do you feel happy now? (1-No, I am not happy at all, 5-I am very happy)"@en ;
+    schema:suggestedAnswer
+        [ schema:text "1" ] ,
+        [ schema:text "2" ] ,
+        [ schema:text "3" ] ,
+        [ schema:text "4" ] ,
+        [ schema:text "5" ] .
+
+ex:question2 a schema:Question ;
+    schema:text "Do you like news about sports? (1-No, I don't like them at all, 5-Yes, I really like them.)"@en ;
+    schema:suggestedAnswer
+        [ schema:text "1" ] ,
+        [ schema:text "2" ] ,
+        [ schema:text "3" ] ,
+        [ schema:text "4" ] ,
+        [ schema:text "5" ] .
+
+ex:question3 a schema:Question ;
+    schema:text "Do you feel sad now? (1-No, I am not sad at all, 5-I am very sad.)"@en ;
+    schema:suggestedAnswer
+        [ schema:text "1" ] ,
+        [ schema:text "2" ] ,
+        [ schema:text "3" ] ,
+        [ schema:text "4" ] ,
+        [ schema:text "5" ] .
+
+ex:question4 a schema:Question ;
+    schema:text "Do you think the news reading have modified your emotion? (1-Not at all, 5-Yes, of course.)"@en ;
+    schema:suggestedAnswer
+        [ schema:text "1"^^xsd:string ] ,
+        [ schema:text "2"^^xsd:string ] ,
+        [ schema:text "3"^^xsd:string ] ,
+        [ schema:text "4"^^xsd:string ] ,
+        [ schema:text "5"^^xsd:string ] .
+
+### [Dataset]
+amor-graph:dataset1 a amor-exp:NewsDataset ;
+   schema:url <http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json> .
