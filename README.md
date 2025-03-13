@@ -7,8 +7,8 @@ This repository contains various ontologies for representing experiments and eva
 ## Ontologies Summary
 
 1. **AMOR Ontology**
-   - **File:** `src/amor/amor.ttl`
-   - **URL:** `http://www.gsi.upm.es/ontologies/amor/ns#`
+   - **File:** [./src/amor/amor.ttl](./src/amor/amor.ttl)
+   - **URL:** [http://www.gsi.upm.es/ontologies/amor/ns#](http://www.gsi.upm.es/ontologies/amor/ns#)
    - **Description:** This ontology provides the foundational concepts and relationships for Moral Annotation in the AMOR project.
 
 2. **AMOR Examples**
