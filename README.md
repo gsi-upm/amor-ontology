@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains various ontologies for representing experiments and evaluations in the AMOR project. Below is a summary of the TTL files and their respective published URLs.
+This repository contains various ontologies for representing experiments and evaluations in the [AMOR project](https://www.gsi.upm.es/amor). Below is a summary of the TTL files and their respective published URLs.
 
 ## Ontologies Summary
 
