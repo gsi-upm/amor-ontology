@@ -6,51 +6,60 @@ This repository contains various ontologies for representing experiments and eva
 
 ## Ontologies Summary
 
-1. **AMOR Ontology**
-   - **File:** [./src/amor/amor.ttl](./src/amor/amor.ttl)
-   - **URL:** [http://www.gsi.upm.es/ontologies/amor/ns#](http://www.gsi.upm.es/ontologies/amor/ns#)
-   - **Description:** This ontology provides the foundational concepts and relationships for Moral Annotation in the AMOR project.
+### 1. **AMOR Ontology**
 
-2. **AMOR Examples**
-    - **File:** [./src/amor/examples/amor-examples.ttl](./src/amor/examples/amor-examples.ttl)
-    - **URL:** [http://www.gsi.upm.es/ontologies/amor/examples#](http://www.gsi.upm.es/ontologies/amor/examples#)
-    - **Description:** This ontology provides examples and use cases for annotation of news in the AMOR project, demonstrating how the concepts and relationships can be applied.
+- **File:** [./src/amor/amor.ttl](./src/amor/amor.ttl)
+- **URL:** [http://www.gsi.upm.es/ontologies/amor/ns#](http://www.gsi.upm.es/ontologies/amor/ns#)
+- **Description:** This ontology provides the foundational concepts and relationships for Moral Annotation in the AMOR project.
 
-3. **Basic Human Values Taxonomy**
-    - **File:** [./src/bhv/bhv.ttl](./src/bhv/bhv.ttl)
-    - **URL:** [http://www.gsi.upm.es/ontologies/bhv/ns#](http://www.gsi.upm.es/ontologies/bhv/ns#)
-    - **Description:** This SKOS taxonomy mirrors the categories in Basic Human Values Theory and provides a semantic representation using the standard SKOS representation.
+### 2. **AMOR Examples**
 
-4. **AMOR Basic Human Values Ontology**
-    - **File:** [./src/amor/models/amor-bhv.ttl](./src/amor/models/amor-bhv.ttl)
-    - **URL:** [http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#](http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#)
-    - **Description:** AMOR-BHV is an ontology that uses AMOR ontology and BHV SKOS Taxonomy to create required relations to use BHV to define moral annotations.
+- **File:** [./src/amor/examples/amor-examples.ttl](./src/amor/examples/amor-examples.ttl)
+- **URL:** [http://www.gsi.upm.es/ontologies/amor/examples#](http://www.gsi.upm.es/ontologies/amor/examples#)
+- **Description:** This ontology provides examples and use cases for annotation of news in the AMOR project, demonstrating how the concepts and relationships can be applied.
 
-5. **Moral Foundations Theory Taxonomy**
-    - **File:** [./src/mft/mft.ttl](./src/mft/mft.ttl)
-    - **URL:** [http://www.gsi.upm.es/ontologies/mft/ns#](http://www.gsi.upm.es/ontologies/mft/ns#)
-    - **Description:** This SKOS taxonomy mirrors the categories in Moral Foundations Theory and provides a semantic representation using the standard SKOS representation.
+### 3. **Basic Human Values Taxonomy**
 
-6. **AMOR Moral Foundations Ontology**
-    - **File:** [./src/amor/models/amor-mft.ttl](./src/amor/models/amor-mft.ttl)
-    - **URL:** [http://www.gsi.upm.es/ontologies/amor/models/mft/ns#](http://www.gsi.upm.es/ontologies/amor/models/mft/ns#)
-    - **Description:** AMOR-MFT is an ontology that uses AMOR ontology and MFT SKOS Taxonomy to create required relations to use MFT to define moral annotations.
+- **File:** [./src/bhv/bhv.ttl](./src/bhv/bhv.ttl)
+- **URL:** [http://www.gsi.upm.es/ontologies/bhv/ns#](http://www.gsi.upm.es/ontologies/bhv/ns#)
+- **Description:** This SKOS taxonomy mirrors the categories in Basic Human Values Theory and provides a semantic representation using the standard SKOS representation.
 
-7. **AMOR Experiments Ontology**
-    - **File:** [./src/amor/experiments/amor-experiments.ttl](./src/amor/experiments/amor-experiments.ttl)
-    - **URL:** [http://www.gsi.upm.es/ontologies/amor/experiments/ns#](http://www.gsi.upm.es/ontologies/amor/experiments/ns#)
-    - **Description:** This ontology is designed for representing experiments and evaluations in the AMOR project. It includes classes and properties for defining experiments, experimentation subjects, parameters, and various strategies used in the experiments.
+### 4. **AMOR Basic Human Values Ontology**
 
-8. **AMOR Experiments Examples**
-     - **File:** [./src/amor/experiments/examples/amor-experiments-examples.ttl](./src/amor/experiments/examples/amor-experiments-examples.ttl)
-     - **URL:** [http://www.gsi.upm.es/ontologies/amor/experiments/examples#](http://www.gsi.upm.es/ontologies/amor/experiments/examples#)
-     - **Description:** This ontology provides examples and use cases for the AMOR Experiments Ontology, demonstrating how the concepts and relationships can be applied in experimental scenarios.
-     - **File:** [./src/amor/experiments/examples/amor-experiments-examples.json](./src/amor/experiments/examples/amor-experiments-examples.json)
-     - **Description:** JSON-LD representation for the same example.
+- **File:** [./src/amor/models/amor-bhv.ttl](./src/amor/models/amor-bhv.ttl)
+- **URL:** [http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#](http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#)
+- **Description:** AMOR-BHV is an ontology that uses AMOR ontology and BHV SKOS Taxonomy to create required relations to use BHV to define moral annotations.
 
-9. **AMOR Datasets Examples Folder**
-     - **File:** [./src/amor/datasets/examples/](./src/amor/datasets/examples/)
-     - **Description:** This folder contains some examples for NewsDataset used in the experiments.
+### 5. **Moral Foundations Theory Taxonomy**
+
+- **File:** [./src/mft/mft.ttl](./src/mft/mft.ttl)
+- **URL:** [http://www.gsi.upm.es/ontologies/mft/ns#](http://www.gsi.upm.es/ontologies/mft/ns#)
+- **Description:** This SKOS taxonomy mirrors the categories in Moral Foundations Theory and provides a semantic representation using the standard SKOS representation.
+
+### 6. **AMOR Moral Foundations Ontology**
+
+- **File:** [./src/amor/models/amor-mft.ttl](./src/amor/models/amor-mft.ttl)
+- **URL:** [http://www.gsi.upm.es/ontologies/amor/models/mft/ns#](http://www.gsi.upm.es/ontologies/amor/models/mft/ns#)
+- **Description:** AMOR-MFT is an ontology that uses AMOR ontology and MFT SKOS Taxonomy to create required relations to use MFT to define moral annotations.
+
+### 7. **AMOR Experiments Ontology**
+
+- **File:** [./src/amor/experiments/amor-experiments.ttl](./src/amor/experiments/amor-experiments.ttl)
+- **URL:** [http://www.gsi.upm.es/ontologies/amor/experiments/ns#](http://www.gsi.upm.es/ontologies/amor/experiments/ns#)
+- **Description:** This ontology is designed for representing experiments and evaluations in the AMOR project. It includes classes and properties for defining experiments, experimentation subjects, parameters, and various strategies used in the experiments.
+
+### 8. **AMOR Experiments Examples**
+
+- **File:** [./src/amor/experiments/examples/amor-experiments-examples.ttl](./src/amor/experiments/examples/amor-experiments-examples.ttl)
+- **URL:** [http://www.gsi.upm.es/ontologies/amor/experiments/examples#](http://www.gsi.upm.es/ontologies/amor/experiments/examples#)
+- **Description:** This ontology provides examples and use cases for the AMOR Experiments Ontology, demonstrating how the concepts and relationships can be applied in experimental scenarios.
+- **File:** [./src/amor/experiments/examples/amor-experiments-examples.json](./src/amor/experiments/examples/amor-experiments-examples.json)
+- **Description:** JSON-LD representation for the same example.
+
+### 9. **AMOR Datasets Examples Folder**
+
+- **File:** [./src/amor/datasets/examples/](./src/amor/datasets/examples/)
+- **Description:** This folder contains some examples for NewsDataset used in the experiments.
 
 ## Generating documentation
 
