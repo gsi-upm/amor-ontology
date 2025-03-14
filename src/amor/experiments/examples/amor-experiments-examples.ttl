@@ -190,7 +190,7 @@ ex:question2 a amor-exp:LikertQuestion, schema:Question ;
 ex:question3 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "Do you feel sad now? (1-No, I am not sad at all, 5-I am very sad.)"@en .
 
-ex:question4 a schema:Question ;
+ex:question4 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "Do you think the news reading have modified your emotion? (1-Not at all, 5-Yes, of course.)"@en .
 
 ### [Dataset]

@@ -89,13 +89,37 @@
       "amor-exp:hasContentAdaptationStrategy": {
         "@type": "@id"
       },
+      "amor-exp:usesRobotCooperationStrategy": {
+        "@type": "@id"
+      },
+      "amor-exp:usesSemanticCooperationStrategy": {
+        "@type": "@id"
+      },
+      "amor-exp:hasVisualizationStrategy": {
+        "@type": "@id"
+      },
+      "amor-exp:hasFacialExpressivity": {
+        "@type": "@id"
+      },
+      "amor-exp:hasGesturalExpressivity": {
+        "@type": "@id"
+      },
       "amor-exp:hasVocalExpresivity": {
         "@type": "@id"
       },
       "amor-exp:hasStressLevel": {
         "@type": "xsd:float"
       },
+      "prov:startedAtTime": {
+        "@type": "xsd:dateTime"
+      },
+      "prov:endedAtTime": {
+        "@type": "xsd:dateTime"
+      },
       "amor-exp:hasPreferredContent": {
+        "@type": "@id"
+      },
+      "amor-exp:hasPreferredEntity": {
         "@type": "@id"
       },
       "amor-mft:hasBias": {
@@ -134,7 +158,10 @@
     "@type": "amor-exp:ExperimentEvalution",
     "amor-exp:hasFinalQuestion": {
       "@id": "http://www.gsi.upm.es/ontologies/amor/experiments/examples#question4",
-      "@type": "schema:Question",
+      "@type": [
+        "amor-exp:LikertQuestion",
+        "schema:Question"
+      ],
       "schema:text": {
         "@language": "en",
         "@value": "Do you think the news reading have modified your emotion? (1-Not at all, 5-Yes, of course.)"
@@ -194,12 +221,8 @@
       "http://amor-graph.gsi.upm.es/ns#news2"
     ],
     "amor-exp:hasPreferredEntity": [
-      {
-        "@id": "http://amor-graph.gsi.upm.es/ns#elPais"
-      },
-      {
-        "@id": "http://amor-graph.gsi.upm.es/ns#libertadDigital"
-      }
+      "http://amor-graph.gsi.upm.es/ns#elPais",
+      "http://amor-graph.gsi.upm.es/ns#libertadDigital"
     ],
     "amor-exp:hasPreferredTopic": [
       "Politics",
@@ -216,10 +239,7 @@
         "@language": "en",
         "@value": "Juan's Moral Profile - Previous Experiment Execution"
       },
-      "prov:endedAtTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2024-04-15T14:30:00-04:00"
-      },
+      "prov:endedAtTime": "2024-04-15T14:30:00-04:00",
       "prov:generated": [
         {
           "@id": "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1",
@@ -320,12 +340,8 @@
     }
   },
   "amor-exp:hasVisualizationStrategy": [
-    {
-      "@id": "amor-exp:MoralValueVisualizationStrategy"
-    },
-    {
-      "@id": "amor-exp:ClickBaitVisualizationStrategy"
-    }
+    "amor-exp:MoralValueVisualizationStrategy",
+    "amor-exp:ClickBaitVisualizationStrategy"
   ],
   "amor-exp:usesAggregatedData": "total population",
   "amor-exp:usesAvatar": {
@@ -383,17 +399,13 @@
         "amor-exp:hasRobotRole": "emotionalSupport"
       }
     ],
-    "amor-exp:usesRobotCooperationStrategy": {
-      "@id": "amor-exp:CooperativeRobot"
-    }
+    "amor-exp:usesRobotCooperationStrategy": "amor-exp:CooperativeRobot"
   },
   "amor-exp:usesSemanticCooperationConfiguration": {
     "@type": "amor-exp:SemanticCooperationConfiguration",
     "amor-exp:usesCloudGraphQuery": "http://amor-graph.gsi.upm.es/queries",
     "amor-exp:usesSPARQLQuery": "\n            PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>\n            PREFIX mft: <http://www.gsi.upm.es/ontologies/mft/ns#>\n            PREFIX schema: <http://schema.org/>\n            PREFIX oa: <http://www.w3.org/ns/oa#>\n\n\n            DESCRIBE *\n            WHERE {\n                ?uri a schema:NewsArticle .\n                ?annotation a amor:MoralValueAnnotation ;\n            \toa:hasTarget ?uri ;\n            \tamor:hasMoralValueCategory mft:PURITY .\n            }\n            LIMIT 10\n        ",
-    "amor-exp:usesSemanticCooperationStrategy": {
-      "@id": "amor-exp:FullSemanticCooperation"
-    }
+    "amor-exp:usesSemanticCooperationStrategy": "amor-exp:FullSemanticCooperation"
   },
   "rdfs:label": {
     "@language": "en",
