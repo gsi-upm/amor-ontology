@@ -736,7 +736,7 @@
     rdfs:label "has robot actor"@en ;
     rdfs:comment "Relates a robot role with the robot actor."@en .
 
-:hasRobotRole
+:hasRoleType
     a owl:DatatypeProperty ;
     rdfs:domain :RobotRole ;
     rdfs:range xsd:string ;
@@ -744,7 +744,7 @@
     rdfs:comment "Relates a robot role with the robot role type."@en .
 
 # Parameter 22: Robot cooperation strategy used in the experiment
-:ExperimentEvalution
+:ExperimentEvaluation
     a owl:Class ;
     rdfs:subClassOf prov:Entity ;
     rdfs:label "Experiment Evaluation"@en ;
@@ -754,27 +754,27 @@
     a owl:ObjectProperty ;
     rdfs:subPropertyOf :hasParameter ;
     rdfs:domain :Experiment ;
-    rdfs:range :ExperimentEvalution ;
+    rdfs:range :ExperimentEvaluation ;
     rdfs:label "has experiment evaluation"@en ;
     rdfs:comment "Relates an experiment with its evaluation."@en .
 
 :hasInitialQuestion
     a owl:ObjectProperty ;
-    rdfs:domain :ExperimentEvalution ;
+    rdfs:domain :ExperimentEvaluation ;
     rdfs:range schema:Question ;
     rdfs:label "has initial question"@en ;
     rdfs:comment "Relates an experiment evaluation with the initial questionnaire."@en .
 
 :hasIntermediateQuestion
     a owl:ObjectProperty ;
-    rdfs:domain :ExperimentEvalution ;
+    rdfs:domain :ExperimentEvaluation ;
     rdfs:range schema:Question ;
     rdfs:label "has intermediate question"@en ;
     rdfs:comment "Relates an experiment evaluation with the intermediate questionnaire."@en .
 
 :hasFinalQuestion
     a owl:ObjectProperty ;
-    rdfs:domain :ExperimentEvalution ;
+    rdfs:domain :ExperimentEvaluation ;
     rdfs:range schema:Question ;
     rdfs:label "has final question"@en ;
     rdfs:comment "Relates an experiment evaluation with the final questionnaire."@en .
