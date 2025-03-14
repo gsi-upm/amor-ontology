@@ -707,12 +707,12 @@
     rdfs:label "No Cooperation Robot"@en ;
     rdfs:comment "Represents the absence of cooperation in robot in an experiment."@en .
 
-:CooperationRobots
+:CooperativeRobot
     a owl:NamedIndividual, :RobotCooperationStrategy ;
     rdfs:label "Cognitive Cooperation Robot"@en ;
     rdfs:comment "Represents the cognitive cooperation in robot in an experiment."@en .
 
-:CompetitiveRobots
+:CompetitiveRobot
     a owl:NamedIndividual, :RobotCooperationStrategy ;
     rdfs:label "Competitive Cooperation Robot"@en ;
     rdfs:comment "Represents the competitive cooperation in robot in an experiment."@en .
