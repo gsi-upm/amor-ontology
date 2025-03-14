@@ -262,10 +262,10 @@
 :hasVisualizationStrategy
     a owl:ObjectProperty ;
     rdfs:subPropertyOf :hasParameter ;
-    rdfs:domain :DigitalNewspaperExperiment ;
+    rdfs:domain :Experiment ;
     rdfs:range :VisualizationStrategy ;
     rdfs:label "has visualization strategy"@en ;
-    rdfs:comment "Relates a visualization strategy parameter with its visualization strategy."@en .
+    rdfs:comment "Relates an experiment with its visualization strategy."@en .
 
 :VisualizationStrategy
     a owl:Class ;
