@@ -36,6 +36,9 @@
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://schema.org/text
+<http://schema.org/text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -50,6 +53,9 @@
 # 
 # http://schema.org/hasPart
 <http://schema.org/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://schema.org/suggestedAnswer
+<http://schema.org/suggestedAnswer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -75,7 +81,7 @@
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an experiment with its evaluation."@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation> <http://www.w3.org/2000/01/rdf-schema#label> "has experiment evaluation"@en .
 # 
@@ -96,7 +102,7 @@
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFinalQuestion
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFinalQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFinalQuestion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFinalQuestion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFinalQuestion> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Question> .
 <http://schema.org/Question> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFinalQuestion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an experiment evaluation with the final questionnaire."@en .
@@ -111,14 +117,14 @@
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Question> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an experiment evaluation with the initial questionnaire."@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "has initial question"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIntermediateQuestion
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIntermediateQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIntermediateQuestion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIntermediateQuestion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIntermediateQuestion> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Question> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIntermediateQuestion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an experiment evaluation with the intermediate questionnaire."@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIntermediateQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "has intermediate question"@en .
@@ -200,15 +206,16 @@
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotRole> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#VisualizationStrategy> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a visualization strategy parameter with its visualization strategy."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an experiment with its visualization strategy."@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.w3.org/2000/01/rdf-schema#label> "has visualization strategy"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVocalExpresivity
@@ -254,8 +261,8 @@
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionRecognitionCooperationStrategy> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an experiment with the emotion recognition cooperation strategy used."@en .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#label> "uses emotion recognition cooperation strategy"@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an experiment with the emotion recognition cooperation configuration used."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#label> "uses emotion recognition cooperation configuration"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -264,18 +271,34 @@
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/XML/1998/namespace/lang> .
 <http://www.w3.org/XML/1998/namespace/lang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an experiment with the robot cooperation configuration used."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "uses robot cooperation configuration"@en .
+# 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an experiment with the robot cooperation strategy used."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a robot cooperation configuration with the robot cooperation strategy used."@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#label> "uses robot cooperation strategy"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an experiment with the semantic cooperation strategy used."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "uses semantic cooperation strategy"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an experiment with the semantic cooperation strategy used."@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#label> "uses semantic cooperation strategy"@en .
@@ -406,12 +429,12 @@
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
-# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRoleType
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRoleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRoleType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotRole> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRoleType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRoleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a robot role with the robot role type."@en .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRoleType> <http://www.w3.org/2000/01/rdf-schema#label> "has robot role type"@en .
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRoleType
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRoleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRoleType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotRole> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRoleType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRoleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a robot role with the robot role type."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRoleType> <http://www.w3.org/2000/01/rdf-schema#label> "has robot role type"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasStressLevel
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasStressLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -433,7 +456,7 @@
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a semantic cooperation strategy with the cloud graph query used."@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery> <http://www.w3.org/2000/01/rdf-schema#label> "uses cloud graph query"@en .
@@ -471,7 +494,7 @@
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a semantic cooperation strategy with the SPARQL query used."@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery> <http://www.w3.org/2000/01/rdf-schema#label> "uses SPARQL query"@en .
@@ -486,6 +509,9 @@
 # 
 # 
 # http://kb.openrobots.org#Robot
+# 
+# http://schema.org/Answer
+<http://schema.org/Answer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://schema.org/CreativeWork
 # 
@@ -532,11 +558,11 @@
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an experiment in the AMOR project."@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment> <http://www.w3.org/2000/01/rdf-schema#label> "Experiment"@en .
 # 
-# http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an evaluation of an experiment in the AMOR project."@en .
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution> <http://www.w3.org/2000/01/rdf-schema#label> "Experiment Evaluation"@en .
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an evaluation of an experiment in the AMOR project."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation> <http://www.w3.org/2000/01/rdf-schema#label> "Experiment Evaluation"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -587,6 +613,84 @@
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the configuration of the LLM used in an experiment in the AMOR project."@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "LLM Configuration"@en .
 # 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Question> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#unionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#oneOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://schema.org/text> "5" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://schema.org/text> "4" .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://schema.org/text> "3" .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://schema.org/text> "2" .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://schema.org/text> "1" .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/suggestedAnswer> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#oneOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://schema.org/text> "Strongly Agree" .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://schema.org/text> "Agree" .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://schema.org/text> "Neutral" .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://schema.org/text> "Disagree" .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://schema.org/text> "Strongly Disagree" .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/suggestedAnswer> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/suggestedAnswer> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a Likert question."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Likert Question"@en .
+# 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralFrameExperiment
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralFrameExperiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralFrameExperiment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment> .
@@ -624,6 +728,8 @@
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationStrategyParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the strategy used to filter recommendations for an item in an experiment in the AMOR project."@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationStrategyParameter> <http://www.w3.org/2000/01/rdf-schema#label> "Recommendation Strategy Parameter"@en .
 # 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration
+# 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the strategy used to cooperate with the robot in an experiment in the AMOR project."@en .
@@ -639,6 +745,11 @@
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SearchEngineBiasExperiment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SearchEngineBiasExperiment> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an experiment with a search engine bias in the AMOR project."@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SearchEngineBiasExperiment> <http://www.w3.org/2000/01/rdf-schema#label> "Search Engine Bias Experiment"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the configuration of the semantic cooperation used in an experiment in the AMOR project."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "Semantic Cooperation Configuration"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -708,6 +819,18 @@
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#CloudSemanticCooperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#CloudSemanticCooperation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the cloud semantic cooperation in an experiment."@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#CloudSemanticCooperation> <http://www.w3.org/2000/01/rdf-schema#label> "Cloud Semantic Cooperation"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#CompetitiveRobot
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#CompetitiveRobot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#CompetitiveRobot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#CompetitiveRobot> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the competitive cooperation in robot in an experiment."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#CompetitiveRobot> <http://www.w3.org/2000/01/rdf-schema#label> "Competitive Cooperation Robot"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#CooperativeRobot
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#CooperativeRobot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#CooperativeRobot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#CooperativeRobot> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the cognitive cooperation in robot in an experiment."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#CooperativeRobot> <http://www.w3.org/2000/01/rdf-schema#label> "Cognitive Cooperation Robot"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionDissimilarity
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionDissimilarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

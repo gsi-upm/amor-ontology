@@ -9,7 +9,7 @@ This section provides details for each class and property defined by AMOR Experi
   <li><a href="#DigitalNewspaperExperiment" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment">Digital Newspaper Experiment</a></li>
   <li><a href="#EmotionRecognitionCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionRecognitionCooperationStrategy">Emotion Recognition Cooperation Strategy</a></li>
   <li><a href="#Experiment" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment">Experiment</a></li>
-  <li><a href="#ExperimentEvalution" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution">Experiment Evaluation</a></li>
+  <li><a href="#ExperimentEvaluation" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation">Experiment Evaluation</a></li>
   <li><a href="#ExperimentExecutor" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor">Experiment Executor</a></li>
   <li><a href="#ExperimentParameter" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentParameter">Experiment Parameter</a></li>
   <li><a href="#ExperimentRequester" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentRequester">Experiment Requester</a></li>
@@ -17,6 +17,7 @@ This section provides details for each class and property defined by AMOR Experi
   <li><a href="#ExpresivityCategory" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExpresivityCategory">Expresivity Category</a></li>
   <li><a href="#FakeNewsAwarenessExperiment" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#FakeNewsAwarenessExperiment">Fake News Awareness Experiment</a></li>
   <li><a href="#GeographicalVisualizationExperiment" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#GeographicalVisualizationExperiment">Geographical Visualization Experiment</a></li>
+  <li><a href="#LikertQuestion" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion">Likert Question</a></li>
   <li><a href="#LLMConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration">LLM Configuration</a></li>
   <li><a href="#MoralFrameExperiment" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralFrameExperiment">Moral Frame Experiment</a></li>
   <li><a href="#MoralValuesExperiment" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValuesExperiment">Moral Values Experiment</a></li>
@@ -27,6 +28,7 @@ This section provides details for each class and property defined by AMOR Experi
   <li><a href="#RobotCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy">Robot Cooperation Strategy</a></li>
   <li><a href="#RobotRole" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotRole">Robot Role</a></li>
   <li><a href="#SearchEngineBiasExperiment" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SearchEngineBiasExperiment">Search Engine Bias Experiment</a></li>
+  <li><a href="#SemanticCooperationConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration">Semantic Cooperation Configuration</a></li>
   <li><a href="#SemanticCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy">Semantic Cooperation Strategy</a></li>
   <li><a href="#SocialNetworkExperiment" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SocialNetworkExperiment">Social Network Experiment</a></li>
   <li><a href="#VisualizationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#VisualizationStrategy">Visualization Strategy</a></li>
@@ -117,7 +119,7 @@ This section provides details for each class and property defined by AMOR Experi
     is in domain of
    </dt>
    <dd>
-    <a href="#usesDataset" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset">has dataset</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasVisualizationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy">has visualization strategy</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#usesDataset" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset">has dataset</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -132,7 +134,7 @@ This section provides details for each class and property defined by AMOR Experi
     is in range of
    </dt>
    <dd>
-    <a href="#usesEmotionRecognitionCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy">uses emotion recognition cooperation strategy</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#usesEmotionRecognitionCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy">uses emotion recognition cooperation configuration</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     has members
@@ -165,7 +167,7 @@ This section provides details for each class and property defined by AMOR Experi
     is in domain of
    </dt>
    <dd>
-    <a href="#hasLLMConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMConfiguration">has LLM configuration</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasBackgroundMusic" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundMusic">has background music</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBackgroundScenario" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario">has background scenario</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasContentAdaptationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasContentAdaptationStrategy">has content adaptation strategy</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExperimentEvaluation" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation">has experiment evaluation</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExecutor" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExecutor">has experiment executor</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasRequester" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester">has experiment requester</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExperimentationSubject" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentationSubject">has experimentation subject</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasParameter" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter">has parameter</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPhysicalMovement" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement">has physical movement</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesAggregatedData" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData">uses aggregated data</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesAvatar" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar">uses avatar</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesEmotionRecognitionCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy">uses emotion recognition cooperation strategy</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesLanguage" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage">uses language</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesRobotCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy">uses robot cooperation strategy</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesSemanticCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy">uses semantic cooperation strategy</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasLLMConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMConfiguration">has LLM configuration</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasBackgroundMusic" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundMusic">has background music</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBackgroundScenario" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario">has background scenario</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasContentAdaptationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasContentAdaptationStrategy">has content adaptation strategy</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExperimentEvaluation" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation">has experiment evaluation</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExecutor" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExecutor">has experiment executor</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasRequester" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester">has experiment requester</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExperimentationSubject" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentationSubject">has experimentation subject</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasParameter" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter">has parameter</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPhysicalMovement" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement">has physical movement</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasVisualizationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy">has visualization strategy</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesAggregatedData" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData">uses aggregated data</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesAvatar" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar">uses avatar</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesEmotionRecognitionCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy">uses emotion recognition cooperation configuration</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesLanguage" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage">uses language</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesRobotCooperationConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration">uses robot cooperation configuration</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesSemanticCooperationConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration">uses semantic cooperation strategy</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -175,9 +177,9 @@ This section provides details for each class and property defined by AMOR Experi
    </dd>
   </dl>
  </div>
- <div class="entity" id="ExperimentEvalution">
+ <div class="entity" id="ExperimentEvaluation">
   <h3>Experiment Evaluation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution</p>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation</p>
   <div class="comment">
    <span class="markdown">Represents an evaluation of an experiment in the AMOR project.</span>
   </div>
@@ -331,6 +333,21 @@ This section provides details for each class and property defined by AMOR Experi
    </dd>
   </dl>
  </div>
+ <div class="entity" id="LikertQuestion">
+  <h3>Likert Question<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion</p>
+  <div class="comment">
+   <span class="markdown">Represents a Likert question.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://schema.org/Question" target="_blank" title="http://schema.org/Question">Question</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="LLMConfiguration">
   <h3>LLM Configuration<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration</p>
@@ -480,12 +497,6 @@ This section provides details for each class and property defined by AMOR Experi
   </div>
   <dl class="description">
    <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#hasRobotRole" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole">has robot role</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
     is in range of
    </dt>
    <dd>
@@ -495,7 +506,7 @@ This section provides details for each class and property defined by AMOR Experi
     has members
    </dt>
    <dd>
-    <a href="#NoCooperationRobot" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoCooperationRobot">No Cooperation Robot</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#CooperativeRobot" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#CooperativeRobot">Cognitive Cooperation Robot</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#CompetitiveRobot" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#CompetitiveRobot">Competitive Cooperation Robot</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#NoCooperationRobot" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoCooperationRobot">No Cooperation Robot</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -510,7 +521,7 @@ This section provides details for each class and property defined by AMOR Experi
     is in domain of
    </dt>
    <dd>
-    <a href="#hasRobotActor" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor">has robot actor</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasRobotRoleType" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRoleType">has robot role type</a> <sup class="type-dp" title="data property">dp</sup>
+    <a href="#hasRobotActor" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor">has robot actor</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasRoleType" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRoleType">has robot role type</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
    <dt>
     is in range of
@@ -535,6 +546,27 @@ This section provides details for each class and property defined by AMOR Experi
    </dd>
   </dl>
  </div>
+ <div class="entity" id="SemanticCooperationConfiguration">
+  <h3>Semantic Cooperation Configuration<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration</p>
+  <div class="comment">
+   <span class="markdown">Represents the configuration of the semantic cooperation used in an experiment in the AMOR project.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#usesSPARQLQuery" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery">uses SPARQL query</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#usesCloudGraphQuery" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery">uses cloud graph query</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#usesSemanticCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy">uses semantic cooperation strategy</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#usesSemanticCooperationConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration">uses semantic cooperation strategy</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="SemanticCooperationStrategy">
   <h3>Semantic Cooperation Strategy<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy</p>
@@ -542,12 +574,6 @@ This section provides details for each class and property defined by AMOR Experi
    <span class="markdown">Represents the strategy used to cooperate with the semantic web in an experiment in the AMOR project.</span>
   </div>
   <dl class="description">
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#usesSPARQLQuery" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery">uses SPARQL query</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#usesCloudGraphQuery" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery">uses cloud graph query</a> <sup class="type-dp" title="data property">dp</sup>
-   </dd>
    <dt>
     is in range of
    </dt>
@@ -628,9 +654,11 @@ This section provides details for each class and property defined by AMOR Experi
   <li><a href="#isRelatedWithExperiment" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#isRelatedWithExperiment">is related with experiment</a></li>
   <li><a href="#usesAggregatedData" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData"> <span>uses aggregated data</span> </a></li>
   <li><a href="#usesAvatar" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar">uses avatar</a></li>
-  <li><a href="#usesEmotionRecognitionCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy">uses emotion recognition cooperation strategy</a></li>
+  <li><a href="#usesEmotionRecognitionCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy">uses emotion recognition cooperation configuration</a></li>
   <li><a href="#usesLanguage" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage"> <span>uses language</span> </a></li>
+  <li><a href="#usesRobotCooperationConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration">uses robot cooperation configuration</a></li>
   <li><a href="#usesRobotCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy">uses robot cooperation strategy</a></li>
+  <li><a href="#usesSemanticCooperationConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration">uses semantic cooperation strategy</a></li>
   <li><a href="#usesSemanticCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy">uses semantic cooperation strategy</a></li>
  </ul>
  <div class="entity" id="hasBackgroundScenario">
@@ -741,7 +769,7 @@ This section provides details for each class and property defined by AMOR Experi
      has range
     </dt>
     <dd>
-     <a href="#ExperimentEvalution" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution">Experiment Evaluation</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ExperimentEvaluation" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation">Experiment Evaluation</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -850,7 +878,7 @@ This section provides details for each class and property defined by AMOR Experi
      has domain
     </dt>
     <dd>
-     <a href="#ExperimentEvalution" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution">Experiment Evaluation</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ExperimentEvaluation" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation">Experiment Evaluation</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -896,7 +924,7 @@ This section provides details for each class and property defined by AMOR Experi
      has domain
     </dt>
     <dd>
-     <a href="#ExperimentEvalution" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution">Experiment Evaluation</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ExperimentEvaluation" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation">Experiment Evaluation</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -919,7 +947,7 @@ This section provides details for each class and property defined by AMOR Experi
      has domain
     </dt>
     <dd>
-     <a href="#ExperimentEvalution" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution">Experiment Evaluation</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ExperimentEvaluation" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation">Experiment Evaluation</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -1000,7 +1028,7 @@ This section provides details for each class and property defined by AMOR Experi
      has sub-properties
     </dt>
     <dd>
-     <a href="#hasLLMConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMConfiguration">has LLM configuration</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasBackgroundScenario" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario">has background scenario</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasContentAdaptationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasContentAdaptationStrategy">has content adaptation strategy</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesDataset" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset">has dataset</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExperimentEvaluation" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation">has experiment evaluation</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPhysicalMovement" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement">has physical movement</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasVisualizationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy">has visualization strategy</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesAggregatedData" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData">uses aggregated data</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesAvatar" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar">uses avatar</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesEmotionRecognitionCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy">uses emotion recognition cooperation strategy</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesLanguage" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage">uses language</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesRobotCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy">uses robot cooperation strategy</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesSemanticCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy">uses semantic cooperation strategy</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#hasLLMConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMConfiguration">has LLM configuration</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasBackgroundScenario" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario">has background scenario</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasContentAdaptationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasContentAdaptationStrategy">has content adaptation strategy</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesDataset" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset">has dataset</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExperimentEvaluation" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation">has experiment evaluation</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPhysicalMovement" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement">has physical movement</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasVisualizationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy">has visualization strategy</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesAggregatedData" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData">uses aggregated data</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesAvatar" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar">uses avatar</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesEmotionRecognitionCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy">uses emotion recognition cooperation configuration</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesLanguage" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage">uses language</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesRobotCooperationConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration">uses robot cooperation configuration</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesRobotCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy">uses robot cooperation strategy</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesSemanticCooperationConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration">uses semantic cooperation strategy</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesSemanticCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy">uses semantic cooperation strategy</a> <sup class="type-op" title="object property">op</sup>
     </dd>
     <dt>
      has domain
@@ -1185,7 +1213,7 @@ This section provides details for each class and property defined by AMOR Experi
      has domain
     </dt>
     <dd>
-     <a href="#RobotCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy">Robot Cooperation Strategy</a> <sup class="type-c" title="class">c</sup>
+     <a href="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration" target="_blank" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration">Robot Cooperation Configuration</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -1206,7 +1234,7 @@ This section provides details for each class and property defined by AMOR Experi
   <h3>has visualization strategy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy</p>
   <div class="comment">
-   <span class="markdown">Relates a visualization strategy parameter with its visualization strategy.</span>
+   <span class="markdown">Relates an experiment with its visualization strategy.</span>
   </div>
   <div class="description">
    <dl>
@@ -1220,7 +1248,7 @@ This section provides details for each class and property defined by AMOR Experi
      has domain
     </dt>
     <dd>
-     <a href="#DigitalNewspaperExperiment" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment">Digital Newspaper Experiment</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Experiment" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment">Experiment</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -1339,10 +1367,10 @@ This section provides details for each class and property defined by AMOR Experi
   </div>
  </div>
  <div class="entity" id="usesEmotionRecognitionCooperationStrategy">
-  <h3>uses emotion recognition cooperation strategy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>uses emotion recognition cooperation configuration<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy</p>
   <div class="comment">
-   <span class="markdown">Relates an experiment with the emotion recognition cooperation strategy used.</span>
+   <span class="markdown">Relates an experiment with the emotion recognition cooperation configuration used.</span>
   </div>
   <div class="description">
    <dl>
@@ -1399,11 +1427,11 @@ This section provides details for each class and property defined by AMOR Experi
    </dl>
   </div>
  </div>
- <div class="entity" id="usesRobotCooperationStrategy">
-  <h3>uses robot cooperation strategy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy</p>
+ <div class="entity" id="usesRobotCooperationConfiguration">
+  <h3>uses robot cooperation configuration<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration</p>
   <div class="comment">
-   <span class="markdown">Relates an experiment with the robot cooperation strategy used.</span>
+   <span class="markdown">Relates an experiment with the robot cooperation configuration used.</span>
   </div>
   <div class="description">
    <dl>
@@ -1423,7 +1451,65 @@ This section provides details for each class and property defined by AMOR Experi
      has range
     </dt>
     <dd>
+     <a href="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration" target="_blank" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration">Robot Cooperation Configuration</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="usesRobotCooperationStrategy">
+  <h3>uses robot cooperation strategy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy</p>
+  <div class="comment">
+   <span class="markdown">Relates a robot cooperation configuration with the robot cooperation strategy used.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#hasParameter" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter">has parameter</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration" target="_blank" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration">Robot Cooperation Configuration</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
      <a href="#RobotCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy">Robot Cooperation Strategy</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="usesSemanticCooperationConfiguration">
+  <h3>uses semantic cooperation strategy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration</p>
+  <div class="comment">
+   <span class="markdown">Relates an experiment with the semantic cooperation strategy used.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#hasParameter" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter">has parameter</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Experiment" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment">Experiment</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#SemanticCooperationConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration">Semantic Cooperation Configuration</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1446,7 +1532,7 @@ This section provides details for each class and property defined by AMOR Experi
      has domain
     </dt>
     <dd>
-     <a href="#Experiment" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment">Experiment</a> <sup class="type-c" title="class">c</sup>
+     <a href="#SemanticCooperationConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration">Semantic Cooperation Configuration</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -1476,7 +1562,7 @@ This section provides details for each class and property defined by AMOR Experi
   <li><a href="#hasPoliticalOrientation" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPoliticalOrientation">has political orientation</a></li>
   <li><a href="#hasPreferredTopic" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredTopic">has preferred topic</a></li>
   <li><a href="#hasRecommendationScore" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationScore">has recommendation score</a></li>
-  <li><a href="#hasRobotRoleType" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRoleType">has robot role type</a></li>
+  <li><a href="#hasRoleType" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRoleType">has robot role type</a></li>
   <li><a href="#hasStressLevel" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasStressLevel">has stress level</a></li>
   <li><a href="#hasVoice" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVoice">has voice</a></li>
   <li><a href="#usesAggregatedData" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData"> <span>uses aggregated data</span> </a></li>
@@ -1849,9 +1935,9 @@ This section provides details for each class and property defined by AMOR Experi
    </dl>
   </div>
  </div>
- <div class="entity" id="hasRobotRoleType">
+ <div class="entity" id="hasRoleType">
   <h3>has robot role type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRoleType</p>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRoleType</p>
   <div class="comment">
    <span class="markdown">Relates a robot role with the robot role type.</span>
   </div>
@@ -1950,7 +2036,7 @@ This section provides details for each class and property defined by AMOR Experi
      has domain
     </dt>
     <dd>
-     <a href="#SemanticCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy">Semantic Cooperation Strategy</a> <sup class="type-c" title="class">c</sup>
+     <a href="#SemanticCooperationConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration">Semantic Cooperation Configuration</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -2065,7 +2151,7 @@ This section provides details for each class and property defined by AMOR Experi
      has domain
     </dt>
     <dd>
-     <a href="#SemanticCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy">Semantic Cooperation Strategy</a> <sup class="type-c" title="class">c</sup>
+     <a href="#SemanticCooperationConfiguration" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration">Semantic Cooperation Configuration</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -2084,6 +2170,8 @@ This section provides details for each class and property defined by AMOR Experi
   <li><a href="#ClickBaitVisualizationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy">Click Bait Visualization Strategy</a></li>
   <li><a href="#CloudEmotionRecognition" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#CloudEmotionRecognition">Cloud Cooperation Emotion Recognition</a></li>
   <li><a href="#CloudSemanticCooperation" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#CloudSemanticCooperation">Cloud Semantic Cooperation</a></li>
+  <li><a href="#CooperativeRobot" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#CooperativeRobot">Cognitive Cooperation Robot</a></li>
+  <li><a href="#CompetitiveRobot" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#CompetitiveRobot">Competitive Cooperation Robot</a></li>
   <li><a href="#EmotiveExpresivity" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotiveExpresivity">Emotive Expresivity</a></li>
   <li><a href="#EmphaticExpresivity" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmphaticExpresivity">Emphatic Expresivity</a></li>
   <li><a href="#ExaggeratedExpresivity" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExaggeratedExpresivity">Exaggerated Expresivity</a></li>
@@ -2179,6 +2267,36 @@ This section provides details for each class and property defined by AMOR Experi
    </dt>
    <dd>
     <a href="#SemanticCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy">Semantic Cooperation Strategy</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CooperativeRobot">
+  <h3>Cognitive Cooperation Robot<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#CooperativeRobot</p>
+  <div class="comment">
+   <span class="markdown">Represents the cognitive cooperation in robot in an experiment.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#RobotCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy">Robot Cooperation Strategy</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CompetitiveRobot">
+  <h3>Competitive Cooperation Robot<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/experiments/ns#CompetitiveRobot</p>
+  <div class="comment">
+   <span class="markdown">Represents the competitive cooperation in robot in an experiment.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#RobotCooperationStrategy" title="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy">Robot Cooperation Strategy</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>

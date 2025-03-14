@@ -112,298 +112,11 @@
   }, {
     "id" : "17",
     "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://www.w3.org/ns/prov#Person",
-    "baseIri" : "http://www.w3.org/ns/prov",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Person"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
-      "labels" : {
-        "IRI-based" : "researcher1",
-        "en" : "Alejo"
-      }
-    }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
-      "annotations" : {
-        "hasMoralProfile" : [ {
-          "identifier" : "hasMoralProfile",
-          "language" : "undefined",
-          "value" : "_:genid2147483652",
-          "type" : "label"
-        } ],
-        "hasAccesibilityCategory" : [ {
-          "identifier" : "hasAccesibilityCategory",
-          "language" : "undefined",
-          "value" : "fragile",
-          "type" : "label"
-        } ],
-        "hasStressLevel" : [ {
-          "identifier" : "hasStressLevel",
-          "language" : "undefined",
-          "value" : "0.5",
-          "type" : "label"
-        } ],
-        "hasPreferredTopic" : [ {
-          "identifier" : "hasPreferredTopic",
-          "language" : "undefined",
-          "value" : "Sports",
-          "type" : "label"
-        }, {
-          "identifier" : "hasPreferredTopic",
-          "language" : "undefined",
-          "value" : "Politics",
-          "type" : "label"
-        } ],
-        "gender" : [ {
-          "identifier" : "gender",
-          "language" : "undefined",
-          "value" : "male",
-          "type" : "label"
-        } ],
-        "hasPreferredContent" : [ {
-          "identifier" : "hasPreferredContent",
-          "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#news1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasPreferredContent",
-          "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#news2",
-          "type" : "iri"
-        } ],
-        "hasAgeBracket" : [ {
-          "identifier" : "hasAgeBracket",
-          "language" : "undefined",
-          "value" : "18-25",
-          "type" : "label"
-        } ],
-        "hasNumberOfFollowers" : [ {
-          "identifier" : "hasNumberOfFollowers",
-          "language" : "undefined",
-          "value" : "1000",
-          "type" : "label"
-        } ],
-        "hasPreferredEntity" : [ {
-          "identifier" : "hasPreferredEntity",
-          "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#elPais",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasPreferredEntity",
-          "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#libertadDigital",
-          "type" : "iri"
-        } ],
-        "hasAverageSocialNetworkActivityPerMonth" : [ {
-          "identifier" : "hasAverageSocialNetworkActivityPerMonth",
-          "language" : "undefined",
-          "value" : "100",
-          "type" : "label"
-        } ],
-        "hasEducationLevel" : [ {
-          "identifier" : "hasEducationLevel",
-          "language" : "undefined",
-          "value" : "Master of Science",
-          "type" : "label"
-        } ],
-        "hasPoliticalOrientation" : [ {
-          "identifier" : "hasPoliticalOrientation",
-          "language" : "undefined",
-          "value" : "central",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "human1",
-        "en" : "Juan"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "0"
-  }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "NewsDataset"
-    },
-    "individuals" : [ {
-      "iri" : "http://amor-graph.gsi.upm.es/ns#dataset1",
-      "baseIri" : "http://amor-graph.gsi.upm.es/ns",
-      "annotations" : {
-        "url" : [ {
-          "identifier" : "url",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "dataset1"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "1"
-  }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ExperimentExecutor"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
-      "labels" : {
-        "IRI-based" : "ari41",
-        "en" : "ARI 41"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "2"
-  }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Experiment"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
-      "annotations" : {
-        "hasPhysicalMovement" : [ {
-          "identifier" : "hasPhysicalMovement",
-          "language" : "undefined",
-          "value" : "poi1",
-          "type" : "label"
-        }, {
-          "identifier" : "hasPhysicalMovement",
-          "language" : "undefined",
-          "value" : "poi2",
-          "type" : "label"
-        } ],
-        "usesDataset" : [ {
-          "identifier" : "usesDataset",
-          "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#dataset1",
-          "type" : "iri"
-        } ],
-        "hasLLMConfiguration" : [ {
-          "identifier" : "hasLLMConfiguration",
-          "language" : "undefined",
-          "value" : "_:genid2147483649",
-          "type" : "label"
-        } ],
-        "usesAggregatedData" : [ {
-          "identifier" : "usesAggregatedData",
-          "language" : "undefined",
-          "value" : "total population",
-          "type" : "label"
-        } ],
-        "usesEmotionRecognitionCooperationStrategy" : [ {
-          "identifier" : "usesEmotionRecognitionCooperationStrategy",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition",
-          "type" : "iri"
-        } ],
-        "usesAvatar" : [ {
-          "identifier" : "usesAvatar",
-          "language" : "undefined",
-          "value" : "_:genid2147483648",
-          "type" : "label"
-        } ],
-        "usesRobotCooperationStrategy" : [ {
-          "identifier" : "usesRobotCooperationStrategy",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoCooperationRobot",
-          "type" : "iri"
-        } ],
-        "hasExperimentationSubject" : [ {
-          "identifier" : "hasExperimentationSubject",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1",
-          "type" : "iri"
-        } ],
-        "hasVisualizationStrategy" : [ {
-          "identifier" : "hasVisualizationStrategy",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasVisualizationStrategy",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy",
-          "type" : "iri"
-        } ],
-        "hasContentAdaptationStrategy" : [ {
-          "identifier" : "hasContentAdaptationStrategy",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#AfectiveAdaptationStrategy",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasContentAdaptationStrategy",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralAdaptationStrategy",
-          "type" : "iri"
-        } ],
-        "usesLanguage" : [ {
-          "identifier" : "usesLanguage",
-          "language" : "undefined",
-          "value" : "es_ES",
-          "type" : "label"
-        } ],
-        "usesSemanticCooperationStrategy" : [ {
-          "identifier" : "usesSemanticCooperationStrategy",
-          "language" : "undefined",
-          "value" : "_:genid2147483650",
-          "type" : "label"
-        } ],
-        "hasExperimentEvaluation" : [ {
-          "identifier" : "hasExperimentEvaluation",
-          "language" : "undefined",
-          "value" : "_:genid2147483651",
-          "type" : "label"
-        } ],
-        "hasExecutor" : [ {
-          "identifier" : "hasExecutor",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41",
-          "type" : "iri"
-        } ],
-        "hasBackgroundScenario" : [ {
-          "identifier" : "hasBackgroundScenario",
-          "language" : "undefined",
-          "value" : "japaneseHouse.virtual",
-          "type" : "label"
-        } ],
-        "hasRequester" : [ {
-          "identifier" : "hasRequester",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1",
-          "type" : "iri"
-        } ],
-        "hasBackgroundMusic" : [ {
-          "identifier" : "hasBackgroundMusic",
-          "language" : "undefined",
-          "value" : "relaxingJapaneseMusic.mp3",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "experiment1",
-        "en" : "Experiment 1"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "3"
-  }, {
     "iri" : "http://schema.org/Question",
     "baseIri" : "http://schema.org",
     "instances" : 0,
@@ -419,32 +132,6 @@
           "language" : "en",
           "value" : "Do you feel happy now? (1-No, I am not happy at all, 5-I am very happy)",
           "type" : "label"
-        } ],
-        "suggestedAnswer" : [ {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer2",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer4",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer5",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer3",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer1",
-          "type" : "iri"
         } ]
       },
       "labels" : {
@@ -459,32 +146,6 @@
           "language" : "en",
           "value" : "Do you feel sad now? (1-No, I am not sad at all, 5-I am very sad.)",
           "type" : "label"
-        } ],
-        "suggestedAnswer" : [ {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer4",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer5",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer1",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer2",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer3",
-          "type" : "iri"
         } ]
       },
       "labels" : {
@@ -499,32 +160,6 @@
           "language" : "en",
           "value" : "Do you like news about sports? (1-No, I don't like them at all, 5-Yes, I really like them.)",
           "type" : "label"
-        } ],
-        "suggestedAnswer" : [ {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer1",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer3",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer5",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer4",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer2",
-          "type" : "iri"
         } ]
       },
       "labels" : {
@@ -539,32 +174,6 @@
           "language" : "en",
           "value" : "Do you think the news reading have modified your emotion? (1-Not at all, 5-Yes, of course.)",
           "type" : "label"
-        } ],
-        "suggestedAnswer" : [ {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer1",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer5",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer2",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer4",
-          "type" : "iri"
-        }, {
-          "identifier" : "suggestedAnswer",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer3",
-          "type" : "iri"
         } ]
       },
       "labels" : {
@@ -572,7 +181,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "4"
+    "id" : "0"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -625,12 +234,6 @@
           "value" : "_:genid2147483648",
           "type" : "label"
         } ],
-        "usesRobotCooperationStrategy" : [ {
-          "identifier" : "usesRobotCooperationStrategy",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoCooperationRobot",
-          "type" : "iri"
-        } ],
         "hasExperimentationSubject" : [ {
           "identifier" : "hasExperimentationSubject",
           "language" : "undefined",
@@ -651,13 +254,25 @@
         "hasContentAdaptationStrategy" : [ {
           "identifier" : "hasContentAdaptationStrategy",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#AfectiveAdaptationStrategy",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralAdaptationStrategy",
           "type" : "iri"
         }, {
           "identifier" : "hasContentAdaptationStrategy",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralAdaptationStrategy",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#AfectiveAdaptationStrategy",
           "type" : "iri"
+        } ],
+        "usesRobotCooperationConfiguration" : [ {
+          "identifier" : "usesRobotCooperationConfiguration",
+          "language" : "undefined",
+          "value" : "_:genid2147483651",
+          "type" : "label"
+        } ],
+        "usesSemanticCooperationConfiguration" : [ {
+          "identifier" : "usesSemanticCooperationConfiguration",
+          "language" : "undefined",
+          "value" : "_:genid2147483650",
+          "type" : "label"
         } ],
         "usesLanguage" : [ {
           "identifier" : "usesLanguage",
@@ -665,16 +280,10 @@
           "value" : "es_ES",
           "type" : "label"
         } ],
-        "usesSemanticCooperationStrategy" : [ {
-          "identifier" : "usesSemanticCooperationStrategy",
-          "language" : "undefined",
-          "value" : "_:genid2147483650",
-          "type" : "label"
-        } ],
         "hasExperimentEvaluation" : [ {
           "identifier" : "hasExperimentEvaluation",
           "language" : "undefined",
-          "value" : "_:genid2147483651",
+          "value" : "_:genid2147483652",
           "type" : "label"
         } ],
         "hasExecutor" : [ {
@@ -708,25 +317,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "5"
-  }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MoralValueAnnotation"
-    },
-    "attributes" : [ "external" ],
-    "id" : "6"
-  }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "FullSemanticCooperation"
-    },
-    "attributes" : [ "external" ],
-    "id" : "7"
+    "id" : "1"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentRequester",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -743,131 +334,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "8"
-  }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Avatar"
-    },
-    "attributes" : [ "external" ],
-    "id" : "9"
-  }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentationSubject",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ExperimentationSubject"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
-      "annotations" : {
-        "hasMoralProfile" : [ {
-          "identifier" : "hasMoralProfile",
-          "language" : "undefined",
-          "value" : "_:genid2147483652",
-          "type" : "label"
-        } ],
-        "hasAccesibilityCategory" : [ {
-          "identifier" : "hasAccesibilityCategory",
-          "language" : "undefined",
-          "value" : "fragile",
-          "type" : "label"
-        } ],
-        "hasStressLevel" : [ {
-          "identifier" : "hasStressLevel",
-          "language" : "undefined",
-          "value" : "0.5",
-          "type" : "label"
-        } ],
-        "hasPreferredTopic" : [ {
-          "identifier" : "hasPreferredTopic",
-          "language" : "undefined",
-          "value" : "Sports",
-          "type" : "label"
-        }, {
-          "identifier" : "hasPreferredTopic",
-          "language" : "undefined",
-          "value" : "Politics",
-          "type" : "label"
-        } ],
-        "gender" : [ {
-          "identifier" : "gender",
-          "language" : "undefined",
-          "value" : "male",
-          "type" : "label"
-        } ],
-        "hasPreferredContent" : [ {
-          "identifier" : "hasPreferredContent",
-          "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#news1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasPreferredContent",
-          "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#news2",
-          "type" : "iri"
-        } ],
-        "hasAgeBracket" : [ {
-          "identifier" : "hasAgeBracket",
-          "language" : "undefined",
-          "value" : "18-25",
-          "type" : "label"
-        } ],
-        "hasNumberOfFollowers" : [ {
-          "identifier" : "hasNumberOfFollowers",
-          "language" : "undefined",
-          "value" : "1000",
-          "type" : "label"
-        } ],
-        "hasPreferredEntity" : [ {
-          "identifier" : "hasPreferredEntity",
-          "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#elPais",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasPreferredEntity",
-          "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#libertadDigital",
-          "type" : "iri"
-        } ],
-        "hasAverageSocialNetworkActivityPerMonth" : [ {
-          "identifier" : "hasAverageSocialNetworkActivityPerMonth",
-          "language" : "undefined",
-          "value" : "100",
-          "type" : "label"
-        } ],
-        "hasEducationLevel" : [ {
-          "identifier" : "hasEducationLevel",
-          "language" : "undefined",
-          "value" : "Master of Science",
-          "type" : "label"
-        } ],
-        "hasPoliticalOrientation" : [ {
-          "identifier" : "hasPoliticalOrientation",
-          "language" : "undefined",
-          "value" : "central",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "human1",
-        "en" : "Juan"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "10"
-  }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MoralProfile"
-    },
-    "attributes" : [ "external" ],
-    "id" : "11"
+    "id" : "2"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -876,96 +343,7 @@
       "IRI-based" : "LLMConfiguration"
     },
     "attributes" : [ "external" ],
-    "id" : "12"
-  }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ExperimentEvalution"
-    },
-    "attributes" : [ "external" ],
-    "id" : "13"
-  }, {
-    "iri" : "http://schema.org/Answer",
-    "baseIri" : "http://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Answer"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer4",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
-      "annotations" : {
-        "text" : [ {
-          "identifier" : "text",
-          "language" : "undefined",
-          "value" : "4",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "numericAnswer4"
-      }
-    }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer3",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
-      "annotations" : {
-        "text" : [ {
-          "identifier" : "text",
-          "language" : "undefined",
-          "value" : "3",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "numericAnswer3"
-      }
-    }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer5",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
-      "annotations" : {
-        "text" : [ {
-          "identifier" : "text",
-          "language" : "undefined",
-          "value" : "5",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "numericAnswer5"
-      }
-    }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer2",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
-      "annotations" : {
-        "text" : [ {
-          "identifier" : "text",
-          "language" : "undefined",
-          "value" : "2",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "numericAnswer2"
-      }
-    }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer1",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
-      "annotations" : {
-        "text" : [ {
-          "identifier" : "text",
-          "language" : "undefined",
-          "value" : "1",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "numericAnswer1"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "14"
+    "id" : "3"
   }, {
     "iri" : "http://kb.openrobots.org#Robot",
     "baseIri" : "http://kb.openrobots.org",
@@ -982,58 +360,94 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "15"
+    "id" : "4"
   }, {
-    "iri" : "http://www.w3.org/ns/prov#SoftwareAgent",
-    "baseIri" : "http://www.w3.org/ns/prov",
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "SoftwareAgent"
+      "IRI-based" : "LikertQuestion"
     },
     "individuals" : [ {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41",
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#question1",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "annotations" : {
+        "text" : [ {
+          "identifier" : "text",
+          "language" : "en",
+          "value" : "Do you feel happy now? (1-No, I am not happy at all, 5-I am very happy)",
+          "type" : "label"
+        } ]
+      },
       "labels" : {
-        "IRI-based" : "ari41",
-        "en" : "ARI 41"
+        "IRI-based" : "question1"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#question3",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "annotations" : {
+        "text" : [ {
+          "identifier" : "text",
+          "language" : "en",
+          "value" : "Do you feel sad now? (1-No, I am not sad at all, 5-I am very sad.)",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "question3"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#question2",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "annotations" : {
+        "text" : [ {
+          "identifier" : "text",
+          "language" : "en",
+          "value" : "Do you like news about sports? (1-No, I don't like them at all, 5-Yes, I really like them.)",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "question2"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#question4",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "annotations" : {
+        "text" : [ {
+          "identifier" : "text",
+          "language" : "en",
+          "value" : "Do you think the news reading have modified your emotion? (1-Not at all, 5-Yes, of course.)",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "question4"
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "16"
+    "id" : "5"
   }, {
-    "iri" : "http://xmlns.com/foaf/0.1/Person",
-    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "iri" : "http://www.w3.org/ns/prov#Person",
+    "baseIri" : "http://www.w3.org/ns/prov",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Person"
     },
     "individuals" : [ {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
-      "labels" : {
-        "IRI-based" : "researcher1",
-        "en" : "Alejo"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
       "annotations" : {
         "hasMoralProfile" : [ {
           "identifier" : "hasMoralProfile",
           "language" : "undefined",
-          "value" : "_:genid2147483652",
+          "value" : "_:genid2147483653",
           "type" : "label"
         } ],
         "hasAccesibilityCategory" : [ {
           "identifier" : "hasAccesibilityCategory",
           "language" : "undefined",
           "value" : "fragile",
-          "type" : "label"
-        } ],
-        "hasStressLevel" : [ {
-          "identifier" : "hasStressLevel",
-          "language" : "undefined",
-          "value" : "0.5",
           "type" : "label"
         } ],
         "hasPreferredTopic" : [ {
@@ -1047,6 +461,12 @@
           "value" : "Politics",
           "type" : "label"
         } ],
+        "hasStressLevel" : [ {
+          "identifier" : "hasStressLevel",
+          "language" : "undefined",
+          "value" : "0.5",
+          "type" : "label"
+        } ],
         "gender" : [ {
           "identifier" : "gender",
           "language" : "undefined",
@@ -1056,12 +476,12 @@
         "hasPreferredContent" : [ {
           "identifier" : "hasPreferredContent",
           "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#news1",
+          "value" : "http://amor-graph.gsi.upm.es/ns#news2",
           "type" : "iri"
         }, {
           "identifier" : "hasPreferredContent",
           "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#news2",
+          "value" : "http://amor-graph.gsi.upm.es/ns#news1",
           "type" : "iri"
         } ],
         "hasAgeBracket" : [ {
@@ -1079,12 +499,12 @@
         "hasPreferredEntity" : [ {
           "identifier" : "hasPreferredEntity",
           "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#elPais",
+          "value" : "http://amor-graph.gsi.upm.es/ns#libertadDigital",
           "type" : "iri"
         }, {
           "identifier" : "hasPreferredEntity",
           "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#libertadDigital",
+          "value" : "http://amor-graph.gsi.upm.es/ns#elPais",
           "type" : "iri"
         } ],
         "hasAverageSocialNetworkActivityPerMonth" : [ {
@@ -1093,16 +513,333 @@
           "value" : "100",
           "type" : "label"
         } ],
+        "hasPoliticalOrientation" : [ {
+          "identifier" : "hasPoliticalOrientation",
+          "language" : "undefined",
+          "value" : "central",
+          "type" : "label"
+        } ],
         "hasEducationLevel" : [ {
           "identifier" : "hasEducationLevel",
           "language" : "undefined",
           "value" : "Master of Science",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "human1",
+        "en" : "Juan"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "labels" : {
+        "IRI-based" : "researcher1",
+        "en" : "Alejo"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NewsDataset"
+    },
+    "individuals" : [ {
+      "iri" : "http://amor-graph.gsi.upm.es/ns#dataset1",
+      "baseIri" : "http://amor-graph.gsi.upm.es/ns",
+      "annotations" : {
+        "url" : [ {
+          "identifier" : "url",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "dataset1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RobotCooperationConfiguration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExperimentExecutor"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "labels" : {
+        "IRI-based" : "ari41",
+        "en" : "ARI 41"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Experiment"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "annotations" : {
+        "hasPhysicalMovement" : [ {
+          "identifier" : "hasPhysicalMovement",
+          "language" : "undefined",
+          "value" : "poi1",
+          "type" : "label"
+        }, {
+          "identifier" : "hasPhysicalMovement",
+          "language" : "undefined",
+          "value" : "poi2",
+          "type" : "label"
+        } ],
+        "usesDataset" : [ {
+          "identifier" : "usesDataset",
+          "language" : "undefined",
+          "value" : "http://amor-graph.gsi.upm.es/ns#dataset1",
+          "type" : "iri"
+        } ],
+        "hasLLMConfiguration" : [ {
+          "identifier" : "hasLLMConfiguration",
+          "language" : "undefined",
+          "value" : "_:genid2147483649",
+          "type" : "label"
+        } ],
+        "usesAggregatedData" : [ {
+          "identifier" : "usesAggregatedData",
+          "language" : "undefined",
+          "value" : "total population",
+          "type" : "label"
+        } ],
+        "usesEmotionRecognitionCooperationStrategy" : [ {
+          "identifier" : "usesEmotionRecognitionCooperationStrategy",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition",
+          "type" : "iri"
+        } ],
+        "usesAvatar" : [ {
+          "identifier" : "usesAvatar",
+          "language" : "undefined",
+          "value" : "_:genid2147483648",
+          "type" : "label"
+        } ],
+        "hasExperimentationSubject" : [ {
+          "identifier" : "hasExperimentationSubject",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1",
+          "type" : "iri"
+        } ],
+        "hasVisualizationStrategy" : [ {
+          "identifier" : "hasVisualizationStrategy",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasVisualizationStrategy",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy",
+          "type" : "iri"
+        } ],
+        "hasContentAdaptationStrategy" : [ {
+          "identifier" : "hasContentAdaptationStrategy",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralAdaptationStrategy",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasContentAdaptationStrategy",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#AfectiveAdaptationStrategy",
+          "type" : "iri"
+        } ],
+        "usesRobotCooperationConfiguration" : [ {
+          "identifier" : "usesRobotCooperationConfiguration",
+          "language" : "undefined",
+          "value" : "_:genid2147483651",
+          "type" : "label"
+        } ],
+        "usesSemanticCooperationConfiguration" : [ {
+          "identifier" : "usesSemanticCooperationConfiguration",
+          "language" : "undefined",
+          "value" : "_:genid2147483650",
+          "type" : "label"
+        } ],
+        "usesLanguage" : [ {
+          "identifier" : "usesLanguage",
+          "language" : "undefined",
+          "value" : "es_ES",
+          "type" : "label"
+        } ],
+        "hasExperimentEvaluation" : [ {
+          "identifier" : "hasExperimentEvaluation",
+          "language" : "undefined",
+          "value" : "_:genid2147483652",
+          "type" : "label"
+        } ],
+        "hasExecutor" : [ {
+          "identifier" : "hasExecutor",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41",
+          "type" : "iri"
+        } ],
+        "hasBackgroundScenario" : [ {
+          "identifier" : "hasBackgroundScenario",
+          "language" : "undefined",
+          "value" : "japaneseHouse.virtual",
+          "type" : "label"
+        } ],
+        "hasRequester" : [ {
+          "identifier" : "hasRequester",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1",
+          "type" : "iri"
+        } ],
+        "hasBackgroundMusic" : [ {
+          "identifier" : "hasBackgroundMusic",
+          "language" : "undefined",
+          "value" : "relaxingJapaneseMusic.mp3",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "experiment1",
+        "en" : "Experiment 1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralValueAnnotation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Avatar"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentationSubject",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExperimentationSubject"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "annotations" : {
+        "hasMoralProfile" : [ {
+          "identifier" : "hasMoralProfile",
+          "language" : "undefined",
+          "value" : "_:genid2147483653",
+          "type" : "label"
+        } ],
+        "hasAccesibilityCategory" : [ {
+          "identifier" : "hasAccesibilityCategory",
+          "language" : "undefined",
+          "value" : "fragile",
+          "type" : "label"
+        } ],
+        "hasPreferredTopic" : [ {
+          "identifier" : "hasPreferredTopic",
+          "language" : "undefined",
+          "value" : "Sports",
+          "type" : "label"
+        }, {
+          "identifier" : "hasPreferredTopic",
+          "language" : "undefined",
+          "value" : "Politics",
+          "type" : "label"
+        } ],
+        "hasStressLevel" : [ {
+          "identifier" : "hasStressLevel",
+          "language" : "undefined",
+          "value" : "0.5",
+          "type" : "label"
+        } ],
+        "gender" : [ {
+          "identifier" : "gender",
+          "language" : "undefined",
+          "value" : "male",
+          "type" : "label"
+        } ],
+        "hasPreferredContent" : [ {
+          "identifier" : "hasPreferredContent",
+          "language" : "undefined",
+          "value" : "http://amor-graph.gsi.upm.es/ns#news2",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasPreferredContent",
+          "language" : "undefined",
+          "value" : "http://amor-graph.gsi.upm.es/ns#news1",
+          "type" : "iri"
+        } ],
+        "hasAgeBracket" : [ {
+          "identifier" : "hasAgeBracket",
+          "language" : "undefined",
+          "value" : "18-25",
+          "type" : "label"
+        } ],
+        "hasNumberOfFollowers" : [ {
+          "identifier" : "hasNumberOfFollowers",
+          "language" : "undefined",
+          "value" : "1000",
+          "type" : "label"
+        } ],
+        "hasPreferredEntity" : [ {
+          "identifier" : "hasPreferredEntity",
+          "language" : "undefined",
+          "value" : "http://amor-graph.gsi.upm.es/ns#libertadDigital",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasPreferredEntity",
+          "language" : "undefined",
+          "value" : "http://amor-graph.gsi.upm.es/ns#elPais",
+          "type" : "iri"
+        } ],
+        "hasAverageSocialNetworkActivityPerMonth" : [ {
+          "identifier" : "hasAverageSocialNetworkActivityPerMonth",
+          "language" : "undefined",
+          "value" : "100",
           "type" : "label"
         } ],
         "hasPoliticalOrientation" : [ {
           "identifier" : "hasPoliticalOrientation",
           "language" : "undefined",
           "value" : "central",
+          "type" : "label"
+        } ],
+        "hasEducationLevel" : [ {
+          "identifier" : "hasEducationLevel",
+          "language" : "undefined",
+          "value" : "Master of Science",
           "type" : "label"
         } ]
       },
@@ -1112,6 +849,163 @@
       }
     } ],
     "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralProfile"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExperimentEvalution"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SemanticCooperationConfiguration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#SoftwareAgent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareAgent"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "labels" : {
+        "IRI-based" : "ari41",
+        "en" : "ARI 41"
+      }
+    } ],
+    "attributes" : [ "external" ],
     "id" : "17"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "annotations" : {
+        "hasMoralProfile" : [ {
+          "identifier" : "hasMoralProfile",
+          "language" : "undefined",
+          "value" : "_:genid2147483653",
+          "type" : "label"
+        } ],
+        "hasAccesibilityCategory" : [ {
+          "identifier" : "hasAccesibilityCategory",
+          "language" : "undefined",
+          "value" : "fragile",
+          "type" : "label"
+        } ],
+        "hasPreferredTopic" : [ {
+          "identifier" : "hasPreferredTopic",
+          "language" : "undefined",
+          "value" : "Sports",
+          "type" : "label"
+        }, {
+          "identifier" : "hasPreferredTopic",
+          "language" : "undefined",
+          "value" : "Politics",
+          "type" : "label"
+        } ],
+        "hasStressLevel" : [ {
+          "identifier" : "hasStressLevel",
+          "language" : "undefined",
+          "value" : "0.5",
+          "type" : "label"
+        } ],
+        "gender" : [ {
+          "identifier" : "gender",
+          "language" : "undefined",
+          "value" : "male",
+          "type" : "label"
+        } ],
+        "hasPreferredContent" : [ {
+          "identifier" : "hasPreferredContent",
+          "language" : "undefined",
+          "value" : "http://amor-graph.gsi.upm.es/ns#news2",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasPreferredContent",
+          "language" : "undefined",
+          "value" : "http://amor-graph.gsi.upm.es/ns#news1",
+          "type" : "iri"
+        } ],
+        "hasAgeBracket" : [ {
+          "identifier" : "hasAgeBracket",
+          "language" : "undefined",
+          "value" : "18-25",
+          "type" : "label"
+        } ],
+        "hasNumberOfFollowers" : [ {
+          "identifier" : "hasNumberOfFollowers",
+          "language" : "undefined",
+          "value" : "1000",
+          "type" : "label"
+        } ],
+        "hasPreferredEntity" : [ {
+          "identifier" : "hasPreferredEntity",
+          "language" : "undefined",
+          "value" : "http://amor-graph.gsi.upm.es/ns#libertadDigital",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasPreferredEntity",
+          "language" : "undefined",
+          "value" : "http://amor-graph.gsi.upm.es/ns#elPais",
+          "type" : "iri"
+        } ],
+        "hasAverageSocialNetworkActivityPerMonth" : [ {
+          "identifier" : "hasAverageSocialNetworkActivityPerMonth",
+          "language" : "undefined",
+          "value" : "100",
+          "type" : "label"
+        } ],
+        "hasPoliticalOrientation" : [ {
+          "identifier" : "hasPoliticalOrientation",
+          "language" : "undefined",
+          "value" : "central",
+          "type" : "label"
+        } ],
+        "hasEducationLevel" : [ {
+          "identifier" : "hasEducationLevel",
+          "language" : "undefined",
+          "value" : "Master of Science",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "human1",
+        "en" : "Juan"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "labels" : {
+        "IRI-based" : "researcher1",
+        "en" : "Alejo"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "18"
   } ]
 }

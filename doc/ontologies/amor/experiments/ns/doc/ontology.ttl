@@ -46,6 +46,10 @@
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
+###  http://schema.org/text
+<http://schema.org/text> rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Object Properties
 #################################################################
@@ -56,6 +60,10 @@
 
 ###  http://schema.org/hasPart
 <http://schema.org/hasPart> rdf:type owl:ObjectProperty .
+
+
+###  http://schema.org/suggestedAnswer
+<http://schema.org/suggestedAnswer> rdf:type owl:ObjectProperty .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario
@@ -85,7 +93,7 @@
 :hasExperimentEvaluation rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :hasParameter ;
                          rdfs:domain :Experiment ;
-                         rdfs:range :ExperimentEvalution ;
+                         rdfs:range :ExperimentEvaluation ;
                          rdfs:comment "Relates an experiment with its evaluation."@en ;
                          rdfs:label "has experiment evaluation"@en .
 
@@ -108,7 +116,7 @@
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFinalQuestion
 :hasFinalQuestion rdf:type owl:ObjectProperty ;
-                  rdfs:domain :ExperimentEvalution ;
+                  rdfs:domain :ExperimentEvaluation ;
                   rdfs:range <http://schema.org/Question> ;
                   rdfs:comment "Relates an experiment evaluation with the final questionnaire."@en ;
                   rdfs:label "has final question"@en .
@@ -124,7 +132,7 @@
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion
 :hasInitialQuestion rdf:type owl:ObjectProperty ;
-                    rdfs:domain :ExperimentEvalution ;
+                    rdfs:domain :ExperimentEvaluation ;
                     rdfs:range <http://schema.org/Question> ;
                     rdfs:comment "Relates an experiment evaluation with the initial questionnaire."@en ;
                     rdfs:label "has initial question"@en .
@@ -132,7 +140,7 @@
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIntermediateQuestion
 :hasIntermediateQuestion rdf:type owl:ObjectProperty ;
-                         rdfs:domain :ExperimentEvalution ;
+                         rdfs:domain :ExperimentEvaluation ;
                          rdfs:range <http://schema.org/Question> ;
                          rdfs:comment "Relates an experiment evaluation with the intermediate questionnaire."@en ;
                          rdfs:label "has intermediate question"@en .
@@ -222,16 +230,16 @@
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole
 :hasRobotRole rdf:type owl:ObjectProperty ;
-              rdfs:domain :RobotCooperationStrategy ;
+              rdfs:domain :RobotCooperationConfiguration ;
               rdfs:range :RobotRole .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy
 :hasVisualizationStrategy rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :hasParameter ;
-                          rdfs:domain :DigitalNewspaperExperiment ;
+                          rdfs:domain :Experiment ;
                           rdfs:range :VisualizationStrategy ;
-                          rdfs:comment "Relates a visualization strategy parameter with its visualization strategy."@en ;
+                          rdfs:comment "Relates an experiment with its visualization strategy."@en ;
                           rdfs:label "has visualization strategy"@en .
 
 
@@ -281,8 +289,8 @@
                                            rdfs:subPropertyOf :hasParameter ;
                                            rdfs:domain :Experiment ;
                                            rdfs:range :EmotionRecognitionCooperationStrategy ;
-                                           rdfs:comment "Relates an experiment with the emotion recognition cooperation strategy used."@en ;
-                                           rdfs:label "uses emotion recognition cooperation strategy"@en .
+                                           rdfs:comment "Relates an experiment with the emotion recognition cooperation configuration used."@en ;
+                                           rdfs:label "uses emotion recognition cooperation configuration"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage
@@ -292,19 +300,37 @@
               rdfs:range <http://www.w3.org/XML/1998/namespace/lang> .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration
+:usesRobotCooperationConfiguration rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf :hasParameter ;
+                                   rdfs:domain :Experiment ;
+                                   rdfs:range :RobotCooperationConfiguration ;
+                                   rdfs:comment "Relates an experiment with the robot cooperation configuration used."@en ;
+                                   rdfs:label "uses robot cooperation configuration"@en .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy
 :usesRobotCooperationStrategy rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf :hasParameter ;
-                              rdfs:domain :Experiment ;
+                              rdfs:domain :RobotCooperationConfiguration ;
                               rdfs:range :RobotCooperationStrategy ;
-                              rdfs:comment "Relates an experiment with the robot cooperation strategy used."@en ;
+                              rdfs:comment "Relates a robot cooperation configuration with the robot cooperation strategy used."@en ;
                               rdfs:label "uses robot cooperation strategy"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration
+:usesSemanticCooperationConfiguration rdf:type owl:ObjectProperty ;
+                                      rdfs:subPropertyOf :hasParameter ;
+                                      rdfs:domain :Experiment ;
+                                      rdfs:range :SemanticCooperationConfiguration ;
+                                      rdfs:comment "Relates an experiment with the semantic cooperation strategy used."@en ;
+                                      rdfs:label "uses semantic cooperation strategy"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy
 :usesSemanticCooperationStrategy rdf:type owl:ObjectProperty ;
                                  rdfs:subPropertyOf :hasParameter ;
-                                 rdfs:domain :Experiment ;
+                                 rdfs:domain :SemanticCooperationConfiguration ;
                                  rdfs:range :SemanticCooperationStrategy ;
                                  rdfs:comment "Relates an experiment with the semantic cooperation strategy used."@en ;
                                  rdfs:label "uses semantic cooperation strategy"@en .
@@ -452,12 +478,12 @@
 :hasRobotRole rdf:type owl:DatatypeProperty .
 
 
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRoleType
-:hasRobotRoleType rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :RobotRole ;
-                  rdfs:range xsd:string ;
-                  rdfs:comment "Relates a robot role with the robot role type."@en ;
-                  rdfs:label "has robot role type"@en .
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRoleType
+:hasRoleType rdf:type owl:DatatypeProperty ;
+             rdfs:domain :RobotRole ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Relates a robot role with the robot role type."@en ;
+             rdfs:label "has robot role type"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasStressLevel
@@ -483,7 +509,7 @@
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery
 :usesCloudGraphQuery rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :SemanticCooperationStrategy ;
+                     rdfs:domain :SemanticCooperationConfiguration ;
                      rdfs:range xsd:string ;
                      rdfs:comment "Relates a semantic cooperation strategy with the cloud graph query used."@en ;
                      rdfs:label "uses cloud graph query"@en .
@@ -527,7 +553,7 @@
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery
 :usesSPARQLQuery rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :SemanticCooperationStrategy ;
+                 rdfs:domain :SemanticCooperationConfiguration ;
                  rdfs:range xsd:string ;
                  rdfs:comment "Relates a semantic cooperation strategy with the SPARQL query used."@en ;
                  rdfs:label "uses SPARQL query"@en .
@@ -539,6 +565,10 @@
 
 ###  http://kb.openrobots.org#Robot
 <http://kb.openrobots.org#Robot> rdf:type owl:Class .
+
+
+###  http://schema.org/Answer
+<http://schema.org/Answer> rdf:type owl:Class .
 
 
 ###  http://schema.org/CreativeWork
@@ -597,11 +627,11 @@
             rdfs:label "Experiment"@en .
 
 
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution
-:ExperimentEvalution rdf:type owl:Class ;
-                     rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                     rdfs:comment "Represents an evaluation of an experiment in the AMOR project."@en ;
-                     rdfs:label "Experiment Evaluation"@en .
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation
+:ExperimentEvaluation rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                      rdfs:comment "Represents an evaluation of an experiment in the AMOR project."@en ;
+                      rdfs:label "Experiment Evaluation"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor
@@ -662,6 +692,51 @@
                   rdfs:label "LLM Configuration"@en .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion
+:LikertQuestion rdf:type owl:Class ;
+                rdfs:subClassOf <http://schema.org/Question> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://schema.org/suggestedAnswer> ;
+                                  owl:allValuesFrom [ rdf:type owl:Class ;
+                                                      owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://schema.org/suggestedAnswer> ;
+                                                                      owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                          owl:oneOf ( _:genid28 rdf:type <http://schema.org/Answer> ;
+                                                                                                                <http://schema.org/text> "Strongly Disagree"
+                                                                                                    _:genid26 rdf:type <http://schema.org/Answer> ;
+                                                                                                              <http://schema.org/text> "Disagree"
+                                                                                                    _:genid24 rdf:type <http://schema.org/Answer> ;
+                                                                                                              <http://schema.org/text> "Neutral"
+                                                                                                    _:genid22 rdf:type <http://schema.org/Answer> ;
+                                                                                                              <http://schema.org/text> "Agree"
+                                                                                          _:genid20 rdf:type <http://schema.org/Answer> ;
+                                                                                                    <http://schema.org/text> "Strongly Agree"
+                                                                                        )
+                                                                    ]
+                                                                  ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://schema.org/suggestedAnswer> ;
+                                                      owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                          owl:oneOf ( _:genid15 rdf:type <http://schema.org/Answer> ;
+                                                                                                <http://schema.org/text> "1"
+                                                                                    _:genid13 rdf:type <http://schema.org/Answer> ;
+                                                                                              <http://schema.org/text> "2"
+                                                                                    _:genid11 rdf:type <http://schema.org/Answer> ;
+                                                                                              <http://schema.org/text> "3"
+                                                                                    _:genid9 rdf:type <http://schema.org/Answer> ;
+                                                                                             <http://schema.org/text> "4"
+                                                                          _:genid7 rdf:type <http://schema.org/Answer> ;
+                                                                                   <http://schema.org/text> "5"
+                                                                        )
+                                                    ]
+                                  ]
+                                )
+]
+] ;
+rdfs:comment "Represents a Likert question."@en ;
+rdfs:label "Likert Question"@en .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralFrameExperiment
 :MoralFrameExperiment rdf:type owl:Class ;
                       rdfs:subClassOf :DigitalNewspaperExperiment ;
@@ -704,6 +779,10 @@
                                  rdfs:label "Recommendation Strategy Parameter"@en .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration
+:RobotCooperationConfiguration rdf:type owl:Class .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy
 :RobotCooperationStrategy rdf:type owl:Class ;
                           rdfs:comment "Represents the strategy used to cooperate with the robot in an experiment in the AMOR project."@en ;
@@ -721,6 +800,12 @@
                             rdfs:subClassOf :DigitalNewspaperExperiment ;
                             rdfs:comment "Represents an experiment with a search engine bias in the AMOR project."@en ;
                             rdfs:label "Search Engine Bias Experiment"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration
+:SemanticCooperationConfiguration rdf:type owl:Class ;
+                                  rdfs:comment "Represents the configuration of the semantic cooperation used in an experiment in the AMOR project."@en ;
+                                  rdfs:label "Semantic Cooperation Configuration"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy
@@ -807,6 +892,20 @@
                                    :SemanticCooperationStrategy ;
                           rdfs:comment "Represents the cloud semantic cooperation in an experiment."@en ;
                           rdfs:label "Cloud Semantic Cooperation"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#CompetitiveRobot
+:CompetitiveRobot rdf:type owl:NamedIndividual ,
+                           :RobotCooperationStrategy ;
+                  rdfs:comment "Represents the competitive cooperation in robot in an experiment."@en ;
+                  rdfs:label "Competitive Cooperation Robot"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#CooperativeRobot
+:CooperativeRobot rdf:type owl:NamedIndividual ,
+                           :RobotCooperationStrategy ;
+                  rdfs:comment "Represents the cognitive cooperation in robot in an experiment."@en ;
+                  rdfs:label "Cognitive Cooperation Robot"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionDissimilarity

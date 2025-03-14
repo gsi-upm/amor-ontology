@@ -46,10 +46,6 @@
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
-###  http://schema.org/suggestedAnswer
-<http://schema.org/suggestedAnswer> rdf:type owl:AnnotationProperty .
-
-
 ###  http://schema.org/text
 <http://schema.org/text> rdf:type owl:AnnotationProperty .
 
@@ -174,6 +170,14 @@
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasStressLevel
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasStressLevel> rdf:type owl:AnnotationProperty .
 
@@ -222,12 +226,20 @@
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesPrompt> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy
@@ -278,10 +290,6 @@
 <http://kb.openrobots.org#Robot> rdf:type owl:Class .
 
 
-###  http://schema.org/Answer
-<http://schema.org/Answer> rdf:type owl:Class .
-
-
 ###  http://schema.org/Question
 <http://schema.org/Question> rdf:type owl:Class .
 
@@ -314,16 +322,24 @@
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentationSubject> rdf:type owl:Class .
 
 
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation> rdf:type owl:Class .
-
-
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration> rdf:type owl:Class .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion> rdf:type owl:Class .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset> rdf:type owl:Class .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration> rdf:type owl:Class .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration> rdf:type owl:Class .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile
@@ -386,8 +402,8 @@
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset> <http://amor-graph.gsi.upm.es/ns#dataset1> ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition> ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage> "es_ES" ;
-             <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoCooperationRobot> ;
-             <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy> _:genid4 ;
+             <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration> _:genid4 ;
+             <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration> _:genid7 ;
              rdfs:label "Experiment 1"@en .
 
 _:genid1 rdf:type <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvalution> ;
@@ -415,37 +431,36 @@ _:genid3 rdf:type <http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar> 
           <http://xmlns.com/foaf/0.1/age> 70 ;
           <http://xmlns.com/foaf/0.1/gender> "female" .
 
-_:genid4 rdf:type <http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation> ;
-          <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery> "http://amor-graph.gsi.upm.es/sparql" ;
+_:genid4 rdf:type <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration> ;
+          <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> _:genid5 ,
+                                                                              _:genid6 ;
+          <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#CooperativeRobot> .
+
+_:genid7 rdf:type <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration> ;
+          <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery> "http://amor-graph.gsi.upm.es/queries" ;
           <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery> """
-            PREFIX prov: <http://www.w3.org/ns/prov#>
-            PREFIX segb: <http://www.gsi.upm.es/ontologies/segb/ns#>
-            PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-            PREFIX mls: <http://www.w3.org/ns/mls#>
-            PREFIX oro: <http://kb.openrobots.org#>
-            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>
+            PREFIX mft: <http://www.gsi.upm.es/ontologies/mft/ns#>
+            PREFIX schema: <http://schema.org/>
+            PREFIX oa: <http://www.w3.org/ns/oa#>
 
 
-            SELECT ?activity ?startTime ?endTime ?model ?human ?humanName
+            DESCRIBE *
             WHERE {
-            ?activity a segb:LoggedActivity ;
-                    segb:usedMLModel ?model ;
-                    prov:startedAtTime ?startTime ;
-                    prov:endedAtTime ?endTime ;
-                    prov:wasAssociatedWith ?agent .
-            ?agent a oro:Robot ;
-                    oro:hasName ?robotName .	
-            ?run mls:hasOutput ?model ;
-                    prov:wasAssociatedWith ?human .
-            ?human a prov:Person, foaf:Person ;
-                    foaf:firstName ?humanName .
-              FILTER (
-                ?startTime >= \"2024-11-16T00:00:00\"^^xsd:dateTime &&
-                ?endTime <= \"2024-11-16T23:59:59\"^^xsd:dateTime &&
-                ?robotName = \"ARI\"@es
-              )
+                ?uri a schema:NewsArticle .
+                ?annotation a amor:MoralValueAnnotation ;
+            	oa:hasTarget ?uri ;
+            	amor:hasMoralValueCategory mft:PURITY .
             }
-        """ .
+            LIMIT 10
+        """ ;
+          <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation> .
+
+_:genid5 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor> :ari41 ;
+          <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> "newsReader" .
+
+_:genid6 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor> :ari42 ;
+          <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> "emotionalSupport" .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1
@@ -466,125 +481,79 @@ _:genid4 rdf:type <http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSema
         <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredTopic> "Politics" ,
                                                                                  "Sports" ;
         <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasStressLevel> "0.5"^^xsd:float ;
-        <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile> _:genid5 ;
+        <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile> _:genid8 ;
         rdfs:label "Juan"@en ;
         <http://xmlns.com/foaf/0.1/gender> "male" .
 
-_:genid5 rdf:type <http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile> ;
+_:genid8 rdf:type <http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile> ;
           <http://www.gsi.upm.es/ontologies/amor/ns#analysed> :human1 ;
           <http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations> ;
           rdfs:label "Juan's Moral Profile - Previous Experiment Execution"@en ;
           <http://www.w3.org/ns/prov#endedAtTime> "2024-04-15T14:30:00-04:00"^^xsd:dateTime ;
           <http://www.w3.org/ns/prov#generated> :researcher1 ,
-                                                _:genid6 ,
-                                                _:genid7 ,
-                                                _:genid8 ,
                                                 _:genid9 ,
                                                 _:genid10 ,
-                                                _:genid11 .
+                                                _:genid11 ,
+                                                _:genid12 ,
+                                                _:genid13 ,
+                                                _:genid14 .
 
-_:genid6 rdf:type <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
+_:genid9 rdf:type <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
           <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.65"^^xsd:float ;
           <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#CareHarm> ;
           rdfs:label "Juan's Moral Profile Annotation - Care/Harm"@en .
 
-_:genid7 rdf:type <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
-          <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.45"^^xsd:float ;
-          <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating> ;
-          rdfs:label "Juan's Moral Profile Annotation - Fairness/Cheating"@en .
-
-_:genid8 rdf:type <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
-          <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.85"^^xsd:float ;
-          <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal> ;
-          rdfs:label "Juan's Moral Profile Annotation - Loyalty/Betrayal"@en .
-
-_:genid9 rdf:type <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
-          <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.75"^^xsd:float ;
-          <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion> ;
-          rdfs:label "Juan's Moral Profile Annotation - Authority/Subversion"@en .
-
 _:genid10 rdf:type <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
+           <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.45"^^xsd:float ;
+           <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating> ;
+           rdfs:label "Juan's Moral Profile Annotation - Fairness/Cheating"@en .
+
+_:genid11 rdf:type <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
+           <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.85"^^xsd:float ;
+           <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal> ;
+           rdfs:label "Juan's Moral Profile Annotation - Loyalty/Betrayal"@en .
+
+_:genid12 rdf:type <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
+           <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.75"^^xsd:float ;
+           <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion> ;
+           rdfs:label "Juan's Moral Profile Annotation - Authority/Subversion"@en .
+
+_:genid13 rdf:type <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
            <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.15"^^xsd:float ;
            <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation> ;
            rdfs:label "Juan's Moral Profile Annotation - Purity/Degradation"@en .
 
-_:genid11 rdf:type <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
+_:genid14 rdf:type <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
            <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.05"^^xsd:float ;
            <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#LibertyOppression> ;
            rdfs:label "Juan's Moral Profile Annotation - Liberty/Oppression"@en .
 
 
-###  http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer1
-:numericAnswer1 rdf:type owl:NamedIndividual ,
-                         <http://schema.org/Answer> ;
-                <http://schema.org/text> "1" .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer2
-:numericAnswer2 rdf:type owl:NamedIndividual ,
-                         <http://schema.org/Answer> ;
-                <http://schema.org/text> "2" .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer3
-:numericAnswer3 rdf:type owl:NamedIndividual ,
-                         <http://schema.org/Answer> ;
-                <http://schema.org/text> "3" .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer4
-:numericAnswer4 rdf:type owl:NamedIndividual ,
-                         <http://schema.org/Answer> ;
-                <http://schema.org/text> "4" .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/examples#numericAnswer5
-:numericAnswer5 rdf:type owl:NamedIndividual ,
-                         <http://schema.org/Answer> ;
-                <http://schema.org/text> "5" .
-
-
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/examples#question1
 :question1 rdf:type owl:NamedIndividual ,
-                    <http://schema.org/Question> ;
-           <http://schema.org/suggestedAnswer> :numericAnswer1 ,
-                                               :numericAnswer2 ,
-                                               :numericAnswer3 ,
-                                               :numericAnswer4 ,
-                                               :numericAnswer5 ;
+                    <http://schema.org/Question> ,
+                    <http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion> ;
            <http://schema.org/text> "Do you feel happy now? (1-No, I am not happy at all, 5-I am very happy)"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/examples#question2
 :question2 rdf:type owl:NamedIndividual ,
-                    <http://schema.org/Question> ;
-           <http://schema.org/suggestedAnswer> :numericAnswer1 ,
-                                               :numericAnswer2 ,
-                                               :numericAnswer3 ,
-                                               :numericAnswer4 ,
-                                               :numericAnswer5 ;
+                    <http://schema.org/Question> ,
+                    <http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion> ;
            <http://schema.org/text> "Do you like news about sports? (1-No, I don't like them at all, 5-Yes, I really like them.)"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/examples#question3
 :question3 rdf:type owl:NamedIndividual ,
-                    <http://schema.org/Question> ;
-           <http://schema.org/suggestedAnswer> :numericAnswer1 ,
-                                               :numericAnswer2 ,
-                                               :numericAnswer3 ,
-                                               :numericAnswer4 ,
-                                               :numericAnswer5 ;
+                    <http://schema.org/Question> ,
+                    <http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion> ;
            <http://schema.org/text> "Do you feel sad now? (1-No, I am not sad at all, 5-I am very sad.)"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/examples#question4
 :question4 rdf:type owl:NamedIndividual ,
-                    <http://schema.org/Question> ;
-           <http://schema.org/suggestedAnswer> :numericAnswer1 ,
-                                               :numericAnswer2 ,
-                                               :numericAnswer3 ,
-                                               :numericAnswer4 ,
-                                               :numericAnswer5 ;
+                    <http://schema.org/Question> ,
+                    <http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion> ;
            <http://schema.org/text> "Do you think the news reading have modified your emotion? (1-Not at all, 5-Yes, of course.)"@en .
 
 
