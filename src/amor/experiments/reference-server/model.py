@@ -9,30 +9,36 @@ class Label(BaseModel):
     language: str = Field(..., alias="@language")
     value: str = Field(..., alias="@value")
 
+
 class Answer(BaseModel):
     text: str = Field(..., alias="schema:text")
-    #answer_type: Optional[str] = Field(..., alias="@type")
+    # answer_type: Optional[str] = Field(..., alias="@type")
+
 
 class Question(BaseModel):
     text: Label = Field(..., alias="schema:text")
     atype: Optional[str] = Field(..., alias="@type")
     options: Optional[List[Answer]] = Field(None, alias="schema:suggestedAnswer")
 
+
 class ExperimentEvaluation(BaseModel):
     hasFinalQuestion: Optional[Question] = Field(..., alias="amor-exp:hasFinalQuestion")
     hasInitialQuestion: Optional[List[Question]] = Field(..., alias="amor-exp:hasInitialQuestion")
     hasIntermediateQuestion: Optional[Question] = Field(..., alias="amor-exp:hasIntermediateQuestion")
+
 
 class Executor(BaseModel):
     id: str = Field(..., alias="@id")
     type: List[str] = Field(..., alias="@type")
     label: Label = Field(..., alias="rdfs:label")
 
+
 class MoralValueAnnotation(BaseModel):
     type: str = Field(..., alias="@type")
     bias: float = Field(..., alias="amor-mft:hasBias")
     category: str = Field(..., alias="amor:hasMoralValueCategory")
     label: Label = Field(..., alias="rdfs:label")
+
 
 class MoralProfile(BaseModel):
     type: str = Field(..., alias="@type")
@@ -41,6 +47,7 @@ class MoralProfile(BaseModel):
     label: Label = Field(..., alias="rdfs:label")
     endedAtTime: datetime = Field(..., alias="prov:endedAtTime")
     generated: Optional[List[Union[Executor, MoralValueAnnotation]]] = None
+
 
 class ExperimentationSubject(BaseModel):
     hasAccesibilityCategory: str = Field(..., alias="amor-exp:hasAccesibilityCategory")
@@ -82,16 +89,25 @@ class Entity(BaseModel):
     eid: str = Field(alias="@id")
     label: Label = Field(alias="rdfs:label")
 
+
 class EmotionRecognitionCooperationStrategy(str, Enum):
     NO_COOPERATION = "amor-exp:NoCooperationEmotionRecognition"
     FULL_COOPERATION = "amor-exp:FullCooperationEmotionRecognition"
     LOCAL_COOPERATION = "amor-exp:LocalEmotionRecognition"
     CLOUD_COOPERATION = "amor-exp:CloudEmotionRecognition"
 
+
 # Semantic Cooperation Strategies Enum
 class SemanticCooperationStrategy(str, Enum):
     FULL_SEMANTIC_COOPERATION = "amor-exp:FullSemanticCooperation"
     LOCAL_EMOTION_RECOGNITION = "amor-exp:LocalEmotionRecognition"
+
+
+class SemanticCooperationConfiguration(BaseModel):
+    strategy: SemanticCooperationStrategy = Field(..., alias="amor-exp:usesSemanticCooperationStrategy")
+    sparqlQuery: Optional[List[str]] = Field(..., alias="amor-exp:usesSPARQLQuery")
+    cloudGraphQuery: Optional[List[str]] = Field(..., alias="amor-exp:usesCloudGraphQuery")
+
 
 # Visualization Strategies Enum
 class VisualizationStrategy(str, Enum):
@@ -100,14 +116,24 @@ class VisualizationStrategy(str, Enum):
     CLICK_BAIT = "amor-exp:ClickBaitVisualizationStrategy"
     FAKE_NEWS = "amor-exp:FakeNewsVisualizationStrategy"
 
+
 # Content Adaptation Strategies Enum
 class ContentAdaptationStrategy(str, Enum):
     MORAL_ADAPTATION_STRATEGY = "amor-exp:MoralAdaptationStrategy"
     AFFECTIVE_ADAPTATION_STRATEGY = "amor-exp:AfectiveAdaptationStrategy"
 
+
 # Robot Cooperation Strategies Enum
 class RobotCooperationStrategy(str, Enum):
     NO_COOPERATION_ROBOT = "amor-exp:NoCooperationRobot"
+    COOPERATIVE_ROBOT = "amor-exp:CooperativeRobot"
+    COMPETITIVE_ROBOT = "amor-exp:CompetitiveRobot"
+
+
+class RobotCooperationConfiguration(BaseModel):
+    strategy: RobotCooperationStrategy = Field(..., alias="usesRobotCooperationStrategy")
+    roleType: str = Field(..., alias="hasRobotRole")
+
 
 class Dataset(BaseModel):
     did: str = Field(alias="@id")
@@ -118,18 +144,19 @@ class Dataset(BaseModel):
 class Experiment(BaseModel):
     hasBackgroundMusic: Optional[str] = Field(..., alias="amor-exp:hasBackgroundMusic")
     hasBackgroundScenario: Optional[str] = Field(..., alias="amor-exp:hasBackgroundScenario")
-    hasContentAdaptationStrategy: List[ContentAdaptationStrategy] = Field(..., alias="amor-exp:hasContentAdaptationStrategy")
     hasExecutor: Optional[Union[Executor, str]] = Field(..., alias="amor-exp:hasExecutor")
     hasExperimentEvaluation: ExperimentEvaluation = Field(..., alias="amor-exp:hasExperimentEvaluation")
     hasExperimentationSubject: ExperimentationSubject = Field(..., alias="amor-exp:hasExperimentationSubject")
     hasLLMConfiguration: LLMConfiguration = Field(..., alias="amor-exp:hasLLMConfiguration")
     hasPhysicalMovement: Optional[List[str]] = Field(..., alias="amor-exp:hasPhysicalMovement")
     hasRequester: Entity = Field(..., alias="amor-exp:hasRequester")
-    hasVisualizationStrategy: Optional[List[VisualizationStrategy]] = Field(..., alias="amor-exp:hasVisualizationStrategy")
     usesAggregatedData: str = Field(..., alias="amor-exp:usesAggregatedData")
     usesAvatar: Avatar = Field(..., alias="amor-exp:usesAvatar")
     usesDataset: Union[str, Dataset] = Field(..., alias="amor-exp:usesDataset")
-    usesEmotionRecognitionCooperationStrategy: EmotionRecognitionCooperationStrategy = Field(..., alias="amor-exp:usesEmotionRecognitionCooperationStrategy")
     usesLanguage: str = Field(..., alias="amor-exp:usesLanguage")
-    usesRobotCooperationStrategy: Optional[RobotCooperationStrategy] = Field(..., alias="amor-exp:usesRobotCooperationStrategy")
-    usesSemanticCooperationStrategy: Optional[SemanticCooperationStrategy] = Field(..., alias="amor-exp:usesSemanticCooperationStrategy")
+    hasContentAdaptationStrategy: List[ContentAdaptationStrategy] = Field(..., alias="amor-exp:hasContentAdaptationStrategy")
+    hasVisualizationStrategy: Optional[List[VisualizationStrategy]] = Field(..., alias="amor-exp:hasVisualizationConfiguration")
+    usesEmotionRecognitionCooperationStrategy: EmotionRecognitionCooperationStrategy = Field(..., alias="amor-exp:usesEmotionRecognitionCooperationStrategy")
+
+    usesRobotCooperationConfiguration: Optional[RobotCooperationConfiguration] = Field(..., alias="amor-exp:usesRobotCooperationConfiguration")
+    usesSemanticCooperationConfiguration: Optional[SemanticCooperationConfiguration] = Field(..., alias="amor-exp:usesSemanticCooperationConfiguration")
