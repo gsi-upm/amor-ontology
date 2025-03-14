@@ -65,41 +65,40 @@ ex:experiment1 a owl:NamedIndividual ,
         amor-exp:hasLLMModel "phi4:14b" ;
         amor-exp:usesPrompt "You are a 70 years old lady. You are in a Japanese house. You are reading the news. You are grumpy. You are wearing a gray dress. You have white hair"
     ] ;
-    amor-exp:usesSemanticCooperationStrategy [
-        a amor-exp:FullSemanticCooperation ;
-        amor-exp:usesCloudGraphQuery "http://amor-graph.gsi.upm.es/sparql" ;
+    amor-exp:usesSemanticCooperationConfiguration [
+        a amor-exp:SemanticCooperationConfiguration ;
+        amor-exp:usesSemanticCooperationStrategy amor-exp:FullSemanticCooperation ;
+        amor-exp:usesCloudGraphQuery "http://amor-graph.gsi.upm.es/queries" ;
         # SPARQL Query Example
         amor-exp:usesSPARQLQuery """
-            PREFIX prov: <http://www.w3.org/ns/prov#>
-            PREFIX segb: <http://www.gsi.upm.es/ontologies/segb/ns#>
-            PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-            PREFIX mls: <http://www.w3.org/ns/mls#>
-            PREFIX oro: <http://kb.openrobots.org#>
-            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>
+            PREFIX mft: <http://www.gsi.upm.es/ontologies/mft/ns#>
+            PREFIX schema: <http://schema.org/>
+            PREFIX oa: <http://www.w3.org/ns/oa#>
 
 
-            SELECT ?activity ?startTime ?endTime ?model ?human ?humanName
+            DESCRIBE *
             WHERE {
-            ?activity a segb:LoggedActivity ;
-                    segb:usedMLModel ?model ;
-                    prov:startedAtTime ?startTime ;
-                    prov:endedAtTime ?endTime ;
-                    prov:wasAssociatedWith ?agent .
-            ?agent a oro:Robot ;
-                    oro:hasName ?robotName .	
-            ?run mls:hasOutput ?model ;
-                    prov:wasAssociatedWith ?human .
-            ?human a prov:Person, foaf:Person ;
-                    foaf:firstName ?humanName .
-              FILTER (
-                ?startTime >= "2024-11-16T00:00:00"^^xsd:dateTime &&
-                ?endTime <= "2024-11-16T23:59:59"^^xsd:dateTime &&
-                ?robotName = "ARI"@es
-              )
+                ?uri a schema:NewsArticle .
+                ?annotation a amor:MoralValueAnnotation ;
+            	oa:hasTarget ?uri ;
+            	amor:hasMoralValueCategory mft:PURITY .
             }
+            LIMIT 10
         """^^xsd:string ] ;
         amor-exp:usesEmotionRecognitionCooperationStrategy amor-exp:LocalEmotionRecognition ;
-        amor-exp:usesRobotCooperationStrategy amor-exp:NoCooperationRobot ;
+        amor-exp:usesRobotCooperationConfiguration [
+            a amor-exp:RobotCooperationConfiguration ;
+            amor-exp:usesRobotCooperationStrategy amor-exp:CooperativeRobot ;
+            amor-exp:hasRobotRole [
+                amor-exp:hasRobotActor ex:ari41 ;
+                amor-exp:hasRobotRole "newsReader"^^xsd:string ;
+            ] ,
+            [
+                amor-exp:hasRobotActor ex:ari42 ;
+                amor-exp:hasRobotRole "emotionalSupport"^^xsd:string ;
+            ] 
+        ] ;
         amor-exp:hasExperimentEvaluation [
             a amor-exp:ExperimentEvalution ;
             amor-exp:hasInitialQuestion ex:question1 ;
@@ -182,41 +181,17 @@ ex:human1 a amor-exp:ExperimentationSubject ,
             ]
     ] .
 
-ex:question1 a schema:Question ;
-    schema:text "Do you feel happy now? (1-No, I am not happy at all, 5-I am very happy)"@en ;
-    schema:suggestedAnswer
-        [ schema:text "1" ] ,
-        [ schema:text "2" ] ,
-        [ schema:text "3" ] ,
-        [ schema:text "4" ] ,
-        [ schema:text "5" ] .
+ex:question1 a amor-exp:LikertQuestion, schema:Question ;
+    schema:text "Do you feel happy now? (1-No, I am not happy at all, 5-I am very happy)"@en .
 
-ex:question2 a schema:Question ;
-    schema:text "Do you like news about sports? (1-No, I don't like them at all, 5-Yes, I really like them.)"@en ;
-    schema:suggestedAnswer
-        [ schema:text "1" ] ,
-        [ schema:text "2" ] ,
-        [ schema:text "3" ] ,
-        [ schema:text "4" ] ,
-        [ schema:text "5" ] .
+ex:question2 a amor-exp:LikertQuestion, schema:Question ;
+    schema:text "Do you like news about sports? (1-No, I don't like them at all, 5-Yes, I really like them.)"@en .
 
-ex:question3 a schema:Question ;
-    schema:text "Do you feel sad now? (1-No, I am not sad at all, 5-I am very sad.)"@en ;
-    schema:suggestedAnswer
-        [ schema:text "1" ] ,
-        [ schema:text "2" ] ,
-        [ schema:text "3" ] ,
-        [ schema:text "4" ] ,
-        [ schema:text "5" ] .
+ex:question3 a amor-exp:LikertQuestion, schema:Question ;
+    schema:text "Do you feel sad now? (1-No, I am not sad at all, 5-I am very sad.)"@en .
 
 ex:question4 a schema:Question ;
-    schema:text "Do you think the news reading have modified your emotion? (1-Not at all, 5-Yes, of course.)"@en ;
-    schema:suggestedAnswer
-        [ schema:text "1"^^xsd:string ] ,
-        [ schema:text "2"^^xsd:string ] ,
-        [ schema:text "3"^^xsd:string ] ,
-        [ schema:text "4"^^xsd:string ] ,
-        [ schema:text "5"^^xsd:string ] .
+    schema:text "Do you think the news reading have modified your emotion? (1-Not at all, 5-Yes, of course.)"@en .
 
 ### [Dataset]
 amor-graph:dataset1 a amor-exp:NewsDataset ;

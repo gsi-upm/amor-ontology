@@ -584,10 +584,23 @@
     rdfs:comment "Relates an LLM configuration with the prompt used."@en .
 
 # Parameter 17, 18 & 19: Semantic cooperation strategy used in the experiment
-:usesSemanticCooperationStrategy
+:usesSemanticCooperationConfiguration
     a owl:ObjectProperty ;
     rdfs:subPropertyOf :hasParameter ;
     rdfs:domain :Experiment ;
+    rdfs:range :SemanticCooperationConfiguration ;
+    rdfs:label "uses semantic cooperation strategy"@en ;
+    rdfs:comment "Relates an experiment with the semantic cooperation strategy used."@en .
+
+:SemanticCooperationConfiguration
+    a owl:Class ;
+    rdfs:label "Semantic Cooperation Configuration"@en ;
+    rdfs:comment "Represents the configuration of the semantic cooperation used in an experiment in the AMOR project."@en . 
+
+:usesSemanticCooperationStrategy
+    a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasParameter ;
+    rdfs:domain :SemanticCooperationConfiguration ;
     rdfs:range :SemanticCooperationStrategy ;
     rdfs:label "uses semantic cooperation strategy"@en ;
     rdfs:comment "Relates an experiment with the semantic cooperation strategy used."@en .
@@ -620,7 +633,7 @@
 # Parameter 18: SPARQL query used in the experiment
 :usesSPARQLQuery
     a owl:DatatypeProperty ;
-    rdfs:domain :SemanticCooperationStrategy ;
+    rdfs:domain :SemanticCooperationConfiguration ;
     rdfs:range xsd:string ;
     rdfs:label "uses SPARQL query"@en ;
     rdfs:comment "Relates a semantic cooperation strategy with the SPARQL query used."@en .
@@ -628,7 +641,7 @@
 # Parameter 19: Cloud graph query used in the experiment
 :usesCloudGraphQuery
     a owl:DatatypeProperty ;
-    rdfs:domain :SemanticCooperationStrategy ;
+    rdfs:domain :SemanticCooperationConfiguration ;
     rdfs:range xsd:string ;
     rdfs:label "uses cloud graph query"@en ;
     rdfs:comment "Relates a semantic cooperation strategy with the cloud graph query used."@en .
@@ -639,8 +652,8 @@
     rdfs:subPropertyOf :hasParameter ;
     rdfs:domain :Experiment ;
     rdfs:range :EmotionRecognitionCooperationStrategy ;
-    rdfs:label "uses emotion recognition cooperation strategy"@en ;
-    rdfs:comment "Relates an experiment with the emotion recognition cooperation strategy used."@en .
+    rdfs:label "uses emotion recognition cooperation configuration"@en ;
+    rdfs:comment "Relates an experiment with the emotion recognition cooperation configuration used."@en .
 
 :EmotionRecognitionCooperationStrategy
     a owl:Class ;
@@ -668,13 +681,21 @@
     rdfs:comment "Represents the cloud cooperation in emotion recognition in an experiment."@en .
 
 # Parameter 21: Robot cooperation strategy used in the experiment
-:usesRobotCooperationStrategy
+:usesRobotCooperationConfiguration
     a owl:ObjectProperty ;
     rdfs:subPropertyOf :hasParameter ;
     rdfs:domain :Experiment ;
+    rdfs:range :RobotCooperationConfiguration ;
+    rdfs:label "uses robot cooperation configuration"@en ;
+    rdfs:comment "Relates an experiment with the robot cooperation configuration used."@en .
+
+:usesRobotCooperationStrategy
+    a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasParameter ;
+    rdfs:domain :RobotCooperationConfiguration ;
     rdfs:range :RobotCooperationStrategy ;
     rdfs:label "uses robot cooperation strategy"@en ;
-    rdfs:comment "Relates an experiment with the robot cooperation strategy used."@en .
+    rdfs:comment "Relates a robot cooperation configuration with the robot cooperation strategy used."@en .
 
 :RobotCooperationStrategy
     a owl:Class ;
@@ -686,9 +707,19 @@
     rdfs:label "No Cooperation Robot"@en ;
     rdfs:comment "Represents the absence of cooperation in robot in an experiment."@en .
 
+:CooperationRobots
+    a owl:NamedIndividual, :RobotCooperationStrategy ;
+    rdfs:label "Cognitive Cooperation Robot"@en ;
+    rdfs:comment "Represents the cognitive cooperation in robot in an experiment."@en .
+
+:CompetitiveRobots
+    a owl:NamedIndividual, :RobotCooperationStrategy ;
+    rdfs:label "Competitive Cooperation Robot"@en ;
+    rdfs:comment "Represents the competitive cooperation in robot in an experiment."@en .
+
 :hasRobotRole
     a owl:DatatypeProperty ;
-    rdfs:domain :RobotCooperationStrategy ;
+    rdfs:domain :RobotCooperationConfiguration ;
     rdfs:range :RobotRole ;
     rdfs:label "has robot role"@en ;
     rdfs:comment "Relates a robot cooperation strategy with the robot role."@en .
@@ -705,7 +736,7 @@
     rdfs:label "has robot actor"@en ;
     rdfs:comment "Relates a robot role with the robot actor."@en .
 
-:hasRobotRoleType
+:hasRobotRole
     a owl:DatatypeProperty ;
     rdfs:domain :RobotRole ;
     rdfs:range xsd:string ;
@@ -747,3 +778,76 @@
     rdfs:range schema:Question ;
     rdfs:label "has final question"@en ;
     rdfs:comment "Relates an experiment evaluation with the final questionnaire."@en .
+
+:LikertQuestion
+    a owl:Class ;
+    rdfs:subClassOf schema:Question ,
+        [
+        a owl:Restriction ;
+        owl:onProperty schema:suggestedAnswer ;
+        owl:allValuesFrom [
+            a owl:Class ;
+            owl:unionOf (
+                [
+                    a owl:Restriction ;
+                    owl:onProperty schema:suggestedAnswer ;
+                    owl:allValuesFrom [
+                        a owl:Class ;
+                        owl:oneOf (
+                            [
+                                a schema:Answer ;
+                                schema:text "Strongly Disagree"^^xsd:string
+                            ]
+                            [
+                                a schema:Answer ;
+                                schema:text "Disagree"^^xsd:string
+                            ]
+                            [
+                                a schema:Answer ;
+                                schema:text "Neutral"^^xsd:string
+                            ]
+                            [
+                                a schema:Answer ;
+                                schema:text "Agree"^^xsd:string
+                            ]
+                            [
+                                a schema:Answer ;
+                                schema:text "Strongly Agree"^^xsd:string
+                            ]
+                        )
+                    ]
+                ]
+                [
+                    a owl:Restriction ;
+                    owl:onProperty schema:suggestedAnswer ;
+                    owl:allValuesFrom [
+                        a owl:Class ;
+                        owl:oneOf (
+                            [
+                                a schema:Answer ;
+                                schema:text "1"^^xsd:string
+                            ]
+                            [
+                                a schema:Answer ;
+                                schema:text "2"^^xsd:string
+                            ]
+                            [
+                                a schema:Answer ;
+                                schema:text "3"^^xsd:string
+                            ]
+                            [
+                                a schema:Answer ;
+                                schema:text "4"^^xsd:string
+                            ]
+                            [
+                                a schema:Answer ;
+                                schema:text "5"^^xsd:string
+                            ]
+                        )
+                    ]
+                ]
+            )
+        ]
+        ] ;
+    rdfs:label "Likert Question"@en ;
+    rdfs:comment "Represents a Likert question."@en .

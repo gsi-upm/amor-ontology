@@ -135,23 +135,6 @@
     "amor-exp:hasFinalQuestion": {
       "@id": "http://www.gsi.upm.es/ontologies/amor/experiments/examples#question4",
       "@type": "schema:Question",
-      "schema:suggestedAnswer": [
-        {
-          "schema:text": "1"
-        },
-        {
-          "schema:text": "2"
-        },
-        {
-          "schema:text": "3"
-        },
-        {
-          "schema:text": "4"
-        },
-        {
-          "schema:text": "5"
-        }
-      ],
       "schema:text": {
         "@language": "en",
         "@value": "Do you think the news reading have modified your emotion? (1-Not at all, 5-Yes, of course.)"
@@ -160,23 +143,9 @@
     "amor-exp:hasInitialQuestion": [
       {
         "@id": "http://www.gsi.upm.es/ontologies/amor/experiments/examples#question1",
-        "@type": "schema:Question",
-        "schema:suggestedAnswer": [
-          {
-            "schema:text": "1"
-          },
-          {
-            "schema:text": "2"
-          },
-          {
-            "schema:text": "3"
-          },
-          {
-            "schema:text": "4"
-          },
-          {
-            "schema:text": "5"
-          }
+        "@type": [
+          "amor-exp:LikertQuestion",
+          "schema:Question"
         ],
         "schema:text": {
           "@language": "en",
@@ -185,23 +154,9 @@
       },
       {
         "@id": "http://www.gsi.upm.es/ontologies/amor/experiments/examples#question2",
-        "@type": "schema:Question",
-        "schema:suggestedAnswer": [
-          {
-            "schema:text": "1"
-          },
-          {
-            "schema:text": "2"
-          },
-          {
-            "schema:text": "3"
-          },
-          {
-            "schema:text": "4"
-          },
-          {
-            "schema:text": "5"
-          }
+        "@type": [
+          "amor-exp:LikertQuestion",
+          "schema:Question"
         ],
         "schema:text": {
           "@language": "en",
@@ -211,23 +166,9 @@
     ],
     "amor-exp:hasIntermediateQuestion": {
       "@id": "http://www.gsi.upm.es/ontologies/amor/experiments/examples#question3",
-      "@type": "schema:Question",
-      "schema:suggestedAnswer": [
-        {
-          "schema:text": "1"
-        },
-        {
-          "schema:text": "2"
-        },
-        {
-          "schema:text": "3"
-        },
-        {
-          "schema:text": "4"
-        },
-        {
-          "schema:text": "5"
-        }
+      "@type": [
+        "amor-exp:LikertQuestion",
+        "schema:Question"
       ],
       "schema:text": {
         "@language": "en",
@@ -417,13 +358,42 @@
     "@id": "amor-exp:LocalEmotionRecognition"
   },
   "amor-exp:usesLanguage": "es_ES",
-  "amor-exp:usesRobotCooperationStrategy": {
-    "@id": "amor-exp:NoCooperationRobot"
+  "amor-exp:usesRobotCooperationConfiguration": {
+    "@type": "amor-exp:RobotCooperationConfiguration",
+    "amor-exp:hasRobotRole": [
+      {
+        "amor-exp:hasRobotActor": {
+          "@id": "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41",
+          "@type": [
+            "amor-exp:ExperimentExecutor",
+            "prov:SoftwareAgent",
+            "http://kb.openrobots.org#Robot"
+          ],
+          "rdfs:label": {
+            "@language": "en",
+            "@value": "ARI 41"
+          }
+        },
+        "amor-exp:hasRobotRole": "newsReader"
+      },
+      {
+        "amor-exp:hasRobotActor": {
+          "@id": "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari42"
+        },
+        "amor-exp:hasRobotRole": "emotionalSupport"
+      }
+    ],
+    "amor-exp:usesRobotCooperationStrategy": {
+      "@id": "amor-exp:CooperativeRobot"
+    }
   },
-  "amor-exp:usesSemanticCooperationStrategy": {
-    "@type": "amor-exp:FullSemanticCooperation",
-    "amor-exp:usesCloudGraphQuery": "http://amor-graph.gsi.upm.es/sparql",
-    "amor-exp:usesSPARQLQuery": "\n            PREFIX prov: <http://www.w3.org/ns/prov#>\n            PREFIX segb: <http://www.gsi.upm.es/ontologies/segb/ns#>\n            PREFIX foaf: <http://xmlns.com/foaf/0.1/>\n            PREFIX mls: <http://www.w3.org/ns/mls#>\n            PREFIX oro: <http://kb.openrobots.org#>\n            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\n\n            SELECT ?activity ?startTime ?endTime ?model ?human ?humanName\n            WHERE {\n            ?activity a segb:LoggedActivity ;\n                    segb:usedMLModel ?model ;\n                    prov:startedAtTime ?startTime ;\n                    prov:endedAtTime ?endTime ;\n                    prov:wasAssociatedWith ?agent .\n            ?agent a oro:Robot ;\n                    oro:hasName ?robotName .\t\n            ?run mls:hasOutput ?model ;\n                    prov:wasAssociatedWith ?human .\n            ?human a prov:Person, foaf:Person ;\n                    foaf:firstName ?humanName .\n              FILTER (\n                ?startTime >= \"2024-11-16T00:00:00\"^^xsd:dateTime &&\n                ?endTime <= \"2024-11-16T23:59:59\"^^xsd:dateTime &&\n                ?robotName = \"ARI\"@es\n              )\n            }\n        "
+  "amor-exp:usesSemanticCooperationConfiguration": {
+    "@type": "amor-exp:SemanticCooperationConfiguration",
+    "amor-exp:usesCloudGraphQuery": "http://amor-graph.gsi.upm.es/queries",
+    "amor-exp:usesSPARQLQuery": "\n            PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>\n            PREFIX mft: <http://www.gsi.upm.es/ontologies/mft/ns#>\n            PREFIX schema: <http://schema.org/>\n            PREFIX oa: <http://www.w3.org/ns/oa#>\n\n\n            DESCRIBE *\n            WHERE {\n                ?uri a schema:NewsArticle .\n                ?annotation a amor:MoralValueAnnotation ;\n            \toa:hasTarget ?uri ;\n            \tamor:hasMoralValueCategory mft:PURITY .\n            }\n            LIMIT 10\n        ",
+    "amor-exp:usesSemanticCooperationStrategy": {
+      "@id": "amor-exp:FullSemanticCooperation"
+    }
   },
   "rdfs:label": {
     "@language": "en",
