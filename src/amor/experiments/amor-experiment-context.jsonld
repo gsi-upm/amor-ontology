@@ -47,9 +47,17 @@
   "itsrdf:taIdentRef": {"@type": "@id"},
   "itsrdf:taIdentClass": {"@type": "@id"},
   "amor-exp:hasContentAdaptationStrategy": {"@type": "@id"},
+  "amor-exp:usesRobotCooperationStrategy": {"@type": "@id"},
+  "amor-exp:usesSemanticCooperationStrategy": {"@type": "@id"},
+  "amor-exp:hasVisualizationStrategy": {"@type": "@id"},
+  "amor-exp:hasFacialExpressivity": {"@type": "@id"},
+  "amor-exp:hasGesturalExpressivity": {"@type": "@id"},
   "amor-exp:hasVocalExpresivity": {"@type": "@id"},
   "amor-exp:hasStressLevel": {"@type": "xsd:float"},
+  "prov:startedAtTime": {"@type": "xsd:dateTime"},
+  "prov:endedAtTime": {"@type": "xsd:dateTime"},
   "amor-exp:hasPreferredContent": {"@type": "@id"},
+  "amor-exp:hasPreferredEntity": {"@type": "@id"},
   "amor-mft:hasBias": {"@type": "xsd:float"},
   "amor:usedMoralValueModel": {"@type": "@id"}
 }
