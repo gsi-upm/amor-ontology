@@ -124,6 +124,9 @@
   "amor-mft:hasBias": {
     "@type": "xsd:float"
   },
+  "amor-exp:hasRobotActor": {
+    "@type": "@id"
+  },
   "amor:usedMoralValueModel": {
     "@type": "@id"
   }

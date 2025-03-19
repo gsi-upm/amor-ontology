@@ -59,5 +59,6 @@
   "amor-exp:hasPreferredContent": {"@type": "@id"},
   "amor-exp:hasPreferredEntity": {"@type": "@id"},
   "amor-mft:hasBias": {"@type": "xsd:float"},
+  "amor-exp:hasRobotActor": {"@type": "@id"},
   "amor:usedMoralValueModel": {"@type": "@id"}
 }

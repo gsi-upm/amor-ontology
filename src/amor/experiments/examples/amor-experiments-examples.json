@@ -262,9 +262,7 @@
         "amor-exp:hasRobotRole": "newsReader"
       },
       {
-        "amor-exp:hasRobotActor": {
-          "@id": "amos-exp-examples:ari42"
-        },
+        "amor-exp:hasRobotActor": "amos-exp-examples:ari42",
         "amor-exp:hasRobotRole": "emotionalSupport"
       }
     ],
