@@ -77,12 +77,12 @@ ex:experiment1 a owl:NamedIndividual ,
             PREFIX oa: <http://www.w3.org/ns/oa#>
 
 
-            DESCRIBE *
+            DESCRIBE ?news
             WHERE {
-                ?uri a schema:NewsArticle .
+                ?news a schema:NewsArticle .
                 ?annotation a amor:MoralValueAnnotation ;
-            	oa:hasTarget ?uri ;
-            	amor:hasMoralValueCategory mft:PURITY .
+            	oa:hasTarget ?news ;
+            	amor:hasMoralValueCategory mft:Purity .
             }
             LIMIT 10
         """^^xsd:string ] ;
@@ -139,45 +139,39 @@ ex:human1 a amor-exp:ExperimentationSubject ,
             a amor:MoralProfile ;
         rdfs:label "Juan's Moral Profile - Previous Experiment Execution"@en ;
         prov:endedAtTime "2024-04-15T14:30:00-04:00"^^xsd:dateTime;
-        prov:generated ex:researcher1 ;
-        amor:usedMoralValueModel amor-mft:MoralFoundationsTheory-Foundations ;
+        prov:wasInformedBy ex:researcher1 ;
+        amor:usedMoralValueModel amor-mft:MoralFoundationsTheoryModel ;
         amor:analysed ex:human1 ;
         prov:generated 
             [
                 a amor:MoralValueAnnotation ;
-                rdfs:label "Juan's Moral Profile Annotation - Care/Harm"@en ;
-                amor:hasMoralValueCategory mft:CareHarm ;
-                amor-mft:hasBias "0.65"^^xsd:float
+                amor:hasMoralValueCategory mft:Care ;
+                amor-mft:hasPolarityIntensity "0.65"^^xsd:float
             ] , 
             [
                 a amor:MoralValueAnnotation ;
-                rdfs:label "Juan's Moral Profile Annotation - Fairness/Cheating"@en ;
-                amor:hasMoralValueCategory mft:FairnessCheating ;
-                amor-mft:hasBias "0.45"^^xsd:float
+                amor:hasMoralValueCategory mft:Equality ;
+                amor-mft:hasPolarityIntensity "0.45"^^xsd:float
             ] ,
             [
                 a amor:MoralValueAnnotation ;
-                rdfs:label "Juan's Moral Profile Annotation - Loyalty/Betrayal"@en ;
-                amor:hasMoralValueCategory mft:LoyaltyBetrayal ;
-                amor-mft:hasBias "0.85"^^xsd:float
+                amor:hasMoralValueCategory mft:Proportionality ;
+                amor-mft:hasPolarityIntensity "0.85"^^xsd:float
             ] ,
             [
                 a amor:MoralValueAnnotation ;
-                rdfs:label "Juan's Moral Profile Annotation - Authority/Subversion"@en ;
-                amor:hasMoralValueCategory mft:AuthoritySubversion ;
-                amor-mft:hasBias "0.75"^^xsd:float
+                amor:hasMoralValueCategory mft:Loyalty ;
+                amor-mft:hasPolarityIntensity "0.75"^^xsd:float
             ] ,
             [
                 a amor:MoralValueAnnotation ;
-                rdfs:label "Juan's Moral Profile Annotation - Purity/Degradation"@en ;
-                amor:hasMoralValueCategory mft:PurityDegradation ;
-                amor-mft:hasBias "0.15"^^xsd:float 
+                amor:hasMoralValueCategory mft:Authority ;
+                amor-mft:hasPolarityIntensity "0.15"^^xsd:float 
             ] ,
             [
                 a amor:MoralValueAnnotation ;
-                rdfs:label "Juan's Moral Profile Annotation - Liberty/Oppression"@en ;
-                amor:hasMoralValueCategory mft:LibertyOppression ;
-                amor-mft:hasBias "0.05"^^xsd:float
+                amor:hasMoralValueCategory mft:Purity ;
+                amor-mft:hasPolarityIntensity "0.05"^^xsd:float
             ]
     ] .
 

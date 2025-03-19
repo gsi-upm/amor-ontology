@@ -433,10 +433,10 @@
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias -->
+    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias"/>
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity"/>
     
 
 
@@ -479,6 +479,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#generated"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInformedBy -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasInformedBy"/>
     
 
 
@@ -747,12 +754,12 @@
             PREFIX oa: &lt;http://www.w3.org/ns/oa#&gt;
 
 
-            DESCRIBE *
+            DESCRIBE ?news
             WHERE {
-                ?uri a schema:NewsArticle .
+                ?news a schema:NewsArticle .
                 ?annotation a amor:MoralValueAnnotation ;
-            	oa:hasTarget ?uri ;
-            	amor:hasMoralValueCategory mft:PURITY .
+            	oa:hasTarget ?news ;
+            	amor:hasMoralValueCategory mft:Purity .
             }
             LIMIT 10
         </ns:usesSPARQLQuery>
@@ -796,52 +803,46 @@
     <rdf:Description rdf:nodeID="genid8">
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile"/>
         <ns1:analysed rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1"/>
-        <ns1:usedMoralValueModel rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations"/>
+        <ns1:usedMoralValueModel rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel"/>
         <rdfs:label xml:lang="en">Juan&apos;s Moral Profile - Previous Experiment Execution</rdfs:label>
         <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-15T14:30:00-04:00</prov:endedAtTime>
-        <prov:generated rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1"/>
         <prov:generated rdf:nodeID="genid9"/>
         <prov:generated rdf:nodeID="genid10"/>
         <prov:generated rdf:nodeID="genid11"/>
         <prov:generated rdf:nodeID="genid12"/>
         <prov:generated rdf:nodeID="genid13"/>
         <prov:generated rdf:nodeID="genid14"/>
+        <prov:wasInformedBy rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid9">
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
-        <ns2:hasBias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.65</ns2:hasBias>
-        <ns1:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#CareHarm"/>
-        <rdfs:label xml:lang="en">Juan&apos;s Moral Profile Annotation - Care/Harm</rdfs:label>
+        <ns2:hasPolarityIntensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.65</ns2:hasPolarityIntensity>
+        <ns1:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Care"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid10">
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
-        <ns2:hasBias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.45</ns2:hasBias>
-        <ns1:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating"/>
-        <rdfs:label xml:lang="en">Juan&apos;s Moral Profile Annotation - Fairness/Cheating</rdfs:label>
+        <ns2:hasPolarityIntensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.45</ns2:hasPolarityIntensity>
+        <ns1:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Equality"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid11">
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
-        <ns2:hasBias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.85</ns2:hasBias>
-        <ns1:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal"/>
-        <rdfs:label xml:lang="en">Juan&apos;s Moral Profile Annotation - Loyalty/Betrayal</rdfs:label>
+        <ns2:hasPolarityIntensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.85</ns2:hasPolarityIntensity>
+        <ns1:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Proportionality"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid12">
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
-        <ns2:hasBias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</ns2:hasBias>
-        <ns1:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion"/>
-        <rdfs:label xml:lang="en">Juan&apos;s Moral Profile Annotation - Authority/Subversion</rdfs:label>
+        <ns2:hasPolarityIntensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</ns2:hasPolarityIntensity>
+        <ns1:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Loyalty"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid13">
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
-        <ns2:hasBias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.15</ns2:hasBias>
-        <ns1:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation"/>
-        <rdfs:label xml:lang="en">Juan&apos;s Moral Profile Annotation - Purity/Degradation</rdfs:label>
+        <ns2:hasPolarityIntensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.15</ns2:hasPolarityIntensity>
+        <ns1:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Authority"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid14">
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
-        <ns2:hasBias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.05</ns2:hasBias>
-        <ns1:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#LibertyOppression"/>
-        <rdfs:label xml:lang="en">Juan&apos;s Moral Profile Annotation - Liberty/Oppression</rdfs:label>
+        <ns2:hasPolarityIntensity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.05</ns2:hasPolarityIntensity>
+        <ns1:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Purity"/>
     </rdf:Description>
     
 

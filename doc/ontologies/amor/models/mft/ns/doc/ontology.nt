@@ -51,36 +51,18 @@
 # 
 # http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity
 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity> .
 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.w3.org/2000/01/rdf-schema#comment> "The polarity is represents the Vice or the Virtue of the MFT Moral Value category."@en .
 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.w3.org/2000/01/rdf-schema#label> "has polarity"@en .
-# 
-# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isViceOf> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
-# 
-# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue> <http://www.w3.org/2000/01/rdf-schema#label> "has virtue"@en .
-# 
-# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isViceOf
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isViceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isViceOf> <http://www.w3.org/2000/01/rdf-schema#label> "is vice of"@en .
-# 
-# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isVirtueOf
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isVirtueOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isVirtueOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isVirtueOf> <http://www.w3.org/2000/01/rdf-schema#label> "is virtue of"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf
 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity> .
 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The opposite of a polarity is the opposite polarity."@en .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf> <http://www.w3.org/2000/01/rdf-schema#label> "opposite of"@en .
 # 
 # 
 # 
@@ -91,19 +73,11 @@
 # #################################################################
 # 
 # 
-# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
-<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> <http://www.w3.org/2000/01/rdf-schema#comment> "The bias of a moral value annotation represent how close is the annotated content to the vice or the virtue. The range of this bias is a range bewteen -1.0 (Vice) to 1.0 (Virtue)."@en .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> <http://www.w3.org/2000/01/rdf-schema#label> "has bias"@en .
-# 
 # http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity
 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> <http://www.w3.org/2000/01/rdf-schema#comment> "The polarity of a moral value annotation represents the intesity of the moral value in the analysed textual source."@en .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> <http://www.w3.org/2000/01/rdf-schema#comment> "The polarity of a moral value annotation represents the intensity of the moral value in the analyzed textual source, ranging from -1.0 (for vice) to 1.0 (for virtue)."@en .
 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> <http://www.w3.org/2000/01/rdf-schema#label> "has polarity intensity"@en .
 # 
 # 
@@ -115,17 +89,17 @@
 # #################################################################
 # 
 # 
-# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
-# 
-# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation> <http://www.w3.org/2000/01/rdf-schema#comment> "A Moral Foundation is a category of moral values, defined by the Moral Foundations Theory, that are used to define the moral values of the annotated content."@en .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation> <http://www.w3.org/2000/01/rdf-schema#label> "Moral Foundation"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity
 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity> <http://www.w3.org/2000/01/rdf-schema#comment> "The polarity is represents the Vice or the Virtue of the MFT Moral Value category."@en .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity> <http://www.w3.org/2000/01/rdf-schema#label> "Polarity"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation
 # 
@@ -133,9 +107,6 @@
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.w3.org/2002/07/owl#ObjectPropert
-<http://www.w3.org/2002/07/owl#ObjectPropert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
 # 
@@ -146,155 +117,73 @@
 # #################################################################
 # 
 # 
-# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Authority> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Betrayal> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Care> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Cheating> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Degradation> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Fairness> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Harm> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Liberty> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Oppression> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Purity> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Subversion> .
-# 
-# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#CareHarm> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation> .
-# 
-# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice> <http://www.w3.org/2000/01/rdf-schema#label> "Virtud"@es .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice> <http://www.w3.org/2000/01/rdf-schema#label> "Virtue"@en .
-# 
-# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue> <http://www.w3.org/2000/01/rdf-schema#label> "Vice"@en .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue> <http://www.w3.org/2000/01/rdf-schema#label> "Vicio"@es .
-# 
-# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectPropert> .
+# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Authority> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Care> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Equality> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Honor> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Liberty> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Ownership> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Purity> .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> <http://www.w3.org/2000/01/rdf-schema#comment> "This model uses the 2023 version of the Moral Foundations Theory to define the moral values of the annotated content."@en .
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> <http://www.w3.org/2000/01/rdf-schema#label> "Moral Foundations Theory Model"@en .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Authority
 <http://www.gsi.upm.es/ontologies/mft/ns#Authority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Authority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Authority> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue> .
-# 
-# http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion
-<http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation> .
-<http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice> <http://www.gsi.upm.es/ontologies/mft/ns#Subversion> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Subversion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue> <http://www.gsi.upm.es/ontologies/mft/ns#Authority> .
-# 
-# http://www.gsi.upm.es/ontologies/mft/ns#Betrayal
-<http://www.gsi.upm.es/ontologies/mft/ns#Betrayal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Betrayal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Betrayal> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Authority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation> .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Care
 <http://www.gsi.upm.es/ontologies/mft/ns#Care> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Care> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Care> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Care> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation> .
 # 
-# http://www.gsi.upm.es/ontologies/mft/ns#CareHarm
-<http://www.gsi.upm.es/ontologies/mft/ns#CareHarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#CareHarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation> .
-<http://www.gsi.upm.es/ontologies/mft/ns#CareHarm> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice> <http://www.gsi.upm.es/ontologies/mft/ns#Harm> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Harm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#CareHarm> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue> <http://www.gsi.upm.es/ontologies/mft/ns#Care> .
-# 
-# http://www.gsi.upm.es/ontologies/mft/ns#Cheating
-<http://www.gsi.upm.es/ontologies/mft/ns#Cheating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Cheating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Cheating> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice> .
-# 
-# http://www.gsi.upm.es/ontologies/mft/ns#Degradation
-<http://www.gsi.upm.es/ontologies/mft/ns#Degradation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Degradation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Degradation> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice> .
+# http://www.gsi.upm.es/ontologies/mft/ns#Equality
+<http://www.gsi.upm.es/ontologies/mft/ns#Equality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Equality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation> .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Fairness
 <http://www.gsi.upm.es/ontologies/mft/ns#Fairness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Fairness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Fairness> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Fairness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation> .
 # 
-# http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating
-<http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation> .
-<http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice> <http://www.gsi.upm.es/ontologies/mft/ns#Cheating> .
-<http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue> <http://www.gsi.upm.es/ontologies/mft/ns#Fairness> .
-# 
-# http://www.gsi.upm.es/ontologies/mft/ns#Harm
-<http://www.gsi.upm.es/ontologies/mft/ns#Harm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Harm> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice> .
+# http://www.gsi.upm.es/ontologies/mft/ns#Honor
+<http://www.gsi.upm.es/ontologies/mft/ns#Honor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Honor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation> .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Liberty
 <http://www.gsi.upm.es/ontologies/mft/ns#Liberty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Liberty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Liberty> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue> .
-# 
-# http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression
-<http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation> .
-<http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice> <http://www.gsi.upm.es/ontologies/mft/ns#Opression> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Opression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue> <http://www.gsi.upm.es/ontologies/mft/ns#Liberty> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Liberty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation> .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Loyalty
 <http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation> .
 # 
-# http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal
-<http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation> .
-<http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice> <http://www.gsi.upm.es/ontologies/mft/ns#Betrayal> .
-<http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue> <http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> .
+# http://www.gsi.upm.es/ontologies/mft/ns#Ownership
+<http://www.gsi.upm.es/ontologies/mft/ns#Ownership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Ownership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation> .
 # 
-# http://www.gsi.upm.es/ontologies/mft/ns#Opression
-<http://www.gsi.upm.es/ontologies/mft/ns#Opression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Opression> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice> .
+# http://www.gsi.upm.es/ontologies/mft/ns#Proportionality
+<http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation> .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Purity
 <http://www.gsi.upm.es/ontologies/mft/ns#Purity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Purity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Purity> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Purity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation> .
 # 
-# http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation
-<http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation> .
-<http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice> <http://www.gsi.upm.es/ontologies/mft/ns#Degradation> .
-<http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue> <http://www.gsi.upm.es/ontologies/mft/ns#Purity> .
+# http://www.gsi.upm.es/ontologies/mft/ns#Vice
+<http://www.gsi.upm.es/ontologies/mft/ns#Vice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Vice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Vice> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf> <http://www.gsi.upm.es/ontologies/mft/ns#Virtue> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Virtue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Vice> <http://www.w3.org/2000/01/rdf-schema#label> "Virtud"@es .
+<http://www.gsi.upm.es/ontologies/mft/ns#Vice> <http://www.w3.org/2000/01/rdf-schema#label> "Virtue"@en .
 # 
-# http://www.gsi.upm.es/ontologies/mft/ns#Subversion
-<http://www.gsi.upm.es/ontologies/mft/ns#Subversion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Subversion> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice> .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice> <http://www.w3.org/2000/01/rdf-schema#label> "has vice"@en .
+# http://www.gsi.upm.es/ontologies/mft/ns#Virtue
+<http://www.gsi.upm.es/ontologies/mft/ns#Virtue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Virtue> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf> <http://www.gsi.upm.es/ontologies/mft/ns#Vice> .
+<http://www.gsi.upm.es/ontologies/mft/ns#Virtue> <http://www.w3.org/2000/01/rdf-schema#label> "Vice"@en .
+<http://www.gsi.upm.es/ontologies/mft/ns#Virtue> <http://www.w3.org/2000/01/rdf-schema#label> "Vicio"@es .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

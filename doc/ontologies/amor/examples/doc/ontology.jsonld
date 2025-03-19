@@ -97,7 +97,7 @@
     "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#news1"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics"
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis"
@@ -136,7 +136,7 @@
     "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#model1"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics"
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis"
@@ -150,54 +150,60 @@
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#annotation1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.gsi.upm.es/ontologies/amor/ns#annotated" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#news1"
-  } ],
-  "http://www.gsi.upm.es/ontologies/amor/ns#confidence" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#float",
-    "@value" : "1.0"
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Virtue"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
+  } ],
+  "http://www.w3.org/2005/11/its/rdf#taConfidence" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "1.0"
+  } ],
+  "http://www.w3.org/ns/oa#hasTarget" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#news1"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#annotation2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.gsi.upm.es/ontologies/amor/ns#annotated" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#news1"
-  } ],
-  "http://www.gsi.upm.es/ontologies/amor/ns#confidence" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#float",
-    "@value" : "0.8"
-  } ],
   "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/bhv#Conservation"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
+  } ],
+  "http://www.w3.org/2005/11/its/rdf#taConfidence" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "0.8"
+  } ],
+  "http://www.w3.org/ns/oa#hasTarget" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#news1"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#annotation3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Vice"
+  } ],
   "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#float",
-    "@value" : "0.2"
-  } ],
-  "http://www.gsi.upm.es/ontologies/amor/ns#annotated" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#news1"
-  } ],
-  "http://www.gsi.upm.es/ontologies/amor/ns#confidence" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#float",
-    "@value" : "0.75"
+    "@value" : "-0.2"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority"
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Care"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
+  } ],
+  "http://www.w3.org/2005/11/its/rdf#taConfidence" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "0.75"
+  } ],
+  "http://www.w3.org/ns/oa#hasTarget" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#news1"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#bbc",
@@ -276,6 +282,9 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet"
+  } ],
+  "http://www.w3.org/ns/oa#hasTarget" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#news1"
   } ],
   "http://www.w3.org/ns/prov#wasDerivedFrom" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#news1"
@@ -369,7 +378,7 @@
     "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#model4"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations"
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis"
@@ -383,26 +392,24 @@
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#float",
-    "@value" : "0.65"
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Virtue"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#float",
     "@value" : "0.2"
   } ],
-  "http://www.gsi.upm.es/ontologies/amor/ns#annotated" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#news1"
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
   } ],
-  "http://www.gsi.upm.es/ontologies/amor/ns#confidence" : [ {
+  "http://www.w3.org/2005/11/its/rdf#taConfidence" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#float",
     "@value" : "0.75"
   } ],
-  "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
+  "http://www.w3.org/ns/oa#hasTarget" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#news1"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
@@ -455,10 +462,6 @@
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#opinion45",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.gsi.upm.es/ontologies/marl/ns#algorithmConfidence" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#float",
-    "@value" : "0.9"
-  } ],
   "http://www.gsi.upm.es/ontologies/marl/ns#hasPolarity" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/marl/ns#Neutral"
   } ],
@@ -468,6 +471,13 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/marl/ns#Opinion"
+  } ],
+  "http://www.w3.org/2005/11/its/rdf#taConfidence" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "0.9"
+  } ],
+  "http://www.w3.org/ns/oa#hasTarget" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#news1"
   } ],
   "http://www.w3.org/ns/prov#wasDerivedFrom" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#news1"
@@ -583,7 +593,7 @@
     "@id" : "http://www.gsi.upm.es/ontologies/amor/examples#robot2"
   } ]
 }, {
-  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias",
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity",
@@ -596,12 +606,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#analysed",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#annotated",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#confidence",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory",
@@ -618,9 +622,6 @@
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.gsi.upm.es/ontologies/marl/ns#algorithmConfidence",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/marl/ns#hasPolarity",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -658,6 +659,9 @@
   "@id" : "http://www.gsi.upm.es/ontologies/onyx/ns#usesEmotionModel",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/2005/11/its/rdf#taConfidence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/ns/mls#Algorithm",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -677,6 +681,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/mls#realizes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/oa#hasTarget",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Person",

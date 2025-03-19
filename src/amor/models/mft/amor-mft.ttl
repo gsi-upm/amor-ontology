@@ -2,11 +2,8 @@
 @prefix amor: <http://www.gsi.upm.es/ontologies/amor/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix mft: <http://www.gsi.upm.es/ontologies/mft/ns#> .
-@prefix mls: <http://www.w3.org/ns/mls#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -24,58 +21,60 @@
   vann:preferredNamespacePrefix "amor-mft" ;
   vann:preferredNamespaceUri "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#" .
 
-:MFTValueCategory a owl:Class ;
-  rdfs:subClassOf amor:MoralValueCategory .
+:MoralFoundation a owl:Class ;
+  rdfs:subClassOf amor:MoralValueCategory ;
+  rdfs:label "Moral Foundation"@en ;
+  rdfs:comment "A Moral Foundation is a category of moral values, defined by the Moral Foundations Theory, that are used to define the moral values of the annotated content."@en .
 
-:MFTFoundation a owl:Class ;
-  rdfs:subClassOf :MFTValueCategory .
+:MoralFoundationsTheoryModel a amor:MoralValueModel ;
+  rdfs:label "Moral Foundations Theory Model"@en ;
+  rdfs:comment "This model uses the 2023 version of the Moral Foundations Theory to define the moral values of the annotated content."@en ;
+    amor:hasMoralValueCategory mft:Care ,
+        mft:Loyalty ,
+        mft:Authority ,
+        mft:Purity ,
+        mft:Equality ,
+        mft:Proportionality ,
+        mft:Liberty ,
+        mft:Honor ,
+        mft:Ownership .
 
-:hasVirtue a owl:ObjectProperty ;
-  owl:inverseOf :isVirtueOf ;
-  rdfs:label "has virtue"@en ;
-  rdfs:domain :MFTFoundation ;
-  rdfs:range :MFTValueCategory .
+mft:Care a :MoralFoundation .
+mft:Fairness a :MoralFoundation .
+mft:Loyalty a :MoralFoundation .
+mft:Authority  a :MoralFoundation .
+mft:Purity  a :MoralFoundation .
+mft:Equality  a :MoralFoundation .
+mft:Proportionality a :MoralFoundation .
+mft:Liberty a :MoralFoundation .
+mft:Honor a :MoralFoundation .
+mft:Ownership a :MoralFoundation .
 
-:hasVice a owl:ObjectPropert ;
-  owl:inverseOf :isViceOf ;
-  rdfs:label "has vice"@en ;
-  rdfs:domain :MFTFoundation ;
-  rdfs:range :MFTValueCategory .
-
-:isVirtueOf a owl:ObjectProperty ;
-  owl:inverseOf :hasVirtue ;
-  rdfs:label "is virtue of"@en .
-
-:isViceOf a owl:ObjectProperty ;
-  owl:inverseOf :hasVice ;
-  rdfs:label "is vice of"@en .
-
-:hasBias a owl:DatatypeProperty ;
-  rdfs:domain amor:MoralValueAnnotation ;
-  rdfs:range xsd:float ;
-  rdfs:label "has bias"@en ;
-  rdfs:comment "The bias of a moral value annotation represent how close is the annotated content to the vice or the virtue. The range of this bias is a range bewteen -1.0 (Vice) to 1.0 (Virtue)."@en .
-
-:Polarity a owl:Class .
+:Polarity a owl:Class ;
+  rdfs:label "Polarity"@en ;
+  rdfs:comment "The polarity is represents the Vice or the Virtue of the MFT Moral Value category."@en .
 
 :hasPolarity
   a owl:ObjectProperty ;
   rdfs:label "has polarity"@en ;
-  rdfs:domain :MFTValueCategory ;
+  rdfs:domain amor:MoralValueAnnotation ;
   rdfs:range :Polarity ;
   rdfs:comment "The polarity is represents the Vice or the Virtue of the MFT Moral Value category."@en .
 
-:oppositeOf a owl:ObjectProperty ;
-            rdfs:domain :Polarity ;
-            rdfs:range :Polarity .
+:oppositeOf
+  a owl:ObjectProperty ;
+  rdfs:label "opposite of"@en ;
+  rdfs:domain :Polarity ;
+  rdfs:range :Polarity ;
+  rdfs:comment "The opposite of a polarity is the opposite polarity."@en .
 
-:Virtue a :Polarity ;
-  :oppositeOf :Vice ;
+mft:Virtue a :Polarity ;
+  :oppositeOf mft:Vice ;
   rdfs:label "Vice"@en ,
     "Vicio"@es .
 
-:Vice a :Polarity ;
-  :oppositeOf :Virtue ;
+mft:Vice a :Polarity ;
+  :oppositeOf mft:Virtue ;
   rdfs:label "Virtue"@en ,
     "Virtud"@es .
 
@@ -84,80 +83,4 @@
   rdfs:label "has polarity intensity"@en ;
   rdfs:domain amor:MoralValueAnnotation ;
   rdfs:range xsd:float ;
-  rdfs:comment "The polarity of a moral value annotation represents the intesity of the moral value in the analysed textual source."@en .
-
-mft:Authority a :MFTValueCategory ;
-  :hasPolarity :Virtue .
-mft:Subversion a :MFTValueCategory ;
-  :hasPolarity :Vice .
-
-mft:Care a :MFTValueCategory ;
-  :hasPolarity :Virtue .
-mft:Harm a :MFTValueCategory ;
-  :hasPolarity :Vice .
-
-mft:Fairness a :MFTValueCategory ;
-  :hasPolarity :Virtue .
-mft:Cheating a :MFTValueCategory ;
-  :hasPolarity :Vice .
-
-mft:Liberty a :MFTValueCategory ;
-  :hasPolarity :Virtue .
-mft:Opression a :MFTValueCategory ;
-  :hasPolarity :Vice .
-
-mft:Loyalty a :MFTValueCategory ;
-  :hasPolarity :Virtue .
-mft:Betrayal a :MFTValueCategory ;
-  :hasPolarity :Vice .
-
-mft:Purity a :MFTValueCategory ;
-  :hasPolarity :Virtue .
-mft:Degradation a :MFTValueCategory ;
-  :hasPolarity :Vice .
-
-:MoralFoundationsTheory-Basics a amor:MoralValueModel ;
-    amor:hasMoralValueCategory mft:Care ,
-        mft:Harm ,
-        mft:Fairness ,
-        mft:Cheating ,
-        mft:Loyalty ,
-        mft:Betrayal ,
-        mft:Authority ,
-        mft:Subversion ,
-        mft:Purity ,
-        mft:Degradation ,
-        mft:Liberty ,
-        mft:Oppression .
-
-mft:AuthoritySubversion a :MFTFoundation ;
-  :hasVirtue mft:Authority ;
-  :hasVice mft:Subversion .
-
-mft:CareHarm a :MFTFoundation ;
-  :hasVirtue mft:Care ;
-  :hasVice mft:Harm .
-
-mft:FairnessCheating a :MFTFoundation ;
-  :hasVirtue mft:Fairness ;
-  :hasVice mft:Cheating .
-
-mft:LibertyOpression a :MFTFoundation ;
-  :hasVirtue mft:Liberty ;
-  :hasVice mft:Opression .
-
-mft:LoyaltyBetrayal a :MFTFoundation ;
-  :hasVirtue mft:Loyalty ;
-  :hasVice mft:Betrayal .
-
-mft:PurityDegradation a :MFTFoundation ;
-  :hasVirtue mft:Purity ;
-  :hasVice mft:Degradation .
-
-:MoralFoundationsTheory-Foundations a amor:MoralValueModel ;
-  amor:hasMoralValueCategory mft:AuthoritySubversion ,
-        mft:CareHarm ,
-        mft:FairnessCheating ,
-        mft:LibertyOpression ,
-        mft:LoyaltyBetrayal ,
-        mft:PurityDegradation .
+  rdfs:comment "The polarity of a moral value annotation represents the intensity of the moral value in the analyzed textual source, ranging from -1.0 (for vice) to 1.0 (for virtue)."@en .

@@ -63,20 +63,14 @@
 # http://schema.org/url
 <http://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity
 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#analysed
 <http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.gsi.upm.es/ontologies/amor/ns#annotated
-<http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.gsi.upm.es/ontologies/amor/ns#confidence
-<http://www.gsi.upm.es/ontologies/amor/ns#confidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory
 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -86,9 +80,6 @@
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel
 <http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.gsi.upm.es/ontologies/marl/ns#algorithmConfidence
-<http://www.gsi.upm.es/ontologies/marl/ns#algorithmConfidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.gsi.upm.es/ontologies/marl/ns#hasPolarity
 <http://www.gsi.upm.es/ontologies/marl/ns#hasPolarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -117,6 +108,9 @@
 # http://www.gsi.upm.es/ontologies/onyx/ns#usesEmotionModel
 <http://www.gsi.upm.es/ontologies/onyx/ns#usesEmotionModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2005/11/its/rdf#taConfidence
+<http://www.w3.org/2005/11/its/rdf#taConfidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/ns/mls#executes
 <http://www.w3.org/ns/mls#executes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -128,6 +122,9 @@
 # 
 # http://www.w3.org/ns/mls#realizes
 <http://www.w3.org/ns/mls#realizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/oa#hasTarget
+<http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/ns/prov#generated
 <http://www.w3.org/ns/prov#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -217,7 +214,7 @@
 <http://www.gsi.upm.es/ontologies/amor/examples#analysis1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/amor/examples#analysis1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> .
 <http://www.gsi.upm.es/ontologies/amor/examples#analysis1> <http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
-<http://www.gsi.upm.es/ontologies/amor/examples#analysis1> <http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> .
+<http://www.gsi.upm.es/ontologies/amor/examples#analysis1> <http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> .
 <http://www.gsi.upm.es/ontologies/amor/examples#analysis1> <http://www.w3.org/ns/prov#generated> <http://www.gsi.upm.es/ontologies/amor/examples#annotation1> .
 <http://www.gsi.upm.es/ontologies/amor/examples#analysis1> <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.gsi.upm.es/ontologies/amor/examples#human1> .
 # 
@@ -234,31 +231,33 @@
 <http://www.gsi.upm.es/ontologies/amor/examples#analysis3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> .
 <http://www.gsi.upm.es/ontologies/amor/examples#analysis3> <http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
 <http://www.gsi.upm.es/ontologies/amor/examples#analysis3> <http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.gsi.upm.es/ontologies/amor/examples#model1> .
-<http://www.gsi.upm.es/ontologies/amor/examples#analysis3> <http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics> .
+<http://www.gsi.upm.es/ontologies/amor/examples#analysis3> <http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> .
 <http://www.gsi.upm.es/ontologies/amor/examples#analysis3> <http://www.w3.org/ns/prov#generated> <http://www.gsi.upm.es/ontologies/amor/examples#annotation3> .
 <http://www.gsi.upm.es/ontologies/amor/examples#analysis3> <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.gsi.upm.es/ontologies/amor/examples#robot1> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/examples#annotation1
 <http://www.gsi.upm.es/ontologies/amor/examples#annotation1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/amor/examples#annotation1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
-<http://www.gsi.upm.es/ontologies/amor/examples#annotation1> <http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
-<http://www.gsi.upm.es/ontologies/amor/examples#annotation1> <http://www.gsi.upm.es/ontologies/amor/ns#confidence> "1.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.gsi.upm.es/ontologies/amor/examples#annotation1> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/mft/ns#Virtue> .
 <http://www.gsi.upm.es/ontologies/amor/examples#annotation1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Liberty> .
+<http://www.gsi.upm.es/ontologies/amor/examples#annotation1> <http://www.w3.org/2005/11/its/rdf#taConfidence> "1.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.gsi.upm.es/ontologies/amor/examples#annotation1> <http://www.w3.org/ns/oa#hasTarget> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/examples#annotation2
 <http://www.gsi.upm.es/ontologies/amor/examples#annotation2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/amor/examples#annotation2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
-<http://www.gsi.upm.es/ontologies/amor/examples#annotation2> <http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
-<http://www.gsi.upm.es/ontologies/amor/examples#annotation2> <http://www.gsi.upm.es/ontologies/amor/ns#confidence> "0.8"^^<http://www.w3.org/2001/XMLSchema#float> .
 <http://www.gsi.upm.es/ontologies/amor/examples#annotation2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv#Conservation> .
+<http://www.gsi.upm.es/ontologies/amor/examples#annotation2> <http://www.w3.org/2005/11/its/rdf#taConfidence> "0.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.gsi.upm.es/ontologies/amor/examples#annotation2> <http://www.w3.org/ns/oa#hasTarget> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/examples#annotation3
 <http://www.gsi.upm.es/ontologies/amor/examples#annotation3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/amor/examples#annotation3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
-<http://www.gsi.upm.es/ontologies/amor/examples#annotation3> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> "0.2"^^<http://www.w3.org/2001/XMLSchema#float> .
-<http://www.gsi.upm.es/ontologies/amor/examples#annotation3> <http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
-<http://www.gsi.upm.es/ontologies/amor/examples#annotation3> <http://www.gsi.upm.es/ontologies/amor/ns#confidence> "0.75"^^<http://www.w3.org/2001/XMLSchema#float> .
-<http://www.gsi.upm.es/ontologies/amor/examples#annotation3> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Authority> .
+<http://www.gsi.upm.es/ontologies/amor/examples#annotation3> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/mft/ns#Vice> .
+<http://www.gsi.upm.es/ontologies/amor/examples#annotation3> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> "-0.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.gsi.upm.es/ontologies/amor/examples#annotation3> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Care> .
+<http://www.gsi.upm.es/ontologies/amor/examples#annotation3> <http://www.w3.org/2005/11/its/rdf#taConfidence> "0.75"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.gsi.upm.es/ontologies/amor/examples#annotation3> <http://www.w3.org/ns/oa#hasTarget> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/examples#bbc
 <http://www.gsi.upm.es/ontologies/amor/examples#bbc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -294,6 +293,7 @@
 <http://www.gsi.upm.es/ontologies/amor/examples#emotionAnnotation87> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet> .
 <http://www.gsi.upm.es/ontologies/amor/examples#emotionAnnotation87> <http://www.gsi.upm.es/ontologies/onyx/ns#hasEmotion> <http://www.gsi.upm.es/ontologies/amor/examples#emotion1> .
 <http://www.gsi.upm.es/ontologies/amor/examples#emotionAnnotation87> <http://www.gsi.upm.es/ontologies/onyx/ns#hasEmotion> <http://www.gsi.upm.es/ontologies/amor/examples#emotion2> .
+<http://www.gsi.upm.es/ontologies/amor/examples#emotionAnnotation87> <http://www.w3.org/ns/oa#hasTarget> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
 <http://www.gsi.upm.es/ontologies/amor/examples#emotionAnnotation87> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/examples#human1
@@ -346,18 +346,18 @@
 <http://www.gsi.upm.es/ontologies/amor/examples#moralAnalysis21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> .
 <http://www.gsi.upm.es/ontologies/amor/examples#moralAnalysis21> <http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
 <http://www.gsi.upm.es/ontologies/amor/examples#moralAnalysis21> <http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.gsi.upm.es/ontologies/amor/examples#model4> .
-<http://www.gsi.upm.es/ontologies/amor/examples#moralAnalysis21> <http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations> .
+<http://www.gsi.upm.es/ontologies/amor/examples#moralAnalysis21> <http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> .
 <http://www.gsi.upm.es/ontologies/amor/examples#moralAnalysis21> <http://www.w3.org/ns/prov#generated> <http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> .
 <http://www.gsi.upm.es/ontologies/amor/examples#moralAnalysis21> <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.gsi.upm.es/ontologies/amor/examples#robot2> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23
 <http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
-<http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.65"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/mft/ns#Virtue> .
 <http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> "0.2"^^<http://www.w3.org/2001/XMLSchema#float> .
-<http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
-<http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.gsi.upm.es/ontologies/amor/ns#confidence> "0.75"^^<http://www.w3.org/2001/XMLSchema#float> .
-<http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion> .
+<http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.w3.org/2005/11/its/rdf#taConfidence> "0.75"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.w3.org/ns/oa#hasTarget> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
+<http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.w3.org/ns/oa#hasTarget> <http://www.gsi.upm.es/ontologies/mft/ns#Authority> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/examples#news1
 <http://www.gsi.upm.es/ontologies/amor/examples#news1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -383,9 +383,10 @@
 # http://www.gsi.upm.es/ontologies/amor/examples#opinion45
 <http://www.gsi.upm.es/ontologies/amor/examples#opinion45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/amor/examples#opinion45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/marl/ns#Opinion> .
-<http://www.gsi.upm.es/ontologies/amor/examples#opinion45> <http://www.gsi.upm.es/ontologies/marl/ns#algorithmConfidence> "0.9"^^<http://www.w3.org/2001/XMLSchema#float> .
 <http://www.gsi.upm.es/ontologies/amor/examples#opinion45> <http://www.gsi.upm.es/ontologies/marl/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/marl/ns#Neutral> .
 <http://www.gsi.upm.es/ontologies/amor/examples#opinion45> <http://www.gsi.upm.es/ontologies/marl/ns#hasPolarityValue> "0.5"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.gsi.upm.es/ontologies/amor/examples#opinion45> <http://www.w3.org/2005/11/its/rdf#taConfidence> "0.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.gsi.upm.es/ontologies/amor/examples#opinion45> <http://www.w3.org/ns/oa#hasTarget> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
 <http://www.gsi.upm.es/ontologies/amor/examples#opinion45> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/examples#robot1

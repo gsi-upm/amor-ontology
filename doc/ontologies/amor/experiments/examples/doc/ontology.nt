@@ -186,8 +186,8 @@
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias
-<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity
+<http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#analysed
 <http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -206,6 +206,9 @@
 # 
 # http://www.w3.org/ns/prov#generated
 <http://www.w3.org/ns/prov#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#wasInformedBy
+<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://xmlns.com/foaf/0.1/age
 <http://xmlns.com/foaf/0.1/age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -355,7 +358,7 @@ _:genid5 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor> <h
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration> _:genid7 .
 _:genid7 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation> .
-_:genid7 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery> "\n            PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>\n            PREFIX mft: <http://www.gsi.upm.es/ontologies/mft/ns#>\n            PREFIX schema: <http://schema.org/>\n            PREFIX oa: <http://www.w3.org/ns/oa#>\n\n\n            DESCRIBE *\n            WHERE {\n                ?uri a schema:NewsArticle .\n                ?annotation a amor:MoralValueAnnotation ;\n            \toa:hasTarget ?uri ;\n            \tamor:hasMoralValueCategory mft:PURITY .\n            }\n            LIMIT 10\n        " .
+_:genid7 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery> "\n            PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>\n            PREFIX mft: <http://www.gsi.upm.es/ontologies/mft/ns#>\n            PREFIX schema: <http://schema.org/>\n            PREFIX oa: <http://www.w3.org/ns/oa#>\n\n\n            DESCRIBE ?news\n            WHERE {\n                ?news a schema:NewsArticle .\n                ?annotation a amor:MoralValueAnnotation ;\n            \toa:hasTarget ?news ;\n            \tamor:hasMoralValueCategory mft:Purity .\n            }\n            LIMIT 10\n        " .
 _:genid7 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery> "http://amor-graph.gsi.upm.es/queries" .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.w3.org/2000/01/rdf-schema#label> "Experiment 1"@en .
@@ -379,40 +382,34 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.e
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredTopic> "Sports" .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasStressLevel> "0.5"^^<http://www.w3.org/2001/XMLSchema#float> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile> _:genid8 .
+_:genid8 <http://www.w3.org/ns/prov#wasInformedBy> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1> .
 _:genid8 <http://www.w3.org/ns/prov#generated> _:genid14 .
-_:genid14 <http://www.w3.org/2000/01/rdf-schema#label> "Juan's Moral Profile Annotation - Liberty/Oppression"@en .
-_:genid14 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#LibertyOppression> .
-_:genid14 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.05"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid14 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Purity> .
+_:genid14 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> "0.05"^^<http://www.w3.org/2001/XMLSchema#float> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
 _:genid8 <http://www.w3.org/ns/prov#generated> _:genid13 .
-_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "Juan's Moral Profile Annotation - Purity/Degradation"@en .
-_:genid13 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation> .
-_:genid13 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.15"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid13 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Authority> .
+_:genid13 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> "0.15"^^<http://www.w3.org/2001/XMLSchema#float> .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
 _:genid8 <http://www.w3.org/ns/prov#generated> _:genid12 .
-_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "Juan's Moral Profile Annotation - Authority/Subversion"@en .
-_:genid12 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion> .
-_:genid12 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.75"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid12 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> .
+_:genid12 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> "0.75"^^<http://www.w3.org/2001/XMLSchema#float> .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
 _:genid8 <http://www.w3.org/ns/prov#generated> _:genid11 .
-_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "Juan's Moral Profile Annotation - Loyalty/Betrayal"@en .
-_:genid11 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal> .
-_:genid11 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.85"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid11 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> .
+_:genid11 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> "0.85"^^<http://www.w3.org/2001/XMLSchema#float> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
 _:genid8 <http://www.w3.org/ns/prov#generated> _:genid10 .
-_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "Juan's Moral Profile Annotation - Fairness/Cheating"@en .
-_:genid10 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating> .
-_:genid10 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.45"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid10 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Equality> .
+_:genid10 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> "0.45"^^<http://www.w3.org/2001/XMLSchema#float> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
 _:genid8 <http://www.w3.org/ns/prov#generated> _:genid9 .
-_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "Juan's Moral Profile Annotation - Care/Harm"@en .
-_:genid9 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#CareHarm> .
-_:genid9 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias> "0.65"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid9 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Care> .
+_:genid9 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> "0.65"^^<http://www.w3.org/2001/XMLSchema#float> .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
-_:genid8 <http://www.w3.org/ns/prov#generated> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1> .
 _:genid8 <http://www.w3.org/ns/prov#endedAtTime> "2024-04-15T14:30:00-04:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 _:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "Juan's Moral Profile - Previous Experiment Execution"@en .
-_:genid8 <http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations> .
+_:genid8 <http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel> .
 _:genid8 <http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1> <http://www.w3.org/2000/01/rdf-schema#label> "Juan"@en .

@@ -155,66 +155,22 @@
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>authority-subversion</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Betrayal -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Betrayal">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal"/>
-        <skos:prefLabel>betrayal</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.gsi.upm.es/ontologies/mft/ns#Care -->
 
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Care">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#CareHarm"/>
         <skos:prefLabel>care</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#CareHarm -->
+    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Equality -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#CareHarm">
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Equality">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>care-harm</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Cheating -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Cheating">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating"/>
-        <skos:prefLabel>cheating</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Degradation -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Degradation">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation"/>
-        <skos:prefLabel>degradation</skos:prefLabel>
+        <skos:prefLabel>equality</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -224,29 +180,17 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Fairness">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating"/>
         <skos:prefLabel>fairness</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating -->
+    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Honor -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating">
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Honor">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>fairness-cheating</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Harm -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Harm">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#CareHarm"/>
-        <skos:prefLabel>harm</skos:prefLabel>
+        <skos:prefLabel>honor</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -256,18 +200,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Liberty">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression"/>
         <skos:prefLabel>liberty</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>liberty-opression</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -277,18 +210,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Loyalty">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal"/>
         <skos:prefLabel>loyalty</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>loyalty-betrayal</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -303,13 +225,22 @@
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Opression -->
+    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Ownership -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Opression">
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Ownership">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression"/>
-        <skos:prefLabel>opression</skos:prefLabel>
+        <skos:prefLabel>ownership</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Proportionality -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Proportionality">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>proportionality</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -319,29 +250,27 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Purity">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation"/>
         <skos:prefLabel>purity</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation -->
+    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Vice -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation">
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Vice">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>purity-degradation</skos:prefLabel>
+        <skos:prefLabel>vice</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Subversion -->
+    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Virtue -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Subversion">
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Virtue">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broaderTransitive rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion"/>
-        <skos:prefLabel>subversion</skos:prefLabel>
+        <skos:prefLabel>virtue</skos:prefLabel>
     </owl:NamedIndividual>
 </rdf:RDF>
 

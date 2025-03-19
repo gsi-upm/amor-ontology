@@ -103,51 +103,10 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity">
-        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
         <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"/>
         <rdfs:comment xml:lang="en">The polarity is represents the Vice or the Virtue of the MFT Moral Value category.</rdfs:comment>
         <rdfs:label xml:lang="en">has polarity</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice">
-        <owl:inverseOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isViceOf"/>
-        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"/>
-        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue">
-        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"/>
-        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
-        <rdfs:label xml:lang="en">has virtue</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isViceOf -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isViceOf">
-        <rdfs:label xml:lang="en">is vice of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isVirtueOf -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isVirtueOf">
-        <owl:inverseOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue"/>
-        <rdfs:label xml:lang="en">is virtue of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -158,6 +117,8 @@
     <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf">
         <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"/>
         <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"/>
+        <rdfs:comment xml:lang="en">The opposite of a polarity is the opposite polarity.</rdfs:comment>
+        <rdfs:label xml:lang="en">opposite of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -174,25 +135,13 @@
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias -->
-
-
-    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias">
-        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:comment xml:lang="en">The bias of a moral value annotation represent how close is the annotated content to the vice or the virtue. The range of this bias is a range bewteen -1.0 (Vice) to 1.0 (Virtue).</rdfs:comment>
-        <rdfs:label xml:lang="en">has bias</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity -->
 
 
     <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity">
         <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:comment xml:lang="en">The polarity of a moral value annotation represents the intesity of the moral value in the analysed textual source.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The polarity of a moral value annotation represents the intensity of the moral value in the analyzed textual source, ranging from -1.0 (for vice) to 1.0 (for virtue).</rdfs:comment>
         <rdfs:label xml:lang="en">has polarity intensity</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -210,20 +159,13 @@
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation -->
+    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation -->
 
 
-    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation">
-        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory -->
-
-
-    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory">
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation">
         <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+        <rdfs:comment xml:lang="en">A Moral Foundation is a category of moral values, defined by the Moral Foundations Theory, that are used to define the moral values of the annotated content.</rdfs:comment>
+        <rdfs:label xml:lang="en">Moral Foundation</rdfs:label>
     </owl:Class>
     
 
@@ -231,7 +173,10 @@
     <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity -->
 
 
-    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"/>
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity">
+        <rdfs:comment xml:lang="en">The polarity is represents the Vice or the Virtue of the MFT Moral Value category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Polarity</rdfs:label>
+    </owl:Class>
     
 
 
@@ -256,13 +201,6 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#ObjectPropert -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#ObjectPropert"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -275,71 +213,22 @@
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics -->
+    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics">
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel">
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel"/>
         <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Authority"/>
-        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Betrayal"/>
         <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Care"/>
-        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Cheating"/>
-        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Degradation"/>
-        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Fairness"/>
-        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Harm"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Equality"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Honor"/>
         <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Liberty"/>
         <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Loyalty"/>
-        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Oppression"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Ownership"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Proportionality"/>
         <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Purity"/>
-        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Subversion"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel"/>
-        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion"/>
-        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#CareHarm"/>
-        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating"/>
-        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression"/>
-        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal"/>
-        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"/>
-        <oppositeOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue"/>
-        <rdfs:label xml:lang="es">Virtud</rdfs:label>
-        <rdfs:label xml:lang="en">Virtue</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"/>
-        <oppositeOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice"/>
-        <rdfs:label xml:lang="en">Vice</rdfs:label>
-        <rdfs:label xml:lang="es">Vicio</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectPropert"/>
+        <rdfs:comment xml:lang="en">This model uses the 2023 version of the Moral Foundations Theory to define the moral values of the annotated content.</rdfs:comment>
+        <rdfs:label xml:lang="en">Moral Foundations Theory Model</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -348,29 +237,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Authority">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
-        <hasPolarity rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"/>
-        <hasVice rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Subversion"/>
-        <hasVirtue rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Authority"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Betrayal -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Betrayal">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
-        <hasPolarity rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice"/>
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation"/>
     </owl:NamedIndividual>
     
 
@@ -379,39 +246,16 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Care">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
-        <hasPolarity rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue"/>
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#CareHarm -->
+    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Equality -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#CareHarm">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"/>
-        <hasVice rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Harm"/>
-        <hasVirtue rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Care"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Cheating -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Cheating">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
-        <hasPolarity rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Degradation -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Degradation">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
-        <hasPolarity rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice"/>
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Equality">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation"/>
     </owl:NamedIndividual>
     
 
@@ -420,29 +264,16 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Fairness">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
-        <hasPolarity rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue"/>
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating -->
+    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Honor -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"/>
-        <hasVice rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Cheating"/>
-        <hasVirtue rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Fairness"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Harm -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Harm">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
-        <hasPolarity rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice"/>
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Honor">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation"/>
     </owl:NamedIndividual>
     
 
@@ -451,19 +282,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Liberty">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
-        <hasPolarity rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"/>
-        <hasVice rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Opression"/>
-        <hasVirtue rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Liberty"/>
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation"/>
     </owl:NamedIndividual>
     
 
@@ -472,29 +291,25 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Loyalty">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
-        <hasPolarity rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue"/>
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal -->
+    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Ownership -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"/>
-        <hasVice rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Betrayal"/>
-        <hasVirtue rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Loyalty"/>
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Ownership">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Opression -->
+    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Proportionality -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Opression">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
-        <hasPolarity rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice"/>
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Proportionality">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation"/>
     </owl:NamedIndividual>
     
 
@@ -503,45 +318,32 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Purity">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
-        <hasPolarity rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue"/>
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation -->
+    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Vice -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation"/>
-        <hasVice rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Degradation"/>
-        <hasVirtue rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Purity"/>
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Vice">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"/>
+        <oppositeOf rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Virtue"/>
+        <rdfs:label xml:lang="es">Virtud</rdfs:label>
+        <rdfs:label xml:lang="en">Virtue</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Subversion -->
+    <!-- http://www.gsi.upm.es/ontologies/mft/ns#Virtue -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Subversion">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory"/>
-        <hasPolarity rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice"/>
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Virtue">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"/>
+        <oppositeOf rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Vice"/>
+        <rdfs:label xml:lang="en">Vice</rdfs:label>
+        <rdfs:label xml:lang="es">Vicio</rdfs:label>
     </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <rdf:Description rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice">
-        <rdfs:label xml:lang="en">has vice</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 

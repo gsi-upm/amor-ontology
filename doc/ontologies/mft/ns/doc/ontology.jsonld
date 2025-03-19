@@ -73,70 +73,22 @@
     "@value" : "authority"
   } ]
 }, {
-  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "authority-subversion"
-  } ]
-}, {
-  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Betrayal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "betrayal"
-  } ]
-}, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Care",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
-  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#CareHarm"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "care"
   } ]
 }, {
-  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#CareHarm",
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Equality",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "care-harm"
-  } ]
-}, {
-  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Cheating",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "cheating"
-  } ]
-}, {
-  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Degradation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "degradation"
+    "@value" : "equality"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Fairness",
@@ -144,32 +96,17 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
-  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "fairness"
   } ]
 }, {
-  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating",
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Honor",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "fairness-cheating"
-  } ]
-}, {
-  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Harm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#CareHarm"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "harm"
+    "@value" : "honor"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty",
@@ -177,20 +114,8 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
-  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "liberty"
-  } ]
-}, {
-  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "liberty-opression"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Loyalty",
@@ -198,20 +123,8 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
-  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "loyalty"
-  } ]
-}, {
-  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "loyalty-betrayal"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Mft",
@@ -223,16 +136,22 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
   } ]
 }, {
-  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Opression",
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Ownership",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
-  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression"
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ownership"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Proportionality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "opression"
+    "@value" : "proportionality"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Purity",
@@ -240,32 +159,26 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
-  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "purity"
   } ]
 }, {
-  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation",
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Vice",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "purity-degradation"
+    "@value" : "vice"
   } ]
 }, {
-  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Subversion",
+  "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Virtue",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
-  "http://www.w3.org/2004/02/skos/core#broaderTransitive" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "subversion"
+    "@value" : "virtue"
   } ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#Concept",

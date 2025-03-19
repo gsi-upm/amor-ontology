@@ -134,11 +134,11 @@
       "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#sentimentAnalysis33",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
       "annotations" : {
-        "generated" : [ {
-          "identifier" : "generated",
+        "maxPolarityValue" : [ {
+          "identifier" : "maxPolarityValue",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#opinion45",
-          "type" : "iri"
+          "value" : "1.0",
+          "type" : "label"
         } ],
         "minPolarityValue" : [ {
           "identifier" : "minPolarityValue",
@@ -146,11 +146,11 @@
           "value" : "0.0",
           "type" : "label"
         } ],
-        "maxPolarityValue" : [ {
-          "identifier" : "maxPolarityValue",
+        "generated" : [ {
+          "identifier" : "generated",
           "language" : "undefined",
-          "value" : "1.0",
-          "type" : "label"
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#opinion45",
+          "type" : "iri"
         } ],
         "usedMLModel" : [ {
           "identifier" : "usedMLModel",
@@ -188,15 +188,21 @@
       "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#emotionAnnotation87",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
       "annotations" : {
+        "hasTarget" : [ {
+          "identifier" : "hasTarget",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ],
         "hasEmotion" : [ {
           "identifier" : "hasEmotion",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#emotion2",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#emotion1",
           "type" : "iri"
         }, {
           "identifier" : "hasEmotion",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#emotion1",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#emotion2",
           "type" : "iri"
         } ],
         "wasDerivedFrom" : [ {
@@ -268,7 +274,7 @@
         "usedMoralValueModel" : [ {
           "identifier" : "usedMoralValueModel",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel",
           "type" : "iri"
         } ],
         "usedMLModel" : [ {
@@ -306,7 +312,7 @@
         "usedMoralValueModel" : [ {
           "identifier" : "usedMoralValueModel",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel",
           "type" : "iri"
         } ],
         "usedMLModel" : [ {
@@ -376,7 +382,7 @@
         "usedMoralValueModel" : [ {
           "identifier" : "usedMoralValueModel",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel",
           "type" : "iri"
         } ],
         "wasAssociatedWith" : [ {
@@ -409,21 +415,64 @@
           "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty",
           "type" : "iri"
         } ],
-        "confidence" : [ {
-          "identifier" : "confidence",
+        "taConfidence" : [ {
+          "identifier" : "taConfidence",
           "language" : "undefined",
           "value" : "1.0",
           "type" : "label"
         } ],
-        "annotated" : [ {
-          "identifier" : "annotated",
+        "hasTarget" : [ {
+          "identifier" : "hasTarget",
           "language" : "undefined",
           "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ],
+        "hasPolarity" : [ {
+          "identifier" : "hasPolarity",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Virtue",
           "type" : "iri"
         } ]
       },
       "labels" : {
         "IRI-based" : "annotation1"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "taConfidence" : [ {
+          "identifier" : "taConfidence",
+          "language" : "undefined",
+          "value" : "0.75",
+          "type" : "label"
+        } ],
+        "hasTarget" : [ {
+          "identifier" : "hasTarget",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasTarget",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority",
+          "type" : "iri"
+        } ],
+        "hasPolarity" : [ {
+          "identifier" : "hasPolarity",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Virtue",
+          "type" : "iri"
+        } ],
+        "hasPolarityIntensity" : [ {
+          "identifier" : "hasPolarityIntensity",
+          "language" : "undefined",
+          "value" : "0.2",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "moralAnnotation23"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#annotation2",
@@ -435,14 +484,14 @@
           "value" : "http://www.gsi.upm.es/ontologies/bhv#Conservation",
           "type" : "iri"
         } ],
-        "confidence" : [ {
-          "identifier" : "confidence",
+        "taConfidence" : [ {
+          "identifier" : "taConfidence",
           "language" : "undefined",
           "value" : "0.8",
           "type" : "label"
         } ],
-        "annotated" : [ {
-          "identifier" : "annotated",
+        "hasTarget" : [ {
+          "identifier" : "hasTarget",
           "language" : "undefined",
           "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
           "type" : "iri"
@@ -452,70 +501,38 @@
         "IRI-based" : "annotation2"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
-      "annotations" : {
-        "hasMoralValueCategory" : [ {
-          "identifier" : "hasMoralValueCategory",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion",
-          "type" : "iri"
-        } ],
-        "hasBias" : [ {
-          "identifier" : "hasBias",
-          "language" : "undefined",
-          "value" : "0.65",
-          "type" : "label"
-        } ],
-        "confidence" : [ {
-          "identifier" : "confidence",
-          "language" : "undefined",
-          "value" : "0.75",
-          "type" : "label"
-        } ],
-        "hasPolarityIntensity" : [ {
-          "identifier" : "hasPolarityIntensity",
-          "language" : "undefined",
-          "value" : "0.2",
-          "type" : "label"
-        } ],
-        "annotated" : [ {
-          "identifier" : "annotated",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "moralAnnotation23"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#annotation3",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
       "annotations" : {
         "hasMoralValueCategory" : [ {
           "identifier" : "hasMoralValueCategory",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Care",
           "type" : "iri"
         } ],
-        "confidence" : [ {
-          "identifier" : "confidence",
+        "taConfidence" : [ {
+          "identifier" : "taConfidence",
           "language" : "undefined",
           "value" : "0.75",
           "type" : "label"
         } ],
-        "hasPolarityIntensity" : [ {
-          "identifier" : "hasPolarityIntensity",
-          "language" : "undefined",
-          "value" : "0.2",
-          "type" : "label"
-        } ],
-        "annotated" : [ {
-          "identifier" : "annotated",
+        "hasTarget" : [ {
+          "identifier" : "hasTarget",
           "language" : "undefined",
           "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
           "type" : "iri"
+        } ],
+        "hasPolarity" : [ {
+          "identifier" : "hasPolarity",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Vice",
+          "type" : "iri"
+        } ],
+        "hasPolarityIntensity" : [ {
+          "identifier" : "hasPolarityIntensity",
+          "language" : "undefined",
+          "value" : "-0.2",
+          "type" : "label"
         } ]
       },
       "labels" : {
@@ -597,11 +614,17 @@
       "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#opinion45",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
       "annotations" : {
-        "algorithmConfidence" : [ {
-          "identifier" : "algorithmConfidence",
+        "taConfidence" : [ {
+          "identifier" : "taConfidence",
           "language" : "undefined",
           "value" : "0.9",
           "type" : "label"
+        } ],
+        "hasTarget" : [ {
+          "identifier" : "hasTarget",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
         } ],
         "hasPolarity" : [ {
           "identifier" : "hasPolarity",
@@ -682,6 +705,16 @@
         "image" : [ {
           "identifier" : "image",
           "language" : "undefined",
+          "value" : "http://ichef-1.bbci.co.uk/news/560/cpsprodpb/BCED/production/_92856384_line976.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef-1.bbci.co.uk/news/560/media/images/75306000/jpg/_75306515_line976.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
           "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/17519/production/_95231559_committee.jpg",
           "type" : "iri"
         }, {
@@ -692,7 +725,7 @@
         }, {
           "identifier" : "image",
           "language" : "undefined",
-          "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/CC81/production/_95235325_f704a6dc-c017-4971-aac3-04c03eb097fb.jpg",
+          "value" : "http://ichef-1.bbci.co.uk/news/560/cpsprodpb/11AA1/production/_95235327_c0b59f9e-316e-4641-aa7e-3fec6daea62b.jpg",
           "type" : "iri"
         }, {
           "identifier" : "image",
@@ -702,7 +735,12 @@
         }, {
           "identifier" : "image",
           "language" : "undefined",
-          "value" : "http://ichef-1.bbci.co.uk/news/560/cpsprodpb/11AA1/production/_95235327_c0b59f9e-316e-4641-aa7e-3fec6daea62b.jpg",
+          "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/CC81/production/_95235325_f704a6dc-c017-4971-aac3-04c03eb097fb.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/2CA0/production/_95242411_comey.jpg",
           "type" : "iri"
         }, {
           "identifier" : "image",
@@ -717,22 +755,7 @@
         }, {
           "identifier" : "image",
           "language" : "undefined",
-          "value" : "http://ichef-1.bbci.co.uk/news/560/media/images/75306000/jpg/_75306515_line976.jpg",
-          "type" : "iri"
-        }, {
-          "identifier" : "image",
-          "language" : "undefined",
-          "value" : "http://ichef-1.bbci.co.uk/news/560/cpsprodpb/BCED/production/_92856384_line976.jpg",
-          "type" : "iri"
-        }, {
-          "identifier" : "image",
-          "language" : "undefined",
           "value" : "http://ichef-1.bbci.co.uk/news/560/cpsprodpb/12B64/production/_95244667_mediaitem95244666.jpg",
-          "type" : "iri"
-        }, {
-          "identifier" : "image",
-          "language" : "undefined",
-          "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/2CA0/production/_95242411_comey.jpg",
           "type" : "iri"
         } ],
         "articleBody" : [ {

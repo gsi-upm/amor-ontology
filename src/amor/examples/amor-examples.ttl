@@ -56,13 +56,14 @@
 :human1 a prov:Person .
 :analysis1 a amor:MoralValueAnalysis ;
     prov:wasAssociatedWith :human1 ;
-    amor:usedMoralValueModel amor-mft:MoralFoundationsTheory-Basics ;
+    amor:usedMoralValueModel amor-mft:MoralFoundationsTheoryModel ;
     amor:analysed :news1 ;
     prov:generated :annotation1 .
 
 :annotation1 a amor:MoralValueAnnotation ;
     itsrdf:taConfidence "1.0"^^xsd:float ;
     amor:hasMoralValueCategory mft:Liberty ;
+    amor-mft:hasPolarity mft:Virtue ;
     oa:hasTarget :news1 .
 
 :human2 a prov:Person .
@@ -93,15 +94,16 @@
 
 :analysis3 a amor:MoralValueAnalysis ;
     prov:wasAssociatedWith :robot1 ;
-    amor:usedMoralValueModel amor-mft:MoralFoundationsTheory-Basics ;
+    amor:usedMoralValueModel amor-mft:MoralFoundationsTheoryModel ;
     amor:analysed :news1 ;
     amor:usedMLModel :model1 ;
     prov:generated :annotation3 .
 
 :annotation3 a amor:MoralValueAnnotation ;
-    amor:hasMoralValueCategory mft:Authority ;
+    amor:hasMoralValueCategory mft:Care ;
     itsrdf:taConfidence "0.75"^^xsd:float ;
-    amor-mft:hasPolarityIntensity "0.2"^^xsd:float ;
+    amor-mft:hasPolarity mft:Vice ;
+    amor-mft:hasPolarityIntensity "-0.2"^^xsd:float ;
     oa:hasTarget :news1 .
 
 :robot2 a prov:SoftwareAgent .
@@ -137,15 +139,15 @@
 
 :moralAnalysis21 a amor:MoralValueAnalysis ;
     prov:wasAssociatedWith :robot2 ;
-    amor:usedMoralValueModel amor-mft:MoralFoundationsTheory-Foundations ;
+    amor:usedMoralValueModel amor-mft:MoralFoundationsTheoryModel ;
     amor:analysed :news1 ;
     amor:usedMLModel :model4 ;
     prov:generated :moralAnnotation23 .
 
 :moralAnnotation23 a amor:MoralValueAnnotation ;
-    oa:hasTarget mft:AuthoritySubversion ;
+    oa:hasTarget mft:Authority ;
     itsrdf:taConfidence "0.75"^^xsd:float ;
-    amor-mft:hasBias "0.65"^^xsd:float ;
+    amor-mft:hasPolarity mft:Virtue ;
     amor-mft:hasPolarityIntensity "0.2"^^xsd:float ;
     oa:hasTarget :news1 .
 

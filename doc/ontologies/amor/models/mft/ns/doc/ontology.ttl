@@ -57,60 +57,29 @@
 
 ###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity
 :hasPolarity rdf:type owl:ObjectProperty ;
-             rdfs:domain :MFTValueCategory ;
+             rdfs:domain <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
              rdfs:range :Polarity ;
              rdfs:comment "The polarity is represents the Vice or the Virtue of the MFT Moral Value category."@en ;
              rdfs:label "has polarity"@en .
 
 
-###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice
-:hasVice rdf:type owl:ObjectProperty ;
-         owl:inverseOf :isViceOf ;
-         rdfs:domain :MFTFoundation ;
-         rdfs:range :MFTValueCategory .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVirtue
-:hasVirtue rdf:type owl:ObjectProperty ;
-           rdfs:domain :MFTFoundation ;
-           rdfs:range :MFTValueCategory ;
-           rdfs:label "has virtue"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isViceOf
-:isViceOf rdf:type owl:ObjectProperty ;
-          rdfs:label "is vice of"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#isVirtueOf
-:isVirtueOf rdf:type owl:ObjectProperty ;
-            owl:inverseOf :hasVirtue ;
-            rdfs:label "is virtue of"@en .
-
-
 ###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf
 :oppositeOf rdf:type owl:ObjectProperty ;
             rdfs:domain :Polarity ;
-            rdfs:range :Polarity .
+            rdfs:range :Polarity ;
+            rdfs:comment "The opposite of a polarity is the opposite polarity."@en ;
+            rdfs:label "opposite of"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias
-:hasBias rdf:type owl:DatatypeProperty ;
-         rdfs:domain <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
-         rdfs:range xsd:float ;
-         rdfs:comment "The bias of a moral value annotation represent how close is the annotated content to the vice or the virtue. The range of this bias is a range bewteen -1.0 (Vice) to 1.0 (Virtue)."@en ;
-         rdfs:label "has bias"@en .
-
-
 ###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity
 :hasPolarityIntensity rdf:type owl:DatatypeProperty ;
                       rdfs:domain <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
                       rdfs:range xsd:float ;
-                      rdfs:comment "The polarity of a moral value annotation represents the intesity of the moral value in the analysed textual source."@en ;
+                      rdfs:comment "The polarity of a moral value annotation represents the intensity of the moral value in the analyzed textual source, ranging from -1.0 (for vice) to 1.0 (for virtue)."@en ;
                       rdfs:label "has polarity intensity"@en .
 
 
@@ -118,18 +87,17 @@
 #    Classes
 #################################################################
 
-###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTFoundation
-:MFTFoundation rdf:type owl:Class ;
-               rdfs:subClassOf :MFTValueCategory .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MFTValueCategory
-:MFTValueCategory rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation
+:MoralFoundation rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> ;
+                 rdfs:comment "A Moral Foundation is a category of moral values, defined by the Moral Foundations Theory, that are used to define the moral values of the annotated content."@en ;
+                 rdfs:label "Moral Foundation"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity
-:Polarity rdf:type owl:Class .
+:Polarity rdf:type owl:Class ;
+          rdfs:comment "The polarity is represents the Vice or the Virtue of the MFT Moral Value category."@en ;
+          rdfs:label "Polarity"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation
@@ -144,182 +112,90 @@
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> rdf:type owl:Class .
 
 
-###  http://www.w3.org/2002/07/owl#ObjectPropert
-owl:ObjectPropert rdf:type owl:Class .
-
-
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Basics
-:MoralFoundationsTheory-Basics rdf:type owl:NamedIndividual ,
-                                        <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> ;
-                               <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Authority> ,
-                                                                                                <http://www.gsi.upm.es/ontologies/mft/ns#Betrayal> ,
-                                                                                                <http://www.gsi.upm.es/ontologies/mft/ns#Care> ,
-                                                                                                <http://www.gsi.upm.es/ontologies/mft/ns#Cheating> ,
-                                                                                                <http://www.gsi.upm.es/ontologies/mft/ns#Degradation> ,
-                                                                                                <http://www.gsi.upm.es/ontologies/mft/ns#Fairness> ,
-                                                                                                <http://www.gsi.upm.es/ontologies/mft/ns#Harm> ,
-                                                                                                <http://www.gsi.upm.es/ontologies/mft/ns#Liberty> ,
-                                                                                                <http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> ,
-                                                                                                <http://www.gsi.upm.es/ontologies/mft/ns#Oppression> ,
-                                                                                                <http://www.gsi.upm.es/ontologies/mft/ns#Purity> ,
-                                                                                                <http://www.gsi.upm.es/ontologies/mft/ns#Subversion> .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations
-:MoralFoundationsTheory-Foundations rdf:type owl:NamedIndividual ,
-                                             <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> ;
-                                    <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion> ,
-                                                                                                     <http://www.gsi.upm.es/ontologies/mft/ns#CareHarm> ,
-                                                                                                     <http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating> ,
-                                                                                                     <http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression> ,
-                                                                                                     <http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal> ,
-                                                                                                     <http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation> .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Vice
-:Vice rdf:type owl:NamedIndividual ,
-               :Polarity ;
-      :oppositeOf :Virtue ;
-      rdfs:label "Virtud"@es ,
-                 "Virtue"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Virtue
-:Virtue rdf:type owl:NamedIndividual ,
-                 :Polarity ;
-        :oppositeOf :Vice ;
-        rdfs:label "Vice"@en ,
-                   "Vicio"@es .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasVice
-:hasVice rdf:type owl:NamedIndividual ,
-                  owl:ObjectPropert .
+###  http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel
+:MoralFoundationsTheoryModel rdf:type owl:NamedIndividual ,
+                                      <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> ;
+                             <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Authority> ,
+                                                                                              <http://www.gsi.upm.es/ontologies/mft/ns#Care> ,
+                                                                                              <http://www.gsi.upm.es/ontologies/mft/ns#Equality> ,
+                                                                                              <http://www.gsi.upm.es/ontologies/mft/ns#Honor> ,
+                                                                                              <http://www.gsi.upm.es/ontologies/mft/ns#Liberty> ,
+                                                                                              <http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> ,
+                                                                                              <http://www.gsi.upm.es/ontologies/mft/ns#Ownership> ,
+                                                                                              <http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> ,
+                                                                                              <http://www.gsi.upm.es/ontologies/mft/ns#Purity> ;
+                             rdfs:comment "This model uses the 2023 version of the Moral Foundations Theory to define the moral values of the annotated content."@en ;
+                             rdfs:label "Moral Foundations Theory Model"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Authority
 <http://www.gsi.upm.es/ontologies/mft/ns#Authority> rdf:type owl:NamedIndividual ,
-                                                             :MFTValueCategory ;
-                                                    :hasPolarity :Virtue .
-
-
-###  http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion
-<http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion> rdf:type owl:NamedIndividual ,
-                                                                       :MFTFoundation ;
-                                                              :hasVice <http://www.gsi.upm.es/ontologies/mft/ns#Subversion> ;
-                                                              :hasVirtue <http://www.gsi.upm.es/ontologies/mft/ns#Authority> .
-
-
-###  http://www.gsi.upm.es/ontologies/mft/ns#Betrayal
-<http://www.gsi.upm.es/ontologies/mft/ns#Betrayal> rdf:type owl:NamedIndividual ,
-                                                            :MFTValueCategory ;
-                                                   :hasPolarity :Vice .
+                                                             :MoralFoundation .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Care
 <http://www.gsi.upm.es/ontologies/mft/ns#Care> rdf:type owl:NamedIndividual ,
-                                                        :MFTValueCategory ;
-                                               :hasPolarity :Virtue .
+                                                        :MoralFoundation .
 
 
-###  http://www.gsi.upm.es/ontologies/mft/ns#CareHarm
-<http://www.gsi.upm.es/ontologies/mft/ns#CareHarm> rdf:type owl:NamedIndividual ,
-                                                            :MFTFoundation ;
-                                                   :hasVice <http://www.gsi.upm.es/ontologies/mft/ns#Harm> ;
-                                                   :hasVirtue <http://www.gsi.upm.es/ontologies/mft/ns#Care> .
-
-
-###  http://www.gsi.upm.es/ontologies/mft/ns#Cheating
-<http://www.gsi.upm.es/ontologies/mft/ns#Cheating> rdf:type owl:NamedIndividual ,
-                                                            :MFTValueCategory ;
-                                                   :hasPolarity :Vice .
-
-
-###  http://www.gsi.upm.es/ontologies/mft/ns#Degradation
-<http://www.gsi.upm.es/ontologies/mft/ns#Degradation> rdf:type owl:NamedIndividual ,
-                                                               :MFTValueCategory ;
-                                                      :hasPolarity :Vice .
+###  http://www.gsi.upm.es/ontologies/mft/ns#Equality
+<http://www.gsi.upm.es/ontologies/mft/ns#Equality> rdf:type owl:NamedIndividual ,
+                                                            :MoralFoundation .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Fairness
 <http://www.gsi.upm.es/ontologies/mft/ns#Fairness> rdf:type owl:NamedIndividual ,
-                                                            :MFTValueCategory ;
-                                                   :hasPolarity :Virtue .
+                                                            :MoralFoundation .
 
 
-###  http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating
-<http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating> rdf:type owl:NamedIndividual ,
-                                                                    :MFTFoundation ;
-                                                           :hasVice <http://www.gsi.upm.es/ontologies/mft/ns#Cheating> ;
-                                                           :hasVirtue <http://www.gsi.upm.es/ontologies/mft/ns#Fairness> .
-
-
-###  http://www.gsi.upm.es/ontologies/mft/ns#Harm
-<http://www.gsi.upm.es/ontologies/mft/ns#Harm> rdf:type owl:NamedIndividual ,
-                                                        :MFTValueCategory ;
-                                               :hasPolarity :Vice .
+###  http://www.gsi.upm.es/ontologies/mft/ns#Honor
+<http://www.gsi.upm.es/ontologies/mft/ns#Honor> rdf:type owl:NamedIndividual ,
+                                                         :MoralFoundation .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Liberty
 <http://www.gsi.upm.es/ontologies/mft/ns#Liberty> rdf:type owl:NamedIndividual ,
-                                                           :MFTValueCategory ;
-                                                  :hasPolarity :Virtue .
-
-
-###  http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression
-<http://www.gsi.upm.es/ontologies/mft/ns#LibertyOpression> rdf:type owl:NamedIndividual ,
-                                                                    :MFTFoundation ;
-                                                           :hasVice <http://www.gsi.upm.es/ontologies/mft/ns#Opression> ;
-                                                           :hasVirtue <http://www.gsi.upm.es/ontologies/mft/ns#Liberty> .
+                                                           :MoralFoundation .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Loyalty
 <http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> rdf:type owl:NamedIndividual ,
-                                                           :MFTValueCategory ;
-                                                  :hasPolarity :Virtue .
+                                                           :MoralFoundation .
 
 
-###  http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal
-<http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal> rdf:type owl:NamedIndividual ,
-                                                                   :MFTFoundation ;
-                                                          :hasVice <http://www.gsi.upm.es/ontologies/mft/ns#Betrayal> ;
-                                                          :hasVirtue <http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> .
+###  http://www.gsi.upm.es/ontologies/mft/ns#Ownership
+<http://www.gsi.upm.es/ontologies/mft/ns#Ownership> rdf:type owl:NamedIndividual ,
+                                                             :MoralFoundation .
 
 
-###  http://www.gsi.upm.es/ontologies/mft/ns#Opression
-<http://www.gsi.upm.es/ontologies/mft/ns#Opression> rdf:type owl:NamedIndividual ,
-                                                             :MFTValueCategory ;
-                                                    :hasPolarity :Vice .
+###  http://www.gsi.upm.es/ontologies/mft/ns#Proportionality
+<http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> rdf:type owl:NamedIndividual ,
+                                                                   :MoralFoundation .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Purity
 <http://www.gsi.upm.es/ontologies/mft/ns#Purity> rdf:type owl:NamedIndividual ,
-                                                          :MFTValueCategory ;
-                                                 :hasPolarity :Virtue .
+                                                          :MoralFoundation .
 
 
-###  http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation
-<http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation> rdf:type owl:NamedIndividual ,
-                                                                     :MFTFoundation ;
-                                                            :hasVice <http://www.gsi.upm.es/ontologies/mft/ns#Degradation> ;
-                                                            :hasVirtue <http://www.gsi.upm.es/ontologies/mft/ns#Purity> .
+###  http://www.gsi.upm.es/ontologies/mft/ns#Vice
+<http://www.gsi.upm.es/ontologies/mft/ns#Vice> rdf:type owl:NamedIndividual ,
+                                                        :Polarity ;
+                                               :oppositeOf <http://www.gsi.upm.es/ontologies/mft/ns#Virtue> ;
+                                               rdfs:label "Virtud"@es ,
+                                                          "Virtue"@en .
 
 
-###  http://www.gsi.upm.es/ontologies/mft/ns#Subversion
-<http://www.gsi.upm.es/ontologies/mft/ns#Subversion> rdf:type owl:NamedIndividual ,
-                                                              :MFTValueCategory ;
-                                                     :hasPolarity :Vice .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-:hasVice rdfs:label "has vice"@en .
+###  http://www.gsi.upm.es/ontologies/mft/ns#Virtue
+<http://www.gsi.upm.es/ontologies/mft/ns#Virtue> rdf:type owl:NamedIndividual ,
+                                                          :Polarity ;
+                                                 :oppositeOf <http://www.gsi.upm.es/ontologies/mft/ns#Vice> ;
+                                                 rdfs:label "Vice"@en ,
+                                                            "Vicio"@es .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

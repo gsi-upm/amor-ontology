@@ -16,83 +16,63 @@
   } ]
 }, {
   "@id" : "_:genid10",
-  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias" : [ {
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#float",
     "@value" : "0.45"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#FairnessCheating"
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Equality"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Juan's Moral Profile Annotation - Fairness/Cheating"
   } ]
 }, {
   "@id" : "_:genid11",
-  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias" : [ {
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#float",
     "@value" : "0.85"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#LoyaltyBetrayal"
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Proportionality"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Juan's Moral Profile Annotation - Loyalty/Betrayal"
   } ]
 }, {
   "@id" : "_:genid12",
-  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias" : [ {
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#float",
     "@value" : "0.75"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#AuthoritySubversion"
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Loyalty"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Juan's Moral Profile Annotation - Authority/Subversion"
   } ]
 }, {
   "@id" : "_:genid13",
-  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias" : [ {
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#float",
     "@value" : "0.15"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#PurityDegradation"
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Juan's Moral Profile Annotation - Purity/Degradation"
   } ]
 }, {
   "@id" : "_:genid14",
-  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias" : [ {
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#float",
     "@value" : "0.05"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#LibertyOppression"
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Purity"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Juan's Moral Profile Annotation - Liberty/Oppression"
   } ]
 }, {
   "@id" : "_:genid2",
@@ -184,7 +164,7 @@
     "@value" : "http://amor-graph.gsi.upm.es/queries"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery" : [ {
-    "@value" : "\n            PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>\n            PREFIX mft: <http://www.gsi.upm.es/ontologies/mft/ns#>\n            PREFIX schema: <http://schema.org/>\n            PREFIX oa: <http://www.w3.org/ns/oa#>\n\n\n            DESCRIBE *\n            WHERE {\n                ?uri a schema:NewsArticle .\n                ?annotation a amor:MoralValueAnnotation ;\n            \toa:hasTarget ?uri ;\n            \tamor:hasMoralValueCategory mft:PURITY .\n            }\n            LIMIT 10\n        "
+    "@value" : "\n            PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>\n            PREFIX mft: <http://www.gsi.upm.es/ontologies/mft/ns#>\n            PREFIX schema: <http://schema.org/>\n            PREFIX oa: <http://www.w3.org/ns/oa#>\n\n\n            DESCRIBE ?news\n            WHERE {\n                ?news a schema:NewsArticle .\n                ?annotation a amor:MoralValueAnnotation ;\n            \toa:hasTarget ?news ;\n            \tamor:hasMoralValueCategory mft:Purity .\n            }\n            LIMIT 10\n        "
   } ],
   "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation"
@@ -198,7 +178,7 @@
     "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheory-Foundations"
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundationsTheoryModel"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile"
@@ -223,24 +203,21 @@
     "@id" : "_:genid10"
   }, {
     "@id" : "_:genid9"
-  }, {
+  } ],
+  "http://www.w3.org/ns/prov#wasInformedBy" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1"
   } ]
 }, {
   "@id" : "_:genid9",
-  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias" : [ {
+  "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#float",
     "@value" : "0.65"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#CareHarm"
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Care"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Juan's Moral Profile Annotation - Care/Harm"
   } ]
 }, {
   "@id" : "http://amor-graph.gsi.upm.es/ns#dataset1",
@@ -704,7 +681,7 @@
   "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasBias",
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile",
@@ -735,6 +712,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#generated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasInformedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Person",

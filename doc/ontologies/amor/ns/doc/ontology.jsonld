@@ -21,6 +21,9 @@
     } ]
   } ]
 }, {
+  "@id" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Opinion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -48,10 +51,13 @@
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@language" : "en",
+    "@language" : "es",
+    "@value" : "Juan Fernando Sánchez Rada"
+  }, {
+    "@language" : "es",
     "@value" : "Sergio Muñoz López"
   }, {
-    "@language" : "en",
+    "@language" : "es",
     "@value" : "Álvaro Carrera Barroso"
   } ],
   "http://purl.org/dc/terms/description" : [ {
@@ -101,6 +107,40 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents an emotion detected in textual sources."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "emotion annotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet"
+  }, {
+    "@id" : "http://www.w3.org/ns/oa#Annotation"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#EntityAnnotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents an entity found in textual sources."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "NER Annotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/oa#Annotation"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MLEntity",
@@ -174,6 +214,8 @@
     "@value" : "Moral Value Annotation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/oa#Annotation"
+  }, {
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ]
 }, {
@@ -205,6 +247,24 @@
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ]
 }, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents an opinion detected in textual sources."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "sentiment annotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Opinion"
+  }, {
+    "@id" : "http://www.w3.org/ns/oa#Annotation"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ]
+}, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#analysed",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -223,43 +283,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#used"
-  } ]
-}, {
-  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#annotated",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This property relates the ValueAnnotation activity with the resource that is annotated."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "annotated"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
-  } ]
-}, {
-  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#confidence",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The confidence score of the moral value annotation, ranging from 0 to 1."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "confidence"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile",
@@ -339,6 +362,9 @@
     "@id" : "http://www.w3.org/ns/prov#used"
   } ]
 }, {
+  "@id" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://www.w3.org/ns/mls#InformationEntity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -346,6 +372,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.w3.org/ns/mls#Run",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/oa#Annotation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Activity",
@@ -361,8 +390,5 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#used",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 } ]

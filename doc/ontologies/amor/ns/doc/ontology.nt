@@ -1,7 +1,8 @@
 <http://www.gsi.upm.es/ontologies/amor/ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://www.gsi.upm.es/ontologies/amor/ns> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.gsi.upm.es/ontologies/amor/ns/1.0.0> .
-<http://www.gsi.upm.es/ontologies/amor/ns> <http://purl.org/dc/terms/creator> "Sergio Muñoz López"@en .
-<http://www.gsi.upm.es/ontologies/amor/ns> <http://purl.org/dc/terms/creator> "Álvaro Carrera Barroso"@en .
+<http://www.gsi.upm.es/ontologies/amor/ns> <http://purl.org/dc/terms/creator> "Juan Fernando Sánchez Rada"@es .
+<http://www.gsi.upm.es/ontologies/amor/ns> <http://purl.org/dc/terms/creator> "Sergio Muñoz López"@es .
+<http://www.gsi.upm.es/ontologies/amor/ns> <http://purl.org/dc/terms/creator> "Álvaro Carrera Barroso"@es .
 <http://www.gsi.upm.es/ontologies/amor/ns> <http://purl.org/dc/terms/description> "AMOR is an ontology designed for representing moral values and value annotations in textual sources."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns> <http://purl.org/dc/terms/publisher> <http://www.gsi.upm.es> .
 <http://www.gsi.upm.es/ontologies/amor/ns> <http://purl.org/dc/terms/title> "AMOR Moral Values Ontology"@en .
@@ -55,15 +56,6 @@
 <http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a ValueAnalysis with the resource that is analysed."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/2000/01/rdf-schema#label> "analysed"@en .
 # 
-# http://www.gsi.upm.es/ontologies/amor/ns#annotated
-<http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasDerivedFrom> .
-<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
-<http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> .
-<http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the ValueAnnotation activity with the resource that is annotated."@en .
-<http://www.gsi.upm.es/ontologies/amor/ns#annotated> <http://www.w3.org/2000/01/rdf-schema#label> "annotated"@en .
-# 
 # http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile
 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Agent> .
@@ -111,24 +103,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.w3.org/ns/prov#used
 # 
-# http://www.w3.org/ns/prov#wasDerivedFrom
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Data properties
-# #
-# #################################################################
-# 
-# 
-# http://www.gsi.upm.es/ontologies/amor/ns#confidence
-<http://www.gsi.upm.es/ontologies/amor/ns#confidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.gsi.upm.es/ontologies/amor/ns#confidence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
-<http://www.gsi.upm.es/ontologies/amor/ns#confidence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<http://www.gsi.upm.es/ontologies/amor/ns#confidence> <http://www.w3.org/2000/01/rdf-schema#comment> "The confidence score of the moral value annotation, ranging from 0 to 1."@en .
-<http://www.gsi.upm.es/ontologies/amor/ns#confidence> <http://www.w3.org/2000/01/rdf-schema#label> "confidence"@en .
-# 
 # 
 # 
 # #################################################################
@@ -137,6 +111,9 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #
 # #################################################################
 # 
+# 
+# http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Opinion
+<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Opinion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String
 <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -162,6 +139,23 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents any analysed entity that is used as a source of the analysis. It be text, such as a string or a news article; but it can be an agent; i.e. a human or a robot analysed using the results of a questionnarie."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Analysed Entity"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation
+<http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet> .
+<http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/oa#Annotation> .
+<http://www.w3.org/ns/oa#Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an emotion detected in textual sources."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "emotion annotation"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#EntityAnnotation
+<http://www.gsi.upm.es/ontologies/amor/ns#EntityAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#EntityAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/oa#Annotation> .
+<http://www.gsi.upm.es/ontologies/amor/ns#EntityAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.gsi.upm.es/ontologies/amor/ns#EntityAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an entity found in textual sources."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#EntityAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "NER Annotation"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#MLEntity
 <http://www.gsi.upm.es/ontologies/amor/ns#MLEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -193,6 +187,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/oa#Annotation> .
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a value annotation extracted from textual sources."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "Moral Value Annotation"@en .
@@ -209,11 +204,23 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a model for categorizing moral values."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> <http://www.w3.org/2000/01/rdf-schema#label> "Moral Value Model"@en .
 # 
+# http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation
+<http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Opinion> .
+<http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/oa#Annotation> .
+<http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an opinion detected in textual sources."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "sentiment annotation"@en .
+# 
+# http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet
+# 
 # http://www.w3.org/ns/mls#InformationEntity
 # 
 # http://www.w3.org/ns/mls#Model
 # 
 # http://www.w3.org/ns/mls#Run
+# 
+# http://www.w3.org/ns/oa#Annotation
 # 
 # http://www.w3.org/ns/prov#Activity
 # 
