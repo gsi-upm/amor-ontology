@@ -237,9 +237,7 @@
   "amor-exp:usesDataset": {
     "@id": "amor-graph:dataset1",
     "@type": "amor-exp:NewsDataset",
-    "schema:url": {
-      "@id": "http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json"
-    }
+    "schema:url": "http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json"
   },
   "amor-exp:usesEmotionRecognitionCooperationStrategy": {
     "@id": "amor-exp:LocalEmotionRecognition"
@@ -279,5 +277,6 @@
   "rdfs:label": {
     "@language": "en",
     "@value": "Experiment 1"
-  }
+  },
+  "@context": "http://www.gsi.upm.es/ontologies/amor/experiments/context.jsonld"
 }

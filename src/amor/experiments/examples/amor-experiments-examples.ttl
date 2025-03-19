@@ -191,4 +191,4 @@ ex:question4 a amor-exp:LikertQuestion, schema:Question ;
 
 ### [Dataset]
 amor-graph:dataset1 a amor-exp:NewsDataset ;
-   schema:url <http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json> .
+   schema:url "http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json" .

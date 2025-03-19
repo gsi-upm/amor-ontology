@@ -49,6 +49,7 @@ js = jsonld.frame(js, frame=exp_frame)
 
 del js['@context']
 
+js['@context'] = "http://www.gsi.upm.es/ontologies/amor/experiments/context.jsonld"
 print(json.dumps(js, indent=2))
 
 #del context["parts"]["@container"]
