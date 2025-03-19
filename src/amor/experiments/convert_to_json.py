@@ -16,22 +16,28 @@ g.parse(example, format='turtle')
 #with open('../../prefixes.jsonld') as f:
 context_files = [
         '../../prefixes.jsonld',
-        '../experiments/amor-experiment-context.jsonld'
+        '../experiments/amor-experiment-context-properties.jsonld'
         ]
 
-contexts = []
+
+context = {}
 for c in context_files:
     with open(c) as f:
-        contexts.append(json.load(f))
+        context.update(json.load(f))
+
+merged_context = '../experiments/amor-experiment-context.jsonld'
+
+with open(merged_context, 'w') as f:
+    json.dump(context, f, indent=2)
 
 #print(g.serialize(format='ttl'))
 js = json.loads(g.serialize(format='json-ld',
-                            context=contexts))
+                            context=context))
 
 #print(json.dumps(js, indent=2))
 #sys.exit(1)
 exp_frame = {
-        "@context": contexts,
+        "@context": context,
         "@type": "amor-exp:Experiment",
         "@embed": "@always" #,
         # "amor-exp:usesDataset": {
@@ -40,6 +46,8 @@ exp_frame = {
         }
 
 js = jsonld.frame(js, frame=exp_frame)
+
+del js['@context']
 
 print(json.dumps(js, indent=2))
 
