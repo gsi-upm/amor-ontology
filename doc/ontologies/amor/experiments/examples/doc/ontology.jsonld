@@ -367,7 +367,7 @@
     "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage" : [ {
-    "@value" : "en_US"
+    "@value" : "es_ES"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration" : [ {
     "@id" : "_:genid4"

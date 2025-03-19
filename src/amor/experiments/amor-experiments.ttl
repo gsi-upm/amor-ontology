@@ -272,6 +272,11 @@
     rdfs:label "Visualization Strategy"@en ;
     rdfs:comment "Represents a strategy used to visualize the results of an experiment in the AMOR project."@en .
 
+:StandardVisualizationStrategy
+    a owl:NamedIndividual, :VisualizationStrategy ;
+    rdfs:label "Standard Visualization Strategy"@en ;
+    rdfs:comment "Represents the standard strategy used to visualize the results of an experiment in the AMOR project (i.e. no added information about moral, emotions, etc.)."@en .
+
 :MoralValueVisualizationStrategy
     a owl:NamedIndividual, :VisualizationStrategy ;
     rdfs:label "Moral Value Visualization Strategy"@en ;

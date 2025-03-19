@@ -411,7 +411,7 @@
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar> _:genid3 ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset> <http://amor-graph.gsi.upm.es/ns#dataset1> ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition> ;
-             <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage> "en_US" ;
+             <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage> "es_ES" ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration> _:genid4 ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration> _:genid7 ;
              rdfs:label "Experiment 1"@en .

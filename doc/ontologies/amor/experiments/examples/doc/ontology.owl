@@ -714,7 +714,7 @@
         <ns:usesAvatar rdf:nodeID="genid3"/>
         <ns:usesDataset rdf:resource="http://amor-graph.gsi.upm.es/ns#dataset1"/>
         <ns:usesEmotionRecognitionCooperationStrategy rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition"/>
-        <ns:usesLanguage>en_US</ns:usesLanguage>
+        <ns:usesLanguage>es_ES</ns:usesLanguage>
         <ns:usesRobotCooperationConfiguration rdf:nodeID="genid4"/>
         <ns:usesSemanticCooperationConfiguration rdf:nodeID="genid7"/>
         <rdfs:label xml:lang="en">Experiment 1</rdfs:label>

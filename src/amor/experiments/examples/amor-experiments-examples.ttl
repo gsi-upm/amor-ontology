@@ -67,6 +67,7 @@ ex:experiment1 a owl:NamedIndividual ,
         amor-exp:hasLLMModel "phi4:14b" ;
         amor-exp:usesPrompt "You are a 70 years old lady. You are in a Japanese house. You are reading the news. You are grumpy. You are wearing a gray dress. You have white hair"
     ] ;
+    amor-exp:usesEmotionRecognitionCooperationStrategy amor-exp:LocalEmotionRecognition ;
     amor-exp:usesSemanticCooperationConfiguration [
         a amor-exp:SemanticCooperationConfiguration ;
         amor-exp:usesSemanticCooperationStrategy amor-exp:FullSemanticCooperation ;
@@ -88,26 +89,25 @@ ex:experiment1 a owl:NamedIndividual ,
             }
             LIMIT 10
         """^^xsd:string ] ;
-        amor-exp:usesEmotionRecognitionCooperationStrategy amor-exp:LocalEmotionRecognition ;
-        amor-exp:usesRobotCooperationConfiguration [
-            a amor-exp:RobotCooperationConfiguration ;
-            amor-exp:usesRobotCooperationStrategy amor-exp:CooperativeRobot ;
-            amor-exp:hasRobotRole [
-                amor-exp:hasRobotActor ex:ari41 ;
-                amor-exp:hasRobotRole "newsReader"^^xsd:string ;
-            ] ,
-            [
-                amor-exp:hasRobotActor ex:ari42 ;
-                amor-exp:hasRobotRole "emotionalSupport"^^xsd:string ;
-            ] 
-        ] ;
-        amor-exp:hasExperimentEvaluation [
-            a amor-exp:ExperimentEvalution ;
-            amor-exp:hasInitialQuestion ex:question1 ;
-            amor-exp:hasInitialQuestion ex:question2 ;
-            amor-exp:hasIntermediateQuestion ex:question3 ;
-            amor-exp:hasFinalQuestion ex:question4
-        ] .
+    amor-exp:usesRobotCooperationConfiguration [
+        a amor-exp:RobotCooperationConfiguration ;
+        amor-exp:usesRobotCooperationStrategy amor-exp:CooperativeRobot ;
+        amor-exp:hasRobotRole [
+            amor-exp:hasRobotActor ex:ari41 ;
+            amor-exp:hasRobotRole "newsReader"^^xsd:string ;
+        ] ,
+        [
+            amor-exp:hasRobotActor ex:ari42 ;
+            amor-exp:hasRobotRole "emotionalSupport"^^xsd:string ;
+        ] 
+    ] ;
+    amor-exp:hasExperimentEvaluation [
+        a amor-exp:ExperimentEvalution ;
+        amor-exp:hasInitialQuestion ex:question1 ;
+        amor-exp:hasInitialQuestion ex:question2 ;
+        amor-exp:hasIntermediateQuestion ex:question3 ;
+        amor-exp:hasFinalQuestion ex:question4
+    ] .
 
 ex:researcher1 a amor-exp:ExperimentRequester ,
         prov:Person ,
