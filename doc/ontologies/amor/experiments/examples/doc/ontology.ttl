@@ -166,6 +166,10 @@
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredTopic> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationStrategy
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationStrategy> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester> rdf:type owl:AnnotationProperty .
 
@@ -398,6 +402,8 @@
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMConfiguration> _:genid2 ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement> "poi1" ,
                                                                                         "poi2" ;
+             <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionSimilarity> ,
+                                                                                              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralSimilarity> ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester> :researcher1 ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy> ,
                                                                                              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy> ;
@@ -405,7 +411,7 @@
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar> _:genid3 ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset> <http://amor-graph.gsi.upm.es/ns#dataset1> ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition> ;
-             <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage> "es_ES" ;
+             <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage> "en_US" ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration> _:genid4 ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration> _:genid7 ;
              rdfs:label "Experiment 1"@en .

@@ -36,6 +36,8 @@ ex:experiment1 a owl:NamedIndividual ,
     amor-exp:usesDataset amor-graph:dataset1 ;
     amor-exp:hasVisualizationStrategy amor-exp:MoralValueVisualizationStrategy , 
         amor-exp:ClickBaitVisualizationStrategy ;
+    amor-exp:hasRecommendationStrategy amor-exp:MoralSimilarity,
+        amor-exp:EmotionSimilarity ;
     amor-exp:usesLanguage "es_ES" ;
     amor-exp:usesAvatar [
             a amor-exp:Avatar ;

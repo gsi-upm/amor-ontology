@@ -126,6 +126,9 @@
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredTopic
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationStrategy
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -328,6 +331,8 @@ _:genid2 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMModel> "phi
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement> "poi1" .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement> "poi2" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionSimilarity> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralSimilarity> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy> .
@@ -346,7 +351,7 @@ _:genid3 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAppearance> "g
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset> <http://amor-graph.gsi.upm.es/ns#dataset1> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition> .
-<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage> "es_ES" .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage> "en_US" .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration> _:genid4 .
 _:genid4 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#CooperativeRobot> .
 _:genid4 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> _:genid6 .

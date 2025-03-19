@@ -293,6 +293,13 @@
     
 
 
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationStrategy -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationStrategy"/>
+    
+
+
     <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester -->
 
 
@@ -698,6 +705,8 @@
         <ns:hasLLMConfiguration rdf:nodeID="genid2"/>
         <ns:hasPhysicalMovement>poi1</ns:hasPhysicalMovement>
         <ns:hasPhysicalMovement>poi2</ns:hasPhysicalMovement>
+        <ns:hasRecommendationStrategy rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionSimilarity"/>
+        <ns:hasRecommendationStrategy rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralSimilarity"/>
         <ns:hasRequester rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1"/>
         <ns:hasVisualizationStrategy rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy"/>
         <ns:hasVisualizationStrategy rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy"/>
@@ -705,7 +714,7 @@
         <ns:usesAvatar rdf:nodeID="genid3"/>
         <ns:usesDataset rdf:resource="http://amor-graph.gsi.upm.es/ns#dataset1"/>
         <ns:usesEmotionRecognitionCooperationStrategy rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition"/>
-        <ns:usesLanguage>es_ES</ns:usesLanguage>
+        <ns:usesLanguage>en_US</ns:usesLanguage>
         <ns:usesRobotCooperationConfiguration rdf:nodeID="genid4"/>
         <ns:usesSemanticCooperationConfiguration rdf:nodeID="genid7"/>
         <rdfs:label xml:lang="en">Experiment 1</rdfs:label>

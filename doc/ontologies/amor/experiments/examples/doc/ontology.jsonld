@@ -341,6 +341,11 @@
   }, {
     "@value" : "poi2"
   } ],
+  "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationStrategy" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionSimilarity"
+  }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralSimilarity"
+  } ],
   "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1"
   } ],
@@ -362,7 +367,7 @@
     "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage" : [ {
-    "@value" : "es_ES"
+    "@value" : "en_US"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration" : [ {
     "@id" : "_:genid4"
@@ -619,6 +624,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredTopic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationStrategy",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester",
