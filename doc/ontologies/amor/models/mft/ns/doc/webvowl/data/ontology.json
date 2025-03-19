@@ -22,12 +22,12 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Álvaro Carrera Barroso",
+        "value" : "Sergio Muñoz López",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Sergio Muñoz López",
+        "value" : "Álvaro Carrera Barroso",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -42,16 +42,16 @@
         "value" : "http://www.gsi.upm.es",
         "type" : "iri"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#",
         "type" : "label"
       } ],
       "title" : [ {
@@ -97,16 +97,16 @@
         "IRI-based" : "Loyalty"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Equality",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
-      "labels" : {
-        "IRI-based" : "Equality"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty",
       "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
       "labels" : {
         "IRI-based" : "Liberty"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Equality",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "Equality"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Purity",
@@ -133,16 +133,16 @@
         "IRI-based" : "Honor"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Ownership",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
-      "labels" : {
-        "IRI-based" : "Ownership"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Care",
       "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
       "labels" : {
         "IRI-based" : "Care"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Ownership",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "Ownership"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Fairness",
@@ -218,7 +218,17 @@
         "hasMoralValueCategory" : [ {
           "identifier" : "hasMoralValueCategory",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Honor",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Purity",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Care",
           "type" : "iri"
         }, {
           "identifier" : "hasMoralValueCategory",
@@ -228,17 +238,12 @@
         }, {
           "identifier" : "hasMoralValueCategory",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Ownership",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Honor",
           "type" : "iri"
         }, {
           "identifier" : "hasMoralValueCategory",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasMoralValueCategory",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Purity",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Proportionality",
           "type" : "iri"
         }, {
           "identifier" : "hasMoralValueCategory",
@@ -253,12 +258,7 @@
         }, {
           "identifier" : "hasMoralValueCategory",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Care",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasMoralValueCategory",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Proportionality",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Ownership",
           "type" : "iri"
         } ]
       },
@@ -324,7 +324,7 @@
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "8"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity",
