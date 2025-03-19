@@ -1,12 +1,13 @@
 {
   "@vocab": "amor-exp",
   "amor": "http://www.gsi.upm.es/ontologies/amor/ns#",
-  "amor": "http://www.gsi.upm.es/ontologies/amor/ns#",
   "amor-bhv": "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#",
   "amor-data": "http://www.gsi.upm.es/ontologies/amor/datasets/ns#",
   "amor-data-examples": "http://www.gsi.upm.es/ontologies/amor/datasets/examples#",
   "amor-datasets": "http://www.gsi.upm.es/ontologies/amor/datasets#",
+  "amor-graph": "http://amor-graph.gsi.upm.es/ns#",
   "amor-examples": "http://www.gsi.upm.es/ontologies/amor/examples#",
+  "amos-exp-examples": "http://www.gsi.upm.es/ontologies/amor/experiments/examples#",
   "amor-exp": "http://www.gsi.upm.es/ontologies/amor/experiments/ns#",
   "amor-mft": "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#",
   "bhv": "http://www.gsi.upm.es/ontologies/bhv#",
@@ -23,5 +24,6 @@
   "rec": "http://www.github.com/gsi-upm/amor-experiment-api#",
   "schema": "http://schema.org/",
   "wnaffect": "http://gsi.upm.es/ontologies/wnaffect/ns#",
-  "xsd": "http://www.w3.org/2001/XMLSchema#"
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "oro": "http://kb.openrobots.org#"
 }
