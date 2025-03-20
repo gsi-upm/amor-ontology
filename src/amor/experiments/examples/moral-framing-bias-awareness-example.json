@@ -266,10 +266,12 @@
   "amor-exp:hasLLMConfiguration": {
     "@type": "amor-exp:LLMConfiguration",
     "amor-exp:hasLLMModel": "phi4:14b",
-    "amor-exp:hasLLMToken": "345adfwere23?$adsf",
     "amor-exp:usesLLMEndPoint": "http://localhost:6505",
     "amor-exp:usesLLMService": "ollama",
-    "amor-exp:usesPrompt": "You are a 70 years old lady. You are in a Japanese house. You are reading the news. You are grumpy. You are wearing a gray dress. You have white hair"
+    "amor-exp:usesPrompt": "You are a news reader. You have to read the following news and answer the questions."
+  },
+  "amor-exp:hasRecommendationStrategy": {
+    "@id": "amor-exp:EntitySimilarity"
   },
   "amor-exp:hasRequester": {
     "@id": "amos-exp-examples:researcher1",
@@ -284,6 +286,18 @@
     }
   },
   "amor-exp:hasVisualizationStrategy": "amor-exp:StandardVisualizationStrategy",
+  "amor-exp:usesAvatar": {
+    "@type": "amor-exp:Avatar",
+    "amor-exp:hasCategory": "generic",
+    "amor-exp:hasFacialExpresivity": {
+      "@id": "amor-exp:EmotiveExpresivity"
+    },
+    "amor-exp:hasGesturalExpresivity": {
+      "@id": "amor-exp:EmotiveExpresivity"
+    },
+    "amor-exp:hasVocalExpresivity": "amor-exp:EmotiveExpresivity",
+    "foaf:gender": "male"
+  },
   "amor-exp:usesDataset": {
     "@id": "amor-graph:dataset1",
     "@type": "amor-exp:NewsDataset",
