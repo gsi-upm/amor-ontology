@@ -377,7 +377,7 @@
 ###  http://amor-graph.gsi.upm.es/ns#dataset1
 <http://amor-graph.gsi.upm.es/ns#dataset1> rdf:type owl:NamedIndividual ,
                                                     <http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset> ;
-                                           <http://schema.org/url> <http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json> .
+                                           <http://schema.org/url> "http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json" .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41

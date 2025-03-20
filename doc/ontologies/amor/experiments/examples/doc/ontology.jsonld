@@ -223,7 +223,7 @@
   "@id" : "http://amor-graph.gsi.upm.es/ns#dataset1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://schema.org/url" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json"
+    "@value" : "http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset"

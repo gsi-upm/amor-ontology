@@ -297,7 +297,7 @@
 # http://amor-graph.gsi.upm.es/ns#dataset1
 <http://amor-graph.gsi.upm.es/ns#dataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://amor-graph.gsi.upm.es/ns#dataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset> .
-<http://amor-graph.gsi.upm.es/ns#dataset1> <http://schema.org/url> <http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json> .
+<http://amor-graph.gsi.upm.es/ns#dataset1> <http://schema.org/url> "http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json" .
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

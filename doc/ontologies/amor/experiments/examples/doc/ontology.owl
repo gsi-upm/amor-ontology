@@ -672,7 +672,7 @@
 
     <owl:NamedIndividual rdf:about="http://amor-graph.gsi.upm.es/ns#dataset1">
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset"/>
-        <schema:url rdf:resource="http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json"/>
+        <schema:url>http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json</schema:url>
     </owl:NamedIndividual>
     
 
