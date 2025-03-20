@@ -25,5 +25,6 @@
   "schema": "http://schema.org/",
   "wnaffect": "http://gsi.upm.es/ontologies/wnaffect/ns#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
-  "oro": "http://kb.openrobots.org#"
+  "oro": "http://kb.openrobots.org#",
+  "dc": "http://purl.org/dc/terms/"
 }

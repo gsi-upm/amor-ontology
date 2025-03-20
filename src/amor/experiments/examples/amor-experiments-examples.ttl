@@ -1,4 +1,4 @@
-@prefix ex: <http://www.gsi.upm.es/ontologies/amor/experiments/examples#> .
+@prefix amor-exp-examples: <http://www.gsi.upm.es/ontologies/amor/experiments/examples#> .
 @prefix amor: <http://www.gsi.upm.es/ontologies/amor/ns#> .
 @prefix amor-exp: <http://www.gsi.upm.es/ontologies/amor/experiments/ns#> .
 @prefix amor-graph: <http://amor-graph.gsi.upm.es/ns#> .
@@ -26,13 +26,13 @@
   dc:description "AMOR Experiments Examples contains a set of examples using the models required to register an experiment in the Semantic Ethical Black Box of AMOR project."@en ;
   vann:preferredNamespacePrefix "amor-exp-examples" ;
   vann:preferredNamespaceUri "http://www.gsi.upm.es/ontologies/amor/experiments/examples#" .
-ex:experiment1 a owl:NamedIndividual ,
+amor-exp-examples:experiment1 a owl:NamedIndividual ,
         amor-exp:Experiment ,
         amor-exp:DigitalNewspaperExperiment ;
     rdfs:label "Experiment 1"@en ;
-    amor-exp:hasExecutor ex:ari41 ;
-    amor-exp:hasRequester ex:researcher1 ;
-    amor-exp:hasExperimentationSubject ex:human1 ;
+    amor-exp:hasExecutor amor-exp-examples:ari41 ;
+    amor-exp:hasRequester amor-exp-examples:researcher1 ;
+    amor-exp:hasExperimentationSubject amor-exp-examples:human1 ;
     amor-exp:usesDataset amor-graph:dataset1 ;
     amor-exp:hasVisualizationStrategy amor-exp:MoralValueVisualizationStrategy , 
         amor-exp:ClickBaitVisualizationStrategy ;
@@ -93,33 +93,33 @@ ex:experiment1 a owl:NamedIndividual ,
         a amor-exp:RobotCooperationConfiguration ;
         amor-exp:usesRobotCooperationStrategy amor-exp:CooperativeRobot ;
         amor-exp:hasRobotRole [
-            amor-exp:hasRobotActor ex:ari41 ;
+            amor-exp:hasRobotActor amor-exp-examples:ari41 ;
             amor-exp:hasRobotRole "newsReader"^^xsd:string ;
         ] ,
         [
-            amor-exp:hasRobotActor ex:ari42 ;
+            amor-exp:hasRobotActor amor-exp-examples:ari42 ;
             amor-exp:hasRobotRole "emotionalSupport"^^xsd:string ;
         ] 
     ] ;
     amor-exp:hasExperimentEvaluation [
         a amor-exp:ExperimentEvalution ;
-        amor-exp:hasInitialQuestion ex:question1 ;
-        amor-exp:hasInitialQuestion ex:question2 ;
-        amor-exp:hasIntermediateQuestion ex:question3 ;
-        amor-exp:hasFinalQuestion ex:question4
+        amor-exp:hasInitialQuestion amor-exp-examples:question1 ;
+        amor-exp:hasInitialQuestion amor-exp-examples:question2 ;
+        amor-exp:hasIntermediateQuestion amor-exp-examples:question3 ;
+        amor-exp:hasFinalQuestion amor-exp-examples:question4
     ] .
 
-ex:researcher1 a amor-exp:ExperimentRequester ,
+amor-exp-examples:researcher1 a amor-exp:ExperimentRequester ,
         prov:Person ,
         foaf:Person ;
     rdfs:label "Alejo"@en .
 
-ex:ari41 a amor-exp:ExperimentExecutor ,
+amor-exp-examples:ari41 a amor-exp:ExperimentExecutor ,
         prov:SoftwareAgent ,
         oro:Robot ;
     rdfs:label "ARI 41"@en .
 
-ex:human1 a amor-exp:ExperimentationSubject ,
+amor-exp-examples:human1 a amor-exp:ExperimentationSubject ,
         prov:Person ,
         foaf:Person ;
     rdfs:label "Juan"@en ;
@@ -141,9 +141,9 @@ ex:human1 a amor-exp:ExperimentationSubject ,
             a amor:MoralProfile ;
         rdfs:label "Juan's Moral Profile - Previous Experiment Execution"@en ;
         prov:endedAtTime "2024-04-15T14:30:00-04:00"^^xsd:dateTime;
-        prov:wasInformedBy ex:researcher1 ;
+        prov:wasInformedBy amor-exp-examples:researcher1 ;
         amor:usedMoralValueModel amor-mft:MoralFoundationsTheoryModel ;
-        amor:analysed ex:human1 ;
+        amor:analysed amor-exp-examples:human1 ;
         prov:generated 
             [
                 a amor:MoralValueAnnotation ;
@@ -177,16 +177,16 @@ ex:human1 a amor-exp:ExperimentationSubject ,
             ]
     ] .
 
-ex:question1 a amor-exp:LikertQuestion, schema:Question ;
+amor-exp-examples:question1 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "Do you feel happy now? (1-No, I am not happy at all, 5-I am very happy)"@en .
 
-ex:question2 a amor-exp:LikertQuestion, schema:Question ;
+amor-exp-examples:question2 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "Do you like news about sports? (1-No, I don't like them at all, 5-Yes, I really like them.)"@en .
 
-ex:question3 a amor-exp:LikertQuestion, schema:Question ;
+amor-exp-examples:question3 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "Do you feel sad now? (1-No, I am not sad at all, 5-I am very sad.)"@en .
 
-ex:question4 a amor-exp:LikertQuestion, schema:Question ;
+amor-exp-examples:question4 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "Do you think the news reading have modified your emotion? (1-Not at all, 5-Yes, of course.)"@en .
 
 ### [Dataset]
