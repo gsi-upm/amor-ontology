@@ -28,7 +28,8 @@ for c in context_files:
 merged_context = '../experiments/amor-experiment-context.jsonld'
 
 with open(merged_context, 'w') as f:
-    json.dump(context, f, indent=2)
+    dumped = {"@context": context}
+    json.dump(dumped, f, indent=2)
 
 #print(g.serialize(format='ttl'))
 js = json.loads(g.serialize(format='json-ld',
