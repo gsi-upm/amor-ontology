@@ -1,7 +1,7 @@
 version: '3'
 services:
   reference-api:
-    image: ghcr.io/gsi-upm/amor-experiments-api
+    image: "ghcr.io/gsi-upm/amor-experiments-api:v0.2.1"
     build: .
     ports:
       - "8000:8000"
