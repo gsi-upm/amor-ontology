@@ -1,9 +1,17 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
+from pydantic import Field, GetCoreSchemaHandler, GetJsonSchemaHandler, model_validator
+from pydantic_core import CoreSchema, core_schema
 from fastapi import Query
-from typing import List, Optional, Union
+from typing import List, Optional, Union, Any, Type
+from collections.abc import Callable, Iterator
 from enum import Enum
 from datetime import datetime
 
+import uuid
+
+
+def new_id():
+    return str(uuid.uuid5(uuid.NAMESPACE_DNS, 'www.gsi.upm.es'))
 
 class Label(BaseModel):
     language: str = Field(..., alias="@language")
@@ -29,7 +37,7 @@ class ExperimentEvaluation(BaseModel):
 
 class Executor(BaseModel):
     id: str = Field(..., alias="@id")
-    type: List[str] = Field(..., alias="@type")
+    type: List[str] = Field(default=["Executor", ], alias="@type")
     label: Label = Field(..., alias="rdfs:label")
 
 
@@ -50,19 +58,19 @@ class MoralProfile(BaseModel):
 
 
 class ExperimentationSubject(BaseModel):
-    hasAccesibilityCategory: str = Field(..., alias="amor-exp:hasAccesibilityCategory")
-    hasAgeBracket: str = Field(..., alias="amor-exp:hasAgeBracket")
-    hasAverageSocialNetworkActivityPerMonth: int = Field(..., alias="amor-exp:hasAverageSocialNetworkActivityPerMonth")
-    hasEducationLevel: str = Field(..., alias="amor-exp:hasEducationLevel")
-    hasNumberOfFollowers: int = Field(..., alias="amor-exp:hasNumberOfFollowers")
-    hasPoliticalOrientation: str = Field(..., alias="amor-exp:hasPoliticalOrientation")
-    hasPreferredContent: List[str] = Field(..., alias="amor-exp:hasPreferredContent")
-    hasPreferredEntity: List[str] = Field(..., alias="amor-exp:hasPreferredEntity")
-    hasPreferredTopic: List[str] = Field(..., alias="amor-exp:hasPreferredTopic")
-    hasStressLevel: float = Field(..., alias="amor-exp:hasStressLevel")
-    hasMoralProfile: MoralProfile = Field(..., alias="amor:hasMoralProfile")
-    rdfs_label: Label = Field(..., alias="rdfs:label")
-    foaf_gender: str = Field(..., alias="foaf:gender")
+    hasAccesibilityCategory: Optional[str] = Field(default=None, alias="amor-exp:hasAccesibilityCategory")
+    hasAgeBracket: Optional[str] = Field(default=None, alias="amor-exp:hasAgeBracket")
+    hasAverageSocialNetworkActivityPerMonth: Optional[int] = Field(default=None, alias="amor-exp:hasAverageSocialNetworkActivityPerMonth")
+    hasEducationLevel: Optional[str] = Field(default=None, alias="amor-exp:hasEducationLevel")
+    hasNumberOfFollowers: Optional[int] = Field(default=None, alias="amor-exp:hasNumberOfFollowers")
+    hasPoliticalOrientation: Optional[str] = Field(default=None, alias="amor-exp:hasPoliticalOrientation")
+    hasPreferredContent: Optional[List[str]] = Field(default=[], alias="amor-exp:hasPreferredContent")
+    hasPreferredEntity: Optional[List[str]] = Field(default=[], alias="amor-exp:hasPreferredEntity")
+    hasPreferredTopic: Optional[List[str]] = Field(default=[], alias="amor-exp:hasPreferredTopic")
+    hasStressLevel: Optional[float] = Field(default=None, alias="amor-exp:hasStressLevel")
+    hasMoralProfile: Optional[MoralProfile] = Field(default=None, alias="amor:hasMoralProfile")
+    rdfs_label: Optional[Label] = Field(default=None, alias="rdfs:label")
+    foaf_gender: Optional[str] = Field(default=None, alias="foaf:gender")
 
 
 class Avatar(BaseModel):
@@ -141,22 +149,25 @@ class Dataset(BaseModel):
     url: Optional[str] = Field(alias="schema:url")
 
 
-class Experiment(BaseModel):
-    hasBackgroundMusic: Optional[str] = Field(..., alias="amor-exp:hasBackgroundMusic")
-    hasBackgroundScenario: Optional[str] = Field(..., alias="amor-exp:hasBackgroundScenario")
-    hasExecutor: Optional[Union[Executor, str]] = Field(..., alias="amor-exp:hasExecutor")
-    hasExperimentEvaluation: ExperimentEvaluation = Field(..., alias="amor-exp:hasExperimentEvaluation")
-    hasExperimentationSubject: ExperimentationSubject = Field(..., alias="amor-exp:hasExperimentationSubject")
-    hasLLMConfiguration: LLMConfiguration = Field(..., alias="amor-exp:hasLLMConfiguration")
-    hasPhysicalMovement: Optional[List[str]] = Field(..., alias="amor-exp:hasPhysicalMovement")
-    hasRequester: Entity = Field(..., alias="amor-exp:hasRequester")
-    usesAggregatedData: str = Field(..., alias="amor-exp:usesAggregatedData")
-    usesAvatar: Avatar = Field(..., alias="amor-exp:usesAvatar")
-    usesDataset: Union[str, Dataset] = Field(..., alias="amor-exp:usesDataset")
-    usesLanguage: str = Field(..., alias="amor-exp:usesLanguage")
-    hasContentAdaptationStrategy: List[ContentAdaptationStrategy] = Field(..., alias="amor-exp:hasContentAdaptationStrategy")
-    hasVisualizationStrategy: Optional[List[VisualizationStrategy]] = Field(..., alias="amor-exp:hasVisualizationConfiguration")
-    usesEmotionRecognitionCooperationStrategy: EmotionRecognitionCooperationStrategy = Field(..., alias="amor-exp:usesEmotionRecognitionCooperationStrategy")
+class ExperimentConfiguration(BaseModel):
+    hasBackgroundMusic: Optional[str] = Field(None, alias="amor-exp:hasBackgroundMusic")
+    hasBackgroundScenario: Optional[str] = Field(None, alias="amor-exp:hasBackgroundScenario")
+    hasExecutor: Optional[Union[str, Executor]] = Field(None, alias="amor-exp:hasExecutor")
+    hasExperimentEvaluation: ExperimentEvaluation = Field(None, alias="amor-exp:hasExperimentEvaluation")
+    hasExperimentationSubject: ExperimentationSubject = Field(None, alias="amor-exp:hasExperimentationSubject")
+    hasLLMConfiguration: Optional[LLMConfiguration] = Field(None, alias="amor-exp:hasLLMConfiguration")
+    hasPhysicalMovement: Optional[List[str]] = Field(None, alias="amor-exp:hasPhysicalMovement")
+    hasRequester: Optional[Entity] = Field(None, alias="amor-exp:hasRequester")
+    usesAggregatedData: Optional[str] = Field(None, alias="amor-exp:usesAggregatedData")
+    usesAvatar: Optional[Avatar] = Field(None, alias="amor-exp:usesAvatar")
+    usesDataset: Optional[Union[str, Dataset]] = Field(None, alias="amor-exp:usesDataset")
+    usesLanguage: Optional[str] = Field(None, alias="amor-exp:usesLanguage")
+    hasContentAdaptationStrategy: Optional[List[ContentAdaptationStrategy]] = Field(None, alias="amor-exp:hasContentAdaptationStrategy")
+    hasVisualizationStrategy: Optional[List[VisualizationStrategy]] = Field(None, alias="amor-exp:hasVisualizationConfiguration")
+    usesEmotionRecognitionCooperationStrategy: Optional[EmotionRecognitionCooperationStrategy] = Field(None, alias="amor-exp:usesEmotionRecognitionCooperationStrategy")
 
-    usesRobotCooperationConfiguration: Optional[RobotCooperationConfiguration] = Field(..., alias="amor-exp:usesRobotCooperationConfiguration")
-    usesSemanticCooperationConfiguration: Optional[SemanticCooperationConfiguration] = Field(..., alias="amor-exp:usesSemanticCooperationConfiguration")
+    usesRobotCooperationConfiguration: Optional[RobotCooperationConfiguration] = Field(None, alias="amor-exp:usesRobotCooperationConfiguration")
+    usesSemanticCooperationConfiguration: Optional[SemanticCooperationConfiguration] = Field(None, alias="amor-exp:usesSemanticCooperationConfiguration")
+
+class Experiment(ExperimentConfiguration):
+    id: str = Field(..., serialization_alias="@id")
