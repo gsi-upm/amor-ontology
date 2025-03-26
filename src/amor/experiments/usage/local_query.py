@@ -2,7 +2,7 @@ from rdflib import Graph
 import sys
 import os
 
-from send_query import ENDPOINT, PREFIXES
+from remote_query import ENDPOINT, PREFIXES
 
 g = Graph()
 

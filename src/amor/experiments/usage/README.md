@@ -18,6 +18,14 @@ amor-data:news_1effdbcd-e6b9-6c0b-850a-7f017c762070
         schema1:articleBody    "El Gobierno de Pedro ..."
 ```
 
+
+> [!WARNING]  
+> The SPARQL endpoint in this repository now requires a username and password.
+> The local queries that make use a remote service will not work propertly.
+> Feel free to modify the examples to include HTTP authentication.
+> In the meantime, we provide a `local_query_remote` set of queries that simulate these queries through a SPARQL query to more than one graph.
+> The results are equivalent.
+
 ## Prefixes
 
 The following prefixes are assumed in all the sparql examples:

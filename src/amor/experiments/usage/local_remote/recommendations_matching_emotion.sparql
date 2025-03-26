@@ -13,7 +13,7 @@ WHERE {
 			]
 		]
 	.
-	GRAPH <https://amor-graph.gsi.upm.es/news/> {
+	GRAPH <https://amor-graph.gsi.upm.es/news> {
 		?recommendation a schema:NewsArticle .
 		?annotation a amor:EmotionAnnotation ;
 			    onyx:hasEmotion [

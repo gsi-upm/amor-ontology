@@ -1,7 +1,10 @@
+'''
+This simulates a query to a local graph through a query to a remote graph.
+'''
 import requests
 import sys
 
-ENDPOINT = "https://amor-graph.gsi.upm.es/news/"
+ENDPOINT = "https://amor-graph.gsi.upm.es/local/"
 with open("../../../prefixes.sparql") as f:
     PREFIXES = f.read() + "\n\n"
 
