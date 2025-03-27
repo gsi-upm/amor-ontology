@@ -17,6 +17,7 @@ ex:experiment_moral_framing_bias_awareness_0001 a owl:NamedIndividual ,
         amor-exp:DigitalNewspaperExperiment ,
         amor-exp:MoralFrameExperiment;
     rdfs:label "experiment_moral_framing_bias_awareness_0001" ;
+    amor-exp:recordsToSEGB "https://amor-segb.gsi.upm.es" ;
     amor-exp:hasExecutor ex:ari41 ;
     amor-exp:hasRequester ex:researcher1 ;
     amor-exp:hasExperimentationSubject ex:user_moralbias_001 ;

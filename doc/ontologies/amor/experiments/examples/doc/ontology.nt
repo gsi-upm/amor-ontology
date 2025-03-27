@@ -147,6 +147,9 @@
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVocalExpresivity
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVocalExpresivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -336,6 +339,7 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.e
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB> "http://localhost:5000" .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData> "total population" .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar> _:genid3 .
 _:genid3 <http://xmlns.com/foaf/0.1/gender> "female" .
@@ -355,11 +359,11 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.e
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration> _:genid4 .
 _:genid4 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#CooperativeRobot> .
 _:genid4 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> _:genid6 .
-_:genid6 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> "emotionalSupport" .
-_:genid6 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari42> .
+_:genid6 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> "newsReader" .
+_:genid6 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41> .
 _:genid4 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> _:genid5 .
-_:genid5 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> "newsReader" .
-_:genid5 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41> .
+_:genid5 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> "emotionalSupport" .
+_:genid5 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor> <http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari42> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/examples#experiment1> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration> _:genid7 .
 _:genid7 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation> .

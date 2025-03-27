@@ -194,6 +194,10 @@
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVocalExpresivity> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData> rdf:type owl:AnnotationProperty .
 
@@ -407,6 +411,7 @@
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester> :researcher1 ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy> ,
                                                                                              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy> ;
+             <http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB> "http://localhost:5000" ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData> "total population" ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar> _:genid3 ;
              <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset> <http://amor-graph.gsi.upm.es/ns#dataset1> ;
@@ -466,11 +471,11 @@ _:genid7 rdf:type <http://www.gsi.upm.es/ontologies/amor/experiments/ns#Semantic
         """ ;
           <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation> .
 
-_:genid5 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor> :ari41 ;
-          <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> "newsReader" .
-
-_:genid6 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor> :ari42 ;
+_:genid5 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor> :ari42 ;
           <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> "emotionalSupport" .
+
+_:genid6 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor> :ari41 ;
+          <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole> "newsReader" .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1

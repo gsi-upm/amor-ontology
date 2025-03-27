@@ -214,6 +214,7 @@
     "amor-exp:MoralValueVisualizationStrategy",
     "amor-exp:ClickBaitVisualizationStrategy"
   ],
+  "amor-exp:recordsToSEGB": "http://localhost:5000",
   "amor-exp:usesAggregatedData": "total population",
   "amor-exp:usesAvatar": {
     "@type": "amor-exp:Avatar",

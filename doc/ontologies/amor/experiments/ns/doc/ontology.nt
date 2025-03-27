@@ -367,6 +367,20 @@
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasEducationalLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an experimentation subject with its educational level."@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasEducationalLevel> <http://www.w3.org/2000/01/rdf-schema#label> "has educational level"@en .
 # 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentConfigurationAPIEndpoint
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentConfigurationAPIEndpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentConfigurationAPIEndpoint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentConfigurationAPIEndpoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentConfigurationAPIEndpoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an executor with the API endpoint used to configure the experiment."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentConfigurationAPIEndpoint> <http://www.w3.org/2000/01/rdf-schema#label> "has experiment configuration API endpoint"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIPAddress
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIPAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIPAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIPAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIPAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an executor with its IP address."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIPAddress> <http://www.w3.org/2000/01/rdf-schema#label> "has IP address"@en .
+# 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMToken
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMToken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMToken> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration> .
@@ -449,6 +463,13 @@
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVoice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVoice> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a character with its voice."@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVoice> <http://www.w3.org/2000/01/rdf-schema#label> "has voice"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an experiment with the SEGB URL to record the logged activities."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB> <http://www.w3.org/2000/01/rdf-schema#label> "records to SEGB"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -963,6 +984,12 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SentimentSimilarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationCriterion> .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SentimentSimilarity> <http://www.w3.org/2000/01/rdf-schema#comment> "Recommends elements with a similar sentiment value"@en .
 <http://www.gsi.upm.es/ontologies/amor/experiments/ns#SentimentSimilarity> <http://www.w3.org/2000/01/rdf-schema#label> "Similar Sentiment Recommendation Strategy"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/experiments/ns#StandardVisualizationStrategy
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#StandardVisualizationStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#StandardVisualizationStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/experiments/ns#VisualizationStrategy> .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#StandardVisualizationStrategy> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the standard strategy used to visualize the results of an experiment in the AMOR project (i.e. no added information about moral, emotions, etc.)."@en .
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns#StandardVisualizationStrategy> <http://www.w3.org/2000/01/rdf-schema#label> "Standard Visualization Strategy"@en .
 # 
 # 
 # 

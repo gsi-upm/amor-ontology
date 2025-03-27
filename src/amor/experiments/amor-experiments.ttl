@@ -40,6 +40,13 @@
     rdfs:label "is related with experiment"@en ;
     rdfs:comment "Relates an activity logged in the AMOR-SEGB with the experiment in progress."@en .
 
+:recordsToSEGB
+    a owl:DatatypeProperty ;
+    rdfs:domain :Experiment ;
+    rdfs:range xsd:string ;
+    rdfs:label "records to SEGB"@en ;
+    rdfs:comment "Relates an experiment with the SEGB URL to record the logged activities."@en .
+
 :ExperimentationSubject
     a owl:Class ;
     rdfs:subClassOf prov:Agent ;
@@ -51,6 +58,20 @@
     rdfs:subClassOf prov:Agent ;
     rdfs:label "Experiment Executor"@en ;
     rdfs:comment "Represents an executor of an experiment in the AMOR project."@en .
+
+:hasIPAddress
+    a owl:DatatypeProperty ;
+    rdfs:domain :ExperimentExecutor ;
+    rdfs:range xsd:string ;
+    rdfs:label "has IP address"@en ;
+    rdfs:comment "Relates an executor with its IP address."@en .
+
+:hasExperimentConfigurationAPIEndpoint
+    a owl:DatatypeProperty ;
+    rdfs:domain :ExperimentExecutor ;
+    rdfs:range xsd:string ;
+    rdfs:label "has experiment configuration API endpoint"@en ;
+    rdfs:comment "Relates an executor with the API endpoint used to configure the experiment."@en .
 
 :ExperimentRequester
     a owl:Class ;

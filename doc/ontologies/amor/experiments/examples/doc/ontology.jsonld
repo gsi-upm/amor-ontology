@@ -145,18 +145,18 @@
 }, {
   "@id" : "_:genid5",
   "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41"
-  } ],
-  "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole" : [ {
-    "@value" : "newsReader"
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari42"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole" : [ {
     "@value" : "emotionalSupport"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41"
+  } ],
+  "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole" : [ {
+    "@value" : "newsReader"
   } ]
 }, {
   "@id" : "_:genid7",
@@ -353,6 +353,9 @@
     "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy"
   }, {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy"
+  } ],
+  "http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB" : [ {
+    "@value" : "http://localhost:5000"
   } ],
   "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData" : [ {
     "@value" : "total population"
@@ -645,6 +648,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVocalExpresivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData",

@@ -342,6 +342,13 @@
     
 
 
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB"/>
+    
+
+
     <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData -->
 
 
@@ -710,6 +717,7 @@
         <ns:hasRequester rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1"/>
         <ns:hasVisualizationStrategy rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy"/>
         <ns:hasVisualizationStrategy rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy"/>
+        <ns:recordsToSEGB>http://localhost:5000</ns:recordsToSEGB>
         <ns:usesAggregatedData>total population</ns:usesAggregatedData>
         <ns:usesAvatar rdf:nodeID="genid3"/>
         <ns:usesDataset rdf:resource="http://amor-graph.gsi.upm.es/ns#dataset1"/>
@@ -775,12 +783,12 @@
         <ns:usesSemanticCooperationStrategy rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid5">
-        <ns:hasRobotActor rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41"/>
-        <ns:hasRobotRole>newsReader</ns:hasRobotRole>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid6">
         <ns:hasRobotActor rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari42"/>
         <ns:hasRobotRole>emotionalSupport</ns:hasRobotRole>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid6">
+        <ns:hasRobotActor rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/examples#ari41"/>
+        <ns:hasRobotRole>newsReader</ns:hasRobotRole>
     </rdf:Description>
     
 

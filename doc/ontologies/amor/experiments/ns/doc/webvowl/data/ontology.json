@@ -77,16 +77,16 @@
     "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "26",
+    "id" : "25",
     "type" : "owl:Class"
   }, {
-    "id" : "29",
+    "id" : "28",
     "type" : "owl:Thing"
   }, {
-    "id" : "30",
-    "type" : "rdfs:Literal"
+    "id" : "29",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "31",
+    "id" : "30",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "34",
@@ -95,20 +95,14 @@
     "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "24",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "23",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
     "id" : "36",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "37",
     "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
   }, {
     "id" : "38",
     "type" : "rdfs:Datatype"
@@ -117,156 +111,183 @@
     "type" : "rdfs:Datatype"
   }, {
     "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
     "type" : "owl:Class"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
+    "id" : "45",
     "type" : "owl:Class"
   }, {
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "28",
+    "id" : "27",
     "type" : "owl:Class"
   }, {
-    "id" : "51",
+    "id" : "55",
     "type" : "owl:Class"
   }, {
-    "id" : "54",
+    "id" : "58",
     "type" : "owl:Class"
   }, {
     "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "57",
-    "type" : "owl:Class"
-  }, {
-    "id" : "59",
+    "id" : "61",
     "type" : "owl:Class"
   }, {
     "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "48",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "70",
+    "id" : "74",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "71",
+    "id" : "75",
     "type" : "rdfs:Datatype"
-  }, {
-    "id" : "21",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "62",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "61",
-    "type" : "owl:Class"
-  }, {
-    "id" : "73",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "44",
-    "type" : "owl:Class"
-  }, {
-    "id" : "76",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "77",
-    "type" : "owl:Class"
   }, {
     "id" : "78",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "79",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "88",
-    "type" : "owl:Class"
-  }, {
-    "id" : "75",
-    "type" : "owl:Class"
-  }, {
-    "id" : "81",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "108",
-    "type" : "owl:Class"
-  }, {
-    "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "83",
-    "type" : "owl:Class"
-  }, {
-    "id" : "41",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
     "id" : "65",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "126",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "84",
-    "type" : "owl:Class"
-  }, {
-    "id" : "117",
-    "type" : "owl:Class"
-  }, {
-    "id" : "66",
-    "type" : "owl:Class"
-  }, {
-    "id" : "118",
-    "type" : "owl:Class"
-  }, {
-    "id" : "112",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "100",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "139",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "150",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "148",
+    "id" : "21",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "46",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "151",
     "type" : "owl:Class"
   }, {
-    "id" : "115",
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "19",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "10",
+    "id" : "91",
     "type" : "owl:Class"
   }, {
-    "id" : "53",
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "32",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "132",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "133",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "153",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "68",
@@ -275,16 +296,16 @@
     "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "27",
+    "id" : "26",
     "type" : "owl:Class"
   }, {
-    "id" : "74",
+    "id" : "79",
     "type" : "owl:Class"
   }, {
-    "id" : "87",
+    "id" : "124",
     "type" : "owl:Class"
   }, {
-    "id" : "155",
+    "id" : "165",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -353,27 +374,27 @@
     "label" : {
       "IRI-based" : "Entity"
     },
-    "subClasses" : [ "27", "28" ],
+    "subClasses" : [ "26", "27" ],
     "attributes" : [ "external" ],
-    "id" : "26"
+    "id" : "25"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "29",
+    "id" : "28",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "30",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "31",
+    "id" : "30",
     "label" : {
       "IRI-based" : "string"
     }
@@ -394,18 +415,18 @@
     "attributes" : [ "external" ],
     "id" : "35"
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "24",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "23",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
     "label" : {
-      "undefined" : "Thing"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion",
@@ -423,20 +444,6 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "36",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "37",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "38",
     "label" : {
       "IRI-based" : "string"
@@ -449,6 +456,20 @@
       "IRI-based" : "string"
     }
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionRecognitionCooperationStrategy",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
     "instances" : 0,
@@ -457,16 +478,6 @@
       "en" : "Emotion Recognition Cooperation Strategy"
     },
     "individuals" : [ {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-      "comment" : {
-        "en" : "Represents the local cooperation in emotion recognition in an experiment."
-      },
-      "labels" : {
-        "IRI-based" : "LocalEmotionRecognition",
-        "en" : "Local Cooperation Emotion Recognition"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#CloudEmotionRecognition",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
       "comment" : {
@@ -475,6 +486,16 @@
       "labels" : {
         "IRI-based" : "CloudEmotionRecognition",
         "en" : "Cloud Cooperation Emotion Recognition"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+      "comment" : {
+        "en" : "Represents the local cooperation in emotion recognition in an experiment."
+      },
+      "labels" : {
+        "IRI-based" : "LocalEmotionRecognition",
+        "en" : "Local Cooperation Emotion Recognition"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullCooperationEmotionRecognition",
@@ -500,7 +521,7 @@
     "comment" : {
       "en" : "Represents the strategy used to cooperate with the emotion recognition in an experiment in the AMOR project."
     },
-    "id" : "40"
+    "id" : "42"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -513,7 +534,7 @@
       "en" : "Represents a dataset of news content."
     },
     "id" : "1",
-    "superClasses" : [ "27", "41" ]
+    "superClasses" : [ "26", "43" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -525,8 +546,8 @@
     "comment" : {
       "en" : "Represents an executor of an experiment in the AMOR project."
     },
-    "id" : "43",
-    "superClasses" : [ "44" ]
+    "id" : "45",
+    "superClasses" : [ "46" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#SearchEngineBiasExperiment",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -551,8 +572,8 @@
     "comment" : {
       "en" : "Represents an evaluation of an experiment in the AMOR project."
     },
-    "id" : "28",
-    "superClasses" : [ "26" ]
+    "id" : "27",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/segb/ns#LoggedActivity",
     "baseIri" : "http://www.gsi.upm.es/ontologies/segb/ns",
@@ -561,7 +582,7 @@
       "IRI-based" : "LoggedActivity"
     },
     "attributes" : [ "external" ],
-    "id" : "51"
+    "id" : "55"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExpresivityCategory",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -614,7 +635,7 @@
     "comment" : {
       "en" : "Represents the expresivity category of a character in an experiment in the AMOR project."
     },
-    "id" : "54"
+    "id" : "58"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -639,7 +660,7 @@
     "comment" : {
       "en" : "Represents an experiment with geographical visualization in the AMOR project."
     },
-    "id" : "57",
+    "id" : "61",
     "superClasses" : [ "6" ]
   }, {
     "iri" : "http://schema.org/CreativeWork",
@@ -649,13 +670,20 @@
       "IRI-based" : "CreativeWork"
     },
     "attributes" : [ "external" ],
-    "id" : "59"
+    "id" : "63"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "63",
+    "id" : "66",
     "label" : {
       "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "float"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
@@ -667,28 +695,21 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "70",
+    "id" : "74",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "71",
+    "id" : "75",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "21",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "62",
+    "id" : "78",
     "label" : {
       "IRI-based" : "string"
     }
@@ -703,13 +724,13 @@
     "comment" : {
       "en" : "Represents the role of a robot in an experiment in the AMOR project."
     },
-    "id" : "61"
+    "id" : "65"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "73",
+    "id" : "21",
     "label" : {
-      "IRI-based" : "float"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/ns/prov#Agent",
@@ -718,15 +739,15 @@
     "label" : {
       "IRI-based" : "Agent"
     },
-    "subClasses" : [ "74", "43", "75" ],
+    "subClasses" : [ "79", "45", "80" ],
     "attributes" : [ "external" ],
-    "id" : "44"
+    "id" : "46"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "76",
+    "id" : "81",
     "label" : {
-      "IRI-based" : "integer"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#SocialNetworkExperiment",
@@ -739,19 +760,19 @@
     "comment" : {
       "en" : "Represents an experiment with a social network in the AMOR project."
     },
-    "id" : "77",
+    "id" : "82",
     "superClasses" : [ "6" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "78",
+    "id" : "83",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "integer"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "79",
+    "id" : "19",
     "label" : {
       "IRI-based" : "string"
     }
@@ -797,7 +818,7 @@
     "comment" : {
       "en" : "Represents a strategy used to adapt the content in an experiment in the AMOR project."
     },
-    "id" : "88"
+    "id" : "91"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentRequester",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -809,8 +830,8 @@
     "comment" : {
       "en" : "Represents a requester of an experiment in the AMOR project."
     },
-    "id" : "75",
-    "superClasses" : [ "44" ]
+    "id" : "80",
+    "superClasses" : [ "46" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationStrategyParameter",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -822,8 +843,8 @@
     "comment" : {
       "en" : "Represents the strategy used to filter recommendations for an item in an experiment in the AMOR project."
     },
-    "id" : "81",
-    "superClasses" : [ "27" ]
+    "id" : "92",
+    "superClasses" : [ "26" ]
   }, {
     "iri" : "http://schema.org/NewsArticle",
     "baseIri" : "http://schema.org",
@@ -850,6 +871,16 @@
       "labels" : {
         "IRI-based" : "AffectiveValueVisualizationStrategy",
         "en" : "Affective Value Visualization Strategy"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#StandardVisualizationStrategy",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+      "comment" : {
+        "en" : "Represents the standard strategy used to visualize the results of an experiment in the AMOR project (i.e. no added information about moral, emotions, etc.)."
+      },
+      "labels" : {
+        "IRI-based" : "StandardVisualizationStrategy",
+        "en" : "Standard Visualization Strategy"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#FakeNewsVisualizationStrategy",
@@ -885,7 +916,7 @@
     "comment" : {
       "en" : "Represents a strategy used to visualize the results of an experiment in the AMOR project."
     },
-    "id" : "108"
+    "id" : "115"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -894,7 +925,7 @@
       "IRI-based" : "Experiment",
       "en" : "Experiment"
     },
-    "subClasses" : [ "9", "77", "57" ],
+    "subClasses" : [ "9", "82", "61" ],
     "comment" : {
       "en" : "Represents an experiment in the AMOR project."
     },
@@ -911,8 +942,8 @@
     "comment" : {
       "en" : "Represents a recommendation for a piee of content."
     },
-    "id" : "83",
-    "superClasses" : [ "87" ]
+    "id" : "86",
+    "superClasses" : [ "124" ]
   }, {
     "iri" : "http://schema.org/Dataset",
     "baseIri" : "http://schema.org",
@@ -922,7 +953,7 @@
     },
     "subClasses" : [ "1" ],
     "attributes" : [ "external" ],
-    "id" : "41"
+    "id" : "43"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitExperiment",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -937,6 +968,20 @@
     "id" : "11",
     "superClasses" : [ "9" ]
   }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "97",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "128",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
     "instances" : 0,
@@ -947,7 +992,21 @@
     "comment" : {
       "en" : "Represents the configuration of the semantic cooperation used in an experiment in the AMOR project."
     },
-    "id" : "65"
+    "id" : "70"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "129",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "130",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#FakeNewsAwarenessExperiment",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -963,10 +1022,31 @@
     "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "126",
+    "id" : "131",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "32",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "132",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "133",
+    "label" : {
+      "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationCriterion",
@@ -1007,16 +1087,6 @@
         "en" : "Opposite Moral Recommendation Strategy"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionDissimilarity",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-      "comment" : {
-        "en" : "Recommends elements with an opposite emotion value"
-      },
-      "labels" : {
-        "IRI-based" : "EmotionDissimilarity",
-        "en" : "Opposite Emotion Recommendation Strategy"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#EntitySimilarity",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
       "comment" : {
@@ -1025,6 +1095,16 @@
       "labels" : {
         "IRI-based" : "EntitySimilarity",
         "en" : "Similar Entities Recommendation Strategy"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionDissimilarity",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+      "comment" : {
+        "en" : "Recommends elements with an opposite emotion value"
+      },
+      "labels" : {
+        "IRI-based" : "EmotionDissimilarity",
+        "en" : "Opposite Emotion Recommendation Strategy"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#SentimentDisimilarity",
@@ -1050,7 +1130,7 @@
     "comment" : {
       "en" : "Represents a criterion used to filter recommendations in an experiment in the AMOR project."
     },
-    "id" : "84"
+    "id" : "87"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -1058,7 +1138,7 @@
     "label" : {
       "IRI-based" : "RobotCooperationConfiguration"
     },
-    "id" : "117"
+    "id" : "77"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -1111,7 +1191,7 @@
     "comment" : {
       "en" : "Represents the strategy used to cooperate with the semantic web in an experiment in the AMOR project."
     },
-    "id" : "66"
+    "id" : "71"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -1154,46 +1234,46 @@
     "comment" : {
       "en" : "Represents the strategy used to cooperate with the robot in an experiment in the AMOR project."
     },
-    "id" : "118"
+    "id" : "123"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "112",
+    "id" : "119",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "100",
+    "id" : "107",
     "label" : {
       "IRI-based" : "integer"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "139",
+    "id" : "144",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "150",
+    "id" : "161",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "148",
+    "id" : "153",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "46",
+    "id" : "50",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1205,18 +1285,18 @@
       "IRI-based" : "lang"
     },
     "attributes" : [ "external" ],
-    "id" : "151"
+    "id" : "23"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "115",
+    "id" : "95",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "19",
+    "id" : "54",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1236,14 +1316,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "53",
+    "id" : "57",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "50",
+    "id" : "52",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1280,12 +1360,12 @@
       "IRI-based" : "ExperimentParameter",
       "en" : "Experiment Parameter"
     },
-    "subClasses" : [ "1", "81" ],
+    "subClasses" : [ "1", "92" ],
     "comment" : {
       "en" : "Represents a parameter of an experiment in the AMOR project."
     },
-    "id" : "27",
-    "superClasses" : [ "26" ]
+    "id" : "26",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentationSubject",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -1297,8 +1377,8 @@
     "comment" : {
       "en" : "Represents a subject of an experiment in the AMOR project."
     },
-    "id" : "74",
-    "superClasses" : [ "44" ]
+    "id" : "79",
+    "superClasses" : [ "46" ]
   }, {
     "iri" : "http://www.w3.org/ns/oa#Recommendation",
     "baseIri" : "http://www.w3.org/ns/oa",
@@ -1306,9 +1386,9 @@
     "label" : {
       "IRI-based" : "Recommendation"
     },
-    "subClasses" : [ "83" ],
+    "subClasses" : [ "86" ],
     "attributes" : [ "external" ],
-    "id" : "87"
+    "id" : "124"
   }, {
     "iri" : "http://schema.org/Answer",
     "baseIri" : "http://schema.org",
@@ -1317,7 +1397,7 @@
       "IRI-based" : "Answer"
     },
     "attributes" : [ "external" ],
-    "id" : "155"
+    "id" : "165"
   } ],
   "property" : [ {
     "id" : "0",
@@ -1330,16 +1410,13 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "22",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "32",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "42",
+    "id" : "31",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "45",
-    "type" : "owl:datatypeProperty"
+    "id" : "44",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "47",
     "type" : "owl:datatypeProperty"
@@ -1347,23 +1424,26 @@
     "id" : "49",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "52",
+    "id" : "51",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "55",
-    "type" : "owl:objectProperty"
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "56",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "58",
+    "id" : "59",
     "type" : "owl:objectProperty"
   }, {
     "id" : "60",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "64",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "67",
     "type" : "owl:objectProperty"
@@ -1371,56 +1451,47 @@
     "id" : "69",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "72",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "80",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "82",
+    "id" : "73",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "86",
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "89",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "90",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "92",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "93",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "94",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "95",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "96",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "97",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "98",
     "type" : "owl:objectProperty"
   }, {
     "id" : "99",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "101",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "102",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "103",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "104",
     "type" : "rdfs:SubClassOf"
@@ -1431,136 +1502,154 @@
     "id" : "106",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "107",
+    "id" : "108",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "109",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "110",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "111",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "113",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "114",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "119",
-    "type" : "rdfs:SubClassOf"
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "120",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "121",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
     "id" : "122",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "123",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "124",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "125",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "127",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "128",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "129",
+    "id" : "126",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "3",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "33",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "130",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "131",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "132",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "133",
+    "id" : "127",
     "type" : "owl:objectProperty"
   }, {
     "id" : "134",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "135",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "136",
     "type" : "owl:objectProperty"
   }, {
     "id" : "137",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "138",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "140",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "141",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "25",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "147",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "149",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "152",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "153",
-    "type" : "owl:datatypeProperty"
   }, {
     "id" : "142",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "143",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "91",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "144",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "145",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "154",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "85",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "146",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "163",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "166",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -1609,29 +1698,29 @@
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "24",
+    "range" : "23",
     "label" : {
       "IRI-based" : "usesLanguage",
       "en" : "uses language"
     },
-    "superproperty" : [ "25" ],
-    "domain" : "23",
+    "superproperty" : [ "24" ],
+    "domain" : "6",
     "comment" : {
       "en" : "Relates a digital newspaper experiment with the language used in the experiment."
     },
-    "attributes" : [ "datatype" ],
+    "attributes" : [ "object" ],
     "id" : "22"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasAssociatedWith",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "23",
+    "range" : "32",
     "label" : {
       "IRI-based" : "wasAssociatedWith"
     },
-    "domain" : "23",
+    "domain" : "32",
     "subproperty" : [ "33" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "32"
+    "attributes" : [ "external", "object" ],
+    "id" : "31"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -1640,27 +1729,13 @@
       "IRI-based" : "usesDataset",
       "en" : "has dataset"
     },
-    "superproperty" : [ "25" ],
+    "superproperty" : [ "24" ],
     "domain" : "9",
     "comment" : {
       "en" : "Relates a news content dataset parameter with its dataset."
     },
     "attributes" : [ "object" ],
-    "id" : "42"
-  }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasEducationalLevel",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "46",
-    "label" : {
-      "IRI-based" : "hasEducationalLevel",
-      "en" : "has educational level"
-    },
-    "domain" : "17",
-    "comment" : {
-      "en" : "Relates an experimentation subject with its educational level."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "45"
+    "id" : "44"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasStressLevel",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -1676,9 +1751,23 @@
     "attributes" : [ "datatype" ],
     "id" : "47"
   }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAgeBracket",
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasEducationalLevel",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
     "range" : "50",
+    "label" : {
+      "IRI-based" : "hasEducationalLevel",
+      "en" : "has educational level"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Relates an experimentation subject with its educational level."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAgeBracket",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "range" : "52",
     "label" : {
       "IRI-based" : "hasAgeBracket",
       "en" : "has age bracket"
@@ -1688,11 +1777,25 @@
       "en" : "Relates an experimentation subject with its age bracket."
     },
     "attributes" : [ "datatype" ],
-    "id" : "49"
+    "id" : "51"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIPAddress",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "hasIPAddress",
+      "en" : "has IP address"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Relates an executor with its IP address."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "53"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAccesibilityCategory",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "53",
+    "range" : "57",
     "label" : {
       "IRI-based" : "hasAccesibilityCategory",
       "en" : "has accesibility category"
@@ -1702,7 +1805,7 @@
       "en" : "Relates an experimentation subject with its accesibility category."
     },
     "attributes" : [ "datatype" ],
-    "id" : "52"
+    "id" : "56"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -1711,13 +1814,13 @@
       "IRI-based" : "usesAvatar",
       "en" : "uses avatar"
     },
-    "superproperty" : [ "25" ],
+    "superproperty" : [ "24" ],
     "domain" : "6",
     "comment" : {
       "en" : "Relates an experiment with the avatar used."
     },
     "attributes" : [ "object" ],
-    "id" : "55"
+    "id" : "59"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -1726,12 +1829,12 @@
       "IRI-based" : "hasInitialQuestion",
       "en" : "has initial question"
     },
-    "domain" : "28",
+    "domain" : "27",
     "comment" : {
       "en" : "Relates an experiment evaluation with the initial questionnaire."
     },
     "attributes" : [ "object" ],
-    "id" : "56"
+    "id" : "60"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFinalQuestion",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -1740,40 +1843,25 @@
       "IRI-based" : "hasFinalQuestion",
       "en" : "has final question"
     },
-    "domain" : "28",
+    "domain" : "27",
     "comment" : {
       "en" : "Relates an experiment evaluation with the final questionnaire."
     },
     "attributes" : [ "object" ],
-    "id" : "58"
+    "id" : "62"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRoleType",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "62",
+    "range" : "66",
     "label" : {
       "IRI-based" : "hasRoleType",
       "en" : "has robot role type"
     },
-    "domain" : "61",
+    "domain" : "65",
     "comment" : {
       "en" : "Relates a robot role with the robot role type."
     },
     "attributes" : [ "datatype" ],
-    "id" : "60"
-  }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "66",
-    "label" : {
-      "IRI-based" : "usesSemanticCooperationStrategy",
-      "en" : "uses semantic cooperation strategy"
-    },
-    "superproperty" : [ "25" ],
-    "domain" : "65",
-    "comment" : {
-      "en" : "Relates an experiment with the semantic cooperation strategy used."
-    },
-    "attributes" : [ "object" ],
     "id" : "64"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMConfiguration",
@@ -1783,7 +1871,7 @@
       "IRI-based" : "hasLLMConfiguration",
       "en" : "has LLM configuration"
     },
-    "superproperty" : [ "25" ],
+    "superproperty" : [ "24" ],
     "domain" : "6",
     "comment" : {
       "en" : "Relates an experiment with the LLM configuration used."
@@ -1791,9 +1879,24 @@
     "attributes" : [ "object" ],
     "id" : "67"
   }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "usesSemanticCooperationStrategy",
+      "en" : "uses semantic cooperation strategy"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "70",
+    "comment" : {
+      "en" : "Relates an experiment with the semantic cooperation strategy used."
+    },
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVocalExpresivity",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "54",
+    "range" : "58",
     "label" : {
       "IRI-based" : "hasVocalExpresivity",
       "en" : "has vocal expresivity"
@@ -1803,50 +1906,55 @@
       "en" : "Relates a character with its vocal expresivity."
     },
     "attributes" : [ "object" ],
-    "id" : "69"
+    "id" : "73"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "4",
+    "range" : "65",
     "label" : {
       "IRI-based" : "hasRobotRole",
       "en" : "has robot role"
     },
-    "domain" : "23",
+    "domain" : "77",
     "comment" : {
       "en" : "Relates a robot cooperation strategy with the robot role."
     },
-    "attributes" : [ "datatype" ],
-    "id" : "72"
+    "attributes" : [ "object" ],
+    "id" : "76"
   }, {
-    "range" : "27",
-    "domain" : "81",
+    "range" : "46",
+    "domain" : "45",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "80"
+    "id" : "84"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationCriterion",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "84",
+    "range" : "87",
     "label" : {
       "IRI-based" : "hasRecommendationCriterion",
       "en" : "has recommendation criterion"
     },
-    "superproperty" : [ "85" ],
-    "domain" : "83",
+    "superproperty" : [ "88" ],
+    "domain" : "86",
     "comment" : {
       "en" : "Relates a recommendation with its recommendation criterion."
     },
     "attributes" : [ "object" ],
-    "id" : "82"
+    "id" : "85"
   }, {
-    "range" : "87",
-    "domain" : "83",
+    "range" : "6",
+    "domain" : "9",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "86"
+    "id" : "89"
+  }, {
+    "range" : "46",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVoice",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "63",
+    "range" : "39",
     "label" : {
       "IRI-based" : "hasVoice",
       "en" : "has voice"
@@ -1856,62 +1964,76 @@
       "en" : "Relates a character with its voice."
     },
     "attributes" : [ "datatype" ],
-    "id" : "89"
+    "id" : "93"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentConfigurationAPIEndpoint",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "hasExperimentConfigurationAPIEndpoint",
+      "en" : "has experiment configuration API endpoint"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Relates an executor with the API endpoint used to configure the experiment."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "94"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameterValue",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "23",
+    "range" : "97",
     "label" : {
       "IRI-based" : "hasParameterValue"
     },
-    "domain" : "23",
-    "subproperty" : [ "91" ],
+    "domain" : "97",
+    "subproperty" : [ "98" ],
     "attributes" : [ "object" ],
-    "id" : "90"
+    "id" : "96"
   }, {
-    "range" : "6",
-    "domain" : "57",
+    "range" : "25",
+    "domain" : "26",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "92"
+    "id" : "99"
   }, {
-    "range" : "6",
-    "domain" : "77",
+    "range" : "15",
+    "domain" : "16",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "93"
+    "id" : "100"
   }, {
-    "range" : "27",
-    "domain" : "1",
+    "range" : "46",
+    "domain" : "79",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "94"
+    "id" : "101"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasContentAdaptationStrategy",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "88",
+    "range" : "91",
     "label" : {
       "IRI-based" : "hasContentAdaptationStrategy",
       "en" : "has content adaptation strategy"
     },
-    "superproperty" : [ "25" ],
+    "superproperty" : [ "24" ],
     "domain" : "6",
     "comment" : {
       "en" : "Relates an experiment with the content adaptation strategy used."
     },
     "attributes" : [ "object" ],
-    "id" : "95"
+    "id" : "102"
   }, {
-    "range" : "41",
-    "domain" : "1",
+    "range" : "25",
+    "domain" : "27",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "96"
+    "id" : "103"
   }, {
-    "range" : "44",
-    "domain" : "43",
+    "range" : "9",
+    "domain" : "12",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "97"
+    "id" : "104"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "75",
+    "range" : "80",
     "label" : {
       "IRI-based" : "hasRequester",
       "en" : "has experiment requester"
@@ -1921,11 +2043,11 @@
       "en" : "Relates an experiment with its requester, i.e. the person who requests the execution of the experiment."
     },
     "attributes" : [ "object" ],
-    "id" : "98"
+    "id" : "105"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAverageSocialNetworkActivityPerMonth",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "100",
+    "range" : "107",
     "label" : {
       "IRI-based" : "hasAverageSocialNetworkActivityPerMonth",
       "en" : "has average social network activity per month"
@@ -1935,21 +2057,21 @@
       "en" : "Relates an experimentation subject with the average social network activity per month."
     },
     "attributes" : [ "datatype" ],
-    "id" : "99"
+    "id" : "106"
   }, {
-    "range" : "44",
-    "domain" : "74",
+    "range" : "9",
+    "domain" : "11",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "101"
+    "id" : "108"
   }, {
-    "range" : "6",
-    "domain" : "9",
+    "range" : "9",
+    "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "102"
+    "id" : "109"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesPrompt",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "34",
+    "range" : "36",
     "label" : {
       "IRI-based" : "usesPrompt",
       "en" : "uses prompt"
@@ -1959,16 +2081,16 @@
       "en" : "Relates an LLM configuration with the prompt used."
     },
     "attributes" : [ "datatype" ],
-    "id" : "103"
+    "id" : "110"
   }, {
-    "range" : "44",
-    "domain" : "75",
+    "range" : "9",
+    "domain" : "13",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "104"
+    "id" : "111"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFacialExpresivity",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "54",
+    "range" : "58",
     "label" : {
       "IRI-based" : "hasFacialExpresivity",
       "en" : "has facial expresivity"
@@ -1978,11 +2100,11 @@
       "en" : "Relates a character with its facial expresivity."
     },
     "attributes" : [ "object" ],
-    "id" : "105"
+    "id" : "112"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasNumberOfFollowers",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "76",
+    "range" : "83",
     "label" : {
       "IRI-based" : "hasNumberOfFollowers",
       "en" : "has number of followers"
@@ -1992,36 +2114,36 @@
       "en" : "Relates an experimentation subject with the number of followers."
     },
     "attributes" : [ "datatype" ],
-    "id" : "106"
+    "id" : "113"
   }, {
-    "range" : "26",
-    "domain" : "28",
+    "range" : "9",
+    "domain" : "10",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "107"
+    "id" : "114"
   }, {
-    "range" : "26",
-    "domain" : "27",
+    "range" : "7",
+    "domain" : "8",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "109"
+    "id" : "116"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "28",
+    "range" : "27",
     "label" : {
       "IRI-based" : "hasExperimentEvaluation",
       "en" : "has experiment evaluation"
     },
-    "superproperty" : [ "25" ],
+    "superproperty" : [ "24" ],
     "domain" : "6",
     "comment" : {
       "en" : "Relates an experiment with its evaluation."
     },
     "attributes" : [ "object" ],
-    "id" : "110"
+    "id" : "117"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAppearance",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "112",
+    "range" : "119",
     "label" : {
       "IRI-based" : "hasAppearance",
       "en" : "has appearance"
@@ -2031,11 +2153,11 @@
       "en" : "Relates a character with its appearance."
     },
     "attributes" : [ "datatype" ],
-    "id" : "111"
+    "id" : "118"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasGesturalExpresivity",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "54",
+    "range" : "58",
     "label" : {
       "IRI-based" : "hasGesturalExpresivity",
       "en" : "has gestural expresivity"
@@ -2045,11 +2167,11 @@
       "en" : "Relates a character with its gestural expresivity."
     },
     "attributes" : [ "object" ],
-    "id" : "113"
+    "id" : "120"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMToken",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "115",
+    "range" : "81",
     "label" : {
       "IRI-based" : "hasLLMToken",
       "en" : "has LLM token"
@@ -2059,36 +2181,45 @@
       "en" : "Relates an LLM configuration with the LLM token used."
     },
     "attributes" : [ "datatype" ],
-    "id" : "114"
+    "id" : "121"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "118",
+    "range" : "123",
     "label" : {
       "IRI-based" : "usesRobotCooperationStrategy",
       "en" : "uses robot cooperation strategy"
     },
-    "superproperty" : [ "25" ],
-    "domain" : "117",
+    "superproperty" : [ "24" ],
+    "domain" : "77",
     "comment" : {
       "en" : "Relates a robot cooperation configuration with the robot cooperation strategy used."
     },
     "attributes" : [ "object" ],
-    "id" : "116"
+    "id" : "122"
   }, {
-    "range" : "15",
-    "domain" : "16",
+    "range" : "5",
+    "domain" : "6",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "119"
+    "id" : "125"
   }, {
-    "range" : "9",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "120"
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "recordsToSEGB",
+      "en" : "records to SEGB"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Relates an experiment with the SEGB URL to record the logged activities."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "126"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredContent",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "59",
+    "range" : "63",
     "label" : {
       "IRI-based" : "hasPreferredContent",
       "en" : "has preferred content"
@@ -2098,41 +2229,11 @@
       "en" : "Relates an experimentation subject with its preferred content."
     },
     "attributes" : [ "object" ],
-    "id" : "121"
-  }, {
-    "range" : "9",
-    "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "122"
-  }, {
-    "range" : "9",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "123"
-  }, {
-    "range" : "9",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "124"
-  }, {
-    "range" : "5",
-    "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "125"
-  }, {
-    "range" : "9",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
     "id" : "127"
-  }, {
-    "range" : "7",
-    "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "128"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMEndPoint",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "36",
+    "range" : "34",
     "label" : {
       "IRI-based" : "usesLLMEndPoint",
       "en" : "uses LLM end point"
@@ -2142,18 +2243,33 @@
       "en" : "Relates an LLM configuration with the LLM end point used."
     },
     "attributes" : [ "datatype" ],
-    "id" : "129"
+    "id" : "134"
   }, {
     "iri" : "http://schema.org/hasPart",
     "baseIri" : "http://schema.org",
-    "range" : "23",
+    "range" : "28",
     "label" : {
       "IRI-based" : "hasPart"
     },
-    "domain" : "23",
+    "domain" : "28",
     "subproperty" : [ "0" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "3"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "hasVisualizationStrategy",
+      "en" : "has visualization strategy"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "Relates an experiment with its visualization strategy."
+    },
+    "attributes" : [ "object" ],
+    "id" : "135"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#isRelatedWithExperiment",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -2162,28 +2278,13 @@
       "IRI-based" : "isRelatedWithExperiment",
       "en" : "is related with experiment"
     },
-    "superproperty" : [ "32" ],
-    "domain" : "51",
+    "superproperty" : [ "31" ],
+    "domain" : "55",
     "comment" : {
       "en" : "Relates an activity logged in the AMOR-SEGB with the experiment in progress."
     },
     "attributes" : [ "object" ],
     "id" : "33"
-  }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "108",
-    "label" : {
-      "IRI-based" : "hasVisualizationStrategy",
-      "en" : "has visualization strategy"
-    },
-    "superproperty" : [ "25" ],
-    "domain" : "6",
-    "comment" : {
-      "en" : "Relates an experiment with its visualization strategy."
-    },
-    "attributes" : [ "object" ],
-    "id" : "130"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIntermediateQuestion",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -2192,12 +2293,12 @@
       "IRI-based" : "hasIntermediateQuestion",
       "en" : "has intermediate question"
     },
-    "domain" : "28",
+    "domain" : "27",
     "comment" : {
       "en" : "Relates an experiment evaluation with the intermediate questionnaire."
     },
     "attributes" : [ "object" ],
-    "id" : "131"
+    "id" : "136"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentationSubject",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
@@ -2211,26 +2312,26 @@
       "en" : "Relates an experiment with its subject."
     },
     "attributes" : [ "object" ],
-    "id" : "132"
+    "id" : "137"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "40",
+    "range" : "42",
     "label" : {
       "IRI-based" : "usesEmotionRecognitionCooperationStrategy",
       "en" : "uses emotion recognition cooperation configuration"
     },
-    "superproperty" : [ "25" ],
+    "superproperty" : [ "24" ],
     "domain" : "6",
     "comment" : {
       "en" : "Relates an experiment with the emotion recognition cooperation configuration used."
     },
     "attributes" : [ "object" ],
-    "id" : "133"
+    "id" : "138"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMService",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "38",
+    "range" : "37",
     "label" : {
       "IRI-based" : "usesLLMService",
       "en" : "uses LLM service"
@@ -2240,11 +2341,11 @@
       "en" : "Relates an LLM configuration with the LLM service used."
     },
     "attributes" : [ "datatype" ],
-    "id" : "134"
+    "id" : "139"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMModel",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "39",
+    "range" : "30",
     "label" : {
       "IRI-based" : "usesLLMModel",
       "en" : "uses LLM model"
@@ -2254,11 +2355,11 @@
       "en" : "Relates an LLM configuration with the LLM model used."
     },
     "attributes" : [ "datatype" ],
-    "id" : "135"
+    "id" : "140"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExecutor",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "43",
+    "range" : "45",
     "label" : {
       "IRI-based" : "hasExecutor",
       "en" : "has experiment executor"
@@ -2268,25 +2369,25 @@
       "en" : "Relates an experiment with its executor."
     },
     "attributes" : [ "object" ],
-    "id" : "136"
+    "id" : "141"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationScore",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "73",
+    "range" : "72",
     "label" : {
       "IRI-based" : "hasRecommendationScore",
       "en" : "has recommendation score"
     },
-    "domain" : "83",
+    "domain" : "86",
     "comment" : {
       "en" : "Relates a recommendation with the score of the recommendation."
     },
     "attributes" : [ "datatype" ],
-    "id" : "137"
+    "id" : "142"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundMusic",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "139",
+    "range" : "144",
     "label" : {
       "IRI-based" : "hasBackgroundMusic",
       "en" : "has background music"
@@ -2296,54 +2397,54 @@
       "en" : "Relates an experiment with the background music used."
     },
     "attributes" : [ "datatype" ],
-    "id" : "138"
+    "id" : "143"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredEntity",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "30",
+    "range" : "25",
     "label" : {
       "IRI-based" : "hasPreferredEntity",
       "en" : "has preferred entities"
     },
-    "domain" : "23",
+    "domain" : "17",
     "comment" : {
       "en" : "Relates an experimentation subject with its preferred entities."
     },
-    "attributes" : [ "datatype" ],
-    "id" : "140"
+    "attributes" : [ "object" ],
+    "id" : "145"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "37",
+    "range" : "40",
     "label" : {
       "IRI-based" : "usesCloudGraphQuery",
       "en" : "uses cloud graph query"
     },
-    "domain" : "65",
+    "domain" : "70",
     "comment" : {
       "en" : "Relates a semantic cooperation strategy with the cloud graph query used."
     },
     "attributes" : [ "datatype" ],
-    "id" : "141"
+    "id" : "146"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "29",
+    "range" : "133",
     "label" : {
       "IRI-based" : "hasParameter",
       "en" : "has parameter"
     },
     "domain" : "6",
-    "subproperty" : [ "142", "42", "143", "110", "130", "55", "116", "133", "144", "22", "67", "145", "64", "146", "95" ],
+    "subproperty" : [ "147", "44", "148", "117", "135", "59", "122", "138", "149", "22", "67", "150", "69", "151", "102" ],
     "comment" : {
       "en" : "Relates an experiment with its parameters."
     },
     "attributes" : [ "object" ],
-    "id" : "25"
+    "id" : "24"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasCategory",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "148",
+    "range" : "153",
     "label" : {
       "IRI-based" : "hasCategory",
       "en" : "has category"
@@ -2353,11 +2454,41 @@
       "en" : "Relates a character with its category."
     },
     "attributes" : [ "datatype" ],
-    "id" : "147"
+    "id" : "152"
+  }, {
+    "range" : "124",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "26",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "6",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "6",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "26",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "43",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPersonality",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "79",
+    "range" : "75",
     "label" : {
       "IRI-based" : "hasPersonality",
       "en" : "has personality"
@@ -2367,25 +2498,25 @@
       "en" : "Relates a character with its personality."
     },
     "attributes" : [ "datatype" ],
-    "id" : "149"
+    "id" : "160"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "126",
+    "range" : "35",
     "label" : {
       "IRI-based" : "hasRobotActor",
       "en" : "has robot actor"
     },
-    "domain" : "23",
+    "domain" : "65",
     "comment" : {
       "en" : "Relates a robot role with the robot actor."
     },
-    "attributes" : [ "datatype" ],
-    "id" : "152"
+    "attributes" : [ "object" ],
+    "id" : "162"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredTopic",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "71",
+    "range" : "78",
     "label" : {
       "IRI-based" : "hasPreferredTopic",
       "en" : "has preferred topic"
@@ -2395,131 +2526,131 @@
       "en" : "Relates an experimentation subject with its preferred topic."
     },
     "attributes" : [ "datatype" ],
-    "id" : "153"
+    "id" : "163"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "70",
+    "range" : "133",
     "label" : {
       "IRI-based" : "usesAggregatedData",
       "en" : "uses aggregated data"
     },
-    "superproperty" : [ "25" ],
-    "domain" : "23",
+    "superproperty" : [ "24" ],
+    "domain" : "6",
     "comment" : {
       "en" : "Relates an experiment with the aggregated data used."
     },
-    "attributes" : [ "datatype" ],
-    "id" : "142"
+    "attributes" : [ "object" ],
+    "id" : "147"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "117",
+    "range" : "77",
     "label" : {
       "IRI-based" : "usesRobotCooperationConfiguration",
       "en" : "uses robot cooperation configuration"
     },
-    "superproperty" : [ "25" ],
+    "superproperty" : [ "24" ],
     "domain" : "6",
     "comment" : {
       "en" : "Relates an experiment with the robot cooperation configuration used."
     },
     "attributes" : [ "object" ],
-    "id" : "143"
+    "id" : "148"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationStrategy",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "84",
+    "range" : "87",
     "label" : {
       "IRI-based" : "hasRecommendationStrategy",
       "en" : "has recommendation strategy"
     },
-    "superproperty" : [ "90" ],
-    "domain" : "81",
+    "superproperty" : [ "96" ],
+    "domain" : "92",
     "comment" : {
       "en" : "Relates a recommendation strategy parameter with its recommentation strategy."
     },
     "attributes" : [ "object" ],
-    "id" : "91"
+    "id" : "98"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "150",
+    "range" : "133",
     "label" : {
       "IRI-based" : "hasBackgroundScenario",
       "en" : "has background scenario"
     },
-    "superproperty" : [ "25" ],
-    "domain" : "23",
+    "superproperty" : [ "24" ],
+    "domain" : "6",
     "comment" : {
       "en" : "Relates an experiment with the background scenario used."
     },
-    "attributes" : [ "datatype" ],
-    "id" : "144"
+    "attributes" : [ "object" ],
+    "id" : "149"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "65",
+    "range" : "70",
     "label" : {
       "IRI-based" : "usesSemanticCooperationConfiguration",
       "en" : "uses semantic cooperation strategy"
     },
-    "superproperty" : [ "25" ],
+    "superproperty" : [ "24" ],
     "domain" : "6",
     "comment" : {
       "en" : "Relates an experiment with the semantic cooperation strategy used."
     },
     "attributes" : [ "object" ],
-    "id" : "145"
+    "id" : "150"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "31",
+    "range" : "29",
     "label" : {
       "IRI-based" : "usesSPARQLQuery",
       "en" : "uses SPARQL query"
     },
-    "domain" : "65",
+    "domain" : "70",
     "comment" : {
       "en" : "Relates a semantic cooperation strategy with the SPARQL query used."
     },
     "attributes" : [ "datatype" ],
-    "id" : "154"
+    "id" : "164"
   }, {
     "iri" : "http://schema.org/category",
     "baseIri" : "http://schema.org",
-    "range" : "23",
+    "range" : "129",
     "label" : {
       "IRI-based" : "category"
     },
-    "domain" : "23",
-    "subproperty" : [ "82" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "85"
+    "domain" : "129",
+    "subproperty" : [ "85" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "88"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/ns",
-    "range" : "78",
+    "range" : "133",
     "label" : {
       "IRI-based" : "hasPhysicalMovement",
       "en" : "has physical movement"
     },
-    "superproperty" : [ "25" ],
-    "domain" : "23",
+    "superproperty" : [ "24" ],
+    "domain" : "6",
     "comment" : {
       "en" : "Relates an experiment with the physical movement used."
     },
-    "attributes" : [ "datatype" ],
-    "id" : "146"
+    "attributes" : [ "object" ],
+    "id" : "151"
   }, {
     "iri" : "http://schema.org/suggestedAnswer",
     "baseIri" : "http://schema.org",
-    "range" : "23",
+    "range" : "129",
     "label" : {
       "IRI-based" : "suggestedAnswer"
     },
-    "domain" : "23",
-    "attributes" : [ "object", "external" ],
-    "id" : "156"
+    "domain" : "129",
+    "attributes" : [ "external", "object" ],
+    "id" : "166"
   } ]
 }

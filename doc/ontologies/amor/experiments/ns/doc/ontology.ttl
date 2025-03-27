@@ -405,6 +405,22 @@
                      rdfs:label "has educational level"@en .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentConfigurationAPIEndpoint
+:hasExperimentConfigurationAPIEndpoint rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain :ExperimentExecutor ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "Relates an executor with the API endpoint used to configure the experiment."@en ;
+                                       rdfs:label "has experiment configuration API endpoint"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIPAddress
+:hasIPAddress rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ExperimentExecutor ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Relates an executor with its IP address."@en ;
+              rdfs:label "has IP address"@en .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMToken
 :hasLLMToken rdf:type owl:DatatypeProperty ;
              rdfs:domain :LLMConfiguration ;
@@ -500,6 +516,14 @@
           rdfs:range xsd:string ;
           rdfs:comment "Relates a character with its voice."@en ;
           rdfs:label "has voice"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB
+:recordsToSEGB rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Experiment ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Relates an experiment with the SEGB URL to record the logged activities."@en ;
+               rdfs:label "records to SEGB"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData
@@ -1060,6 +1084,13 @@ rdfs:label "Likert Question"@en .
                               :RecommendationCriterion ;
                      rdfs:comment "Recommends elements with a similar sentiment value"@en ;
                      rdfs:label "Similar Sentiment Recommendation Strategy"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#StandardVisualizationStrategy
+:StandardVisualizationStrategy rdf:type owl:NamedIndividual ,
+                                        :VisualizationStrategy ;
+                               rdfs:comment "Represents the standard strategy used to visualize the results of an experiment in the AMOR project (i.e. no added information about moral, emotions, etc.)."@en ;
+                               rdfs:label "Standard Visualization Strategy"@en .
 
 
 #################################################################

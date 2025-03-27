@@ -30,6 +30,7 @@ amor-exp-examples:experiment1 a owl:NamedIndividual ,
         amor-exp:Experiment ,
         amor-exp:DigitalNewspaperExperiment ;
     rdfs:label "Experiment 1"@en ;
+    amor-exp:recordsToSEGB "http://localhost:5000" ;
     amor-exp:hasExecutor amor-exp-examples:ari41 ;
     amor-exp:hasRequester amor-exp-examples:researcher1 ;
     amor-exp:hasExperimentationSubject amor-exp-examples:human1 ;

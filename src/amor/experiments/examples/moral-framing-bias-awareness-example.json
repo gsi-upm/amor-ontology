@@ -286,6 +286,7 @@
     }
   },
   "amor-exp:hasVisualizationStrategy": "amor-exp:StandardVisualizationStrategy",
+  "amor-exp:recordsToSEGB": "https://amor-segb.gsi.upm.es",
   "amor-exp:usesAvatar": {
     "@type": "amor-exp:Avatar",
     "amor-exp:hasCategory": "generic",

@@ -635,6 +635,30 @@
     
 
 
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentConfigurationAPIEndpoint -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentConfigurationAPIEndpoint">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates an executor with the API endpoint used to configure the experiment.</rdfs:comment>
+        <rdfs:label xml:lang="en">has experiment configuration API endpoint</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIPAddress -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIPAddress">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates an executor with its IP address.</rdfs:comment>
+        <rdfs:label xml:lang="en">has IP address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMToken -->
 
 
@@ -781,6 +805,18 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Relates a character with its voice.</rdfs:comment>
         <rdfs:label xml:lang="en">has voice</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB">
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates an experiment with the SEGB URL to record the logged activities.</rdfs:comment>
+        <rdfs:label xml:lang="en">records to SEGB</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1696,6 +1732,17 @@
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationCriterion"/>
         <rdfs:comment xml:lang="en">Recommends elements with a similar sentiment value</rdfs:comment>
         <rdfs:label xml:lang="en">Similar Sentiment Recommendation Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/experiments/ns#StandardVisualizationStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/experiments/ns#StandardVisualizationStrategy">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/experiments/ns#VisualizationStrategy"/>
+        <rdfs:comment xml:lang="en">Represents the standard strategy used to visualize the results of an experiment in the AMOR project (i.e. no added information about moral, emotions, etc.).</rdfs:comment>
+        <rdfs:label xml:lang="en">Standard Visualization Strategy</rdfs:label>
     </owl:NamedIndividual>
     
 
