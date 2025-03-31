@@ -105,10 +105,10 @@
     "id" : "29",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "18",
     "type" : "owl:Class"
   }, {
     "id" : "53",
@@ -308,30 +308,6 @@
     "attributes" : [ "external" ],
     "id" : "29"
   }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MoralValueCategory",
-      "en" : "Moral Value Category"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#Neutral",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-      "comment" : {
-        "en" : "The neutral category is used to represent the absence of a moral value in the analysed content."
-      },
-      "labels" : {
-        "IRI-based" : "Neutral",
-        "en" : "Neutral"
-      }
-    } ],
-    "comment" : {
-      "en" : "Represents a category of moral values."
-    },
-    "id" : "18",
-    "superClasses" : [ "4" ]
-  }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
     "instances" : 0,
@@ -345,6 +321,30 @@
     },
     "id" : "2",
     "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralValueCategory",
+      "en" : "Moral Value Category"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#NonMoral",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+      "comment" : {
+        "en" : "Represents a non moral value. This indicates that the text does not contain any trace of moral values."
+      },
+      "labels" : {
+        "IRI-based" : "NonMoral",
+        "en" : "Non Moral"
+      }
+    } ],
+    "comment" : {
+      "en" : "Represents a category of moral values."
+    },
+    "id" : "18",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "http://schema.org/NewsArticle",
     "baseIri" : "http://schema.org",

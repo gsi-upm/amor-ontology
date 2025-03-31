@@ -99,9 +99,9 @@ amor:MoralValueCategory
   rdfs:label "Moral Value Category"@en ;
   rdfs:comment "Represents a category of moral values."@en .
 
-amor:Neutral a amor:MoralValueCategory ;
-  rdfs:label "Neutral"@en ;
-  rdfs:comment "The neutral category is used to represent the absence of a moral value in the analysed content."@en .
+amor:NonMoral a amor:MoralValueCategory ;
+  rdfs:label "Non Moral"@en ;
+  rdfs:comment "Represents a non moral value. This indicates that the text does not contain any trace of moral values."@en .
 
 amor:MLEntity
   a owl:Class ;

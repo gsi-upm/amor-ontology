@@ -472,13 +472,13 @@
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/amor/ns#Neutral -->
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#NonMoral -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#Neutral">
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#NonMoral">
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
-        <rdfs:comment xml:lang="en">The neutral category is used to represent the absence of a moral value in the analysed content.</rdfs:comment>
-        <rdfs:label xml:lang="en">Neutral</rdfs:label>
+        <rdfs:comment xml:lang="en">Represents a non moral value. This indicates that the text does not contain any trace of moral values.</rdfs:comment>
+        <rdfs:label xml:lang="en">Non Moral</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
