@@ -274,18 +274,18 @@
 #    Individuals
 #################################################################
 
-###  http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitTitle
-:ClickBaitTitle rdf:type owl:NamedIndividual ,
-                         :ClickBaitCategory ;
-                rdfs:comment "Represents a clickbait title category. This means that it is considered clickbait."@en ;
-                rdfs:label "Clickbait Title"@en .
+###  http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline
+:ClickBaitHeadline rdf:type owl:NamedIndividual ,
+                            :ClickBaitCategory ;
+                   rdfs:comment "Represents a clickbait headline category. This means that it is considered clickbait."@en ;
+                   rdfs:label "Clickbait Headline"@en .
 
 
-###  http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveTitle
-:DescriptiveTitle rdf:type owl:NamedIndividual ,
-                           :ClickBaitCategory ;
-                  rdfs:comment "Represents a descriptive title category. This means that it is not considered clickbait."@en ;
-                  rdfs:label "Descriptive Title"@en .
+###  http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline
+:DescriptiveHeadline rdf:type owl:NamedIndividual ,
+                              :ClickBaitCategory ;
+                     rdfs:comment "Represents a descriptive headline category. This means that it is not considered clickbait."@en ;
+                     rdfs:label "Descriptive Headline"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#Neutral

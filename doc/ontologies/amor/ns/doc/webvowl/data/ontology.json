@@ -202,7 +202,7 @@
       "en" : "Represents an emotion detected in textual sources."
     },
     "id" : "7",
-    "superClasses" : [ "20", "4", "5" ]
+    "superClasses" : [ "4", "20", "5" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
@@ -215,7 +215,7 @@
       "en" : "Represents an opinion detected in textual sources."
     },
     "id" : "9",
-    "superClasses" : [ "4", "5", "24" ]
+    "superClasses" : [ "4", "24", "5" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MLProcess",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
@@ -397,24 +397,24 @@
       "en" : "Clickbait Category"
     },
     "individuals" : [ {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveTitle",
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
       "comment" : {
-        "en" : "Represents a descriptive title category. This means that it is not considered clickbait."
+        "en" : "Represents a descriptive headline category. This means that it is not considered clickbait."
       },
       "labels" : {
-        "IRI-based" : "DescriptiveTitle",
-        "en" : "Descriptive Title"
+        "IRI-based" : "DescriptiveHeadline",
+        "en" : "Descriptive Headline"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitTitle",
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
       "comment" : {
-        "en" : "Represents a clickbait title category. This means that it is considered clickbait."
+        "en" : "Represents a clickbait headline category. This means that it is considered clickbait."
       },
       "labels" : {
-        "IRI-based" : "ClickBaitTitle",
-        "en" : "Clickbait Title"
+        "IRI-based" : "ClickBaitHeadline",
+        "en" : "Clickbait Headline"
       }
     } ],
     "comment" : {

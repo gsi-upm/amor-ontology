@@ -450,24 +450,24 @@
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitTitle -->
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitTitle">
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline">
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory"/>
-        <rdfs:comment xml:lang="en">Represents a clickbait title category. This means that it is considered clickbait.</rdfs:comment>
-        <rdfs:label xml:lang="en">Clickbait Title</rdfs:label>
+        <rdfs:comment xml:lang="en">Represents a clickbait headline category. This means that it is considered clickbait.</rdfs:comment>
+        <rdfs:label xml:lang="en">Clickbait Headline</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveTitle -->
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveTitle">
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline">
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory"/>
-        <rdfs:comment xml:lang="en">Represents a descriptive title category. This means that it is not considered clickbait.</rdfs:comment>
-        <rdfs:label xml:lang="en">Descriptive Title</rdfs:label>
+        <rdfs:comment xml:lang="en">Represents a descriptive headline category. This means that it is not considered clickbait.</rdfs:comment>
+        <rdfs:label xml:lang="en">Descriptive Headline</rdfs:label>
     </owl:NamedIndividual>
     
 

@@ -139,32 +139,32 @@
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ]
 }, {
-  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitTitle",
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Represents a clickbait title category. This means that it is considered clickbait."
+    "@value" : "Represents a clickbait headline category. This means that it is considered clickbait."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Clickbait Title"
+    "@value" : "Clickbait Headline"
   } ]
 }, {
-  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveTitle",
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Represents a descriptive title category. This means that it is not considered clickbait."
+    "@value" : "Represents a descriptive headline category. This means that it is not considered clickbait."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Descriptive Title"
+    "@value" : "Descriptive Headline"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation",

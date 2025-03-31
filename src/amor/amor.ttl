@@ -130,13 +130,13 @@ amor:ClickBaitCategory
   rdfs:label "Clickbait Category"@en ;
   rdfs:comment "Represents a category of clickbait."@en .
 
-amor:ClickBaitTitle a amor:ClickBaitCategory ;
-  rdfs:label "Clickbait Title"@en ;
-  rdfs:comment "Represents a clickbait title category. This means that it is considered clickbait."@en .
+amor:ClickBaitHeadline a amor:ClickBaitCategory ;
+  rdfs:label "Clickbait Headline"@en ;
+  rdfs:comment "Represents a clickbait headline category. This means that it is considered clickbait."@en .
 
-amor:DescriptiveTitle a amor:ClickBaitCategory ;
-  rdfs:label "Descriptive Title"@en ;
-  rdfs:comment "Represents a descriptive title category. This means that it is not considered clickbait."@en .
+amor:DescriptiveHeadline a amor:ClickBaitCategory ;
+  rdfs:label "Descriptive Headline"@en ;
+  rdfs:comment "Represents a descriptive headline category. This means that it is not considered clickbait."@en .
 
 # Replace with itsrdf:taConfidence
 #:confidence
