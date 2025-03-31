@@ -81,12 +81,12 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the category of the moral value."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.w3.org/2000/01/rdf-schema#label> "has moral value category"@en .
 # 
-# http://www.gsi.upm.es/ontologies/amor/ns#isClickBaitTitle
-<http://www.gsi.upm.es/ontologies/amor/ns#isClickBaitTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.gsi.upm.es/ontologies/amor/ns#isClickBaitTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation> .
-<http://www.gsi.upm.es/ontologies/amor/ns#isClickBaitTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory> .
-<http://www.gsi.upm.es/ontologies/amor/ns#isClickBaitTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a ClickBaitAnnotation with the category of clickbait."@en .
-<http://www.gsi.upm.es/ontologies/amor/ns#isClickBaitTitle> <http://www.w3.org/2000/01/rdf-schema#label> "is clickbait title"@en .
+# http://www.gsi.upm.es/ontologies/amor/ns#headlineCategory
+<http://www.gsi.upm.es/ontologies/amor/ns#headlineCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.gsi.upm.es/ontologies/amor/ns#headlineCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation> .
+<http://www.gsi.upm.es/ontologies/amor/ns#headlineCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory> .
+<http://www.gsi.upm.es/ontologies/amor/ns#headlineCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the category of the clickbait headline."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#headlineCategory> <http://www.w3.org/2000/01/rdf-schema#label> "headline category"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel
 <http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -155,11 +155,11 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a clickbait annotation extracted from textual sources."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "Clickbait Annotation"@en .
 # 
-# http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory
-<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
-<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a category of clickbait."@en .
-<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Clickbait Category"@en .
+# http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory
+<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a category of clickbait."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Clickbait Category"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation
 <http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -259,13 +259,13 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline
 <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory> .
+<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory> .
 <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a clickbait headline category. This means that it is considered clickbait."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline> <http://www.w3.org/2000/01/rdf-schema#label> "Clickbait Headline"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline
 <http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory> .
+<http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory> .
 <http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a descriptive headline category. This means that it is not considered clickbait."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline> <http://www.w3.org/2000/01/rdf-schema#label> "Descriptive Headline"@en .
 # 

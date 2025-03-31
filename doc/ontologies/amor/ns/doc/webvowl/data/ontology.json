@@ -90,6 +90,9 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
     "id" : "31",
     "type" : "owl:Class"
   }, {
@@ -102,16 +105,16 @@
     "id" : "29",
     "type" : "owl:Class"
   }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "17",
-    "type" : "owl:Class"
-  }, {
-    "id" : "52",
-    "type" : "owl:Class"
-  }, {
     "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
     "type" : "owl:unionOf"
   }, {
     "id" : "24",
@@ -132,16 +135,13 @@
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
     "id" : "8",
     "type" : "owl:Class"
   }, {
     "id" : "16",
     "type" : "owl:unionOf"
   }, {
-    "id" : "54",
+    "id" : "55",
     "type" : "owl:Class"
   }, {
     "id" : "26",
@@ -187,7 +187,7 @@
     "label" : {
       "IRI-based" : "Entity"
     },
-    "subClasses" : [ "16", "6", "3", "11", "17", "18", "7", "8", "19", "9" ],
+    "subClasses" : [ "16", "17", "6", "3", "11", "18", "7", "8", "19", "9" ],
     "attributes" : [ "external" ],
     "id" : "4"
   }, {
@@ -202,7 +202,7 @@
       "en" : "Represents an emotion detected in textual sources."
     },
     "id" : "7",
-    "superClasses" : [ "4", "20", "5" ]
+    "superClasses" : [ "20", "4", "5" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
@@ -215,7 +215,7 @@
       "en" : "Represents an opinion detected in textual sources."
     },
     "id" : "9",
-    "superClasses" : [ "4", "24", "5" ]
+    "superClasses" : [ "4", "5", "24" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MLProcess",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
@@ -229,6 +229,40 @@
     },
     "id" : "1",
     "superClasses" : [ "0", "26" ]
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClickBaitHeadlineCategory",
+      "en" : "Clickbait Category"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+      "comment" : {
+        "en" : "Represents a descriptive headline category. This means that it is not considered clickbait."
+      },
+      "labels" : {
+        "IRI-based" : "DescriptiveHeadline",
+        "en" : "Descriptive Headline"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+      "comment" : {
+        "en" : "Represents a clickbait headline category. This means that it is considered clickbait."
+      },
+      "labels" : {
+        "IRI-based" : "ClickBaitHeadline",
+        "en" : "Clickbait Headline"
+      }
+    } ],
+    "comment" : {
+      "en" : "Represents a category of clickbait."
+    },
+    "id" : "17",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String",
     "baseIri" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core",
@@ -274,20 +308,6 @@
     "attributes" : [ "external" ],
     "id" : "29"
   }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MoralValueAnalysis",
-      "en" : "Moral Value Analysis"
-    },
-    "subClasses" : [ "30" ],
-    "comment" : {
-      "en" : "Represents the activity of analyzing text for moral values."
-    },
-    "id" : "2",
-    "superClasses" : [ "0" ]
-  }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
     "instances" : 0,
@@ -309,8 +329,22 @@
     "comment" : {
       "en" : "Represents a category of moral values."
     },
-    "id" : "17",
+    "id" : "18",
     "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralValueAnalysis",
+      "en" : "Moral Value Analysis"
+    },
+    "subClasses" : [ "30" ],
+    "comment" : {
+      "en" : "Represents the activity of analyzing text for moral values."
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
   }, {
     "iri" : "http://schema.org/NewsArticle",
     "baseIri" : "http://schema.org",
@@ -319,12 +353,12 @@
       "IRI-based" : "NewsArticle"
     },
     "attributes" : [ "external" ],
-    "id" : "52"
+    "id" : "53"
   }, {
     "instances" : 0,
     "union" : [ "11", "8" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "53"
+    "id" : "54"
   }, {
     "iri" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Opinion",
     "baseIri" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core",
@@ -389,40 +423,6 @@
     "id" : "6",
     "superClasses" : [ "4", "5" ]
   }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ClickBaitCategory",
-      "en" : "Clickbait Category"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-      "comment" : {
-        "en" : "Represents a descriptive headline category. This means that it is not considered clickbait."
-      },
-      "labels" : {
-        "IRI-based" : "DescriptiveHeadline",
-        "en" : "Descriptive Headline"
-      }
-    }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-      "comment" : {
-        "en" : "Represents a clickbait headline category. This means that it is considered clickbait."
-      },
-      "labels" : {
-        "IRI-based" : "ClickBaitHeadline",
-        "en" : "Clickbait Headline"
-      }
-    } ],
-    "comment" : {
-      "en" : "Represents a category of clickbait."
-    },
-    "id" : "18",
-    "superClasses" : [ "4" ]
-  }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
     "instances" : 0,
@@ -443,7 +443,7 @@
       "IRI-based" : "AnalysedEntity",
       "en" : "Analysed Entity"
     },
-    "union" : [ "31", "52", "29" ],
+    "union" : [ "31", "53", "29" ],
     "comment" : {
       "en" : "Represents any analysed entity that is used as a source of the analysis. It be text, such as a string or a news article; but it can be an agent; i.e. a human or a robot analysed using the results of a questionnarie."
     },
@@ -458,7 +458,7 @@
       "IRI-based" : "Model"
     },
     "attributes" : [ "external" ],
-    "id" : "54"
+    "id" : "55"
   }, {
     "iri" : "http://www.w3.org/ns/mls#Run",
     "baseIri" : "http://www.w3.org/ns/mls",
@@ -546,19 +546,19 @@
     "id" : "49",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "51",
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "50",
+    "id" : "51",
     "type" : "owl:objectProperty"
   }, {
     "id" : "14",
     "type" : "owl:objectProperty"
   }, {
     "id" : "15",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "55",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -638,12 +638,12 @@
     "id" : "34"
   }, {
     "range" : "4",
-    "domain" : "17",
+    "domain" : "11",
     "attributes" : [ "object", "anonymous" ],
     "id" : "35"
   }, {
     "range" : "4",
-    "domain" : "11",
+    "domain" : "3",
     "attributes" : [ "object", "anonymous" ],
     "id" : "36"
   }, {
@@ -663,12 +663,12 @@
     "id" : "39"
   }, {
     "range" : "4",
-    "domain" : "3",
+    "domain" : "6",
     "attributes" : [ "object", "anonymous" ],
     "id" : "40"
   }, {
     "range" : "4",
-    "domain" : "6",
+    "domain" : "17",
     "attributes" : [ "object", "anonymous" ],
     "id" : "41"
   }, {
@@ -707,6 +707,20 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "48"
   }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#headlineCategory",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "headlineCategory",
+      "en" : "headline category"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Specifies the category of the clickbait headline."
+    },
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
     "iri" : "http://www.w3.org/ns/prov#hadMember",
     "baseIri" : "http://www.w3.org/ns/prov",
     "range" : "13",
@@ -714,29 +728,29 @@
       "IRI-based" : "hadMember"
     },
     "domain" : "13",
-    "subproperty" : [ "50" ],
+    "subproperty" : [ "51" ],
     "attributes" : [ "external", "object" ],
-    "id" : "49"
+    "id" : "50"
   }, {
     "range" : "2",
     "domain" : "30",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "51"
+    "id" : "52"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-    "range" : "17",
+    "range" : "18",
     "label" : {
       "IRI-based" : "hasMoralValueCategory",
       "en" : "has moral value category"
     },
-    "superproperty" : [ "49" ],
-    "domain" : "53",
+    "superproperty" : [ "50" ],
+    "domain" : "54",
     "comment" : {
       "en" : "Specifies the category of the moral value."
     },
     "attributes" : [ "object" ],
-    "id" : "50"
+    "id" : "51"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#analysed",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
@@ -755,7 +769,7 @@
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-    "range" : "54",
+    "range" : "55",
     "label" : {
       "IRI-based" : "usedMLModel",
       "en" : "used machine learning model"
@@ -767,19 +781,5 @@
     },
     "attributes" : [ "object" ],
     "id" : "15"
-  }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#isClickBaitTitle",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-    "range" : "18",
-    "label" : {
-      "IRI-based" : "isClickBaitTitle",
-      "en" : "is clickbait title"
-    },
-    "domain" : "6",
-    "comment" : {
-      "en" : "This property relates a ClickBaitAnnotation with the category of clickbait."
-    },
-    "attributes" : [ "object" ],
-    "id" : "55"
   } ]
 }

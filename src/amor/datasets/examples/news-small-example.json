@@ -27,7 +27,7 @@
           {
             "@id": "amor-datasets:clickbaitAnnot1",
             "@type": "amor:ClickBaitAnnotation",
-            "amor:isClickBaitTitle": {
+            "amor:headlineCategory": {
               "@id": "amor:DescriptiveHeadline"
             },
             "itsrdf:taConfidence": {

@@ -117,24 +117,24 @@ amor:MLProcess
   rdfs:label "Machine Learning Process"@en ;
   rdfs:comment "Represents a process related with Machine Learning that generates some output, such as a mls:Model or any other mls:InformationEntity."@en .
 
-amor:isClickBaitTitle
+amor:headlineCategory
   a owl:ObjectProperty ;
-  rdfs:label "is clickbait title"@en ;
+  rdfs:label "headline category"@en ;
   rdfs:domain amor:ClickBaitAnnotation ;
-  rdfs:range amor:ClickBaitCategory ;
-  rdfs:comment "This property relates a ClickBaitAnnotation with the category of clickbait."@en .
+  rdfs:range amor:ClickBaitHeadlineCategory ;
+  rdfs:comment "Specifies the category of the clickbait headline."@en .
 
-amor:ClickBaitCategory
+amor:ClickBaitHeadlineCategory
   a owl:Class ;
   rdfs:subClassOf prov:Entity ;
   rdfs:label "Clickbait Category"@en ;
   rdfs:comment "Represents a category of clickbait."@en .
 
-amor:ClickBaitHeadline a amor:ClickBaitCategory ;
+amor:ClickBaitHeadline a amor:ClickBaitHeadlineCategory ;
   rdfs:label "Clickbait Headline"@en ;
   rdfs:comment "Represents a clickbait headline category. This means that it is considered clickbait."@en .
 
-amor:DescriptiveHeadline a amor:ClickBaitCategory ;
+amor:DescriptiveHeadline a amor:ClickBaitHeadlineCategory ;
   rdfs:label "Descriptive Headline"@en ;
   rdfs:comment "Represents a descriptive headline category. This means that it is not considered clickbait."@en .
 

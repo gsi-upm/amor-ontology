@@ -46,7 +46,7 @@ ex:mention2 a amor:EntityAnnotation ;
    oa:hasTarget ex:news1 .
 
 ex:clickbaitAnnot1 a amor:ClickBaitAnnotation ;
-   amor:isClickBaitTitle amor:DescriptiveHeadline ;
+   amor:headlineCategory amor:DescriptiveHeadline ;
    itsrdf:taConfidence 0.95 ;
    oa:hasTarget ex:news1 .
 

@@ -82,12 +82,12 @@
                        rdfs:label "has moral value category"@en .
 
 
-###  http://www.gsi.upm.es/ontologies/amor/ns#isClickBaitTitle
-:isClickBaitTitle rdf:type owl:ObjectProperty ;
+###  http://www.gsi.upm.es/ontologies/amor/ns#headlineCategory
+:headlineCategory rdf:type owl:ObjectProperty ;
                   rdfs:domain :ClickBaitAnnotation ;
-                  rdfs:range :ClickBaitCategory ;
-                  rdfs:comment "This property relates a ClickBaitAnnotation with the category of clickbait."@en ;
-                  rdfs:label "is clickbait title"@en .
+                  rdfs:range :ClickBaitHeadlineCategory ;
+                  rdfs:comment "Specifies the category of the clickbait headline."@en ;
+                  rdfs:label "headline category"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel
@@ -153,11 +153,11 @@
                      rdfs:label "Clickbait Annotation"@en .
 
 
-###  http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory
-:ClickBaitCategory rdf:type owl:Class ;
-                   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                   rdfs:comment "Represents a category of clickbait."@en ;
-                   rdfs:label "Clickbait Category"@en .
+###  http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory
+:ClickBaitHeadlineCategory rdf:type owl:Class ;
+                           rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                           rdfs:comment "Represents a category of clickbait."@en ;
+                           rdfs:label "Clickbait Category"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation
@@ -276,14 +276,14 @@
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline
 :ClickBaitHeadline rdf:type owl:NamedIndividual ,
-                            :ClickBaitCategory ;
+                            :ClickBaitHeadlineCategory ;
                    rdfs:comment "Represents a clickbait headline category. This means that it is considered clickbait."@en ;
                    rdfs:label "Clickbait Headline"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline
 :DescriptiveHeadline rdf:type owl:NamedIndividual ,
-                              :ClickBaitCategory ;
+                              :ClickBaitHeadlineCategory ;
                      rdfs:comment "Represents a descriptive headline category. This means that it is not considered clickbait."@en ;
                      rdfs:label "Descriptive Headline"@en .
 

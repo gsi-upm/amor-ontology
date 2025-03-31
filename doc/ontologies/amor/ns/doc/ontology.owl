@@ -136,14 +136,14 @@
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/amor/ns#isClickBaitTitle -->
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#headlineCategory -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#isClickBaitTitle">
+    <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#headlineCategory">
         <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation"/>
-        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory"/>
-        <rdfs:comment xml:lang="en">This property relates a ClickBaitAnnotation with the category of clickbait.</rdfs:comment>
-        <rdfs:label xml:lang="en">is clickbait title</rdfs:label>
+        <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory"/>
+        <rdfs:comment xml:lang="en">Specifies the category of the clickbait headline.</rdfs:comment>
+        <rdfs:label xml:lang="en">headline category</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -253,10 +253,10 @@
     
 
 
-    <!-- http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory -->
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory -->
 
 
-    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory">
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment xml:lang="en">Represents a category of clickbait.</rdfs:comment>
         <rdfs:label xml:lang="en">Clickbait Category</rdfs:label>
@@ -454,7 +454,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory"/>
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory"/>
         <rdfs:comment xml:lang="en">Represents a clickbait headline category. This means that it is considered clickbait.</rdfs:comment>
         <rdfs:label xml:lang="en">Clickbait Headline</rdfs:label>
     </owl:NamedIndividual>
@@ -465,7 +465,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline">
-        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory"/>
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory"/>
         <rdfs:comment xml:lang="en">Represents a descriptive headline category. This means that it is not considered clickbait.</rdfs:comment>
         <rdfs:label xml:lang="en">Descriptive Headline</rdfs:label>
     </owl:NamedIndividual>
