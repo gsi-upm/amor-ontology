@@ -472,6 +472,25 @@
     
 
 
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#Neutral -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#Neutral">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"/>
+        <owl:sameAs rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#NonMoral"/>
+        <rdfs:comment xml:lang="en">Represents a neutral moral value. This indicates that the text does not contain any trace of moral values.</rdfs:comment>
+        <rdfs:label xml:lang="en">Neutral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#NonMoral -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#NonMoral"/>
+    
+
+
     <!-- http://www.gsi.upm.es/ontologies/amor/ns#NonMoral -->
 
 

@@ -105,10 +105,10 @@
     "id" : "29",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "2",
     "type" : "owl:Class"
   }, {
     "id" : "53",
@@ -202,7 +202,7 @@
       "en" : "Represents an emotion detected in textual sources."
     },
     "id" : "7",
-    "superClasses" : [ "20", "4", "5" ]
+    "superClasses" : [ "4", "20", "5" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
@@ -308,20 +308,6 @@
     "attributes" : [ "external" ],
     "id" : "29"
   }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MoralValueAnalysis",
-      "en" : "Moral Value Analysis"
-    },
-    "subClasses" : [ "30" ],
-    "comment" : {
-      "en" : "Represents the activity of analyzing text for moral values."
-    },
-    "id" : "2",
-    "superClasses" : [ "0" ]
-  }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
     "instances" : 0,
@@ -330,6 +316,16 @@
       "en" : "Moral Value Category"
     },
     "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#Neutral",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+      "comment" : {
+        "en" : "Represents a neutral moral value. This indicates that the text does not contain any trace of moral values."
+      },
+      "labels" : {
+        "IRI-based" : "Neutral",
+        "en" : "Neutral"
+      }
+    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#NonMoral",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
       "comment" : {
@@ -345,6 +341,20 @@
     },
     "id" : "18",
     "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoralValueAnalysis",
+      "en" : "Moral Value Analysis"
+    },
+    "subClasses" : [ "30" ],
+    "comment" : {
+      "en" : "Represents the activity of analyzing text for moral values."
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
   }, {
     "iri" : "http://schema.org/NewsArticle",
     "baseIri" : "http://schema.org",

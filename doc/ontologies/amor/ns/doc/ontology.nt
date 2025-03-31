@@ -269,8 +269,17 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a descriptive headline category. This means that it is not considered clickbait."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline> <http://www.w3.org/2000/01/rdf-schema#label> "Descriptive Headline"@en .
 # 
-# http://www.gsi.upm.es/ontologies/amor/ns#NonMoral
+# http://www.gsi.upm.es/ontologies/amor/ns#Neutral
+<http://www.gsi.upm.es/ontologies/amor/ns#Neutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/ns#Neutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
+<http://www.gsi.upm.es/ontologies/amor/ns#Neutral> <http://www.w3.org/2002/07/owl#sameAs> <http://www.gsi.upm.es/ontologies/amor/ns#NonMoral> .
 <http://www.gsi.upm.es/ontologies/amor/ns#NonMoral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/ns#Neutral> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a neutral moral value. This indicates that the text does not contain any trace of moral values."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#Neutral> <http://www.w3.org/2000/01/rdf-schema#label> "Neutral"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#NonMoral
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#NonMoral
 <http://www.gsi.upm.es/ontologies/amor/ns#NonMoral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
 <http://www.gsi.upm.es/ontologies/amor/ns#NonMoral> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a non moral value. This indicates that the text does not contain any trace of moral values."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#NonMoral> <http://www.w3.org/2000/01/rdf-schema#label> "Non Moral"@en .

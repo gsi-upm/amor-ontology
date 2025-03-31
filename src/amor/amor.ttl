@@ -103,6 +103,11 @@ amor:NonMoral a amor:MoralValueCategory ;
   rdfs:label "Non Moral"@en ;
   rdfs:comment "Represents a non moral value. This indicates that the text does not contain any trace of moral values."@en .
 
+amor:Neutral a amor:MoralValueCategory ;
+  owl:sameAs amor:NonMoral ;
+  rdfs:label "Neutral"@en ;
+  rdfs:comment "Represents a neutral moral value. This indicates that the text does not contain any trace of moral values."@en .
+
 amor:MLEntity
   a owl:Class ;
   rdfs:subClassOf prov:Entity ;

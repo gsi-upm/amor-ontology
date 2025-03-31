@@ -288,6 +288,18 @@
                      rdfs:label "Descriptive Headline"@en .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/ns#Neutral
+:Neutral rdf:type owl:NamedIndividual ,
+                  :MoralValueCategory ;
+         owl:sameAs :NonMoral ;
+         rdfs:comment "Represents a neutral moral value. This indicates that the text does not contain any trace of moral values."@en ;
+         rdfs:label "Neutral"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#NonMoral
+:NonMoral rdf:type owl:NamedIndividual .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/ns#NonMoral
 :NonMoral rdf:type owl:NamedIndividual ,
                    :MoralValueCategory ;
