@@ -137,6 +137,14 @@
                 rdfs:label "Analysed Entity"@en .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation
+:ClickBaitAnnotation rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/ns/oa#Annotation> ,
+                                     <http://www.w3.org/ns/prov#Entity> ;
+                     rdfs:comment "Represents a clickbait annotation extracted from textual sources."@en ;
+                     rdfs:label "Clickbait Annotation"@en .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation
 :EmotionAnnotation rdf:type owl:Class ;
                    rdfs:subClassOf <http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet> ,

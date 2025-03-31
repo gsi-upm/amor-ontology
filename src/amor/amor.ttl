@@ -43,6 +43,13 @@ amor:MoralValueAnnotation
   rdfs:label "Moral Value Annotation"@en ;
   rdfs:comment "Represents a value annotation extracted from textual sources."@en .
 
+
+amor:ClickBaitAnnotation
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity, oa:Annotation ;
+  rdfs:label "Clickbait Annotation"@en ;
+  rdfs:comment "Represents a clickbait annotation extracted from textual sources."@en .
+
 amor:EntityAnnotation
   a owl:Class ;
   rdfs:subClassOf prov:Entity, oa:Annotation ;

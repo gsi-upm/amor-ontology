@@ -75,8 +75,12 @@ parts = js["schema:hasPart"]
 for k in parts.keys():
     parts[k] = all_news[k]
 #js["schema:hasPart"] = all_news
-#del js['@context']
-#
+
+
+del js['@context']
+
+js['@context'] = "http://www.gsi.upm.es/ontologies/amor/experiments/context.jsonld"
+
 #print(json.dumps(js, indent=2))
 print(json.dumps(js, indent=2))
 

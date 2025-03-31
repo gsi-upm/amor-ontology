@@ -229,6 +229,18 @@
     
 
 
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment xml:lang="en">Represents a clickbait annotation extracted from textual sources.</rdfs:comment>
+        <rdfs:label xml:lang="en">Clickbait Annotation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation -->
 
 

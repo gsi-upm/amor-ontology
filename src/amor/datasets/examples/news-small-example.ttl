@@ -45,6 +45,10 @@ ex:mention2 a amor:EntityAnnotation ;
    itsrdf:taConfidence 0.37 ;
    oa:hasTarget ex:news1 .
 
+ex:clickbaitAnnot1 a amor:ClickBaitAnnotation ;
+   itsrdf:taConfidence 0.95 ;
+   oa:hasTarget ex:news1 .
+
 ex:emotionSet1 a amor:EmotionAnnotation ;
    onyx:hasEmotion [
    	onyx:hasEmotionCategory wnaffect:happiness ;

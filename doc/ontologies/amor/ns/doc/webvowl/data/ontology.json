@@ -22,17 +22,17 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "es",
+        "value" : "Sergio Muñoz López",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "es",
         "value" : "Álvaro Carrera Barroso",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "es",
         "value" : "Juan Fernando Sánchez Rada",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "es",
-        "value" : "Sergio Muñoz López",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -81,64 +81,67 @@
     "id" : "4",
     "type" : "owl:Class"
   }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "1",
+    "id" : "16",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "52",
     "type" : "owl:Class"
   }, {
     "id" : "25",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "24",
-    "type" : "owl:Class"
-  }, {
-    "id" : "23",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "47",
-    "type" : "owl:Class"
-  }, {
-    "id" : "48",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "21",
-    "type" : "owl:Class"
-  }, {
-    "id" : "12",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "17",
-    "type" : "owl:Class"
-  }, {
-    "id" : "27",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "49",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -171,7 +174,7 @@
     "label" : {
       "IRI-based" : "Annotation"
     },
-    "subClasses" : [ "3", "6", "7", "8" ],
+    "subClasses" : [ "6", "3", "7", "8", "9" ],
     "attributes" : [ "external" ],
     "id" : "5"
   }, {
@@ -181,7 +184,7 @@
     "label" : {
       "IRI-based" : "Entity"
     },
-    "subClasses" : [ "15", "3", "10", "16", "6", "7", "17", "8" ],
+    "subClasses" : [ "16", "6", "3", "11", "17", "7", "8", "18", "9" ],
     "attributes" : [ "external" ],
     "id" : "4"
   }, {
@@ -195,8 +198,8 @@
     "comment" : {
       "en" : "Represents an emotion detected in textual sources."
     },
-    "id" : "6",
-    "superClasses" : [ "18", "4", "5" ]
+    "id" : "7",
+    "superClasses" : [ "4", "19", "5" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
@@ -208,8 +211,8 @@
     "comment" : {
       "en" : "Represents an opinion detected in textual sources."
     },
-    "id" : "8",
-    "superClasses" : [ "4", "21", "5" ]
+    "id" : "9",
+    "superClasses" : [ "4", "5", "23" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MLProcess",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
@@ -222,7 +225,7 @@
       "en" : "Represents a process related with Machine Learning that generates some output, such as a mls:Model or any other mls:InformationEntity."
     },
     "id" : "1",
-    "superClasses" : [ "0", "20" ]
+    "superClasses" : [ "0", "25" ]
   }, {
     "iri" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String",
     "baseIri" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core",
@@ -231,7 +234,7 @@
       "IRI-based" : "String"
     },
     "attributes" : [ "external" ],
-    "id" : "25"
+    "id" : "29"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
@@ -243,7 +246,7 @@
     "comment" : {
       "en" : "Represents a model for categorizing moral values."
     },
-    "id" : "10",
+    "id" : "11",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile",
@@ -256,7 +259,7 @@
     "comment" : {
       "en" : "Represents the moral profile analysis of an agent."
     },
-    "id" : "24",
+    "id" : "28",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Agent",
@@ -266,7 +269,7 @@
       "IRI-based" : "Agent"
     },
     "attributes" : [ "external" ],
-    "id" : "23"
+    "id" : "27"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
@@ -278,7 +281,7 @@
     "comment" : {
       "en" : "Represents a category of moral values."
     },
-    "id" : "16",
+    "id" : "17",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis",
@@ -288,7 +291,7 @@
       "IRI-based" : "MoralValueAnalysis",
       "en" : "Moral Value Analysis"
     },
-    "subClasses" : [ "24" ],
+    "subClasses" : [ "28" ],
     "comment" : {
       "en" : "Represents the activity of analyzing text for moral values."
     },
@@ -302,12 +305,12 @@
       "IRI-based" : "NewsArticle"
     },
     "attributes" : [ "external" ],
-    "id" : "47"
+    "id" : "50"
   }, {
     "instances" : 0,
-    "union" : [ "10", "7" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "48"
+    "union" : [ "11", "8" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "51"
   }, {
     "iri" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Opinion",
     "baseIri" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core",
@@ -315,13 +318,13 @@
     "label" : {
       "IRI-based" : "Opinion"
     },
-    "subClasses" : [ "8" ],
+    "subClasses" : [ "9" ],
     "attributes" : [ "external" ],
-    "id" : "21"
+    "id" : "23"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "12",
+    "id" : "13",
     "label" : {
       "undefined" : "Thing"
     }
@@ -336,8 +339,8 @@
     "comment" : {
       "en" : "Represents any entity related with a Machine Learning process. It is a subclass of mls:Entity and prov:Entity."
     },
-    "id" : "17",
-    "superClasses" : [ "4", "27" ]
+    "id" : "18",
+    "superClasses" : [ "4", "22" ]
   }, {
     "iri" : "http://www.w3.org/ns/mls#InformationEntity",
     "baseIri" : "http://www.w3.org/ns/mls",
@@ -345,9 +348,9 @@
     "label" : {
       "IRI-based" : "InformationEntity"
     },
-    "subClasses" : [ "17" ],
+    "subClasses" : [ "18" ],
     "attributes" : [ "external" ],
-    "id" : "27"
+    "id" : "22"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet",
     "baseIri" : "http://www.gsi.upm.es/ontologies/onyx/ns",
@@ -355,9 +358,22 @@
     "label" : {
       "IRI-based" : "EmotionSet"
     },
-    "subClasses" : [ "6" ],
+    "subClasses" : [ "7" ],
     "attributes" : [ "external" ],
-    "id" : "18"
+    "id" : "19"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClickBaitAnnotation",
+      "en" : "Clickbait Annotation"
+    },
+    "comment" : {
+      "en" : "Represents a clickbait annotation extracted from textual sources."
+    },
+    "id" : "6",
+    "superClasses" : [ "4", "5" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
@@ -369,7 +385,7 @@
     "comment" : {
       "en" : "Represents a value annotation extracted from textual sources."
     },
-    "id" : "7",
+    "id" : "8",
     "superClasses" : [ "4", "5" ]
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity",
@@ -379,12 +395,12 @@
       "IRI-based" : "AnalysedEntity",
       "en" : "Analysed Entity"
     },
-    "union" : [ "25", "47", "23" ],
+    "union" : [ "29", "50", "27" ],
     "comment" : {
       "en" : "Represents any analysed entity that is used as a source of the analysis. It be text, such as a string or a news article; but it can be an agent; i.e. a human or a robot analysed using the results of a questionnarie."
     },
     "attributes" : [ "union" ],
-    "id" : "15",
+    "id" : "16",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "http://www.w3.org/ns/mls#Model",
@@ -394,7 +410,7 @@
       "IRI-based" : "Model"
     },
     "attributes" : [ "external" ],
-    "id" : "49"
+    "id" : "52"
   }, {
     "iri" : "http://www.w3.org/ns/mls#Run",
     "baseIri" : "http://www.w3.org/ns/mls",
@@ -404,29 +420,26 @@
     },
     "subClasses" : [ "1" ],
     "attributes" : [ "external" ],
-    "id" : "20"
+    "id" : "25"
   } ],
   "property" : [ {
-    "id" : "9",
+    "id" : "10",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "11",
+    "id" : "12",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "19",
+    "id" : "20",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "22",
-    "type" : "owl:objectProperty"
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "26",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "28",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "29",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "30",
     "type" : "rdfs:SubClassOf"
@@ -471,210 +484,229 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "44",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "46",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "45",
+    "id" : "47",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "13",
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
     "type" : "owl:objectProperty"
   }, {
     "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-    "range" : "10",
+    "range" : "11",
     "label" : {
       "IRI-based" : "usedMoralValueModel",
       "en" : "used moral value model"
     },
-    "superproperty" : [ "11" ],
+    "superproperty" : [ "12" ],
     "domain" : "2",
     "comment" : {
       "en" : "Specifies the moral value model used in the analysis."
     },
     "attributes" : [ "object" ],
-    "id" : "9"
+    "id" : "10"
   }, {
     "iri" : "http://www.w3.org/ns/prov#used",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "12",
+    "range" : "13",
     "label" : {
       "IRI-based" : "used"
     },
-    "domain" : "12",
-    "subproperty" : [ "13", "9", "14" ],
+    "domain" : "13",
+    "subproperty" : [ "14", "10", "15" ],
     "attributes" : [ "external", "object" ],
-    "id" : "11"
+    "id" : "12"
   }, {
-    "range" : "20",
+    "range" : "19",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "22",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "range" : "25",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "19"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-    "range" : "24",
+    "range" : "28",
     "label" : {
       "IRI-based" : "hasMoralProfile",
       "en" : "has moral profile"
     },
-    "domain" : "23",
+    "domain" : "27",
     "comment" : {
       "en" : "Relates an agent (human or not) with its moral profile."
     },
     "attributes" : [ "object" ],
-    "id" : "22"
-  }, {
-    "range" : "27",
-    "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "26"
   }, {
-    "range" : "21",
-    "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "28"
-  }, {
-    "range" : "18",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "29"
-  }, {
     "range" : "4",
-    "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "30"
   }, {
     "range" : "4",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "31"
   }, {
-    "range" : "4",
-    "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "23",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "32"
   }, {
     "range" : "4",
     "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "33"
   }, {
     "range" : "4",
-    "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "34"
   }, {
     "range" : "4",
-    "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "35"
   }, {
     "range" : "4",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "36"
+  }, {
+    "range" : "4",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
   }, {
     "range" : "0",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "37"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
   }, {
     "range" : "0",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "38"
-  }, {
-    "range" : "5",
-    "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "39"
-  }, {
-    "range" : "5",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "40"
-  }, {
-    "range" : "5",
-    "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "41"
   }, {
     "range" : "5",
-    "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "42"
   }, {
-    "range" : "2",
-    "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "5",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "43"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "5",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "range" : "5",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadMember",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "12",
+    "range" : "13",
     "label" : {
       "IRI-based" : "hadMember"
     },
-    "domain" : "12",
-    "subproperty" : [ "45" ],
+    "domain" : "13",
+    "subproperty" : [ "48" ],
     "attributes" : [ "external", "object" ],
-    "id" : "44"
+    "id" : "47"
   }, {
-    "range" : "4",
-    "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "46"
+    "range" : "2",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-    "range" : "16",
+    "range" : "17",
     "label" : {
       "IRI-based" : "hasMoralValueCategory",
       "en" : "has moral value category"
     },
-    "superproperty" : [ "44" ],
-    "domain" : "48",
+    "superproperty" : [ "47" ],
+    "domain" : "51",
     "comment" : {
       "en" : "Specifies the category of the moral value."
     },
     "attributes" : [ "object" ],
-    "id" : "45"
+    "id" : "48"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#analysed",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-    "range" : "15",
+    "range" : "16",
     "label" : {
       "IRI-based" : "analysed",
       "en" : "analysed"
     },
-    "superproperty" : [ "11" ],
+    "superproperty" : [ "12" ],
     "domain" : "2",
     "comment" : {
       "en" : "This property relates a ValueAnalysis with the resource that is analysed."
     },
     "attributes" : [ "object" ],
-    "id" : "13"
+    "id" : "14"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
-    "range" : "49",
+    "range" : "52",
     "label" : {
       "IRI-based" : "usedMLModel",
       "en" : "used machine learning model"
     },
-    "superproperty" : [ "11" ],
+    "superproperty" : [ "12" ],
     "domain" : "0",
     "comment" : {
       "en" : "This property relates an activity (such as a MoralAnalysis ) with the Machine Learning Model (mls:Model) used to carry out the activity."
     },
     "attributes" : [ "object" ],
-    "id" : "14"
+    "id" : "15"
   } ]
 }

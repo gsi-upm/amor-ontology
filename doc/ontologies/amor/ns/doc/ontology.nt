@@ -140,12 +140,19 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents any analysed entity that is used as a source of the analysis. It be text, such as a string or a news article; but it can be an agent; i.e. a human or a robot analysed using the results of a questionnarie."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Analysed Entity"@en .
 # 
+# http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation
+<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/oa#Annotation> .
+<http://www.w3.org/ns/oa#Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a clickbait annotation extracted from textual sources."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "Clickbait Annotation"@en .
+# 
 # http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation
 <http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet> .
 <http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/oa#Annotation> .
-<http://www.w3.org/ns/oa#Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
 <http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an emotion detected in textual sources."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "emotion annotation"@en .
