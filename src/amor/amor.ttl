@@ -99,6 +99,10 @@ amor:MoralValueCategory
   rdfs:label "Moral Value Category"@en ;
   rdfs:comment "Represents a category of moral values."@en .
 
+amor:Neutral a amor:MoralValueCategory ;
+  rdfs:label "Neutral"@en ;
+  rdfs:comment "The neutral category is used to represent the absence of a moral value in the analysed content."@en .
+
 amor:MLEntity
   a owl:Class ;
   rdfs:subClassOf prov:Entity ;
@@ -112,6 +116,27 @@ amor:MLProcess
   rdfs:subClassOf mls:Run ;
   rdfs:label "Machine Learning Process"@en ;
   rdfs:comment "Represents a process related with Machine Learning that generates some output, such as a mls:Model or any other mls:InformationEntity."@en .
+
+amor:isClickBaitTitle
+  a owl:ObjectProperty ;
+  rdfs:label "is clickbait title"@en ;
+  rdfs:domain amor:ClickBaitAnnotation ;
+  rdfs:range amor:ClickBaitCategory ;
+  rdfs:comment "This property relates a ClickBaitAnnotation with the category of clickbait."@en .
+
+amor:ClickBaitCategory
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity ;
+  rdfs:label "Clickbait Category"@en ;
+  rdfs:comment "Represents a category of clickbait."@en .
+
+amor:ClickBaitTitle a amor:ClickBaitCategory ;
+  rdfs:label "Clickbait Title"@en ;
+  rdfs:comment "Represents a clickbait title category. This means that it is considered clickbait."@en .
+
+amor:DescriptiveTitle a amor:ClickBaitCategory ;
+  rdfs:label "Descriptive Title"@en ;
+  rdfs:comment "Represents a descriptive title category. This means that it is not considered clickbait."@en .
 
 # Replace with itsrdf:taConfidence
 #:confidence

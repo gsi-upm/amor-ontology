@@ -125,6 +125,48 @@
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ]
 }, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a category of clickbait."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Clickbait Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a clickbait title category. This means that it is considered clickbait."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Clickbait Title"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a descriptive title category. This means that it is not considered clickbait."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Descriptive Title"
+  } ]
+}, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -263,6 +305,20 @@
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ]
 }, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#Neutral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The neutral category is used to represent the absence of a moral value in the analysed content."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Neutral"
+  } ]
+}, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -336,6 +392,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#hadMember"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#isClickBaitTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property relates a ClickBaitAnnotation with the category of clickbait."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is clickbait title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel",

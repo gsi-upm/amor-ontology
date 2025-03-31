@@ -5,6 +5,7 @@ This section provides details for each class and property defined by AMOR Moral 
  <ul class="hlist">
   <li><a href="#AnalysedEntity" title="http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity">Analysed Entity</a></li>
   <li><a href="#ClickBaitAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation">Clickbait Annotation</a></li>
+  <li><a href="#ClickBaitCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory">Clickbait Category</a></li>
   <li><a href="#EmotionAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation">emotion annotation</a></li>
   <li><a href="#MLEntity" title="http://www.gsi.upm.es/ontologies/amor/ns#MLEntity">Machine Learning Entity</a></li>
   <li><a href="#MLProcess" title="http://www.gsi.upm.es/ontologies/amor/ns#MLProcess">Machine Learning Process</a></li>
@@ -55,6 +56,39 @@ This section provides details for each class and property defined by AMOR Moral 
    </dt>
    <dd>
     <a href="http://www.w3.org/ns/oa#Annotation" target="_blank" title="http://www.w3.org/ns/oa#Annotation">Annotation</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#isClickBaitTitle" title="http://www.gsi.upm.es/ontologies/amor/ns#isClickBaitTitle">is clickbait title</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ClickBaitCategory">
+  <h3>Clickbait Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory</p>
+  <div class="comment">
+   <span class="markdown">Represents a category of clickbait.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#isClickBaitTitle" title="http://www.gsi.upm.es/ontologies/amor/ns#isClickBaitTitle">is clickbait title</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#ClickBaitTitle" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitTitle">Clickbait Title</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DescriptiveTitle" title="http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveTitle">Descriptive Title</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -191,6 +225,12 @@ This section provides details for each class and property defined by AMOR Moral 
    <dd>
     <a href="#hasMoralValueCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory">has moral value category</a> <sup class="type-op" title="object property">op</sup>
    </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Neutral" title="http://www.gsi.upm.es/ontologies/amor/ns#Neutral">Neutral</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
   </dl>
  </div>
  <div class="entity" id="MoralValueModel">
@@ -256,6 +296,7 @@ This section provides details for each class and property defined by AMOR Moral 
   <li><a href="#analysed" title="http://www.gsi.upm.es/ontologies/amor/ns#analysed">analysed</a></li>
   <li><a href="#hasMoralProfile" title="http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile">has moral profile</a></li>
   <li><a href="#hasMoralValueCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory">has moral value category</a></li>
+  <li><a href="#isClickBaitTitle" title="http://www.gsi.upm.es/ontologies/amor/ns#isClickBaitTitle">is clickbait title</a></li>
   <li><a href="#usedMLModel" title="http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel">used machine learning model</a></li>
   <li><a href="#usedMoralValueModel" title="http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel">used moral value model</a></li>
  </ul>
@@ -340,6 +381,29 @@ This section provides details for each class and property defined by AMOR Moral 
    </dl>
   </div>
  </div>
+ <div class="entity" id="isClickBaitTitle">
+  <h3>is clickbait title<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#isClickBaitTitle</p>
+  <div class="comment">
+   <span class="markdown">This property relates a ClickBaitAnnotation with the category of clickbait.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ClickBaitAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation">Clickbait Annotation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ClickBaitCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory">Clickbait Category</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="usedMLModel">
   <h3>used machine learning model<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel</p>
@@ -398,10 +462,63 @@ This section provides details for each class and property defined by AMOR Moral 
    </dl>
   </div>
  </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#ClickBaitTitle" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitTitle">Clickbait Title</a></li>
+  <li><a href="#DescriptiveTitle" title="http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveTitle">Descriptive Title</a></li>
+  <li><a href="#Neutral" title="http://www.gsi.upm.es/ontologies/amor/ns#Neutral">Neutral</a></li>
+ </ul>
+ <div class="entity" id="ClickBaitTitle">
+  <h3>Clickbait Title<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitTitle</p>
+  <div class="comment">
+   <span class="markdown">Represents a clickbait title category. This means that it is considered clickbait.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ClickBaitCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory">Clickbait Category</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DescriptiveTitle">
+  <h3>Descriptive Title<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveTitle</p>
+  <div class="comment">
+   <span class="markdown">Represents a descriptive title category. This means that it is not considered clickbait.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ClickBaitCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitCategory">Clickbait Category</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Neutral">
+  <h3>Neutral<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#Neutral</p>
+  <div class="comment">
+   <span class="markdown">The neutral category is used to represent the absence of a moral value in the analysed content.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#MoralValueCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory">Moral Value Category</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
 </div>
 </div>
