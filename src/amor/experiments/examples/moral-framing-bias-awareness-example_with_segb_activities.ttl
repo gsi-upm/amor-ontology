@@ -1,0 +1,205 @@
+@prefix amor: <http://www.gsi.upm.es/ontologies/amor/ns#> .
+@prefix amor-exp: <http://www.gsi.upm.es/ontologies/amor/experiments/ns#> .
+@prefix amor-graph: <http://amor-graph.gsi.upm.es/ns#> .
+@prefix amor-mft: <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#> .
+@prefix ex: <http://www.gsi.upm.es/ontologies/amor/experiments/examples#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mft: <http://www.gsi.upm.es/ontologies/mft/ns#> .
+@prefix oro: <http://kb.openrobots.org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix segb: <http://www.gsi.upm.es/ontologies/segb/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:experiment_moral_framing_bias_awareness_0001 a owl:NamedIndividual ,
+        amor-exp:Experiment ,
+        amor-exp:DigitalNewspaperExperiment ,
+        amor-exp:MoralFrameExperiment;
+    rdfs:label "experiment_moral_framing_bias_awareness_0001" ;
+    amor-exp:recordsToSEGB "https://amor-segb.gsi.upm.es" ;
+    amor-exp:hasExecutor ex:ari41 ;
+    amor-exp:hasRequester ex:researcher1 ;
+    amor-exp:hasExperimentationSubject ex:user_moralbias_001 ;
+    amor-exp:usesDataset amor-graph:dataset1 ;
+    amor-exp:hasRecommendationStrategy amor-exp:EntitySimilarity ;
+    amor-exp:hasVisualizationStrategy amor-exp:StandardVisualizationStrategy ;
+    amor-exp:usesLanguage "es_ES" ;
+    amor-exp:usesAvatar [
+            a amor-exp:Avatar ;
+            amor-exp:hasCategory "generic"^^xsd:string ;
+            foaf:gender "male"^^xsd:string ;
+            amor-exp:hasFacialExpresivity amor-exp:EmotiveExpresivity ;
+            amor-exp:hasGesturalExpresivity amor-exp:EmotiveExpresivity ;
+            amor-exp:hasVocalExpresivity amor-exp:EmotiveExpresivity ;
+    ] ;
+    amor-exp:hasContentAdaptationStrategy amor-exp:NoAdaptationStrategy ;
+    amor-exp:hasBackgroundScenario "interfaz-web-noticias"^^xsd:string ;
+    amor-exp:hasLLMConfiguration [
+        a amor-exp:LLMConfiguration ;
+        amor-exp:usesLLMService "ollama" ;
+        amor-exp:usesLLMEndPoint "http://localhost:6505" ;
+        amor-exp:hasLLMModel "phi4:14b" ;
+        amor-exp:usesPrompt "You are a news reader. You have to read the following news and answer the questions." ;
+    ] ;
+    amor-exp:usesEmotionRecognitionCooperationStrategy amor-exp:NoCooperationEmotionRecognition ;
+    amor-exp:usesSemanticCooperationConfiguration [ amor-exp:usesSemanticCooperationStrategy amor-exp:NoCooperationSemantic ];
+    amor-exp:usesRobotCooperationConfiguration [ amor-exp:usesRobotCooperationStrategy amor-exp:NoCooperationRobot ] ;
+    amor-exp:hasExperimentEvaluation [
+            a amor-exp:ExperimentEvalution ;
+            amor-exp:hasInitialQuestion ex:question1 ,
+                ex:question2 ,
+                ex:question3 ,
+                ex:question4 ,
+                ex:question5 ,
+                ex:question6 ;
+            amor-exp:hasIntermediateQuestion ex:question7 , 
+                ex:question8 ,
+                ex:question9 ,
+                ex:question10 ;
+            amor-exp:hasFinalQuestion ex:question11 ,
+                ex:question12 ,
+                ex:question13 ,
+                ex:question14 
+        ] .
+
+
+### [Dataset]
+amor-graph:dataset1 a amor-exp:NewsDataset ;
+   schema:url "http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json" .
+
+### [Agents: Experiment Requester, Experiment Executor, Experimentation Subject]
+ex:researcher1 a amor-exp:ExperimentRequester ,
+        prov:Person ,
+        foaf:Person ;
+    rdfs:label "Alejo"@en .
+
+ex:ari41 a amor-exp:ExperimentExecutor ,
+        prov:SoftwareAgent ,
+        oro:Robot ;
+    rdfs:label "ARI 41"@en .
+
+ex:user_moralbias_001 a amor-exp:ExperimentationSubject ,
+        prov:Person ,
+        foaf:Person ;
+    rdfs:label "user_moralbias_001" ;
+    amor-exp:hasAgeBracket "18-25"^^xsd:string ;
+    foaf:gender "male"^^xsd:string ;
+    amor-exp:hasPoliticalOrientation "central"^^xsd:string ;
+    amor-exp:hasEducationLevel "Master of Science"^^xsd:string ;
+    amor-exp:hasPreferredContent amor-graph:news1 ;
+    amor-exp:hasPreferredContent amor-graph:news2 ;
+    amor-exp:hasPreferredTopic "Politics"^^xsd:string ;
+    amor-exp:hasPreferredTopic "Sports"^^xsd:string ;
+    amor-exp:hasPreferredEntity amor-graph:elPais ;
+    amor-exp:hasPreferredEntity amor-graph:libertadDigital ;
+    amor-exp:hasNumberOfFollowers "1000"^^xsd:integer ;
+    amor-exp:hasAverageSocialNetworkActivityPerMonth "100"^^xsd:integer ;
+    amor:hasMoralProfile [
+            a amor:MoralProfile ;
+        prov:endedAtTime "2025-03-19T14:30:00-04:00"^^xsd:dateTime;
+        prov:wasInformedBy ex:researcher1 ;
+        amor:usedMoralValueModel amor-mft:MoralFoundationsTheoryModel ;
+        amor:analysed ex:user_moralbias_001 ;
+        prov:generated 
+            [
+                a amor:MoralValueAnnotation ;
+                amor:hasMoralValueCategory mft:Care ;
+                amor-mft:hasPolarityIntensity "0.65"^^xsd:float
+            ] , 
+            [
+                a amor:MoralValueAnnotation ;
+                amor:hasMoralValueCategory mft:Equality ;
+                amor-mft:hasPolarityIntensity "0.45"^^xsd:float
+            ] ,
+            [
+                a amor:MoralValueAnnotation ;
+                amor:hasMoralValueCategory mft:Proportionality ;
+                amor-mft:hasPolarityIntensity "0.85"^^xsd:float
+            ] ,
+            [
+                a amor:MoralValueAnnotation ;
+                amor:hasMoralValueCategory mft:Loyalty ;
+                amor-mft:hasPolarityIntensity "0.75"^^xsd:float
+            ] ,
+            [
+                a amor:MoralValueAnnotation ;
+                amor:hasMoralValueCategory mft:Authority ;
+                amor-mft:hasPolarityIntensity "0.15"^^xsd:float 
+            ] ,
+            [
+                a amor:MoralValueAnnotation ;
+                amor:hasMoralValueCategory mft:Purity ;
+                amor-mft:hasPolarityIntensity "0.05"^^xsd:float
+            ]
+    ] .
+
+### [Questions]
+ex:question1 a amor-exp:LikertQuestion, schema:Question ;
+    schema:text "¿Con qué frecuencia consumes noticias?"@es.
+ex:question2 a schema:Question ;
+    schema:text "¿Qué medios de comunicación consideras más fiables? (abierta)"@es .
+ex:question3 a amor-exp:LikertQuestion, schema:Question ;
+    schema:text "¿En qué medida crees que los siguientes factores influyen en la información: intereses políticos del periodista?"@es .
+ex:quesiton4 a amor-exp:LikertQuestion, schema:Question ;
+    schema:text "¿En qué medida crees que los siguientes factores influyen en la información: intereses económicos del periodista?"@es .
+ex:question5 a amor-exp:LikertQuestion, schema:Question ;
+    schema:text "¿En qué medida crees que los siguientes factores influyen en la información: valores morales del periodista?"@es .
+ex:question6 a amor-exp:LikertQuestion, schema:Question ;
+    schema:text "¿Cómo valorarías tu capacidad para detectar sesgos en las noticias?"@es .
+ex:question7 a amor-exp:LikertQuestion, schema:Question ;
+    schema:text "¿En qué medida te parece imparcial este artículo?"@es .
+ex:question8 a amor-exp:LikertQuestion, schema:Question ;
+    schema:text "¿En qué extremo político clasificarías este artículo? (1-muy a la izquierda y 5-muy a la derecha)"@es .
+ex:question9 a amor-exp:LikertQuestion, schema:Question ;
+    schema:text "¿Cómo de equilibrado es el tratamiento del tema?"@es .
+ex:question10 a schema:Question ;
+    schema:text "¿Qué valores o principios crees que están guiando la redacción de esta noticia? (abierta)"@es .
+ex:question11 a amor-exp:LikertQuestion, schema:Question ;
+    schema:text "¿En qué medida este artículo presenta una visión unilateral del tema?"@es .
+ex:question12 a amor-exp:LikertQuestion, schema:Question ;
+    schema:text "¿Cómo valorarías la credibilidad de esta noticia?"@es .
+ex:question13 a amor-exp:LikertQuestion, schema:Question ;
+    schema:text "¿En qué medida consideras que el periodista ha intentado presentar una visión neutral?"@es .
+ex:question14 a schema:Question ;
+    schema:text "¿Cómo ha cambiado tu percepción sobre la importancia de los valores morales en las noticias después de este experimento? (abierta)"@es .
+
+### Example of a answered question
+
+# This activity represents the action of showing a news article to the user, 
+# as part of an experiment.
+ex:showContent1 a oro:ShownContentAction, segb:LoggedActivity ;
+    amor-exp:isRelatedWithExperiment ex:experiment_moral_framing_bias_awareness_0001 ;
+    amor-exp:hasContent ex:news1 ;
+    prov:used ex:news1 ;
+    segb:triggeredByActivity ex:decisionMakingAction1 ;
+    prov:startedAtTime "2024-11-16T12:27:23"^^xsd:dateTime ;
+    prov:endedAtTime "2024-11-16T12:27:24"^^xsd:dateTime ;
+    segb:wasPerformedBy ex:ari41 .
+
+# This function/action is responsible for displaying a question to the user.
+# It typically involves presenting a prompt or query to gather input or feedback.
+ex:showContent2 a oro:ShownContentAction, segb:LoggedActivity ;
+    amor-exp:isRelatedWithExperiment ex:experiment_moral_framing_bias_awareness_0001 ;
+    amor-exp:hasContent ex:question1 ;
+    prov:used ex:question1 ;
+    segb:triggeredByActivity ex:decisionMakingAction1 , ex:showContent1 ;
+    prov:startedAtTime "2024-11-16T12:27:25"^^xsd:dateTime ;
+    prov:endedAtTime "2024-11-16T12:27:26"^^xsd:dateTime ;
+    segb:wasPerformedBy ex:ari41 .
+
+# The following event represents the response selected by the user.
+ex:selection1 a oro:SelectedOptionEvent, segb:LoggedActivity ;
+    amor-exp:isRelatedWithExperiment ex:experiment1 ;
+    oro:selectedOption [
+        a schema:Answer ;
+        schema:parentItem ex:question1 ;
+        schema:text "1" ;
+    ] ;
+    oro:hasUser ex:user_moralbias_001 ;
+    segb:triggeredByActivity ex:shownContent2 ;
+    prov:startedAtTime "2024-11-16T12:27:27"^^xsd:dateTime ;
+    prov:endedAtTime "2024-11-16T12:27:28"^^xsd:dateTime ;
+    segb:wasPerformedBy ex:ari41 .
+
