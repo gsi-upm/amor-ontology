@@ -12,6 +12,7 @@
 @prefix schema: <http://schema.org/> .
 @prefix segb: <http://www.gsi.upm.es/ontologies/segb/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix amor-datasets: <http://www.gsi.upm.es/ontologies/amor/datasets#> .
 
 ex:experiment_moral_framing_bias_awareness_0001 a owl:NamedIndividual ,
         amor-exp:Experiment ,
@@ -171,7 +172,7 @@ ex:question14 a schema:Question ;
 # as part of an experiment.
 ex:showContent1 a oro:ShownContentAction, segb:LoggedActivity ;
     amor-exp:isRelatedWithExperiment ex:experiment_moral_framing_bias_awareness_0001 ;
-    amor-exp:hasContent ex:news1 ;
+    amor-exp:hasContent amor-datasets:news1 ;
     prov:used ex:news1 ;
     segb:triggeredByActivity ex:decisionMakingAction1 ;
     prov:startedAtTime "2024-11-16T12:27:23"^^xsd:dateTime ;
