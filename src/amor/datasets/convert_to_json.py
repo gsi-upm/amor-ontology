@@ -5,11 +5,12 @@ import sys
 
 g = Graph()
 
-example = './examples/news-example.ttl'
 if len(sys.argv) > 1:
-    example = sys.argv[1]
+    ttl_file = sys.argv[1]
+else:
+    raise ValueError("Please provide a TTL file as an argument.")
 
-g.parse(example, format='turtle')
+g.parse(ttl_file, format='turtle')
 #g.parse('./examples/dataset-example.ttl', format='turtle')
 
 

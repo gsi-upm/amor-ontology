@@ -303,13 +303,6 @@
     
 
 
-    <!-- http://www.w3.org/ns/prov#used -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#used"/>
-    
-
-
     <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
 
 
@@ -369,6 +362,13 @@
     
 
 
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis"/>
+    
+
+
     <!-- http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis -->
 
 
@@ -380,6 +380,13 @@
 
 
     <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis"/>
     
 
 
@@ -583,11 +590,12 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#emotionAnalysis45">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis"/>
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis"/>
+        <ns:analysed rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
         <ns:usedMLModel rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#model3"/>
         <ns1:usesEmotionModel rdf:resource="http://gsi.upm.es/ontologies/wnaffect/ns#WNAModel"/>
         <prov:generated rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#emotionAnnotation87"/>
-        <prov:used rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
         <prov:wasAssociatedWith rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#robot2"/>
     </owl:NamedIndividual>
     
@@ -843,12 +851,13 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/examples#sentimentAnalysis33">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis"/>
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis"/>
+        <ns:analysed rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
         <ns:usedMLModel rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#model2"/>
         <ns3:maxPolarityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ns3:maxPolarityValue>
         <ns3:minPolarityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</ns3:minPolarityValue>
         <prov:generated rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#opinion45"/>
-        <prov:used rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#news1"/>
         <prov:wasAssociatedWith rdf:resource="http://www.gsi.upm.es/ontologies/amor/examples#robot2"/>
     </owl:NamedIndividual>
 </rdf:RDF>

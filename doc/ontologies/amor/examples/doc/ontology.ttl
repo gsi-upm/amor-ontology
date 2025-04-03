@@ -170,10 +170,6 @@
 <http://www.w3.org/ns/prov#generated> rdf:type owl:AnnotationProperty .
 
 
-###  http://www.w3.org/ns/prov#used
-<http://www.w3.org/ns/prov#used> rdf:type owl:AnnotationProperty .
-
-
 ###  http://www.w3.org/ns/prov#wasAssociatedWith
 <http://www.w3.org/ns/prov#wasAssociatedWith> rdf:type owl:AnnotationProperty .
 
@@ -202,12 +198,20 @@
 <http://schema.org/Organization> rdf:type owl:Class .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis
+<http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis> rdf:type owl:Class .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> rdf:type owl:Class .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> rdf:type owl:Class .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis
+<http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis> rdf:type owl:Class .
 
 
 ###  http://www.gsi.upm.es/ontologies/marl/ns#Opinion
@@ -334,11 +338,12 @@
 
 ###  http://www.gsi.upm.es/ontologies/amor/examples#emotionAnalysis45
 :emotionAnalysis45 rdf:type owl:NamedIndividual ,
+                            <http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis> ,
                             <http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis> ;
+                   <http://www.gsi.upm.es/ontologies/amor/ns#analysed> :news1 ;
                    <http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> :model3 ;
                    <http://www.gsi.upm.es/ontologies/onyx/ns#usesEmotionModel> <http://gsi.upm.es/ontologies/wnaffect/ns#WNAModel> ;
                    <http://www.w3.org/ns/prov#generated> :emotionAnnotation87 ;
-                   <http://www.w3.org/ns/prov#used> :news1 ;
                    <http://www.w3.org/ns/prov#wasAssociatedWith> :robot2 .
 
 
@@ -506,12 +511,13 @@
 
 ###  http://www.gsi.upm.es/ontologies/amor/examples#sentimentAnalysis33
 :sentimentAnalysis33 rdf:type owl:NamedIndividual ,
+                              <http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis> ,
                               <http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis> ;
+                     <http://www.gsi.upm.es/ontologies/amor/ns#analysed> :news1 ;
                      <http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> :model2 ;
                      <http://www.gsi.upm.es/ontologies/marl/ns#maxPolarityValue> "1.0"^^xsd:float ;
                      <http://www.gsi.upm.es/ontologies/marl/ns#minPolarityValue> "0.0"^^xsd:float ;
                      <http://www.w3.org/ns/prov#generated> :opinion45 ;
-                     <http://www.w3.org/ns/prov#used> :news1 ;
                      <http://www.w3.org/ns/prov#wasAssociatedWith> :robot2 .
 
 

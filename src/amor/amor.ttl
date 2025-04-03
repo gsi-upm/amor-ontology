@@ -1,5 +1,6 @@
 @prefix amor: <http://www.gsi.upm.es/ontologies/amor/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
+@prefix marl: <http://www.gsi.upm.es/ontologies/marl/ns#> .
 @prefix mls: <http://www.w3.org/ns/mls#> .
 @prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
@@ -43,7 +44,6 @@ amor:MoralValueAnnotation
   rdfs:label "Moral Value Annotation"@en ;
   rdfs:comment "Represents a value annotation extracted from textual sources."@en .
 
-
 amor:ClickBaitAnnotation
   a owl:Class ;
   rdfs:subClassOf prov:Entity, oa:Annotation ;
@@ -68,9 +68,47 @@ amor:EmotionAnnotation
   rdfs:label "emotion annotation"@en ;
   rdfs:comment "Represents an emotion detected in textual sources."@en .
 
-amor:MoralValueAnalysis
+amor:AnnotationAnalysis
   a owl:Class ;
   rdfs:subClassOf prov:Activity ;
+  rdfs:label "Annotation Analysis"@en ;
+  rdfs:comment "Represents the activity of generating annotations of some type for a specific resource."@en .
+
+amor:DiffBotAnalysis
+  a owl:Class ;
+  rdfs:subClassOf amor:AnnotationAnalysis ;
+  rdfs:label "DiffBot Analysis"@en ;
+  rdfs:comment "Represents the activity of analyzing text using DiffBot."@en .
+
+amor:NamedEntityRecognitionAnalysis
+  a owl:Class ;
+  rdfs:subClassOf amor:AnnotationAnalysis ;
+  rdfs:label "Named Entity Recognition Analysis"@en ;
+  rdfs:comment "Represents the activity of analyzing text for named entities."@en .
+
+amor:ClickBaitAnalysis
+  a owl:Class ;
+  rdfs:subClassOf amor:AnnotationAnalysis ;
+  rdfs:label "Clickbait Analysis"@en ;
+  rdfs:comment "Represents the activity of analyzing text for clickbait."@en .
+
+amor:EmotionAnalysis
+  a owl:Class ;
+  owl:sameAs onyx:EmotionAnalysis ;
+  rdfs:subClassOf amor:AnnotationAnalysis ;
+  rdfs:label "Emotion Analysis"@en ;
+  rdfs:comment "Represents the activity of analyzing text for emotions."@en .
+
+amor:SentimentAnalysis
+  a owl:Class ;
+  owl:sameAs marl:SentimentAnalysis ;
+  rdfs:subClassOf amor:AnnotationAnalysis ;
+  rdfs:label "Sentiment Analysis"@en ;
+  rdfs:comment "Represents the activity of analyzing text for sentiment."@en .
+
+amor:MoralValueAnalysis
+  a owl:Class ;
+  rdfs:subClassOf amor:AnnotationAnalysis ;
   rdfs:label "Moral Value Analysis"@en ;
   rdfs:comment "Represents the activity of analyzing text for moral values."@en .
 
@@ -178,9 +216,9 @@ amor:analysed
   a owl:ObjectProperty ;
   rdfs:subPropertyOf prov:used ;
   rdfs:label "analysed"@en ;
-  rdfs:domain amor:MoralValueAnalysis ;
+  rdfs:domain amor:AnnotationAnalysis ;
   rdfs:range amor:AnalysedEntity ;
-  rdfs:comment "This property relates a ValueAnalysis with the resource that is analysed."@en .
+  rdfs:comment "This property relates the analysis activity with the resource that is analysed."@en .
 
 # Removed in favor of oa:Annotation and oa:hasTarget
 #amor:annotated

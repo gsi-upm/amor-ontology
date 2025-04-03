@@ -100,6 +100,12 @@
   }, {
     "id" : "13",
     "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
     "iri" : "http://www.w3.org/ns/prov#Person",
@@ -124,6 +130,54 @@
     "attributes" : [ "external" ],
     "id" : "0"
   }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EmotionAnalysis"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#emotionAnalysis45",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "analysed" : [ {
+          "identifier" : "analysed",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ],
+        "usesEmotionModel" : [ {
+          "identifier" : "usesEmotionModel",
+          "language" : "undefined",
+          "value" : "http://gsi.upm.es/ontologies/wnaffect/ns#WNAModel",
+          "type" : "iri"
+        } ],
+        "generated" : [ {
+          "identifier" : "generated",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#emotionAnnotation87",
+          "type" : "iri"
+        } ],
+        "usedMLModel" : [ {
+          "identifier" : "usedMLModel",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#model3",
+          "type" : "iri"
+        } ],
+        "wasAssociatedWith" : [ {
+          "identifier" : "wasAssociatedWith",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#robot2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "emotionAnalysis45"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
     "iri" : "http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis",
     "baseIri" : "http://www.gsi.upm.es/ontologies/marl/ns",
     "instances" : 0,
@@ -134,11 +188,11 @@
       "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#sentimentAnalysis33",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
       "annotations" : {
-        "minPolarityValue" : [ {
-          "identifier" : "minPolarityValue",
+        "analysed" : [ {
+          "identifier" : "analysed",
           "language" : "undefined",
-          "value" : "0.0",
-          "type" : "label"
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
         } ],
         "generated" : [ {
           "identifier" : "generated",
@@ -152,6 +206,12 @@
           "value" : "1.0",
           "type" : "label"
         } ],
+        "minPolarityValue" : [ {
+          "identifier" : "minPolarityValue",
+          "language" : "undefined",
+          "value" : "0.0",
+          "type" : "label"
+        } ],
         "usedMLModel" : [ {
           "identifier" : "usedMLModel",
           "language" : "undefined",
@@ -163,12 +223,6 @@
           "language" : "undefined",
           "value" : "http://www.gsi.upm.es/ontologies/amor/examples#robot2",
           "type" : "iri"
-        } ],
-        "used" : [ {
-          "identifier" : "used",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
-          "type" : "iri"
         } ]
       },
       "labels" : {
@@ -176,7 +230,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "1"
+    "id" : "2"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet",
     "baseIri" : "http://www.gsi.upm.es/ontologies/onyx/ns",
@@ -217,7 +271,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "2"
+    "id" : "3"
   }, {
     "iri" : "http://schema.org/Organization",
     "baseIri" : "http://schema.org",
@@ -247,7 +301,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "3"
+    "id" : "4"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
@@ -397,7 +451,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "4"
+    "id" : "5"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
@@ -438,32 +492,6 @@
         "IRI-based" : "annotation1"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#annotation2",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
-      "annotations" : {
-        "hasMoralValueCategory" : [ {
-          "identifier" : "hasMoralValueCategory",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/bhv#Conservation",
-          "type" : "iri"
-        } ],
-        "taConfidence" : [ {
-          "identifier" : "taConfidence",
-          "language" : "undefined",
-          "value" : "0.8",
-          "type" : "label"
-        } ],
-        "hasTarget" : [ {
-          "identifier" : "hasTarget",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "annotation2"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
       "annotations" : {
@@ -499,6 +527,32 @@
       },
       "labels" : {
         "IRI-based" : "moralAnnotation23"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#annotation2",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "hasMoralValueCategory" : [ {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/bhv#Conservation",
+          "type" : "iri"
+        } ],
+        "taConfidence" : [ {
+          "identifier" : "taConfidence",
+          "language" : "undefined",
+          "value" : "0.8",
+          "type" : "label"
+        } ],
+        "hasTarget" : [ {
+          "identifier" : "hasTarget",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "annotation2"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#annotation3",
@@ -540,55 +594,61 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "5"
+    "id" : "6"
   }, {
-    "iri" : "http://www.gsi.upm.es/ontologies/marl/ns#Opinion",
-    "baseIri" : "http://www.gsi.upm.es/ontologies/marl/ns",
+    "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Opinion"
+      "IRI-based" : "SentimentAnalysis"
     },
     "individuals" : [ {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#opinion45",
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#sentimentAnalysis33",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
       "annotations" : {
-        "taConfidence" : [ {
-          "identifier" : "taConfidence",
-          "language" : "undefined",
-          "value" : "0.9",
-          "type" : "label"
-        } ],
-        "hasTarget" : [ {
-          "identifier" : "hasTarget",
+        "analysed" : [ {
+          "identifier" : "analysed",
           "language" : "undefined",
           "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
           "type" : "iri"
         } ],
-        "hasPolarity" : [ {
-          "identifier" : "hasPolarity",
+        "generated" : [ {
+          "identifier" : "generated",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/marl/ns#Neutral",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#opinion45",
           "type" : "iri"
         } ],
-        "wasDerivedFrom" : [ {
-          "identifier" : "wasDerivedFrom",
+        "maxPolarityValue" : [ {
+          "identifier" : "maxPolarityValue",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
-          "type" : "iri"
-        } ],
-        "hasPolarityValue" : [ {
-          "identifier" : "hasPolarityValue",
-          "language" : "undefined",
-          "value" : "0.5",
+          "value" : "1.0",
           "type" : "label"
+        } ],
+        "minPolarityValue" : [ {
+          "identifier" : "minPolarityValue",
+          "language" : "undefined",
+          "value" : "0.0",
+          "type" : "label"
+        } ],
+        "usedMLModel" : [ {
+          "identifier" : "usedMLModel",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#model2",
+          "type" : "iri"
+        } ],
+        "wasAssociatedWith" : [ {
+          "identifier" : "wasAssociatedWith",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#robot2",
+          "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "opinion45"
+        "IRI-based" : "sentimentAnalysis33"
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "6"
+    "id" : "7"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/onyx/ns#Emotion",
     "baseIri" : "http://www.gsi.upm.es/ontologies/onyx/ns",
@@ -650,7 +710,55 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "7"
+    "id" : "8"
+  }, {
+    "iri" : "http://www.gsi.upm.es/ontologies/marl/ns#Opinion",
+    "baseIri" : "http://www.gsi.upm.es/ontologies/marl/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Opinion"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#opinion45",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
+      "annotations" : {
+        "taConfidence" : [ {
+          "identifier" : "taConfidence",
+          "language" : "undefined",
+          "value" : "0.9",
+          "type" : "label"
+        } ],
+        "hasTarget" : [ {
+          "identifier" : "hasTarget",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ],
+        "hasPolarity" : [ {
+          "identifier" : "hasPolarity",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/marl/ns#Neutral",
+          "type" : "iri"
+        } ],
+        "wasDerivedFrom" : [ {
+          "identifier" : "wasDerivedFrom",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ],
+        "hasPolarityValue" : [ {
+          "identifier" : "hasPolarityValue",
+          "language" : "undefined",
+          "value" : "0.5",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "opinion45"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "9"
   }, {
     "iri" : "http://www.w3.org/ns/mls#Model",
     "baseIri" : "http://www.w3.org/ns/mls",
@@ -684,7 +792,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "8"
+    "id" : "10"
   }, {
     "iri" : "http://schema.org/NewsArticle",
     "baseIri" : "http://schema.org",
@@ -705,12 +813,32 @@
         "image" : [ {
           "identifier" : "image",
           "language" : "undefined",
+          "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/8AB9/production/_95231553_comey2.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
           "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/0F99/production/_95239930_trumptweet.png",
           "type" : "iri"
         }, {
           "identifier" : "image",
           "language" : "undefined",
-          "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/8AB9/production/_95231553_comey2.jpg",
+          "value" : "http://ichef-1.bbci.co.uk/news/560/cpsprodpb/12B64/production/_95244667_mediaitem95244666.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef-1.bbci.co.uk/news/560/media/images/75306000/jpg/_75306515_line976.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef-1.bbci.co.uk/news/560/cpsprodpb/BCED/production/_92856384_line976.jpg",
+          "type" : "iri"
+        }, {
+          "identifier" : "image",
+          "language" : "undefined",
+          "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/CC81/production/_95235325_f704a6dc-c017-4971-aac3-04c03eb097fb.jpg",
           "type" : "iri"
         }, {
           "identifier" : "image",
@@ -725,16 +853,6 @@
         }, {
           "identifier" : "image",
           "language" : "undefined",
-          "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/CC81/production/_95235325_f704a6dc-c017-4971-aac3-04c03eb097fb.jpg",
-          "type" : "iri"
-        }, {
-          "identifier" : "image",
-          "language" : "undefined",
-          "value" : "http://ichef-1.bbci.co.uk/news/560/cpsprodpb/12B64/production/_95244667_mediaitem95244666.jpg",
-          "type" : "iri"
-        }, {
-          "identifier" : "image",
-          "language" : "undefined",
           "value" : "http://ichef.bbci.co.uk/news/560/cpsprodpb/11318/production/_95242407_mediaitem95242406.jpg",
           "type" : "iri"
         }, {
@@ -745,17 +863,7 @@
         }, {
           "identifier" : "image",
           "language" : "undefined",
-          "value" : "http://ichef-1.bbci.co.uk/news/560/media/images/75306000/jpg/_75306515_line976.jpg",
-          "type" : "iri"
-        }, {
-          "identifier" : "image",
-          "language" : "undefined",
           "value" : "http://ichef-1.bbci.co.uk/news/560/cpsprodpb/10DFA/production/_95241196_mediaitem95241195.jpg",
-          "type" : "iri"
-        }, {
-          "identifier" : "image",
-          "language" : "undefined",
-          "value" : "http://ichef-1.bbci.co.uk/news/560/cpsprodpb/BCED/production/_92856384_line976.jpg",
           "type" : "iri"
         } ],
         "articleBody" : [ {
@@ -794,7 +902,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "9"
+    "id" : "11"
   }, {
     "iri" : "http://www.w3.org/ns/mls#Run",
     "baseIri" : "http://www.w3.org/ns/mls",
@@ -932,7 +1040,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "10"
+    "id" : "12"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis",
     "baseIri" : "http://www.gsi.upm.es/ontologies/onyx/ns",
@@ -944,6 +1052,12 @@
       "iri" : "http://www.gsi.upm.es/ontologies/amor/examples#emotionAnalysis45",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/examples",
       "annotations" : {
+        "analysed" : [ {
+          "identifier" : "analysed",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
+          "type" : "iri"
+        } ],
         "usesEmotionModel" : [ {
           "identifier" : "usesEmotionModel",
           "language" : "undefined",
@@ -967,12 +1081,6 @@
           "language" : "undefined",
           "value" : "http://www.gsi.upm.es/ontologies/amor/examples#robot2",
           "type" : "iri"
-        } ],
-        "used" : [ {
-          "identifier" : "used",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/amor/examples#news1",
-          "type" : "iri"
         } ]
       },
       "labels" : {
@@ -980,7 +1088,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "11"
+    "id" : "13"
   }, {
     "iri" : "http://www.w3.org/ns/prov#SoftwareAgent",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -1002,7 +1110,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "12"
+    "id" : "14"
   }, {
     "iri" : "http://www.w3.org/ns/mls#Algorithm",
     "baseIri" : "http://www.w3.org/ns/mls",
@@ -1041,6 +1149,6 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "13"
+    "id" : "15"
   } ]
 }

@@ -55,9 +55,9 @@
 ###  http://www.gsi.upm.es/ontologies/amor/ns#analysed
 :analysed rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
-          rdfs:domain :MoralValueAnalysis ;
+          rdfs:domain :AnnotationAnalysis ;
           rdfs:range :AnalysedEntity ;
-          rdfs:comment "This property relates a ValueAnalysis with the resource that is analysed."@en ;
+          rdfs:comment "This property relates the analysis activity with the resource that is analysed."@en ;
           rdfs:label "analysed"@en .
 
 
@@ -145,6 +145,20 @@
                 rdfs:label "Analysed Entity"@en .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis
+:AnnotationAnalysis rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                    rdfs:comment "Represents the activity of generating annotations of some type for a specific resource."@en ;
+                    rdfs:label "Annotation Analysis"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnalysis
+:ClickBaitAnalysis rdf:type owl:Class ;
+                   rdfs:subClassOf :AnnotationAnalysis ;
+                   rdfs:comment "Represents the activity of analyzing text for clickbait."@en ;
+                   rdfs:label "Clickbait Analysis"@en .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation
 :ClickBaitAnnotation rdf:type owl:Class ;
                      rdfs:subClassOf <http://www.w3.org/ns/oa#Annotation> ,
@@ -158,6 +172,18 @@
                            rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
                            rdfs:comment "Represents a category of clickbait."@en ;
                            rdfs:label "Clickbait Category"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis
+:DiffBotAnalysis rdf:type owl:Class ;
+                 rdfs:subClassOf :AnnotationAnalysis ;
+                 rdfs:comment "Represents the activity of analyzing text using DiffBot."@en ;
+                 rdfs:label "DiffBot Analysis"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis
+:EmotionAnalysis rdf:type owl:Class ;
+                 rdfs:subClassOf :AnnotationAnalysis .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation
@@ -202,7 +228,7 @@
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis
 :MoralValueAnalysis rdf:type owl:Class ;
-                    rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                    rdfs:subClassOf :AnnotationAnalysis ;
                     rdfs:comment "Represents the activity of analyzing text for moral values."@en ;
                     rdfs:label "Moral Value Analysis"@en .
 
@@ -227,6 +253,18 @@
                  rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
                  rdfs:comment "Represents a model for categorizing moral values."@en ;
                  rdfs:label "Moral Value Model"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#NamedEntityRecognitionAnalysis
+:NamedEntityRecognitionAnalysis rdf:type owl:Class ;
+                                rdfs:subClassOf :AnnotationAnalysis ;
+                                rdfs:comment "Represents the activity of analyzing text for named entities."@en ;
+                                rdfs:label "Named Entity Recognition Analysis"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis
+:SentimentAnalysis rdf:type owl:Class ;
+                   rdfs:subClassOf :AnnotationAnalysis .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation
@@ -288,6 +326,15 @@
                      rdfs:label "Descriptive Headline"@en .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis
+:EmotionAnalysis rdf:type owl:NamedIndividual ;
+                 owl:sameAs <http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis> .
+
+
+###  http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis
+<http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis> rdf:type owl:NamedIndividual .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/ns#Neutral
 :Neutral rdf:type owl:NamedIndividual ,
                   :MoralValueCategory ;
@@ -305,6 +352,35 @@
                    :MoralValueCategory ;
           rdfs:comment "Represents a non moral value. This indicates that the text does not contain any trace of moral values."@en ;
           rdfs:label "Non Moral"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis
+:SentimentAnalysis rdf:type owl:NamedIndividual ;
+                   owl:sameAs <http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis> .
+
+
+###  http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis
+<http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis> rdf:type owl:NamedIndividual .
+
+
+###  http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis
+<http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis> rdf:type owl:NamedIndividual .
+
+
+###  http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis
+<http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:EmotionAnalysis rdfs:comment "Represents the activity of analyzing text for emotions."@en ;
+                 rdfs:label "Emotion Analysis"@en .
+
+
+:SentimentAnalysis rdfs:comment "Represents the activity of analyzing text for sentiment."@en ;
+                   rdfs:label "Sentiment Analysis"@en .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

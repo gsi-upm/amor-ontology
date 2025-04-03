@@ -151,12 +151,12 @@
     amor-mft:hasPolarityIntensity "0.2"^^xsd:float ;
     oa:hasTarget :news1 .
 
-:sentimentAnalysis33 a marl:SentimentAnalysis ;
+:sentimentAnalysis33 a amor:SentimentAnalysis , marl:SentimentAnalysis ;
     prov:wasAssociatedWith :robot2 ;
     marl:minPolarityValue "0.0"^^xsd:float ;
     marl:maxPolarityValue "1.0"^^xsd:float ;
     amor:usedMLModel :model2 ;
-    prov:used :news1 ;
+    amor:analysed :news1 ;
     prov:generated :opinion45 .
 
 :opinion45 a marl:Opinion ;
@@ -166,11 +166,11 @@
     itsrdf:taConfidence "0.9"^^xsd:float;
     oa:hasTarget :news1 .
 
-:emotionAnalysis45 a onyx:EmotionAnalysis ;
+:emotionAnalysis45 a amor:EmotionAnalysis , onyx:EmotionAnalysis ;
     prov:wasAssociatedWith :robot2 ;
     amor:usedMLModel :model3 ;
     onyx:usesEmotionModel wnaffect:WNAModel ;
-    prov:used :news1 ;
+    amor:analysed :news1 ;
     prov:generated :emotionAnnotation87 .
 
 :emotionAnnotation87 a onyx:EmotionSet ;

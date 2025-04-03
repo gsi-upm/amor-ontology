@@ -96,9 +96,9 @@
 
     <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#analysed">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#used"/>
-        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis"/>
+        <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis"/>
         <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity"/>
-        <rdfs:comment xml:lang="en">This property relates a ValueAnalysis with the resource that is analysed.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property relates the analysis activity with the resource that is analysed.</rdfs:comment>
         <rdfs:label xml:lang="en">analysed</rdfs:label>
     </owl:ObjectProperty>
     
@@ -241,6 +241,28 @@
     
 
 
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment xml:lang="en">Represents the activity of generating annotations of some type for a specific resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Annotation Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnalysis -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis"/>
+        <rdfs:comment xml:lang="en">Represents the activity of analyzing text for clickbait.</rdfs:comment>
+        <rdfs:label xml:lang="en">Clickbait Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation -->
 
 
@@ -260,6 +282,26 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment xml:lang="en">Represents a category of clickbait.</rdfs:comment>
         <rdfs:label xml:lang="en">Clickbait Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis"/>
+        <rdfs:comment xml:lang="en">Represents the activity of analyzing text using DiffBot.</rdfs:comment>
+        <rdfs:label xml:lang="en">DiffBot Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis"/>
     </owl:Class>
     
 
@@ -328,7 +370,7 @@
 
 
     <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis"/>
         <rdfs:comment xml:lang="en">Represents the activity of analyzing text for moral values.</rdfs:comment>
         <rdfs:label xml:lang="en">Moral Value Analysis</rdfs:label>
     </owl:Class>
@@ -365,6 +407,26 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment xml:lang="en">Represents a model for categorizing moral values.</rdfs:comment>
         <rdfs:label xml:lang="en">Moral Value Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#NamedEntityRecognitionAnalysis -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#NamedEntityRecognitionAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis"/>
+        <rdfs:comment xml:lang="en">Represents the activity of analyzing text for named entities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Named Entity Recognition Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis"/>
     </owl:Class>
     
 
@@ -472,6 +534,22 @@
     
 
 
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis">
+        <owl:sameAs rdf:resource="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis"/>
+    
+
+
     <!-- http://www.gsi.upm.es/ontologies/amor/ns#Neutral -->
 
 
@@ -499,6 +577,56 @@
         <rdfs:comment xml:lang="en">Represents a non moral value. This indicates that the text does not contain any trace of moral values.</rdfs:comment>
         <rdfs:label xml:lang="en">Non Moral</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis">
+        <owl:sameAs rdf:resource="http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis">
+        <rdfs:comment xml:lang="en">Represents the activity of analyzing text for emotions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Emotion Analysis</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis">
+        <rdfs:comment xml:lang="en">Represents the activity of analyzing text for sentiment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sentiment Analysis</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 

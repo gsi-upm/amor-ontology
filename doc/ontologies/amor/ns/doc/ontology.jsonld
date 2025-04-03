@@ -109,6 +109,34 @@
     "@id" : "_:genid4"
   } ]
 }, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the activity of generating annotations of some type for a specific resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Annotation Analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Activity"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the activity of analyzing text for clickbait."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Clickbait Analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis"
+  } ]
+}, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -165,6 +193,37 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Descriptive Headline"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the activity of analyzing text using DiffBot."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DiffBot Analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the activity of analyzing text for emotions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Emotion Analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation",
@@ -258,7 +317,7 @@
     "@value" : "Moral Value Analysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/prov#Activity"
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation",
@@ -305,6 +364,20 @@
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ]
 }, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#NamedEntityRecognitionAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the activity of analyzing text for named entities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Named Entity Recognition Analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis"
+  } ]
+}, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#Neutral",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -336,6 +409,23 @@
     "@value" : "Non Moral"
   } ]
 }, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the activity of analyzing text for sentiment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sentiment Analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis"
+  } ]
+}, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -358,10 +448,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This property relates a ValueAnalysis with the resource that is analysed."
+    "@value" : "This property relates the analysis activity with the resource that is analysed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis"
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -467,6 +557,12 @@
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#used"
   } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]

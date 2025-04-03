@@ -51,9 +51,9 @@
 <http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#used> .
 <http://www.w3.org/ns/prov#used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> .
+<http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis> .
 <http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> .
-<http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a ValueAnalysis with the resource that is analysed."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates the analysis activity with the resource that is analysed."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#analysed> <http://www.w3.org/2000/01/rdf-schema#label> "analysed"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile
@@ -147,6 +147,18 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents any analysed entity that is used as a source of the analysis. It be text, such as a string or a news article; but it can be an agent; i.e. a human or a robot analysed using the results of a questionnarie."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Analysed Entity"@en .
 # 
+# http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis
+<http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the activity of generating annotations of some type for a specific resource."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Annotation Analysis"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnalysis
+<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis> .
+<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the activity of analyzing text for clickbait."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Clickbait Analysis"@en .
+# 
 # http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation
 <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/oa#Annotation> .
@@ -160,6 +172,16 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
 <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a category of clickbait."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Clickbait Category"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis
+<http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis> .
+<http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the activity of analyzing text using DiffBot."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "DiffBot Analysis"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis
+<http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation
 <http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -201,7 +223,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis> .
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the activity of analyzing text for moral values."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Moral Value Analysis"@en .
 # 
@@ -223,6 +245,16 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a model for categorizing moral values."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel> <http://www.w3.org/2000/01/rdf-schema#label> "Moral Value Model"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#NamedEntityRecognitionAnalysis
+<http://www.gsi.upm.es/ontologies/amor/ns#NamedEntityRecognitionAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#NamedEntityRecognitionAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis> .
+<http://www.gsi.upm.es/ontologies/amor/ns#NamedEntityRecognitionAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the activity of analyzing text for named entities."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#NamedEntityRecognitionAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Named Entity Recognition Analysis"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis
+<http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation
 <http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -269,6 +301,13 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a descriptive headline category. This means that it is not considered clickbait."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline> <http://www.w3.org/2000/01/rdf-schema#label> "Descriptive Headline"@en .
 # 
+# http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis
+<http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis> <http://www.w3.org/2002/07/owl#sameAs> <http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis> .
+<http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis
+# 
 # http://www.gsi.upm.es/ontologies/amor/ns#Neutral
 <http://www.gsi.upm.es/ontologies/amor/ns#Neutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/amor/ns#Neutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
@@ -283,5 +322,31 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.gsi.upm.es/ontologies/amor/ns#NonMoral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
 <http://www.gsi.upm.es/ontologies/amor/ns#NonMoral> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a non moral value. This indicates that the text does not contain any trace of moral values."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#NonMoral> <http://www.w3.org/2000/01/rdf-schema#label> "Non Moral"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis
+<http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis> <http://www.w3.org/2002/07/owl#sameAs> <http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis> .
+<http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis
+# 
+# http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis
+# 
+# http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the activity of analyzing text for emotions."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Emotion Analysis"@en .
+# 
+<http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the activity of analyzing text for sentiment."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Sentiment Analysis"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

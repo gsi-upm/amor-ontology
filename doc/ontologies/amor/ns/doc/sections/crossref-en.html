@@ -4,8 +4,12 @@ This section provides details for each class and property defined by AMOR Moral 
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
   <li><a href="#AnalysedEntity" title="http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity">Analysed Entity</a></li>
+  <li><a href="#AnnotationAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis">Annotation Analysis</a></li>
+  <li><a href="#ClickBaitAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnalysis">Clickbait Analysis</a></li>
   <li><a href="#ClickBaitAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation">Clickbait Annotation</a></li>
   <li><a href="#ClickBaitHeadlineCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory">Clickbait Category</a></li>
+  <li><a href="#DiffBotAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis">DiffBot Analysis</a></li>
+  <li><a href="#EmotionAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis"> <span>Emotion Analysis</span> </a></li>
   <li><a href="#EmotionAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation">emotion annotation</a></li>
   <li><a href="#MLEntity" title="http://www.gsi.upm.es/ontologies/amor/ns#MLEntity">Machine Learning Entity</a></li>
   <li><a href="#MLProcess" title="http://www.gsi.upm.es/ontologies/amor/ns#MLProcess">Machine Learning Process</a></li>
@@ -14,7 +18,9 @@ This section provides details for each class and property defined by AMOR Moral 
   <li><a href="#MoralValueAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation">Moral Value Annotation</a></li>
   <li><a href="#MoralValueCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory">Moral Value Category</a></li>
   <li><a href="#MoralValueModel" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel">Moral Value Model</a></li>
+  <li><a href="#NamedEntityRecognitionAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#NamedEntityRecognitionAnalysis">Named Entity Recognition Analysis</a></li>
   <li><a href="#EntityAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#EntityAnnotation">NER Annotation</a></li>
+  <li><a href="#SentimentAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis"> <span>Sentiment Analysis</span> </a></li>
   <li><a href="#SentimentAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation">sentiment annotation</a></li>
  </ul>
  <div class="entity" id="AnalysedEntity">
@@ -41,6 +47,48 @@ This section provides details for each class and property defined by AMOR Moral 
    </dt>
    <dd>
     <a href="#analysed" title="http://www.gsi.upm.es/ontologies/amor/ns#analysed">analysed</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="AnnotationAnalysis">
+  <h3>Annotation Analysis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis</p>
+  <div class="comment">
+   <span class="markdown">Represents the activity of generating annotations of some type for a specific resource.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ClickBaitAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnalysis">Clickbait Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#DiffBotAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis">DiffBot Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#EmotionAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis">Emotion Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#MoralValueAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis">Moral Value Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#NamedEntityRecognitionAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#NamedEntityRecognitionAnalysis">Named Entity Recognition Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#SentimentAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis">Sentiment Analysis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#analysed" title="http://www.gsi.upm.es/ontologies/amor/ns#analysed">analysed</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ClickBaitAnalysis">
+  <h3>Clickbait Analysis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnalysis</p>
+  <div class="comment">
+   <span class="markdown">Represents the activity of analyzing text for clickbait.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#AnnotationAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis">Annotation Analysis</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -89,6 +137,45 @@ This section provides details for each class and property defined by AMOR Moral 
    </dt>
    <dd>
     <a href="#ClickBaitHeadline" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline">Clickbait Headline</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DescriptiveHeadline" title="http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline">Descriptive Headline</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DiffBotAnalysis">
+  <h3>DiffBot Analysis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis</p>
+  <div class="comment">
+   <span class="markdown">Represents the activity of analyzing text using DiffBot.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#AnnotationAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis">Annotation Analysis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="EmotionAnalysis">
+  <h3>Emotion Analysis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#AnnotationAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis">Annotation Analysis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis" target="_blank" title="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis">Emotion Analysis</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#EmotionAnalysis">named individual</a>
    </dd>
   </dl>
  </div>
@@ -169,7 +256,7 @@ This section provides details for each class and property defined by AMOR Moral 
     has super-classes
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#AnnotationAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis">Annotation Analysis</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has sub-classes
@@ -181,7 +268,7 @@ This section provides details for each class and property defined by AMOR Moral 
     is in domain of
    </dt>
    <dd>
-    <a href="#analysed" title="http://www.gsi.upm.es/ontologies/amor/ns#analysed">analysed</a> <sup class="type-op" title="object property">op</sup>, <a href="#usedMoralValueModel" title="http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel">used moral value model</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#usedMoralValueModel" title="http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel">used moral value model</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -260,6 +347,21 @@ This section provides details for each class and property defined by AMOR Moral 
    </dd>
   </dl>
  </div>
+ <div class="entity" id="NamedEntityRecognitionAnalysis">
+  <h3>Named Entity Recognition Analysis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#NamedEntityRecognitionAnalysis</p>
+  <div class="comment">
+   <span class="markdown">Represents the activity of analyzing text for named entities.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#AnnotationAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis">Annotation Analysis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="EntityAnnotation">
   <h3>NER Annotation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#EntityAnnotation</p>
@@ -272,6 +374,30 @@ This section provides details for each class and property defined by AMOR Moral 
    </dt>
    <dd>
     <a href="http://www.w3.org/ns/oa#Annotation" target="_blank" title="http://www.w3.org/ns/oa#Annotation">Annotation</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SentimentAnalysis">
+  <h3>Sentiment Analysis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#AnnotationAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis">Annotation Analysis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis" target="_blank" title="http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis">Sentiment Analysis</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#SentimentAnalysis">named individual</a>
    </dd>
   </dl>
  </div>
@@ -304,7 +430,7 @@ This section provides details for each class and property defined by AMOR Moral 
   <h3>analysed<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#analysed</p>
   <div class="comment">
-   <span class="markdown">This property relates a ValueAnalysis with the resource that is analysed.</span>
+   <span class="markdown">This property relates the analysis activity with the resource that is analysed.</span>
   </div>
   <div class="description">
    <dl>
@@ -318,7 +444,7 @@ This section provides details for each class and property defined by AMOR Moral 
      has domain
     </dt>
     <dd>
-     <a href="#MoralValueAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnalysis">Moral Value Analysis</a> <sup class="type-c" title="class">c</sup>
+     <a href="#AnnotationAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#AnnotationAnalysis">Annotation Analysis</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -467,8 +593,10 @@ This section provides details for each class and property defined by AMOR Moral 
  <ul class="hlist">
   <li><a href="#ClickBaitHeadline" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline">Clickbait Headline</a></li>
   <li><a href="#DescriptiveHeadline" title="http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline">Descriptive Headline</a></li>
+  <li><a href="#EmotionAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis"> <span>Emotion Analysis</span> </a></li>
   <li><a href="#Neutral" title="http://www.gsi.upm.es/ontologies/amor/ns#Neutral">Neutral</a></li>
   <li><a href="#NonMoral" title="http://www.gsi.upm.es/ontologies/amor/ns#NonMoral">Non Moral</a></li>
+  <li><a href="#SentimentAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis"> <span>Sentiment Analysis</span> </a></li>
  </ul>
  <div class="entity" id="ClickBaitHeadline">
   <h3>Clickbait Headline<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
@@ -497,6 +625,30 @@ This section provides details for each class and property defined by AMOR Moral 
    </dt>
    <dd>
     <a href="#ClickBaitHeadlineCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory">Clickbait Category</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="EmotionAnalysis">
+  <h3>Emotion Analysis<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis</p>
+  <dl class="description">
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis" target="_blank" title="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis">Emotion Analysis</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#sameAs" target="_blank" title="http://www.w3.org/2002/07/owl#sameAs">same As</a> <sup class="type-ep" title="external property">ep</sup> <a href="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis" target="_blank" title="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis">Emotion Analysis</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#EmotionAnalysis">class</a>
    </dd>
   </dl>
  </div>
@@ -545,6 +697,30 @@ This section provides details for each class and property defined by AMOR Moral 
    </dt>
    <dd>
     <a href="#Neutral" title="http://www.gsi.upm.es/ontologies/amor/ns#Neutral">Neutral</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SentimentAnalysis">
+  <h3>Sentiment Analysis<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis</p>
+  <dl class="description">
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis" target="_blank" title="http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis">Sentiment Analysis</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#sameAs" target="_blank" title="http://www.w3.org/2002/07/owl#sameAs">same As</a> <sup class="type-ep" title="external property">ep</sup> <a href="http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis" target="_blank" title="http://www.gsi.upm.es/ontologies/marl/ns#SentimentAnalysis">Sentiment Analysis</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#SentimentAnalysis">class</a>
    </dd>
   </dl>
  </div>
