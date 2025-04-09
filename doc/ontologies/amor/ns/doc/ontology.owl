@@ -444,6 +444,13 @@
     
 
 
+    <!-- http://www.gsi.upm.es/ontologies/onyx/ns#EmotionCategory -->
+
+
+    <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionCategory"/>
+    
+
+
     <!-- http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet -->
 
 
@@ -566,6 +573,36 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#NonMoral"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#NeutralEmotion -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#NeutralEmotion">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionCategory"/>
+        <owl:sameAs rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#NonEmotion"/>
+        <rdfs:comment xml:lang="en">Represents a neutral emotion. This indicates that the text does not contain any trace of emotions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Neutral Emotion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#NonEmotion -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#NonEmotion"/>
+    
+
+
+    <!-- http://www.gsi.upm.es/ontologies/amor/ns#NonEmotion -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/amor/ns#NonEmotion">
+        <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionCategory"/>
+        <rdfs:comment xml:lang="en">Represents a non emotion. This indicates that the text does not contain any trace of emotions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Non Emotion</rdfs:label>
+    </owl:NamedIndividual>
     
 
 

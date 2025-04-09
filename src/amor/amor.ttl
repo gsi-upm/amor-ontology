@@ -146,6 +146,15 @@ amor:Neutral a amor:MoralValueCategory ;
   rdfs:label "Neutral"@en ;
   rdfs:comment "Represents a neutral moral value. This indicates that the text does not contain any trace of moral values."@en .
 
+amor:NonEmotion a onyx:EmotionCategory ;
+  rdfs:label "Non Emotion"@en ;
+  rdfs:comment "Represents a non emotion. This indicates that the text does not contain any trace of emotions."@en .
+
+amor:NeutralEmotion a onyx:EmotionCategory ;
+  owl:sameAs amor:NonEmotion ;
+  rdfs:label "Neutral Emotion"@en ;
+  rdfs:comment "Represents a neutral emotion. This indicates that the text does not contain any trace of emotions."@en .
+
 amor:MLEntity
   a owl:Class ;
   rdfs:subClassOf prov:Entity ;

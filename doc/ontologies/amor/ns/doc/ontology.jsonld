@@ -395,6 +395,37 @@
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#NonMoral"
   } ]
 }, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#NeutralEmotion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a neutral emotion. This indicates that the text does not contain any trace of emotions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Neutral Emotion"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#NonEmotion"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#NonEmotion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a non emotion. This indicates that the text does not contain any trace of emotions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Non Emotion"
+  } ]
+}, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#NonMoral",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -563,6 +594,9 @@
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]

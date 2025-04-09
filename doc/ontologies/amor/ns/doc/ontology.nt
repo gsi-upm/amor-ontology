@@ -264,6 +264,9 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an opinion detected in textual sources."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "sentiment annotation"@en .
 # 
+# http://www.gsi.upm.es/ontologies/onyx/ns#EmotionCategory
+<http://www.gsi.upm.es/ontologies/onyx/ns#EmotionCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet
 # 
 # http://www.w3.org/ns/mls#InformationEntity
@@ -317,6 +320,21 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.gsi.upm.es/ontologies/amor/ns#Neutral> <http://www.w3.org/2000/01/rdf-schema#label> "Neutral"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#NonMoral
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#NeutralEmotion
+<http://www.gsi.upm.es/ontologies/amor/ns#NeutralEmotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/ns#NeutralEmotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/onyx/ns#EmotionCategory> .
+<http://www.gsi.upm.es/ontologies/amor/ns#NeutralEmotion> <http://www.w3.org/2002/07/owl#sameAs> <http://www.gsi.upm.es/ontologies/amor/ns#NonEmotion> .
+<http://www.gsi.upm.es/ontologies/amor/ns#NonEmotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.gsi.upm.es/ontologies/amor/ns#NeutralEmotion> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a neutral emotion. This indicates that the text does not contain any trace of emotions."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#NeutralEmotion> <http://www.w3.org/2000/01/rdf-schema#label> "Neutral Emotion"@en .
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#NonEmotion
+# 
+# http://www.gsi.upm.es/ontologies/amor/ns#NonEmotion
+<http://www.gsi.upm.es/ontologies/amor/ns#NonEmotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/onyx/ns#EmotionCategory> .
+<http://www.gsi.upm.es/ontologies/amor/ns#NonEmotion> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a non emotion. This indicates that the text does not contain any trace of emotions."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#NonEmotion> <http://www.w3.org/2000/01/rdf-schema#label> "Non Emotion"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#NonMoral
 <http://www.gsi.upm.es/ontologies/amor/ns#NonMoral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory> .
