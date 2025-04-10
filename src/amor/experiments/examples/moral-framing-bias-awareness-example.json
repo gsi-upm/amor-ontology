@@ -1,5 +1,5 @@
 {
-  "@id": "amos-exp-examples:experiment_moral_framing_bias_awareness_0001",
+  "@id": "amor-exp-examples:experiment_moral_framing_bias_awareness_0001",
   "@type": [
     "owl:NamedIndividual",
     "amor-exp:Experiment",
@@ -9,7 +9,7 @@
   "amor-exp:hasBackgroundScenario": "interfaz-web-noticias",
   "amor-exp:hasContentAdaptationStrategy": "amor-exp:NoAdaptationStrategy",
   "amor-exp:hasExecutor": {
-    "@id": "amos-exp-examples:ari41",
+    "@id": "amor-exp-examples:ari41",
     "@type": [
       "amor-exp:ExperimentExecutor",
       "prov:SoftwareAgent",
@@ -24,7 +24,7 @@
     "@type": "amor-exp:ExperimentEvalution",
     "amor-exp:hasFinalQuestion": [
       {
-        "@id": "amos-exp-examples:question11",
+        "@id": "amor-exp-examples:question11",
         "@type": [
           "amor-exp:LikertQuestion",
           "schema:Question"
@@ -35,7 +35,7 @@
         }
       },
       {
-        "@id": "amos-exp-examples:question12",
+        "@id": "amor-exp-examples:question12",
         "@type": [
           "amor-exp:LikertQuestion",
           "schema:Question"
@@ -46,7 +46,7 @@
         }
       },
       {
-        "@id": "amos-exp-examples:question13",
+        "@id": "amor-exp-examples:question13",
         "@type": [
           "amor-exp:LikertQuestion",
           "schema:Question"
@@ -57,7 +57,7 @@
         }
       },
       {
-        "@id": "amos-exp-examples:question14",
+        "@id": "amor-exp-examples:question14",
         "@type": "schema:Question",
         "schema:text": {
           "@language": "es",
@@ -67,7 +67,7 @@
     ],
     "amor-exp:hasInitialQuestion": [
       {
-        "@id": "amos-exp-examples:question1",
+        "@id": "amor-exp-examples:question1",
         "@type": [
           "amor-exp:LikertQuestion",
           "schema:Question"
@@ -78,7 +78,7 @@
         }
       },
       {
-        "@id": "amos-exp-examples:question2",
+        "@id": "amor-exp-examples:question2",
         "@type": "schema:Question",
         "schema:text": {
           "@language": "es",
@@ -86,7 +86,7 @@
         }
       },
       {
-        "@id": "amos-exp-examples:question3",
+        "@id": "amor-exp-examples:question3",
         "@type": [
           "amor-exp:LikertQuestion",
           "schema:Question"
@@ -97,10 +97,10 @@
         }
       },
       {
-        "@id": "amos-exp-examples:question4"
+        "@id": "amor-exp-examples:question4"
       },
       {
-        "@id": "amos-exp-examples:question5",
+        "@id": "amor-exp-examples:question5",
         "@type": [
           "amor-exp:LikertQuestion",
           "schema:Question"
@@ -111,7 +111,7 @@
         }
       },
       {
-        "@id": "amos-exp-examples:question6",
+        "@id": "amor-exp-examples:question6",
         "@type": [
           "amor-exp:LikertQuestion",
           "schema:Question"
@@ -124,7 +124,7 @@
     ],
     "amor-exp:hasIntermediateQuestion": [
       {
-        "@id": "amos-exp-examples:question7",
+        "@id": "amor-exp-examples:question7",
         "@type": [
           "amor-exp:LikertQuestion",
           "schema:Question"
@@ -135,7 +135,7 @@
         }
       },
       {
-        "@id": "amos-exp-examples:question8",
+        "@id": "amor-exp-examples:question8",
         "@type": [
           "amor-exp:LikertQuestion",
           "schema:Question"
@@ -146,7 +146,7 @@
         }
       },
       {
-        "@id": "amos-exp-examples:question9",
+        "@id": "amor-exp-examples:question9",
         "@type": [
           "amor-exp:LikertQuestion",
           "schema:Question"
@@ -157,7 +157,7 @@
         }
       },
       {
-        "@id": "amos-exp-examples:question10",
+        "@id": "amor-exp-examples:question10",
         "@type": "schema:Question",
         "schema:text": {
           "@language": "es",
@@ -167,7 +167,7 @@
     ]
   },
   "amor-exp:hasExperimentationSubject": {
-    "@id": "amos-exp-examples:user_moralbias_001",
+    "@id": "amor-exp-examples:user_moralbias_001",
     "@type": [
       "amor-exp:ExperimentationSubject",
       "prov:Person",
@@ -193,7 +193,7 @@
     "amor:hasMoralProfile": {
       "@type": "amor:MoralProfile",
       "amor:analysed": {
-        "@id": "amos-exp-examples:user_moralbias_001"
+        "@id": "amor-exp-examples:user_moralbias_001"
       },
       "amor:usedMoralValueModel": "amor-mft:MoralFoundationsTheoryModel",
       "prov:endedAtTime": "2025-03-19T14:30:00-04:00",
@@ -248,7 +248,7 @@
         }
       ],
       "prov:wasInformedBy": {
-        "@id": "amos-exp-examples:researcher1",
+        "@id": "amor-exp-examples:researcher1",
         "@type": [
           "amor-exp:ExperimentRequester",
           "prov:Person",
@@ -274,7 +274,7 @@
     "@id": "amor-exp:EntitySimilarity"
   },
   "amor-exp:hasRequester": {
-    "@id": "amos-exp-examples:researcher1",
+    "@id": "amor-exp-examples:researcher1",
     "@type": [
       "amor-exp:ExperimentRequester",
       "prov:Person",

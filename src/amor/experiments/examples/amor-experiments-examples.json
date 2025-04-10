@@ -1,5 +1,5 @@
 {
-  "@id": "amos-exp-examples:experiment1",
+  "@id": "amor-exp-examples:experiment1",
   "@type": [
     "owl:NamedIndividual",
     "amor-exp:Experiment",
@@ -12,7 +12,7 @@
     "amor-exp:AfectiveAdaptationStrategy"
   ],
   "amor-exp:hasExecutor": {
-    "@id": "amos-exp-examples:ari41",
+    "@id": "amor-exp-examples:ari41",
     "@type": [
       "amor-exp:ExperimentExecutor",
       "prov:SoftwareAgent",
@@ -26,7 +26,7 @@
   "amor-exp:hasExperimentEvaluation": {
     "@type": "amor-exp:ExperimentEvalution",
     "amor-exp:hasFinalQuestion": {
-      "@id": "amos-exp-examples:question4",
+      "@id": "amor-exp-examples:question4",
       "@type": [
         "amor-exp:LikertQuestion",
         "schema:Question"
@@ -38,7 +38,7 @@
     },
     "amor-exp:hasInitialQuestion": [
       {
-        "@id": "amos-exp-examples:question1",
+        "@id": "amor-exp-examples:question1",
         "@type": [
           "amor-exp:LikertQuestion",
           "schema:Question"
@@ -49,7 +49,7 @@
         }
       },
       {
-        "@id": "amos-exp-examples:question2",
+        "@id": "amor-exp-examples:question2",
         "@type": [
           "amor-exp:LikertQuestion",
           "schema:Question"
@@ -61,7 +61,7 @@
       }
     ],
     "amor-exp:hasIntermediateQuestion": {
-      "@id": "amos-exp-examples:question3",
+      "@id": "amor-exp-examples:question3",
       "@type": [
         "amor-exp:LikertQuestion",
         "schema:Question"
@@ -73,7 +73,7 @@
     }
   },
   "amor-exp:hasExperimentationSubject": {
-    "@id": "amos-exp-examples:human1",
+    "@id": "amor-exp-examples:human1",
     "@type": [
       "amor-exp:ExperimentationSubject",
       "prov:Person",
@@ -101,7 +101,7 @@
     "amor:hasMoralProfile": {
       "@type": "amor:MoralProfile",
       "amor:analysed": {
-        "@id": "amos-exp-examples:human1"
+        "@id": "amor-exp-examples:human1"
       },
       "amor:usedMoralValueModel": "amor-mft:MoralFoundationsTheoryModel",
       "rdfs:label": {
@@ -160,7 +160,7 @@
         }
       ],
       "prov:wasInformedBy": {
-        "@id": "amos-exp-examples:researcher1",
+        "@id": "amor-exp-examples:researcher1",
         "@type": [
           "amor-exp:ExperimentRequester",
           "prov:Person",
@@ -199,7 +199,7 @@
     }
   ],
   "amor-exp:hasRequester": {
-    "@id": "amos-exp-examples:researcher1",
+    "@id": "amor-exp-examples:researcher1",
     "@type": [
       "amor-exp:ExperimentRequester",
       "prov:Person",
@@ -249,7 +249,7 @@
     "amor-exp:hasRobotRole": [
       {
         "amor-exp:hasRobotActor": {
-          "@id": "amos-exp-examples:ari41",
+          "@id": "amor-exp-examples:ari41",
           "@type": [
             "amor-exp:ExperimentExecutor",
             "prov:SoftwareAgent",
@@ -263,7 +263,7 @@
         "amor-exp:hasRobotRole": "newsReader"
       },
       {
-        "amor-exp:hasRobotActor": "amos-exp-examples:ari42",
+        "amor-exp:hasRobotActor": "amor-exp-examples:ari42",
         "amor-exp:hasRobotRole": "emotionalSupport"
       }
     ],

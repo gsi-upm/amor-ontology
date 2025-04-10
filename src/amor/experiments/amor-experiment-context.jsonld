@@ -8,7 +8,7 @@
     "amor-datasets": "http://www.gsi.upm.es/ontologies/amor/datasets#",
     "amor-graph": "http://amor-graph.gsi.upm.es/ns#",
     "amor-examples": "http://www.gsi.upm.es/ontologies/amor/examples#",
-    "amos-exp-examples": "http://www.gsi.upm.es/ontologies/amor/experiments/examples#",
+    "amor-exp-examples": "http://www.gsi.upm.es/ontologies/amor/experiments/examples#",
     "amor-exp": "http://www.gsi.upm.es/ontologies/amor/experiments/ns#",
     "amor-mft": "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#",
     "bhv": "http://www.gsi.upm.es/ontologies/bhv#",
