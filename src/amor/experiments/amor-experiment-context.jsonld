@@ -11,6 +11,7 @@
     "amor-exp-examples": "http://www.gsi.upm.es/ontologies/amor/experiments/examples#",
     "amor-exp": "http://www.gsi.upm.es/ontologies/amor/experiments/ns#",
     "amor-mft": "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#",
+    "segb": "http://www.gsi.upm.es/ontologies/segb/ns#",
     "bhv": "http://www.gsi.upm.es/ontologies/bhv#",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "itsrdf": "http://www.w3.org/2005/11/its/rdf#",

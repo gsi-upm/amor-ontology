@@ -1,4 +1,4 @@
-@prefix ex: <http://www.gsi.upm.es/ontologies/amor/experiments/examples#> .
+@prefix amor-exp-examples: <http://www.gsi.upm.es/ontologies/amor/experiments/examples#> .
 @prefix amor: <http://www.gsi.upm.es/ontologies/amor/ns#> .
 @prefix amor-exp: <http://www.gsi.upm.es/ontologies/amor/experiments/ns#> .
 @prefix amor-graph: <http://amor-graph.gsi.upm.es/ns#> .
@@ -12,15 +12,15 @@
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:experiment_moral_framing_bias_awareness_0001 a owl:NamedIndividual ,
+amor-exp-examples:experiment_moral_framing_bias_awareness_0001 a owl:NamedIndividual ,
         amor-exp:Experiment ,
         amor-exp:DigitalNewspaperExperiment ,
         amor-exp:MoralFrameExperiment;
     rdfs:label "experiment_moral_framing_bias_awareness_0001" ;
     amor-exp:recordsToSEGB "https://amor-segb.gsi.upm.es" ;
-    amor-exp:hasExecutor ex:ari41 ;
-    amor-exp:hasRequester ex:researcher1 ;
-    amor-exp:hasExperimentationSubject ex:user_moralbias_001 ;
+    amor-exp:hasExecutor amor-exp-examples:ari41 ;
+    amor-exp:hasRequester amor-exp-examples:researcher1 ;
+    amor-exp:hasExperimentationSubject amor-exp-examples:user_moralbias_001 ;
     amor-exp:usesDataset amor-graph:dataset1 ;
     amor-exp:hasRecommendationStrategy amor-exp:EntitySimilarity ;
     amor-exp:hasVisualizationStrategy amor-exp:StandardVisualizationStrategy ;
@@ -47,20 +47,20 @@ ex:experiment_moral_framing_bias_awareness_0001 a owl:NamedIndividual ,
     amor-exp:usesRobotCooperationConfiguration [ amor-exp:usesRobotCooperationStrategy amor-exp:NoCooperationRobot ] ;
     amor-exp:hasExperimentEvaluation [
             a amor-exp:ExperimentEvalution ;
-            amor-exp:hasInitialQuestion ex:question1 ,
-                ex:question2 ,
-                ex:question3 ,
-                ex:question4 ,
-                ex:question5 ,
-                ex:question6 ;
-            amor-exp:hasIntermediateQuestion ex:question7 , 
-                ex:question8 ,
-                ex:question9 ,
-                ex:question10 ;
-            amor-exp:hasFinalQuestion ex:question11 ,
-                ex:question12 ,
-                ex:question13 ,
-                ex:question14 
+            amor-exp:hasInitialQuestion amor-exp-examples:question1 ,
+                amor-exp-examples:question2 ,
+                amor-exp-examples:question3 ,
+                amor-exp-examples:question4 ,
+                amor-exp-examples:question5 ,
+                amor-exp-examples:question6 ;
+            amor-exp:hasIntermediateQuestion amor-exp-examples:question7 , 
+                amor-exp-examples:question8 ,
+                amor-exp-examples:question9 ,
+                amor-exp-examples:question10 ;
+            amor-exp:hasFinalQuestion amor-exp-examples:question11 ,
+                amor-exp-examples:question12 ,
+                amor-exp-examples:question13 ,
+                amor-exp-examples:question14 
         ] .
 
 
@@ -69,17 +69,17 @@ amor-graph:dataset1 a amor-exp:NewsDataset ;
    schema:url "http://www.gsi.upm.es/ontologies/amor/datasets/dataset1.json" .
 
 ### [Agents: Experiment Requester, Experiment Executor, Experimentation Subject]
-ex:researcher1 a amor-exp:ExperimentRequester ,
+amor-exp-examples:researcher1 a amor-exp:ExperimentRequester ,
         prov:Person ,
         foaf:Person ;
     rdfs:label "Alejo"@en .
 
-ex:ari41 a amor-exp:ExperimentExecutor ,
+amor-exp-examples:ari41 a amor-exp:ExperimentExecutor ,
         prov:SoftwareAgent ,
         oro:Robot ;
     rdfs:label "ARI 41"@en .
 
-ex:user_moralbias_001 a amor-exp:ExperimentationSubject ,
+amor-exp-examples:user_moralbias_001 a amor-exp:ExperimentationSubject ,
         prov:Person ,
         foaf:Person ;
     rdfs:label "user_moralbias_001" ;
@@ -98,9 +98,9 @@ ex:user_moralbias_001 a amor-exp:ExperimentationSubject ,
     amor:hasMoralProfile [
             a amor:MoralProfile ;
         prov:endedAtTime "2025-03-19T14:30:00-04:00"^^xsd:dateTime;
-        prov:wasInformedBy ex:researcher1 ;
+        prov:wasInformedBy amor-exp-examples:researcher1 ;
         amor:usedMoralValueModel amor-mft:MoralFoundationsTheoryModel ;
-        amor:analysed ex:user_moralbias_001 ;
+        amor:analysed amor-exp-examples:user_moralbias_001 ;
         prov:generated 
             [
                 a amor:MoralValueAnnotation ;
@@ -135,31 +135,31 @@ ex:user_moralbias_001 a amor-exp:ExperimentationSubject ,
     ] .
 
 ### [Questions]
-ex:question1 a amor-exp:LikertQuestion, schema:Question ;
+amor-exp-examples:question1 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "¿Con qué frecuencia consumes noticias?"@es.
-ex:question2 a schema:Question ;
+amor-exp-examples:question2 a schema:Question ;
     schema:text "¿Qué medios de comunicación consideras más fiables? (abierta)"@es .
-ex:question3 a amor-exp:LikertQuestion, schema:Question ;
+amor-exp-examples:question3 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "¿En qué medida crees que los siguientes factores influyen en la información: intereses políticos del periodista?"@es .
-ex:quesiton4 a amor-exp:LikertQuestion, schema:Question ;
+amor-exp-examples:quesiton4 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "¿En qué medida crees que los siguientes factores influyen en la información: intereses económicos del periodista?"@es .
-ex:question5 a amor-exp:LikertQuestion, schema:Question ;
+amor-exp-examples:question5 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "¿En qué medida crees que los siguientes factores influyen en la información: valores morales del periodista?"@es .
-ex:question6 a amor-exp:LikertQuestion, schema:Question ;
+amor-exp-examples:question6 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "¿Cómo valorarías tu capacidad para detectar sesgos en las noticias?"@es .
-ex:question7 a amor-exp:LikertQuestion, schema:Question ;
+amor-exp-examples:question7 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "¿En qué medida te parece imparcial este artículo?"@es .
-ex:question8 a amor-exp:LikertQuestion, schema:Question ;
+amor-exp-examples:question8 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "¿En qué extremo político clasificarías este artículo? (1-muy a la izquierda y 5-muy a la derecha)"@es .
-ex:question9 a amor-exp:LikertQuestion, schema:Question ;
+amor-exp-examples:question9 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "¿Cómo de equilibrado es el tratamiento del tema?"@es .
-ex:question10 a schema:Question ;
+amor-exp-examples:question10 a schema:Question ;
     schema:text "¿Qué valores o principios crees que están guiando la redacción de esta noticia? (abierta)"@es .
-ex:question11 a amor-exp:LikertQuestion, schema:Question ;
+amor-exp-examples:question11 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "¿En qué medida este artículo presenta una visión unilateral del tema?"@es .
-ex:question12 a amor-exp:LikertQuestion, schema:Question ;
+amor-exp-examples:question12 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "¿Cómo valorarías la credibilidad de esta noticia?"@es .
-ex:question13 a amor-exp:LikertQuestion, schema:Question ;
+amor-exp-examples:question13 a amor-exp:LikertQuestion, schema:Question ;
     schema:text "¿En qué medida consideras que el periodista ha intentado presentar una visión neutral?"@es .
-ex:question14 a schema:Question ;
+amor-exp-examples:question14 a schema:Question ;
     schema:text "¿Cómo ha cambiado tu percepción sobre la importancia de los valores morales en las noticias después de este experimento? (abierta)"@es .
