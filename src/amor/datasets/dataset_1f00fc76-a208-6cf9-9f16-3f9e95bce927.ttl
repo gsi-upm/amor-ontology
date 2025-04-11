@@ -1,0 +1,1666 @@
+@prefix amor: <http://www.gsi.upm.es/ontologies/amor/ns#> .
+@prefix amor-datasets: <http://www.gsi.upm.es/ontologies/amor/datasets#> .
+@prefix amor-exp: <http://www.gsi.upm.es/ontologies/amor/experiments/ns#> .
+@prefix amor-mft: <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix itsrdf: <http://www.w3.org/2005/11/its/rdf#> .
+@prefix marl: <http://www.gsi.upm.es/ontologies/marl/ns#> .
+@prefix mft: <http://www.gsi.upm.es/ontologies/mft/ns#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix schema: <http://schema.org/> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+amor-datasets:dataset_1f00fc76-a208-6cf9-9f16-3f9e95bce927 a amor-exp:NewsDataset ;
+    schema:hasPart amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e,
+        amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de,
+        amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2,
+        amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 ;
+    amor-exp:hasNews amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e,
+        amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de,
+        amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2,
+        amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:moral1f00fc5f-48a4-6843-bfdb-17b54a9c2440 a amor:MoralValueAnnotation ;
+    amor:hasMoralValueCategory amor:Neutral,
+        amor:NonMoral ;
+    itsrdf:taConfidence "0.46050137"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:moral1f00fc69-ca6e-6cd3-b9c5-2c5d379e3eee a amor:MoralValueAnnotation ;
+    amor-mft:hasPolarity mft:Virtue ;
+    amor-mft:hasPolarityIntensity "0.5691649"^^xsd:float ;
+    amor:hasMoralValueCategory mft:Fairness ;
+    itsrdf:taConfidence "0.5702393"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:moral1f00fc73-de2d-68c6-8742-5175d16b1251 a amor:MoralValueAnnotation ;
+    amor:hasMoralValueCategory amor:Neutral,
+        amor:NonMoral ;
+    itsrdf:taConfidence "0.45549336"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:moral1f00fc74-c3f3-6f94-83d0-c88a4223339e a amor:MoralValueAnnotation ;
+    amor-mft:hasPolarity mft:Virtue ;
+    amor-mft:hasPolarityIntensity "0.760186"^^xsd:float ;
+    amor:hasMoralValueCategory mft:Authority ;
+    itsrdf:taConfidence "0.7612285"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5d-2557-69e7-a12d-53798195b31e a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-2557-634c-bbb2-5a59f85dce22 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.9996426"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-2558-6565-ba6a-66ca28841dd7 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-2557-6f3e-aba8-688a3bd2affc ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.95984364"^^xsd:float ;
+    itsrdf:taConfidence "0.9947513"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-2558-6f4c-9930-e256490f442a a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-2558-6aaa-a6d2-865c92ba33d3 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.9011435"^^xsd:float ;
+    itsrdf:taConfidence "0.6764414"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-2559-66a0-b028-6d2295dc7769 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-2559-621b-a974-49511de86835 ;
+    marl:hasPolarity marl:Negative ;
+    marl:polarityValue "-0.17703122"^^xsd:float ;
+    itsrdf:taConfidence "0.8792575"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-2559-6e78-9292-ac7e97f24748 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-2559-6b91-8972-6aa694a5f764 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.7222136"^^xsd:float ;
+    itsrdf:taConfidence "0.9998832"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255a-64ba-a4be-6c606e5a30b8 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255a-6146-8622-44ffc6f3e467 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.39790767"^^xsd:float ;
+    itsrdf:taConfidence "0.6344776"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255a-6a0c-b689-ee98f398f6e9 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255a-677a-9d34-6b0481a6941d ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.6207454"^^xsd:float ;
+    itsrdf:taConfidence "0.56863576"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255b-62a9-8568-87ec0143e8b1 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255b-601b-93fc-d3d3ce68d88a ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.9243294"^^xsd:float ;
+    itsrdf:taConfidence "0.99989283"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255b-6896-8969-cd225f659889 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255b-6566-82c4-9df114a099c9 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.59273607"^^xsd:float ;
+    itsrdf:taConfidence "0.8948716"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255b-6f86-bb5d-a63ce6433466 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255b-6cb1-a7ec-f268f9e3c812 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.9241632"^^xsd:float ;
+    itsrdf:taConfidence "0.74761593"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255c-64dd-b5e2-806d7554152b a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255c-624a-961f-35aff93393de ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.79570884"^^xsd:float ;
+    itsrdf:taConfidence "0.99537814"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255c-6a22-a54d-b79980fe6cc4 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255c-678a-aa22-185dd64b5906 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.21874005"^^xsd:float ;
+    itsrdf:taConfidence "0.6029289"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255d-600f-87bf-34974508c65a a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255c-6cc6-b343-399d016ce20e ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.88185936"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255d-66b0-b279-4fd198ea49ac a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255d-630c-acea-37c26418ee4e ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.7615835"^^xsd:float ;
+    itsrdf:taConfidence "0.7002142"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255d-6c30-bbc9-72a965f854ca a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255d-6996-acc4-988f250bdb32 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.5601933"^^xsd:float ;
+    itsrdf:taConfidence "0.99942786"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255e-6207-98ee-2362dccd71b6 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255d-6ee0-a9f0-294114bcffb8 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.99983156"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255e-68e3-91ad-3563a089f1de a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255e-653b-baf6-76399989c49a ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.5712463"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255e-6e06-a5fa-cb85eca2093f a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255e-6b98-abd6-f0a528132f7c ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.69529647"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255f-6504-99de-f892dd926565 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255f-609a-ad74-c425d196fa50 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.8888384"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255f-69c5-9eaa-42c3ae60eb81 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255f-67d6-86be-81b7b33cbefa ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.6235297"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-255f-6e63-92b7-d4d981970169 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-255f-6c83-abaa-03d8994d3840 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.8880294"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-2560-62f8-b54f-3a6526d9a145 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-2560-6127-96ce-b2874f144192 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.51"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-2560-6806-aa23-0acdf9599706 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-2560-6581-acca-97ce8768981f ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.8958251"^^xsd:float ;
+    itsrdf:taConfidence "0.85"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-2560-6d16-8c92-1ad6158f739d a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-2560-6aac-a29c-e178a76b5e5d ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.6338089"^^xsd:float ;
+    itsrdf:taConfidence "0.9996784"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-2561-61ba-9273-15388bc4c897 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-2560-6fe3-844e-99a232512069 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.9314886"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-2561-6809-b317-9e63177703f6 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-2561-65a3-852d-d36f30840408 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.9987311"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-2561-6cf1-97f7-3793409a6da7 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-2561-6a86-b6f3-796dbf639fbb ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.8740095"^^xsd:float ;
+    itsrdf:taConfidence "0.85"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-2562-66a4-83e1-02cf58919584 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-2562-606b-8931-f57ccaf09442 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.9025792"^^xsd:float ;
+    itsrdf:taConfidence "0.85"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:opinion_1f00fc5d-2698-6c24-a6c4-e4eff7ae43d0 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-2698-657c-858a-ed49e42a7bc4 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.48312128"^^xsd:float ;
+    itsrdf:taConfidence "0.8466451"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:opinion_1f00fc5d-2699-663f-8955-a0b2caf7849e a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-2699-6071-a4f8-163946e55bf6 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.5437964"^^xsd:float ;
+    itsrdf:taConfidence "0.7293947"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:opinion_1f00fc5d-2699-6eaa-8d6d-a6ca0b8fcb07 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-2699-6ada-aa60-b034ec2d9524 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.9063436"^^xsd:float ;
+    itsrdf:taConfidence "0.9542025"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:opinion_1f00fc5d-269a-67ff-9995-ae785f54ccc8 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-269a-62ee-8d7e-d3c158501747 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.9030424"^^xsd:float ;
+    itsrdf:taConfidence "0.9954135"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:opinion_1f00fc5d-269b-655c-8e93-3b17c00dedcd a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-269a-6cd9-925a-70138811c7fc ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.517727"^^xsd:float ;
+    itsrdf:taConfidence "0.98383486"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:opinion_1f00fc5d-269b-6e6d-bd17-bd85b682fe34 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-269b-69a0-b89b-d9cc21676d8d ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.9214152"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:opinion_1f00fc5d-269c-6615-8c07-9edb756afb0f a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-269c-6255-9410-4a6e30f718d5 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.5352769"^^xsd:float ;
+    itsrdf:taConfidence "0.6319546"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:opinion_1f00fc5d-269c-6d12-83fe-4d887dc0ded2 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-269c-69a1-90df-7af74a89c6fc ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.5551161"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:opinion_1f00fc5d-269d-6531-a7ee-385743b11507 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-269d-602c-aa0f-c33162bfb1de ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.61066127"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:opinion_1f00fc5d-269d-6cfb-8387-c8ed60aa4d22 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-269d-6966-8c61-e33810a34ece ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.95357"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:opinion_1f00fc5d-269e-6402-8ea2-e19a8fe4d982 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-269e-60a8-9357-fd76750e4934 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.43318328"^^xsd:float ;
+    itsrdf:taConfidence "0.7813232"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:opinion_1f00fc5d-269e-6a69-8634-f9c5b7d3d044 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-269e-6808-b05c-9de3cd119c8b ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.9082688"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:opinion_1f00fc5d-269e-6f59-9223-5c9e912f1667 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5d-269e-6cff-aa72-325ec2054ae3 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.90584034"^^xsd:float ;
+    itsrdf:taConfidence "0.998357"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:opinion_1f00fc5e-2960-6114-b81e-ab299c1bd4a3 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-295f-687d-950c-369bc57fad30 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.64460874"^^xsd:float ;
+    itsrdf:taConfidence "0.65249574"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2960-6c25-8a7e-307f4f8023f6 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2960-6536-8691-dd2189b652f5 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.528015"^^xsd:float ;
+    itsrdf:taConfidence "0.84048927"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2961-62c4-afa6-5f410b77ac25 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2960-6fc5-ab0d-5e8ee233d871 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.596462"^^xsd:float ;
+    itsrdf:taConfidence "0.99968433"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2961-6e5d-859d-adce67cbf8c1 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2961-68b4-838b-eb215453171b ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.96202517"^^xsd:float ;
+    itsrdf:taConfidence "0.96716166"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2962-6d50-9c9a-2e5601c1a101 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2962-6989-82a5-7a7a717658cc ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.88543314"^^xsd:float ;
+    itsrdf:taConfidence "0.9989459"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2964-6381-b9f0-28ee6ad4f54d a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2963-6fbd-a52c-14da5831d1ec ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.45591468"^^xsd:float ;
+    itsrdf:taConfidence "0.6430384"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2964-6a58-a7a4-03511316f5d7 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2964-6664-bfda-e94d380aeaf3 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.20582783"^^xsd:float ;
+    itsrdf:taConfidence "0.88690805"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2965-6096-be67-4a7e25cba646 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2964-6d44-b5ad-3bf16676ad3f ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.7393596"^^xsd:float ;
+    itsrdf:taConfidence "0.99900836"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2965-6614-9481-f333dcf856e2 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2965-6357-8f9c-f9e882d85ada ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.99795926"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2965-6b9f-8bed-91db52a117a9 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2965-68f9-8ea2-e2daedaab8f2 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.75080454"^^xsd:float ;
+    itsrdf:taConfidence "0.7076602"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2966-6400-b4e5-90457ada8cfd a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2965-6fbf-840e-79f1949cb2db ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.850774"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2966-6ac5-bedf-3aeb5eaba2a7 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2966-66ef-a043-a7ddd7726fbd ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.7855716"^^xsd:float ;
+    itsrdf:taConfidence "0.70024735"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2967-6475-83e6-8ae19838db38 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2966-6f12-8e30-272a5cc99fc4 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.4795926"^^xsd:float ;
+    itsrdf:taConfidence "0.9645974"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2967-6f14-b541-56ee03ef8fba a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2967-69c2-8184-d1dfa654cfca ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.4959944"^^xsd:float ;
+    itsrdf:taConfidence "0.9568919"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2968-66b4-af80-b902511cec05 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2968-6205-96ca-92ce4e9e46cf ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.70174414"^^xsd:float ;
+    itsrdf:taConfidence "0.900219"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2969-616f-a225-b87b05fc6357 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2968-69e7-a1ef-9e253a5887f6 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.99319446"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2969-67e9-acb2-8319b3380220 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2969-6496-9741-6a22f056d02a ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.9418124"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-2969-6da5-9b08-3502e47fbd7b a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2969-6aa6-a874-9d6d4055f222 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.8443302"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-296a-62ab-9d4e-8f8f1ec31454 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-296a-603f-9528-ee45f1f49d1c ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.61272186"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-296a-67ff-aff1-ad43da500ec2 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-296a-653c-944c-6f3e30f7f01c ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.5043974"^^xsd:float ;
+    itsrdf:taConfidence "0.85"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-296a-6f5b-926f-0b027502bdd4 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-296a-6c6f-9bbe-c1507b81c216 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.99813926"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-296b-661f-a72d-ee337992e4b4 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-296b-635b-9952-c58f01b40a98 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.63357097"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-296b-6bf7-b32b-a406f1090a37 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-296b-68e8-8de5-10f6faf023af ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.3222887"^^xsd:float ;
+    itsrdf:taConfidence "0.85"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-296c-621a-9949-38d166907cf4 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-296b-6edd-a96e-4771b952295e ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.51"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-296c-68be-81b6-38ef851a0d02 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-296c-65d0-ad97-85278b4b6690 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.83203405"^^xsd:float ;
+    itsrdf:taConfidence "0.85"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-296d-6774-9151-7ba940ce71c8 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-296c-6d4f-95fe-bffd44aa8180 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.98550665"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-296e-6802-a5fd-9f2521668f26 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-296e-64ce-9671-858b1f200170 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.8821883"^^xsd:float ;
+    itsrdf:taConfidence "0.9373156"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-296e-6ce4-8dc6-44098c1d9b3e a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-296e-6ae2-a53d-6782cdbf6898 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.94009703"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-296f-6230-b552-6003de02f99d a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-296e-6f9c-a9cb-28edb5abe9a1 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.8816602"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-296f-670e-94f6-358cdc726696 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-296f-6512-a315-bbbc40689b79 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.875388"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-296f-6bcb-80db-cdfc9edb751f a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-296f-69b0-aa1f-9ada6fab18c7 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.9944628"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:opinion_1f00fc5e-298c-61f5-b253-f78de5a5256f a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-298b-6e7a-9f89-b290710cb245 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.72975206"^^xsd:float ;
+    itsrdf:taConfidence "0.99991274"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-298c-67ce-9fb8-87043bf8c230 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-298c-64fa-9417-637f5bcd372b ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.9791416"^^xsd:float ;
+    itsrdf:taConfidence "0.9991658"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-298c-6d1f-9ea5-884d2c889705 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-298c-6a8c-86d9-070168a4e613 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.90726995"^^xsd:float ;
+    itsrdf:taConfidence "0.99938977"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-298d-696a-a6cf-4aa909709eb1 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-298c-6fce-9794-13eb3cc50d7c ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.92016715"^^xsd:float ;
+    itsrdf:taConfidence "0.9997706"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-298e-6079-ad07-b8a01010b613 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-298d-6ce1-b794-56d73841000f ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.6774368"^^xsd:float ;
+    itsrdf:taConfidence "0.9995753"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-298e-6669-8031-4bdd022187a0 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-298e-6398-8f5c-edc560a8ee13 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.9996151"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-298e-6c11-bc61-fd49151d993d a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-298e-6952-b441-8d2b82250ab2 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.7709355"^^xsd:float ;
+    itsrdf:taConfidence "0.9012881"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-298f-615c-a999-a43fe65f1f2e a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-298e-6ede-92af-0c54afa4bb68 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.49849042"^^xsd:float ;
+    itsrdf:taConfidence "0.99987876"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-298f-667e-89db-b823ba35bcf1 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-298f-6408-b91d-904bf467b688 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.97869533"^^xsd:float ;
+    itsrdf:taConfidence "0.99942434"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-298f-6c0e-8159-8ab6210116f2 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-298f-691c-8360-606a1e852b05 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.7910646"^^xsd:float ;
+    itsrdf:taConfidence "0.97967947"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-2990-61b0-96a4-33e8603297d1 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-298f-6eb0-9290-c4d56350e29f ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.91987705"^^xsd:float ;
+    itsrdf:taConfidence "0.911237"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-2990-6758-bdad-a52513786a64 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2990-648d-baf6-4eef6b1d4aa3 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.6944565"^^xsd:float ;
+    itsrdf:taConfidence "0.99990046"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-2990-6c94-8784-a20d2c96b0bd a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2990-69f9-8c59-73abe104b231 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.91908604"^^xsd:float ;
+    itsrdf:taConfidence "0.959354"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-2995-693e-a52d-a4518cac71f1 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2995-62b2-b32e-213dd655f013 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.97331834"^^xsd:float ;
+    itsrdf:taConfidence "0.97773266"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-2996-6116-b01c-380df48b7cd2 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2995-6de2-8c40-246bbc2d0b99 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.7876974"^^xsd:float ;
+    itsrdf:taConfidence "0.99988246"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-2996-6666-bbb0-dc45de01cb21 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2996-63e6-89b4-abb21d06003f ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.9369118"^^xsd:float ;
+    itsrdf:taConfidence "0.98272693"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-2996-6bbf-ae69-51764ff24a32 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2996-6922-8be5-27791b341b02 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.78153884"^^xsd:float ;
+    itsrdf:taConfidence "0.9983858"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-2997-6106-b403-026a84c824f9 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2996-6e63-b45b-4e485121fd50 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.8078411"^^xsd:float ;
+    itsrdf:taConfidence "0.9996327"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-2997-665c-b15c-37415d5a50fc a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2997-6392-9d5e-773b39a627d0 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.8744855"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-2997-6fca-b59b-933b0bb4b335 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2997-6a31-b596-eafcf57e72b1 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.75232744"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-2998-6e94-a129-0c1af47d43a0 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2998-6887-bdeb-d105e0bf7c49 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.78845894"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-2999-694a-8505-e30b67e04cf4 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2999-6357-8e5b-e31e47a36f92 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.74523824"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-299a-6665-bac6-6343452ade85 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-2999-6da1-8576-6742daa3c555 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.63292027"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-299b-6314-9ae9-1d1fe0d8f89b a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-299a-6b41-bb01-54e99dba70e6 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.96519744"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-299b-6bb4-8709-0d96206f41b2 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-299b-683d-9b4b-55eed6f1b91c ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.67348725"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-299c-61b4-a028-0e69325a56a4 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-299b-6f2a-9c08-5ba056801f4c ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.9628999"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-299c-66cf-a232-57bb26ef4ebf a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-299c-64b7-b992-299dd172450c ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.51"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-299c-6cfb-acb0-8700a2a9236e a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-299c-6a12-85be-62ceed9f0ff1 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.91479176"^^xsd:float ;
+    itsrdf:taConfidence "0.9927307"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-299d-622e-b670-33e2729353b2 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-299c-6fd2-ad71-c41c56b781f1 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.83033276"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-299d-69d2-a2d2-31eb41d853f6 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-299d-6681-8472-4b39e96abcb6 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.980893"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-299d-6fb3-b7dd-622ec3d35e8f a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-299d-6d5b-aea1-5bd1b729b52d ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.6364115"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-299e-655d-b332-890c7b933a5f a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-299e-6263-9f68-e3344efd409d ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.84198254"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-299e-6bd4-9ac6-ccdfbcadb61a a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-299e-6924-94fa-4dc21cbe3036 ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.98979515"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-299f-60a1-8879-30bbf836ba8a a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-299e-6e9b-9d7c-a2ce10806dcb ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.9980552"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-299f-6831-aa56-9559ee3dea5f a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-299f-65dd-b47e-6c7b14cf7bcd ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.99469143"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:opinion_1f00fc5e-299f-6e14-8a71-2d29aa4b3f85 a amor:SentimentAnnotation ;
+    marl:describesObject amor-datasets:mention_1f00fc5e-299f-6b18-9787-827468d22cff ;
+    marl:hasPolarity marl:Positive ;
+    marl:polarityValue "0.0"^^xsd:float ;
+    itsrdf:taConfidence "0.924565"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5d-2557-634c-bbb2-5a59f85dce22 a amor:EntityAnnotation ;
+    schema:name "Mark Rutte" ;
+    itsrdf:taConfidence "0.9996426"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q57792 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-2557-6f3e-aba8-688a3bd2affc a amor:EntityAnnotation ;
+    schema:name "Ukraine" ;
+    itsrdf:taConfidence "0.9947513"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Country,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q212 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-2558-6aaa-a6d2-865c92ba33d3 a amor:EntityAnnotation ;
+    schema:name "Brussels-Capital Region" ;
+    itsrdf:taConfidence "0.6764414"^^xsd:float ;
+    itsrdf:taIdentClass dbo:City,
+        dbo:Organisation,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q240 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-2559-621b-a974-49511de86835 a amor:EntityAnnotation ;
+    schema:name "Spain" ;
+    itsrdf:taConfidence "0.8792575"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Country,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q29 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-2559-6b91-8972-6aa694a5f764 a amor:EntityAnnotation ;
+    schema:name "Josep Borrell" ;
+    itsrdf:taConfidence "0.9998832"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q312901 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255a-6146-8622-44ffc6f3e467 a amor:EntityAnnotation ;
+    schema:name "Poland" ;
+    itsrdf:taConfidence "0.6344776"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Country,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q36 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255a-677a-9d34-6b0481a6941d a amor:EntityAnnotation ;
+    schema:name "Alianza Editorial" ;
+    itsrdf:taConfidence "0.56863576"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    itsrdf:taIdentRef wikidata:Q8195536 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255b-601b-93fc-d3d3ce68d88a a amor:EntityAnnotation ;
+    schema:name "Giorgia Meloni" ;
+    itsrdf:taConfidence "0.99989283"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q451791 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255b-6566-82c4-9df114a099c9 a amor:EntityAnnotation ;
+    schema:name "Italy" ;
+    itsrdf:taConfidence "0.8948716"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Country,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q38 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255b-6cb1-a7ec-f268f9e3c812 a amor:EntityAnnotation ;
+    schema:name "European Space Agency - ESA" ;
+    itsrdf:taConfidence "0.74761593"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    itsrdf:taIdentRef wikidata:Q42262 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255c-624a-961f-35aff93393de a amor:EntityAnnotation ;
+    schema:name "Comisión Europea" ;
+    itsrdf:taConfidence "0.99537814"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    itsrdf:taIdentRef <http://www.crunchbase.com/organization/comisión-europea> ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255c-678a-aa22-185dd64b5906 a amor:EntityAnnotation ;
+    schema:name "A.CHAL" ;
+    itsrdf:taConfidence "0.6029289"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q27975419 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255c-6cc6-b343-399d016ce20e a amor:EntityAnnotation ;
+    schema:name "United States of America" ;
+    itsrdf:taConfidence "0.88185936"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Country,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q30 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255d-630c-acea-37c26418ee4e a amor:EntityAnnotation ;
+    schema:name "controlar" ;
+    itsrdf:taConfidence "0.7002142"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    itsrdf:taIdentRef wikidata:Q18481423 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255d-6996-acc4-988f250bdb32 a amor:EntityAnnotation ;
+    schema:name "Ursula von der Leyen" ;
+    itsrdf:taConfidence "0.99942786"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q60772 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255d-6ee0-a9f0-294114bcffb8 a amor:EntityAnnotation ;
+    schema:name "Donald Trump" ;
+    itsrdf:taConfidence "0.99983156"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q22686 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255e-653b-baf6-76399989c49a a amor:EntityAnnotation ;
+    schema:name "Europa" ;
+    itsrdf:taConfidence "0.5712463"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Place ;
+    itsrdf:taIdentRef wikidata:Q3143 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255e-6b98-abd6-f0a528132f7c a amor:EntityAnnotation ;
+    schema:name "Mario Draghi" ;
+    itsrdf:taConfidence "0.69529647"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q294460 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255f-609a-ad74-c425d196fa50 a amor:EntityAnnotation ;
+    schema:name "La Unión" ;
+    itsrdf:taConfidence "0.8888384"^^xsd:float ;
+    itsrdf:taIdentClass dbo:City,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q2420477 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255f-67d6-86be-81b7b33cbefa a amor:EntityAnnotation ;
+    schema:name "1 USD" ;
+    itsrdf:taConfidence "0.6235297"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-255f-6c83-abaa-03d8994d3840 a amor:EntityAnnotation ;
+    schema:name "2025" ;
+    itsrdf:taConfidence "0.8880294"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-2560-6127-96ce-b2874f144192 a amor:EntityAnnotation ;
+    schema:name "presidente" ;
+    itsrdf:taConfidence "0.51"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-2560-6581-acca-97ce8768981f a amor:EntityAnnotation ;
+    schema:name "Defensa" ;
+    itsrdf:taConfidence "0.85"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-2560-6aac-a29c-e178a76b5e5d a amor:EntityAnnotation ;
+    schema:name "Volodimir Zelenski" ;
+    itsrdf:taConfidence "0.9996784"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-2560-6fe3-844e-99a232512069 a amor:EntityAnnotation ;
+    schema:name "15 EUR" ;
+    itsrdf:taConfidence "0.9314886"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-2561-65a3-852d-d36f30840408 a amor:EntityAnnotation ;
+    schema:name "Unión Europea" ;
+    itsrdf:taConfidence "0.9987311"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-2561-6a86-b6f3-796dbf639fbb a amor:EntityAnnotation ;
+    schema:name "Defensa" ;
+    itsrdf:taConfidence "0.85"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-2562-606b-8931-f57ccaf09442 a amor:EntityAnnotation ;
+    schema:name "Defensa" ;
+    itsrdf:taConfidence "0.85"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e .
+
+amor-datasets:mention_1f00fc5d-2698-657c-858a-ed49e42a7bc4 a amor:EntityAnnotation ;
+    schema:name "Spain" ;
+    itsrdf:taConfidence "0.8466451"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Country,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q29 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:mention_1f00fc5d-2699-6071-a4f8-163946e55bf6 a amor:EntityAnnotation ;
+    schema:name "Spanish preposition" ;
+    itsrdf:taConfidence "0.7293947"^^xsd:float ;
+    itsrdf:taIdentRef wikidata:Q3910834 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:mention_1f00fc5d-2699-6ada-aa60-b034ec2d9524 a amor:EntityAnnotation ;
+    schema:name "Servimedia" ;
+    itsrdf:taConfidence "0.9542025"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    itsrdf:taIdentRef wikidata:Q6126207 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:mention_1f00fc5d-269a-62ee-8d7e-d3c158501747 a amor:EntityAnnotation ;
+    schema:name "Elma Saiz Delgado" ;
+    itsrdf:taConfidence "0.9954135"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q8775044 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:mention_1f00fc5d-269a-6cd9-925a-70138811c7fc a amor:EntityAnnotation ;
+    schema:name "Boletín Oficial del Estado - BOE" ;
+    itsrdf:taConfidence "0.98383486"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation,
+        dbo:Work ;
+    itsrdf:taIdentRef wikidata:Q2029273 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:mention_1f00fc5d-269b-69a0-b89b-d9cc21676d8d a amor:EntityAnnotation ;
+    schema:name "Madrid" ;
+    itsrdf:taConfidence "0.9214152"^^xsd:float ;
+    itsrdf:taIdentClass dbo:City,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q2807 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:mention_1f00fc5d-269c-6255-9410-4a6e30f718d5 a amor:EntityAnnotation ;
+    schema:name "También" ;
+    itsrdf:taConfidence "0.6319546"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    itsrdf:taIdentRef <http://www.linkedin.com/company/tambienstudio> ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:mention_1f00fc5d-269c-69a1-90df-7af74a89c6fc a amor:EntityAnnotation ;
+    schema:name "National Oilwell Varco" ;
+    itsrdf:taConfidence "0.5551161"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    itsrdf:taIdentRef wikidata:Q1817417 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:mention_1f00fc5d-269d-602c-aa0f-c33162bfb1de a amor:EntityAnnotation ;
+    schema:name "La Reforma" ;
+    itsrdf:taConfidence "0.61066127"^^xsd:float ;
+    itsrdf:taIdentRef wikidata:Q3258685 ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:mention_1f00fc5d-269d-6966-8c61-e33810a34ece a amor:EntityAnnotation ;
+    schema:name "300" ;
+    itsrdf:taConfidence "0.95357"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:mention_1f00fc5d-269e-60a8-9357-fd76750e4934 a amor:EntityAnnotation ;
+    schema:name "prosiguió" ;
+    itsrdf:taConfidence "0.7813232"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:mention_1f00fc5d-269e-6808-b05c-9de3cd119c8b a amor:EntityAnnotation ;
+    schema:name "20" ;
+    itsrdf:taConfidence "0.9082688"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:mention_1f00fc5d-269e-6cff-aa72-325ec2054ae3 a amor:EntityAnnotation ;
+    schema:name "Seguridad Social y Migraciones" ;
+    itsrdf:taConfidence "0.998357"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    oa:hasTarget amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de .
+
+amor-datasets:mention_1f00fc5e-295f-687d-950c-369bc57fad30 a amor:EntityAnnotation ;
+    schema:name "José de Viera y Clavijo" ;
+    itsrdf:taConfidence "0.65249574"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q326385 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2960-6536-8691-dd2189b652f5 a amor:EntityAnnotation ;
+    schema:name "Santiago Abascal" ;
+    itsrdf:taConfidence "0.84048927"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q11703587 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2960-6fc5-ab0d-5e8ee233d871 a amor:EntityAnnotation ;
+    schema:name "Congreso de los Diputados" ;
+    itsrdf:taConfidence "0.99968433"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    itsrdf:taIdentRef wikidata:Q539149 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2961-68b4-838b-eb215453171b a amor:EntityAnnotation ;
+    schema:name "Carles Puigdemont" ;
+    itsrdf:taConfidence "0.96716166"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q4740163 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2962-6989-82a5-7a7a717658cc a amor:EntityAnnotation ;
+    schema:name "Diego Torres" ;
+    itsrdf:taConfidence "0.9989459"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q704160 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2963-6fbd-a52c-14da5831d1ec a amor:EntityAnnotation ;
+    schema:name "José Martín Recuerda" ;
+    itsrdf:taConfidence "0.6430384"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q11158443 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2964-6664-bfda-e94d380aeaf3 a amor:EntityAnnotation ;
+    schema:name "Spain" ;
+    itsrdf:taConfidence "0.88690805"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Country,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q29 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2964-6d44-b5ad-3bf16676ad3f a amor:EntityAnnotation ;
+    schema:name "Boletín Oficial del Estado - BOE" ;
+    itsrdf:taConfidence "0.99900836"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation,
+        dbo:Work ;
+    itsrdf:taIdentRef wikidata:Q2029273 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2965-6357-8f9c-f9e882d85ada a amor:EntityAnnotation ;
+    schema:name "Constitutional Court" ;
+    itsrdf:taConfidence "0.99795926"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    itsrdf:taIdentRef wikidata:Q138324 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2965-68f9-8ea2-e2daedaab8f2 a amor:EntityAnnotation ;
+    schema:name "Congreso" ;
+    itsrdf:taConfidence "0.7076602"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    itsrdf:taIdentRef wikidata:Q1125836 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2965-6fbf-840e-79f1949cb2db a amor:EntityAnnotation ;
+    schema:name "Catalonia" ;
+    itsrdf:taConfidence "0.850774"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Country,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q5705 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2966-66ef-a043-a7ddd7726fbd a amor:EntityAnnotation ;
+    schema:name "Tienen" ;
+    itsrdf:taConfidence "0.70024735"^^xsd:float ;
+    itsrdf:taIdentClass dbo:City,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q456550 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2966-6f12-8e30-272a5cc99fc4 a amor:EntityAnnotation ;
+    schema:name "Vox" ;
+    itsrdf:taConfidence "0.9645974"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation,
+        dbo:PoliticalParty ;
+    itsrdf:taIdentRef wikidata:Q15630787 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2967-69c2-8184-d1dfa654cfca a amor:EntityAnnotation ;
+    schema:name "Ceuta" ;
+    itsrdf:taConfidence "0.9568919"^^xsd:float ;
+    itsrdf:taIdentClass dbo:City,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q5823 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2968-6205-96ca-92ce4e9e46cf a amor:EntityAnnotation ;
+    schema:name "Esquerra" ;
+    itsrdf:taConfidence "0.900219"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation,
+        dbo:PoliticalParty ;
+    itsrdf:taIdentRef wikidata:Q150068 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2968-69e7-a1ef-9e253a5887f6 a amor:EntityAnnotation ;
+    schema:name "Canary Islands" ;
+    itsrdf:taConfidence "0.99319446"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q5813 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2969-6496-9741-6a22f056d02a a amor:EntityAnnotation ;
+    schema:name "Melilla" ;
+    itsrdf:taConfidence "0.9418124"^^xsd:float ;
+    itsrdf:taIdentClass dbo:City,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q5831 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-2969-6aa6-a874-9d6d4055f222 a amor:EntityAnnotation ;
+    schema:name "Partido Popular" ;
+    itsrdf:taConfidence "0.8443302"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation,
+        dbo:PoliticalParty ;
+    itsrdf:taIdentRef wikidata:Q185088 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-296a-603f-9528-ee45f1f49d1c a amor:EntityAnnotation ;
+    schema:name "La Reforma" ;
+    itsrdf:taConfidence "0.61272186"^^xsd:float ;
+    itsrdf:taIdentRef wikidata:Q3258685 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-296a-653c-944c-6f3e30f7f01c a amor:EntityAnnotation ;
+    schema:name "Junts" ;
+    itsrdf:taConfidence "0.85"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-296a-6c6f-9bbe-c1507b81c216 a amor:EntityAnnotation ;
+    schema:name "20" ;
+    itsrdf:taConfidence "0.99813926"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-296b-635b-9952-c58f01b40a98 a amor:EntityAnnotation ;
+    schema:name "20" ;
+    itsrdf:taConfidence "0.63357097"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-296b-68e8-8de5-10f6faf023af a amor:EntityAnnotation ;
+    schema:name "Junts" ;
+    itsrdf:taConfidence "0.85"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-296b-6edd-a96e-4771b952295e a amor:EntityAnnotation ;
+    schema:name "Gobierno" ;
+    itsrdf:taConfidence "0.51"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-296c-65d0-ad97-85278b4b6690 a amor:EntityAnnotation ;
+    schema:name "Junts" ;
+    itsrdf:taConfidence "0.85"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-296c-6d4f-95fe-bffd44aa8180 a amor:EntityAnnotation ;
+    schema:name "1" ;
+    itsrdf:taConfidence "0.98550665"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-296e-64ce-9671-858b1f200170 a amor:EntityAnnotation ;
+    schema:name "Junts" ;
+    itsrdf:taConfidence "0.9373156"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-296e-6ae2-a53d-6782cdbf6898 a amor:EntityAnnotation ;
+    schema:name "31" ;
+    itsrdf:taConfidence "0.94009703"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-296e-6f9c-a9cb-28edb5abe9a1 a amor:EntityAnnotation ;
+    schema:name "Política Territorial y Memoria Democrática" ;
+    itsrdf:taConfidence "0.8816602"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-296f-6512-a315-bbbc40689b79 a amor:EntityAnnotation ;
+    schema:name "15" ;
+    itsrdf:taConfidence "0.875388"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-296f-69b0-aa1f-9ada6fab18c7 a amor:EntityAnnotation ;
+    schema:name "2" ;
+    itsrdf:taConfidence "0.9944628"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 .
+
+amor-datasets:mention_1f00fc5e-298b-6e7a-9f89-b290710cb245 a amor:EntityAnnotation ;
+    schema:name "Edmund Stoiber" ;
+    itsrdf:taConfidence "0.99991274"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q44507 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-298c-64fa-9417-637f5bcd372b a amor:EntityAnnotation ;
+    schema:name "Friedrich Merz" ;
+    itsrdf:taConfidence "0.9991658"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q566257 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-298c-6a8c-86d9-070168a4e613 a amor:EntityAnnotation ;
+    schema:name "Robert Habeck" ;
+    itsrdf:taConfidence "0.99938977"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q109943 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-298c-6fce-9794-13eb3cc50d7c a amor:EntityAnnotation ;
+    schema:name "Gerhard Schröder" ;
+    itsrdf:taConfidence "0.9997706"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q2530 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-298d-6ce1-b794-56d73841000f a amor:EntityAnnotation ;
+    schema:name "Alice Weidel" ;
+    itsrdf:taConfidence "0.9995753"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q27975838 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-298e-6398-8f5c-edc560a8ee13 a amor:EntityAnnotation ;
+    schema:name "Angela Merkel" ;
+    itsrdf:taConfidence "0.9996151"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q567 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-298e-6952-b441-8d2b82250ab2 a amor:EntityAnnotation ;
+    schema:name "CDU/CSU" ;
+    itsrdf:taConfidence "0.9012881"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    itsrdf:taIdentRef wikidata:Q708725 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-298e-6ede-92af-0c54afa4bb68 a amor:EntityAnnotation ;
+    schema:name "Maischberger" ;
+    itsrdf:taConfidence "0.99987876"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q106538 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-298f-6408-b91d-904bf467b688 a amor:EntityAnnotation ;
+    schema:name "Olaf Scholz" ;
+    itsrdf:taConfidence "0.99942434"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q61053 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-298f-691c-8360-606a1e852b05 a amor:EntityAnnotation ;
+    schema:name "Deutscher Bundestag" ;
+    itsrdf:taConfidence "0.97967947"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation,
+        dbo:Place ;
+    itsrdf:taIdentRef wikidata:Q154797 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-298f-6eb0-9290-c4d56350e29f a amor:EntityAnnotation ;
+    schema:name "Sozialdemokratische Partei Deutschlands (SPD)" ;
+    itsrdf:taConfidence "0.911237"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation,
+        dbo:PoliticalParty ;
+    itsrdf:taIdentRef wikidata:Q49768 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-2990-648d-baf6-4eef6b1d4aa3 a amor:EntityAnnotation ;
+    schema:name "Gaza Strip" ;
+    itsrdf:taConfidence "0.99990046"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q39760 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-2990-69f9-8c59-73abe104b231 a amor:EntityAnnotation ;
+    schema:name "ARD" ;
+    itsrdf:taConfidence "0.959354"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    itsrdf:taIdentRef wikidata:Q49653 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-2995-62b2-b32e-213dd655f013 a amor:EntityAnnotation ;
+    schema:name "AfD" ;
+    itsrdf:taConfidence "0.97773266"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation,
+        dbo:PoliticalParty ;
+    itsrdf:taIdentRef wikidata:Q6721203 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-2995-6de2-8c40-246bbc2d0b99 a amor:EntityAnnotation ;
+    schema:name "Maybrit Illner" ;
+    itsrdf:taConfidence "0.99988246"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q106548 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-2996-63e6-89b4-abb21d06003f a amor:EntityAnnotation ;
+    schema:name "RTL" ;
+    itsrdf:taConfidence "0.98272693"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    itsrdf:taIdentRef wikidata:Q155702 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-2996-6922-8be5-27791b341b02 a amor:EntityAnnotation ;
+    schema:name "Elon Musk" ;
+    itsrdf:taConfidence "0.9983858"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q317521 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-2996-6e63-b45b-4e485121fd50 a amor:EntityAnnotation ;
+    schema:name "Donald Trump" ;
+    itsrdf:taConfidence "0.9996327"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    itsrdf:taIdentRef wikidata:Q22686 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-2997-6392-9d5e-773b39a627d0 a amor:EntityAnnotation ;
+    schema:name "Adlershof" ;
+    itsrdf:taConfidence "0.8744855"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Place ;
+    itsrdf:taIdentRef wikidata:Q599941 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-2997-6a31-b596-eafcf57e72b1 a amor:EntityAnnotation ;
+    schema:name "Alianza Fútbol Club" ;
+    itsrdf:taConfidence "0.75232744"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation,
+        dbo:SportsClub ;
+    itsrdf:taIdentRef wikidata:Q1969256 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-2998-6887-bdeb-d105e0bf7c49 a amor:EntityAnnotation ;
+    schema:name "Spain" ;
+    itsrdf:taConfidence "0.78845894"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Country,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q29 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-2999-6357-8e5b-e31e47a36f92 a amor:EntityAnnotation ;
+    schema:name "Ukraine" ;
+    itsrdf:taConfidence "0.74523824"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Country,
+        dbo:Place,
+        dbo:PopulatedPlace ;
+    itsrdf:taIdentRef wikidata:Q212 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-2999-6da1-8576-6742daa3c555 a amor:EntityAnnotation ;
+    schema:name "Spanish" ;
+    itsrdf:taConfidence "0.63292027"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Language ;
+    itsrdf:taIdentRef wikidata:Q1321 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-299a-6b41-bb01-54e99dba70e6 a amor:EntityAnnotation ;
+    schema:name "ZDF" ;
+    itsrdf:taConfidence "0.96519744"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    itsrdf:taIdentRef wikidata:Q48989 ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-299b-683d-9b4b-55eed6f1b91c a amor:EntityAnnotation ;
+    schema:name "Gobierno" ;
+    itsrdf:taConfidence "0.67348725"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-299b-6f2a-9c08-5ba056801f4c a amor:EntityAnnotation ;
+    schema:name "comunista de la República Democrática Alemania" ;
+    itsrdf:taConfidence "0.9628999"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-299c-64b7-b992-299dd172450c a amor:EntityAnnotation ;
+    schema:name "conservador" ;
+    itsrdf:taConfidence "0.51"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-299c-6a12-85be-62ceed9f0ff1 a amor:EntityAnnotation ;
+    schema:name "Weidel" ;
+    itsrdf:taConfidence "0.9927307"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Person ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-299c-6fd2-ad71-c41c56b781f1 a amor:EntityAnnotation ;
+    schema:name "Francia" ;
+    itsrdf:taConfidence "0.83033276"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Place ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-299d-6681-8472-4b39e96abcb6 a amor:EntityAnnotation ;
+    schema:name ", de Los Verdes" ;
+    itsrdf:taConfidence "0.980893"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-299d-6d5b-aea1-5bd1b729b52d a amor:EntityAnnotation ;
+    schema:name "2019" ;
+    itsrdf:taConfidence "0.6364115"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-299e-6263-9f68-e3344efd409d a amor:EntityAnnotation ;
+    schema:name "derecha de Alternativa para Alemania" ;
+    itsrdf:taConfidence "0.84198254"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Work ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-299e-6924-94fa-4dc21cbe3036 a amor:EntityAnnotation ;
+    schema:name "ministro de Economía" ;
+    itsrdf:taConfidence "0.98979515"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-299e-6e9b-9d7c-a2ce10806dcb a amor:EntityAnnotation ;
+    schema:name "2002" ;
+    itsrdf:taConfidence "0.9980552"^^xsd:float ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-299f-65dd-b47e-6c7b14cf7bcd a amor:EntityAnnotation ;
+    schema:name "Alemania" ;
+    itsrdf:taConfidence "0.99469143"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Place ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:mention_1f00fc5e-299f-6b18-9787-827468d22cff a amor:EntityAnnotation ;
+    schema:name "EE UU" ;
+    itsrdf:taConfidence "0.924565"^^xsd:float ;
+    itsrdf:taIdentClass dbo:Organisation ;
+    oa:hasTarget amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 .
+
+amor-datasets:news_1f00fc5d-2697-6b27-8ddb-8e49799b42de a schema:NewsArticle ;
+    schema:articleBody """MADRID, 20 (SERVIMEDIA)
+El nuevo reglamento de la Ley de Extranjería, que este miércoles publica el Boletín Oficial del Estado (BOE), comenzará a aplicarse de forma plena el 20 de mayo de 2025, según declaró la ministra de Inclusión, Seguridad Social y Migraciones, Elma Saiz.
+En una entrevista en RNE recogida por Servimedia, Saiz defendió este miércoles la necesidad de aplicar “este período de seis meses” para que la reforma “entre plenamente en vigor”. “Introduce cambios muy importantes” y, “por seguridad jurídica, requiere un tiempo de adaptación”. El nuevo reglamento “reduce y simplifica trámites burocráticos”, reordena figura y clarifica los procedimientos migratorios y flexibiliza los requisitos exigidos para acceder a permisos de trabjao y residencia, explicó Saiz.
+A su juicio, se trata de “una reforma ambiciosa y muy potente”, que “amplía derechos para las personas migrantes y permite “luchar con mayor contundencia contra las mafias”. Para ello, mejora el acceso a los permisos a través de “tres puertas que no estaban suficientemente abiertas: empleo, formación y reagrupación familiar”.
+ARRAIGO
+Según la ministra, España “es el único país europeo que recoge la figura del arraigo”, por el que las personas extranjeras que entraron de forma ilegal en el país pueden regularizar su situación desde dentro. En el nuevo reglamento, el arraigo “se reordena” y pasan a existir cinco tipos (antes había cuatro): arraigo familiar, de segunda oportunidad, social, socioformativo y sociolaboral.
+En general, se reduce el tiempo de permanencia en España exigido para solicitar el arraigo de tres a dos años, y se permitirá que las personas trabajen por cuenta ajena o propia desde el primer momento. Todas las autorizaciones tendrán un año de duración salvo las familiares, que lo serán por un plazo de cinco.
+Según estimaciones del ministerio, esta nueva norma puede facilitar la regularización anual de unas 300.000 personas durante los próximos tres años. El nuevo arraigo familiar se limita a los padres o tutores de menores con nacionalidad de algún país de la Unión Europea, así como a aquellas personas que tengan a su cargo personas con discapacidad. El resto de los casos se regularán mediante el nuevo estatuto de ‘familiar de persona con nacionalidad española’, que amplía la edad para la regularización de los hijos hasta los 26 años (21 en la actualidad) y permitirá incluir a las parejas no registradas formalmente que puedan acreditar una relación afectiva análoga. También se amplía el concepto de familiar reagrupada a los hijos y progenitores de víctimas de trata, violencia sexual o de género
+Otra de las novedades del texto consiste en la creación del ‘Arraigo de segunda oportunidad’, dirigido a aquellas personas que en los dos últimos años tenían autorización de residencia pero que, por distintas circunstancias, no la han renovado.
+Las personas extranjeras podrán acceder al arraigo sociolaboral presentando contratos que demuestren una jornada semanal de 20 horas (antes eran 30), y se permitirá que entidades sociales reconocidas acrediten la situación de arraigo social (cuando no sea posible por otras vías).
+En cuanto a los extranjeros que hayan cursado sus estudios en España, el reglamento facilita su tránsito desde la estancia por estudios a la autorización de residencia y trabajo, siempre y cuando cuenten con el contrato laboral en un sector que se corresponda con lo que hayan estudiado
+VISADOS
+El nuevo texto crea un título específico para los visados, que clarifica el esquema de autorizaciones, los requisitos y los trámites en general. De este modo, todas las autorizaciones iniciales serán de un año y las renovaciones de cuatro.
+También se amplía de tres meses a un año el visado para la búsqueda de empleo (vigente para determinadas ocupaciones y ámbitos territoriales), a fin de facilitar que las personas consigan un trabajo adecuado a su perfil profesional y, al mismo tiempo, que las empresas encuentren los profesionales que necesitan.
+Por otro lado, la reforma crea una autorización específica de residencia y trabajo que facilita la contratación tanto a nivel individual como colectivo para las actividades de temporada. Mejora, además, la protección de los derechos de los trabajadores, que deberán tener información concreta y escrita (en un idioma que comprendan) sobre sus condiciones laborales, su estancia y demás gastos.
+También aumenta la exigencia referida a las condiciones de habitabilidad y la seguridad del trabajador desde que sale de su país hasta que se da de alta en la Seguridad Social. A esto se suma una mejora en la posibilidad de cambio de empleador en caso de abuso o por otras causas que hayan impedido el desarrollo de la relación laboral (fallecimiento del empleador, plaga en la cosecha, etc.). Además, la normativa promueve que los empresarios dispongan de más información en todo el proceso, que será más sencillo y flexible para adaptarlo a sus necesidades concretas, como una duración determinada o la gestión colectiva de contrataciones.
+FORMACIÓN
+Otro cambio importante se refiere a los estudiantes extranjeros, que disfrutarán una autorización de estancia por el mismo tiempo que dure su formación (hasta ahora se renovaba año a año). Se les facilitará una vía rápida para que puedan enlazar con una autorización de trabajo una vez terminen sus estudios y estarán autorizados a trabajar un máximo de 30 horas semanales, con independencia de la formación que estén cursando. El nuevo reglamento refuerza asimismo los requisitos y las obligaciones de los centros de estudios.
+ASILO
+Saiz subrayó la relevancia de la “vía transitoria”, de un año de duración, que este reglamento habilita de cara a la regularización de solicitantes de protección internacional cuyas demandas han sido rechazadas en firme.
+De hecho, el reglamento abre la posibilidad de que puedan acceder a la autorización de residencia creditando seis meses de estancia en españa. “Somos muy conscientes de que vivimos en un escenario internacional muy complejo y convulso”, declaró.
+Sin embargo, “no es lo mismo la migración por motivos económicos que la persecución por causas políticas o religiosas”, prosiguió, y “lo que hacemos (con este reglamento) es reforzar las garantías para cada caso concreto”. En su opinión, “este reglamento exquisito con los derechos humanos” y, gracias a él, “España es hoy un país mejor”.
+(SERVIMEDIA)20-NOV-2024 10:38 (GMT +1)AGQ/gja
+(C) SERVIMEDIA. Esta información es propiedad de Servimedia. Sólo puede ser difundida por los clientes de esta agencia de noticias citando a Servimedia como autor o fuente. Todos los derechos reservados. Queda prohibida la distribución y la comunicación pública por terceros mediante cualquier vía o soporte.
+Mostrar comentarios
+Cargando siguiente contenido..."""@es ;
+    schema:author amor-datasets:Servimedia ;
+    schema:datePublished "Wed, 20 Nov 2024 10:38:00 GMT"^^xsd:str ;
+    schema:headline "El nuevo reglamento de la Ley de Extranjería entrará en vigor el 20 de mayo de 2025"@es ;
+    schema:image "https://www.lavanguardia.com/images/default.jpg?h=508b"^^xsd:anyURI ;
+    schema:publisher amor-datasets:LaVanguardia ;
+    schema:url "https://www.lavanguardia.com/sociedad/20241120/10122657/nuevo-reglamento-ley-extranjeria-entrara-vigor-20-mayo-2025-agenciaslv20241120.html"^^xsd:anyURI .
+
+amor-datasets:news_1f00fc5d-2553-6ff3-9792-2db11a5c876e a schema:NewsArticle ;
+    schema:articleBody """Unión Europea
+Los próximos 12 meses también podrían ser los de la paz en Ucrania o, en cambio, el periodo en el que el conflicto se internacionalice todavía más
+Corresponsal Bruselas
+Corresponsal Bruselas
+Unión Europea La Unión Europea promete 1.000 millones a Turquía para el control y la gestión del retorno de refugiados sirios
+Análisis Al filo del año
+Los líderes europeos tendrán que tomar en 2025 varias decisiones que marcarán el futuro más inmediato de la UE. Históricas, por supuesto, como lo es ya casi todo, empezando por la gestión de la inmigración. La inmensa mayoría de los países están de acuerdo en abordar "soluciones innovadoras", el eufemismo que encierra los centros de detención fuera de la Unión Europea al estilo de los que ya ha puesto en marcha la primera ministra italiana, Giorgia Meloni.
+Apenas España mantiene una posición diferente, asegurando que es necesario actuar en el origen y ayudar a que las economías de los países que más movimientos migratorios generan crezcan. De esa manera, sus habitantes tendrán menos incentivos para moverse, pero eso es un plan a medio o incluso largo plazo. Y la mayor parte de los líderes quieren resultados a corto plazo. Controlar ya la llegada de personas a sus fronteras, y eso forja alianzas tan improbables como las de los gobiernos de Países Bajos, Dinamarca y la mencionada Italia.
+La Presidencia de turno del Consejo, además, la ostentará Polonia, que ya ha marcado la cuestión migratoria como una de las prioridades de su mandato. La presidenta de la Comisión Europea, Ursula von der Leyen, ha dejado asimismo muy claro que el mandato que le han dado los países es buscar soluciones. Tanto, que Bruselas ya está estudiando los costes financieros de los centros, así como su encaje jurídico. El avance hacia el modelo Meloni se antoja imparable.
+La inversión en Defensa será igualmente una cuestión clave y, también aquí, la posición de España está muy alejada de lo que se va a imponer en Europa. La convicción de que se debe elevar el gasto en esta cuestión está cada vez más extendida en Europa, y la victoria de Donald Trump en las elecciones de Estados Unidos no hace más que acentuar esta situación.
+Por una parte, porque va a obligar a los países de la OTAN a que destinen un mayor porcentaje de su Producto Interior Bruto (PIB) a Defensa. ¿Cuánto? En Bruselas ya hay quien habla de que la exigencia inicial podría llegar incluso al 5% desde el actual 2% para posteriormente llegar a un punto de acuerdo cercano al 3,5%. Ahora mismo, sólo Polonia está por encima de ese dato, de modo que todos los países integrados en la Alianza tendrían que aumentar de manera significativa los fondos destinados a Defensa.
+El secretario general de la OTAN, Mark Rutte, ya ha adelantado que serán necesarios "sacrificios" por parte de los países, y especialmente complicada será la situación de España: apenas gasta un 1,28% de su PIB a Defensa, lo que a todas luces se antoja insuficiente y le exigiría aumentar en varias decenas de miles de euros al año su inversión.
+"Europa está en peligro"
+Pero además, la mencionada victoria de Trump unida a la guerra en Ucrania también ha desatado una frase que se repite con mucha frecuencia en la capital comunitaria: Europa tiene que aprender a defenderse por sí misma, sin contar siempre con el paraguas de EEUU, y asegurar así su estilo de vida. "Todo el mundo reconoce que Europa está en peligro", avisó Josep Borrell, ex alto representante de la Unión Europea (UE) para Asuntos Exteriores y Seguridad, en su última comparecencia pública en el cargo. El político español ha sido una de las voces que más ha intentado hacer entender a los europeos que el peligro es real.
+Esa necesidad de asegurar el bienestar europeo también hay quien la vincula al control de la inmigración y, por supuesto, a lo imperativo que resulta impulsar la economía comunitaria. La pérdida de poder adquisitivo de los ciudadanos europeos es evidente, uno de los aspectos más importantes del informe Draghi es la búsqueda de competitividad y todo eso hay que encajarlo con la transición verde. Muy difícil.
+Un ejemplo muy representativo y que preocupa mucho en Bruselas es el sector de la automoción. Las grandes marcas estiman que en 2025 pagarán unos 15.000 millones de euros en multas por no cumplir los objetivos climáticos en venta de vehículos eléctricos. Pero es que los ciudadanos europeos no pueden permitirse un coche eléctrico made in EU y mientras tanto los fabricantes chinos ofrecen vehículos mucho más baratos incluso con el pago de aranceles. Un contexto endemoniadamente complejo que amenaza a una industria que aporta el 8% del PIB europeo.
+¿Paz en Ucrania?
+Y, por supuesto, está el futuro de Ucrania. El presidente Volodimir Zelenski se niega a hablar de conversaciones de paz, pero esta cuestión está cada vez más presente en Bruselas. La versión oficial es que los esfuerzos están centrados en que Ucrania mejore su posición, un tanto debilitada actualmente, y que a continuación enfrente esas posibles conversaciones de paz.
+Pero, y otra vez vuelve a salir el nombre de Trump, también es muy posible que el presidente electo obligue a Ucrania a sentarse de manera más o menos inmediata a negociar. Por eso, Zelenski también está pidiendo ya más garantías a la UE y a la OTAN. 2025 podría ser el año en el que acabe la guerra. O tal vez no y Europa y el mundo aceleren hacia un conflicto cada vez más internacional. La sociedad parece ajena a ello, pero el riesgo es real."""@es ;
+    schema:author amor-datasets:DanielViana ;
+    schema:category "Business and Finance"@en,
+        "Economy"@en,
+        "News and Politics"@en,
+        "Politics"@en ;
+    schema:datePublished "Mon, 30 Dec 2024 14:15:00 GMT"^^xsd:str ;
+    schema:headline "2025, el año en el que Europa limitará la entrada de migrantes y deberá aprender a defenderse y salvaguardar su estilo de vida"@es ;
+    schema:image "https://phantom-elmundo.unidadeditorial.es/e15012bb0f63620a76aab4a2ad8210d8/resize/1200/f/webp/assets/multimedia/imagenes/2024/12/29/17354818732374.jpg"^^xsd:anyURI ;
+    schema:publisher amor-datasets:ElMundo ;
+    schema:url "https://www.elmundo.es/internacional/2024/12/30/676d9155fc6c83ce228b4597.html"^^xsd:anyURI .
+
+amor-datasets:news_1f00fc5e-295e-65d3-a7e8-c5ad83448fc2 a schema:NewsArticle ;
+    schema:articleBody """Las comunidades autónomas tienen hasta el 31 de marzo para presentar un certificado del número de menores que acogen
+Para la derivación a otras comunidades hay un plazo de doce meses una vez se convalide el decreto ley en el Congreso
+El ministro de Política Territorial y Memoria Democrática, Ángel Víctor Torres, ha advertido a las comunidades autónomas gobernadas por el PP que "no hay margen" para no cumplir con la distribución de los menores migrantes no acompañados que se les adjudique en función del pacto alcanzado por el Gobierno y Junts para la reforma del artículo 35 de la Ley de Extranjería. No obstante, ha matizado que si creen que "invade competencias autonómicas", tienen derecho a acudir al Tribunal Constitucional.
+"Tienen que ejecutar lo que la ley traslada. Los certificados (sobre cuántos menores acogen en la actualidad) deben llegar antes del 31 de marzo, y sino, estaremos en situación de bloqueo", ha subrayado en La Hora de La 1. Una vez se haya aprobado el decreto ley en el Congreso "deben producirse las derivaciones y los traslados", ha dicho el ministro antes de insistir en que tiende la mano al PP "para que reflexione y recapacite".
+Clavijo cree que es "absolutamente de justicia" que el Gobierno de España "responda ante una competencia autonómica que son los menores extranjeros no acompañados", algo que"se lleva reclamando 40 años por los territorios frontera", como las Islas Canarias y Ceuta.
+El Boletín Oficial del Estado (BOE) ha publicado este miércoles el real decreto ley aprobado por el Gobierno para modificar el artículo 35 de la Ley de Extranjería tras pactar con Junts el reparto de menores migrantes no acompañados que se encuentran en Canarias, permitiendo que se establezca un reparto obligatorio de menores migrantes no acompañados desde Canarias, Ceuta y Melilla al resto de España. El decreto entrará en vigor este jueves, 20 de marzo, aunque deberá ir ser convalidado en el Congreso de los Diputados.
+El Gobierno aprueba la reforma de la ley de extranjería tras pactar con Junts el reparto de menores migrantes
+Recuerda a las comunidades que tienen que enviar un certificado
+Torres ha explicado que una vez se haya convalidado el decreto ley en el Congreso hay un plazo de 12 meses para la sobreocupación de Canarias y Ceuta. "Aquellos que lleguen a los 15 días y tengan ya todos sus papeles estructurados serán también derivados", ha señalado.
+"Lo más importante es la disposición adicional undécima del decreto ley" sobre la reforma del artículo 35 de la Ley de Extranjería, ha dicho, porque hay "muchas comunidades" que dicen que están "saturadas" de menores extranjeros no acompañados.
+Torres ha explicado que los gobiernos autonómicos tienen de plazo hasta el 31 de marzo para demostrar esa situación de saturación de la que hablan y que para ello tienen que enviar "un certificado firmado por funcionarios públicos que diga cuántos menores hay en esa comunidad".
+Cuando se tengan esos datos, se cogerá toda la población de España se dividirá entre los menores no acompañados que hay en el conjunto del país, de ahí saldrá un número, y después, según ha detallado, se cogerá la población de cada comunidad, se dividirá entre ese número y así sale la "capacidad ordinaria" de "cualquier comunidad".
+Al hacer este cálculo habrá comunidades que tengan una "capacidad ordinaria" de 1.000 menores no acompañados y en estos momentos acogen 2.000 y otras que acogen 20. Por eso, considera que es "una propuesta de justicia", para que la respuesta a la migración sea "compartida" entre todas las comunidades y ciudades autónomas.
+"¿Qué respuesta humanitaria es esa?"
+"¿Qué respuesta humanitaria es esa de hacer que los niños los apartes según el color de su piel?", ha cuestionado en un mensaje a Vox, la formación de Santiago Abascal, después de preguntar "qué diferencia hay entre un niño o una niña de diez años que viene de Mali huyendo de la guerra o un niño que viene huyendo de la guerra en Ucrania".
+Al ser preguntado por si Junts ha reclamado que el número de menores migrantes fuera pequeño para Cataluña, ha explicado que desde el verano pasado la formación de Carles Puigdemont ya había trasladado que ante el "esfuerzo histórico" que había hecho la comunidad, "cosa que es verdad" y ahí están los números, que "ningún menor con respecto a la proposición de ley de entonces fuera a Cataluña y aquello jurídicamente no tenía cabida, hemos seguido negociando, el PP se desmarcó, a quien intentamos siempre traer a la mesa".
+Por otra parte, Torres ha confiado en que el real decreto pactado con el partido de Carles Puigdemont cuente con el aval del resto de socios parlamentarios, ya que "la base" es el "texto que se llevó al Congreso" el año pasado y ya contó con el visto bueno de esas formaciones.
+Torres ha asegurado que, al margen del rechazo del PP, el decreto ley que inicia su recorrido parlamentario cuenta ya con el respaldo de otras formaciones, como ERC y Sumar, porque la base de la reforma es el texto que se llevó el verano pasado al Congreso que ya apoyaron, "con algunas modificaciones"."""@es ;
+    schema:author amor-datasets:Rtvees ;
+    schema:datePublished "Wed, 19 Mar 2025 11:03:00 GMT"^^xsd:str ;
+    schema:headline "Torres advierte a las comunidades del PP que \"no hay margen\" para no cumplir el reparto de menores migrantes"@es ;
+    schema:image "https://img.rtve.es/n/gobierno-junts-acuerdan-reparto-menores-migrantes-cataluna_16495648.jpg"^^xsd:anyURI,
+        "https://img2.rtve.es/v/16497550?w=1600&preview=01742374928653.jpg"^^xsd:anyURI ;
+    schema:publisher amor-datasets:Rtvees ;
+    schema:url "https://www.rtve.es/noticias/20250319/torres-reforma-ley-extranjeria-menores-comunidades/16497397.shtml"^^xsd:anyURI .
+
+amor-datasets:news_1f00fc5e-298b-6009-8f56-69477f29a311 a schema:NewsArticle ;
+    schema:articleBody """El democristiano Friedrich Merz, favorito en las elecciones en Alemania del 23 de febrero, y el canciller socialdemócrata, Olaf Scholz han chocado este domingo por la política migratoria y las relaciones con la extrema derecha en un debate televisivo duro en el fondo, pero respetuoso en las formas. Ambos se han acusado mutuamente, en los primeros minutos de una confrontación de una hora y media, de incumplir promesas y carecer de credibilidad, y en ocasiones Merz ha logrado poner a Scholz a la defensiva. Al mismo tiempo, ambos se han cuidado mucho de medir sus ataques personales. Saben que las formaciones que lideran posiblemente están condenadas a gobernar en coalición después de las elecciones.
+Scholz ha acusado a Merz de haber “roto un tabú” y “faltado a su palabra” al aceptar hace 10 días el apoyo de la extrema derecha de Alternativa para Alemania (AfD) en varios votos parlamentarios sobre inmigración. “Desgraciadamente, no puedo estar seguro de que usted no vaya a repetirlo”, ha dicho el canciller, para sugerir que el democristiano ha roto el cordón sanitario y un día podría aliarse con los radicales. El líder democristiano se ha defendido prometiendo, como ha hecho otras veces, que nunca pactará con el partido Alianza para Alemania (AfD) ni aceptará sus votos para gobernar. Y, en uno de los momentos más tensos del debate, ha acusado al canciller de “no vivir en este mundo” al hablar de la inmigración en Alemania y “contar cuentos de hadas”.
+El debate abre la fase final de una campaña marcada, primero, por el apoyo del magnate trumpista Elon Musk a AfD. Y, sobre todo, por la decisión de Merz, de aceptar los votos de la extrema derecha en el Bundestag para varias iniciativas sobre inmigración. Socialdemócratas, ecologistas, las iglesias católica y protestante e incluso la excanciller democristiana Angela Merkel criticaron a Merz por votar junto a AfD y le acusaron de haber roto un tabú que debilita el cordón sanitario frente a la ultraderecha. Centenares de miles de alemanes han salido a las calles de las principales ciudades para protestar.
+Para Scholz, era una de las últimas oportunidades para intentar la remontada que denodadamente busca desde que precipitó las elecciones al destituir en noviembre a los ministros liberales y quedarse en minoría junto a Los Verdes. Para Merz, se trataba de no cometer ningún error de bulto y preservar su hasta ahora cómodo liderazgo en los sondeos. Para ambos, era un examen sobre la capacidad de recoser los puentes, rotos en campaña, entre las formaciones moderadas.
+No se han roto puentes en el debate, pero ambos han marcado sus diferencias respecto a los votos con AfD la política migratoria o la economía. Merz ha acusado a Scholz de inacción tras una serie de crímenes y atentados perpetrado por extranjeros, y el canciller ha reivindicado haber hecho más durante su mandato que los Gobiernos anteriores. Pero ha añadido que la propuesta de Merz para rechazar en las fronteras alemanas a los demandantes de asilo rebasa los límites del derecho europeo. “Lo que propone el señor Merz va en contra de los intereses alemanes”, ha dicho “¿Por qué seríamos tan estúpidos de hacer algo así?” El democristiano ha señalado que otros países —y entre ellos ha citado a Francia y España— ya practican las llamadas “devoluciones en caliente” que él propone.
+El formato, con solo dos participantes, provocó críticas e incomprensión. Participaban el mejor situado en los sondeos, Merz, y el tercero, Scholz. Pero quedaron fuera Alice Weidel, la candidata de AfD, en segunda posición en los sondeos, y el cuarto, Robert Habeck, de Los Verdes. Que los organizadores, las cadenas públicas ARD y ZDF, optasen por un duelo Scholz-Merz se explica por la tradición de enfrentar al canciller con el jefe de la oposición y principal aspirante a relevarlo, aunque Scholz ya ha dado a entender que si no gana —y vistos los sondeos es casi imposible que gane—no piensa ser ministro en un Gobierno con otro canciller.
+Ante la economía estancada desde 2019 y la profunda crisis industrial, el canciller ha alegado: “No fui yo quien invadió Ucrania”. Se refería a la crisis energética que supuso el fin del gas ruso barato para Alemania. Merz le ha respondido con una pregunta: “¿Por qué en medio de esta crisis profunda energética desconecta tres centrales nucleares que funcionan?” A la pregunta de una de las moderadoras sobre el plan del presidente de EE UU, Donald Trump, para Gaza, Scholz ha respondido: “Es un escándalo. El desplazamiento de población es inaceptable y va en contra del derecho internacional”. “Lo comparto”, ha dicho Merz.
+El debate, moderado por las periodistas Sandra Maischberger y Maybrit Illner, se ha emitido desde los estudios berlineses de Adlershof, que fueron los estudios centrales de la televisión del régimen comunista de la República Democrática Alemania. Los debates electorales en el formato de duelo son una tradición relativamente nueva en este país: los primeros se celebraron en 2002, entre el entonces canciller, el socialdemócrata Gerhard Schröder, y el aspirante conservador, Edmund Stoiber.
+ARD y ZDF había previsto al principio otro duelo entre Habeck y Weidel, pero el líder ecologista y actual ministro de Economía se negó a participar en este debate de segundo plato y además con la candidata de la extrema derecha. La cadena privada RTL ha convocado para el 16 de febrero otro debate en el que, esta vez sí, estarán presentes los cuatro candidatos mejor situados: Merz, Weidel, Scholz y Habeck.
+La discusión sobre la inmigración y, en paralelo, sobre la relación de los partidos moderados con la extrema derecha ha copado la campaña, pero el efecto en los sondeos, por ahora, ha sido nulo. Lo curioso es que llevan meses como si estuviesen congelados: la CDU/CSU, en torno al 30%; AfD, el 20%; SPD, el 15%, y Los Verdes, un poco por debajo y, en algún sondeo, por delante de los socialdemócratas. Como ningún partido tendrá mayoría, y puesto que Merz ha prometido que, pese a sus polémicos votos en el Bundestag, nunca pactará con AfD, el interrogante es si se verá abocado a formar gobierno con el SPD, con Los Verdes o con ambos a la vez.
+Hay campo para el entendimiento. Al abordar la economía, Scholz ha defendido una flexibilización del límite constitucional al endeudamiento, al que se achaca el déficit de inversiones en Alemania. Merz, sin renunciar del todo a mantenerlo, se ha mostrado abierto a la discusión. En política exterior, no han coincidido solo en condenar el plan de Trump para Gaza, sino al afirmar que la entrada de Ucrania en la OTAN, mientras dure la guerra, no está al orden del día. El centro, maltrecho tras una campaña que aleja al centroizquierda del centroderecha, puede recomponerse.
+Y la foto del debate, pese a las diferencias en inmigración o en la economía, no es la de dos líderes irremediablemente polarizados. Será difícil que el duelo altere la campaña. Un sondeo del instituto Forschungsgruppe Wahlen da un resultado igualado: un 37% de telespectadores cree que ganó Scholz; un 34%, Merz; un 29% los vio igualados. La última frase de cada uno resumió bien el tono general. “Tenemos un plan para este país”, ha dicho Merz. Y ha concluido Scholz: “Solo votando al Partido Socialdemócrata habrá con seguridad un Gobierno que se preocupe porque Alemania avance y siga siendo estable”."""@es ;
+    schema:author amor-datasets:MarcBassets ;
+    schema:category "Elections"@en,
+        "News and Politics"@en,
+        "Political Issues"@en,
+        "Politics"@en ;
+    schema:datePublished "Sun, 09 Feb 2025 22:06:00 GMT"^^xsd:str ;
+    schema:headline "Scholz y Merz chocan por la inmigración y la ultraderecha sin romper puentes ante una futura coalición en Alemania"@es ;
+    schema:image "https://imagenes.elpais.com/resizer/v2/F6TK37IJX2MKUCHZUT346LIX4M.jpg?auth=48c1239d4dcfe66cbc12b2e64774ce955a9cf428402ec48b1f60a0067155389b&width=1200"^^xsd:anyURI ;
+    schema:publisher amor-datasets:ElPais ;
+    schema:url "https://elpais.com/internacional/2025-02-09/scholz-y-merz-chocan-por-la-inmigracion-y-la-ultraderecha-sin-romper-puentes-ante-una-futura-coalicion-en-alemania.html"^^xsd:anyURI .
+
