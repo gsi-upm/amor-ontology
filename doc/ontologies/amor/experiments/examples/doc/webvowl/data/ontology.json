@@ -37,16 +37,16 @@
         "value" : "http://www.gsi.upm.es",
         "type" : "iri"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#",
         "type" : "label"
       } ],
       "title" : [ {
@@ -500,12 +500,12 @@
         "hasPreferredContent" : [ {
           "identifier" : "hasPreferredContent",
           "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#news1",
+          "value" : "http://amor-graph.gsi.upm.es/ns#news2",
           "type" : "iri"
         }, {
           "identifier" : "hasPreferredContent",
           "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#news2",
+          "value" : "http://amor-graph.gsi.upm.es/ns#news1",
           "type" : "iri"
         } ],
         "hasAgeBracket" : [ {
@@ -531,12 +531,6 @@
           "value" : "http://amor-graph.gsi.upm.es/ns#libertadDigital",
           "type" : "iri"
         } ],
-        "hasPoliticalOrientation" : [ {
-          "identifier" : "hasPoliticalOrientation",
-          "language" : "undefined",
-          "value" : "central",
-          "type" : "label"
-        } ],
         "hasAverageSocialNetworkActivityPerMonth" : [ {
           "identifier" : "hasAverageSocialNetworkActivityPerMonth",
           "language" : "undefined",
@@ -547,6 +541,12 @@
           "identifier" : "hasEducationLevel",
           "language" : "undefined",
           "value" : "Master of Science",
+          "type" : "label"
+        } ],
+        "hasPoliticalOrientation" : [ {
+          "identifier" : "hasPoliticalOrientation",
+          "language" : "undefined",
+          "value" : "central",
           "type" : "label"
         } ]
       },
@@ -827,12 +827,12 @@
         "hasPreferredContent" : [ {
           "identifier" : "hasPreferredContent",
           "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#news1",
+          "value" : "http://amor-graph.gsi.upm.es/ns#news2",
           "type" : "iri"
         }, {
           "identifier" : "hasPreferredContent",
           "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#news2",
+          "value" : "http://amor-graph.gsi.upm.es/ns#news1",
           "type" : "iri"
         } ],
         "hasAgeBracket" : [ {
@@ -858,12 +858,6 @@
           "value" : "http://amor-graph.gsi.upm.es/ns#libertadDigital",
           "type" : "iri"
         } ],
-        "hasPoliticalOrientation" : [ {
-          "identifier" : "hasPoliticalOrientation",
-          "language" : "undefined",
-          "value" : "central",
-          "type" : "label"
-        } ],
         "hasAverageSocialNetworkActivityPerMonth" : [ {
           "identifier" : "hasAverageSocialNetworkActivityPerMonth",
           "language" : "undefined",
@@ -874,6 +868,12 @@
           "identifier" : "hasEducationLevel",
           "language" : "undefined",
           "value" : "Master of Science",
+          "type" : "label"
+        } ],
+        "hasPoliticalOrientation" : [ {
+          "identifier" : "hasPoliticalOrientation",
+          "language" : "undefined",
+          "value" : "central",
           "type" : "label"
         } ]
       },
@@ -936,6 +936,13 @@
       "IRI-based" : "Person"
     },
     "individuals" : [ {
+      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
+      "labels" : {
+        "IRI-based" : "researcher1",
+        "en" : "Alejo"
+      }
+    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#human1",
       "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
       "annotations" : {
@@ -977,12 +984,12 @@
         "hasPreferredContent" : [ {
           "identifier" : "hasPreferredContent",
           "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#news1",
+          "value" : "http://amor-graph.gsi.upm.es/ns#news2",
           "type" : "iri"
         }, {
           "identifier" : "hasPreferredContent",
           "language" : "undefined",
-          "value" : "http://amor-graph.gsi.upm.es/ns#news2",
+          "value" : "http://amor-graph.gsi.upm.es/ns#news1",
           "type" : "iri"
         } ],
         "hasAgeBracket" : [ {
@@ -1008,12 +1015,6 @@
           "value" : "http://amor-graph.gsi.upm.es/ns#libertadDigital",
           "type" : "iri"
         } ],
-        "hasPoliticalOrientation" : [ {
-          "identifier" : "hasPoliticalOrientation",
-          "language" : "undefined",
-          "value" : "central",
-          "type" : "label"
-        } ],
         "hasAverageSocialNetworkActivityPerMonth" : [ {
           "identifier" : "hasAverageSocialNetworkActivityPerMonth",
           "language" : "undefined",
@@ -1025,18 +1026,17 @@
           "language" : "undefined",
           "value" : "Master of Science",
           "type" : "label"
+        } ],
+        "hasPoliticalOrientation" : [ {
+          "identifier" : "hasPoliticalOrientation",
+          "language" : "undefined",
+          "value" : "central",
+          "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "human1",
         "en" : "Juan"
-      }
-    }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples#researcher1",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/amor/experiments/examples",
-      "labels" : {
-        "IRI-based" : "researcher1",
-        "en" : "Alejo"
       }
     } ],
     "attributes" : [ "external" ],
