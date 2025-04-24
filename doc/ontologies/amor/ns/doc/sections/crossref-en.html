@@ -31,12 +31,6 @@ This section provides details for each class and property defined by AMOR Moral 
   </div>
   <dl class="description">
    <dt>
-    is equivalent to
-   </dt>
-   <dd>
-    <a href="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String" target="_blank" title="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String">String</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="http://schema.org/NewsArticle" target="_blank" title="http://schema.org/NewsArticle">News Article</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
     has super-classes
    </dt>
    <dd>
@@ -423,6 +417,7 @@ This section provides details for each class and property defined by AMOR Moral 
   <li><a href="#hasMoralProfile" title="http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile">has moral profile</a></li>
   <li><a href="#hasMoralValueCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory">has moral value category</a></li>
   <li><a href="#headlineCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#headlineCategory">headline category</a></li>
+  <li><a href="#usedDataset" title="http://www.gsi.upm.es/ontologies/amor/ns#usedDataset">used dataset</a></li>
   <li><a href="#usedMLModel" title="http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel">used machine learning model</a></li>
   <li><a href="#usedMoralValueModel" title="http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel">used moral value model</a></li>
  </ul>
@@ -530,11 +525,40 @@ This section provides details for each class and property defined by AMOR Moral 
    </dl>
   </div>
  </div>
+ <div class="entity" id="usedDataset">
+  <h3>used dataset<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#usedDataset</p>
+  <div class="comment">
+   <span class="markdown">This property relates an activity (such as a SentimentAnalysis) with the Dataset or the Corpus (mls:Dataset) used to carry out the analysis.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#used" target="_blank" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://schema.org/Dataset" target="_blank" title="http://schema.org/Dataset">Dataset</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="http://www.w3.org/ns/mls#Dataset" target="_blank" title="http://www.w3.org/ns/mls#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="usedMLModel">
   <h3>used machine learning model<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel</p>
   <div class="comment">
-   <span class="markdown">This property relates an activity (such as a MoralAnalysis ) with the Machine Learning Model (mls:Model) used to carry out the activity.</span>
+   <span class="markdown">This property relates an activity (such as a MoralAnalysis) with the Machine Learning Model (mls:Model) used to carry out the activity.</span>
   </div>
   <div class="description">
    <dl>

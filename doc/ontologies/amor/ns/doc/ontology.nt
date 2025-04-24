@@ -88,14 +88,32 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.gsi.upm.es/ontologies/amor/ns#headlineCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the category of the clickbait headline."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#headlineCategory> <http://www.w3.org/2000/01/rdf-schema#label> "headline category"@en .
 # 
+# http://www.gsi.upm.es/ontologies/amor/ns#usedDataset
+<http://www.gsi.upm.es/ontologies/amor/ns#usedDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedDataset> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#used> .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedDataset> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedDataset> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/mls#Dataset> .
+<http://www.w3.org/ns/mls#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/Dataset> .
+<http://schema.org/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates an activity (such as a SentimentAnalysis) with the Dataset or the Corpus (mls:Dataset) used to carry out the analysis." .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedDataset> <http://www.w3.org/2000/01/rdf-schema#label> "used dataset"@en .
+# 
 # http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel
 <http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#used> .
 <http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
-<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/mls#Model> .
 <http://www.w3.org/ns/mls#Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates an activity (such as a MoralAnalysis ) with the Machine Learning Model (mls:Model) used to carry out the activity."@en .
+<http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates an activity (such as a MoralAnalysis) with the Machine Learning Model (mls:Model) used to carry out the activity."@en .
 <http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel> <http://www.w3.org/2000/01/rdf-schema#label> "used machine learning model"@en .
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#usedMoralValueModel
@@ -122,26 +140,10 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Opinion
 <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Opinion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String
-<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://schema.org/NewsArticle
-<http://schema.org/NewsArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# http://schema.org/Dataset
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity
 <http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid4 .
-_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Agent> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/NewsArticle> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents any analysed entity that is used as a source of the analysis. It be text, such as a string or a news article; but it can be an agent; i.e. a human or a robot analysed using the results of a questionnarie."@en .
@@ -268,6 +270,8 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.gsi.upm.es/ontologies/onyx/ns#EmotionCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet
+# 
+# http://www.w3.org/ns/mls#Dataset
 # 
 # http://www.w3.org/ns/mls#InformationEntity
 # 

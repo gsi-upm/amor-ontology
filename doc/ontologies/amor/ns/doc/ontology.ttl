@@ -90,12 +90,25 @@
                   rdfs:label "headline category"@en .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/ns#usedDataset
+:usedDataset rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
+             rdfs:domain <http://www.w3.org/ns/prov#Activity> ;
+             rdfs:range [ rdf:type owl:Class ;
+                          owl:unionOf ( <http://schema.org/Dataset>
+                                        <http://www.w3.org/ns/mls#Dataset>
+                                      )
+                        ] ;
+             rdfs:comment "This property relates an activity (such as a SentimentAnalysis) with the Dataset or the Corpus (mls:Dataset) used to carry out the analysis." ;
+             rdfs:label "used dataset"@en .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/ns#usedMLModel
 :usedMLModel rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
              rdfs:domain <http://www.w3.org/ns/prov#Activity> ;
              rdfs:range <http://www.w3.org/ns/mls#Model> ;
-             rdfs:comment "This property relates an activity (such as a MoralAnalysis ) with the Machine Learning Model (mls:Model) used to carry out the activity."@en ;
+             rdfs:comment "This property relates an activity (such as a MoralAnalysis) with the Machine Learning Model (mls:Model) used to carry out the activity."@en ;
              rdfs:label "used machine learning model"@en .
 
 
@@ -124,22 +137,12 @@
 <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Opinion> rdf:type owl:Class .
 
 
-###  http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String
-<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String> rdf:type owl:Class .
-
-
-###  http://schema.org/NewsArticle
-<http://schema.org/NewsArticle> rdf:type owl:Class .
+###  http://schema.org/Dataset
+<http://schema.org/Dataset> rdf:type owl:Class .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity
 :AnalysedEntity rdf:type owl:Class ;
-                owl:equivalentClass [ rdf:type owl:Class ;
-                                      owl:unionOf ( <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String>
-                                                    <http://schema.org/NewsArticle>
-                                                    <http://www.w3.org/ns/prov#Agent>
-                                                  )
-                                    ] ;
                 rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
                 rdfs:comment "Represents any analysed entity that is used as a source of the analysis. It be text, such as a string or a news article; but it can be an agent; i.e. a human or a robot analysed using the results of a questionnarie."@en ;
                 rdfs:label "Analysed Entity"@en .
@@ -282,6 +285,10 @@
 
 ###  http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet
 <http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/mls#Dataset
+<http://www.w3.org/ns/mls#Dataset> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/mls#InformationEntity
