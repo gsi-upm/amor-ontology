@@ -30,11 +30,6 @@
 amor:AnalysedEntity
   a owl:Class ;
   rdfs:subClassOf prov:Entity ;
-  owl:unionOf (
-     nif:String 
-     schema:NewsArticle
-     prov:Agent
-   ) ;
   rdfs:label "Analysed Entity"@en ;
   rdfs:comment "Represents any analysed entity that is used as a source of the analysis. It be text, such as a string or a news article; but it can be an agent; i.e. a human or a robot analysed using the results of a questionnarie."@en .
 
@@ -244,4 +239,18 @@ amor:usedMLModel
   rdfs:label "used machine learning model"@en ;
   rdfs:domain prov:Activity ;
   rdfs:range mls:Model ;
-  rdfs:comment "This property relates an activity (such as a MoralAnalysis ) with the Machine Learning Model (mls:Model) used to carry out the activity."@en .
+  rdfs:comment "This property relates an activity (such as a MoralAnalysis) with the Machine Learning Model (mls:Model) used to carry out the activity."@en .
+
+amor:usedDataset
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf prov:used ;
+  rdfs:label "used dataset"@en ;
+  rdfs:domain prov:Activity ;
+  rdfs:range [
+        a owl:Class ;
+        owl:unionOf (
+            mls:Dataset
+            schema:Dataset
+        )
+    ] ;
+  rdfs:comment "This property relates an activity (such as a SentimentAnalysis) with the Dataset or the Corpus (mls:Dataset) used to carry out the analysis." .
