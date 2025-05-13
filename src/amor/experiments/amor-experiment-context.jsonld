@@ -3,6 +3,7 @@
     "@vocab": "amor-exp",
     "amor": "http://www.gsi.upm.es/ontologies/amor/ns#",
     "amor-bhv": "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#",
+    "amor-exec": "http://www.gsi.upm.es/ontologies/amor/experiments/execution#",
     "amor-data": "http://www.gsi.upm.es/ontologies/amor/datasets/ns#",
     "amor-data-examples": "http://www.gsi.upm.es/ontologies/amor/datasets/examples#",
     "amor-datasets": "http://www.gsi.upm.es/ontologies/amor/datasets#",
