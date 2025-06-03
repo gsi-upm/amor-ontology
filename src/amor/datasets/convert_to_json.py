@@ -42,7 +42,7 @@ dataset = jsonld.frame(js, frame=frame)
 
 # If a dataset has a default language (marked with the schema:language property), strings in this language will be converted to json strings.
 # Strings in other languages, and any string if there is no default, will be converted to an object: {"@value": "<STRING>", "@language": "<lang>"} or {"@value": "<STRING>"} if there is no language tag.
-default_language = dataset.get("@language", "und")
+default_language = dataset.get("schema:language", "und")
 contexts.append({"@language": default_language})
 
 #print(json.dumps(js, indent=2))
