@@ -29,6 +29,22 @@ for c in context_files:
 js = json.loads(g.serialize(format='json-ld',
                             context=contexts))
 
+frame = {
+        "@context": contexts[1:], 
+        "@type": "amor-exp:NewsDataset",
+        "@embed": "@never",
+        "amor-exp:hasNews": {
+            "@embed": "@never"
+            }
+        }
+
+dataset = jsonld.frame(js, frame=frame)
+
+# If a dataset has a default language (marked with the schema:language property), strings in this language will be converted to json strings.
+# Strings in other languages, and any string if there is no default, will be converted to an object: {"@value": "<STRING>", "@language": "<lang>"} or {"@value": "<STRING>"} if there is no language tag.
+default_language = dataset.get("@language", "und")
+contexts.append({"@language": default_language})
+
 #print(json.dumps(js, indent=2))
 #sys.exit(1)
 news_frame = {
@@ -60,30 +76,20 @@ for news in all_news.values():
     news["annotations"] = indexed
 
 
-frame = {
-        "@context": contexts[1:], 
-        "@type": "amor-exp:NewsDataset",
-         "@embed": "@never",
-         "amor-exp:hasNews": {
-             "@embed": "@never"
-             }
-         }
 
-js = jsonld.frame(js, frame=frame)
-
-parts = js["schema:hasPart"]
+parts = dataset["schema:hasPart"]
 
 for k in parts.keys():
     parts[k] = all_news[k]
 #js["schema:hasPart"] = all_news
 
 
-del js['@context']
+del dataset['@context']
 
-js['@context'] = "http://www.gsi.upm.es/ontologies/amor/experiments/context.jsonld"
+dataset['@context'] = "http://www.gsi.upm.es/ontologies/amor/experiments/context.jsonld"
 
 #print(json.dumps(js, indent=2))
-print(json.dumps(js, indent=2))
+print(json.dumps(dataset, indent=2))
 
 #del context["parts"]["@container"]
 #with open('frame.json') as f:
