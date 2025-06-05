@@ -13,15 +13,11 @@
         "@language": "en",
         "@value": "News and Politics"
       },
-      "schema:datePublished": {
-        "@value": "2025-02-10"
-      },
+      "schema:datePublished": "2025-02-10",
       "schema:headline": {
         "@value": "Los obst\u00e1culos del Gobierno para dar inmigraci\u00f3n a Catalu\u00f1a: la Constituci\u00f3n, cinco sentencias y una directiva de la UE"
       },
-      "schema:image": {
-        "@value": "https://s.libertaddigital.com/images/trans.png"
-      },
+      "schema:image": "https://s.libertaddigital.com/images/trans.png",
       "schema:mentions": [
         "amor-datasets:Catalonia",
         "amor-datasets:PoliciaNacional"
@@ -29,122 +25,7 @@
       "schema:publisher": [
         "amor-datasets:libertadDigital"
       ],
-      "schema:url": {
-        "@value": "https://www.libertaddigital.com/espana/2025-02-10/los-obstaculos-del-gobierno-para-dar-inmigracion-a-cataluna-la-constitucion-cinco-sentencias-y-una-directiva-de-la-ue-7218051/"
-      },
-      "annotations": {
-        "amor:ClickBaitAnnotation": [
-          {
-            "@id": "amor-datasets:clickbaitAnnot1",
-            "@type": "amor:ClickBaitAnnotation",
-            "amor:headlineCategory": {
-              "@id": "amor:DescriptiveHeadline"
-            },
-            "itsrdf:taConfidence": {
-              "@type": "xsd:decimal",
-              "@value": "0.95"
-            },
-            "oa:hasTarget": "amor-datasets:news1"
-          }
-        ],
-        "amor:EmotionAnnotation": [
-          {
-            "@id": "amor-datasets:emotionSet1",
-            "@type": "amor:EmotionAnnotation",
-            "onyx:hasEmotion": {
-              "onyx:hasEmotionCategory": "wnaffect:happiness",
-              "onyx:hasEmotionIntensity": {
-                "@type": "xsd:decimal",
-                "@value": "0.38"
-              }
-            },
-            "itsrdf:taConfidence": {
-              "@type": "xsd:decimal",
-              "@value": "0.37"
-            },
-            "oa:hasTarget": "amor-datasets:news1"
-          }
-        ],
-        "amor:EntityAnnotation": [
-          {
-            "@id": "amor-datasets:mention1",
-            "@type": "amor:EntityAnnotation",
-            "itsrdf:taConfidence": {
-              "@type": "xsd:decimal",
-              "@value": "0.95"
-            },
-            "itsrdf:taIdentClass": "http://dbpedia.org/ontology/Region",
-            "itsrdf:taIdentRef": "amor-datasets:Catalonia",
-            "oa:hasTarget": "amor-datasets:news1"
-          },
-          {
-            "@id": "amor-datasets:mention2",
-            "@type": "amor:EntityAnnotation",
-            "itsrdf:taConfidence": {
-              "@type": "xsd:decimal",
-              "@value": "0.37"
-            },
-            "itsrdf:taIdentClass": "http://dbpedia.org/ontology/Organization",
-            "itsrdf:taIdentRef": "amor-datasets:PoliciaNacional",
-            "oa:hasTarget": "amor-datasets:news1"
-          }
-        ],
-        "amor:MoralValueAnnotation": [
-          {
-            "@id": "amor-datasets:moral1",
-            "@type": "amor:MoralValueAnnotation",
-            "amor:hasMoralValueCategory": "mft:Liberty",
-            "itsrdf:taConfidence": {
-              "@type": "xsd:float",
-              "@value": "1.0"
-            },
-            "oa:hasTarget": "amor-datasets:news1"
-          }
-        ],
-        "amor:SentimentAnnotation": [
-          {
-            "@id": "amor-datasets:opinion1",
-            "@type": "amor:SentimentAnnotation",
-            "marl:describesObject": "amor-datasets:Catalonia",
-            "marl:hasPolarity": "marl:Negative",
-            "marl:polarityValue": {
-              "@type": "xsd:decimal",
-              "@value": "-0.38"
-            },
-            "itsrdf:taConfidence": {
-              "@type": "xsd:decimal",
-              "@value": "0.81"
-            },
-            "oa:hasTarget": "amor-datasets:news1"
-          }
-        ],
-        "amor:Recommendation": [
-          {
-            "@id": "amor-datasets:recommendation1",
-            "@type": "amor:Recommendation",
-            "amor-exp:hasRecommendationCriterion": "amor-exp:EntitySimilarity",
-            "amor-exp:hasRecommendationScore": "0.95",
-            "oa:hasBody": "amor-datasets:news1",
-            "oa:hasTarget": "amor-datasets:news1"
-          },
-          {
-            "@id": "amor-datasets:recommendation2",
-            "@type": "amor:Recommendation",
-            "amor-exp:hasRecommendationCriterion": "amor-exp:MoralDissimilarity",
-            "amor-exp:hasRecommendationScore": "0.12",
-            "oa:hasBody": "amor-datasets:news2",
-            "oa:hasTarget": "amor-datasets:news1"
-          },
-          {
-            "@id": "amor-datasets:recommendation3",
-            "@type": "amor:Recommendation",
-            "amor-exp:hasRecommendationCriterion": "amor-exp:EmotionSimilarity",
-            "amor-exp:hasRecommendationScore": "0.91",
-            "oa:hasBody": "amor-datasets:news2",
-            "oa:hasTarget": "amor-datasets:news1"
-          }
-        ]
-      }
+      "schema:url": "https://www.libertaddigital.com/espana/2025-02-10/los-obstaculos-del-gobierno-para-dar-inmigracion-a-cataluna-la-constitucion-cinco-sentencias-y-una-directiva-de-la-ue-7218051/"
     },
     "amor-datasets:news2": {
       "@id": "amor-datasets:news2",
@@ -167,15 +48,11 @@
           "@value": "News and Politics"
         }
       ],
-      "schema:datePublished": {
-        "@value": "2025-02-09"
-      },
+      "schema:datePublished": "2025-02-09",
       "schema:headline": {
         "@value": "Scholz y Merz chocan por la inmigraci\u00f3n y la ultraderecha sin romper puentes ante una futura coalici\u00f3n en Alemania"
       },
-      "schema:image": {
-        "@value": "https://imagenes.elpais.com/resizer/v2/F6TK37IJX2MKUCHZUT346LIX4M.jpg?auth=48c1239d4dcfe66cbc12b2e64774ce955a9cf428402ec48b1f60a0067155389b&width=1200"
-      },
+      "schema:image": "https://imagenes.elpais.com/resizer/v2/F6TK37IJX2MKUCHZUT346LIX4M.jpg?auth=48c1239d4dcfe66cbc12b2e64774ce955a9cf428402ec48b1f60a0067155389b&width=1200",
       "schema:mentions": [
         "amor-datasets:EdmundStoiber",
         "amor-datasets:FriedrichMerz",
@@ -184,9 +61,7 @@
       "schema:publisher": [
         "amor-datasets:elPais"
       ],
-      "schema:url": {
-        "@value": "https://elpais.com/internacional/2025-02-09/scholz-y-merz-chocan-por-la-inmigracion-y-la-ultraderecha-sin-romper-puentes-ante-una-futura-coalicion-en-alemania.html"
-      }
+      "schema:url": "https://elpais.com/internacional/2025-02-09/scholz-y-merz-chocan-por-la-inmigracion-y-la-ultraderecha-sin-romper-puentes-ante-una-futura-coalicion-en-alemania.html"
     }
   },
   "amor-exp:hasNews": [
