@@ -70,6 +70,7 @@ def format_news(news):
             if k == 'amor:Recommendation':
                 ann['oa:hasBody'] = ann['oa:hasBody']['@id']
             indexed[k].append(ann)
+    news['annotations'] = indexed
     return news
 
 all_news = {news['@id']: format_news(news) for news in jsonld.frame(js, frame=news_frame)['@graph']}
