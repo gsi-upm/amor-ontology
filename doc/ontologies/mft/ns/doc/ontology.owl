@@ -150,7 +150,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Authority">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>authority</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Authority</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Autoridad</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">Autoridade</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">Autoritat</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Autorità</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Autorität</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Autorité</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -160,7 +166,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Care">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>care</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Care</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Cuidado</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">Cuidado</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">Cura</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Cura</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Fürsorge</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Soin</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -170,7 +182,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Equality">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>equality</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Equality</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Gleichheit</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Igualdad</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">Igualdade</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">Igualtat</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Uguaglianza</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Égalité</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -180,7 +198,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Fairness">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>fairness</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Fairness</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Gerechtigkeit</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Giustizia</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Justice</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Justicia</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">Justiça</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">Justícia</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -190,7 +214,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Honor">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>honor</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Ehre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Honneur</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">Honor</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Honor</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Honor</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">Honra</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Onore</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -200,7 +230,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Liberty">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>liberty</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Freiheit</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">Liberdade</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Libertad</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Liberty</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Libertà</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Liberté</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">Llibertat</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -210,7 +246,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Loyalty">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>loyalty</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">Lealdade</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Lealtad</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Lealtà</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">Lleialtat</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Loyalität</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Loyalty</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Loyauté</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -230,7 +272,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Ownership">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>ownership</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Eigentum</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Ownership</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Propiedad</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">Propietat</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">Propriedade</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Proprietà</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Propriété</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -240,7 +288,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Proportionality">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>proportionality</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Proporcionalidad</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">Proporcionalidade</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">Proporcionalitat</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Proportionality</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Proportionalität</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Proportionnalité</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Proporzionalità</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -250,7 +304,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Purity">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>purity</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">Puresa</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Pureté</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Pureza</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">Pureza</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Purezza</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Purity</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Reinheit</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -260,7 +320,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Vice">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>vice</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Laster</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">Vice</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Vice</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Vice</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Vice</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Vicio</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">Vício</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -270,7 +336,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Virtue">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:prefLabel>virtue</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Tugend</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Vertu</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Virtud</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">Virtude</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Virtue</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">Virtut</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Virtù</skos:prefLabel>
     </owl:NamedIndividual>
 </rdf:RDF>
 

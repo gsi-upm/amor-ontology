@@ -82,43 +82,85 @@
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Authority
 :Authority rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "authority" .
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Authority"@en ,
+                                                           "Autoridad"@es ,
+                                                           "Autoridade"@pt ,
+                                                           "Autoritat"@ca ,
+                                                           "Autorità"@it ,
+                                                           "Autorität"@de ,
+                                                           "Autorité"@fr .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Care
 :Care rdf:type owl:NamedIndividual ,
                <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "care" .
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Care"@en ,
+                                                      "Cuidado"@es ,
+                                                      "Cuidado"@pt ,
+                                                      "Cura"@ca ,
+                                                      "Cura"@it ,
+                                                      "Fürsorge"@de ,
+                                                      "Soin"@fr .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Equality
 :Equality rdf:type owl:NamedIndividual ,
                    <http://www.w3.org/2004/02/skos/core#Concept> ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "equality" .
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Equality"@en ,
+                                                          "Gleichheit"@de ,
+                                                          "Igualdad"@es ,
+                                                          "Igualdade"@pt ,
+                                                          "Igualtat"@ca ,
+                                                          "Uguaglianza"@it ,
+                                                          "Égalité"@fr .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Fairness
 :Fairness rdf:type owl:NamedIndividual ,
                    <http://www.w3.org/2004/02/skos/core#Concept> ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "fairness" .
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Fairness"@en ,
+                                                          "Gerechtigkeit"@de ,
+                                                          "Giustizia"@it ,
+                                                          "Justice"@fr ,
+                                                          "Justicia"@es ,
+                                                          "Justiça"@pt ,
+                                                          "Justícia"@ca .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Honor
 :Honor rdf:type owl:NamedIndividual ,
                 <http://www.w3.org/2004/02/skos/core#Concept> ;
-       <http://www.w3.org/2004/02/skos/core#prefLabel> "honor" .
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Ehre"@de ,
+                                                       "Honneur"@fr ,
+                                                       "Honor"@ca ,
+                                                       "Honor"@en ,
+                                                       "Honor"@es ,
+                                                       "Honra"@pt ,
+                                                       "Onore"@it .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Liberty
 :Liberty rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "liberty" .
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Freiheit"@de ,
+                                                         "Liberdade"@pt ,
+                                                         "Libertad"@es ,
+                                                         "Liberty"@en ,
+                                                         "Libertà"@it ,
+                                                         "Liberté"@fr ,
+                                                         "Llibertat"@ca .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Loyalty
 :Loyalty rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "loyalty" .
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Lealdade"@pt ,
+                                                         "Lealtad"@es ,
+                                                         "Lealtà"@it ,
+                                                         "Lleialtat"@ca ,
+                                                         "Loyalität"@de ,
+                                                         "Loyalty"@en ,
+                                                         "Loyauté"@fr .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Mft
@@ -130,31 +172,61 @@
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Ownership
 :Ownership rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "ownership" .
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Eigentum"@de ,
+                                                           "Ownership"@en ,
+                                                           "Propiedad"@es ,
+                                                           "Propietat"@ca ,
+                                                           "Propriedade"@pt ,
+                                                           "Proprietà"@it ,
+                                                           "Propriété"@fr .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Proportionality
 :Proportionality rdf:type owl:NamedIndividual ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
-                 <http://www.w3.org/2004/02/skos/core#prefLabel> "proportionality" .
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Proporcionalidad"@es ,
+                                                                 "Proporcionalidade"@pt ,
+                                                                 "Proporcionalitat"@ca ,
+                                                                 "Proportionality"@en ,
+                                                                 "Proportionalität"@de ,
+                                                                 "Proportionnalité"@fr ,
+                                                                 "Proporzionalità"@it .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Purity
 :Purity rdf:type owl:NamedIndividual ,
                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "purity" .
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Puresa"@ca ,
+                                                        "Pureté"@fr ,
+                                                        "Pureza"@es ,
+                                                        "Pureza"@pt ,
+                                                        "Purezza"@it ,
+                                                        "Purity"@en ,
+                                                        "Reinheit"@de .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Vice
 :Vice rdf:type owl:NamedIndividual ,
                <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "vice" .
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Laster"@de ,
+                                                      "Vice"@ca ,
+                                                      "Vice"@en ,
+                                                      "Vice"@fr ,
+                                                      "Vice"@it ,
+                                                      "Vicio"@es ,
+                                                      "Vício"@pt .
 
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Virtue
 :Virtue rdf:type owl:NamedIndividual ,
                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "virtue" .
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Tugend"@de ,
+                                                        "Vertu"@fr ,
+                                                        "Virtud"@es ,
+                                                        "Virtude"@pt ,
+                                                        "Virtue"@en ,
+                                                        "Virtut"@ca ,
+                                                        "Virtù"@it .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

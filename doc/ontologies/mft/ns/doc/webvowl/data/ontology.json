@@ -1,7 +1,7 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "languages" : [ "en", "undefined" ],
+    "languages" : [ "de", "pt", "en", "it", "fr", "ca", "es", "undefined" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/2004/02/skos/core" ],
     "title" : {
       "en" : "Moral Foundations Theory Taxonomy - SKOS version"
@@ -42,16 +42,16 @@
         "value" : "http://www.gsi.upm.es",
         "type" : "iri"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "http://www.gsi.upm.es/ontologies/mft/ns#",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es/ontologies/mft/ns#",
         "type" : "label"
       } ],
       "title" : [ {
@@ -107,8 +107,38 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "loyalty",
+          "language" : "de",
+          "value" : "Loyalität",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Loyauté",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Lleialtat",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Lealdade",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Lealtà",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Loyalty",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Lealtad",
           "type" : "label"
         } ]
       },
@@ -121,8 +151,38 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "equality",
+          "language" : "de",
+          "value" : "Gleichheit",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Égalité",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Igualdad",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Uguaglianza",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Equality",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Igualtat",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Igualdade",
           "type" : "label"
         } ]
       },
@@ -135,8 +195,38 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "liberty",
+          "language" : "de",
+          "value" : "Freiheit",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Llibertat",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Liberty",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Liberté",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Libertà",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Liberdade",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Libertad",
           "type" : "label"
         } ]
       },
@@ -149,8 +239,38 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "purity",
+          "language" : "ca",
+          "value" : "Puresa",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Pureza",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Reinheit",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Pureza",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Purezza",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Pureté",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Purity",
           "type" : "label"
         } ]
       },
@@ -163,8 +283,38 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "virtue",
+          "language" : "pt",
+          "value" : "Virtude",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Virtud",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Tugend",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Virtue",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Virtut",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Vertu",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Virtù",
           "type" : "label"
         } ]
       },
@@ -177,8 +327,38 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "proportionality",
+          "language" : "en",
+          "value" : "Proportionality",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Proporcionalidade",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Proporcionalitat",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Proportionnalité",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Proporzionalità",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Proportionalität",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Proporcionalidad",
           "type" : "label"
         } ]
       },
@@ -186,27 +366,43 @@
         "IRI-based" : "Proportionality"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Honor",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "honor",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Honor"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority",
       "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "authority",
+          "language" : "pt",
+          "value" : "Autoridade",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Authority",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Autoridad",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Autorität",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Autorité",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Autorità",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Autoritat",
           "type" : "label"
         } ]
       },
@@ -214,18 +410,48 @@
         "IRI-based" : "Authority"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Ownership",
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Honor",
       "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "ownership",
+          "language" : "fr",
+          "value" : "Honneur",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Honor",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Onore",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Ehre",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Honor",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Honor",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Honra",
           "type" : "label"
         } ]
       },
       "labels" : {
-        "IRI-based" : "Ownership"
+        "IRI-based" : "Honor"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Care",
@@ -233,8 +459,38 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "care",
+          "language" : "fr",
+          "value" : "Soin",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Cuidado",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Cura",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Fürsorge",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Care",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Cura",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Cuidado",
           "type" : "label"
         } ]
       },
@@ -242,13 +498,87 @@
         "IRI-based" : "Care"
       }
     }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Ownership",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Propriété",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Ownership",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Propriedade",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Propiedad",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Eigentum",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Propietat",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Proprietà",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Ownership"
+      }
+    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Fairness",
       "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "fairness",
+          "language" : "en",
+          "value" : "Fairness",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Justicia",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Justice",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Gerechtigkeit",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Giustizia",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Justícia",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Justiça",
           "type" : "label"
         } ]
       },
@@ -261,8 +591,38 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "vice",
+          "language" : "pt",
+          "value" : "Vício",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Vice",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Vice",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Vicio",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Vice",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Laster",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Vice",
           "type" : "label"
         } ]
       },

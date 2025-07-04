@@ -58,65 +58,137 @@ skos:ConceptScheme rdf:type owl:Class .
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Care
 :Care rdf:type owl:NamedIndividual ,
-               skos:Concept ;
-      skos:prefLabel "care" .
+            skos:Concept ;
+      skos:prefLabel "Care"@en ,
+                     "Cuidado"@es ,
+                     "Cura"@ca ,
+                     "Soin"@fr ,
+                     "Cura"@it ,
+                     "Cuidado"@pt ,
+                     "Fürsorge"@de .
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Fairness
 :Fairness rdf:type owl:NamedIndividual ,
-                   skos:Concept ;
-          skos:prefLabel "fairness" .
+            skos:Concept ;
+      skos:prefLabel "Fairness"@en ,
+                     "Justicia"@es ,
+                     "Justícia"@ca ,
+                     "Justice"@fr ,
+                     "Giustizia"@it ,
+                     "Justiça"@pt ,
+                     "Gerechtigkeit"@de .
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Loyalty
 :Loyalty rdf:type owl:NamedIndividual ,
-                  skos:Concept ;
-         skos:prefLabel "loyalty" .
+            skos:Concept ;
+      skos:prefLabel "Loyalty"@en ,
+                     "Lealtad"@es ,
+                     "Lleialtat"@ca ,
+                     "Loyauté"@fr ,
+                     "Lealtà"@it ,
+                     "Lealdade"@pt ,
+                     "Loyalität"@de .
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Authority
 :Authority rdf:type owl:NamedIndividual ,
-                    skos:Concept ;
-                     skos:prefLabel "authority" .
+            skos:Concept ;
+      skos:prefLabel "Authority"@en ,
+                     "Autoridad"@es ,
+                     "Autoritat"@ca ,
+                     "Autorité"@fr ,
+                     "Autorità"@it ,
+                     "Autoridade"@pt ,
+                     "Autorität"@de .
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Purity
 :Purity rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:prefLabel "purity" .
+            skos:Concept ;
+      skos:prefLabel "Purity"@en ,
+                     "Pureza"@es ,
+                     "Puresa"@ca ,
+                     "Pureté"@fr ,
+                     "Purezza"@it ,
+                     "Pureza"@pt ,
+                     "Reinheit"@de .
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Equality
 :Equality rdf:type owl:NamedIndividual ,
-                   skos:Concept ;
-          skos:prefLabel "equality" .
+            skos:Concept ;
+      skos:prefLabel "Equality"@en ,
+                     "Igualdad"@es ,
+                     "Igualtat"@ca ,
+                     "Égalité"@fr ,
+                     "Uguaglianza"@it ,
+                     "Igualdade"@pt ,
+                     "Gleichheit"@de .
 
 ### http://www.gsi.upm.es/ontologies/mft/ns#Proportionality
 :Proportionality rdf:type owl:NamedIndividual ,
-                   skos:Concept ;
-          skos:prefLabel "proportionality" .
+            skos:Concept ;
+      skos:prefLabel "Proportionality"@en ,
+                     "Proporcionalidad"@es ,
+                     "Proporcionalitat"@ca ,
+                     "Proportionnalité"@fr ,
+                     "Proporzionalità"@it ,
+                     "Proporcionalidade"@pt ,
+                     "Proportionalität"@de .
 
 ### http://www.gsi.upm.es/ontologies/mft/ns#Liberty
 :Liberty rdf:type owl:NamedIndividual ,
-                   skos:Concept ;
-          skos:prefLabel "liberty" .
+            skos:Concept ;
+      skos:prefLabel "Liberty"@en ,
+                     "Libertad"@es ,
+                     "Llibertat"@ca ,
+                     "Liberté"@fr ,
+                     "Libertà"@it ,
+                     "Liberdade"@pt ,
+                     "Freiheit"@de .
 
 ### http://www.gsi.upm.es/ontologies/mft/ns#Honor
 :Honor rdf:type owl:NamedIndividual ,
-                   skos:Concept ;
-          skos:prefLabel "honor" .
+                  skos:Concept ;
+      skos:prefLabel "Honor"@en ,
+                     "Honor"@es ,
+                     "Honor"@ca ,
+                     "Honneur"@fr ,
+                     "Onore"@it ,
+                     "Honra"@pt ,
+                     "Ehre"@de .
 
 ### http://www.gsi.upm.es/ontologies/mft/ns#Ownership
 :Ownership rdf:type owl:NamedIndividual ,
-                   skos:Concept ;
-          skos:prefLabel "ownership" .
+                  skos:Concept ;
+      skos:prefLabel "Ownership"@en ,
+                     "Propiedad"@es ,
+                     "Propietat"@ca ,
+                     "Propriété"@fr ,
+                     "Proprietà"@it ,
+                     "Propriedade"@pt ,
+                     "Eigentum"@de .
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Mft
 :Mft rdf:type owl:NamedIndividual ,
-              skos:ConceptScheme ;
+            skos:ConceptScheme ;
      dc:title "mft" .
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Virtue
 :Virtue rdf:type owl:NamedIndividual ,
-                skos:Concept ;
-        skos:prefLabel "virtue" .
+            skos:Concept ;
+      skos:prefLabel "Virtue"@en ,
+                     "Virtud"@es ,
+                     "Virtut"@ca ,
+                     "Vertu"@fr ,
+                     "Virtù"@it ,
+                     "Virtude"@pt ,
+                     "Tugend"@de .
 
 ###  http://www.gsi.upm.es/ontologies/mft/ns#Vice
 :Vice rdf:type owl:NamedIndividual ,
-               skos:Concept ;
-       skos:prefLabel "vice" .
+            skos:Concept ;
+      skos:prefLabel "Vice"@en ,
+                     "Vicio"@es ,
+                     "Vice"@ca ,
+                     "Vice"@fr ,
+                     "Vice"@it ,
+                     "Vício"@pt ,
+                     "Laster"@de .

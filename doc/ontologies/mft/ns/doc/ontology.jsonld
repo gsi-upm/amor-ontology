@@ -70,7 +70,26 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "authority"
+    "@language" : "en",
+    "@value" : "Authority"
+  }, {
+    "@language" : "es",
+    "@value" : "Autoridad"
+  }, {
+    "@language" : "pt",
+    "@value" : "Autoridade"
+  }, {
+    "@language" : "ca",
+    "@value" : "Autoritat"
+  }, {
+    "@language" : "it",
+    "@value" : "Autorità"
+  }, {
+    "@language" : "de",
+    "@value" : "Autorität"
+  }, {
+    "@language" : "fr",
+    "@value" : "Autorité"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Care",
@@ -79,7 +98,26 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "care"
+    "@language" : "en",
+    "@value" : "Care"
+  }, {
+    "@language" : "es",
+    "@value" : "Cuidado"
+  }, {
+    "@language" : "pt",
+    "@value" : "Cuidado"
+  }, {
+    "@language" : "ca",
+    "@value" : "Cura"
+  }, {
+    "@language" : "it",
+    "@value" : "Cura"
+  }, {
+    "@language" : "de",
+    "@value" : "Fürsorge"
+  }, {
+    "@language" : "fr",
+    "@value" : "Soin"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Equality",
@@ -88,7 +126,26 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "equality"
+    "@language" : "en",
+    "@value" : "Equality"
+  }, {
+    "@language" : "de",
+    "@value" : "Gleichheit"
+  }, {
+    "@language" : "es",
+    "@value" : "Igualdad"
+  }, {
+    "@language" : "pt",
+    "@value" : "Igualdade"
+  }, {
+    "@language" : "ca",
+    "@value" : "Igualtat"
+  }, {
+    "@language" : "it",
+    "@value" : "Uguaglianza"
+  }, {
+    "@language" : "fr",
+    "@value" : "Égalité"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Fairness",
@@ -97,7 +154,26 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "fairness"
+    "@language" : "en",
+    "@value" : "Fairness"
+  }, {
+    "@language" : "de",
+    "@value" : "Gerechtigkeit"
+  }, {
+    "@language" : "it",
+    "@value" : "Giustizia"
+  }, {
+    "@language" : "fr",
+    "@value" : "Justice"
+  }, {
+    "@language" : "es",
+    "@value" : "Justicia"
+  }, {
+    "@language" : "pt",
+    "@value" : "Justiça"
+  }, {
+    "@language" : "ca",
+    "@value" : "Justícia"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Honor",
@@ -106,7 +182,26 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "honor"
+    "@language" : "de",
+    "@value" : "Ehre"
+  }, {
+    "@language" : "fr",
+    "@value" : "Honneur"
+  }, {
+    "@language" : "ca",
+    "@value" : "Honor"
+  }, {
+    "@language" : "en",
+    "@value" : "Honor"
+  }, {
+    "@language" : "es",
+    "@value" : "Honor"
+  }, {
+    "@language" : "pt",
+    "@value" : "Honra"
+  }, {
+    "@language" : "it",
+    "@value" : "Onore"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty",
@@ -115,7 +210,26 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "liberty"
+    "@language" : "de",
+    "@value" : "Freiheit"
+  }, {
+    "@language" : "pt",
+    "@value" : "Liberdade"
+  }, {
+    "@language" : "es",
+    "@value" : "Libertad"
+  }, {
+    "@language" : "en",
+    "@value" : "Liberty"
+  }, {
+    "@language" : "it",
+    "@value" : "Libertà"
+  }, {
+    "@language" : "fr",
+    "@value" : "Liberté"
+  }, {
+    "@language" : "ca",
+    "@value" : "Llibertat"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Loyalty",
@@ -124,7 +238,26 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "loyalty"
+    "@language" : "pt",
+    "@value" : "Lealdade"
+  }, {
+    "@language" : "es",
+    "@value" : "Lealtad"
+  }, {
+    "@language" : "it",
+    "@value" : "Lealtà"
+  }, {
+    "@language" : "ca",
+    "@value" : "Lleialtat"
+  }, {
+    "@language" : "de",
+    "@value" : "Loyalität"
+  }, {
+    "@language" : "en",
+    "@value" : "Loyalty"
+  }, {
+    "@language" : "fr",
+    "@value" : "Loyauté"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Mft",
@@ -142,7 +275,26 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "ownership"
+    "@language" : "de",
+    "@value" : "Eigentum"
+  }, {
+    "@language" : "en",
+    "@value" : "Ownership"
+  }, {
+    "@language" : "es",
+    "@value" : "Propiedad"
+  }, {
+    "@language" : "ca",
+    "@value" : "Propietat"
+  }, {
+    "@language" : "pt",
+    "@value" : "Propriedade"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà"
+  }, {
+    "@language" : "fr",
+    "@value" : "Propriété"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Proportionality",
@@ -151,7 +303,26 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "proportionality"
+    "@language" : "es",
+    "@value" : "Proporcionalidad"
+  }, {
+    "@language" : "pt",
+    "@value" : "Proporcionalidade"
+  }, {
+    "@language" : "ca",
+    "@value" : "Proporcionalitat"
+  }, {
+    "@language" : "en",
+    "@value" : "Proportionality"
+  }, {
+    "@language" : "de",
+    "@value" : "Proportionalität"
+  }, {
+    "@language" : "fr",
+    "@value" : "Proportionnalité"
+  }, {
+    "@language" : "it",
+    "@value" : "Proporzionalità"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Purity",
@@ -160,7 +331,26 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "purity"
+    "@language" : "ca",
+    "@value" : "Puresa"
+  }, {
+    "@language" : "fr",
+    "@value" : "Pureté"
+  }, {
+    "@language" : "es",
+    "@value" : "Pureza"
+  }, {
+    "@language" : "pt",
+    "@value" : "Pureza"
+  }, {
+    "@language" : "it",
+    "@value" : "Purezza"
+  }, {
+    "@language" : "en",
+    "@value" : "Purity"
+  }, {
+    "@language" : "de",
+    "@value" : "Reinheit"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Vice",
@@ -169,7 +359,26 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "vice"
+    "@language" : "de",
+    "@value" : "Laster"
+  }, {
+    "@language" : "ca",
+    "@value" : "Vice"
+  }, {
+    "@language" : "en",
+    "@value" : "Vice"
+  }, {
+    "@language" : "fr",
+    "@value" : "Vice"
+  }, {
+    "@language" : "it",
+    "@value" : "Vice"
+  }, {
+    "@language" : "es",
+    "@value" : "Vicio"
+  }, {
+    "@language" : "pt",
+    "@value" : "Vício"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Virtue",
@@ -178,7 +387,26 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "virtue"
+    "@language" : "de",
+    "@value" : "Tugend"
+  }, {
+    "@language" : "fr",
+    "@value" : "Vertu"
+  }, {
+    "@language" : "es",
+    "@value" : "Virtud"
+  }, {
+    "@language" : "pt",
+    "@value" : "Virtude"
+  }, {
+    "@language" : "en",
+    "@value" : "Virtue"
+  }, {
+    "@language" : "ca",
+    "@value" : "Virtut"
+  }, {
+    "@language" : "it",
+    "@value" : "Virtù"
   } ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#Concept",

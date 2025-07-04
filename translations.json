@@ -1,0 +1,164 @@
+{
+    "mft:Care" : {
+        "en": "Care",
+        "es": "Cuidado",
+        "ca": "Cura",
+        "fr": "Soin",
+        "it": "Cura",
+        "pt": "Cuidado",
+        "de": "Fürsorge"
+    },
+    "mft:Fairness" : {
+        "en": "Fairness",
+        "es": "Justicia",
+        "ca": "Justícia",
+        "fr": "Justice",
+        "it": "Giustizia",
+        "pt": "Justiça",
+        "de": "Gerechtigkeit"
+    },
+    "mft:Loyalty" : {
+        "en": "Loyalty",
+        "es": "Lealtad",
+        "ca": "Lleialtat",
+        "fr": "Loyauté",
+        "it": "Lealtà",
+        "pt": "Lealdade",
+        "de": "Loyalität"
+    },
+    "mft:Authority" : {
+        "en": "Authority",
+        "es": "Autoridad",
+        "ca": "Autoritat",
+        "fr": "Autorité",
+        "it": "Autorità",
+        "pt": "Autoridade",
+        "de": "Autorität"
+    },
+    "mft:Purity" : {
+        "en": "Purity",
+        "es": "Pureza",
+        "ca": "Puresa",
+        "fr": "Pureté",
+        "it": "Purezza",
+        "pt": "Pureza",
+        "de": "Reinheit"
+    },
+    "mft:Equality" : {
+        "en": "Equality",
+        "es": "Igualdad",
+        "ca": "Igualtat",
+        "fr": "Égalité",
+        "it": "Uguaglianza",
+        "pt": "Igualdade",
+        "de": "Gleichheit"
+    },
+    "mft:Proportionality" : {
+        "en": "Proportionality",
+        "es": "Proporcionalidad",
+        "ca": "Proporcionalitat",
+        "fr": "Proportionnalité",
+        "it": "Proporzionalità",
+        "pt": "Proporcionalidade",
+        "de": "Proportionalität"
+    },
+    "mft:Liberty" : {
+        "en": "Liberty",
+        "es": "Libertad",
+        "ca": "Llibertat",
+        "fr": "Liberté",
+        "it": "Libertà",
+        "pt": "Liberdade",
+        "de": "Freiheit"
+    },
+    "mft:Honor" : {
+        "en": "Honor",
+        "es": "Honor",
+        "ca": "Honor",
+        "fr": "Honneur",
+        "it": "Onore",
+        "pt": "Honra",
+        "de": "Ehre"
+    },
+    "mft:Ownership" : {
+        "en": "Ownership",
+        "es": "Propiedad",
+        "ca": "Propietat",
+        "fr": "Propriété",
+        "it": "Proprietà",
+        "pt": "Propriedade",
+        "de": "Eigentum"
+    },
+    "mft:Virtue" : {
+        "en": "Virtue",
+        "es": "Virtud",
+        "fr": "Vertu",
+        "de": "Tugend",
+        "it": "Virtù",
+        "ca": "Virtut",
+        "pt": "Virtude"
+    },
+    "mft:Vice" : {
+        "en": "Vice",
+        "es": "Vicio",
+        "fr": "Vice",
+        "de": "Laster",
+        "it": "Vizio",
+        "ca": "Vici",
+        "pt": "Vício"
+    },
+    "amor:NonMoral" : {
+        "en": "Non-Moral",
+        "es": "No Moral",
+        "fr": "Non Moral",
+        "de": "Nicht Moralisch",
+        "it": "Non Morale",
+        "ca": "No Moral",
+        "pt": "Não Moral"
+    },
+    "amor:Neutral" : {
+        "en": "Neutral",
+        "es": "Neutral",
+        "fr": "Neutre",
+        "de": "Neutral",
+        "it": "Neutrale",
+        "ca": "Neutral",
+        "pt": "Neutro"
+    },
+    "amor:ClickBaitHeadline" : {
+        "en": "Clickbait Headline",
+        "es": "Titular Anzuelo",
+        "fr": "Titre Clickbait",
+        "de": "Clickbait Überschrift",
+        "it": "Titolo Clickbait",
+        "ca": "Títol Clickbait",
+        "pt": "Título Clickbait"
+    },
+    "amor:DescriptiveHeadline" : {
+        "en": "Descriptive Headline",
+        "es": "Titular Descriptivo",
+        "fr": "Titre Descriptif",
+        "de": "Deskriptive Überschrift",
+        "it": "Titolo Descrittivo",
+        "ca": "Títol Descriptiu",
+        "pt": "Título Descritivo"
+    },
+    "amor:FakeNews" : {
+        "en": "Fake News",
+        "es": "Noticia Falsa",
+        "fr": "Fake News",
+        "de": "Falsche Nachrichten",
+        "it": "Notizia Falsa",
+        "ca": "Notícia Falsa",
+        "pt": "Notícia Falsa"
+    },
+    "amor:RealNews" : {
+        "en": "Real News",
+        "es": "Noticia Real",
+        "fr": "Actualité Réelle",
+        "de": "Echte Nachrichten",
+        "it": "Notizia Reale",
+        "ca": "Notícia Real",
+        "pt": "Notícia Real"
+    }
+}

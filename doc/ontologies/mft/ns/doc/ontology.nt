@@ -76,37 +76,79 @@
 # http://www.gsi.upm.es/ontologies/mft/ns#Authority
 <http://www.gsi.upm.es/ontologies/mft/ns#Authority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/mft/ns#Authority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Authority> <http://www.w3.org/2004/02/skos/core#prefLabel> "authority" .
+<http://www.gsi.upm.es/ontologies/mft/ns#Authority> <http://www.w3.org/2004/02/skos/core#prefLabel> "Authority"@en .
+<http://www.gsi.upm.es/ontologies/mft/ns#Authority> <http://www.w3.org/2004/02/skos/core#prefLabel> "Autoridad"@es .
+<http://www.gsi.upm.es/ontologies/mft/ns#Authority> <http://www.w3.org/2004/02/skos/core#prefLabel> "Autoridade"@pt .
+<http://www.gsi.upm.es/ontologies/mft/ns#Authority> <http://www.w3.org/2004/02/skos/core#prefLabel> "Autoritat"@ca .
+<http://www.gsi.upm.es/ontologies/mft/ns#Authority> <http://www.w3.org/2004/02/skos/core#prefLabel> "Autorità"@it .
+<http://www.gsi.upm.es/ontologies/mft/ns#Authority> <http://www.w3.org/2004/02/skos/core#prefLabel> "Autorität"@de .
+<http://www.gsi.upm.es/ontologies/mft/ns#Authority> <http://www.w3.org/2004/02/skos/core#prefLabel> "Autorité"@fr .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Care
 <http://www.gsi.upm.es/ontologies/mft/ns#Care> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/mft/ns#Care> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Care> <http://www.w3.org/2004/02/skos/core#prefLabel> "care" .
+<http://www.gsi.upm.es/ontologies/mft/ns#Care> <http://www.w3.org/2004/02/skos/core#prefLabel> "Care"@en .
+<http://www.gsi.upm.es/ontologies/mft/ns#Care> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cuidado"@es .
+<http://www.gsi.upm.es/ontologies/mft/ns#Care> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cuidado"@pt .
+<http://www.gsi.upm.es/ontologies/mft/ns#Care> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cura"@ca .
+<http://www.gsi.upm.es/ontologies/mft/ns#Care> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cura"@it .
+<http://www.gsi.upm.es/ontologies/mft/ns#Care> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fürsorge"@de .
+<http://www.gsi.upm.es/ontologies/mft/ns#Care> <http://www.w3.org/2004/02/skos/core#prefLabel> "Soin"@fr .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Equality
 <http://www.gsi.upm.es/ontologies/mft/ns#Equality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/mft/ns#Equality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Equality> <http://www.w3.org/2004/02/skos/core#prefLabel> "equality" .
+<http://www.gsi.upm.es/ontologies/mft/ns#Equality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Equality"@en .
+<http://www.gsi.upm.es/ontologies/mft/ns#Equality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Gleichheit"@de .
+<http://www.gsi.upm.es/ontologies/mft/ns#Equality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Igualdad"@es .
+<http://www.gsi.upm.es/ontologies/mft/ns#Equality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Igualdade"@pt .
+<http://www.gsi.upm.es/ontologies/mft/ns#Equality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Igualtat"@ca .
+<http://www.gsi.upm.es/ontologies/mft/ns#Equality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Uguaglianza"@it .
+<http://www.gsi.upm.es/ontologies/mft/ns#Equality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Égalité"@fr .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Fairness
 <http://www.gsi.upm.es/ontologies/mft/ns#Fairness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/mft/ns#Fairness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Fairness> <http://www.w3.org/2004/02/skos/core#prefLabel> "fairness" .
+<http://www.gsi.upm.es/ontologies/mft/ns#Fairness> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fairness"@en .
+<http://www.gsi.upm.es/ontologies/mft/ns#Fairness> <http://www.w3.org/2004/02/skos/core#prefLabel> "Gerechtigkeit"@de .
+<http://www.gsi.upm.es/ontologies/mft/ns#Fairness> <http://www.w3.org/2004/02/skos/core#prefLabel> "Giustizia"@it .
+<http://www.gsi.upm.es/ontologies/mft/ns#Fairness> <http://www.w3.org/2004/02/skos/core#prefLabel> "Justice"@fr .
+<http://www.gsi.upm.es/ontologies/mft/ns#Fairness> <http://www.w3.org/2004/02/skos/core#prefLabel> "Justicia"@es .
+<http://www.gsi.upm.es/ontologies/mft/ns#Fairness> <http://www.w3.org/2004/02/skos/core#prefLabel> "Justiça"@pt .
+<http://www.gsi.upm.es/ontologies/mft/ns#Fairness> <http://www.w3.org/2004/02/skos/core#prefLabel> "Justícia"@ca .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Honor
 <http://www.gsi.upm.es/ontologies/mft/ns#Honor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/mft/ns#Honor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Honor> <http://www.w3.org/2004/02/skos/core#prefLabel> "honor" .
+<http://www.gsi.upm.es/ontologies/mft/ns#Honor> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ehre"@de .
+<http://www.gsi.upm.es/ontologies/mft/ns#Honor> <http://www.w3.org/2004/02/skos/core#prefLabel> "Honneur"@fr .
+<http://www.gsi.upm.es/ontologies/mft/ns#Honor> <http://www.w3.org/2004/02/skos/core#prefLabel> "Honor"@ca .
+<http://www.gsi.upm.es/ontologies/mft/ns#Honor> <http://www.w3.org/2004/02/skos/core#prefLabel> "Honor"@en .
+<http://www.gsi.upm.es/ontologies/mft/ns#Honor> <http://www.w3.org/2004/02/skos/core#prefLabel> "Honor"@es .
+<http://www.gsi.upm.es/ontologies/mft/ns#Honor> <http://www.w3.org/2004/02/skos/core#prefLabel> "Honra"@pt .
+<http://www.gsi.upm.es/ontologies/mft/ns#Honor> <http://www.w3.org/2004/02/skos/core#prefLabel> "Onore"@it .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Liberty
 <http://www.gsi.upm.es/ontologies/mft/ns#Liberty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/mft/ns#Liberty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Liberty> <http://www.w3.org/2004/02/skos/core#prefLabel> "liberty" .
+<http://www.gsi.upm.es/ontologies/mft/ns#Liberty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Freiheit"@de .
+<http://www.gsi.upm.es/ontologies/mft/ns#Liberty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Liberdade"@pt .
+<http://www.gsi.upm.es/ontologies/mft/ns#Liberty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Libertad"@es .
+<http://www.gsi.upm.es/ontologies/mft/ns#Liberty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Liberty"@en .
+<http://www.gsi.upm.es/ontologies/mft/ns#Liberty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Libertà"@it .
+<http://www.gsi.upm.es/ontologies/mft/ns#Liberty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Liberté"@fr .
+<http://www.gsi.upm.es/ontologies/mft/ns#Liberty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Llibertat"@ca .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Loyalty
 <http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> <http://www.w3.org/2004/02/skos/core#prefLabel> "loyalty" .
+<http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lealdade"@pt .
+<http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lealtad"@es .
+<http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lealtà"@it .
+<http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lleialtat"@ca .
+<http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Loyalität"@de .
+<http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Loyalty"@en .
+<http://www.gsi.upm.es/ontologies/mft/ns#Loyalty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Loyauté"@fr .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Mft
 <http://www.gsi.upm.es/ontologies/mft/ns#Mft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -116,26 +158,56 @@
 # http://www.gsi.upm.es/ontologies/mft/ns#Ownership
 <http://www.gsi.upm.es/ontologies/mft/ns#Ownership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/mft/ns#Ownership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Ownership> <http://www.w3.org/2004/02/skos/core#prefLabel> "ownership" .
+<http://www.gsi.upm.es/ontologies/mft/ns#Ownership> <http://www.w3.org/2004/02/skos/core#prefLabel> "Eigentum"@de .
+<http://www.gsi.upm.es/ontologies/mft/ns#Ownership> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ownership"@en .
+<http://www.gsi.upm.es/ontologies/mft/ns#Ownership> <http://www.w3.org/2004/02/skos/core#prefLabel> "Propiedad"@es .
+<http://www.gsi.upm.es/ontologies/mft/ns#Ownership> <http://www.w3.org/2004/02/skos/core#prefLabel> "Propietat"@ca .
+<http://www.gsi.upm.es/ontologies/mft/ns#Ownership> <http://www.w3.org/2004/02/skos/core#prefLabel> "Propriedade"@pt .
+<http://www.gsi.upm.es/ontologies/mft/ns#Ownership> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proprietà"@it .
+<http://www.gsi.upm.es/ontologies/mft/ns#Ownership> <http://www.w3.org/2004/02/skos/core#prefLabel> "Propriété"@fr .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Proportionality
 <http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> <http://www.w3.org/2004/02/skos/core#prefLabel> "proportionality" .
+<http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proporcionalidad"@es .
+<http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proporcionalidade"@pt .
+<http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proporcionalitat"@ca .
+<http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proportionality"@en .
+<http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proportionalität"@de .
+<http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proportionnalité"@fr .
+<http://www.gsi.upm.es/ontologies/mft/ns#Proportionality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proporzionalità"@it .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Purity
 <http://www.gsi.upm.es/ontologies/mft/ns#Purity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/mft/ns#Purity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Purity> <http://www.w3.org/2004/02/skos/core#prefLabel> "purity" .
+<http://www.gsi.upm.es/ontologies/mft/ns#Purity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Puresa"@ca .
+<http://www.gsi.upm.es/ontologies/mft/ns#Purity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pureté"@fr .
+<http://www.gsi.upm.es/ontologies/mft/ns#Purity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pureza"@es .
+<http://www.gsi.upm.es/ontologies/mft/ns#Purity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pureza"@pt .
+<http://www.gsi.upm.es/ontologies/mft/ns#Purity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Purezza"@it .
+<http://www.gsi.upm.es/ontologies/mft/ns#Purity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Purity"@en .
+<http://www.gsi.upm.es/ontologies/mft/ns#Purity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reinheit"@de .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Vice
 <http://www.gsi.upm.es/ontologies/mft/ns#Vice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/mft/ns#Vice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Vice> <http://www.w3.org/2004/02/skos/core#prefLabel> "vice" .
+<http://www.gsi.upm.es/ontologies/mft/ns#Vice> <http://www.w3.org/2004/02/skos/core#prefLabel> "Laster"@de .
+<http://www.gsi.upm.es/ontologies/mft/ns#Vice> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vice"@ca .
+<http://www.gsi.upm.es/ontologies/mft/ns#Vice> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vice"@en .
+<http://www.gsi.upm.es/ontologies/mft/ns#Vice> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vice"@fr .
+<http://www.gsi.upm.es/ontologies/mft/ns#Vice> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vice"@it .
+<http://www.gsi.upm.es/ontologies/mft/ns#Vice> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vicio"@es .
+<http://www.gsi.upm.es/ontologies/mft/ns#Vice> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vício"@pt .
 # 
 # http://www.gsi.upm.es/ontologies/mft/ns#Virtue
 <http://www.gsi.upm.es/ontologies/mft/ns#Virtue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/mft/ns#Virtue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.gsi.upm.es/ontologies/mft/ns#Virtue> <http://www.w3.org/2004/02/skos/core#prefLabel> "virtue" .
+<http://www.gsi.upm.es/ontologies/mft/ns#Virtue> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tugend"@de .
+<http://www.gsi.upm.es/ontologies/mft/ns#Virtue> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vertu"@fr .
+<http://www.gsi.upm.es/ontologies/mft/ns#Virtue> <http://www.w3.org/2004/02/skos/core#prefLabel> "Virtud"@es .
+<http://www.gsi.upm.es/ontologies/mft/ns#Virtue> <http://www.w3.org/2004/02/skos/core#prefLabel> "Virtude"@pt .
+<http://www.gsi.upm.es/ontologies/mft/ns#Virtue> <http://www.w3.org/2004/02/skos/core#prefLabel> "Virtue"@en .
+<http://www.gsi.upm.es/ontologies/mft/ns#Virtue> <http://www.w3.org/2004/02/skos/core#prefLabel> "Virtut"@ca .
+<http://www.gsi.upm.es/ontologies/mft/ns#Virtue> <http://www.w3.org/2004/02/skos/core#prefLabel> "Virtù"@it .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
