@@ -11,7 +11,7 @@
 @prefix wikidata: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-amor-datasets:dataset_5 a amor-exp:NewsDataset ;
+amor-datasets:dataset_10 a amor-exp:NewsDataset ;
     schema:hasPart 
         amor-datasets:news_1f00fc5d-26a1-6b07-9667-b0a8180a36bc,
         amor-datasets:news_1f00fc5d-26c1-66e8-9c95-5cfe2ab04df1,
