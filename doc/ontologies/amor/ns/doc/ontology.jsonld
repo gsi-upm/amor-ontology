@@ -157,6 +157,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Clickbait Headline"
+  }, {
+    "@language" : "es",
+    "@value" : "Titular Anzuelo"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory",
@@ -168,6 +171,20 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Clickbait Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#CredibilityCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a category of credibility for news."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Credibility Category"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
@@ -185,6 +202,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Descriptive Headline"
+  }, {
+    "@language" : "es",
+    "@value" : "Titular Descriptivo"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis",
@@ -245,6 +265,39 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "NER Annotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/oa#Annotation"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#FakeNews",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#CredibilityCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a fake news category. This means that it is considered fake news."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fake News"
+  }, {
+    "@language" : "es",
+    "@value" : "Noticia Falsa"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#FakeNewsAnnotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a fake news annotation extracted from textual sources."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fake News Annotation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/oa#Annotation"
@@ -380,8 +433,26 @@
     "@value" : "Represents a neutral moral value. This indicates that the text does not contain any trace of moral values."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "ca",
+    "@value" : "Neutral"
+  }, {
+    "@language" : "de",
+    "@value" : "Neutral"
+  }, {
     "@language" : "en",
     "@value" : "Neutral"
+  }, {
+    "@language" : "es",
+    "@value" : "Neutral"
+  }, {
+    "@language" : "fr",
+    "@value" : "Neutral"
+  }, {
+    "@language" : "it",
+    "@value" : "Neutrale"
+  }, {
+    "@language" : "pt",
+    "@value" : "Neutro"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#NonMoral"
@@ -428,8 +499,43 @@
     "@value" : "Represents a non moral value. This indicates that the text does not contain any trace of moral values."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Nicht Moralisch"
+  }, {
+    "@language" : "ca",
+    "@value" : "No Moral"
+  }, {
+    "@language" : "es",
+    "@value" : "No Moral"
+  }, {
     "@language" : "en",
     "@value" : "Non Moral"
+  }, {
+    "@language" : "fr",
+    "@value" : "Non Moral"
+  }, {
+    "@language" : "it",
+    "@value" : "Non Morale"
+  }, {
+    "@language" : "pt",
+    "@value" : "Não Moral"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#RealNews",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#CredibilityCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a real news category. This means that it is not considered fake news."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Noticia Real"
+  }, {
+    "@language" : "en",
+    "@value" : "Real News"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis",
@@ -485,6 +591,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#used"
+  } ]
+}, {
+  "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#hasCredibilityCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Specifies the credibility category of the news."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#FakeNewsAnnotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has credibility category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#CredibilityCategory"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile",

@@ -8,9 +8,11 @@ This section provides details for each class and property defined by AMOR Moral 
   <li><a href="#ClickBaitAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnalysis">Clickbait Analysis</a></li>
   <li><a href="#ClickBaitAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitAnnotation">Clickbait Annotation</a></li>
   <li><a href="#ClickBaitHeadlineCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadlineCategory">Clickbait Category</a></li>
+  <li><a href="#CredibilityCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#CredibilityCategory">Credibility Category</a></li>
   <li><a href="#DiffBotAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis">DiffBot Analysis</a></li>
   <li><a href="#EmotionAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis"> <span>Emotion Analysis</span> </a></li>
   <li><a href="#EmotionAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnnotation">emotion annotation</a></li>
+  <li><a href="#FakeNewsAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#FakeNewsAnnotation">Fake News Annotation</a></li>
   <li><a href="#MLEntity" title="http://www.gsi.upm.es/ontologies/amor/ns#MLEntity">Machine Learning Entity</a></li>
   <li><a href="#MLProcess" title="http://www.gsi.upm.es/ontologies/amor/ns#MLProcess">Machine Learning Process</a></li>
   <li><a href="#MoralProfile" title="http://www.gsi.upm.es/ontologies/amor/ns#MoralProfile">Moral Profile</a></li>
@@ -134,6 +136,33 @@ This section provides details for each class and property defined by AMOR Moral 
    </dd>
   </dl>
  </div>
+ <div class="entity" id="CredibilityCategory">
+  <h3>Credibility Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#CredibilityCategory</p>
+  <div class="comment">
+   <span class="markdown">Represents a category of credibility for news.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasCredibilityCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#hasCredibilityCategory">has credibility category</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#FakeNews" title="http://www.gsi.upm.es/ontologies/amor/ns#FakeNews">Fake News</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#RealNews" title="http://www.gsi.upm.es/ontologies/amor/ns#RealNews">Real News</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="DiffBotAnalysis">
   <h3>DiffBot Analysis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis</p>
@@ -185,6 +214,27 @@ This section provides details for each class and property defined by AMOR Moral 
    </dt>
    <dd>
     <a href="http://www.w3.org/ns/oa#Annotation" target="_blank" title="http://www.w3.org/ns/oa#Annotation">Annotation</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet" target="_blank" title="http://www.gsi.upm.es/ontologies/onyx/ns#EmotionSet">Emotion Set</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FakeNewsAnnotation">
+  <h3>Fake News Annotation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#FakeNewsAnnotation</p>
+  <div class="comment">
+   <span class="markdown">Represents a fake news annotation extracted from textual sources.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/oa#Annotation" target="_blank" title="http://www.w3.org/ns/oa#Annotation">Annotation</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasCredibilityCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#hasCredibilityCategory">has credibility category</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -414,6 +464,7 @@ This section provides details for each class and property defined by AMOR Moral 
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
   <li><a href="#analysed" title="http://www.gsi.upm.es/ontologies/amor/ns#analysed">analysed</a></li>
+  <li><a href="#hasCredibilityCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#hasCredibilityCategory">has credibility category</a></li>
   <li><a href="#hasMoralProfile" title="http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile">has moral profile</a></li>
   <li><a href="#hasMoralValueCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory">has moral value category</a></li>
   <li><a href="#headlineCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#headlineCategory">headline category</a></li>
@@ -446,6 +497,29 @@ This section provides details for each class and property defined by AMOR Moral 
     </dt>
     <dd>
      <a href="#AnalysedEntity" title="http://www.gsi.upm.es/ontologies/amor/ns#AnalysedEntity">Analysed Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCredibilityCategory">
+  <h3>has credibility category<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#hasCredibilityCategory</p>
+  <div class="comment">
+   <span class="markdown">Specifies the credibility category of the news.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#FakeNewsAnnotation" title="http://www.gsi.upm.es/ontologies/amor/ns#FakeNewsAnnotation">Fake News Annotation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#CredibilityCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#CredibilityCategory">Credibility Category</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -618,10 +692,12 @@ This section provides details for each class and property defined by AMOR Moral 
   <li><a href="#ClickBaitHeadline" title="http://www.gsi.upm.es/ontologies/amor/ns#ClickBaitHeadline">Clickbait Headline</a></li>
   <li><a href="#DescriptiveHeadline" title="http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline">Descriptive Headline</a></li>
   <li><a href="#EmotionAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis"> <span>Emotion Analysis</span> </a></li>
+  <li><a href="#FakeNews" title="http://www.gsi.upm.es/ontologies/amor/ns#FakeNews">Fake News</a></li>
   <li><a href="#Neutral" title="http://www.gsi.upm.es/ontologies/amor/ns#Neutral">Neutral</a></li>
   <li><a href="#NeutralEmotion" title="http://www.gsi.upm.es/ontologies/amor/ns#NeutralEmotion">Neutral Emotion</a></li>
   <li><a href="#NonEmotion" title="http://www.gsi.upm.es/ontologies/amor/ns#NonEmotion">Non Emotion</a></li>
   <li><a href="#NonMoral" title="http://www.gsi.upm.es/ontologies/amor/ns#NonMoral">Non Moral</a></li>
+  <li><a href="#RealNews" title="http://www.gsi.upm.es/ontologies/amor/ns#RealNews">Real News</a></li>
   <li><a href="#SentimentAnalysis" title="http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis"> <span>Sentiment Analysis</span> </a></li>
  </ul>
  <div class="entity" id="ClickBaitHeadline">
@@ -675,6 +751,21 @@ This section provides details for each class and property defined by AMOR Moral 
    </dt>
    <dd>
     <a href="#EmotionAnalysis">class</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FakeNews">
+  <h3>Fake News<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#FakeNews</p>
+  <div class="comment">
+   <span class="markdown">Represents a fake news category. This means that it is considered fake news.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#CredibilityCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#CredibilityCategory">Credibility Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -771,6 +862,21 @@ This section provides details for each class and property defined by AMOR Moral 
    </dt>
    <dd>
     <a href="#Neutral" title="http://www.gsi.upm.es/ontologies/amor/ns#Neutral">Neutral</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RealNews">
+  <h3>Real News<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.gsi.upm.es/ontologies/amor/ns#RealNews</p>
+  <div class="comment">
+   <span class="markdown">Represents a real news category. This means that it is not considered fake news.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#CredibilityCategory" title="http://www.gsi.upm.es/ontologies/amor/ns#CredibilityCategory">Credibility Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>

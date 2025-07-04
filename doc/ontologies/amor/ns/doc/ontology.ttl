@@ -61,6 +61,14 @@
           rdfs:label "analysed"@en .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/ns#hasCredibilityCategory
+:hasCredibilityCategory rdf:type owl:ObjectProperty ;
+                        rdfs:domain :FakeNewsAnnotation ;
+                        rdfs:range :CredibilityCategory ;
+                        rdfs:comment "Specifies the credibility category of the news."@en ;
+                        rdfs:label "has credibility category"@en .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/ns#hasMoralProfile
 :hasMoralProfile rdf:type owl:ObjectProperty ;
                  rdfs:domain <http://www.w3.org/ns/prov#Agent> ;
@@ -177,6 +185,13 @@
                            rdfs:label "Clickbait Category"@en .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/ns#CredibilityCategory
+:CredibilityCategory rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                     rdfs:comment "Represents a category of credibility for news."@en ;
+                     rdfs:label "Credibility Category"@en .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/ns#DiffBotAnalysis
 :DiffBotAnalysis rdf:type owl:Class ;
                  rdfs:subClassOf :AnnotationAnalysis ;
@@ -204,6 +219,14 @@
                                   <http://www.w3.org/ns/prov#Entity> ;
                   rdfs:comment "Represents an entity found in textual sources."@en ;
                   rdfs:label "NER Annotation"@en .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#FakeNewsAnnotation
+:FakeNewsAnnotation rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.w3.org/ns/oa#Annotation> ,
+                                    <http://www.w3.org/ns/prov#Entity> ;
+                    rdfs:comment "Represents a fake news annotation extracted from textual sources."@en ;
+                    rdfs:label "Fake News Annotation"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#MLEntity
@@ -327,14 +350,16 @@
 :ClickBaitHeadline rdf:type owl:NamedIndividual ,
                             :ClickBaitHeadlineCategory ;
                    rdfs:comment "Represents a clickbait headline category. This means that it is considered clickbait."@en ;
-                   rdfs:label "Clickbait Headline"@en .
+                   rdfs:label "Clickbait Headline"@en ,
+                              "Titular Anzuelo"@es .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#DescriptiveHeadline
 :DescriptiveHeadline rdf:type owl:NamedIndividual ,
                               :ClickBaitHeadlineCategory ;
                      rdfs:comment "Represents a descriptive headline category. This means that it is not considered clickbait."@en ;
-                     rdfs:label "Descriptive Headline"@en .
+                     rdfs:label "Descriptive Headline"@en ,
+                                "Titular Descriptivo"@es .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#EmotionAnalysis
@@ -346,12 +371,26 @@
 <http://www.gsi.upm.es/ontologies/onyx/ns#EmotionAnalysis> rdf:type owl:NamedIndividual .
 
 
+###  http://www.gsi.upm.es/ontologies/amor/ns#FakeNews
+:FakeNews rdf:type owl:NamedIndividual ,
+                   :CredibilityCategory ;
+          rdfs:comment "Represents a fake news category. This means that it is considered fake news."@en ;
+          rdfs:label "Fake News"@en ,
+                     "Noticia Falsa"@es .
+
+
 ###  http://www.gsi.upm.es/ontologies/amor/ns#Neutral
 :Neutral rdf:type owl:NamedIndividual ,
                   :MoralValueCategory ;
          owl:sameAs :NonMoral ;
          rdfs:comment "Represents a neutral moral value. This indicates that the text does not contain any trace of moral values."@en ;
-         rdfs:label "Neutral"@en .
+         rdfs:label "Neutral"@ca ,
+                    "Neutral"@de ,
+                    "Neutral"@en ,
+                    "Neutral"@es ,
+                    "Neutral"@fr ,
+                    "Neutrale"@it ,
+                    "Neutro"@pt .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#NonMoral
@@ -381,7 +420,21 @@
 :NonMoral rdf:type owl:NamedIndividual ,
                    :MoralValueCategory ;
           rdfs:comment "Represents a non moral value. This indicates that the text does not contain any trace of moral values."@en ;
-          rdfs:label "Non Moral"@en .
+          rdfs:label "Nicht Moralisch"@de ,
+                     "No Moral"@ca ,
+                     "No Moral"@es ,
+                     "Non Moral"@en ,
+                     "Non Moral"@fr ,
+                     "Non Morale"@it ,
+                     "Não Moral"@pt .
+
+
+###  http://www.gsi.upm.es/ontologies/amor/ns#RealNews
+:RealNews rdf:type owl:NamedIndividual ,
+                   :CredibilityCategory ;
+          rdfs:comment "Represents a real news category. This means that it is not considered fake news."@en ;
+          rdfs:label "Noticia Real"@es ,
+                     "Real News"@en .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/ns#SentimentAnalysis

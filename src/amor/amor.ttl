@@ -45,6 +45,12 @@ amor:ClickBaitAnnotation
   rdfs:label "Clickbait Annotation"@en ;
   rdfs:comment "Represents a clickbait annotation extracted from textual sources."@en .
 
+amor:FakeNewsAnnotation
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity, oa:Annotation ;
+  rdfs:label "Fake News Annotation"@en ;
+  rdfs:comment "Represents a fake news annotation extracted from textual sources."@en .
+
 amor:EntityAnnotation
   a owl:Class ;
   rdfs:subClassOf prov:Entity, oa:Annotation ;
@@ -134,11 +140,23 @@ amor:MoralValueCategory
 
 amor:NonMoral a amor:MoralValueCategory ;
   rdfs:label "Non Moral"@en ;
+  rdfs:label "No Moral"@es ;
+  rdfs:label "No Moral"@ca ;
+  rdfs:label "Non Moral"@fr ;
+  rdfs:label "Non Morale"@it ;
+  rdfs:label "Não Moral"@pt ;
+  rdfs:label "Nicht Moralisch"@de ;
   rdfs:comment "Represents a non moral value. This indicates that the text does not contain any trace of moral values."@en .
 
 amor:Neutral a amor:MoralValueCategory ;
   owl:sameAs amor:NonMoral ;
   rdfs:label "Neutral"@en ;
+  rdfs:label "Neutral"@es ;
+  rdfs:label "Neutral"@ca ;
+  rdfs:label "Neutral"@fr ;
+  rdfs:label "Neutrale"@it ;
+  rdfs:label "Neutro"@pt ;
+  rdfs:label "Neutral"@de ;
   rdfs:comment "Represents a neutral moral value. This indicates that the text does not contain any trace of moral values."@en .
 
 amor:NonEmotion a onyx:EmotionCategory ;
@@ -178,12 +196,37 @@ amor:ClickBaitHeadlineCategory
   rdfs:comment "Represents a category of clickbait."@en .
 
 amor:ClickBaitHeadline a amor:ClickBaitHeadlineCategory ;
-  rdfs:label "Clickbait Headline"@en ;
+  rdfs:label "Clickbait Headline"@en,
+    "Titular Anzuelo"@es ;
   rdfs:comment "Represents a clickbait headline category. This means that it is considered clickbait."@en .
 
 amor:DescriptiveHeadline a amor:ClickBaitHeadlineCategory ;
-  rdfs:label "Descriptive Headline"@en ;
+  rdfs:label "Descriptive Headline"@en,
+    "Titular Descriptivo"@es ;
   rdfs:comment "Represents a descriptive headline category. This means that it is not considered clickbait."@en .
+
+amor:hasCredibilityCategory
+  a owl:ObjectProperty ;
+  rdfs:label "has credibility category"@en ;
+  rdfs:domain amor:FakeNewsAnnotation ;
+  rdfs:range amor:CredibilityCategory ;
+  rdfs:comment "Specifies the credibility category of the news."@en .
+
+amor:CredibilityCategory
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity ;
+  rdfs:label "Credibility Category"@en ;
+  rdfs:comment "Represents a category of credibility for news."@en .
+
+amor:FakeNews a amor:CredibilityCategory ;
+  rdfs:label "Fake News"@en,
+    "Noticia Falsa"@es ;
+  rdfs:comment "Represents a fake news category. This means that it is considered fake news."@en .
+
+amor:RealNews a amor:CredibilityCategory ;
+  rdfs:label "Real News"@en,
+    "Noticia Real"@es ;
+  rdfs:comment "Represents a real news category. This means that it is not considered fake news."@en .
 
 # Replace with itsrdf:taConfidence
 #:confidence
