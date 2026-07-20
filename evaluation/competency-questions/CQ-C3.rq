@@ -1,0 +1,10 @@
+# CQ-C3: What resource is targeted by a moral-value annotation?
+PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+
+SELECT ?annotation ?target
+WHERE {
+  ?annotation a amor:MoralValueAnnotation ;
+    oa:hasTarget ?target .
+}
+ORDER BY ?annotation ?target

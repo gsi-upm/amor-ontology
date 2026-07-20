@@ -1,0 +1,10 @@
+# CQ-C8: What confidence score is associated with a moral-value annotation?
+PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>
+PREFIX itsrdf: <http://www.w3.org/2005/11/its/rdf#>
+
+SELECT ?annotation ?confidence
+WHERE {
+  ?annotation a amor:MoralValueAnnotation ;
+    itsrdf:taConfidence ?confidence .
+}
+ORDER BY ?annotation ?confidence

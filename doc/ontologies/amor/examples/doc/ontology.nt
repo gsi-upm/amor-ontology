@@ -249,7 +249,7 @@
 # http://www.gsi.upm.es/ontologies/amor/examples#annotation2
 <http://www.gsi.upm.es/ontologies/amor/examples#annotation2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.gsi.upm.es/ontologies/amor/examples#annotation2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
-<http://www.gsi.upm.es/ontologies/amor/examples#annotation2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv#Conservation> .
+<http://www.gsi.upm.es/ontologies/amor/examples#annotation2> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> .
 <http://www.gsi.upm.es/ontologies/amor/examples#annotation2> <http://www.w3.org/2005/11/its/rdf#taConfidence> "0.8"^^<http://www.w3.org/2001/XMLSchema#float> .
 <http://www.gsi.upm.es/ontologies/amor/examples#annotation2> <http://www.w3.org/ns/oa#hasTarget> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
 # 
@@ -359,9 +359,9 @@
 <http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> .
 <http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/mft/ns#Virtue> .
 <http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> "0.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Authority> .
 <http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.w3.org/2005/11/its/rdf#taConfidence> "0.75"^^<http://www.w3.org/2001/XMLSchema#float> .
 <http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.w3.org/ns/oa#hasTarget> <http://www.gsi.upm.es/ontologies/amor/examples#news1> .
-<http://www.gsi.upm.es/ontologies/amor/examples#moralAnnotation23> <http://www.w3.org/ns/oa#hasTarget> <http://www.gsi.upm.es/ontologies/mft/ns#Authority> .
 # 
 # http://www.gsi.upm.es/ontologies/amor/examples#news1
 <http://www.gsi.upm.es/ontologies/amor/examples#news1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

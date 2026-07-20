@@ -221,13 +221,14 @@
         <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Authority"/>
         <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Care"/>
         <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Equality"/>
+        <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Fairness"/>
         <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Honor"/>
         <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Liberty"/>
         <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Loyalty"/>
         <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Ownership"/>
         <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Proportionality"/>
         <ns:hasMoralValueCategory rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Purity"/>
-        <rdfs:comment xml:lang="en">This model uses the 2023 version of the Moral Foundations Theory to define the moral values of the annotated content.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This model uses a consolidated category set from Moral Foundations Theory to define the moral values of the annotated content.</rdfs:comment>
         <rdfs:label xml:lang="en">Moral Foundations Theory Model</rdfs:label>
     </owl:NamedIndividual>
     
@@ -329,8 +330,8 @@
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Vice">
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"/>
         <oppositeOf rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Virtue"/>
-        <rdfs:label xml:lang="es">Virtud</rdfs:label>
-        <rdfs:label xml:lang="en">Virtue</rdfs:label>
+        <rdfs:label xml:lang="en">Vice</rdfs:label>
+        <rdfs:label xml:lang="es">Vicio</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -341,8 +342,8 @@
     <owl:NamedIndividual rdf:about="http://www.gsi.upm.es/ontologies/mft/ns#Virtue">
         <rdf:type rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"/>
         <oppositeOf rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns#Vice"/>
-        <rdfs:label xml:lang="en">Vice</rdfs:label>
-        <rdfs:label xml:lang="es">Vicio</rdfs:label>
+        <rdfs:label xml:lang="es">Virtud</rdfs:label>
+        <rdfs:label xml:lang="en">Virtue</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

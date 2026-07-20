@@ -1,0 +1,9 @@
+# CQ-C5: Which moral-value category was assigned by an annotation?
+PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>
+
+SELECT ?annotation ?category
+WHERE {
+  ?annotation a amor:MoralValueAnnotation ;
+    amor:hasMoralValueCategory ?category .
+}
+ORDER BY ?annotation ?category

@@ -1,0 +1,13 @@
+# CQ-M1: What MFT-specific polarity and intensity are associated with an annotation?
+PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>
+PREFIX amor-mft: <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#>
+
+SELECT ?annotation ?polarity ?intensity
+WHERE {
+  ?annotation a amor:MoralValueAnnotation ;
+    amor-mft:hasPolarity ?polarity .
+  OPTIONAL {
+    ?annotation amor-mft:hasPolarityIntensity ?intensity .
+  }
+}
+ORDER BY ?annotation ?polarity ?intensity

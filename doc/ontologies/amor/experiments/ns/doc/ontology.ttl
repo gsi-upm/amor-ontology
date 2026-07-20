@@ -1,1128 +1,763 @@
 @prefix : <http://www.gsi.upm.es/ontologies/amor/experiments/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.gsi.upm.es/ontologies/amor/experiments/ns#> .
-
-<http://www.gsi.upm.es/ontologies/amor/experiments/ns> rdf:type owl:Ontology ;
-                                                        owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/experiments/ns/1.0.0> ;
-                                                        <http://purl.org/dc/terms/creator> "Álvaro Carrera Barroso"@en ;
-                                                        <http://purl.org/dc/terms/description> "AMOR Experiments is an ontology designed for representing experiments and evaluations in the AMOR project."@en ;
-                                                        <http://purl.org/dc/terms/publisher> <http://www.gsi.upm.es> ;
-                                                        <http://purl.org/dc/terms/title> "AMOR Experiments Ontology"@en ;
-                                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "amor-exp" ;
-                                                        <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.gsi.upm.es/ontologies/amor/experiments/ns#" ;
-                                                        rdfs:comment "AMOR Experiments is an ontology designed for representing experiments and evaluations in the AMOR project."@en ;
-                                                        rdfs:label "AMOR Experiments Ontology"@en ;
-                                                        owl:versionInfo "1.0.0" .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/terms/creator
-<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/publisher
-<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/title
-<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/text
-<http://schema.org/text> rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  http://schema.org/category
-<http://schema.org/category> rdf:type owl:ObjectProperty .
-
-
-###  http://schema.org/hasPart
-<http://schema.org/hasPart> rdf:type owl:ObjectProperty .
-
-
-###  http://schema.org/suggestedAnswer
-<http://schema.org/suggestedAnswer> rdf:type owl:ObjectProperty .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario
-:hasBackgroundScenario rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :hasParameter ;
-                       rdfs:domain :Experiment .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasContentAdaptationStrategy
-:hasContentAdaptationStrategy rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf :hasParameter ;
-                              rdfs:domain :Experiment ;
-                              rdfs:range :ContentAdaptationStrategy ;
-                              rdfs:comment "Relates an experiment with the content adaptation strategy used."@en ;
-                              rdfs:label "has content adaptation strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExecutor
-:hasExecutor rdf:type owl:ObjectProperty ;
-             rdfs:domain :Experiment ;
-             rdfs:range :ExperimentExecutor ;
-             rdfs:comment "Relates an experiment with its executor."@en ;
-             rdfs:label "has experiment executor"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentEvaluation
-:hasExperimentEvaluation rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf :hasParameter ;
-                         rdfs:domain :Experiment ;
-                         rdfs:range :ExperimentEvaluation ;
-                         rdfs:comment "Relates an experiment with its evaluation."@en ;
-                         rdfs:label "has experiment evaluation"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentationSubject
-:hasExperimentationSubject rdf:type owl:ObjectProperty ;
-                           rdfs:domain :Experiment ;
-                           rdfs:range :ExperimentionSubject ;
-                           rdfs:comment "Relates an experiment with its subject."@en ;
-                           rdfs:label "has experimentation subject"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFacialExpresivity
-:hasFacialExpresivity rdf:type owl:ObjectProperty ;
-                      rdfs:domain :Avatar ;
-                      rdfs:range :ExpresivityCategory ;
-                      rdfs:comment "Relates a character with its facial expresivity."@en ;
-                      rdfs:label "has facial expresivity"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasFinalQuestion
-:hasFinalQuestion rdf:type owl:ObjectProperty ;
-                  rdfs:domain :ExperimentEvaluation ;
-                  rdfs:range <http://schema.org/Question> ;
-                  rdfs:comment "Relates an experiment evaluation with the final questionnaire."@en ;
-                  rdfs:label "has final question"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasGesturalExpresivity
-:hasGesturalExpresivity rdf:type owl:ObjectProperty ;
-                        rdfs:domain :Avatar ;
-                        rdfs:range :ExpresivityCategory ;
-                        rdfs:comment "Relates a character with its gestural expresivity."@en ;
-                        rdfs:label "has gestural expresivity"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasInitialQuestion
-:hasInitialQuestion rdf:type owl:ObjectProperty ;
-                    rdfs:domain :ExperimentEvaluation ;
-                    rdfs:range <http://schema.org/Question> ;
-                    rdfs:comment "Relates an experiment evaluation with the initial questionnaire."@en ;
-                    rdfs:label "has initial question"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIntermediateQuestion
-:hasIntermediateQuestion rdf:type owl:ObjectProperty ;
-                         rdfs:domain :ExperimentEvaluation ;
-                         rdfs:range <http://schema.org/Question> ;
-                         rdfs:comment "Relates an experiment evaluation with the intermediate questionnaire."@en ;
-                         rdfs:label "has intermediate question"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMConfiguration
-:hasLLMConfiguration rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :hasParameter ;
-                     rdfs:domain :Experiment ;
-                     rdfs:range :LLMConfiguration ;
-                     rdfs:comment "Relates an experiment with the LLM configuration used."@en ;
-                     rdfs:label "has LLM configuration"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasNews
-:hasNews rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf <http://schema.org/hasPart> ;
-         rdfs:domain :NewsDataset ;
-         rdfs:range <http://schema.org/NewsArticle> ;
-         rdfs:comment "Relates a news dataset with its main entity."@en ;
-         rdfs:label "has main entity"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameter
-:hasParameter rdf:type owl:ObjectProperty ;
-              rdfs:domain :Experiment ;
-              rdfs:range owl:Thing ;
-              rdfs:comment "Relates an experiment with its parameters."@en ;
-              rdfs:label "has parameter"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasParameterValue
-:hasParameterValue rdf:type owl:ObjectProperty .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement
-:hasPhysicalMovement rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :hasParameter ;
-                     rdfs:domain :Experiment .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredContent
-:hasPreferredContent rdf:type owl:ObjectProperty ;
-                     rdfs:domain :ExperimentionSubject ;
-                     rdfs:range <http://schema.org/CreativeWork> ;
-                     rdfs:comment "Relates an experimentation subject with its preferred content."@en ;
-                     rdfs:label "has preferred content"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredEntity
-:hasPreferredEntity rdf:type owl:ObjectProperty ;
-                    rdfs:domain :ExperimentionSubject ;
-                    rdfs:range <http://www.w3.org/ns/prov#Entity> .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationCriterion
-:hasRecommendationCriterion rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf <http://schema.org/category> ;
-                            rdfs:domain :Recommendation ;
-                            rdfs:range :RecommendationCriterion ;
-                            rdfs:comment "Relates a recommendation with its recommendation criterion."@en ;
-                            rdfs:label "has recommendation criterion"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationStrategy
-:hasRecommendationStrategy rdf:type owl:ObjectProperty ;
-                           rdfs:subPropertyOf :hasParameterValue ;
-                           rdfs:domain :RecommendationStrategyParameter ;
-                           rdfs:range :RecommendationCriterion ;
-                           rdfs:comment "Relates a recommendation strategy parameter with its recommentation strategy."@en ;
-                           rdfs:label "has recommendation strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRequester
-:hasRequester rdf:type owl:ObjectProperty ;
-              rdfs:domain :Experiment ;
-              rdfs:range :ExperimentRequester ;
-              rdfs:comment "Relates an experiment with its requester, i.e. the person who requests the execution of the experiment."@en ;
-              rdfs:label "has experiment requester"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor
-:hasRobotActor rdf:type owl:ObjectProperty ;
-               rdfs:domain :RobotRole ;
-               rdfs:range <http://kb.openrobots.org#Robot> .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole
-:hasRobotRole rdf:type owl:ObjectProperty ;
-              rdfs:domain :RobotCooperationConfiguration ;
-              rdfs:range :RobotRole .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVisualizationStrategy
-:hasVisualizationStrategy rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf :hasParameter ;
-                          rdfs:domain :Experiment ;
-                          rdfs:range :VisualizationStrategy ;
-                          rdfs:comment "Relates an experiment with its visualization strategy."@en ;
-                          rdfs:label "has visualization strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVocalExpresivity
-:hasVocalExpresivity rdf:type owl:ObjectProperty ;
-                     rdfs:domain :Avatar ;
-                     rdfs:range :ExpresivityCategory ;
-                     rdfs:comment "Relates a character with its vocal expresivity."@en ;
-                     rdfs:label "has vocal expresivity"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#isRelatedWithExperiment
-:isRelatedWithExperiment rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAssociatedWith> ;
-                         rdfs:domain <http://www.gsi.upm.es/ontologies/segb/ns#LoggedActivity> ;
-                         rdfs:range :Experiment ;
-                         rdfs:comment "Relates an activity logged in the AMOR-SEGB with the experiment in progress."@en ;
-                         rdfs:label "is related with experiment"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData
-:usesAggregatedData rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf :hasParameter ;
-                    rdfs:domain :Experiment .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAvatar
-:usesAvatar rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf :hasParameter ;
-            rdfs:domain :Experiment ;
-            rdfs:range :Avatar ;
-            rdfs:comment "Relates an experiment with the avatar used."@en ;
-            rdfs:label "uses avatar"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesDataset
-:usesDataset rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf :hasParameter ;
-             rdfs:domain :DigitalNewspaperExperiment ;
-             rdfs:range :NewsDataset ;
-             rdfs:comment "Relates a news content dataset parameter with its dataset."@en ;
-             rdfs:label "has dataset"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesEmotionRecognitionCooperationStrategy
-:usesEmotionRecognitionCooperationStrategy rdf:type owl:ObjectProperty ;
-                                           rdfs:subPropertyOf :hasParameter ;
-                                           rdfs:domain :Experiment ;
-                                           rdfs:range :EmotionRecognitionCooperationStrategy ;
-                                           rdfs:comment "Relates an experiment with the emotion recognition cooperation configuration used."@en ;
-                                           rdfs:label "uses emotion recognition cooperation configuration"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage
-:usesLanguage rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf :hasParameter ;
-              rdfs:domain :Experiment ;
-              rdfs:range <http://www.w3.org/XML/1998/namespace/lang> .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationConfiguration
-:usesRobotCooperationConfiguration rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf :hasParameter ;
-                                   rdfs:domain :Experiment ;
-                                   rdfs:range :RobotCooperationConfiguration ;
-                                   rdfs:comment "Relates an experiment with the robot cooperation configuration used."@en ;
-                                   rdfs:label "uses robot cooperation configuration"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesRobotCooperationStrategy
-:usesRobotCooperationStrategy rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf :hasParameter ;
-                              rdfs:domain :RobotCooperationConfiguration ;
-                              rdfs:range :RobotCooperationStrategy ;
-                              rdfs:comment "Relates a robot cooperation configuration with the robot cooperation strategy used."@en ;
-                              rdfs:label "uses robot cooperation strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationConfiguration
-:usesSemanticCooperationConfiguration rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf :hasParameter ;
-                                      rdfs:domain :Experiment ;
-                                      rdfs:range :SemanticCooperationConfiguration ;
-                                      rdfs:comment "Relates an experiment with the semantic cooperation strategy used."@en ;
-                                      rdfs:label "uses semantic cooperation strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSemanticCooperationStrategy
-:usesSemanticCooperationStrategy rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf :hasParameter ;
-                                 rdfs:domain :SemanticCooperationConfiguration ;
-                                 rdfs:range :SemanticCooperationStrategy ;
-                                 rdfs:comment "Relates an experiment with the semantic cooperation strategy used."@en ;
-                                 rdfs:label "uses semantic cooperation strategy"@en .
-
-
-###  http://www.w3.org/ns/prov#wasAssociatedWith
-<http://www.w3.org/ns/prov#wasAssociatedWith> rdf:type owl:ObjectProperty .
-
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAccesibilityCategory
-:hasAccesibilityCategory rdf:type owl:DatatypeProperty ;
-                         rdfs:domain :ExperimentionSubject ;
-                         rdfs:range xsd:string ;
-                         rdfs:comment "Relates an experimentation subject with its accesibility category."@en ;
-                         rdfs:label "has accesibility category"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAgeBracket
-:hasAgeBracket rdf:type owl:DatatypeProperty ;
-               rdfs:domain :ExperimentionSubject ;
-               rdfs:range xsd:string ;
-               rdfs:comment "Relates an experimentation subject with its age bracket."@en ;
-               rdfs:label "has age bracket"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAppearance
-:hasAppearance rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Avatar ;
-               rdfs:range xsd:string ;
-               rdfs:comment "Relates a character with its appearance."@en ;
-               rdfs:label "has appearance"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasAverageSocialNetworkActivityPerMonth
-:hasAverageSocialNetworkActivityPerMonth rdf:type owl:DatatypeProperty ;
-                                         rdfs:domain :ExperimentionSubject ;
-                                         rdfs:range xsd:integer ;
-                                         rdfs:comment "Relates an experimentation subject with the average social network activity per month."@en ;
-                                         rdfs:label "has average social network activity per month"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundMusic
-:hasBackgroundMusic rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :Experiment ;
-                    rdfs:range xsd:string ;
-                    rdfs:comment "Relates an experiment with the background music used."@en ;
-                    rdfs:label "has background music"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasBackgroundScenario
-:hasBackgroundScenario rdf:type owl:DatatypeProperty ;
-                       rdfs:range xsd:string .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasCategory
-:hasCategory rdf:type owl:DatatypeProperty ;
-             rdfs:domain :Avatar ;
-             rdfs:range xsd:string ;
-             rdfs:comment "Relates a character with its category."@en ;
-             rdfs:label "has category"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasEducationalLevel
-:hasEducationalLevel rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :ExperimentionSubject ;
-                     rdfs:range xsd:string ;
-                     rdfs:comment "Relates an experimentation subject with its educational level."@en ;
-                     rdfs:label "has educational level"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasExperimentConfigurationAPIEndpoint
-:hasExperimentConfigurationAPIEndpoint rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain :ExperimentExecutor ;
-                                       rdfs:range xsd:string ;
-                                       rdfs:comment "Relates an executor with the API endpoint used to configure the experiment."@en ;
-                                       rdfs:label "has experiment configuration API endpoint"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasIPAddress
-:hasIPAddress rdf:type owl:DatatypeProperty ;
-              rdfs:domain :ExperimentExecutor ;
-              rdfs:range xsd:string ;
-              rdfs:comment "Relates an executor with its IP address."@en ;
-              rdfs:label "has IP address"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLLMToken
-:hasLLMToken rdf:type owl:DatatypeProperty ;
-             rdfs:domain :LLMConfiguration ;
-             rdfs:range xsd:string ;
-             rdfs:comment "Relates an LLM configuration with the LLM token used."@en ;
-             rdfs:label "has LLM token"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasLanguageComplexityLevel
-:hasLanguageComplexityLevel rdf:type owl:DatatypeProperty ;
-                            rdfs:domain :Avatar ;
-                            rdfs:range xsd:string ;
-                            rdfs:comment "Relates a character with its language complexity level."@en ;
-                            rdfs:label "has language complexity level"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasNumberOfFollowers
-:hasNumberOfFollowers rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :ExperimentionSubject ;
-                      rdfs:range xsd:integer ;
-                      rdfs:comment "Relates an experimentation subject with the number of followers."@en ;
-                      rdfs:label "has number of followers"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPersonality
-:hasPersonality rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Avatar ;
-                rdfs:range xsd:string ;
-                rdfs:comment "Relates a character with its personality."@en ;
-                rdfs:label "has personality"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPhysicalMovement
-:hasPhysicalMovement rdf:type owl:DatatypeProperty ;
-                     rdfs:range xsd:string .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPoliticalOrientation
-:hasPoliticalOrientation rdf:type owl:DatatypeProperty ;
-                         rdfs:domain :ExperimentionSubject ;
-                         rdfs:range xsd:string ;
-                         rdfs:comment "Relates an experimentation subject with its political orientation."@en ;
-                         rdfs:label "has political orientation"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredEntity
-:hasPreferredEntity rdf:type owl:DatatypeProperty .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasPreferredTopic
-:hasPreferredTopic rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :ExperimentionSubject ;
-                   rdfs:range xsd:string ;
-                   rdfs:comment "Relates an experimentation subject with its preferred topic."@en ;
-                   rdfs:label "has preferred topic"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRecommendationScore
-:hasRecommendationScore rdf:type owl:DatatypeProperty ;
-                        rdfs:domain :Recommendation ;
-                        rdfs:range xsd:float ;
-                        rdfs:comment "Relates a recommendation with the score of the recommendation."@en ;
-                        rdfs:label "has recommendation score"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotActor
-:hasRobotActor rdf:type owl:DatatypeProperty .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRobotRole
-:hasRobotRole rdf:type owl:DatatypeProperty .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasRoleType
-:hasRoleType rdf:type owl:DatatypeProperty ;
-             rdfs:domain :RobotRole ;
-             rdfs:range xsd:string ;
-             rdfs:comment "Relates a robot role with the robot role type."@en ;
-             rdfs:label "has robot role type"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasStressLevel
-:hasStressLevel rdf:type owl:DatatypeProperty ;
-                rdfs:domain :ExperimentionSubject ;
-                rdfs:range xsd:float ;
-                rdfs:comment "Relates an experimentation subject with its stress level (between 0.0 to 1.0)."@en ;
-                rdfs:label "has stress level"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#hasVoice
-:hasVoice rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Avatar ;
-          rdfs:range xsd:string ;
-          rdfs:comment "Relates a character with its voice."@en ;
-          rdfs:label "has voice"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#recordsToSEGB
-:recordsToSEGB rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Experiment ;
-               rdfs:range xsd:string ;
-               rdfs:comment "Relates an experiment with the SEGB URL to record the logged activities."@en ;
-               rdfs:label "records to SEGB"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesAggregatedData
-:usesAggregatedData rdf:type owl:DatatypeProperty ;
-                    rdfs:range xsd:string .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesCloudGraphQuery
-:usesCloudGraphQuery rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :SemanticCooperationConfiguration ;
-                     rdfs:range xsd:string ;
-                     rdfs:comment "Relates a semantic cooperation strategy with the cloud graph query used."@en ;
-                     rdfs:label "uses cloud graph query"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMEndPoint
-:usesLLMEndPoint rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :LLMConfiguration ;
-                 rdfs:range xsd:string ;
-                 rdfs:comment "Relates an LLM configuration with the LLM end point used."@en ;
-                 rdfs:label "uses LLM end point"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMModel
-:usesLLMModel rdf:type owl:DatatypeProperty ;
-              rdfs:domain :LLMConfiguration ;
-              rdfs:range xsd:string ;
-              rdfs:comment "Relates an LLM configuration with the LLM model used."@en ;
-              rdfs:label "uses LLM model"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLLMService
-:usesLLMService rdf:type owl:DatatypeProperty ;
-                rdfs:domain :LLMConfiguration ;
-                rdfs:range xsd:string ;
-                rdfs:comment "Relates an LLM configuration with the LLM service used."@en ;
-                rdfs:label "uses LLM service"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesLanguage
-:usesLanguage rdf:type owl:DatatypeProperty .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesPrompt
-:usesPrompt rdf:type owl:DatatypeProperty ;
-            rdfs:domain :LLMConfiguration ;
-            rdfs:range xsd:string ;
-            rdfs:comment "Relates an LLM configuration with the prompt used."@en ;
-            rdfs:label "uses prompt"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#usesSPARQLQuery
-:usesSPARQLQuery rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :SemanticCooperationConfiguration ;
-                 rdfs:range xsd:string ;
-                 rdfs:comment "Relates a semantic cooperation strategy with the SPARQL query used."@en ;
-                 rdfs:label "uses SPARQL query"@en .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://kb.openrobots.org#Robot
-<http://kb.openrobots.org#Robot> rdf:type owl:Class .
-
-
-###  http://schema.org/Answer
-<http://schema.org/Answer> rdf:type owl:Class .
-
-
-###  http://schema.org/CreativeWork
-<http://schema.org/CreativeWork> rdf:type owl:Class .
-
-
-###  http://schema.org/Dataset
-<http://schema.org/Dataset> rdf:type owl:Class .
-
-
-###  http://schema.org/NewsArticle
-<http://schema.org/NewsArticle> rdf:type owl:Class .
-
-
-###  http://schema.org/Question
-<http://schema.org/Question> rdf:type owl:Class .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#Avatar
-:Avatar rdf:type owl:Class ;
-        rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
-        rdfs:comment "Represents an avatar used in an experiment in the AMOR project."@en ;
-        rdfs:label "Avatar"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitExperiment
-:ClickBaitExperiment rdf:type owl:Class ;
-                     rdfs:subClassOf :DigitalNewspaperExperiment ;
-                     rdfs:comment "Represents an experiment with click bait in the AMOR project."@en ;
-                     rdfs:label "Click Bait Experiment"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#ContentAdaptationStrategy
-:ContentAdaptationStrategy rdf:type owl:Class ;
-                           rdfs:comment "Represents a strategy used to adapt the content in an experiment in the AMOR project."@en ;
-                           rdfs:label "Content Adaptation Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#DigitalNewspaperExperiment
-:DigitalNewspaperExperiment rdf:type owl:Class ;
-                            rdfs:subClassOf :Experiment ;
-                            rdfs:comment "Represents an experiment with a digital newspaper in the AMOR project."@en ;
-                            rdfs:label "Digital Newspaper Experiment"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionRecognitionCooperationStrategy
-:EmotionRecognitionCooperationStrategy rdf:type owl:Class ;
-                                       rdfs:comment "Represents the strategy used to cooperate with the emotion recognition in an experiment in the AMOR project."@en ;
-                                       rdfs:label "Emotion Recognition Cooperation Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#Experiment
-:Experiment rdf:type owl:Class ;
-            rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
-            rdfs:comment "Represents an experiment in the AMOR project."@en ;
-            rdfs:label "Experiment"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentEvaluation
-:ExperimentEvaluation rdf:type owl:Class ;
-                      rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                      rdfs:comment "Represents an evaluation of an experiment in the AMOR project."@en ;
-                      rdfs:label "Experiment Evaluation"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentExecutor
-:ExperimentExecutor rdf:type owl:Class ;
-                    rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ;
-                    rdfs:comment "Represents an executor of an experiment in the AMOR project."@en ;
-                    rdfs:label "Experiment Executor"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentParameter
-:ExperimentParameter rdf:type owl:Class ;
-                     rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                     rdfs:comment "Represents a parameter of an experiment in the AMOR project."@en ;
-                     rdfs:label "Experiment Parameter"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentRequester
-:ExperimentRequester rdf:type owl:Class ;
-                     rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ;
-                     rdfs:comment "Represents a requester of an experiment in the AMOR project."@en ;
-                     rdfs:label "Experiment Requester"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentationSubject
-:ExperimentationSubject rdf:type owl:Class ;
-                        rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ;
-                        rdfs:comment "Represents a subject of an experiment in the AMOR project."@en ;
-                        rdfs:label "Experimentation Subject"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExperimentionSubject
-:ExperimentionSubject rdf:type owl:Class .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExpresivityCategory
-:ExpresivityCategory rdf:type owl:Class ;
-                     rdfs:comment "Represents the expresivity category of a character in an experiment in the AMOR project."@en ;
-                     rdfs:label "Expresivity Category"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#FakeNewsAwarenessExperiment
-:FakeNewsAwarenessExperiment rdf:type owl:Class ;
-                             rdfs:subClassOf :DigitalNewspaperExperiment ;
-                             rdfs:comment "Represents an experiment with fake news awareness in the AMOR project."@en ;
-                             rdfs:label "Fake News Awareness Experiment"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#GeographicalVisualizationExperiment
-:GeographicalVisualizationExperiment rdf:type owl:Class ;
-                                     rdfs:subClassOf :Experiment ;
-                                     rdfs:comment "Represents an experiment with geographical visualization in the AMOR project."@en ;
-                                     rdfs:label "Geographical Visualization Experiment"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#LLMConfiguration
-:LLMConfiguration rdf:type owl:Class ;
-                  rdfs:comment "Represents the configuration of the LLM used in an experiment in the AMOR project."@en ;
-                  rdfs:label "LLM Configuration"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#LikertQuestion
-:LikertQuestion rdf:type owl:Class ;
-                rdfs:subClassOf <http://schema.org/Question> ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://schema.org/suggestedAnswer> ;
-                                  owl:allValuesFrom [ rdf:type owl:Class ;
-                                                      owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty <http://schema.org/suggestedAnswer> ;
-                                                                      owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                                          owl:oneOf ( _:genid28 rdf:type <http://schema.org/Answer> ;
-                                                                                                                <http://schema.org/text> "Strongly Disagree"
-                                                                                                    _:genid26 rdf:type <http://schema.org/Answer> ;
-                                                                                                              <http://schema.org/text> "Disagree"
-                                                                                                    _:genid24 rdf:type <http://schema.org/Answer> ;
-                                                                                                              <http://schema.org/text> "Neutral"
-                                                                                                    _:genid22 rdf:type <http://schema.org/Answer> ;
-                                                                                                              <http://schema.org/text> "Agree"
-                                                                                          _:genid20 rdf:type <http://schema.org/Answer> ;
-                                                                                                    <http://schema.org/text> "Strongly Agree"
-                                                                                        )
-                                                                    ]
-                                                                  ]
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://schema.org/suggestedAnswer> ;
-                                                      owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                          owl:oneOf ( _:genid15 rdf:type <http://schema.org/Answer> ;
-                                                                                                <http://schema.org/text> "1"
-                                                                                    _:genid13 rdf:type <http://schema.org/Answer> ;
-                                                                                              <http://schema.org/text> "2"
-                                                                                    _:genid11 rdf:type <http://schema.org/Answer> ;
-                                                                                              <http://schema.org/text> "3"
-                                                                                    _:genid9 rdf:type <http://schema.org/Answer> ;
-                                                                                             <http://schema.org/text> "4"
-                                                                          _:genid7 rdf:type <http://schema.org/Answer> ;
-                                                                                   <http://schema.org/text> "5"
-                                                                        )
-                                                    ]
-                                  ]
-                                )
-]
-] ;
-rdfs:comment "Represents a Likert question."@en ;
-rdfs:label "Likert Question"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralFrameExperiment
-:MoralFrameExperiment rdf:type owl:Class ;
-                      rdfs:subClassOf :DigitalNewspaperExperiment ;
-                      rdfs:comment "Represents an experiment with a moral frame in the AMOR project."@en ;
-                      rdfs:label "Moral Frame Experiment"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValuesExperiment
-:MoralValuesExperiment rdf:type owl:Class ;
-                       rdfs:subClassOf :DigitalNewspaperExperiment ;
-                       rdfs:comment "Represents an experiment with moral values in the AMOR project."@en ;
-                       rdfs:label "Moral Values Experiment"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#NewsDataset
-:NewsDataset rdf:type owl:Class ;
-             rdfs:subClassOf <http://schema.org/Dataset> ,
-                             :ExperimentParameter ;
-             rdfs:comment "Represents a dataset of news content."@en ;
-             rdfs:label "News Dataset"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#Recommendation
-:Recommendation rdf:type owl:Class ;
-                rdfs:subClassOf <http://www.w3.org/ns/oa#Recommendation> ;
-                rdfs:comment "Represents a recommendation for a piee of content."@en ;
-                rdfs:label "Recommendation"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationCriterion
-:RecommendationCriterion rdf:type owl:Class ;
-                         rdfs:comment "Represents a criterion used to filter recommendations in an experiment in the AMOR project."@en ;
-                         rdfs:label "Recommendation Criterion"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#RecommendationStrategyParameter
-:RecommendationStrategyParameter rdf:type owl:Class ;
-                                 rdfs:subClassOf :ExperimentParameter ;
-                                 rdfs:comment "Represents the strategy used to filter recommendations for an item in an experiment in the AMOR project."@en ;
-                                 rdfs:label "Recommendation Strategy Parameter"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationConfiguration
-:RobotCooperationConfiguration rdf:type owl:Class .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotCooperationStrategy
-:RobotCooperationStrategy rdf:type owl:Class ;
-                          rdfs:comment "Represents the strategy used to cooperate with the robot in an experiment in the AMOR project."@en ;
-                          rdfs:label "Robot Cooperation Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#RobotRole
-:RobotRole rdf:type owl:Class ;
-           rdfs:comment "Represents the role of a robot in an experiment in the AMOR project."@en ;
-           rdfs:label "Robot Role"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#SearchEngineBiasExperiment
-:SearchEngineBiasExperiment rdf:type owl:Class ;
-                            rdfs:subClassOf :DigitalNewspaperExperiment ;
-                            rdfs:comment "Represents an experiment with a search engine bias in the AMOR project."@en ;
-                            rdfs:label "Search Engine Bias Experiment"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationConfiguration
-:SemanticCooperationConfiguration rdf:type owl:Class ;
-                                  rdfs:comment "Represents the configuration of the semantic cooperation used in an experiment in the AMOR project."@en ;
-                                  rdfs:label "Semantic Cooperation Configuration"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#SemanticCooperationStrategy
-:SemanticCooperationStrategy rdf:type owl:Class ;
-                             rdfs:comment "Represents the strategy used to cooperate with the semantic web in an experiment in the AMOR project."@en ;
-                             rdfs:label "Semantic Cooperation Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#SocialNetworkExperiment
-:SocialNetworkExperiment rdf:type owl:Class ;
-                         rdfs:subClassOf :Experiment ;
-                         rdfs:comment "Represents an experiment with a social network in the AMOR project."@en ;
-                         rdfs:label "Social Network Experiment"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#VisualizationStrategy
-:VisualizationStrategy rdf:type owl:Class ;
-                       rdfs:comment "Represents a strategy used to visualize the results of an experiment in the AMOR project."@en ;
-                       rdfs:label "Visualization Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/segb/ns#LoggedActivity
-<http://www.gsi.upm.es/ontologies/segb/ns#LoggedActivity> rdf:type owl:Class .
-
-
-###  http://www.w3.org/XML/1998/namespace/lang
-<http://www.w3.org/XML/1998/namespace/lang> rdf:type owl:Class .
-
-
-###  http://www.w3.org/ns/oa#Recommendation
-<http://www.w3.org/ns/oa#Recommendation> rdf:type owl:Class .
-
-
-###  http://www.w3.org/ns/prov#Activity
-<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
-
-
-###  http://www.w3.org/ns/prov#Agent
-<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class .
-
-
-###  http://www.w3.org/ns/prov#Entity
-<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
-
-
-###  http://xmlns.com/foaf/0.1/Agent
-<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#AfectiveAdaptationStrategy
-:AfectiveAdaptationStrategy rdf:type owl:NamedIndividual ,
-                                     :ContentAdaptationStrategy ;
-                            rdfs:comment "Represents the affective adaptation strategy."@en ;
-                            rdfs:label "Affective Adaptation Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#AffectiveValueVisualizationStrategy
-:AffectiveValueVisualizationStrategy rdf:type owl:NamedIndividual ,
-                                              :VisualizationStrategy ;
-                                     rdfs:comment "Represents the strategy used to visualize the affective values of the results of an experiment in the AMOR project."@en ;
-                                     rdfs:label "Affective Value Visualization Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#ClickBaitVisualizationStrategy
-:ClickBaitVisualizationStrategy rdf:type owl:NamedIndividual ,
-                                         :VisualizationStrategy ;
-                                rdfs:comment "Represents the strategy used to visualize the click bait values of the results of an experiment in the AMOR project."@en ;
-                                rdfs:label "Click Bait Visualization Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#CloudEmotionRecognition
-:CloudEmotionRecognition rdf:type owl:NamedIndividual ,
-                                  :EmotionRecognitionCooperationStrategy ;
-                         rdfs:comment "Represents the cloud cooperation in emotion recognition in an experiment."@en ;
-                         rdfs:label "Cloud Cooperation Emotion Recognition"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#CloudSemanticCooperation
-:CloudSemanticCooperation rdf:type owl:NamedIndividual ,
-                                   :SemanticCooperationStrategy ;
-                          rdfs:comment "Represents the cloud semantic cooperation in an experiment."@en ;
-                          rdfs:label "Cloud Semantic Cooperation"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#CompetitiveRobot
-:CompetitiveRobot rdf:type owl:NamedIndividual ,
-                           :RobotCooperationStrategy ;
-                  rdfs:comment "Represents the competitive cooperation in robot in an experiment."@en ;
-                  rdfs:label "Competitive Cooperation Robot"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#CooperativeRobot
-:CooperativeRobot rdf:type owl:NamedIndividual ,
-                           :RobotCooperationStrategy ;
-                  rdfs:comment "Represents the cognitive cooperation in robot in an experiment."@en ;
-                  rdfs:label "Cognitive Cooperation Robot"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionDissimilarity
-:EmotionDissimilarity rdf:type owl:NamedIndividual ,
-                               :RecommendationCriterion ;
-                      rdfs:comment "Recommends elements with an opposite emotion value"@en ;
-                      rdfs:label "Opposite Emotion Recommendation Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotionSimilarity
-:EmotionSimilarity rdf:type owl:NamedIndividual ,
-                            :RecommendationCriterion ;
-                   rdfs:comment "Recommends elements with a similar emotion value"@en ;
-                   rdfs:label "Similar Emotion Recommendation Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmotiveExpresivity
-:EmotiveExpresivity rdf:type owl:NamedIndividual ,
-                             :ExpresivityCategory ;
-                    rdfs:comment "Represents the emotive expresivity of a character."@en ;
-                    rdfs:label "Emotive Expresivity"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#EmphaticExpresivity
-:EmphaticExpresivity rdf:type owl:NamedIndividual ,
-                              :ExpresivityCategory ;
-                     rdfs:comment "Represents the emphatic expresivity of a character."@en ;
-                     rdfs:label "Emphatic Expresivity"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#EntitySimilarity
-:EntitySimilarity rdf:type owl:NamedIndividual ,
-                           :RecommendationCriterion ;
-                  rdfs:comment "Recommends elements with a similar named entities"@en ;
-                  rdfs:label "Similar Entities Recommendation Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#ExaggeratedExpresivity
-:ExaggeratedExpresivity rdf:type owl:NamedIndividual ,
-                                 :ExpresivityCategory ;
-                        rdfs:comment "Represents the exaggerated expresivity of a character."@en ;
-                        rdfs:label "Exaggerated Expresivity"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#FakeNewsVisualizationStrategy
-:FakeNewsVisualizationStrategy rdf:type owl:NamedIndividual ,
-                                        :VisualizationStrategy ;
-                               rdfs:comment "Represents the strategy used to visualize the fake news values of the results of an experiment in the AMOR project."@en ;
-                               rdfs:label "Fake News Visualization Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullCooperationEmotionRecognition
-:FullCooperationEmotionRecognition rdf:type owl:NamedIndividual ,
-                                            :EmotionRecognitionCooperationStrategy ;
-                                   rdfs:comment "Represents the full cooperation in emotion recognition in an experiment."@en ;
-                                   rdfs:label "Full Cooperation Emotion Recognition"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#FullSemanticCooperation
-:FullSemanticCooperation rdf:type owl:NamedIndividual ,
-                                  :SemanticCooperationStrategy ;
-                         rdfs:comment "Represents the full semantic cooperation in an experiment."@en ;
-                         rdfs:label "Full Semantic Cooperation"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalEmotionRecognition
-:LocalEmotionRecognition rdf:type owl:NamedIndividual ,
-                                  :EmotionRecognitionCooperationStrategy ;
-                         rdfs:comment "Represents the local cooperation in emotion recognition in an experiment."@en ;
-                         rdfs:label "Local Cooperation Emotion Recognition"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#LocalSemanticCooperation
-:LocalSemanticCooperation rdf:type owl:NamedIndividual ,
-                                   :SemanticCooperationStrategy ;
-                          rdfs:comment "Represents the local semantic cooperation in an experiment."@en ;
-                          rdfs:label "Local Semantic Cooperation"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralAdaptationStrategy
-:MoralAdaptationStrategy rdf:type owl:NamedIndividual ,
-                                  :ContentAdaptationStrategy ;
-                         rdfs:comment "Represents the moral adaptation strategy."@en ;
-                         rdfs:label "Moral Adaptation Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralDissimilarity
-:MoralDissimilarity rdf:type owl:NamedIndividual ,
-                             :RecommendationCriterion ;
-                    rdfs:comment "Recommends elements with an opposite moral value"@en ;
-                    rdfs:label "Opposite Moral Recommendation Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralSimilarity
-:MoralSimilarity rdf:type owl:NamedIndividual ,
-                          :RecommendationCriterion ;
-                 rdfs:comment "Recommends elements with a similar moral value"@en ;
-                 rdfs:label "Similar Moral Recommendation Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#MoralValueVisualizationStrategy
-:MoralValueVisualizationStrategy rdf:type owl:NamedIndividual ,
-                                          :VisualizationStrategy ;
-                                 rdfs:comment "Represents the strategy used to visualize the moral values of the results of an experiment in the AMOR project."@en ;
-                                 rdfs:label "Moral Value Visualization Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoAdaptationStrategy
-:NoAdaptationStrategy rdf:type owl:NamedIndividual ,
-                               :ContentAdaptationStrategy ;
-                      rdfs:comment "Represents the absence of content adaptation strategy."@en ;
-                      rdfs:label "No Adaptation Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoCooperationEmotionRecognition
-:NoCooperationEmotionRecognition rdf:type owl:NamedIndividual ,
-                                          :EmotionRecognitionCooperationStrategy ;
-                                 rdfs:comment "Represents the absence of cooperation in emotion recognition in an experiment."@en ;
-                                 rdfs:label "No Cooperation Emotion Recognition"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoCooperationRobot
-:NoCooperationRobot rdf:type owl:NamedIndividual ,
-                             :RobotCooperationStrategy ;
-                    rdfs:comment "Represents the absence of cooperation in robot in an experiment."@en ;
-                    rdfs:label "No Cooperation Robot"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoExpresivity
-:NoExpresivity rdf:type owl:NamedIndividual ,
-                        :ExpresivityCategory ;
-               rdfs:comment "Represents the absence of expresivity in a character."@en ;
-               rdfs:label "No Expresivity"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#NoSemanticCooperation
-:NoSemanticCooperation rdf:type owl:NamedIndividual ,
-                                :SemanticCooperationStrategy ;
-                       rdfs:comment "Represents the absence of semantic cooperation in an experiment."@en ;
-                       rdfs:label "No Semantic Cooperation"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#SentimentDisimilarity
-:SentimentDisimilarity rdf:type owl:NamedIndividual ,
-                                :RecommendationCriterion ;
-                       rdfs:comment "Recommends elements with an opposite sentiment value"@en ;
-                       rdfs:label "Opposite Sentiment Recommendation Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#SentimentSimilarity
-:SentimentSimilarity rdf:type owl:NamedIndividual ,
-                              :RecommendationCriterion ;
-                     rdfs:comment "Recommends elements with a similar sentiment value"@en ;
-                     rdfs:label "Similar Sentiment Recommendation Strategy"@en .
-
-
-###  http://www.gsi.upm.es/ontologies/amor/experiments/ns#StandardVisualizationStrategy
-:StandardVisualizationStrategy rdf:type owl:NamedIndividual ,
-                                        :VisualizationStrategy ;
-                               rdfs:comment "Represents the standard strategy used to visualize the results of an experiment in the AMOR project (i.e. no added information about moral, emotions, etc.)."@en ;
-                               rdfs:label "Standard Visualization Strategy"@en .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-:hasBackgroundScenario rdfs:comment "Relates an experiment with the background scenario used."@en ;
-                       rdfs:label "has background scenario"@en .
-
-
-:hasPhysicalMovement rdfs:comment "Relates an experiment with the physical movement used."@en ;
-                     rdfs:label "has physical movement"@en .
-
-
-:hasPreferredEntity rdfs:comment "Relates an experimentation subject with its preferred entities."@en ;
-                    rdfs:label "has preferred entities"@en .
-
-
-:hasRobotActor rdfs:comment "Relates a robot role with the robot actor."@en ;
-               rdfs:label "has robot actor"@en .
-
-
-:hasRobotRole rdfs:comment "Relates a robot cooperation strategy with the robot role."@en ;
-              rdfs:label "has robot role"@en .
-
-
-:usesAggregatedData rdfs:comment "Relates an experiment with the aggregated data used."@en ;
-                    rdfs:label "uses aggregated data"@en .
-
-
-:usesLanguage rdfs:comment "Relates a digital newspaper experiment with the language used in the experiment."@en ;
-              rdfs:label "uses language"@en .
-
-
-###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
+@prefix schema1: <http://schema.org/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+schema1:text a owl:AnnotationProperty .
+
+<http://www.gsi.upm.es/ontologies/amor/experiments/ns> a owl:Ontology ;
+    rdfs:label "AMOR Experiments Ontology"@en ;
+    dcterms:creator "Álvaro Carrera Barroso"@en ;
+    dcterms:description "AMOR Experiments is an ontology designed for representing experiments and evaluations in the AMOR project."@en ;
+    dcterms:publisher <http://www.gsi.upm.es> ;
+    dcterms:title "AMOR Experiments Ontology"@en ;
+    vann:preferredNamespacePrefix "amor-exp" ;
+    vann:preferredNamespaceUri "http://www.gsi.upm.es/ontologies/amor/experiments/ns#" ;
+    rdfs:comment "AMOR Experiments is an ontology designed for representing experiments and evaluations in the AMOR project."@en ;
+    owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/experiments/ns/1.0.0> ;
+    owl:versionInfo "1.0.0" .
+
+:AfectiveAdaptationStrategy a :ContentAdaptationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "Affective Adaptation Strategy"@en ;
+    rdfs:comment "Represents the affective adaptation strategy."@en .
+
+:AffectiveValueVisualizationStrategy a :VisualizationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "Affective Value Visualization Strategy"@en ;
+    rdfs:comment "Represents the strategy used to visualize the affective values of the results of an experiment in the AMOR project."@en .
+
+:ClickBaitExperiment a owl:Class ;
+    rdfs:label "Click Bait Experiment"@en ;
+    rdfs:comment "Represents an experiment with click bait in the AMOR project."@en ;
+    rdfs:subClassOf :DigitalNewspaperExperiment .
+
+:ClickBaitVisualizationStrategy a :VisualizationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "Click Bait Visualization Strategy"@en ;
+    rdfs:comment "Represents the strategy used to visualize the click bait values of the results of an experiment in the AMOR project."@en .
+
+:CloudEmotionRecognition a :EmotionRecognitionCooperationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "Cloud Cooperation Emotion Recognition"@en ;
+    rdfs:comment "Represents the cloud cooperation in emotion recognition in an experiment."@en .
+
+:CloudSemanticCooperation a :SemanticCooperationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "Cloud Semantic Cooperation"@en ;
+    rdfs:comment "Represents the cloud semantic cooperation in an experiment."@en .
+
+:CompetitiveRobot a :RobotCooperationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "Competitive Cooperation Robot"@en ;
+    rdfs:comment "Represents the competitive cooperation in robot in an experiment."@en .
+
+:CooperativeRobot a :RobotCooperationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "Cognitive Cooperation Robot"@en ;
+    rdfs:comment "Represents the cognitive cooperation in robot in an experiment."@en .
+
+:EmotionDissimilarity a :RecommendationCriterion,
+        owl:NamedIndividual ;
+    rdfs:label "Opposite Emotion Recommendation Strategy"@en ;
+    rdfs:comment "Recommends elements with an opposite emotion value"@en .
+
+:EmotionSimilarity a :RecommendationCriterion,
+        owl:NamedIndividual ;
+    rdfs:label "Similar Emotion Recommendation Strategy"@en ;
+    rdfs:comment "Recommends elements with a similar emotion value"@en .
+
+:EmotiveExpresivity a :ExpresivityCategory,
+        owl:NamedIndividual ;
+    rdfs:label "Emotive Expresivity"@en ;
+    rdfs:comment "Represents the emotive expresivity of a character."@en .
+
+:EmphaticExpresivity a :ExpresivityCategory,
+        owl:NamedIndividual ;
+    rdfs:label "Emphatic Expresivity"@en ;
+    rdfs:comment "Represents the emphatic expresivity of a character."@en .
+
+:EntitySimilarity a :RecommendationCriterion,
+        owl:NamedIndividual ;
+    rdfs:label "Similar Entities Recommendation Strategy"@en ;
+    rdfs:comment "Recommends elements with a similar named entities"@en .
+
+:ExaggeratedExpresivity a :ExpresivityCategory,
+        owl:NamedIndividual ;
+    rdfs:label "Exaggerated Expresivity"@en ;
+    rdfs:comment "Represents the exaggerated expresivity of a character."@en .
+
+:ExperimentationSubject a owl:Class ;
+    rdfs:label "Experimentation Subject"@en ;
+    rdfs:comment "Represents a subject of an experiment in the AMOR project."@en ;
+    rdfs:subClassOf prov:Agent .
+
+:FakeNewsAwarenessExperiment a owl:Class ;
+    rdfs:label "Fake News Awareness Experiment"@en ;
+    rdfs:comment "Represents an experiment with fake news awareness in the AMOR project."@en ;
+    rdfs:subClassOf :DigitalNewspaperExperiment .
+
+:FakeNewsVisualizationStrategy a :VisualizationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "Fake News Visualization Strategy"@en ;
+    rdfs:comment "Represents the strategy used to visualize the fake news values of the results of an experiment in the AMOR project."@en .
+
+:FullCooperationEmotionRecognition a :EmotionRecognitionCooperationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "Full Cooperation Emotion Recognition"@en ;
+    rdfs:comment "Represents the full cooperation in emotion recognition in an experiment."@en .
+
+:FullSemanticCooperation a :SemanticCooperationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "Full Semantic Cooperation"@en ;
+    rdfs:comment "Represents the full semantic cooperation in an experiment."@en .
+
+:GeographicalVisualizationExperiment a owl:Class ;
+    rdfs:label "Geographical Visualization Experiment"@en ;
+    rdfs:comment "Represents an experiment with geographical visualization in the AMOR project."@en ;
+    rdfs:subClassOf :Experiment .
+
+:LikertQuestion a owl:Class ;
+    rdfs:label "Likert Question"@en ;
+    rdfs:comment "Represents a Likert question."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:unionOf ( [ a owl:Restriction ;
+                                owl:allValuesFrom [ a owl:Class ;
+                                        owl:oneOf ( [ a schema1:Answer ;
+                                                    schema1:text "Strongly Disagree" ] [ a schema1:Answer ;
+                                                    schema1:text "Disagree" ] [ a schema1:Answer ;
+                                                    schema1:text "Neutral" ] [ a schema1:Answer ;
+                                                    schema1:text "Agree" ] [ a schema1:Answer ;
+                                                    schema1:text "Strongly Agree" ] ) ] ;
+                                owl:onProperty schema1:suggestedAnswer ] [ a owl:Restriction ;
+                                owl:allValuesFrom [ a owl:Class ;
+                                        owl:oneOf ( [ a schema1:Answer ;
+                                                    schema1:text "1" ] [ a schema1:Answer ;
+                                                    schema1:text "2" ] [ a schema1:Answer ;
+                                                    schema1:text "3" ] [ a schema1:Answer ;
+                                                    schema1:text "4" ] [ a schema1:Answer ;
+                                                    schema1:text "5" ] ) ] ;
+                                owl:onProperty schema1:suggestedAnswer ] ) ] ;
+            owl:onProperty schema1:suggestedAnswer ],
+        schema1:Question .
+
+:LocalEmotionRecognition a :EmotionRecognitionCooperationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "Local Cooperation Emotion Recognition"@en ;
+    rdfs:comment "Represents the local cooperation in emotion recognition in an experiment."@en .
+
+:LocalSemanticCooperation a :SemanticCooperationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "Local Semantic Cooperation"@en ;
+    rdfs:comment "Represents the local semantic cooperation in an experiment."@en .
+
+:MoralAdaptationStrategy a :ContentAdaptationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "Moral Adaptation Strategy"@en ;
+    rdfs:comment "Represents the moral adaptation strategy."@en .
+
+:MoralDissimilarity a :RecommendationCriterion,
+        owl:NamedIndividual ;
+    rdfs:label "Opposite Moral Recommendation Strategy"@en ;
+    rdfs:comment "Recommends elements with an opposite moral value"@en .
+
+:MoralFrameExperiment a owl:Class ;
+    rdfs:label "Moral Frame Experiment"@en ;
+    rdfs:comment "Represents an experiment with a moral frame in the AMOR project."@en ;
+    rdfs:subClassOf :DigitalNewspaperExperiment .
+
+:MoralSimilarity a :RecommendationCriterion,
+        owl:NamedIndividual ;
+    rdfs:label "Similar Moral Recommendation Strategy"@en ;
+    rdfs:comment "Recommends elements with a similar moral value"@en .
+
+:MoralValueVisualizationStrategy a :VisualizationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "Moral Value Visualization Strategy"@en ;
+    rdfs:comment "Represents the strategy used to visualize the moral values of the results of an experiment in the AMOR project."@en .
+
+:MoralValuesExperiment a owl:Class ;
+    rdfs:label "Moral Values Experiment"@en ;
+    rdfs:comment "Represents an experiment with moral values in the AMOR project."@en ;
+    rdfs:subClassOf :DigitalNewspaperExperiment .
+
+:NoAdaptationStrategy a :ContentAdaptationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "No Adaptation Strategy"@en ;
+    rdfs:comment "Represents the absence of content adaptation strategy."@en .
+
+:NoCooperationEmotionRecognition a :EmotionRecognitionCooperationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "No Cooperation Emotion Recognition"@en ;
+    rdfs:comment "Represents the absence of cooperation in emotion recognition in an experiment."@en .
+
+:NoCooperationRobot a :RobotCooperationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "No Cooperation Robot"@en ;
+    rdfs:comment "Represents the absence of cooperation in robot in an experiment."@en .
+
+:NoExpresivity a :ExpresivityCategory,
+        owl:NamedIndividual ;
+    rdfs:label "No Expresivity"@en ;
+    rdfs:comment "Represents the absence of expresivity in a character."@en .
+
+:NoSemanticCooperation a :SemanticCooperationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "No Semantic Cooperation"@en ;
+    rdfs:comment "Represents the absence of semantic cooperation in an experiment."@en .
+
+:SearchEngineBiasExperiment a owl:Class ;
+    rdfs:label "Search Engine Bias Experiment"@en ;
+    rdfs:comment "Represents an experiment with a search engine bias in the AMOR project."@en ;
+    rdfs:subClassOf :DigitalNewspaperExperiment .
+
+:SentimentDisimilarity a :RecommendationCriterion,
+        owl:NamedIndividual ;
+    rdfs:label "Opposite Sentiment Recommendation Strategy"@en ;
+    rdfs:comment "Recommends elements with an opposite sentiment value"@en .
+
+:SentimentSimilarity a :RecommendationCriterion,
+        owl:NamedIndividual ;
+    rdfs:label "Similar Sentiment Recommendation Strategy"@en ;
+    rdfs:comment "Recommends elements with a similar sentiment value"@en .
+
+:SocialNetworkExperiment a owl:Class ;
+    rdfs:label "Social Network Experiment"@en ;
+    rdfs:comment "Represents an experiment with a social network in the AMOR project."@en ;
+    rdfs:subClassOf :Experiment .
+
+:StandardVisualizationStrategy a :VisualizationStrategy,
+        owl:NamedIndividual ;
+    rdfs:label "Standard Visualization Strategy"@en ;
+    rdfs:comment "Represents the standard strategy used to visualize the results of an experiment in the AMOR project (i.e. no added information about moral, emotions, etc.)."@en .
+
+:hasAccesibilityCategory a owl:DatatypeProperty ;
+    rdfs:label "has accesibility category"@en ;
+    rdfs:comment "Relates an experimentation subject with its accesibility category."@en ;
+    rdfs:domain :ExperimentionSubject ;
+    rdfs:range xsd:string .
+
+:hasAgeBracket a owl:DatatypeProperty ;
+    rdfs:label "has age bracket"@en ;
+    rdfs:comment "Relates an experimentation subject with its age bracket."@en ;
+    rdfs:domain :ExperimentionSubject ;
+    rdfs:range xsd:string .
+
+:hasAppearance a owl:DatatypeProperty ;
+    rdfs:label "has appearance"@en ;
+    rdfs:comment "Relates a character with its appearance."@en ;
+    rdfs:domain :Avatar ;
+    rdfs:range xsd:string .
+
+:hasAverageSocialNetworkActivityPerMonth a owl:DatatypeProperty ;
+    rdfs:label "has average social network activity per month"@en ;
+    rdfs:comment "Relates an experimentation subject with the average social network activity per month."@en ;
+    rdfs:domain :ExperimentionSubject ;
+    rdfs:range xsd:integer .
+
+:hasBackgroundMusic a owl:DatatypeProperty ;
+    rdfs:label "has background music"@en ;
+    rdfs:comment "Relates an experiment with the background music used."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range xsd:string .
+
+:hasBackgroundScenario a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has background scenario"@en ;
+    rdfs:comment "Relates an experiment with the background scenario used."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf :hasParameter .
+
+:hasCategory a owl:DatatypeProperty ;
+    rdfs:label "has category"@en ;
+    rdfs:comment "Relates a character with its category."@en ;
+    rdfs:domain :Avatar ;
+    rdfs:range xsd:string .
+
+:hasContentAdaptationStrategy a owl:ObjectProperty ;
+    rdfs:label "has content adaptation strategy"@en ;
+    rdfs:comment "Relates an experiment with the content adaptation strategy used."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range :ContentAdaptationStrategy ;
+    rdfs:subPropertyOf :hasParameter .
+
+:hasEducationalLevel a owl:DatatypeProperty ;
+    rdfs:label "has educational level"@en ;
+    rdfs:comment "Relates an experimentation subject with its educational level."@en ;
+    rdfs:domain :ExperimentionSubject ;
+    rdfs:range xsd:string .
+
+:hasExecutor a owl:ObjectProperty ;
+    rdfs:label "has experiment executor"@en ;
+    rdfs:comment "Relates an experiment with its executor."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range :ExperimentExecutor .
+
+:hasExperimentConfigurationAPIEndpoint a owl:DatatypeProperty ;
+    rdfs:label "has experiment configuration API endpoint"@en ;
+    rdfs:comment "Relates an executor with the API endpoint used to configure the experiment."@en ;
+    rdfs:domain :ExperimentExecutor ;
+    rdfs:range xsd:string .
+
+:hasExperimentEvaluation a owl:ObjectProperty ;
+    rdfs:label "has experiment evaluation"@en ;
+    rdfs:comment "Relates an experiment with its evaluation."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range :ExperimentEvaluation ;
+    rdfs:subPropertyOf :hasParameter .
+
+:hasExperimentationSubject a owl:ObjectProperty ;
+    rdfs:label "has experimentation subject"@en ;
+    rdfs:comment "Relates an experiment with its subject."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range :ExperimentionSubject .
+
+:hasFacialExpresivity a owl:ObjectProperty ;
+    rdfs:label "has facial expresivity"@en ;
+    rdfs:comment "Relates a character with its facial expresivity."@en ;
+    rdfs:domain :Avatar ;
+    rdfs:range :ExpresivityCategory .
+
+:hasFinalQuestion a owl:ObjectProperty ;
+    rdfs:label "has final question"@en ;
+    rdfs:comment "Relates an experiment evaluation with the final questionnaire."@en ;
+    rdfs:domain :ExperimentEvaluation ;
+    rdfs:range schema1:Question .
+
+:hasGesturalExpresivity a owl:ObjectProperty ;
+    rdfs:label "has gestural expresivity"@en ;
+    rdfs:comment "Relates a character with its gestural expresivity."@en ;
+    rdfs:domain :Avatar ;
+    rdfs:range :ExpresivityCategory .
+
+:hasIPAddress a owl:DatatypeProperty ;
+    rdfs:label "has IP address"@en ;
+    rdfs:comment "Relates an executor with its IP address."@en ;
+    rdfs:domain :ExperimentExecutor ;
+    rdfs:range xsd:string .
+
+:hasInitialQuestion a owl:ObjectProperty ;
+    rdfs:label "has initial question"@en ;
+    rdfs:comment "Relates an experiment evaluation with the initial questionnaire."@en ;
+    rdfs:domain :ExperimentEvaluation ;
+    rdfs:range schema1:Question .
+
+:hasIntermediateQuestion a owl:ObjectProperty ;
+    rdfs:label "has intermediate question"@en ;
+    rdfs:comment "Relates an experiment evaluation with the intermediate questionnaire."@en ;
+    rdfs:domain :ExperimentEvaluation ;
+    rdfs:range schema1:Question .
+
+:hasLLMConfiguration a owl:ObjectProperty ;
+    rdfs:label "has LLM configuration"@en ;
+    rdfs:comment "Relates an experiment with the LLM configuration used."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range :LLMConfiguration ;
+    rdfs:subPropertyOf :hasParameter .
+
+:hasLLMToken a owl:DatatypeProperty ;
+    rdfs:label "has LLM token"@en ;
+    rdfs:comment "Relates an LLM configuration with the LLM token used."@en ;
+    rdfs:domain :LLMConfiguration ;
+    rdfs:range xsd:string .
+
+:hasLanguageComplexityLevel a owl:DatatypeProperty ;
+    rdfs:label "has language complexity level"@en ;
+    rdfs:comment "Relates a character with its language complexity level."@en ;
+    rdfs:domain :Avatar ;
+    rdfs:range xsd:string .
+
+:hasNews a owl:ObjectProperty ;
+    rdfs:label "has main entity"@en ;
+    rdfs:comment "Relates a news dataset with its main entity."@en ;
+    rdfs:domain :NewsDataset ;
+    rdfs:range schema1:NewsArticle ;
+    rdfs:subPropertyOf schema1:hasPart .
+
+:hasNumberOfFollowers a owl:DatatypeProperty ;
+    rdfs:label "has number of followers"@en ;
+    rdfs:comment "Relates an experimentation subject with the number of followers."@en ;
+    rdfs:domain :ExperimentionSubject ;
+    rdfs:range xsd:integer .
+
+:hasPersonality a owl:DatatypeProperty ;
+    rdfs:label "has personality"@en ;
+    rdfs:comment "Relates a character with its personality."@en ;
+    rdfs:domain :Avatar ;
+    rdfs:range xsd:string .
+
+:hasPhysicalMovement a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has physical movement"@en ;
+    rdfs:comment "Relates an experiment with the physical movement used."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf :hasParameter .
+
+:hasPoliticalOrientation a owl:DatatypeProperty ;
+    rdfs:label "has political orientation"@en ;
+    rdfs:comment "Relates an experimentation subject with its political orientation."@en ;
+    rdfs:domain :ExperimentionSubject ;
+    rdfs:range xsd:string .
+
+:hasPreferredContent a owl:ObjectProperty ;
+    rdfs:label "has preferred content"@en ;
+    rdfs:comment "Relates an experimentation subject with its preferred content."@en ;
+    rdfs:domain :ExperimentionSubject ;
+    rdfs:range schema1:CreativeWork .
+
+:hasPreferredEntity a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has preferred entities"@en ;
+    rdfs:comment "Relates an experimentation subject with its preferred entities."@en ;
+    rdfs:domain :ExperimentionSubject ;
+    rdfs:range prov:Entity .
+
+:hasPreferredTopic a owl:DatatypeProperty ;
+    rdfs:label "has preferred topic"@en ;
+    rdfs:comment "Relates an experimentation subject with its preferred topic."@en ;
+    rdfs:domain :ExperimentionSubject ;
+    rdfs:range xsd:string .
+
+:hasRecommendationCriterion a owl:ObjectProperty ;
+    rdfs:label "has recommendation criterion"@en ;
+    rdfs:comment "Relates a recommendation with its recommendation criterion."@en ;
+    rdfs:domain :Recommendation ;
+    rdfs:range :RecommendationCriterion ;
+    rdfs:subPropertyOf schema1:category .
+
+:hasRecommendationScore a owl:DatatypeProperty ;
+    rdfs:label "has recommendation score"@en ;
+    rdfs:comment "Relates a recommendation with the score of the recommendation."@en ;
+    rdfs:domain :Recommendation ;
+    rdfs:range xsd:float .
+
+:hasRecommendationStrategy a owl:ObjectProperty ;
+    rdfs:label "has recommendation strategy"@en ;
+    rdfs:comment "Relates a recommendation strategy parameter with its recommentation strategy."@en ;
+    rdfs:domain :RecommendationStrategyParameter ;
+    rdfs:range :RecommendationCriterion ;
+    rdfs:subPropertyOf :hasParameterValue .
+
+:hasRequester a owl:ObjectProperty ;
+    rdfs:label "has experiment requester"@en ;
+    rdfs:comment "Relates an experiment with its requester, i.e. the person who requests the execution of the experiment."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range :ExperimentRequester .
+
+:hasRobotActor a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has robot actor"@en ;
+    rdfs:comment "Relates a robot role with the robot actor."@en ;
+    rdfs:domain :RobotRole ;
+    rdfs:range <http://kb.openrobots.org#Robot> .
+
+:hasRobotRole a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has robot role"@en ;
+    rdfs:comment "Relates a robot cooperation strategy with the robot role."@en ;
+    rdfs:domain :RobotCooperationConfiguration ;
+    rdfs:range :RobotRole .
+
+:hasRoleType a owl:DatatypeProperty ;
+    rdfs:label "has robot role type"@en ;
+    rdfs:comment "Relates a robot role with the robot role type."@en ;
+    rdfs:domain :RobotRole ;
+    rdfs:range xsd:string .
+
+:hasStressLevel a owl:DatatypeProperty ;
+    rdfs:label "has stress level"@en ;
+    rdfs:comment "Relates an experimentation subject with its stress level (between 0.0 to 1.0)."@en ;
+    rdfs:domain :ExperimentionSubject ;
+    rdfs:range xsd:float .
+
+:hasVisualizationStrategy a owl:ObjectProperty ;
+    rdfs:label "has visualization strategy"@en ;
+    rdfs:comment "Relates an experiment with its visualization strategy."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range :VisualizationStrategy ;
+    rdfs:subPropertyOf :hasParameter .
+
+:hasVocalExpresivity a owl:ObjectProperty ;
+    rdfs:label "has vocal expresivity"@en ;
+    rdfs:comment "Relates a character with its vocal expresivity."@en ;
+    rdfs:domain :Avatar ;
+    rdfs:range :ExpresivityCategory .
+
+:hasVoice a owl:DatatypeProperty ;
+    rdfs:label "has voice"@en ;
+    rdfs:comment "Relates a character with its voice."@en ;
+    rdfs:domain :Avatar ;
+    rdfs:range xsd:string .
+
+:isRelatedWithExperiment a owl:ObjectProperty ;
+    rdfs:label "is related with experiment"@en ;
+    rdfs:comment "Relates an activity logged in the AMOR-SEGB with the experiment in progress."@en ;
+    rdfs:domain <http://www.gsi.upm.es/ontologies/segb/ns#LoggedActivity> ;
+    rdfs:range :Experiment ;
+    rdfs:subPropertyOf prov:wasAssociatedWith .
+
+:recordsToSEGB a owl:DatatypeProperty ;
+    rdfs:label "records to SEGB"@en ;
+    rdfs:comment "Relates an experiment with the SEGB URL to record the logged activities."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range xsd:string .
+
+:usesAggregatedData a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "uses aggregated data"@en ;
+    rdfs:comment "Relates an experiment with the aggregated data used."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf :hasParameter .
+
+:usesAvatar a owl:ObjectProperty ;
+    rdfs:label "uses avatar"@en ;
+    rdfs:comment "Relates an experiment with the avatar used."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range :Avatar ;
+    rdfs:subPropertyOf :hasParameter .
+
+:usesCloudGraphQuery a owl:DatatypeProperty ;
+    rdfs:label "uses cloud graph query"@en ;
+    rdfs:comment "Relates a semantic cooperation strategy with the cloud graph query used."@en ;
+    rdfs:domain :SemanticCooperationConfiguration ;
+    rdfs:range xsd:string .
+
+:usesDataset a owl:ObjectProperty ;
+    rdfs:label "has dataset"@en ;
+    rdfs:comment "Relates a news content dataset parameter with its dataset."@en ;
+    rdfs:domain :DigitalNewspaperExperiment ;
+    rdfs:range :NewsDataset ;
+    rdfs:subPropertyOf :hasParameter .
+
+:usesEmotionRecognitionCooperationStrategy a owl:ObjectProperty ;
+    rdfs:label "uses emotion recognition cooperation configuration"@en ;
+    rdfs:comment "Relates an experiment with the emotion recognition cooperation configuration used."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range :EmotionRecognitionCooperationStrategy ;
+    rdfs:subPropertyOf :hasParameter .
+
+:usesLLMEndPoint a owl:DatatypeProperty ;
+    rdfs:label "uses LLM end point"@en ;
+    rdfs:comment "Relates an LLM configuration with the LLM end point used."@en ;
+    rdfs:domain :LLMConfiguration ;
+    rdfs:range xsd:string .
+
+:usesLLMModel a owl:DatatypeProperty ;
+    rdfs:label "uses LLM model"@en ;
+    rdfs:comment "Relates an LLM configuration with the LLM model used."@en ;
+    rdfs:domain :LLMConfiguration ;
+    rdfs:range xsd:string .
+
+:usesLLMService a owl:DatatypeProperty ;
+    rdfs:label "uses LLM service"@en ;
+    rdfs:comment "Relates an LLM configuration with the LLM service used."@en ;
+    rdfs:domain :LLMConfiguration ;
+    rdfs:range xsd:string .
+
+:usesLanguage a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "uses language"@en ;
+    rdfs:comment "Relates a digital newspaper experiment with the language used in the experiment."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range xml:lang ;
+    rdfs:subPropertyOf :hasParameter .
+
+:usesPrompt a owl:DatatypeProperty ;
+    rdfs:label "uses prompt"@en ;
+    rdfs:comment "Relates an LLM configuration with the prompt used."@en ;
+    rdfs:domain :LLMConfiguration ;
+    rdfs:range xsd:string .
+
+:usesRobotCooperationConfiguration a owl:ObjectProperty ;
+    rdfs:label "uses robot cooperation configuration"@en ;
+    rdfs:comment "Relates an experiment with the robot cooperation configuration used."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range :RobotCooperationConfiguration ;
+    rdfs:subPropertyOf :hasParameter .
+
+:usesRobotCooperationStrategy a owl:ObjectProperty ;
+    rdfs:label "uses robot cooperation strategy"@en ;
+    rdfs:comment "Relates a robot cooperation configuration with the robot cooperation strategy used."@en ;
+    rdfs:domain :RobotCooperationConfiguration ;
+    rdfs:range :RobotCooperationStrategy ;
+    rdfs:subPropertyOf :hasParameter .
+
+:usesSPARQLQuery a owl:DatatypeProperty ;
+    rdfs:label "uses SPARQL query"@en ;
+    rdfs:comment "Relates a semantic cooperation strategy with the SPARQL query used."@en ;
+    rdfs:domain :SemanticCooperationConfiguration ;
+    rdfs:range xsd:string .
+
+:usesSemanticCooperationConfiguration a owl:ObjectProperty ;
+    rdfs:label "uses semantic cooperation strategy"@en ;
+    rdfs:comment "Relates an experiment with the semantic cooperation strategy used."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range :SemanticCooperationConfiguration ;
+    rdfs:subPropertyOf :hasParameter .
+
+:usesSemanticCooperationStrategy a owl:ObjectProperty ;
+    rdfs:label "uses semantic cooperation strategy"@en ;
+    rdfs:comment "Relates an experiment with the semantic cooperation strategy used."@en ;
+    rdfs:domain :SemanticCooperationConfiguration ;
+    rdfs:range :SemanticCooperationStrategy ;
+    rdfs:subPropertyOf :hasParameter .
+
+<http://kb.openrobots.org#Robot> a owl:Class .
+
+schema1:CreativeWork a owl:Class .
+
+schema1:Dataset a owl:Class .
+
+schema1:NewsArticle a owl:Class .
+
+schema1:category a owl:ObjectProperty .
+
+schema1:hasPart a owl:ObjectProperty .
+
+:ExperimentRequester a owl:Class ;
+    rdfs:label "Experiment Requester"@en ;
+    rdfs:comment "Represents a requester of an experiment in the AMOR project."@en ;
+    rdfs:subClassOf prov:Agent .
+
+:RecommendationStrategyParameter a owl:Class ;
+    rdfs:label "Recommendation Strategy Parameter"@en ;
+    rdfs:comment "Represents the strategy used to filter recommendations for an item in an experiment in the AMOR project."@en ;
+    rdfs:subClassOf :ExperimentParameter .
+
+:hasParameterValue a owl:ObjectProperty .
+
+<http://www.gsi.upm.es/ontologies/segb/ns#LoggedActivity> a owl:Class .
+
+xml:lang a owl:Class .
+
+<http://www.w3.org/ns/oa#Recommendation> a owl:Class .
+
+prov:Activity a owl:Class .
+
+prov:wasAssociatedWith a owl:ObjectProperty .
+
+foaf:Agent a owl:Class .
+
+:ExperimentParameter a owl:Class ;
+    rdfs:label "Experiment Parameter"@en ;
+    rdfs:comment "Represents a parameter of an experiment in the AMOR project."@en ;
+    rdfs:subClassOf prov:Entity .
+
+:NewsDataset a owl:Class ;
+    rdfs:label "News Dataset"@en ;
+    rdfs:comment "Represents a dataset of news content."@en ;
+    rdfs:subClassOf schema1:Dataset,
+        :ExperimentParameter .
+
+:Recommendation a owl:Class ;
+    rdfs:label "Recommendation"@en ;
+    rdfs:comment "Represents a recommendation for a piee of content."@en ;
+    rdfs:subClassOf <http://www.w3.org/ns/oa#Recommendation> .
+
+schema1:suggestedAnswer a owl:ObjectProperty .
+
+:ExperimentExecutor a owl:Class ;
+    rdfs:label "Experiment Executor"@en ;
+    rdfs:comment "Represents an executor of an experiment in the AMOR project."@en ;
+    rdfs:subClassOf prov:Agent .
+
+:RobotCooperationConfiguration a owl:Class .
+
+:RobotRole a owl:Class ;
+    rdfs:label "Robot Role"@en ;
+    rdfs:comment "Represents the role of a robot in an experiment in the AMOR project."@en .
+
+prov:Agent a owl:Class .
+
+prov:Entity a owl:Class .
+
+schema1:Question a owl:Class .
+
+:ContentAdaptationStrategy a owl:Class ;
+    rdfs:label "Content Adaptation Strategy"@en ;
+    rdfs:comment "Represents a strategy used to adapt the content in an experiment in the AMOR project."@en .
+
+:ExperimentEvaluation a owl:Class ;
+    rdfs:label "Experiment Evaluation"@en ;
+    rdfs:comment "Represents an evaluation of an experiment in the AMOR project."@en ;
+    rdfs:subClassOf prov:Entity .
+
+:RobotCooperationStrategy a owl:Class ;
+    rdfs:label "Robot Cooperation Strategy"@en ;
+    rdfs:comment "Represents the strategy used to cooperate with the robot in an experiment in the AMOR project."@en .
+
+:SemanticCooperationConfiguration a owl:Class ;
+    rdfs:label "Semantic Cooperation Configuration"@en ;
+    rdfs:comment "Represents the configuration of the semantic cooperation used in an experiment in the AMOR project."@en .
+
+:EmotionRecognitionCooperationStrategy a owl:Class ;
+    rdfs:label "Emotion Recognition Cooperation Strategy"@en ;
+    rdfs:comment "Represents the strategy used to cooperate with the emotion recognition in an experiment in the AMOR project."@en .
+
+:SemanticCooperationStrategy a owl:Class ;
+    rdfs:label "Semantic Cooperation Strategy"@en ;
+    rdfs:comment "Represents the strategy used to cooperate with the semantic web in an experiment in the AMOR project."@en .
+
+:DigitalNewspaperExperiment a owl:Class ;
+    rdfs:label "Digital Newspaper Experiment"@en ;
+    rdfs:comment "Represents an experiment with a digital newspaper in the AMOR project."@en ;
+    rdfs:subClassOf :Experiment .
+
+:LLMConfiguration a owl:Class ;
+    rdfs:label "LLM Configuration"@en ;
+    rdfs:comment "Represents the configuration of the LLM used in an experiment in the AMOR project."@en .
+
+:VisualizationStrategy a owl:Class ;
+    rdfs:label "Visualization Strategy"@en ;
+    rdfs:comment "Represents a strategy used to visualize the results of an experiment in the AMOR project."@en .
+
+:ExpresivityCategory a owl:Class ;
+    rdfs:label "Expresivity Category"@en ;
+    rdfs:comment "Represents the expresivity category of a character in an experiment in the AMOR project."@en .
+
+:Avatar a owl:Class ;
+    rdfs:label "Avatar"@en ;
+    rdfs:comment "Represents an avatar used in an experiment in the AMOR project."@en ;
+    rdfs:subClassOf foaf:Agent .
+
+:RecommendationCriterion a owl:Class ;
+    rdfs:label "Recommendation Criterion"@en ;
+    rdfs:comment "Represents a criterion used to filter recommendations in an experiment in the AMOR project."@en .
+
+schema1:Answer a owl:Class .
+
+:ExperimentionSubject a owl:Class .
+
+:hasParameter a owl:ObjectProperty ;
+    rdfs:label "has parameter"@en ;
+    rdfs:comment "Relates an experiment with its parameters."@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range owl:Thing .
+
+:Experiment a owl:Class ;
+    rdfs:label "Experiment"@en ;
+    rdfs:comment "Represents an experiment in the AMOR project."@en ;
+    rdfs:subClassOf prov:Activity .

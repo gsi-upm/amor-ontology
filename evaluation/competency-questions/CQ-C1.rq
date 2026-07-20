@@ -1,0 +1,9 @@
+# CQ-C1: What resource was analysed in a moral-value analysis?
+PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>
+
+SELECT ?analysis ?resource
+WHERE {
+  ?analysis a amor:MoralValueAnalysis ;
+    amor:analysed ?resource .
+}
+ORDER BY ?analysis ?resource

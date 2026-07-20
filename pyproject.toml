@@ -13,3 +13,8 @@ dependencies = [
 
 [tool.uv.workspace]
 #members = ["src/amor/experiments/reference-server"]
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:ConjunctiveGraph is deprecated, use Dataset instead.:DeprecationWarning:rdflib.plugins.parsers.jsonld",
+]

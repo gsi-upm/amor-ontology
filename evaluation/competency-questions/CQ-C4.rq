@@ -1,0 +1,9 @@
+# CQ-C4: Which moral-value model was used in an analysis?
+PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>
+
+SELECT ?analysis ?model
+WHERE {
+  ?analysis a amor:MoralValueAnalysis ;
+    amor:usedMoralValueModel ?model .
+}
+ORDER BY ?analysis ?model
