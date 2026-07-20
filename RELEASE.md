@@ -1,7 +1,8 @@
 # AMOR v1.0.0 release procedure
 
-This file prepares the technical release. It does not authorize a production
-upload, Git tag, or GitHub Release.
+This file is the reproducible runbook for preparing, publishing, and verifying
+the technical release. Production uploads, Git tags, and GitHub Releases still
+require explicit authorization for each release execution.
 
 ## Release scope and tools
 
@@ -53,18 +54,37 @@ affected by the corrections. WIDOCO 1.4.25 emits invalid Turtle for one nested
 therefore validate `ontology.ttl` and, only on parse failure, reserialize the
 same generated RDF/XML graph with RDFLib; normative sources are not changed.
 
-## Deployment evidence and current blocker
+## Confirmed deployment procedure
 
 Ignored legacy scripts under `local_scripts/` provide repository-local evidence
-that publication was performed with recursive `scp` from each generated `doc`
-directory to `vpsadmin@gsi.upm.es:/data/web/files/ontologies/...`. They combine
-generation and upload and previously used mutable WIDOCO `latest` images.
+that publication used recursive `scp`. On 2026-07-20 the repository owner
+confirmed that SSH-key access, account `vpsadmin@gsi.upm.es`, and the destination
+layout remain current, and explicitly authorized the v1.0.0 publication.
 
-These scripts are not part of the reproducible generation path and must not be
-run as-is. Before publication, the user must confirm that the SSH host, account,
-destination layout, and operational procedure are still current and explicitly
-authorize production access. No CI deployment credentials or deployment job are
-defined.
+The legacy scripts combine generation and upload and use mutable WIDOCO
+`latest` images, so they must not be run as-is. Generate from a clean final
+commit with `./scripts/generate_documentation.sh`, verify `BUILDINFO`, and then
+publish only these six directories:
+
+```bash
+scp -r doc/ontologies/amor/ns/doc \
+  vpsadmin@gsi.upm.es:/data/web/files/ontologies/amor/ns
+scp -r doc/ontologies/amor/examples/doc \
+  vpsadmin@gsi.upm.es:/data/web/files/ontologies/amor/examples
+scp -r doc/ontologies/bhv/ns/doc \
+  vpsadmin@gsi.upm.es:/data/web/files/ontologies/bhv/ns
+scp -r doc/ontologies/mft/ns/doc \
+  vpsadmin@gsi.upm.es:/data/web/files/ontologies/mft/ns
+scp -r doc/ontologies/amor/models/bhv/ns/doc \
+  vpsadmin@gsi.upm.es:/data/web/files/ontologies/amor/models/bhv/ns
+scp -r doc/ontologies/amor/models/mft/ns/doc \
+  vpsadmin@gsi.upm.es:/data/web/files/ontologies/amor/models/mft/ns
+```
+
+The server-owned `.htaccess` files in those `doc` directories provide content
+negotiation and are intentionally retained by this copy procedure. No CI
+deployment credentials or production deployment job are defined. Authorization
+for v1.0.0 does not implicitly authorize later releases.
 
 ## Post-publication verification
 
@@ -81,8 +101,8 @@ After an authorized upload from the final commit:
 ## Consequential actions
 
 Only after the final commit and public representations have been verified, and
-only with explicit user authorization, create the annotated tag and GitHub
-Release:
+only with explicit user authorization for that execution, create the annotated
+tag and GitHub Release:
 
 ```bash
 git tag -a v1.0.0 <verified-final-commit> -m "AMOR ontology v1.0.0"
@@ -90,4 +110,5 @@ git push origin v1.0.0
 gh release create v1.0.0 --verify-tag --title "AMOR ontology v1.0.0" --notes-file release/v1.0.0-notes.md
 ```
 
-Do not execute these commands during release preparation.
+The annotated tag is the immutable reference to the final release commit; the
+GitHub Release verification record must identify that tag and the public checks.
