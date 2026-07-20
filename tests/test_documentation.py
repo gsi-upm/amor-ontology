@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 from rdflib import Graph, Literal, Namespace, RDF, RDFS, SKOS, URIRef
-from rdflib.namespace import OWL
+from rdflib.namespace import DCTERMS, OWL
 
 from conftest import ROOT
 
@@ -13,6 +13,7 @@ AMOR_MFT = Namespace("http://www.gsi.upm.es/ontologies/amor/models/mft/ns#")
 BHV = Namespace("http://www.gsi.upm.es/ontologies/bhv/ns#")
 MFT = Namespace("http://www.gsi.upm.es/ontologies/mft/ns#")
 OA = Namespace("http://www.w3.org/ns/oa#")
+LICENSE_IRI = URIRef("http://creativecommons.org/licenses/by/2.0/")
 
 GENERATED_RDF = tuple(
     sorted(
@@ -25,33 +26,47 @@ RELEASE_DOCUMENTATION = (
     (
         "doc/ontologies/amor/ns/doc/ontology.ttl",
         URIRef("http://www.gsi.upm.es/ontologies/amor/ns"),
+        URIRef("http://www.gsi.upm.es/ontologies/amor/ns/1.0.1"),
         URIRef("http://www.gsi.upm.es/ontologies/amor/ns/1.0.0"),
     ),
     (
         "doc/ontologies/bhv/ns/doc/ontology.ttl",
         URIRef("http://www.gsi.upm.es/ontologies/bhv/ns"),
+        URIRef("http://www.gsi.upm.es/ontologies/bhv/ns/1.0.1"),
         URIRef("http://www.gsi.upm.es/ontologies/bhv/ns/1.0.0"),
     ),
     (
         "doc/ontologies/mft/ns/doc/ontology.ttl",
         URIRef("http://www.gsi.upm.es/ontologies/mft/ns"),
+        URIRef("http://www.gsi.upm.es/ontologies/mft/ns/1.0.1"),
         URIRef("http://www.gsi.upm.es/ontologies/mft/ns/1.0.0"),
     ),
     (
         "doc/ontologies/amor/models/bhv/ns/doc/ontology.ttl",
         URIRef("http://www.gsi.upm.es/ontologies/amor/models/bhv/ns"),
+        URIRef("http://www.gsi.upm.es/ontologies/amor/models/bhv/ns/1.0.1"),
         URIRef("http://www.gsi.upm.es/ontologies/amor/models/bhv/ns/1.0.0"),
     ),
     (
         "doc/ontologies/amor/models/mft/ns/doc/ontology.ttl",
         URIRef("http://www.gsi.upm.es/ontologies/amor/models/mft/ns"),
+        URIRef("http://www.gsi.upm.es/ontologies/amor/models/mft/ns/1.0.1"),
         URIRef("http://www.gsi.upm.es/ontologies/amor/models/mft/ns/1.0.0"),
     ),
     (
         "doc/ontologies/amor/examples/doc/ontology.ttl",
         URIRef("http://www.gsi.upm.es/ontologies/amor/examples"),
+        URIRef("http://www.gsi.upm.es/ontologies/amor/examples/1.0.1"),
         URIRef("http://www.gsi.upm.es/ontologies/amor/examples/1.0.0"),
     ),
+)
+RELEASE_CREATED_DATES = (
+    "2024-02-10",
+    "2024-03-15",
+    "2024-03-15",
+    "2024-03-15",
+    "2024-03-15",
+    "2024-02-10",
 )
 
 
@@ -65,14 +80,20 @@ def test_generated_rdf_representation_parses(generated: Path) -> None:
 
 
 @pytest.mark.parametrize(
-    ("relative_path", "ontology_iri", "version_iri"),
+    ("relative_path", "ontology_iri", "version_iri", "prior_version_iri"),
     RELEASE_DOCUMENTATION,
 )
-def test_generated_release_metadata(relative_path, ontology_iri, version_iri) -> None:
-    graph = Graph().parse(ROOT / relative_path, format="turtle")
+@pytest.mark.parametrize("suffix", ("ttl", "owl", "jsonld"))
+def test_generated_release_metadata(
+    relative_path, ontology_iri, version_iri, prior_version_iri, suffix
+) -> None:
+    generated = (ROOT / relative_path).with_suffix(f".{suffix}")
+    graph = Graph().parse(generated)
     assert (ontology_iri, RDF.type, OWL.Ontology) in graph
     assert (ontology_iri, OWL.versionIRI, version_iri) in graph
-    assert {str(value) for value in graph.objects(ontology_iri, OWL.versionInfo)} == {"1.0.0"}
+    assert (ontology_iri, OWL.priorVersion, prior_version_iri) in graph
+    assert (ontology_iri, DCTERMS.license, LICENSE_IRI) in graph
+    assert {str(value) for value in graph.objects(ontology_iri, OWL.versionInfo)} == {"1.0.1"}
 
 
 def test_generated_mft_documentation_contains_corrected_model_terms() -> None:
@@ -119,6 +140,14 @@ def test_human_readable_documentation_reflects_corrections() -> None:
     assert "ontologies/mft/ns#Fairness" in mft_html
     assert ">Vice<" in mft_html
     assert ">Virtue<" in mft_html
+    assert mft_html.count(
+        "The polarity indicates whether an MFT moral-value category is expressed as a virtue or a vice."
+    ) == 2
+    assert (
+        "The polarity intensity represents the direction and intensity of an MFT moral-value annotation on a scale from -1.0 (vice) to 1.0 (virtue)."
+        in mft_html
+    )
+    assert "The polarity is represents" not in mft_html
 
     examples_html = (
         ROOT / "doc/ontologies/amor/examples/doc/sections/crossref-en.html"
@@ -131,6 +160,36 @@ def test_human_readable_documentation_reflects_corrections() -> None:
     assert 'href="#news1"' in annotation_section
     assert "ontologies/bhv/ns#Conservation" in examples_html
     assert "ontologies/bhv#Conservation" not in examples_html
+
+    amor_intro = (
+        ROOT / "doc/ontologies/amor/ns/doc/sections/introduction-en.html"
+    ).read_text(encoding="utf-8")
+    assert (
+        "AMOR is an ontology for representing moral-value analyses and their associated annotations over textual resources."
+        in amor_intro
+    )
+    assert "Axiomatic Moral Ontology for Reasoning" not in amor_intro
+    assert "moral dilemmas" not in amor_intro
+    assert "ethics education" not in amor_intro
+
+
+@pytest.mark.parametrize(
+    ("relative_path", "created"),
+    [
+        (entry[0].replace("ontology.ttl", "index-en.html"), created)
+        for entry, created in zip(RELEASE_DOCUMENTATION, RELEASE_CREATED_DATES)
+    ],
+)
+def test_human_readable_release_metadata(relative_path: str, created: str) -> None:
+    html = (ROOT / relative_path).read_text(encoding="utf-8")
+    assert '"version":"1.0.1"' in html
+    assert f'"dateReleased":"{created}"' in html
+    assert '"dateModified":"2026-07-20"' in html
+    assert "<dt>Issued on:</dt>\n<dd>2026-07-20</dd>" in html
+    assert "http://creativecommons.org/licenses/by/2.0/" in html
+    assert "License-CC%20BY%202.0" in html
+    assert "Ontology Specification Draft" not in html
+    assert "Ontology Specification" in html
 
 
 def test_normative_release_hash_manifest_matches_sources() -> None:

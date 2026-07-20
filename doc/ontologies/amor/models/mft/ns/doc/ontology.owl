@@ -11,17 +11,22 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns">
-        <owl:versionIRI rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns/1.0.0"/>
+        <owl:versionIRI rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns/1.0.1"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-15</terms:created>
         <terms:creator xml:lang="en">Sergio Muñoz López</terms:creator>
         <terms:creator xml:lang="en">Álvaro Carrera Barroso</terms:creator>
         <terms:description xml:lang="en">AMOR-MFT is an ontology that uses AMOR ontology and MFT SKOS Taxonomy to create required relations to use MFT to define moral annotations.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-07-20</terms:issued>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/2.0/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-07-20</terms:modified>
         <terms:publisher rdf:resource="http://www.gsi.upm.es"/>
         <terms:title xml:lang="en">AMOR-MFT Ontology</terms:title>
         <vann:preferredNamespacePrefix>amor-mft</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://www.gsi.upm.es/ontologies/amor/models/mft/ns#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">AMOR-MFT is an ontology that uses AMOR ontology and MFT SKOS Taxonomy to create required relations to use MFT to define moral annotations.</rdfs:comment>
         <rdfs:label xml:lang="en">AMOR-MFT Ontology</rdfs:label>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <owl:priorVersion rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns/1.0.0"/>
+        <owl:versionInfo>1.0.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -38,6 +43,13 @@
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
     <!-- http://purl.org/dc/terms/creator -->
 
 
@@ -49,6 +61,27 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
     
 
 
@@ -90,6 +123,25 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -105,7 +157,7 @@
     <owl:ObjectProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity">
         <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
         <rdfs:range rdf:resource="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"/>
-        <rdfs:comment xml:lang="en">The polarity is represents the Vice or the Virtue of the MFT Moral Value category.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The polarity indicates whether an MFT moral-value category is expressed as a virtue or a vice.</rdfs:comment>
         <rdfs:label xml:lang="en">has polarity</rdfs:label>
     </owl:ObjectProperty>
     
@@ -141,7 +193,7 @@
     <owl:DatatypeProperty rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity">
         <rdfs:domain rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:comment xml:lang="en">The polarity of a moral value annotation represents the intensity of the moral value in the analyzed textual source, ranging from -1.0 (for vice) to 1.0 (for virtue).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The polarity intensity represents the direction and intensity of an MFT moral-value annotation on a scale from -1.0 (vice) to 1.0 (virtue).</rdfs:comment>
         <rdfs:label xml:lang="en">has polarity intensity</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -174,7 +226,7 @@
 
 
     <owl:Class rdf:about="http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity">
-        <rdfs:comment xml:lang="en">The polarity is represents the Vice or the Virtue of the MFT Moral Value category.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The polarity indicates whether an MFT moral-value category is expressed as a virtue or a vice.</rdfs:comment>
         <rdfs:label xml:lang="en">Polarity</rdfs:label>
     </owl:Class>
     

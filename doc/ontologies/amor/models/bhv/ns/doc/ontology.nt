@@ -1,15 +1,20 @@
 <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns/1.0.0> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns/1.0.1> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/dc/terms/created> "2024-03-15"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/dc/terms/creator> "Sergio Muñoz López"@en .
 <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/dc/terms/creator> "Álvaro Carrera Barroso"@en .
 <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/dc/terms/description> "AMOR-BHV is an ontology that uses AMOR ontology and BHV SKOS Taxonomy to create required relations to use BHV to define moral annotations."@en .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/dc/terms/issued> "2026-07-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/2.0/> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/dc/terms/modified> "2026-07-20"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/dc/terms/publisher> <http://www.gsi.upm.es> .
 <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/dc/terms/title> "AMOR-BHV Ontology"@en .
 <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/vocab/vann/preferredNamespacePrefix> "amor-bhv" .
 <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#" .
 <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://www.w3.org/2000/01/rdf-schema#comment> "AMOR-BHV is an ontology that uses AMOR ontology and BHV SKOS Taxonomy to create required relations to use BHV to define moral annotations."@en .
 <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://www.w3.org/2000/01/rdf-schema#label> "AMOR-BHV Ontology"@en .
-<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://www.w3.org/2002/07/owl#priorVersion> <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns/1.0.0> .
+<http://www.gsi.upm.es/ontologies/amor/models/bhv/ns> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.1" .
 # 
 # 
 # #################################################################
@@ -19,11 +24,23 @@
 # #################################################################
 # 
 # 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -39,6 +56,18 @@
 # 
 # http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory
 <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
 # 
 # 

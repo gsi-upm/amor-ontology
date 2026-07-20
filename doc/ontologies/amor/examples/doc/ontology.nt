@@ -1,14 +1,19 @@
 <http://www.gsi.upm.es/ontologies/amor/examples> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.gsi.upm.es/ontologies/amor/examples> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.gsi.upm.es/ontologies/amor/examples/1.0.0> .
+<http://www.gsi.upm.es/ontologies/amor/examples> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.gsi.upm.es/ontologies/amor/examples/1.0.1> .
+<http://www.gsi.upm.es/ontologies/amor/examples> <http://purl.org/dc/terms/created> "2024-02-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://www.gsi.upm.es/ontologies/amor/examples> <http://purl.org/dc/terms/creator> "Álvaro Carrera Barroso"@en .
 <http://www.gsi.upm.es/ontologies/amor/examples> <http://purl.org/dc/terms/description> "AMOR Examples contains a set of examples using all models required for semantic moral annotation in AMOR project."@en .
+<http://www.gsi.upm.es/ontologies/amor/examples> <http://purl.org/dc/terms/issued> "2026-07-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.gsi.upm.es/ontologies/amor/examples> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/2.0/> .
+<http://www.gsi.upm.es/ontologies/amor/examples> <http://purl.org/dc/terms/modified> "2026-07-20"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://www.gsi.upm.es/ontologies/amor/examples> <http://purl.org/dc/terms/publisher> <http://www.gsi.upm.es> .
 <http://www.gsi.upm.es/ontologies/amor/examples> <http://purl.org/dc/terms/title> "AMOR Examples"@en .
 <http://www.gsi.upm.es/ontologies/amor/examples> <http://purl.org/vocab/vann/preferredNamespacePrefix> "amor-examples" .
 <http://www.gsi.upm.es/ontologies/amor/examples> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.gsi.upm.es/ontologies/amor/examples#" .
 <http://www.gsi.upm.es/ontologies/amor/examples> <http://www.w3.org/2000/01/rdf-schema#comment> "AMOR Examples contains a set of examples using all models required for semantic moral annotation in AMOR project."@en .
 <http://www.gsi.upm.es/ontologies/amor/examples> <http://www.w3.org/2000/01/rdf-schema#label> "AMOR Examples"@en .
-<http://www.gsi.upm.es/ontologies/amor/examples> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<http://www.gsi.upm.es/ontologies/amor/examples> <http://www.w3.org/2002/07/owl#priorVersion> <http://www.gsi.upm.es/ontologies/amor/examples/1.0.0> .
+<http://www.gsi.upm.es/ontologies/amor/examples> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.1" .
 # 
 # 
 # #################################################################
@@ -18,11 +23,23 @@
 # #################################################################
 # 
 # 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -146,6 +163,9 @@
 # 
 # http://schema.org/Date
 <http://schema.org/Date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
 # 
 # 

@@ -7,7 +7,7 @@
       "en" : "Basic Human Values Taxonomy - SKOS version"
     },
     "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
-    "version" : "1.0.0",
+    "version" : "1.0.1",
     "author" : [ "Álvaro Carrera Barroso", "Sergio Muñoz López" ],
     "description" : {
       "en" : "This SKOS taxonomy mirrors the categories in Basic Human Values Theory and provides a semantic representation using the standard SKOS representation."
@@ -19,21 +19,45 @@
       "en" : "This SKOS taxonomy mirrors the categories in Basic Human Values Theory and provides a semantic representation using the standard SKOS representation."
     },
     "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/2.0/",
+        "type" : "iri"
+      } ],
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es/ontologies/bhv/ns/1.0.0",
+        "type" : "iri"
+      } ],
       "creator" : [ {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Sergio Muñoz López",
+        "value" : "Álvaro Carrera Barroso",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Álvaro Carrera Barroso",
+        "value" : "Sergio Muñoz López",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2024-03-15",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
         "value" : "bhv",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2026-07-20",
         "type" : "label"
       } ],
       "publisher" : [ {
@@ -51,13 +75,19 @@
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "1.0.0",
+        "value" : "1.0.1",
         "type" : "label"
       } ],
       "title" : [ {
         "identifier" : "title",
         "language" : "en",
         "value" : "Basic Human Values Taxonomy - SKOS version",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2026-07-20",
         "type" : "label"
       } ]
     }
@@ -112,20 +142,6 @@
       "IRI-based" : "Concept"
     },
     "individuals" : [ {
-      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "be-respecting-traditions",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "BeRespectingTraditions"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismNature",
       "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
       "annotations" : {
@@ -138,6 +154,20 @@
       },
       "labels" : {
         "IRI-based" : "UniversalismNature"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeRespectingTraditions",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "be-respecting-traditions",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "BeRespectingTraditions"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveEquality",
@@ -238,20 +268,6 @@
         "IRI-based" : "SecuritySocietal"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "be-honest",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "BeHonest"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveTheOwnFamilySecured",
       "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
       "annotations" : {
@@ -264,6 +280,20 @@
       },
       "labels" : {
         "IRI-based" : "HaveTheOwnFamilySecured"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHonest",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "be-honest",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "BeHonest"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeCapable",
@@ -294,20 +324,6 @@
         "IRI-based" : "BeBehavingProperly"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "universalism-tolerance",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "UniversalismTolerance"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BePolite",
       "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
       "annotations" : {
@@ -334,6 +350,20 @@
       },
       "labels" : {
         "IRI-based" : "SelfTranscendence"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#UniversalismTolerance",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "universalism-tolerance",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "UniversalismTolerance"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveASafeCountry",
@@ -378,20 +408,6 @@
         "IRI-based" : "HaveTheWisdomToAcceptOthers"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeLogical",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "be-logical",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "BeLogical"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#Humility",
       "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
       "annotations" : {
@@ -404,6 +420,20 @@
       },
       "labels" : {
         "IRI-based" : "Humility"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeLogical",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "be-logical",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "BeLogical"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAStableSociety",
@@ -462,20 +492,6 @@
         "IRI-based" : "UniversalismConcern"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "have-an-objective-view",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "HaveAnObjectiveView"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveNoDebts",
       "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
       "annotations" : {
@@ -502,6 +518,20 @@
       },
       "labels" : {
         "IRI-based" : "HaveSocialRecognition"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAnObjectiveView",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "have-an-objective-view",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "HaveAnObjectiveView"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#Conservation",
@@ -924,20 +954,6 @@
         "IRI-based" : "HaveAWorldAtPeace"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "have-harmony-with-nature",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "HaveHarmonyWithNature"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveAComfortableLife",
       "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
       "annotations" : {
@@ -950,6 +966,20 @@
       },
       "labels" : {
         "IRI-based" : "HaveAComfortableLife"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveHarmonyWithNature",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "have-harmony-with-nature",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "HaveHarmonyWithNature"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#SelfEnhancement",
@@ -966,20 +996,6 @@
         "IRI-based" : "SelfEnhancement"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "stimulation",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Stimulation"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHonoringElders",
       "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
       "annotations" : {
@@ -992,6 +1008,20 @@
       },
       "labels" : {
         "IRI-based" : "BeHonoringElders"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#Stimulation",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "stimulation",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Stimulation"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeDaring",
@@ -1008,20 +1038,6 @@
         "IRI-based" : "BeDaring"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "have-freedom-of-action",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "HaveFreedomOfAction"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveGoodHealth",
       "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
       "annotations" : {
@@ -1034,6 +1050,20 @@
       },
       "labels" : {
         "IRI-based" : "HaveGoodHealth"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveFreedomOfAction",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "have-freedom-of-action",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "HaveFreedomOfAction"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeNeatAndTidy",
@@ -1078,6 +1108,20 @@
         "IRI-based" : "ConformityRules"
       }
     }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "be-holding-religious-faith",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "BeHoldingReligiousFaith"
+      }
+    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeIndependent",
       "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
       "annotations" : {
@@ -1106,18 +1150,18 @@
         "IRI-based" : "SelfDirectionThought"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHoldingReligiousFaith",
+      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful",
       "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "undefined",
-          "value" : "be-holding-religious-faith",
+          "value" : "be-helpful",
           "type" : "label"
         } ]
       },
       "labels" : {
-        "IRI-based" : "BeHoldingReligiousFaith"
+        "IRI-based" : "BeHelpful"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#HaveLifeAcceptedAsIs",
@@ -1132,20 +1176,6 @@
       },
       "labels" : {
         "IRI-based" : "HaveLifeAcceptedAsIs"
-      }
-    }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeHelpful",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "be-helpful",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "BeHelpful"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#Tradition",
@@ -1190,20 +1220,6 @@
         "IRI-based" : "HaveAVariedLife"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "be-self-disciplined",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "BeSelfDisciplined"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#SecurityPersonal",
       "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
       "annotations" : {
@@ -1216,6 +1232,20 @@
       },
       "labels" : {
         "IRI-based" : "SecurityPersonal"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeSelfDisciplined",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/bhv/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "be-self-disciplined",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "BeSelfDisciplined"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/bhv/ns#BeBroadminded",

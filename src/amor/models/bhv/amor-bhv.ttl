@@ -13,12 +13,17 @@
 <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns>
   a owl:Ontology ;
   rdfs:label "AMOR-BHV Ontology"@en ;
-  owl:versionInfo "1.0.0"^^xsd:string ;
-  owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns/1.0.0> ;
+  owl:versionInfo "1.0.1"^^xsd:string ;
+  owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns/1.0.1> ;
+  owl:priorVersion <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns/1.0.0> ;
   dc:title "AMOR-BHV Ontology"@en ;
   dc:creator "Sergio Muñoz López"@en ,
     "Álvaro Carrera Barroso"@en ;
   dc:publisher <http://www.gsi.upm.es> ;
+  dc:created "2024-03-15"^^xsd:date ;
+  dc:issued "2026-07-20"^^xsd:date ;
+  dc:modified "2026-07-20"^^xsd:date ;
+  dc:license <http://creativecommons.org/licenses/by/2.0/> ;
   rdfs:comment "AMOR-BHV is an ontology that uses AMOR ontology and BHV SKOS Taxonomy to create required relations to use BHV to define moral annotations."@en ;
   dc:description "AMOR-BHV is an ontology that uses AMOR ontology and BHV SKOS Taxonomy to create required relations to use BHV to define moral annotations."@en ;
   vann:preferredNamespacePrefix "amor-bhv" ;
