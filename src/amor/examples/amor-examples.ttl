@@ -21,11 +21,16 @@
 <http://www.gsi.upm.es/ontologies/amor/examples>
   a owl:Ontology ;
   rdfs:label "AMOR Examples"@en ;
-  owl:versionInfo "1.0.0"^^xsd:string ;
-  owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/examples/1.0.0> ;
+  owl:versionInfo "1.0.1"^^xsd:string ;
+  owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/examples/1.0.1> ;
+  owl:priorVersion <http://www.gsi.upm.es/ontologies/amor/examples/1.0.0> ;
   dc:title "AMOR Examples"@en ;
   dc:creator "Álvaro Carrera Barroso"@en ;
   dc:publisher <http://www.gsi.upm.es> ;
+  dc:created "2024-02-10"^^xsd:date ;
+  dc:issued "2026-07-20"^^xsd:date ;
+  dc:modified "2026-07-20"^^xsd:date ;
+  dc:license <http://creativecommons.org/licenses/by/2.0/> ;
   rdfs:comment "AMOR Examples contains a set of examples using all models required for semantic moral annotation in AMOR project."@en ;
   dc:description "AMOR Examples contains a set of examples using all models required for semantic moral annotation in AMOR project."@en ;
   vann:preferredNamespacePrefix "amor-examples" ;

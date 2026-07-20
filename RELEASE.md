@@ -1,10 +1,16 @@
-# AMOR v1.0.0 release procedure
+# AMOR release procedure
 
 This file is the reproducible runbook for preparing, publishing, and verifying
 the technical release. Production uploads, Git tags, and GitHub Releases still
 require explicit authorization for each release execution.
 
 ## Release scope and tools
+
+Release `v1.0.0` established the reproducible baseline. Release `v1.0.1` is a
+maintenance release limited to version, date and license metadata plus the
+documented editorial corrections. It does not change ontology IRIs, namespace
+IRIs, classes, properties, taxonomies, examples, experiments, datasets, API
+views, or competency-question results.
 
 The normative paper-facing RDF artefacts are:
 
@@ -46,6 +52,7 @@ Toolchain used for this release preparation:
 8. Review generated HTML for AMOR-MFT and AMOR examples, including Fairness, Virtue/Vice, BHV Conservation, and `moralAnnotation23`.
 9. Commit the generated documentation and hash manifest without changing the normative sources.
 10. From the resulting final commit, regenerate once more before publication. Confirm that `doc/ontologies/BUILDINFO` names that final commit and that semantic validation remains green. This build directory, not an older checkout, is the publication payload.
+11. For v1.0.1, verify CC BY 2.0, `owl:priorVersion`, publication dates, and the neutral specification status in every generated documentation set.
 
 WIDOCO output is verified semantically, not byte-for-byte. The automated checks
 parse generated RDF, verify ontology/version IRIs, and check the release terms
@@ -59,7 +66,8 @@ same generated RDF/XML graph with RDFLib; normative sources are not changed.
 Ignored legacy scripts under `local_scripts/` provide repository-local evidence
 that publication used recursive `scp`. On 2026-07-20 the repository owner
 confirmed that SSH-key access, account `vpsadmin@gsi.upm.es`, and the destination
-layout remain current, and explicitly authorized the v1.0.0 publication.
+layout remain current, and explicitly authorized the v1.0.0 publication. The
+same procedure was explicitly authorized for v1.0.1 in its release request.
 
 The legacy scripts combine generation and upload and use mutable WIDOCO
 `latest` images, so they must not be run as-is. Generate from a clean final
@@ -84,19 +92,20 @@ scp -r doc/ontologies/amor/models/mft/ns/doc \
 The server-owned `.htaccess` files in those `doc` directories provide content
 negotiation and are intentionally retained by this copy procedure. No CI
 deployment credentials or production deployment job are defined. Authorization
-for v1.0.0 does not implicitly authorize later releases.
+for v1.0.0 or v1.0.1 does not implicitly authorize later releases.
 
 ## Post-publication verification
 
 After an authorized upload from the final commit:
 
 1. Retrieve each canonical HTTPS page under `https://gsi.upm.es/ontologies/`.
-2. Retrieve the RDF representations for the six artefacts using explicit HTTP `Accept` headers and save them outside the repository.
+2. Retrieve the Turtle and JSON-LD representations for the six artefacts using explicit HTTP `Accept` headers and save them outside the repository.
 3. Parse every retrieved representation locally with RDFLib.
-4. Verify the ontology IRI, `owl:versionIRI`, and `owl:versionInfo` against the normative source.
+4. Verify the ontology IRI, `owl:versionIRI`, `owl:versionInfo`, `owl:priorVersion`, and CC BY 2.0 license against the normative source.
 5. Verify Fairness membership, Virtue/Vice labels, BHV `/ns#Conservation`, and the category/target split for `moralAnnotation23`.
-6. Compare the published normative artefact hashes with `release/normative-artifacts.sha256` where the server exposes those exact source files.
-7. Record the verified final commit in the release notes and paper/archive metadata.
+6. Compare each public Turtle byte-for-byte with the generated publication payload.
+7. Verify the HTML status, dates, license, and release-specific editorial text.
+8. Record the verified final commit in the release notes and paper/archive metadata.
 
 ## Consequential actions
 
@@ -105,10 +114,18 @@ only with explicit user authorization for that execution, create the annotated
 tag and GitHub Release:
 
 ```bash
-git tag -a v1.0.0 <verified-final-commit> -m "AMOR ontology v1.0.0"
-git push origin v1.0.0
-gh release create v1.0.0 --verify-tag --title "AMOR ontology v1.0.0" --notes-file release/v1.0.0-notes.md
+git tag -a <version> <verified-final-commit> -m "AMOR ontology <version>"
+git push origin <version>
+gh release create <version> --verify-tag --title "AMOR ontology <version>" --notes-file release/<version>-notes.md
 ```
 
 The annotated tag is the immutable reference to the final release commit; the
 GitHub Release verification record must identify that tag and the public checks.
+
+## Release history
+
+- `v1.0.0`: initial reproducible paper-facing release; notes are preserved in
+  `release/v1.0.0-notes.md`.
+- `v1.0.1`: CC BY 2.0 metadata, patch-version metadata, publication dates,
+  neutral specification status, and editorial corrections only; notes are in
+  `release/v1.0.1-notes.md`.

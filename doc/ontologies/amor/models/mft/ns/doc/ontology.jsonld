@@ -1,8 +1,20 @@
 [ {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/publisher",
@@ -19,6 +31,10 @@
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-03-15"
+  } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@language" : "en",
     "@value" : "Sergio Muñoz López"
@@ -29,6 +45,17 @@
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "AMOR-MFT is an ontology that uses AMOR ontology and MFT SKOS Taxonomy to create required relations to use MFT to define moral annotations."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-07-20"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/2.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-07-20"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "http://www.gsi.upm.es"
@@ -51,11 +78,14 @@
     "@language" : "en",
     "@value" : "AMOR-MFT Ontology"
   } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns/1.0.0"
   } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns/1.0.1"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "1.0.0"
+    "@value" : "1.0.1"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#MoralFoundation",
@@ -111,7 +141,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The polarity is represents the Vice or the Virtue of the MFT Moral Value category."
+    "@value" : "The polarity indicates whether an MFT moral-value category is expressed as a virtue or a vice."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -122,7 +152,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The polarity is represents the Vice or the Virtue of the MFT Moral Value category."
+    "@value" : "The polarity indicates whether an MFT moral-value category is expressed as a virtue or a vice."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
@@ -139,7 +169,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The polarity of a moral value annotation represents the intensity of the moral value in the analyzed textual source, ranging from -1.0 (for vice) to 1.0 (for virtue)."
+    "@value" : "The polarity intensity represents the direction and intensity of an MFT moral-value annotation on a scale from -1.0 (vice) to 1.0 (virtue)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation"
@@ -272,4 +302,7 @@
     "@language" : "en",
     "@value" : "Virtue"
   } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 } ]

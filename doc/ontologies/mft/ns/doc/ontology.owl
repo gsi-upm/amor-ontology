@@ -10,17 +10,22 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.gsi.upm.es/ontologies/mft/ns">
-        <owl:versionIRI rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns/1.0.0"/>
+        <owl:versionIRI rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns/1.0.1"/>
         <terms:comment xml:lang="en">This SKOS taxonomy mirrors the categories in Moral Foundations Theory and provides a semantic representation using the standard SKOS representation.</terms:comment>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-15</terms:created>
         <terms:creator xml:lang="en">Sergio Muñoz López</terms:creator>
         <terms:creator xml:lang="en">Álvaro Carrera Barroso</terms:creator>
         <terms:description xml:lang="en">This SKOS taxonomy mirrors the categories in Moral Foundations Theory and provides a semantic representation using the standard SKOS representation.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-07-20</terms:issued>
         <terms:label xml:lang="en">Moral Foundations Theory Taxonomy - SKOS version</terms:label>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/2.0/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-07-20</terms:modified>
         <terms:publisher rdf:resource="http://www.gsi.upm.es"/>
         <terms:title xml:lang="en">Moral Foundations Theory Taxonomy - SKOS version</terms:title>
         <vann:preferredNamespacePrefix>mft</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://www.gsi.upm.es/ontologies/mft/ns#</vann:preferredNamespaceUri>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <owl:priorVersion rdf:resource="http://www.gsi.upm.es/ontologies/mft/ns/1.0.0"/>
+        <owl:versionInfo>1.0.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -44,6 +49,13 @@
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
     <!-- http://purl.org/dc/terms/creator -->
 
 
@@ -58,10 +70,31 @@
     
 
 
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
     <!-- http://purl.org/dc/terms/label -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/label"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
     
 
 
@@ -104,6 +137,25 @@
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 

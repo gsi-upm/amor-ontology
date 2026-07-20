@@ -7,7 +7,7 @@
       "en" : "AMOR-MFT Ontology"
     },
     "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
-    "version" : "1.0.0",
+    "version" : "1.0.1",
     "author" : [ "Álvaro Carrera Barroso", "Sergio Muñoz López" ],
     "description" : {
       "en" : "AMOR-MFT is an ontology that uses AMOR ontology and MFT SKOS Taxonomy to create required relations to use MFT to define moral annotations."
@@ -19,6 +19,18 @@
       "en" : "AMOR-MFT is an ontology that uses AMOR ontology and MFT SKOS Taxonomy to create required relations to use MFT to define moral annotations."
     },
     "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/2.0/",
+        "type" : "iri"
+      } ],
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns/1.0.0",
+        "type" : "iri"
+      } ],
       "creator" : [ {
         "identifier" : "creator",
         "language" : "en",
@@ -30,10 +42,22 @@
         "value" : "Álvaro Carrera Barroso",
         "type" : "label"
       } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2024-03-15",
+        "type" : "label"
+      } ],
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
         "value" : "amor-mft",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2026-07-20",
         "type" : "label"
       } ],
       "publisher" : [ {
@@ -51,7 +75,13 @@
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "1.0.0",
+        "value" : "1.0.1",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2026-07-20",
         "type" : "label"
       } ],
       "title" : [ {
@@ -73,7 +103,7 @@
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
+    "id" : "3",
     "type" : "owl:Class"
   }, {
     "id" : "6",
@@ -97,16 +127,16 @@
         "IRI-based" : "Loyalty"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
-      "labels" : {
-        "IRI-based" : "Liberty"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Equality",
       "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
       "labels" : {
         "IRI-based" : "Equality"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "labels" : {
+        "IRI-based" : "Liberty"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Purity",
@@ -201,9 +231,9 @@
       }
     } ],
     "comment" : {
-      "en" : "The polarity is represents the Vice or the Virtue of the MFT Moral Value category."
+      "en" : "The polarity indicates whether an MFT moral-value category is expressed as a virtue or a vice."
     },
-    "id" : "4"
+    "id" : "3"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueModel",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/ns",
@@ -218,12 +248,7 @@
         "hasMoralValueCategory" : [ {
           "identifier" : "hasMoralValueCategory",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Loyalty",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasMoralValueCategory",
-          "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Honor",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty",
           "type" : "iri"
         }, {
           "identifier" : "hasMoralValueCategory",
@@ -233,17 +258,17 @@
         }, {
           "identifier" : "hasMoralValueCategory",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasMoralValueCategory",
-          "language" : "undefined",
           "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Care",
           "type" : "iri"
         }, {
           "identifier" : "hasMoralValueCategory",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Fairness",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Honor",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority",
           "type" : "iri"
         }, {
           "identifier" : "hasMoralValueCategory",
@@ -258,7 +283,12 @@
         }, {
           "identifier" : "hasMoralValueCategory",
           "language" : "undefined",
-          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Authority",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Loyalty",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasMoralValueCategory",
+          "language" : "undefined",
+          "value" : "http://www.gsi.upm.es/ontologies/mft/ns#Fairness",
           "type" : "iri"
         }, {
           "identifier" : "hasMoralValueCategory",
@@ -286,7 +316,7 @@
     }
   } ],
   "property" : [ {
-    "id" : "3",
+    "id" : "4",
     "type" : "owl:objectProperty"
   }, {
     "id" : "5",
@@ -301,28 +331,28 @@
   "propertyAttribute" : [ {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#oppositeOf",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
-    "range" : "4",
+    "range" : "3",
     "label" : {
       "IRI-based" : "oppositeOf",
       "en" : "opposite of"
     },
-    "domain" : "4",
+    "domain" : "3",
     "comment" : {
       "en" : "The opposite of a polarity is the opposite polarity."
     },
     "attributes" : [ "object" ],
-    "id" : "3"
+    "id" : "4"
   }, {
     "iri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity",
     "baseIri" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns",
-    "range" : "4",
+    "range" : "3",
     "label" : {
       "IRI-based" : "hasPolarity",
       "en" : "has polarity"
     },
     "domain" : "2",
     "comment" : {
-      "en" : "The polarity is represents the Vice or the Virtue of the MFT Moral Value category."
+      "en" : "The polarity indicates whether an MFT moral-value category is expressed as a virtue or a vice."
     },
     "attributes" : [ "object" ],
     "id" : "5"
@@ -341,7 +371,7 @@
     },
     "domain" : "2",
     "comment" : {
-      "en" : "The polarity of a moral value annotation represents the intensity of the moral value in the analyzed textual source, ranging from -1.0 (for vice) to 1.0 (for virtue)."
+      "en" : "The polarity intensity represents the direction and intensity of an MFT moral-value annotation on a scale from -1.0 (vice) to 1.0 (virtue)."
     },
     "attributes" : [ "datatype" ],
     "id" : "9"

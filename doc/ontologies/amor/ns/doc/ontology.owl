@@ -9,18 +9,23 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.gsi.upm.es/ontologies/amor/ns">
-        <owl:versionIRI rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns/1.0.0"/>
+        <owl:versionIRI rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns/1.0.1"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-10</terms:created>
         <terms:creator xml:lang="es">Juan Fernando Sánchez Rada</terms:creator>
         <terms:creator xml:lang="es">Sergio Muñoz López</terms:creator>
         <terms:creator xml:lang="es">Álvaro Carrera Barroso</terms:creator>
         <terms:description xml:lang="en">AMOR is an ontology designed for representing moral values and value annotations in textual sources.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-07-20</terms:issued>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/2.0/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-07-20</terms:modified>
         <terms:publisher rdf:resource="http://www.gsi.upm.es"/>
         <terms:title xml:lang="en">AMOR Moral Values Ontology</terms:title>
         <vann:preferredNamespacePrefix>amor</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://www.gsi.upm.es/ontologies/amor/ns#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">AMOR is an ontology designed for representing moral values analysis and annotations in textual sources.</rdfs:comment>
         <rdfs:label xml:lang="en">AMOR Moral Values Ontology</rdfs:label>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <owl:priorVersion rdf:resource="http://www.gsi.upm.es/ontologies/amor/ns/1.0.0"/>
+        <owl:versionInfo>1.0.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -37,6 +42,13 @@
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
     <!-- http://purl.org/dc/terms/creator -->
 
 
@@ -48,6 +60,27 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
     
 
 
@@ -76,6 +109,25 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 

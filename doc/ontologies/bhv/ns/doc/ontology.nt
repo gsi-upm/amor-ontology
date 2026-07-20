@@ -1,15 +1,20 @@
 <http://www.gsi.upm.es/ontologies/bhv/ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.gsi.upm.es/ontologies/bhv/ns> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.gsi.upm.es/ontologies/bhv/ns/1.0.0> .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.gsi.upm.es/ontologies/bhv/ns/1.0.1> .
 <http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/comment> "This SKOS taxonomy mirrors the categories in Basic Human Values Theory and provides a semantic representation using the standard SKOS representation."@en .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/created> "2024-03-15"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/creator> "Sergio Muñoz López"@en .
 <http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/creator> "Álvaro Carrera Barroso"@en .
 <http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/description> "This SKOS taxonomy mirrors the categories in Basic Human Values Theory and provides a semantic representation using the standard SKOS representation."@en .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/issued> "2026-07-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/2.0/> .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/modified> "2026-07-20"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/publisher> <http://www.gsi.upm.es> .
 <http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/dc/terms/title> "Basic Human Values Taxonomy - SKOS version"@en .
 <http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bhv" .
 <http://www.gsi.upm.es/ontologies/bhv/ns> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.gsi.upm.es/ontologies/bhv/ns#" .
 <http://www.gsi.upm.es/ontologies/bhv/ns> <http://www.w3.org/2000/01/rdf-schema#label> "Basic Human Values Taxonomy - SKOS version"@en .
-<http://www.gsi.upm.es/ontologies/bhv/ns> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://www.w3.org/2002/07/owl#priorVersion> <http://www.gsi.upm.es/ontologies/bhv/ns/1.0.0> .
+<http://www.gsi.upm.es/ontologies/bhv/ns> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.1" .
 # 
 # 
 # #################################################################
@@ -22,11 +27,23 @@
 # http://purl.org/dc/terms/comment
 <http://purl.org/dc/terms/comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -42,6 +59,18 @@
 # 
 # http://www.w3.org/2004/02/skos/core#prefLabel
 <http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
 # 
 # 

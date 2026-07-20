@@ -15,13 +15,18 @@
 <http://www.gsi.upm.es/ontologies/amor/ns>
   a owl:Ontology ;
   rdfs:label "AMOR Moral Values Ontology"@en ;
-  owl:versionInfo "1.0.0"^^xsd:string ;
-  owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/ns/1.0.0> ;
+  owl:versionInfo "1.0.1"^^xsd:string ;
+  owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/ns/1.0.1> ;
+  owl:priorVersion <http://www.gsi.upm.es/ontologies/amor/ns/1.0.0> ;
   dc:title "AMOR Moral Values Ontology"@en ;
   dc:creator "Sergio Muñoz López"@es ,
     "Álvaro Carrera Barroso"@es ,
     "Juan Fernando Sánchez Rada"@es;
   dc:publisher <http://www.gsi.upm.es> ;
+  dc:created "2024-02-10"^^xsd:date ;
+  dc:issued "2026-07-20"^^xsd:date ;
+  dc:modified "2026-07-20"^^xsd:date ;
+  dc:license <http://creativecommons.org/licenses/by/2.0/> ;
   rdfs:comment "AMOR is an ontology designed for representing moral values analysis and annotations in textual sources."@en ;
   dc:description "AMOR is an ontology designed for representing moral values and value annotations in textual sources."@en ;
   vann:preferredNamespacePrefix "amor" ;

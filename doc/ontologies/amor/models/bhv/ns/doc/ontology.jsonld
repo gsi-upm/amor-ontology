@@ -1,8 +1,20 @@
 [ {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/publisher",
@@ -19,6 +31,10 @@
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-03-15"
+  } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@language" : "en",
     "@value" : "Sergio Muñoz López"
@@ -29,6 +45,17 @@
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "AMOR-BHV is an ontology that uses AMOR ontology and BHV SKOS Taxonomy to create required relations to use BHV to define moral annotations."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-07-20"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/2.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-07-20"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "http://www.gsi.upm.es"
@@ -51,11 +78,14 @@
     "@language" : "en",
     "@value" : "AMOR-BHV Ontology"
   } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns/1.0.0"
   } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns/1.0.1"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "1.0.0"
+    "@value" : "1.0.1"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#BHVModel-level1",
@@ -745,4 +775,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.gsi.upm.es/ontologies/amor/ns#MoralValueCategory"
   } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 } ]

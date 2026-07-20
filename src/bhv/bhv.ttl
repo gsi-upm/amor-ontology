@@ -12,11 +12,16 @@
                                     dc:description "This SKOS taxonomy mirrors the categories in Basic Human Values Theory and provides a semantic representation using the standard SKOS representation."@en ;
                                     dc:title "Basic Human Values Taxonomy - SKOS version"@en ;
                                     rdfs:label "Basic Human Values Taxonomy - SKOS version"@en ;
-                                    owl:versionInfo "1.0.0"^^xsd:string ;
-                                    owl:versionIRI <http://www.gsi.upm.es/ontologies/bhv/ns/1.0.0> ;
+                                    owl:versionInfo "1.0.1"^^xsd:string ;
+                                    owl:versionIRI <http://www.gsi.upm.es/ontologies/bhv/ns/1.0.1> ;
+                                    owl:priorVersion <http://www.gsi.upm.es/ontologies/bhv/ns/1.0.0> ;
                                     dc:creator "Sergio Muñoz López"@en ,
                                           "Álvaro Carrera Barroso"@en ;
                                     dc:publisher <http://www.gsi.upm.es> ;
+                                    dc:created "2024-03-15"^^xsd:date ;
+                                    dc:issued "2026-07-20"^^xsd:date ;
+                                    dc:modified "2026-07-20"^^xsd:date ;
+                                    dc:license <http://creativecommons.org/licenses/by/2.0/> ;
                                     vann:preferredNamespacePrefix "bhv" ;
                                     vann:preferredNamespaceUri "http://www.gsi.upm.es/ontologies/bhv/ns#" .
 

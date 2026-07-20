@@ -10,12 +10,17 @@
 <http://www.gsi.upm.es/ontologies/amor/models/mft/ns>
   a owl:Ontology ;
   rdfs:label "AMOR-MFT Ontology"@en ;
-  owl:versionInfo "1.0.0"^^xsd:string ;
-  owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/models/mft/ns/1.0.0> ;
+  owl:versionInfo "1.0.1"^^xsd:string ;
+  owl:versionIRI <http://www.gsi.upm.es/ontologies/amor/models/mft/ns/1.0.1> ;
+  owl:priorVersion <http://www.gsi.upm.es/ontologies/amor/models/mft/ns/1.0.0> ;
   dc:title "AMOR-MFT Ontology"@en ;
   dc:creator "Sergio Muñoz López"@en ,
     "Álvaro Carrera Barroso"@en ;
   dc:publisher <http://www.gsi.upm.es> ;
+  dc:created "2024-03-15"^^xsd:date ;
+  dc:issued "2026-07-20"^^xsd:date ;
+  dc:modified "2026-07-20"^^xsd:date ;
+  dc:license <http://creativecommons.org/licenses/by/2.0/> ;
   rdfs:comment "AMOR-MFT is an ontology that uses AMOR ontology and MFT SKOS Taxonomy to create required relations to use MFT to define moral annotations."@en ;
   dc:description "AMOR-MFT is an ontology that uses AMOR ontology and MFT SKOS Taxonomy to create required relations to use MFT to define moral annotations."@en ;
   vann:preferredNamespacePrefix "amor-mft" ;
@@ -53,14 +58,14 @@ mft:Ownership a :MoralFoundation .
 
 :Polarity a owl:Class ;
   rdfs:label "Polarity"@en ;
-  rdfs:comment "The polarity is represents the Vice or the Virtue of the MFT Moral Value category."@en .
+  rdfs:comment "The polarity indicates whether an MFT moral-value category is expressed as a virtue or a vice."@en .
 
 :hasPolarity
   a owl:ObjectProperty ;
   rdfs:label "has polarity"@en ;
   rdfs:domain amor:MoralValueAnnotation ;
   rdfs:range :Polarity ;
-  rdfs:comment "The polarity is represents the Vice or the Virtue of the MFT Moral Value category."@en .
+  rdfs:comment "The polarity indicates whether an MFT moral-value category is expressed as a virtue or a vice."@en .
 
 :oppositeOf
   a owl:ObjectProperty ;
@@ -84,4 +89,4 @@ mft:Vice a :Polarity ;
   rdfs:label "has polarity intensity"@en ;
   rdfs:domain amor:MoralValueAnnotation ;
   rdfs:range xsd:float ;
-  rdfs:comment "The polarity of a moral value annotation represents the intensity of the moral value in the analyzed textual source, ranging from -1.0 (for vice) to 1.0 (for virtue)."@en .
+  rdfs:comment "The polarity intensity represents the direction and intensity of an MFT moral-value annotation on a scale from -1.0 (vice) to 1.0 (virtue)."@en .

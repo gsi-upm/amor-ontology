@@ -81,6 +81,19 @@ The ten executable competency questions, their exact six-file graph manifest,
 expected evidence, and CQ-to-test traceability are documented in
 [`evaluation/README.md`](./evaluation/README.md).
 
+## License
+
+The six paper-facing ontology artefacts listed as AMOR, AMOR Examples, BHV,
+AMOR-BHV, MFT, and AMOR-MFT are licensed under the
+[Creative Commons Attribution 2.0 Generic license](http://creativecommons.org/licenses/by/2.0/)
+(CC BY 2.0). The standard legal text is provided in [`LICENSE`](./LICENSE), and
+each normative Turtle graph declares the same license with `dcterms:license`.
+
+This statement does not assign a license to third-party datasets, source news
+content, or other material where the repository does not establish the relevant
+rights. In particular, the presence of a dataset under `src/amor/datasets/`
+must not be interpreted as evidence that CC BY 2.0 applies to that dataset.
+
 ## Generating documentation
 
 The Turtle files under `src/` are normative. The RDF serializations, HTML,

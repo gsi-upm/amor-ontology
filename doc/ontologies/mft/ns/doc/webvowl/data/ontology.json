@@ -7,7 +7,7 @@
       "en" : "Moral Foundations Theory Taxonomy - SKOS version"
     },
     "iri" : "http://www.gsi.upm.es/ontologies/mft/ns",
-    "version" : "1.0.0",
+    "version" : "1.0.1",
     "author" : [ "Álvaro Carrera Barroso", "Sergio Muñoz López" ],
     "description" : {
       "en" : "This SKOS taxonomy mirrors the categories in Moral Foundations Theory and provides a semantic representation using the standard SKOS representation."
@@ -19,6 +19,18 @@
       "en" : "This SKOS taxonomy mirrors the categories in Moral Foundations Theory and provides a semantic representation using the standard SKOS representation."
     },
     "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/2.0/",
+        "type" : "iri"
+      } ],
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "http://www.gsi.upm.es/ontologies/mft/ns/1.0.0",
+        "type" : "iri"
+      } ],
       "creator" : [ {
         "identifier" : "creator",
         "language" : "en",
@@ -28,6 +40,12 @@
         "identifier" : "creator",
         "language" : "en",
         "value" : "Álvaro Carrera Barroso",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2024-03-15",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -42,10 +60,10 @@
         "value" : "http://www.gsi.upm.es",
         "type" : "iri"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
+      "modified" : [ {
+        "identifier" : "modified",
         "language" : "undefined",
-        "value" : "1.0.0",
+        "value" : "2026-07-20",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
@@ -54,10 +72,22 @@
         "value" : "http://www.gsi.upm.es/ontologies/mft/ns#",
         "type" : "label"
       } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.1",
+        "type" : "label"
+      } ],
       "title" : [ {
         "identifier" : "title",
         "language" : "en",
         "value" : "Moral Foundations Theory Taxonomy - SKOS version",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2026-07-20",
         "type" : "label"
       } ]
     }
@@ -107,18 +137,8 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Loyalität",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "Lealtà",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Loyauté",
+          "language" : "en",
+          "value" : "Loyalty",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -127,18 +147,28 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Lealtà",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "pt",
           "value" : "Lealdade",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Loyalty",
+          "language" : "de",
+          "value" : "Loyalität",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "es",
           "value" : "Lealtad",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Loyauté",
           "type" : "label"
         } ]
       },
@@ -146,18 +176,62 @@
         "IRI-based" : "Loyalty"
       }
     }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Liberty",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Libertad",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Libertà",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Liberté",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Freiheit",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Liberdade",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Llibertat",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Liberty"
+      }
+    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Equality",
       "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "ca",
-          "value" : "Igualtat",
+          "language" : "en",
+          "value" : "Equality",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "pt",
-          "value" : "Igualdade",
+          "language" : "ca",
+          "value" : "Igualtat",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -166,8 +240,8 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Equality",
+          "language" : "pt",
+          "value" : "Igualdade",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -190,111 +264,18 @@
         "IRI-based" : "Equality"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "Libertà",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Liberty",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Liberté",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Freiheit",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ca",
-          "value" : "Llibertat",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Libertad",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "pt",
-          "value" : "Liberdade",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Liberty"
-      }
-    }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Virtue",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Virtud",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Vertu",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ca",
-          "value" : "Virtut",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Virtue",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "pt",
-          "value" : "Virtude",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Tugend",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "Virtù",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Virtue"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Purity",
       "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
       "annotations" : {
         "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Purity",
-          "type" : "label"
-        }, {
           "identifier" : "prefLabel",
           "language" : "ca",
           "value" : "Puresa",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "Purezza",
+          "language" : "en",
+          "value" : "Purity",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -303,8 +284,8 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Reinheit",
+          "language" : "it",
+          "value" : "Purezza",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -316,10 +297,59 @@
           "language" : "pt",
           "value" : "Pureza",
           "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Reinheit",
+          "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "Purity"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Virtue",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Virtude",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Virtud",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Virtue",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Vertu",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Virtù",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Tugend",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Virtut",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Virtue"
       }
     }, {
       "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Proportionality",
@@ -327,13 +357,8 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Proportionality",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ca",
-          "value" : "Proporcionalitat",
+          "language" : "fr",
+          "value" : "Proportionnalité",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -342,13 +367,13 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Proporcionalidad",
+          "language" : "ca",
+          "value" : "Proporcionalitat",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Proportionnalité",
+          "language" : "it",
+          "value" : "Proporzionalità",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -357,8 +382,13 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "Proporzionalità",
+          "language" : "en",
+          "value" : "Proportionality",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Proporcionalidad",
           "type" : "label"
         } ]
       },
@@ -371,6 +401,21 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Honor",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Ehre",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Onore",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "es",
           "value" : "Honor",
           "type" : "label"
@@ -381,23 +426,8 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "Onore",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Honor",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "pt",
           "value" : "Honra",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Ehre",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -415,26 +445,6 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "ca",
-          "value" : "Autoritat",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Autoridad",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "Autorità",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Autorität",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "pt",
           "value" : "Autoridade",
           "type" : "label"
@@ -445,8 +455,28 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Autoridad",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Autoritat",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Autorität",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "fr",
           "value" : "Autorité",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Autorità",
           "type" : "label"
         } ]
       },
@@ -454,62 +484,18 @@
         "IRI-based" : "Authority"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Care",
-      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Soin",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "pt",
-          "value" : "Cuidado",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Care",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ca",
-          "value" : "Cura",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "Cura",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Fürsorge",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Cuidado",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Care"
-      }
-    }, {
       "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Ownership",
       "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "ca",
-          "value" : "Propietat",
+          "language" : "it",
+          "value" : "Proprietà",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Propiedad",
+          "language" : "ca",
+          "value" : "Propietat",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -523,18 +509,18 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Ownership",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "pt",
           "value" : "Propriedade",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "Proprietà",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Ownership",
+          "language" : "es",
+          "value" : "Propiedad",
           "type" : "label"
         } ]
       },
@@ -542,28 +528,57 @@
         "IRI-based" : "Ownership"
       }
     }, {
-      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Fairness",
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Care",
       "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "fr",
-          "value" : "Justice",
+          "value" : "Soin",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "ca",
-          "value" : "Justícia",
+          "language" : "en",
+          "value" : "Care",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Gerechtigkeit",
+          "language" : "es",
+          "value" : "Cuidado",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "it",
-          "value" : "Giustizia",
+          "value" : "Cura",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Cura",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Fürsorge",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Cuidado",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Care"
+      }
+    }, {
+      "iri" : "http://www.gsi.upm.es/ontologies/mft/ns#Fairness",
+      "baseIri" : "http://www.gsi.upm.es/ontologies/mft/ns",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Justicia",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -572,13 +587,28 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Gerechtigkeit",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
+          "value" : "Justícia",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "en",
           "value" : "Fairness",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Justicia",
+          "language" : "fr",
+          "value" : "Justice",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Giustizia",
           "type" : "label"
         } ]
       },
@@ -591,7 +621,17 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "it",
+          "language" : "pt",
+          "value" : "Vício",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Vicio",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ca",
           "value" : "Vice",
           "type" : "label"
         }, {
@@ -611,18 +651,8 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "ca",
+          "language" : "it",
           "value" : "Vice",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Vicio",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "pt",
-          "value" : "Vício",
           "type" : "label"
         } ]
       },
