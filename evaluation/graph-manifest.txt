@@ -1,0 +1,6 @@
+src/amor/amor.ttl
+src/bhv/bhv.ttl
+src/mft/mft.ttl
+src/amor/models/bhv/amor-bhv.ttl
+src/amor/models/mft/amor-mft.ttl
+src/amor/examples/amor-examples.ttl

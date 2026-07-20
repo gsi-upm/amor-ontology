@@ -15,6 +15,7 @@ The main files are the following:
 * `context.jsonld` is the JSON-LD context used in the `dataset-example.json` file
 * `prefixes.json` is a simpler JSON-LD context with the main prefixes used in AMOR
 
+The JSON files are application-oriented, framed views designed for direct traversal by the experimental API. They are not normative RDF serializations and are not guaranteed to be graph-isomorphic to the corresponding Turtle files.
 
 ## Running this project
 

@@ -1,0 +1,11 @@
+# CQ-C9: Which machine-learning model was used in a moral-value analysis?
+PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>
+PREFIX mls: <http://www.w3.org/ns/mls#>
+
+SELECT ?analysis ?model
+WHERE {
+  ?analysis a amor:MoralValueAnalysis ;
+    amor:usedMLModel ?model .
+  ?model a mls:Model .
+}
+ORDER BY ?analysis ?model

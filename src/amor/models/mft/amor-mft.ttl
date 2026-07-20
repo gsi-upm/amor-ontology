@@ -28,8 +28,9 @@
 
 :MoralFoundationsTheoryModel a amor:MoralValueModel ;
   rdfs:label "Moral Foundations Theory Model"@en ;
-  rdfs:comment "This model uses the 2023 version of the Moral Foundations Theory to define the moral values of the annotated content."@en ;
+  rdfs:comment "This model uses a consolidated category set from Moral Foundations Theory to define the moral values of the annotated content."@en ;
     amor:hasMoralValueCategory mft:Care ,
+        mft:Fairness ,
         mft:Loyalty ,
         mft:Authority ,
         mft:Purity ,

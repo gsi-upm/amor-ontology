@@ -1,0 +1,9 @@
+# CQ-C6: Which categories are included in a moral-value model?
+PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>
+
+SELECT ?model ?category
+WHERE {
+  ?model a amor:MoralValueModel ;
+    amor:hasMoralValueCategory ?category .
+}
+ORDER BY ?model ?category

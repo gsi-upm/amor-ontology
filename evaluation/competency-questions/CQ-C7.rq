@@ -1,0 +1,10 @@
+# CQ-C7: Which agent was responsible for a moral-value analysis?
+PREFIX amor: <http://www.gsi.upm.es/ontologies/amor/ns#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT ?analysis ?agent
+WHERE {
+  ?analysis a amor:MoralValueAnalysis ;
+    prov:wasAssociatedWith ?agent .
+}
+ORDER BY ?analysis ?agent

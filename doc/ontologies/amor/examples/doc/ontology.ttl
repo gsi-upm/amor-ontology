@@ -298,7 +298,7 @@
 ###  http://www.gsi.upm.es/ontologies/amor/examples#annotation2
 :annotation2 rdf:type owl:NamedIndividual ,
                       <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
-             <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv#Conservation> ;
+             <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/bhv/ns#Conservation> ;
              <http://www.w3.org/2005/11/its/rdf#taConfidence> "0.8"^^xsd:float ;
              <http://www.w3.org/ns/oa#hasTarget> :news1 .
 
@@ -426,9 +426,9 @@
                             <http://www.gsi.upm.es/ontologies/amor/ns#MoralValueAnnotation> ;
                    <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarity> <http://www.gsi.upm.es/ontologies/mft/ns#Virtue> ;
                    <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#hasPolarityIntensity> "0.2"^^xsd:float ;
+                   <http://www.gsi.upm.es/ontologies/amor/ns#hasMoralValueCategory> <http://www.gsi.upm.es/ontologies/mft/ns#Authority> ;
                    <http://www.w3.org/2005/11/its/rdf#taConfidence> "0.75"^^xsd:float ;
-                   <http://www.w3.org/ns/oa#hasTarget> :news1 ,
-                                                       <http://www.gsi.upm.es/ontologies/mft/ns#Authority> .
+                   <http://www.w3.org/ns/oa#hasTarget> :news1 .
 
 
 ###  http://www.gsi.upm.es/ontologies/amor/examples#news1

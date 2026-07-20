@@ -81,6 +81,8 @@
   }, {
     "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Equality"
   }, {
+    "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Fairness"
+  }, {
     "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Honor"
   }, {
     "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Liberty"
@@ -98,7 +100,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This model uses the 2023 version of the Moral Foundations Theory to define the moral values of the annotated content."
+    "@value" : "This model uses a consolidated category set from Moral Foundations Theory to define the moral values of the annotated content."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -248,11 +250,11 @@
     "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Virtud"
-  }, {
     "@language" : "en",
-    "@value" : "Virtue"
+    "@value" : "Vice"
+  }, {
+    "@language" : "es",
+    "@value" : "Vicio"
   } ]
 }, {
   "@id" : "http://www.gsi.upm.es/ontologies/mft/ns#Virtue",
@@ -264,10 +266,10 @@
     "@id" : "http://www.gsi.upm.es/ontologies/amor/models/mft/ns#Polarity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Vice"
-  }, {
     "@language" : "es",
-    "@value" : "Vicio"
+    "@value" : "Virtud"
+  }, {
+    "@language" : "en",
+    "@value" : "Virtue"
   } ]
 } ]
