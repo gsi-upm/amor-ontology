@@ -3,7 +3,7 @@
 @prefix amor: <http://www.gsi.upm.es/ontologies/amor/ns#> .
 @prefix amor-bhv: <http://www.gsi.upm.es/ontologies/amor/models/bhv/ns#> .
 @prefix amor-mft: <http://www.gsi.upm.es/ontologies/amor/models/mft/ns#> .
-@prefix bhv: <http://www.gsi.upm.es/ontologies/bhv#> .
+@prefix bhv: <http://www.gsi.upm.es/ontologies/bhv/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix marl: <http://www.gsi.upm.es/ontologies/marl/ns#> .
 @prefix mft: <http://www.gsi.upm.es/ontologies/mft/ns#> .
@@ -145,7 +145,7 @@
     prov:generated :moralAnnotation23 .
 
 :moralAnnotation23 a amor:MoralValueAnnotation ;
-    oa:hasTarget mft:Authority ;
+    amor:hasMoralValueCategory mft:Authority ;
     itsrdf:taConfidence "0.75"^^xsd:float ;
     amor-mft:hasPolarity mft:Virtue ;
     amor-mft:hasPolarityIntensity "0.2"^^xsd:float ;

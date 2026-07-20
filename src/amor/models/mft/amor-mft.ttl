@@ -70,13 +70,13 @@ mft:Ownership a :MoralFoundation .
 
 mft:Virtue a :Polarity ;
   :oppositeOf mft:Vice ;
-  rdfs:label "Vice"@en ,
-    "Vicio"@es .
+  rdfs:label "Virtue"@en ,
+    "Virtud"@es .
 
 mft:Vice a :Polarity ;
   :oppositeOf mft:Virtue ;
-  rdfs:label "Virtue"@en ,
-    "Virtud"@es .
+  rdfs:label "Vice"@en ,
+    "Vicio"@es .
 
 :hasPolarityIntensity
   a owl:DatatypeProperty ;

@@ -877,3 +877,12 @@
         ] ;
     rdfs:label "Likert Question"@en ;
     rdfs:comment "Represents a Likert question."@en .
+
+
+### Recommendation Strategies updates: 
+###-> same moral foundations
+###-> same moral foundations (different moral intensity) ###-> opposite moral intensity (same moral foundation)
+
+###-> different moral foundations (same moral intensity)
+###-> different moral foundations
+
